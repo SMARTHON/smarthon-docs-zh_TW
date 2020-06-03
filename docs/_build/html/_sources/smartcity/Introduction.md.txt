@@ -6,6 +6,8 @@ Smarthon Smart City IoT Starter kit is designed to introduce Internet of things 
 
 ## Component List
 
+![pic](images/components.png)
+
 No | Component 
 :-: | :-- 
 1|Smarthon IoT:bit
