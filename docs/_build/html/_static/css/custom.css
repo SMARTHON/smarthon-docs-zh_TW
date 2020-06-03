@@ -1,5 +1,5 @@
 img[alt="pic"] { 
-  max-width:  600px; 
+  max-width:  500px; 
   display: block;
 }
 img[alt="iotbit"] { 
@@ -8,7 +8,7 @@ img[alt="iotbit"] {
 }
 
 img[alt="level"] { 
-  max-width:  150px; 
+  max-width:  120px; 
   
 }
 

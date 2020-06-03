@@ -1,4 +1,4 @@
-# Chapter 1: Connect the micro:bit to the Wi-Fi
+# Chapter 1: Connect micro:bit to the Wi-Fi
 
 1. Choose IoT -> Initialize Wi-Fi Extension Board and OLED
 ![pic](images/Ch1_01.jpg)

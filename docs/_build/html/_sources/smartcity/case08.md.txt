@@ -1,3 +1,3 @@
-# IoT Case 08: Automated Traffic Light – Sender and receiver 
+# IoT Case 08: Automated Traffic Light
 
 ## Introduction

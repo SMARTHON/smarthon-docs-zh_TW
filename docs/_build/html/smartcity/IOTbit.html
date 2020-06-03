@@ -36,7 +36,7 @@
   <link rel="stylesheet" href="../_static/css/custom.css" type="text/css" />
     <link rel="index" title="Index" href="../genindex.html" />
     <link rel="search" title="Search" href="../search.html" />
-    <link rel="next" title="3. Chapter 1: Connect the micro:bit to the Wi-Fi" href="chapter1.html" />
+    <link rel="next" title="3. Chapter 1: Connect micro:bit to the Wi-Fi" href="chapter1.html" />
     <link rel="prev" title="1. About Smarthon Smart City IoT Starter Kit" href="Introduction.html" /> 
 </head>
 
@@ -86,15 +86,20 @@
 <li class="toctree-l2"><a class="reference internal" href="Introduction.html">1. About Smarthon Smart City IoT Starter Kit</a></li>
 <li class="toctree-l2 current"><a class="current reference internal" href="#">2. Smarthon IoT:bit Introduction</a><ul>
 <li class="toctree-l3"><a class="reference internal" href="#introduction">2.1. Introduction</a></li>
-<li class="toctree-l3"><a class="reference internal" href="#pinout-table">2.2. Pinout Table</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#structure-diagram">2.2. Structure Diagram</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#pinout-table">2.3. Pinout Table</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#getting-started-add-the-extension">2.4. Getting Started: Add the extension</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="#steps">Steps</a></li>
 </ul>
 </li>
-<li class="toctree-l2"><a class="reference internal" href="chapter1.html">3. Chapter 1: Connect the micro:bit to the Wi-Fi</a></li>
-<li class="toctree-l2"><a class="reference internal" href="chapter2.html">4. Chapter 2: [Data visualization] Upload Data to ThingSpeak</a></li>
-<li class="toctree-l2"><a class="reference internal" href="chapter3.html">5. Chapter 3: [IoT Services] Send Email by IFTTT</a></li>
-<li class="toctree-l2"><a class="reference internal" href="chapter4.html">6. Chapter 4: [Mobile App/Web Control] Control your micro:bit by App inventor 2</a></li>
-<li class="toctree-l2"><a class="reference internal" href="chapter5.html">7. Chapter 5: [Object to Object Communication] WI-FI Group communication</a></li>
-<li class="toctree-l2"><a class="reference internal" href="chapter6.html">8. Chapter 6: [Access Internet information] Connect your micro:bit to IoT Cloud by IFTTT</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="chapter1.html">3. Chapter 1: Connect micro:bit to the Wi-Fi</a></li>
+<li class="toctree-l2"><a class="reference internal" href="chapter2.html">4. Chapter 2: Upload Data to ThingSpeak</a></li>
+<li class="toctree-l2"><a class="reference internal" href="chapter3.html">5. Chapter 3: Send Email by IFTTT</a></li>
+<li class="toctree-l2"><a class="reference internal" href="chapter4.html">6. Chapter 4: Control your micro:bit by App inventor 2</a></li>
+<li class="toctree-l2"><a class="reference internal" href="chapter5.html">7. Chapter 5: WI-FI Group communication</a></li>
+<li class="toctree-l2"><a class="reference internal" href="chapter6.html">8. Chapter 6: Access Internet information by IFTTT</a></li>
 <li class="toctree-l2"><a class="reference internal" href="case01.html">9. Case 01: Automated Smart Playground Lamp</a></li>
 <li class="toctree-l2"><a class="reference internal" href="case02.html">10. Case 02: Smart Car park Access Barrier</a></li>
 <li class="toctree-l2"><a class="reference internal" href="case03.html">11. Case 03: Garbage disposal system</a></li>
@@ -102,7 +107,7 @@
 <li class="toctree-l2"><a class="reference internal" href="case05.html">13. Case 05: Car speed monitoring</a></li>
 <li class="toctree-l2"><a class="reference internal" href="case06.html">14. IoT Case 06: Weather Station</a></li>
 <li class="toctree-l2"><a class="reference internal" href="case07.html">15. IoT Case 07: Smart defense system</a></li>
-<li class="toctree-l2"><a class="reference internal" href="case08.html">16. IoT Case 08: Automated Traffic Light – Sender and receiver</a></li>
+<li class="toctree-l2"><a class="reference internal" href="case08.html">16. IoT Case 08: Automated Traffic Light</a></li>
 <li class="toctree-l2"><a class="reference internal" href="case09.html">17. IoT Case 09: Smart House door control</a></li>
 <li class="toctree-l2"><a class="reference internal" href="case10.html">18. IoT Case 10: Smart Street Light</a></li>
 <li class="toctree-l2"><a class="reference internal" href="case11.html">19. IoT Case 11: Roof garden clothes rack</a></li>
@@ -181,149 +186,170 @@
 <p><img alt="pic" src="../_images/Intro_01.jpg" /></p>
 <p>Smarthon IoT:bit is an WiFi extension board for micro:bit. With input/output ports, we can obtain information from different sensors for IoT and control the actuator (such as LED lights and servo)</p>
 </div>
+<div class="section" id="structure-diagram">
+<h2><span class="section-number">2.2. </span>Structure Diagram<a class="headerlink" href="#structure-diagram" title="Permalink to this headline">¶</a></h2>
+<p><img alt="pic_structure" src="../_images/structure_diagram.png" /></p>
+</div>
 <div class="section" id="pinout-table">
-<h2><span class="section-number">2.2. </span>Pinout Table<a class="headerlink" href="#pinout-table" title="Permalink to this headline">¶</a></h2>
+<h2><span class="section-number">2.3. </span>Pinout Table<a class="headerlink" href="#pinout-table" title="Permalink to this headline">¶</a></h2>
 <table border="1" class="docutils">
 <thead>
 <tr>
-<th align="center">Module</th>
-<th align="center">Pin</th>
-<th align="center">Remark</th>
+<th align="left">Module</th>
+<th align="left">Pin</th>
+<th align="left">Remark</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td align="center">General</td>
-<td align="center">6V(battery holder) / 5V(USB power supply)</td>
-<td align="center">-</td>
+<td align="left">General</td>
+<td align="left">6V(battery holder)/ 5V(USB power supply)</td>
+<td align="left">-</td>
 </tr>
 <tr>
-<td align="center">-</td>
-<td align="center">GND</td>
-<td align="center">-</td>
+<td align="left">-</td>
+<td align="left">GND</td>
+<td align="left">-</td>
 </tr>
 <tr>
-<td align="center">Buzzer</td>
-<td align="center">P0</td>
-<td align="center">-</td>
+<td align="left">Buzzer</td>
+<td align="left">P0</td>
+<td align="left">-</td>
 </tr>
 <tr>
-<td align="center">I/O (For Input and Output)</td>
-<td align="center">P0</td>
-<td align="center">-</td>
+<td align="left">I/O (For Input and Output)</td>
+<td align="left">P0</td>
+<td align="left">-</td>
 </tr>
 <tr>
-<td align="center">-</td>
-<td align="center">P1</td>
-<td align="center">-</td>
+<td align="left">-</td>
+<td align="left">P1</td>
+<td align="left">-</td>
 </tr>
 <tr>
-<td align="center">-</td>
-<td align="center">P2</td>
-<td align="center">-</td>
+<td align="left">-</td>
+<td align="left">P2</td>
+<td align="left">-</td>
 </tr>
 <tr>
-<td align="center">-</td>
-<td align="center">P3</td>
-<td align="center">Also used by micro:bit LED</td>
+<td align="left">-</td>
+<td align="left">P3</td>
+<td align="left">Also used by micro:bit LED</td>
 </tr>
 <tr>
-<td align="center">-</td>
-<td align="center">P4</td>
-<td align="center">Also used by micro:bit LED</td>
+<td align="left">-</td>
+<td align="left">P4</td>
+<td align="left">Also used by micro:bit LED</td>
 </tr>
 <tr>
-<td align="center">-</td>
-<td align="center">P10</td>
-<td align="center">Also used by micro:bit LED</td>
+<td align="left">-</td>
+<td align="left">P10</td>
+<td align="left">Also used by micro:bit LED</td>
 </tr>
 <tr>
-<td align="center">I/O (For Output only)</td>
-<td align="center">P6</td>
-<td align="center">Also used by micro:bit LED</td>
+<td align="left">I/O (For Output only)</td>
+<td align="left">P6</td>
+<td align="left">Also used by micro:bit LED</td>
 </tr>
 <tr>
-<td align="center">-</td>
-<td align="center">P7</td>
-<td align="center">Also used by micro:bit LED</td>
+<td align="left">-</td>
+<td align="left">P7</td>
+<td align="left">Also used by micro:bit LED</td>
 </tr>
 <tr>
-<td align="center">-</td>
-<td align="center">P9</td>
-<td align="center">Also used by micro:bit LED</td>
+<td align="left">-</td>
+<td align="left">P9</td>
+<td align="left">Also used by micro:bit LED</td>
 </tr>
 <tr>
-<td align="center">-</td>
-<td align="center">P12</td>
-<td align="center">-</td>
+<td align="left">-</td>
+<td align="left">P12</td>
+<td align="left">-</td>
 </tr>
 <tr>
-<td align="center">-</td>
-<td align="center">P13</td>
-<td align="center">-</td>
+<td align="left">-</td>
+<td align="left">P13</td>
+<td align="left">-</td>
 </tr>
 <tr>
-<td align="center">-</td>
-<td align="center">P14</td>
-<td align="center">-</td>
+<td align="left">-</td>
+<td align="left">P14</td>
+<td align="left">-</td>
 </tr>
 <tr>
-<td align="center">-</td>
-<td align="center">P15</td>
-<td align="center">-</td>
+<td align="left">-</td>
+<td align="left">P15</td>
+<td align="left">-</td>
 </tr>
 <tr>
-<td align="center">Distance Sensor</td>
-<td align="center">P14 (TRIG)</td>
-<td align="center">-</td>
+<td align="left">Distance Sensor</td>
+<td align="left">P14 (TRIG)</td>
+<td align="left">-</td>
 </tr>
 <tr>
-<td align="center">-</td>
-<td align="center">P15 (ECHO)</td>
-<td align="center">-</td>
+<td align="left">-</td>
+<td align="left">P15 (ECHO)</td>
+<td align="left">-</td>
 </tr>
 <tr>
-<td align="center">Servo</td>
-<td align="center">S1</td>
-<td align="center">-</td>
+<td align="left">Servo</td>
+<td align="left">S1</td>
+<td align="left">-</td>
 </tr>
 <tr>
-<td align="center">-</td>
-<td align="center">S2</td>
-<td align="center">-</td>
+<td align="left">-</td>
+<td align="left">S2</td>
+<td align="left">-</td>
 </tr>
 <tr>
-<td align="center">-</td>
-<td align="center">S3</td>
-<td align="center">-</td>
+<td align="left">-</td>
+<td align="left">S3</td>
+<td align="left">-</td>
 </tr>
 <tr>
-<td align="center">-</td>
-<td align="center">S4</td>
-<td align="center">-</td>
+<td align="left">-</td>
+<td align="left">S4</td>
+<td align="left">-</td>
 </tr>
 <tr>
-<td align="center">WiFi</td>
-<td align="center">P16 (RX)</td>
-<td align="center">-</td>
+<td align="left">WiFi</td>
+<td align="left">P16 (RX)</td>
+<td align="left">-</td>
 </tr>
 <tr>
-<td align="center">-</td>
-<td align="center">P8 (TX)</td>
-<td align="center">-</td>
+<td align="left">-</td>
+<td align="left">P8 (TX)</td>
+<td align="left">-</td>
 </tr>
 <tr>
-<td align="center">I2C</td>
-<td align="center">P19 (SCK)</td>
-<td align="center">-</td>
+<td align="left">I2C</td>
+<td align="left">P19 (SCK)</td>
+<td align="left">-</td>
 </tr>
 <tr>
-<td align="center">-</td>
-<td align="center">P20 (SDA)</td>
-<td align="center">-</td>
+<td align="left">-</td>
+<td align="left">P20 (SDA)</td>
+<td align="left">-</td>
 </tr>
 </tbody>
 </table></div>
+<div class="section" id="getting-started-add-the-extension">
+<h2><span class="section-number">2.4. </span>Getting Started: Add the extension<a class="headerlink" href="#getting-started-add-the-extension" title="Permalink to this headline">¶</a></h2>
+<p>To Program Smarthon modules with micro:bit, you need to add the Smarthon IoT packages to the BBC micro:bit makecode platform and initialize it first.</p>
+<div class="section" id="steps">
+<h3>Steps<a class="headerlink" href="#steps" title="Permalink to this headline">¶</a></h3>
+<ol class="simple">
+<li><p>Find the “Extensions” block at the bottom
+<img alt="pic" src="../_images/ext_01.png" />
+ </p></li>
+<li><p>Search “https://github.com/gisellechan/test_wifi”
+<img alt="pic" src="../_images/ext_02.png" />
+ </p></li>
+<li><p>Clicked “wifi-test” and you can see “IoT” package has been successfully.
+<img alt="pic" src="../_images/ext_03.png" /></p></li>
+</ol>
+</div>
+</div>
 </div>
 
 
@@ -334,7 +360,7 @@
   
     <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
       
-        <a href="chapter1.html" class="btn btn-neutral float-right" title="3. Chapter 1: Connect the micro:bit to the Wi-Fi" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
+        <a href="chapter1.html" class="btn btn-neutral float-right" title="3. Chapter 1: Connect micro:bit to the Wi-Fi" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
       
       
         <a href="Introduction.html" class="btn btn-neutral float-left" title="1. About Smarthon Smart City IoT Starter Kit" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>

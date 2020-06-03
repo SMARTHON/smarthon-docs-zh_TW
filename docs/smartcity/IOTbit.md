@@ -6,11 +6,14 @@
 
 Smarthon IoT:bit is an WiFi extension board for micro:bit. With input/output ports, we can obtain information from different sensors for IoT and control the actuator (such as LED lights and servo)
 
+## Structure Diagram
+![pic_structure](images/structure_diagram.png)
+
 ## Pinout Table
 
 Module | Pin | Remark
-:-: | :-: | :-: 
-General|6V(battery holder) / 5V(USB power supply)|-
+:-- | :-- | :--
+General|6V(battery holder)/ 5V(USB power supply)|-
 -|GND|-
 Buzzer|P0|-
 I/O (For Input and Output)|P0|-
@@ -37,5 +40,17 @@ WiFi|P16 (RX)|-
 I2C|P19 (SCK)|-
 -|P20 (SDA)|-
 
+## Getting Started: Add the extension
+To Program Smarthon modules with micro:bit, you need to add the Smarthon IoT packages to the BBC micro:bit makecode platform and initialize it first. 
+
+### Steps
+1. Find the “Extensions” block at the bottom
+![pic](images/ext_01.png)
+&nbsp;
+2. Search “https://github.com/gisellechan/test_wifi”
+![pic](images/ext_02.png)
+&nbsp;
+3. Clicked “wifi-test” and you can see “IoT” package has been successfully.
+![pic](images/ext_03.png)
 
 

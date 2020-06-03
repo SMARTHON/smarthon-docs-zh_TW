@@ -1,2 +1,2 @@
-# Chapter 3: [IoT Services] Send Email by IFTTT
+# Chapter 3: Send Email by IFTTT
 
