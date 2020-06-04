@@ -14,11 +14,11 @@ No | Component
 2|Traffic Light module
 3|White LED light
 4|Multi-Colour LED (WS2812)
-5|180 Servo
+5|180&deg; Servo
 6|Buzzer
-7|Ultrasonic Distance Sensor (unit: micro-sec/cm/inches)
+7|Ultrasonic Distance Sensor (unit: &#181;s/cm/inches)
 8|Light Sensor (0-100%)
-9|Temperature (unit: Celcius), Humidity sensor (0-100%)
+9|Temperature (unit: &deg;C), Humidity sensor (0-100%)
 10|PIR Motion Sensor (triggered or not)
 11|Raindrop sensor (0-100%)
 12|Noise sensor (Sound) (unit: dB)
