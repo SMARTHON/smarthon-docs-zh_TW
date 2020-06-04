@@ -54,3 +54,20 @@ To Program Smarthon modules with micro:bit, you need to add the Smarthon IoT pac
 ![pic](images/ext_03.png)
 
 
+<table id="cus_table">
+  <tr>
+    <th>Month</th>
+    <th>Savings</th>
+    <th>Savings for holiday!</th>
+  </tr>
+  <tr>
+    <td rowspan="2">January</td>
+    <td>$100</td>
+    <td>$50</td>
+  </tr>
+  <tr>
+    <td>February</td>
+    <td>$80</td>
+  </tr>
+</table>
+

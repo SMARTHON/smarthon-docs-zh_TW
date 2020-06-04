@@ -16,3 +16,30 @@ span[id="remarks"] {
   color: red;
   
 }
+
+table[id="cus_table"] tr {
+  border-top: 1px solid #cccccc;
+  background-color: white;
+  margin: 0;
+  padding: 0;
+}
+
+table[id="cus_table"] tr:nth-child(2n) {
+  background-color: #f8f8f8;
+}
+
+table[id="cus_table"] tr td { 
+ 
+ border: 1px solid #cccccc;
+  text-align: left;
+  margin: 0;
+  padding: 6px 13px;
+  
+}
+table[id="cus_table"] tr th {
+  font-weight: bold;
+  border: 1px solid #cccccc;
+  text-align: left;
+  margin: 0;
+  padding: 6px 13px;
+}
