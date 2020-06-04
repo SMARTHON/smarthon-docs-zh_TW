@@ -14,3 +14,4 @@ Quick Start Guide
     :maxdepth: 1
 
     smartcity/index
+    smarthouse/index
