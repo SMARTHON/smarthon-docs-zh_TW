@@ -17,9 +17,9 @@ Smarthon IoT:bit is an WiFi extension board for micro:bit. With input/output por
 |-|GND|-|
 |Buzzer|P0|-|
 I/O (For Input and Output)|P0|-|
-|^^ |P1|-|
+|-|P1|-|
 |-|P2|-|
-|-|P3|Also used by micro:bit LED|
+|-|P3| Also used by micro:bit LED|
 |-|P4|Also used by micro:bit LED|
 |-|P10|Also used by micro:bit LED|
 |I/O (For Output only)|P6|Also used by micro:bit LED|
