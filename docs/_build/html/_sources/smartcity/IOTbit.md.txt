@@ -47,13 +47,13 @@ To Program Smarthon modules with micro:bit, you need to add the Smarthon IoT pac
 1. Find the “Extensions” block at the bottom
 ![pic](images/ext_01.png)
 &nbsp;
-2. Search “https://github.com/gisellechan/test_wifi”
+2. Search <a href="https://github.com/SMARTHON/pxt-iot-bit"> https://github.com/SMARTHON/pxt-iot-bit</a> and click “WiFi-IoT-bit”
 ![pic](images/ext_02.png)
 &nbsp;
-3. Clicked “wifi-test” and you can see “IoT” package has been successfully.
+3. “IoT” package has been added successfully.
 ![pic](images/ext_03.png)
 
-
+<!--
 <table id="cus_table">
   <tr>
     <th>Month</th>
@@ -71,3 +71,4 @@ To Program Smarthon modules with micro:bit, you need to add the Smarthon IoT pac
   </tr>
 </table>
 
+-->
