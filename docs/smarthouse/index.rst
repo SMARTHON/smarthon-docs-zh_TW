@@ -7,9 +7,7 @@ Smarthon Smart House Kit for micro:bit
     :numbered: 2
 
     01Introduction.md
-    02Sensors.md
-    03Actuators.md
-    04Sensors_Actuators.md
+    02Housekit.md
     05Hardware.md
     06ReadingSensors.md
     07Program.md

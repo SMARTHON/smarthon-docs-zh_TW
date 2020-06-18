@@ -1,2 +1,2 @@
-# How to program Smarthon Plant Kit on micro:bit
+# How to program Smarthon Smart House Kit on micro:bit
 
