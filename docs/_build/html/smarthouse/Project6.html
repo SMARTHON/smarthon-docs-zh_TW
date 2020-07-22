@@ -87,14 +87,20 @@
 <li class="toctree-l2"><a class="reference internal" href="01Introduction.html">1. Product Introduction</a></li>
 <li class="toctree-l2"><a class="reference internal" href="02Housekit.html">2. Smarthon Smart House Kit</a></li>
 <li class="toctree-l2"><a class="reference internal" href="05Hardware.html">3. Hardware User Guide</a></li>
-<li class="toctree-l2"><a class="reference internal" href="06ReadingSensors.html">4. Reading all the sensors on screen</a></li>
-<li class="toctree-l2"><a class="reference internal" href="07Program.html">5. How to program Smarthon Smart House Kit on micro:bit</a></li>
+<li class="toctree-l2"><a class="reference internal" href="06ReadingSensors.html">4. Reading all the sensors on screen: Button, Temperature &amp; Humidity sensor, Light sensor, Motion sensor, Flame sensor and Town gas sensor</a></li>
+<li class="toctree-l2"><a class="reference internal" href="07Program.html">5. Getting started: How to program Smarthon Plant Kit on micro:bit</a></li>
 <li class="toctree-l2"><a class="reference internal" href="Project1.html">6. Project 1: Read Sensors on micro:bit 25 LED lights</a></li>
 <li class="toctree-l2"><a class="reference internal" href="Project2.html">7. Project 2:  Control Multiple Actuators Lv1</a></li>
 <li class="toctree-l2"><a class="reference internal" href="Project3.html">8. Project 3:  Control Multiple Actuators Lv2</a></li>
 <li class="toctree-l2"><a class="reference internal" href="Project4.html">9. Project 4:  Open the door</a></li>
 <li class="toctree-l2"><a class="reference internal" href="Project5.html">10. Project 5:  Alarm System</a></li>
-<li class="toctree-l2 current"><a class="current reference internal" href="#">11. Project 6: Light Automation</a></li>
+<li class="toctree-l2 current"><a class="current reference internal" href="#">11. Project 6: Light Automation</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#part-list">11.1. Part List</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#description">11.2. Description</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#steps">11.3. Steps</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#hardware">11.4. Hardware</a></li>
+</ul>
+</li>
 <li class="toctree-l2"><a class="reference internal" href="Project7.html">12. Project 7: Smart Motor Fan</a></li>
 <li class="toctree-l2"><a class="reference internal" href="Project8.html">13. Project 8:  Fire Alarm</a></li>
 <li class="toctree-l2"><a class="reference internal" href="Project9.html">14. Project 9:  Kitchen Safety</a></li>
@@ -172,6 +178,46 @@
             
   <div class="section" id="project-6-light-automation">
 <h1><span class="section-number">11. </span>Project 6: Light Automation<a class="headerlink" href="#project-6-light-automation" title="Permalink to this headline">¶</a></h1>
+<p>Level: <img alt="level" src="../_images/level3.png" /></p>
+<div class="section" id="part-list">
+<h2><span class="section-number">11.1. </span>Part List<a class="headerlink" href="#part-list" title="Permalink to this headline">¶</a></h2>
+<ol class="simple">
+<li><p>Light sensor X1</p></li>
+<li><p>Yellow LED X1</p></li>
+<li><p>Multiple Sensors for smart house X1</p></li>
+<li><p>Multiple Actuators for smart house X1</p></li>
+<li><p>Connecting Wire X1</p></li>
+<li><p>micro:bit X1</p></li>
+<li><p>USB Cable X1</p></li>
+</ol>
+</div>
+<div class="section" id="description">
+<h2><span class="section-number">11.2. </span>Description<a class="headerlink" href="#description" title="Permalink to this headline">¶</a></h2>
+<p>In project 6, you can learn how to build a light automation in the house subject to the sunshine.</p>
+</div>
+<div class="section" id="steps">
+<h2><span class="section-number">11.3. </span>Steps<a class="headerlink" href="#steps" title="Permalink to this headline">¶</a></h2>
+<ol class="simple">
+<li><p>Basic (Add block on start) &gt; House (Add block Initialize Smarthon multiple-sensor)</p></li>
+<li><p>Basic (Add block forever) &gt; Logic (Add block if…then…else, add 1 more if…then…else) &gt; For 1st if : Logic (Add block 0 = 0, change “0” to House “Get light”; “=” to “&lt;”; “0” to “50”) &gt; For then: House-More (Add block Set Yellow LED to intensity 0)</p></li>
+<li><p>For else if: Logic (Add block 0 = 0, change “0” to House “Get light”; “=” to “&gt;”; “0” to “450”) &gt; For then: House-More (Add block Set Yellow LED to intensity 0, change “0” to “1023”)</p></li>
+<li><p>For else: House-More (Add block Set Yellow LED to intensity 0, change “0” to “700”)
+<img alt="pic" src="../_images/P6_1.png" /></p></li>
+</ol>
+</div>
+<div class="section" id="hardware">
+<h2><span class="section-number">11.4. </span>Hardware<a class="headerlink" href="#hardware" title="Permalink to this headline">¶</a></h2>
+<ol class="simple">
+<li><p>Connect the <strong>Light sensor</strong> to Light Sensor port of Multiple Sensors</p></li>
+<li><p><strong>Download</strong> the code and transfer to micro:bit</p></li>
+<li><p>Plug the micro:bit into Multiple Sensors</p></li>
+<li><p>Connect Multiple Sensors and Multiple Actuators by connecting wire</p></li>
+<li><p>Connect the Yellow LED to Y port of the Multiple Actuators</p></li>
+<li><p>Use the finger to cover the light sensor to see if the LED light can be turn on / Shining a torch to the light sensor to see if the LED light can be turn off
+<img alt="pic" src="../_images/P6_2.png" />
+<span id="remarks" >* Try to conduct the experiment under the dark environment or sunshine and adjust the value of the sensors or LED light to fit the different projects. </span></p></li>
+</ol>
+</div>
 </div>
 
 

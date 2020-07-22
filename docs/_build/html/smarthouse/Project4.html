@@ -87,12 +87,17 @@
 <li class="toctree-l2"><a class="reference internal" href="01Introduction.html">1. Product Introduction</a></li>
 <li class="toctree-l2"><a class="reference internal" href="02Housekit.html">2. Smarthon Smart House Kit</a></li>
 <li class="toctree-l2"><a class="reference internal" href="05Hardware.html">3. Hardware User Guide</a></li>
-<li class="toctree-l2"><a class="reference internal" href="06ReadingSensors.html">4. Reading all the sensors on screen</a></li>
-<li class="toctree-l2"><a class="reference internal" href="07Program.html">5. How to program Smarthon Smart House Kit on micro:bit</a></li>
+<li class="toctree-l2"><a class="reference internal" href="06ReadingSensors.html">4. Reading all the sensors on screen: Button, Temperature &amp; Humidity sensor, Light sensor, Motion sensor, Flame sensor and Town gas sensor</a></li>
+<li class="toctree-l2"><a class="reference internal" href="07Program.html">5. Getting started: How to program Smarthon Plant Kit on micro:bit</a></li>
 <li class="toctree-l2"><a class="reference internal" href="Project1.html">6. Project 1: Read Sensors on micro:bit 25 LED lights</a></li>
 <li class="toctree-l2"><a class="reference internal" href="Project2.html">7. Project 2:  Control Multiple Actuators Lv1</a></li>
 <li class="toctree-l2"><a class="reference internal" href="Project3.html">8. Project 3:  Control Multiple Actuators Lv2</a></li>
-<li class="toctree-l2 current"><a class="current reference internal" href="#">9. Project 4:  Open the door</a></li>
+<li class="toctree-l2 current"><a class="current reference internal" href="#">9. Project 4:  Open the door</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#part-list">9.1. Part List</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#description">9.2. Description</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#steps">9.3. Steps</a></li>
+</ul>
+</li>
 <li class="toctree-l2"><a class="reference internal" href="Project5.html">10. Project 5:  Alarm System</a></li>
 <li class="toctree-l2"><a class="reference internal" href="Project6.html">11. Project 6: Light Automation</a></li>
 <li class="toctree-l2"><a class="reference internal" href="Project7.html">12. Project 7: Smart Motor Fan</a></li>
@@ -172,6 +177,47 @@
             
   <div class="section" id="project-4-open-the-door">
 <h1><span class="section-number">9. </span>Project 4:  Open the door<a class="headerlink" href="#project-4-open-the-door" title="Permalink to this headline">¶</a></h1>
+<p>Level: <img alt="level" src="../_images/level2.png" /></p>
+<div class="section" id="part-list">
+<h2><span class="section-number">9.1. </span>Part List<a class="headerlink" href="#part-list" title="Permalink to this headline">¶</a></h2>
+<ol class="simple">
+<li><p>Button X1</p></li>
+<li><p>180° servo X1</p></li>
+<li><p>Multiple Sensors for smart house X1</p></li>
+<li><p>Multiple Actuators for smart house X1</p></li>
+<li><p>Connecting Wire X1</p></li>
+<li><p>micro:bit X1</p></li>
+<li><p>USB Cable X1</p></li>
+<li><p>Lolly Sticks X2</p></li>
+</ol>
+</div>
+<div class="section" id="description">
+<h2><span class="section-number">9.2. </span>Description<a class="headerlink" href="#description" title="Permalink to this headline">¶</a></h2>
+<p>In project 4, you can learn how to use the button to open the door.</p>
+</div>
+<div class="section" id="steps">
+<h2><span class="section-number">9.3. </span>Steps<a class="headerlink" href="#steps" title="Permalink to this headline">¶</a></h2>
+<ol class="simple">
+<li><p>Basic (Add block on start) &gt; House (Add block Initialize Smarthon multiple-sensor)</p></li>
+<li><p>Basic (Add block forever) &gt; Logic (Add block if…then…else) &gt; For if : Logic (Add block 0 = 0, change “0” to House “Get button pressed”; “=” to “&lt;”; “0” to “500”)</p></li>
+<li><p>For then: House (Add block Set 180 Servo to degree 0, change “0” to “90”)</p></li>
+<li><p>For else: House (Add block Set 180 Servo to degree 0)</p></li>
+<li><p>Basic (Add block pause (ms) 100)</p></li>
+</ol>
+<p>*degrees of the servo have to be adjusted under the different condition
+<img alt="pic" src="../_images/P4_1.png" /></p>
+<ol class="simple">
+<li><p><strong>Download</strong> the code and transfer to micro:bit</p></li>
+<li><p>Plug the micro:bit into Multiple Sensors</p></li>
+<li><p>Connect Multiple Sensors and Multiple Actuators by connecting wire</p></li>
+<li><p>Put the horn into 180° servo</p></li>
+<li><p>Stick “+” with the lolly sticks and stick it up on the horn</p></li>
+<li><p>Connect the module to 180° servo port of the Multiple Actuators and install it to the door</p></li>
+<li><p>Pressed the button to open the door
+<img alt="pic" src="../_images/P4_2.png" />
+<span id="remarks" >* Try to use the other sensors, such as motion sensor to control the door. </span></p></li>
+</ol>
+</div>
 </div>
 
 

@@ -91,10 +91,17 @@
 <li class="toctree-l2"><a class="reference internal" href="06ReadingSensors.html">4. Reading all the sensors on screen</a></li>
 <li class="toctree-l2"><a class="reference internal" href="07Program.html">5. How to program Smarthon Plant Kit on micro:bit</a></li>
 <li class="toctree-l2"><a class="reference internal" href="Project1.html">6. Project 1: Read Sensors on micro:bit 25 LED lights</a></li>
-<li class="toctree-l2"><a class="reference internal" href="Project2.html">7. Project 2:  Control Actuators – micro:bit button A/B</a></li>
+<li class="toctree-l2"><a class="reference internal" href="Project2.html">7. Project 2:  Control Actuators - micro:bit button A/B</a></li>
 <li class="toctree-l2"><a class="reference internal" href="Project3.html">8. Project 3:  Smart LED Grow Light</a></li>
 <li class="toctree-l2"><a class="reference internal" href="Project4.html">9. Project 4:  Automatic Irrigation (watering)</a></li>
-<li class="toctree-l2 current"><a class="current reference internal" href="#">10. Project 5:  Smart Environment (temperature control)</a></li>
+<li class="toctree-l2 current"><a class="current reference internal" href="#">10. Project 5:  Smart Environment (temperature control)</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#part-list">10.1. Part List:</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#description">10.2. Description:</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#steps">10.3. Steps:</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#hardware">10.4. Hardware:</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#experiment">10.5. Experiment:</a></li>
+</ul>
+</li>
 <li class="toctree-l2"><a class="reference internal" href="Project6.html">11. Project 6: Automatic Humidity Control</a></li>
 <li class="toctree-l2"><a class="reference internal" href="08Appendix1.html">12. Appendix I (Answer of Reading Sensors)</a></li>
 </ul>
@@ -167,6 +174,50 @@
             
   <div class="section" id="project-5-smart-environment-temperature-control">
 <h1><span class="section-number">10. </span>Project 5:  Smart Environment (temperature control)<a class="headerlink" href="#project-5-smart-environment-temperature-control" title="Permalink to this headline">¶</a></h1>
+<p>Level: <img alt="level" src="../_images/level12.png" /></p>
+<div class="section" id="part-list">
+<h2><span class="section-number">10.1. </span>Part List:<a class="headerlink" href="#part-list" title="Permalink to this headline">¶</a></h2>
+<ol class="simple">
+<li><p>Temperature Sensor X1 (placed on Multiple Sensors for plant)</p></li>
+<li><p>Motor Fan X1</p></li>
+<li><p>Multiple Sensors for plant X1</p></li>
+<li><p>Multiple Actuators for plant X1</p></li>
+<li><p>Connecting Wire X1</p></li>
+<li><p>micro:bit X1</p></li>
+<li><p>USB Cable X1</p></li>
+</ol>
+</div>
+<div class="section" id="description">
+<h2><span class="section-number">10.2. </span>Description:<a class="headerlink" href="#description" title="Permalink to this headline">¶</a></h2>
+<p>In project 5, you can learn how to make a fan automation that allows you to control the ambient temperature.</p>
+</div>
+<div class="section" id="steps">
+<h2><span class="section-number">10.3. </span>Steps:<a class="headerlink" href="#steps" title="Permalink to this headline">¶</a></h2>
+<ol class="simple">
+<li><p>Basic (Add block on start) &gt; Plant (Add block Initialize Smarthon multiple-sensor)</p></li>
+<li><p>Basic (Add block forever) &gt; Logic (Add block if…then…else, add 1 more if…then…else) &gt; For 1st if : Logic (Add block “ ” and “ ”, 1st “ ” : Add block 0 = 0, change “0” to Plant “Get temperature(°C)”; “=” to “&gt;”; “0” to “27” ; 2nd “ ” : Add block 0 = 0, change “0” to Plant “Get temperature(°C)”; “=” to “&lt;”; “0” to “32”)</p></li>
+<li><p>For then: Plant-More (Add block Set Motor fan clockwisely to intensity 0, change “0” to “500” )</p></li>
+<li><p>For else if: Logic (Add block 0 = 0, change “0” to Plant “Get temperature(°C)”; “=” to “&gt;”; “0” to “32” ) &gt; For then: Plant-More (Add block Set Motor fan clockwisely to intensity 0, change “0” to “1023” )</p></li>
+<li><p>For else: Plant-More (Add block Set Motor fan clockwisely to intensity 0)</p></li>
+</ol>
+<p><img alt="pic" src="../_images/P5_11.png" /></p>
+</div>
+<div class="section" id="hardware">
+<h2><span class="section-number">10.4. </span>Hardware:<a class="headerlink" href="#hardware" title="Permalink to this headline">¶</a></h2>
+<ol class="simple">
+<li><p>Connect Multiple Sensors and Multiple Actuators by connecting wire</p></li>
+<li><p>Connect Motor fan to Motor Fan (D11/P14; D10/P13) port of Multiple Actuators</p></li>
+<li><p><strong>Download</strong> the code and transfer to micro:bit</p></li>
+<li><p>Plug the micro:bit into Multiple Sensors</p></li>
+</ol>
+<p><img alt="pic" src="../_images/P5_21.png" /></p>
+</div>
+<div class="section" id="experiment">
+<h2><span class="section-number">10.5. </span>Experiment:<a class="headerlink" href="#experiment" title="Permalink to this headline">¶</a></h2>
+<p>➢ How does temperature affect plant growth?
+➢ Does temperature affect seed growth?
+➢ Does motor fan affect plant transpiration rates?</p>
+</div>
 </div>
 
 

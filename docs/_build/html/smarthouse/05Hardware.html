@@ -36,7 +36,7 @@
   <link rel="stylesheet" href="../_static/css/custom.css" type="text/css" />
     <link rel="index" title="Index" href="../genindex.html" />
     <link rel="search" title="Search" href="../search.html" />
-    <link rel="next" title="4. Reading all the sensors on screen" href="06ReadingSensors.html" />
+    <link rel="next" title="4. Reading all the sensors on screen: Button, Temperature &amp; Humidity sensor, Light sensor, Motion sensor, Flame sensor and Town gas sensor" href="06ReadingSensors.html" />
     <link rel="prev" title="2. Smarthon Smart House Kit" href="02Housekit.html" /> 
 </head>
 
@@ -86,9 +86,13 @@
 <li class="toctree-l1 current"><a class="reference internal" href="index.html">Smarthon Smart House Kit for micro:bit</a><ul class="current">
 <li class="toctree-l2"><a class="reference internal" href="01Introduction.html">1. Product Introduction</a></li>
 <li class="toctree-l2"><a class="reference internal" href="02Housekit.html">2. Smarthon Smart House Kit</a></li>
-<li class="toctree-l2 current"><a class="current reference internal" href="#">3. Hardware User Guide</a></li>
-<li class="toctree-l2"><a class="reference internal" href="06ReadingSensors.html">4. Reading all the sensors on screen</a></li>
-<li class="toctree-l2"><a class="reference internal" href="07Program.html">5. How to program Smarthon Smart House Kit on micro:bit</a></li>
+<li class="toctree-l2 current"><a class="current reference internal" href="#">3. Hardware User Guide</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#a-the-sensors">3.1. A. The Sensors</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#the-actuators">3.2. The Actuators</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="06ReadingSensors.html">4. Reading all the sensors on screen: Button, Temperature &amp; Humidity sensor, Light sensor, Motion sensor, Flame sensor and Town gas sensor</a></li>
+<li class="toctree-l2"><a class="reference internal" href="07Program.html">5. Getting started: How to program Smarthon Plant Kit on micro:bit</a></li>
 <li class="toctree-l2"><a class="reference internal" href="Project1.html">6. Project 1: Read Sensors on micro:bit 25 LED lights</a></li>
 <li class="toctree-l2"><a class="reference internal" href="Project2.html">7. Project 2:  Control Multiple Actuators Lv1</a></li>
 <li class="toctree-l2"><a class="reference internal" href="Project3.html">8. Project 3:  Control Multiple Actuators Lv2</a></li>
@@ -172,6 +176,67 @@
             
   <div class="section" id="hardware-user-guide">
 <h1><span class="section-number">3. </span>Hardware User Guide<a class="headerlink" href="#hardware-user-guide" title="Permalink to this headline">¶</a></h1>
+<div class="section" id="a-the-sensors">
+<h2><span class="section-number">3.1. </span>A. The Sensors<a class="headerlink" href="#a-the-sensors" title="Permalink to this headline">¶</a></h2>
+<p>How to connect the sensor modules and Multiple Sensors for smart house?</p>
+<p>Please follow the instructions shown below to plug sensor modules into Multiple Sensors correctly to ensure all the modules work effectively.</p>
+<p>All Sensors:
+<img alt="pic" src="../_images/05AllSensors.png" /></p>
+<ol class="simple">
+<li><p>Light Sensor
+<img alt="small_pic" src="../_images/05LightSensor.png" /></p></li>
+<li><p>Temperature and Humidity Sensor
+<img alt="small_pic" src="../_images/05TempAndHumSensor.png" /></p></li>
+<li><p>Button
+<img alt="small_pic" src="../_images/05Button.png" /></p></li>
+<li><p>Motion Sensor
+<img alt="small_pic" src="../_images/05MotionSensor.png" /></p></li>
+<li><p>Flame Sensor
+<img alt="small_pic" src="../_images/05FlameSensor.png" /></p></li>
+<li><p>Town Gas Sensor
+<img alt="small_pic" src="../_images/05TownGasSensor.png" /></p></li>
+</ol>
+<p>Caution! 注意！</p>
+<p><strong>Incorrect Plug-in: 錯誤示範：</strong></p>
+<p>User should <strong>NOT</strong> plug the sensors into the Multiple Sensors for smart house at incorrect format as shown in below. Incorrectly plugging in the Multiple Sensors will cause:</p>
+<ol class="simple">
+<li><p>an error of the sensor value</p></li>
+<li><p><strong>electrical short circuit</strong> as well as damage the sensors or Multiple Sensors for smart house</p></li>
+</ol>
+<p>You must always be concerned with your own safety first and cut-off power supply and remove sensors under safe conditions</p>
+<p>使用者<strong>不應該</strong>以下圖所示方式，把傳感器插入多合一傳感器主板(Multiple Sensors for smart house) 。<strong>把傳感器錯誤插入</strong>，將讀取錯誤數值及有可能讓<strong>傳感器</strong>或<strong>多合一傳感器主板</strong>(Multiple Sensors for smart house) 出現<strong>冒煙及短路情況</strong>。請切勿嘗試！如有任何意外，使用者應首先確保自身安全，並只應在安全及可行情況下移除電源及傳感器！</p>
+<p><img alt="pic" src="../_images/05WrongEg.png" /></p>
+<p>Incorrect Plug-in Example 1:
+錯誤示範例子一：
+<img alt="small_pic" src="../_images/05IncorrectEg1.png" /></p>
+<p>Incorrect Plug-in Example 2:
+錯誤示範例子二：
+<img alt="small_pic" src="../_images/05IncorrectEg2.png" /></p>
+</div>
+<div class="section" id="the-actuators">
+<h2><span class="section-number">3.2. </span>The Actuators<a class="headerlink" href="#the-actuators" title="Permalink to this headline">¶</a></h2>
+<p>How to connect the actuator modules and Multiple Actuators for smart house?</p>
+<p>Please follow the instructions shown below to plug actuator modules into Multiple Actuators correctly to ensure all the modules work effectively.</p>
+<ol class="simple">
+<li><p>180° Servo
+<img alt="small_pic" src="../_images/05180Servo.png" /></p></li>
+<li><p>360° Servo
+<img alt="small_pic" src="../_images/05360Servo.png" /></p></li>
+<li><p>Motor Fan
+<img alt="small_pic" src="../_images/05MotorFan.png" /></p></li>
+<li><p>LED Light (Yellow)
+<img alt="small_pic" src="../_images/05LEDLightY.png" /></p></li>
+<li><p>LED Light (Green)
+<img alt="small_pic" src="../_images/05LEDLightG.png" /></p></li>
+<li><p>LED Light (Red)
+<img alt="small_pic" src="../_images/05LEDLightR.png" /></p></li>
+</ol>
+<p>Caution! 注意！</p>
+<p>Actuators will not work properly if users connect it with the Multiple Actuators incorrectly.
+錯誤地把驅動器插入多合一驅動器副板(Multiple Actuators for smart house) ，將令驅動器不能正常運件。</p>
+<p>Incorrect Plug-in Example: 例子：
+<img alt="small_pic" src="../_images/05IncorrectEg3.png" /></p>
+</div>
 </div>
 
 
@@ -182,7 +247,7 @@
   
     <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
       
-        <a href="06ReadingSensors.html" class="btn btn-neutral float-right" title="4. Reading all the sensors on screen" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
+        <a href="06ReadingSensors.html" class="btn btn-neutral float-right" title="4. Reading all the sensors on screen: Button, Temperature &amp; Humidity sensor, Light sensor, Motion sensor, Flame sensor and Town gas sensor" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
       
       
         <a href="02Housekit.html" class="btn btn-neutral float-left" title="2. Smarthon Smart House Kit" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>

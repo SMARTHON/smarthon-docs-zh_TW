@@ -87,10 +87,16 @@
 <li class="toctree-l2"><a class="reference internal" href="01Introduction.html">1. Product Introduction</a></li>
 <li class="toctree-l2"><a class="reference internal" href="02Housekit.html">2. Smarthon Smart House Kit</a></li>
 <li class="toctree-l2"><a class="reference internal" href="05Hardware.html">3. Hardware User Guide</a></li>
-<li class="toctree-l2"><a class="reference internal" href="06ReadingSensors.html">4. Reading all the sensors on screen</a></li>
-<li class="toctree-l2"><a class="reference internal" href="07Program.html">5. How to program Smarthon Smart House Kit on micro:bit</a></li>
+<li class="toctree-l2"><a class="reference internal" href="06ReadingSensors.html">4. Reading all the sensors on screen: Button, Temperature &amp; Humidity sensor, Light sensor, Motion sensor, Flame sensor and Town gas sensor</a></li>
+<li class="toctree-l2"><a class="reference internal" href="07Program.html">5. Getting started: How to program Smarthon Plant Kit on micro:bit</a></li>
 <li class="toctree-l2"><a class="reference internal" href="Project1.html">6. Project 1: Read Sensors on micro:bit 25 LED lights</a></li>
-<li class="toctree-l2 current"><a class="current reference internal" href="#">7. Project 2:  Control Multiple Actuators Lv1</a></li>
+<li class="toctree-l2 current"><a class="current reference internal" href="#">7. Project 2:  Control Multiple Actuators Lv1</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#part-list">7.1. Part List</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#description">7.2. Description</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#steps">7.3. Steps</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#hardware">7.4. Hardware</a></li>
+</ul>
+</li>
 <li class="toctree-l2"><a class="reference internal" href="Project3.html">8. Project 3:  Control Multiple Actuators Lv2</a></li>
 <li class="toctree-l2"><a class="reference internal" href="Project4.html">9. Project 4:  Open the door</a></li>
 <li class="toctree-l2"><a class="reference internal" href="Project5.html">10. Project 5:  Alarm System</a></li>
@@ -172,6 +178,42 @@
             
   <div class="section" id="project-2-control-multiple-actuators-lv1">
 <h1><span class="section-number">7. </span>Project 2:  Control Multiple Actuators Lv1<a class="headerlink" href="#project-2-control-multiple-actuators-lv1" title="Permalink to this headline">¶</a></h1>
+<p>Level: <img alt="level" src="../_images/level11.png" /></p>
+<div class="section" id="part-list">
+<h2><span class="section-number">7.1. </span>Part List<a class="headerlink" href="#part-list" title="Permalink to this headline">¶</a></h2>
+<ol class="simple">
+<li><p>Mono-tone buzzer X1 (placed on Multiple Actuators for smart house)</p></li>
+<li><p>Multiple Sensors for smart house X1</p></li>
+<li><p>Multiple Actuators for smart house X1</p></li>
+<li><p>Connecting Wire X1</p></li>
+<li><p>micro:bit X1</p></li>
+<li><p>USB Cable X1</p></li>
+</ol>
+</div>
+<div class="section" id="description">
+<h2><span class="section-number">7.2. </span>Description<a class="headerlink" href="#description" title="Permalink to this headline">¶</a></h2>
+<p>In project 2, you can learn how to use micro:bit button A &amp; B to control mono-tone buzzer as an example in this demo.</p>
+</div>
+<div class="section" id="steps">
+<h2><span class="section-number">7.3. </span>Steps<a class="headerlink" href="#steps" title="Permalink to this headline">¶</a></h2>
+<ol class="simple">
+<li><p>Basic (Add block on start) &gt; House (Add block Initialize Smarthon multiple-sensor)</p></li>
+<li><p>Input (Add block on button A is pressed) &gt; House-More (Add block Set Buzzer to intensity 0, change “0” to “1023”)</p></li>
+<li><p>Input (Add block on button A is pressed, change “A” into “B”) &gt; House (Add block Set Buzzer to intensity “0”)
+<img alt="pic" src="../_images/P2_2.png" /></p></li>
+</ol>
+</div>
+<div class="section" id="hardware">
+<h2><span class="section-number">7.4. </span>Hardware<a class="headerlink" href="#hardware" title="Permalink to this headline">¶</a></h2>
+<ol class="simple">
+<li><p><strong>Download</strong> the code and transfer to micro:bit.</p></li>
+<li><p>Plug the micro:bit into Multiple Sensors.</p></li>
+<li><p>Connect Multiple Sensors and Multiple Actuators by connecting wire.</p></li>
+<li><p>Pressed micro:bit button A to turn to the buzzer and button B to turn off the buzzer.
+<img alt="pic" src="../_images/P2_3.png" />
+<span id="remarks" >* Try to use on shake to turn on and off buzzer. </span></p></li>
+</ol>
+</div>
 </div>
 
 

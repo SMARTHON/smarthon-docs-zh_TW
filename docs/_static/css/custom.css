@@ -2,6 +2,11 @@ img[alt="pic"] {
   max-width:  500px; 
   display: block;
 }
+
+img[alt="small_pic"] { 
+  max-width:  300px; 
+  display: block;
+}
 img[alt="iotbit"] { 
   max-width:  500px; 
   display: block;

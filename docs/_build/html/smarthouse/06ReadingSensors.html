@@ -8,7 +8,7 @@
   
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   
-  <title>4. Reading all the sensors on screen &mdash; Smarthon Documentation 1.0 documentation</title>
+  <title>4. Reading all the sensors on screen: Button, Temperature &amp; Humidity sensor, Light sensor, Motion sensor, Flame sensor and Town gas sensor &mdash; Smarthon Documentation 1.0 documentation</title>
   
 
   
@@ -36,7 +36,7 @@
   <link rel="stylesheet" href="../_static/css/custom.css" type="text/css" />
     <link rel="index" title="Index" href="../genindex.html" />
     <link rel="search" title="Search" href="../search.html" />
-    <link rel="next" title="5. How to program Smarthon Smart House Kit on micro:bit" href="07Program.html" />
+    <link rel="next" title="5. Getting started: How to program Smarthon Plant Kit on micro:bit" href="07Program.html" />
     <link rel="prev" title="3. Hardware User Guide" href="05Hardware.html" /> 
 </head>
 
@@ -87,8 +87,8 @@
 <li class="toctree-l2"><a class="reference internal" href="01Introduction.html">1. Product Introduction</a></li>
 <li class="toctree-l2"><a class="reference internal" href="02Housekit.html">2. Smarthon Smart House Kit</a></li>
 <li class="toctree-l2"><a class="reference internal" href="05Hardware.html">3. Hardware User Guide</a></li>
-<li class="toctree-l2 current"><a class="current reference internal" href="#">4. Reading all the sensors on screen</a></li>
-<li class="toctree-l2"><a class="reference internal" href="07Program.html">5. How to program Smarthon Smart House Kit on micro:bit</a></li>
+<li class="toctree-l2 current"><a class="current reference internal" href="#">4. Reading all the sensors on screen: Button, Temperature &amp; Humidity sensor, Light sensor, Motion sensor, Flame sensor and Town gas sensor</a></li>
+<li class="toctree-l2"><a class="reference internal" href="07Program.html">5. Getting started: How to program Smarthon Plant Kit on micro:bit</a></li>
 <li class="toctree-l2"><a class="reference internal" href="Project1.html">6. Project 1: Read Sensors on micro:bit 25 LED lights</a></li>
 <li class="toctree-l2"><a class="reference internal" href="Project2.html">7. Project 2:  Control Multiple Actuators Lv1</a></li>
 <li class="toctree-l2"><a class="reference internal" href="Project3.html">8. Project 3:  Control Multiple Actuators Lv2</a></li>
@@ -151,7 +151,7 @@
         
           <li><a href="index.html">Smarthon Smart House Kit for micro:bit</a> &raquo;</li>
         
-      <li><span class="section-number">4. </span>Reading all the sensors on screen</li>
+      <li><span class="section-number">4. </span>Reading all the sensors on screen: Button, Temperature &amp; Humidity sensor, Light sensor, Motion sensor, Flame sensor and Town gas sensor</li>
     
     
       <li class="wy-breadcrumbs-aside">
@@ -170,8 +170,43 @@
           <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
            <div itemprop="articleBody">
             
-  <div class="section" id="reading-all-the-sensors-on-screen">
-<h1><span class="section-number">4. </span>Reading all the sensors on screen<a class="headerlink" href="#reading-all-the-sensors-on-screen" title="Permalink to this headline">¶</a></h1>
+  <div class="section" id="reading-all-the-sensors-on-screen-button-temperature-humidity-sensor-light-sensor-motion-sensor-flame-sensor-and-town-gas-sensor">
+<h1><span class="section-number">4. </span>Reading all the sensors on screen: Button, Temperature &amp; Humidity sensor, Light sensor, Motion sensor, Flame sensor and Town gas sensor<a class="headerlink" href="#reading-all-the-sensors-on-screen-button-temperature-humidity-sensor-light-sensor-motion-sensor-flame-sensor-and-town-gas-sensor" title="Permalink to this headline">¶</a></h1>
+<p>Part List:</p>
+<ol class="simple">
+<li><p>Multiple Sensors for plant X1</p></li>
+<li><p>Button X1</p></li>
+<li><p>Temperature &amp; Humidity sensor X1</p></li>
+<li><p>Light sensor X1</p></li>
+<li><p>Motion sensor X1</p></li>
+<li><p>Flame sensor X1</p></li>
+<li><p>Town gas sensor X1</p></li>
+<li><p>USB Cable</p></li>
+</ol>
+<p>You should learn how to read the sensor value which is the foundation of the other projects.</p>
+<ol class="simple">
+<li><p>Switch on the power button first (orange colour)</p></li>
+<li><p>Pressed the button in the right bottom corner of the Multiple Sensors for smart house (blue colour)</p></li>
+</ol>
+<p>It shows the instant value of the digital light sensor, temperature, humidity, button, motion, flame as well as town gas sensor.
+<img alt="small_pic" src="../_images/06HowtoRead.png" /></p>
+<p>Button, Light Sensor and Town gas sensor are shown as examples:</p>
+<ol class="simple">
+<li><p>Button
+<img alt="small_pic" src="../_images/06Button.png" />
+When you plug in the button, the screen shows 0 or 1 (small number); while when you pressed the button, the screen shows around 1020 - 1023 (large number). It indicates that a large number will be shown when you pressed the button.</p></li>
+<li><p>Light Sensor
+<img alt="small_pic" src="../_images/06LightSensor.png" />
+When there is a light turning on, the light sensor value is around 280-300; otherwise when you use a finger to cover the light sensor, it has increased into around 450-470. It reveals that the ambient lighting are getting brighter, the number of the light sensor value shown on the screen is getting smaller and vice versa.</p></li>
+<li><p>Town Gas Sensor
+<img alt="small_pic" src="../_images/06TownGasSensor.png" />
+In the normal condition, the town gas sensor value is around 30-50; while there is a town gas leakage, the number has increased from 200 – 850 subject to the concentration of different leakage velocities.</p></li>
+</ol>
+<p>* Please conduct a gas test in a well-ventilated area.</p>
+<p><strong>Reading the other three sensors:</strong>
+Temperature &amp; Humidity:____________________________________
+Motion sensor:_____________________________________________
+Flame sensor:______________________________________________</p>
 </div>
 
 
@@ -182,7 +217,7 @@
   
     <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
       
-        <a href="07Program.html" class="btn btn-neutral float-right" title="5. How to program Smarthon Smart House Kit on micro:bit" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
+        <a href="07Program.html" class="btn btn-neutral float-right" title="5. Getting started: How to program Smarthon Plant Kit on micro:bit" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
       
       
         <a href="05Hardware.html" class="btn btn-neutral float-left" title="3. Hardware User Guide" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
