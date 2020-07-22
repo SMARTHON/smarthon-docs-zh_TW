@@ -10,13 +10,13 @@ How to connect the actuator modules and Multiple Actuators for plant?
 Please follow the instructions shown below to plug actuator modules into Multiple Actuators correctly to ensure all the modules work effectively.
 
 1.LED grow light
-![pic](images/05LEDgrowlight.png)
+![small_pic](images/05LEDgrowlight.png)
 
 2.Water pump
-![pic](images/05Waterpump.jpg)
+![small_pic](images/05Waterpump.jpg)
 
 3.Motor fan
-![pic](images/05Motorfan.jpg)
+![small_pic](images/05Motorfan.jpg)
 
 4.Humidifier
-![pic](images/05Humidifier.jpg)
+![small_pic](images/05Humidifier.jpg)

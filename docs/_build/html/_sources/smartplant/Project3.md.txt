@@ -26,18 +26,18 @@ In project 3, you can learn how to control LED grow light by digital light senso
 
 ## Hardware:
 
-5. Connect Multiple Sensors and Multiple Actuators by connecting wire
-6. Connect USB Base (for LED Grow Light) to 5V LED Grow Light (D7/P16) port of Multiple Actuators
-7. Connect **LED Grow Light** and USB Base by **USB Stand** (for LED Grow Light)
-8. Adjust the USB Stand to fit the plant
-9. **Download** the code and transfer to micro:bit
-10. Plug the micro:bit into Multiple Sensors
-11. Try to cover the light sensor by hand to test if the LED Grow Light works properly
+1. Connect Multiple Sensors and Multiple Actuators by connecting wire
+2. Connect USB Base (for LED Grow Light) to 5V LED Grow Light (D7/P16) port of Multiple Actuators
+3. Connect **LED Grow Light** and USB Base by **USB Stand** (for LED Grow Light)
+4. Adjust the USB Stand to fit the plant
+5. **Download** the code and transfer to micro:bit
+6. Plug the micro:bit into Multiple Sensors
+7. Try to cover the light sensor by hand to test if the LED Grow Light works properly
 
-![pic](images/P3_2.png)
+![small_pic](images/P3_2.png)
 
 ## Experiment:
-➢Do different colours of LED grow lights affect the direction of plant growth?
-➢ Do different colours of LED grow lights affect the rate of photosynthesis?
-➢ Do different types of LED grow lights affect plant growth?
-➢ What is the difference between sunlight and LED grow light among the plant growth?
+* Do different colours of LED grow lights affect the direction of plant growth?
+* Do different colours of LED grow lights affect the rate of photosynthesis?
+* Do different types of LED grow lights affect plant growth?
+* What is the difference between sunlight and LED grow light among the plant growth?

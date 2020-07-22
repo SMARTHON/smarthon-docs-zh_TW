@@ -98,7 +98,15 @@
 <li class="toctree-l2"><a class="reference internal" href="Project7.html">12. Project 7: Smart Motor Fan</a></li>
 <li class="toctree-l2"><a class="reference internal" href="Project8.html">13. Project 8:  Fire Alarm</a></li>
 <li class="toctree-l2"><a class="reference internal" href="Project9.html">14. Project 9:  Kitchen Safety</a></li>
-<li class="toctree-l2 current"><a class="current reference internal" href="#">15. Project 10:  Remote control on the curtain</a></li>
+<li class="toctree-l2 current"><a class="current reference internal" href="#">15. Project 10:  Remote control on the curtain</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#part-list">15.1. Part List</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#description">15.2. Description</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#sender-steps">15.3. Sender Steps</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#hardware">15.4. Hardware</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#receiver-steps">15.5. Receiver Steps</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#id1">15.6. Hardware</a></li>
+</ul>
+</li>
 <li class="toctree-l2"><a class="reference internal" href="08Appendix1.html">16. Appendix I</a></li>
 <li class="toctree-l2"><a class="reference internal" href="09Maker.html">17. Maker: Control other actuators and sensors</a></li>
 </ul>
@@ -172,6 +180,64 @@
             
   <div class="section" id="project-10-remote-control-on-the-curtain">
 <h1><span class="section-number">15. </span>Project 10:  Remote control on the curtain<a class="headerlink" href="#project-10-remote-control-on-the-curtain" title="Permalink to this headline">¶</a></h1>
+<p>Level: <img alt="level" src="../_images/level5.png" /></p>
+<div class="section" id="part-list">
+<h2><span class="section-number">15.1. </span>Part List<a class="headerlink" href="#part-list" title="Permalink to this headline">¶</a></h2>
+<ol class="simple">
+<li><p>360° servo X1</p></li>
+<li><p>Multiple Sensors for smart house X1</p></li>
+<li><p>Multiple Actuators for smart house X1</p></li>
+<li><p>Connecting Wire X1</p></li>
+<li><p>micro:bit X2</p></li>
+<li><p>USB Cable X2</p></li>
+</ol>
+</div>
+<div class="section" id="description">
+<h2><span class="section-number">15.2. </span>Description<a class="headerlink" href="#description" title="Permalink to this headline">¶</a></h2>
+<p>In project 10, you will need 2 microbit. One is sender (controller). Another is the receiver (curtain machine). You can learn how to use micro:bit to remote control SMARTHON main board with curtain (360 servo) up and down.</p>
+</div>
+<div class="section" id="sender-steps">
+<h2><span class="section-number">15.3. </span>Sender Steps<a class="headerlink" href="#sender-steps" title="Permalink to this headline">¶</a></h2>
+<ol class="simple">
+<li><p>Basic (Add block on start) &gt; Basic (Add block show icon - heart)</p></li>
+<li><p>Basic (Add block on start) &gt; (Add block radio set group 0, change 0 to 1)</p></li>
+<li><p>Input (Add block on button A is pressed) &gt; Radio (Add block radio send number 0, change 0 to 200)</p></li>
+<li><p>Input (Add block on button A is pressed &gt; change “A” into “B” ) &gt; Radio (Add block radio send number 0, change 0 to 201)
+<img alt="pic" src="../_images/P10_1.png" /></p></li>
+</ol>
+</div>
+<div class="section" id="hardware">
+<h2><span class="section-number">15.4. </span>Hardware<a class="headerlink" href="#hardware" title="Permalink to this headline">¶</a></h2>
+<ol class="simple">
+<li><p><strong>Download</strong> the code and transfer to micro:bit</p></li>
+<li><p>Connect USB with micro:bit</p></li>
+<li><p>Send the signal with button A/B pressed
+<img alt="pic" src="../_images/P10_2.png" /></p></li>
+</ol>
+</div>
+<div class="section" id="receiver-steps">
+<h2><span class="section-number">15.5. </span>Receiver Steps<a class="headerlink" href="#receiver-steps" title="Permalink to this headline">¶</a></h2>
+<ol class="simple">
+<li><p>Basic (Add block on start) &gt; Basic (Add block show icon - heart)</p></li>
+<li><p>Basic (Add block on start) &gt; (Add block radio set group 0, change 0 to 1)</p></li>
+<li><p>Basic (Add block on start) &gt; House (Add block Initialize Smarthon multiple-sensor)</p></li>
+<li><p>Radio (Add block on radio received receivedNumber) &gt; Logic (Add block if…then…else) &gt; For if : Logic (Add block 0 = 0, change “0” to Variables “receivedNumber”; “0” to “200”)</p></li>
+<li><p>For then: House (Add block Set 360 servo to degree 0, change 0 to 180); Basic (Add block pause (ms) 100, change “100” to “500”); House (Add block Set 360 servo to degree 0, change 0 to 90)</p></li>
+<li><p>For else: House (Add block Set 360 servo to degree 0); Basic (Add block pause (ms) 100, change “100” to “500”); House (Add block Set 360 servo to degree 0, change 0 to 90)Basic (Add block pause (ms) 100)
+<img alt="pic" src="../_images/P10_3.png" /></p></li>
+</ol>
+</div>
+<div class="section" id="id1">
+<h2><span class="section-number">15.6. </span>Hardware<a class="headerlink" href="#id1" title="Permalink to this headline">¶</a></h2>
+<ol class="simple">
+<li><p><strong>Download</strong> the code and transfer to micro:bit</p></li>
+<li><p>Plug the micro:bit into Multiple Sensors</p></li>
+<li><p>Connect Multiple Sensors and Multiple Actuators by connecting wire</p></li>
+<li><p>Connect 360° servo module to 360 servo port of the Multiple Actuators
+<img alt="pic" src="../_images/P10_4.png" />
+<span id="remarks" >* Let’s put on the hardware into the house model. </span></p></li>
+</ol>
+</div>
 </div>
 
 

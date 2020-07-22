@@ -95,7 +95,13 @@
 <li class="toctree-l2"><a class="reference internal" href="Project4.html">9. Project 4:  Open the door</a></li>
 <li class="toctree-l2"><a class="reference internal" href="Project5.html">10. Project 5:  Alarm System</a></li>
 <li class="toctree-l2"><a class="reference internal" href="Project6.html">11. Project 6: Light Automation</a></li>
-<li class="toctree-l2 current"><a class="current reference internal" href="#">12. Project 7: Smart Motor Fan</a></li>
+<li class="toctree-l2 current"><a class="current reference internal" href="#">12. Project 7: Smart Motor Fan</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#part-list">12.1. Part List</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#description">12.2. Description</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#steps">12.3. Steps</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#hardware">12.4. Hardware</a></li>
+</ul>
+</li>
 <li class="toctree-l2"><a class="reference internal" href="Project8.html">13. Project 8:  Fire Alarm</a></li>
 <li class="toctree-l2"><a class="reference internal" href="Project9.html">14. Project 9:  Kitchen Safety</a></li>
 <li class="toctree-l2"><a class="reference internal" href="Project10.html">15. Project 10:  Remote control on the curtain</a></li>
@@ -172,6 +178,46 @@
             
   <div class="section" id="project-7-smart-motor-fan">
 <h1><span class="section-number">12. </span>Project 7: Smart Motor Fan<a class="headerlink" href="#project-7-smart-motor-fan" title="Permalink to this headline">¶</a></h1>
+<p>Level: <img alt="level" src="../_images/level3.png" /></p>
+<div class="section" id="part-list">
+<h2><span class="section-number">12.1. </span>Part List<a class="headerlink" href="#part-list" title="Permalink to this headline">¶</a></h2>
+<ol class="simple">
+<li><p>Temperature/Humidity sensor X1</p></li>
+<li><p>Motor Fan X1</p></li>
+<li><p>Multiple Sensors for smart house X1</p></li>
+<li><p>Multiple Actuators for smart house X1</p></li>
+<li><p>Connecting Wire X1</p></li>
+<li><p>micro:bit X1</p></li>
+<li><p>USB Cable X1</p></li>
+</ol>
+</div>
+<div class="section" id="description">
+<h2><span class="section-number">12.2. </span>Description<a class="headerlink" href="#description" title="Permalink to this headline">¶</a></h2>
+<p>In project 7, you can learn how to make an smart fan automation that allows you to design a smarter and more comfortable house.</p>
+</div>
+<div class="section" id="steps">
+<h2><span class="section-number">12.3. </span>Steps<a class="headerlink" href="#steps" title="Permalink to this headline">¶</a></h2>
+<ol class="simple">
+<li><p>Basic (Add block on start) &gt; House (Add block Initialize Smarthon multiple-sensor)</p></li>
+<li><p>Basic (Add block forever) &gt; Logic (Add block if…then…else, add 1 more if…then…else) &gt; For 1st if : Logic (Add block 0 = 0, change “0” to House “Get temperature(°C)”; “=” to “&gt;”; “0” to “26”) &gt; For then: House-More (Add block Set Motor fan clockwisely to intensity 0, change “0” to “600”)</p></li>
+<li><p>For else if: Logic (Add block 0 = 0, change “0” to House “Get temperature(°C)”; “=” to “&gt;”; “0” to “30”) &gt; For then: House-More (Add block Set Motor fan anti-clockwisely to intensity 0, change “0” to “1023”)</p></li>
+<li><p>For else: House-More (Add block Set Motor fan clockwisely to intensity 0)
+<img alt="pic" src="../_images/P7_1.png" /></p></li>
+</ol>
+</div>
+<div class="section" id="hardware">
+<h2><span class="section-number">12.4. </span>Hardware<a class="headerlink" href="#hardware" title="Permalink to this headline">¶</a></h2>
+<ol class="simple">
+<li><p>Connect the Temperature/Humidity sensor to Temperature Sensor port of Multiple Sensors</p></li>
+<li><p>Download the code and transfer to micro:bit</p></li>
+<li><p>Plug the micro:bit into Multiple Sensors</p></li>
+<li><p>Connect Multiple Sensors and Multiple Actuators by connecting wire</p></li>
+<li><p>Connect the Motor fan to Motor port of the Multiple Actuators</p></li>
+<li><p>Conduct the test to see if the motor fan can be turn on &gt; 26°C
+<img alt="pic" src="../_images/P7_2.png" />
+<span id="remarks" >* Can you think of other possible combination for turning on the motor fan? Try to do it. </span></p></li>
+</ol>
+</div>
 </div>
 
 

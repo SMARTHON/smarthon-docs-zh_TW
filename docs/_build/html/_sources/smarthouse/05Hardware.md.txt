@@ -26,7 +26,7 @@ All Sensors:
 6. Town Gas Sensor
 ![small_pic](images/05TownGasSensor.png)
 
-Caution! 注意！
+<span id="remarks"> Caution! 注意！ </span>
 
 **Incorrect Plug-in: 錯誤示範：**
 
@@ -41,12 +41,12 @@ You must always be concerned with your own safety first and cut-off power supply
 
 ![pic](images/05WrongEg.png)
 
-Incorrect Plug-in Example 1: 
-錯誤示範例子一：
+<span id="remarks"> Incorrect Plug-in Example 1: </span>
+<span id="remarks"> 錯誤示範例子一： </span>
 ![small_pic](images/05IncorrectEg1.png)
 
-Incorrect Plug-in Example 2: 
-錯誤示範例子二：
+<span id="remarks"> Incorrect Plug-in Example 2: </span>
+<span id="remarks"> 錯誤示範例子二： </span>
 ![small_pic](images/05IncorrectEg2.png)
 
 ## The Actuators
@@ -73,7 +73,7 @@ Please follow the instructions shown below to plug actuator modules into Multipl
 6. LED Light (Red)
 ![small_pic](images/05LEDLightR.png)
 
-Caution! 注意！
+<span id="remarks"> Caution! 注意！ </span>
 
 Actuators will not work properly if users connect it with the Multiple Actuators incorrectly.
 錯誤地把驅動器插入多合一驅動器副板(Multiple Actuators for smart house) ，將令驅動器不能正常運件。

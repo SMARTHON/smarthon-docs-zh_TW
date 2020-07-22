@@ -96,7 +96,13 @@
 <li class="toctree-l2"><a class="reference internal" href="Project5.html">10. Project 5:  Alarm System</a></li>
 <li class="toctree-l2"><a class="reference internal" href="Project6.html">11. Project 6: Light Automation</a></li>
 <li class="toctree-l2"><a class="reference internal" href="Project7.html">12. Project 7: Smart Motor Fan</a></li>
-<li class="toctree-l2 current"><a class="current reference internal" href="#">13. Project 8:  Fire Alarm</a></li>
+<li class="toctree-l2 current"><a class="current reference internal" href="#">13. Project 8:  Fire Alarm</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#part-list">13.1. Part List</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#description">13.2. Description</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#steps">13.3. Steps</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#hardware">13.4. Hardware</a></li>
+</ul>
+</li>
 <li class="toctree-l2"><a class="reference internal" href="Project9.html">14. Project 9:  Kitchen Safety</a></li>
 <li class="toctree-l2"><a class="reference internal" href="Project10.html">15. Project 10:  Remote control on the curtain</a></li>
 <li class="toctree-l2"><a class="reference internal" href="08Appendix1.html">16. Appendix I</a></li>
@@ -172,6 +178,49 @@
             
   <div class="section" id="project-8-fire-alarm">
 <h1><span class="section-number">13. </span>Project 8:  Fire Alarm<a class="headerlink" href="#project-8-fire-alarm" title="Permalink to this headline">¶</a></h1>
+<p>Level: <img alt="level" src="../_images/level2.png" /></p>
+<div class="section" id="part-list">
+<h2><span class="section-number">13.1. </span>Part List<a class="headerlink" href="#part-list" title="Permalink to this headline">¶</a></h2>
+<ol class="simple">
+<li><p>Flame sensor x 1</p></li>
+<li><p>Red LED X1</p></li>
+<li><p>Green LED X1</p></li>
+<li><p>Multiple Sensors for smart house X1</p></li>
+<li><p>Multiple Actuators for smart house X1</p></li>
+<li><p>Connecting Wire X1</p></li>
+<li><p>micro:bit X1</p></li>
+<li><p>USB Cable X1</p></li>
+</ol>
+</div>
+<div class="section" id="description">
+<h2><span class="section-number">13.2. </span>Description<a class="headerlink" href="#description" title="Permalink to this headline">¶</a></h2>
+<p>In project 8, you can learn how to use micro:bit to make Alert LED (Red/Green). If the flame is detected, the Red LED will be turned on, the Green LED will be turned off. If there is no flame, Green LED is turned on and Red LED will be turned off.</p>
+</div>
+<div class="section" id="steps">
+<h2><span class="section-number">13.3. </span>Steps<a class="headerlink" href="#steps" title="Permalink to this headline">¶</a></h2>
+<ol class="simple">
+<li><p>Basic (Add block on start) &gt; House (Add block Initialize Smarthon multiple-sensor)</p></li>
+<li><p>Basic (Add block forever) &gt; Logic (Add block if…then…else) &gt; For if : Logic (Add block 0 = 0, change “0” to House “Get flame”; “=” to “&lt;”; “0” to “300”)</p></li>
+<li><p>For then: House (Add block Set RED LED to intensity 0, change 0 to 1023)</p></li>
+<li><p>For then: House (Add block Set Green LED to intensity 0)</p></li>
+<li><p>For else: House (Add block Set RED LED to intensity 0)</p></li>
+<li><p>For else: House (Add block Set GREEN LED to intensity 0, change 0 to 1023)</p></li>
+<li><p>Basic (Add block pause (ms) 100)
+<img alt="pic" src="../_images/P8_1.png" /></p></li>
+</ol>
+</div>
+<div class="section" id="hardware">
+<h2><span class="section-number">13.4. </span>Hardware<a class="headerlink" href="#hardware" title="Permalink to this headline">¶</a></h2>
+<ol class="simple">
+<li><p><strong>Download</strong> the code and transfer to micro:bit</p></li>
+<li><p>Plug the micro:bit into Multiple Sensors</p></li>
+<li><p>Connect Multiple Sensors and Multiple Actuators by connecting wire</p></li>
+<li><p>Connect the RED LED and GREEN LED module to the corresponding port of the Multiple Actuators</p></li>
+<li><p>You can test it by lighter
+<img alt="pic" src="../_images/P8_2.png" />
+<span id="remarks" >* Try to make some blinking of the RED LED and buzzer turned on if there is a fire.</span></p></li>
+</ol>
+</div>
 </div>
 
 

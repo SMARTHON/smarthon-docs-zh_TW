@@ -21,21 +21,24 @@ It shows the instant value of the digital light sensor, temperature, humidity, b
 Button, Light Sensor and Town gas sensor are shown as examples:
 
 1. Button
-![small_pic](images/06Button.png)
+![pic](images/06Button.png)
 When you plug in the button, the screen shows 0 or 1 (small number); while when you pressed the button, the screen shows around 1020 - 1023 (large number). It indicates that a large number will be shown when you pressed the button.
 
 2. Light Sensor
-![small_pic](images/06LightSensor.png)
+![pic](images/06LightSensor.png)
 When there is a light turning on, the light sensor value is around 280-300; otherwise when you use a finger to cover the light sensor, it has increased into around 450-470. It reveals that the ambient lighting are getting brighter, the number of the light sensor value shown on the screen is getting smaller and vice versa.
 
 3. Town Gas Sensor
-![small_pic](images/06TownGasSensor.png)
+![pic](images/06TownGasSensor.png)
 In the normal condition, the town gas sensor value is around 30-50; while there is a town gas leakage, the number has increased from 200 – 850 subject to the concentration of different leakage velocities.
 
 \* Please conduct a gas test in a well-ventilated area.
 
 **Reading the other three sensors:**
+
 Temperature & Humidity:____________________________________
+
 Motion sensor:_____________________________________________
+
 Flame sensor:______________________________________________
 

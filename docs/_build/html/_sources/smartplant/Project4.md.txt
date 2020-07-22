@@ -31,11 +31,11 @@ In project 4, you can learn how to watering the plant automatically by soil mois
 10. **Download** the code and transfer to micro:bit
 11. Plug the micro:bit into Multiple Sensors
 
-![pic](images/P4_2.png)
+![small_pic](images/P4_2.png)
 
 ## Experiment:
-➢ How does soil moisture level affect seed germination?
-➢ Does soil moisture level affect the size of leave?
-➢ Does soil moisture level affect photosynthesis or respiration of the plant?
-➢ Does soil moisture level affect root growth?
-➢ Does water salinity affect plant growth?
+* How does soil moisture level affect seed germination?
+* Does soil moisture level affect the size of leave?
+* Does soil moisture level affect photosynthesis or respiration of the plant?
+* Does soil moisture level affect root growth?
+* Does water salinity affect plant growth?
