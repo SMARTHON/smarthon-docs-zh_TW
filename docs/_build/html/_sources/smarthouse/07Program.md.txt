@@ -1,6 +1,6 @@
-# Getting started: How to program Smarthon Plant Kit on micro:bit
+# Getting started: How to program Smarthon Smart House Kit on micro:bit
 
-To Program Smarthon modules with micro:bit, you need to add the Smarthon Plant Kit packages to the BBC micro:bit makecode platform and initialize it first.
+To Program Smarthon modules with micro:bit, you need to add the Smarthon Smart House Kit packages to the BBC micro:bit makecode platform and initialize it first.
 
 **Steps:**
 
@@ -10,7 +10,7 @@ To Program Smarthon modules with micro:bit, you need to add the Smarthon Plant K
 2. Search “https://github.com/SMARTHON/multiple-sensors-house”
 ![pic](images/07Step2.png)
 
-3. Clicked “multiple sensors” and you can see “House” package has been successfully added under “Led”.
+3. Clicked “multiple-sensors-house” and you can see “House” package has been successfully added under “Led”.
 ![pic](images/07Step3_s.png)
 
 4. Initialize Smarthon Smart House Kit to add all the functions
