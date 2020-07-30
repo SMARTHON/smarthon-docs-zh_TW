@@ -1,4 +1,4 @@
-# Project 2:  Control Actuators - micro:bit button A/B
+# Project 2:  Control Actuators - button A/B
 Level: ![level](images/level1.png)
 
 ## Part List:

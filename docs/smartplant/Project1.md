@@ -1,12 +1,14 @@
-# Project 1: Read Sensors on micro:bit 25 LED lights
+# Project 1: Read Sensors on micro:bit LED lights
 Level: ![level](images/level1.png)
+
 ## Part List:
-* Temperature/Humidity Sensor X1
-* Multiple Sensors for plant X1
-* Multiple Actuators for plant X1
-* Connecting Wire X1
-* micro:bit X1
-* USB Cable X1
+
+1. Temperature/Humidity Sensor X1
+2. Multiple Sensors for plant X1
+3. Multiple Actuators for plant X1
+4. Connecting Wire X1
+5. micro:bit X1
+6. USB Cable X1
 
 ## Description:
 You can learn how to get the value of the sensor and show on micro:bit LED. Temperature/Humidity sensor will be illustrated in this demo.
