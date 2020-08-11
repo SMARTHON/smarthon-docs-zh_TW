@@ -36,7 +36,7 @@
   <link rel="stylesheet" href="../_static/css/custom.css" type="text/css" />
     <link rel="index" title="Index" href="../genindex.html" />
     <link rel="search" title="Search" href="../search.html" />
-    <link rel="next" title="4. Chapter 2: Upload Data to ThingSpeak" href="chapter2.html" />
+    <link rel="next" title="4. Chapter 2: [Data visualization] Upload Data to ThingSpeak" href="chapter2.html" />
     <link rel="prev" title="2. Smarthon IoT:bit Introduction" href="IOTbit.html" /> 
 </head>
 
@@ -85,9 +85,12 @@
 <li class="toctree-l1 current"><a class="reference internal" href="index.html">Smarthon Smart City IoT Starter Kit</a><ul class="current">
 <li class="toctree-l2"><a class="reference internal" href="Introduction.html">1. About Smarthon Smart City IoT Starter Kit</a></li>
 <li class="toctree-l2"><a class="reference internal" href="IOTbit.html">2. Smarthon IoT:bit Introduction</a></li>
-<li class="toctree-l2 current"><a class="current reference internal" href="#">3. Chapter 1: Connect micro:bit to the Wi-Fi</a></li>
-<li class="toctree-l2"><a class="reference internal" href="chapter2.html">4. Chapter 2: Upload Data to ThingSpeak</a></li>
-<li class="toctree-l2"><a class="reference internal" href="chapter3.html">5. Chapter 3: Send Email by IFTTT</a></li>
+<li class="toctree-l2 current"><a class="current reference internal" href="#">3. Chapter 1: Connect micro:bit to the Wi-Fi</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#test-it">3.1. Test it!</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="chapter2.html">4. Chapter 2: [Data visualization] Upload Data to ThingSpeak</a></li>
+<li class="toctree-l2"><a class="reference internal" href="chapter3.html">5. Chapter 3: [IoT Services] Send Email by IFTTT</a></li>
 <li class="toctree-l2"><a class="reference internal" href="chapter4.html">6. Chapter 4: Control your micro:bit by App inventor 2</a></li>
 <li class="toctree-l2"><a class="reference internal" href="chapter5.html">7. Chapter 5: WI-FI Group communication</a></li>
 <li class="toctree-l2"><a class="reference internal" href="chapter6.html">8. Chapter 6: Access Internet information by IFTTT</a></li>
@@ -175,24 +178,28 @@
   <div class="section" id="chapter-1-connect-micro-bit-to-the-wi-fi">
 <h1><span class="section-number">3. </span>Chapter 1: Connect micro:bit to the Wi-Fi<a class="headerlink" href="#chapter-1-connect-micro-bit-to-the-wi-fi" title="Permalink to this headline">¶</a></h1>
 <ol class="simple">
-<li><p>Choose IoT -&gt; Initialize Wi-Fi Extension Board and OLED
-<img alt="pic" src="../_images/Ch1_01.jpg" />
- </p></li>
-<li><p>Choose Basic -&gt; Pause (ms), choose 5000 (5000ms is equal to 5s, it is the initial time for Wi-Fi set up)
-<img alt="pic" src="../_images/Ch1_02.jpg" />
- </p></li>
-<li><p>Choose IoT -&gt; Set Wi-Fi to ssid “”, pwd “”. Enter your Wi-Fi name and password
-<img alt="pic" src="../_images/Ch1_02.jpg" />
- </p></li>
-<li><p>Test it!
-<img alt="pic" src="../_images/Ch1_03.jpg" /></p></li>
+<li><p>Before you start, you need to initialize the WiFi IoT:bit.
+Choose WiFi IoT:bit -&gt; Initialize WiFi IoT:bit and OLED
+<img alt="pic" src="../_images/Ch1_01.png" /></p></li>
+<li><p>After initializing, you can connect to the WiFi:
+Choose WiFi IoT:bit -&gt; Set Wi-Fi to ssid “”, pwd “”. Enter your Wi-Fi name and password
+<img alt="pic" src="../_images/Ch1_02.png" /></p></li>
+<li><p>“On WiFi connected” is an event handler, it will be triggered once after connected with WiFi.
+<img alt="pic" src="../_images/Ch1_03.png" /></p></li>
+<li><p>Choose Basic -&gt; show icon “heart” inside “On WiFi connected”
+<img alt="pic" src="../_images/Ch1_04.png" /></p></li>
 </ol>
+<div class="section" id="test-it">
+<h2><span class="section-number">3.1. </span>Test it!<a class="headerlink" href="#test-it" title="Permalink to this headline">¶</a></h2>
 <ul class="simple">
-<li><p>Load the program to the micro:bit and connect the micro:bit to the booster.
-<img alt="pic" src="../_images/Ch1_04.jpg" /></p></li>
+<li><p>Load the program to the micro:bit and connect the micro:bit to WiFi IoT:bit.
+<img alt="pic" src="../_images/Ch1_05.png" /></p></li>
+<li><p>Wi-Fi IoT:bit will start to connect to internet, when the connection is successful, the IP Address would be shown.
+<img alt="pic" src="../_images/Ch1_06.png" /></p></li>
+<li><p>An icon “heart” will be shown on LED after WiFi is connected successfully.
+<img alt="pic" src="../_images/Ch1_07.png" /></p></li>
 </ul>
-<p><span id="remarks" >*  Wi-Fi booster will start to connect to internet, when the connection is successful, the IP address would be shown.
-</span></p>
+</div>
 </div>
 
 
@@ -203,7 +210,7 @@
   
     <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
       
-        <a href="chapter2.html" class="btn btn-neutral float-right" title="4. Chapter 2: Upload Data to ThingSpeak" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
+        <a href="chapter2.html" class="btn btn-neutral float-right" title="4. Chapter 2: [Data visualization] Upload Data to ThingSpeak" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
       
       
         <a href="IOTbit.html" class="btn btn-neutral float-left" title="2. Smarthon IoT:bit Introduction" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>

@@ -15,11 +15,10 @@ No | Component
 3|White LED light
 4|Multi-Colour LED (WS2812)
 5|180&deg; Servo
-6|Buzzer
-7|Ultrasonic Distance Sensor (unit: &#181;s/cm/inches)
-8|Light Sensor (0-100%)
-9|Temperature (unit: &deg;C), Humidity sensor (0-100%)
-10|PIR Motion Sensor (triggered or not)
-11|Raindrop sensor (0-100%)
-12|Noise sensor (Sound) (unit: dB)
+6|Ultrasonic Distance Sensor (unit: &#181;s/cm/inches)
+7|Light Sensor (0-100%)
+8|Temperature (unit: &deg;C), Humidity sensor (0-100%)
+9|PIR Motion Sensor (triggered or not)
+10|Raindrop sensor (0-100%)
+11|Noise sensor (Sound) (unit: dB)
 

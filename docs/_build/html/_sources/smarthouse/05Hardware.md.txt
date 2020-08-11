@@ -71,7 +71,6 @@ Please follow the instructions shown below to plug actuator modules into Multipl
 ![small_pic](images/05LEDLightR.png)
 
 <span id="remarks"> Caution! </span>
-
 Actuators will not work properly if users connect it with the Multiple Actuators incorrectly.
 
 Incorrect Plug-in Example:
