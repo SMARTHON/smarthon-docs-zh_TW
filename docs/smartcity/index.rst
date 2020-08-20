@@ -4,7 +4,7 @@ Smarthon Smart City IoT Starter Kit
 
 .. toctree::
     :maxdepth: 1
-    :numbered: 2
+    :numbered: 3
 
     Introduction.md
     IOTbit.md

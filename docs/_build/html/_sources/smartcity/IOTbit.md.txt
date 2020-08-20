@@ -43,12 +43,17 @@ I/O (For Input and Output)|P0|-|
 ## Getting Started: Add the extension
 To Program Smarthon modules with micro:bit, you need to add the Smarthon IoT packages to the BBC micro:bit makecode platform and initialize it first. 
 
-### Steps
-1. Find the “Extensions” block at the bottom
+
+<span id="subtitle" >Step 1</span>
+* Find the “Extensions” block at the bottom
 ![pic](images/ext_01.png)
-2. Search https://github.com/smarthon/pxt-smartcity and click “smartcity”
+
+<span id="subtitle" >Step 2</span>
+* Search https://github.com/smarthon/pxt-smartcity and click “smartcity”
 ![pic](images/ext_02.png)
-3. “SmartCity” & “WiFi IoT:bit” package has been added successfully.
+
+<span id="subtitle" >Step 3</span>
+* “SmartCity” & “WiFi IoT:bit” package has been added successfully.
 ![pic](images/ext_03.png)
 
 

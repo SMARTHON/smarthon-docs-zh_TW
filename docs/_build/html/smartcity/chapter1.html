@@ -8,7 +8,7 @@
   
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   
-  <title>3. Chapter 1: Connect micro:bit to the Wi-Fi &mdash; Smarthon Documentation 1.0 documentation</title>
+  <title>3. Chapter 1: Connect the micro:bit to the Wi-Fi &mdash; Smarthon Documentation 1.0 documentation</title>
   
 
   
@@ -36,7 +36,7 @@
   <link rel="stylesheet" href="../_static/css/custom.css" type="text/css" />
     <link rel="index" title="Index" href="../genindex.html" />
     <link rel="search" title="Search" href="../search.html" />
-    <link rel="next" title="4. Chapter 2: [Data visualization] Upload Data to ThingSpeak" href="chapter2.html" />
+    <link rel="next" title="4. Chapter 2: Upload Data to ThingSpeak" href="chapter2.html" />
     <link rel="prev" title="2. Smarthon IoT:bit Introduction" href="IOTbit.html" /> 
 </head>
 
@@ -85,13 +85,19 @@
 <li class="toctree-l1 current"><a class="reference internal" href="index.html">Smarthon Smart City IoT Starter Kit</a><ul class="current">
 <li class="toctree-l2"><a class="reference internal" href="Introduction.html">1. About Smarthon Smart City IoT Starter Kit</a></li>
 <li class="toctree-l2"><a class="reference internal" href="IOTbit.html">2. Smarthon IoT:bit Introduction</a></li>
-<li class="toctree-l2 current"><a class="current reference internal" href="#">3. Chapter 1: Connect micro:bit to the Wi-Fi</a><ul>
-<li class="toctree-l3"><a class="reference internal" href="#test-it">3.1. Test it!</a></li>
+<li class="toctree-l2 current"><a class="current reference internal" href="#">3. Chapter 1: Connect the micro:bit to the Wi-Fi</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#open-home-wi-fi-office-wi-fi-mobile-phone-hotspot-router">3.1. Open Home Wi-Fi/Office Wi-Fi/Mobile phone Hotspot (Router)</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="#access-your-home-office-wifi">3.1.1. Access your home/office WiFi</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#set-your-mobile-hotspot">3.1.2. Set your mobile Hotspot</a></li>
 </ul>
 </li>
-<li class="toctree-l2"><a class="reference internal" href="chapter2.html">4. Chapter 2: [Data visualization] Upload Data to ThingSpeak</a></li>
-<li class="toctree-l2"><a class="reference internal" href="chapter3.html">5. Chapter 3: [IoT Services] Send Email by IFTTT</a></li>
-<li class="toctree-l2"><a class="reference internal" href="chapter4.html">6. Chapter 4: Control your micro:bit by App inventor 2</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#programming-makecode">3.2. Programming (Makecode)</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#result">3.3. Result</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="chapter2.html">4. Chapter 2: Upload Data to ThingSpeak</a></li>
+<li class="toctree-l2"><a class="reference internal" href="chapter3.html">5. Chapter 3: Send Email by IFTTT</a></li>
+<li class="toctree-l2"><a class="reference internal" href="chapter4.html">6. Chapter 4: [Mobile App/Web Control] Control your micro:bit by App inventor 2/Web</a></li>
 <li class="toctree-l2"><a class="reference internal" href="chapter5.html">7. Chapter 5: WI-FI Group communication</a></li>
 <li class="toctree-l2"><a class="reference internal" href="chapter6.html">8. Chapter 6: Access Internet information by IFTTT</a></li>
 <li class="toctree-l2"><a class="reference internal" href="case01.html">9. Case 01: Automated Smart Playground Lamp</a></li>
@@ -156,7 +162,7 @@
         
           <li><a href="index.html">Smarthon Smart City IoT Starter Kit</a> &raquo;</li>
         
-      <li><span class="section-number">3. </span>Chapter 1: Connect micro:bit to the Wi-Fi</li>
+      <li><span class="section-number">3. </span>Chapter 1: Connect the micro:bit to the Wi-Fi</li>
     
     
       <li class="wy-breadcrumbs-aside">
@@ -175,29 +181,67 @@
           <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
            <div itemprop="articleBody">
             
-  <div class="section" id="chapter-1-connect-micro-bit-to-the-wi-fi">
-<h1><span class="section-number">3. </span>Chapter 1: Connect micro:bit to the Wi-Fi<a class="headerlink" href="#chapter-1-connect-micro-bit-to-the-wi-fi" title="Permalink to this headline">¶</a></h1>
-<ol class="simple">
-<li><p>Before you start, you need to initialize the WiFi IoT:bit.
-Choose WiFi IoT:bit -&gt; Initialize WiFi IoT:bit and OLED
-<img alt="pic" src="../_images/Ch1_01.png" /></p></li>
-<li><p>After initializing, you can connect to the WiFi:
-Choose WiFi IoT:bit -&gt; Set Wi-Fi to ssid “”, pwd “”. Enter your Wi-Fi name and password
-<img alt="pic" src="../_images/Ch1_02.png" /></p></li>
-<li><p>“On WiFi connected” is an event handler, it will be triggered once after connected with WiFi.
+  <div class="section" id="chapter-1-connect-the-micro-bit-to-the-wi-fi">
+<h1><span class="section-number">3. </span>Chapter 1: Connect the micro:bit to the Wi-Fi<a class="headerlink" href="#chapter-1-connect-the-micro-bit-to-the-wi-fi" title="Permalink to this headline">¶</a></h1>
+<p>Connecting WiFi is the very first step to access internet services, including ThingSpeak, IFTTT, email, etc. Before you start, make sure your micro:bit device is connected to the Internet.
+<img alt="pic" src="../_images/Ch1_01.png" /></p>
+<div class="section" id="open-home-wi-fi-office-wi-fi-mobile-phone-hotspot-router">
+<h2><span class="section-number">3.1. </span>Open Home Wi-Fi/Office Wi-Fi/Mobile phone Hotspot (Router)<a class="headerlink" href="#open-home-wi-fi-office-wi-fi-mobile-phone-hotspot-router" title="Permalink to this headline">¶</a></h2>
+<p>Before you start, you need to make sure there are wireless internet service (with 2.4GHz) available in your area. You can either access your home/office WiFi or set a WiFi hotspot in your mobile phone.</p>
+<div class="section" id="access-your-home-office-wifi">
+<h3><span class="section-number">3.1.1. </span>Access your home/office WiFi<a class="headerlink" href="#access-your-home-office-wifi" title="Permalink to this headline">¶</a></h3>
+<p><img alt="pic" src="../_images/Ch1_02.png" /></p>
+</div>
+<div class="section" id="set-your-mobile-hotspot">
+<h3><span class="section-number">3.1.2. </span>Set your mobile Hotspot<a class="headerlink" href="#set-your-mobile-hotspot" title="Permalink to this headline">¶</a></h3>
+<ul class="simple">
+<li><p>make sure your phone is connected to the internet first
 <img alt="pic" src="../_images/Ch1_03.png" /></p></li>
-<li><p>Choose Basic -&gt; show icon “heart” inside “On WiFi connected”
+</ul>
+</div>
+</div>
+<div class="section" id="programming-makecode">
+<h2><span class="section-number">3.2. </span>Programming (Makecode)<a class="headerlink" href="#programming-makecode" title="Permalink to this headline">¶</a></h2>
+<p><span id="subtitle" >Step 1</span></p>
+<ul class="simple">
+<li><p>Before you start, you need to initialize the WiFi IoT:bit.</p></li>
+<li><p>Choose WiFi IoT:bit -&gt; Initialize WiFi IoT:bit and OLED
 <img alt="pic" src="../_images/Ch1_04.png" /></p></li>
-</ol>
-<div class="section" id="test-it">
-<h2><span class="section-number">3.1. </span>Test it!<a class="headerlink" href="#test-it" title="Permalink to this headline">¶</a></h2>
+</ul>
+<p><span id="subtitle" >Step 2</span></p>
+<ul class="simple">
+<li><p>After initializing, you can connect to the WiFi:</p></li>
+<li><p>Choose WiFi IoT:bit -&gt; Set Wi-Fi to ssid “”, pwd “”. Enter your Wi-Fi name and password
+<img alt="pic" src="../_images/Ch1_05.png" /></p></li>
+</ul>
+<p><span id="subtitle" >Step 3</span></p>
+<ul class="simple">
+<li><p>“On WiFi connected” is an event handler.</p></li>
+<li><p>It will be triggered once after connected with WiFi.
+<img alt="pic" src="../_images/Ch1_06.png" /></p></li>
+</ul>
+<p><span id="subtitle" >Step 4</span></p>
+<ul class="simple">
+<li><p>Choose Basic -&gt; show icon “heart” inside “On WiFi connected”
+<img alt="pic" src="../_images/Ch1_07.png" /></p></li>
+</ul>
+</div>
+<div class="section" id="result">
+<h2><span class="section-number">3.3. </span>Result<a class="headerlink" href="#result" title="Permalink to this headline">¶</a></h2>
+<p><span id="subtitle" >Step 1</span></p>
 <ul class="simple">
 <li><p>Load the program to the micro:bit and connect the micro:bit to WiFi IoT:bit.
-<img alt="pic" src="../_images/Ch1_05.png" /></p></li>
+<img alt="pic" src="../_images/Ch1_08.png" /></p></li>
+</ul>
+<p><span id="subtitle" >Step 2</span></p>
+<ul class="simple">
 <li><p>Wi-Fi IoT:bit will start to connect to internet, when the connection is successful, the IP Address would be shown.
-<img alt="pic" src="../_images/Ch1_06.png" /></p></li>
+<img alt="pic" src="../_images/Ch1_09.png" /></p></li>
+</ul>
+<p><span id="subtitle" >Step 3</span></p>
+<ul class="simple">
 <li><p>An icon “heart” will be shown on LED after WiFi is connected successfully.
-<img alt="pic" src="../_images/Ch1_07.png" /></p></li>
+<img alt="pic" src="../_images/Ch1_10.png" /></p></li>
 </ul>
 </div>
 </div>
@@ -210,7 +254,7 @@ Choose WiFi IoT:bit -&gt; Set Wi-Fi to ssid “”, pwd “”. Enter your Wi-Fi
   
     <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
       
-        <a href="chapter2.html" class="btn btn-neutral float-right" title="4. Chapter 2: [Data visualization] Upload Data to ThingSpeak" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
+        <a href="chapter2.html" class="btn btn-neutral float-right" title="4. Chapter 2: Upload Data to ThingSpeak" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
       
       
         <a href="IOTbit.html" class="btn btn-neutral float-left" title="2. Smarthon IoT:bit Introduction" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>

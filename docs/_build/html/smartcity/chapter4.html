@@ -8,7 +8,7 @@
   
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   
-  <title>6. Chapter 4: Control your micro:bit by App inventor 2 &mdash; Smarthon Documentation 1.0 documentation</title>
+  <title>6. Chapter 4: [Mobile App/Web Control] Control your micro:bit by App inventor 2/Web &mdash; Smarthon Documentation 1.0 documentation</title>
   
 
   
@@ -37,7 +37,7 @@
     <link rel="index" title="Index" href="../genindex.html" />
     <link rel="search" title="Search" href="../search.html" />
     <link rel="next" title="7. Chapter 5: WI-FI Group communication" href="chapter5.html" />
-    <link rel="prev" title="5. Chapter 3: [IoT Services] Send Email by IFTTT" href="chapter3.html" /> 
+    <link rel="prev" title="5. Chapter 3: Send Email by IFTTT" href="chapter3.html" /> 
 </head>
 
 <body class="wy-body-for-nav">
@@ -85,10 +85,26 @@
 <li class="toctree-l1 current"><a class="reference internal" href="index.html">Smarthon Smart City IoT Starter Kit</a><ul class="current">
 <li class="toctree-l2"><a class="reference internal" href="Introduction.html">1. About Smarthon Smart City IoT Starter Kit</a></li>
 <li class="toctree-l2"><a class="reference internal" href="IOTbit.html">2. Smarthon IoT:bit Introduction</a></li>
-<li class="toctree-l2"><a class="reference internal" href="chapter1.html">3. Chapter 1: Connect micro:bit to the Wi-Fi</a></li>
-<li class="toctree-l2"><a class="reference internal" href="chapter2.html">4. Chapter 2: [Data visualization] Upload Data to ThingSpeak</a></li>
-<li class="toctree-l2"><a class="reference internal" href="chapter3.html">5. Chapter 3: [IoT Services] Send Email by IFTTT</a></li>
-<li class="toctree-l2 current"><a class="current reference internal" href="#">6. Chapter 4: Control your micro:bit by App inventor 2</a></li>
+<li class="toctree-l2"><a class="reference internal" href="chapter1.html">3. Chapter 1: Connect the micro:bit to the Wi-Fi</a></li>
+<li class="toctree-l2"><a class="reference internal" href="chapter2.html">4. Chapter 2: Upload Data to ThingSpeak</a></li>
+<li class="toctree-l2"><a class="reference internal" href="chapter3.html">5. Chapter 3: Send Email by IFTTT</a></li>
+<li class="toctree-l2 current"><a class="current reference internal" href="#">6. Chapter 4: [Mobile App/Web Control] Control your micro:bit by App inventor 2/Web</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#example-1-control-p0-p1-p2-other-module-on-off-wan-command">6.1. Example 1: Control P0/P1/P2/other module on/off (WAN command)</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="#programming-makecode">6.1.1. Programming (Makecode)</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#control-the-micro-bit-by-pc">6.1.2. Control the micro:bit by PC</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#control-the-micro-bit-by-app-inventor">6.1.3. Control the micro:bit by App Inventor</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#result">6.1.4. Result</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="#example-2-xxxx">6.2. Example 2: XXXX</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="#id1">6.2.1. Programming (Makecode)</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#id2">6.2.2. Control the micro:bit by PC</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#id3">6.2.3. Control the micro:bit by App Inventor</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#id4">6.2.4. Result</a></li>
+</ul>
+</li>
+</ul>
+</li>
 <li class="toctree-l2"><a class="reference internal" href="chapter5.html">7. Chapter 5: WI-FI Group communication</a></li>
 <li class="toctree-l2"><a class="reference internal" href="chapter6.html">8. Chapter 6: Access Internet information by IFTTT</a></li>
 <li class="toctree-l2"><a class="reference internal" href="case01.html">9. Case 01: Automated Smart Playground Lamp</a></li>
@@ -153,7 +169,7 @@
         
           <li><a href="index.html">Smarthon Smart City IoT Starter Kit</a> &raquo;</li>
         
-      <li><span class="section-number">6. </span>Chapter 4: Control your micro:bit by App inventor 2</li>
+      <li><span class="section-number">6. </span>Chapter 4: [Mobile App/Web Control] Control your micro:bit by App inventor 2/Web</li>
     
     
       <li class="wy-breadcrumbs-aside">
@@ -172,8 +188,39 @@
           <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
            <div itemprop="articleBody">
             
-  <div class="section" id="chapter-4-control-your-micro-bit-by-app-inventor-2">
-<h1><span class="section-number">6. </span>Chapter 4: Control your micro:bit by App inventor 2<a class="headerlink" href="#chapter-4-control-your-micro-bit-by-app-inventor-2" title="Permalink to this headline">¶</a></h1>
+  <div class="section" id="chapter-4-mobile-app-web-control-control-your-micro-bit-by-app-inventor-2-web">
+<h1><span class="section-number">6. </span>Chapter 4: [Mobile App/Web Control] Control your micro:bit by App inventor 2/Web<a class="headerlink" href="#chapter-4-mobile-app-web-control-control-your-micro-bit-by-app-inventor-2-web" title="Permalink to this headline">¶</a></h1>
+<div class="section" id="example-1-control-p0-p1-p2-other-module-on-off-wan-command">
+<h2><span class="section-number">6.1. </span>Example 1: Control P0/P1/P2/other module on/off (WAN command)<a class="headerlink" href="#example-1-control-p0-p1-p2-other-module-on-off-wan-command" title="Permalink to this headline">¶</a></h2>
+<p>123</p>
+<div class="section" id="programming-makecode">
+<h3><span class="section-number">6.1.1. </span>Programming (Makecode)<a class="headerlink" href="#programming-makecode" title="Permalink to this headline">¶</a></h3>
+</div>
+<div class="section" id="control-the-micro-bit-by-pc">
+<h3><span class="section-number">6.1.2. </span>Control the micro:bit by PC<a class="headerlink" href="#control-the-micro-bit-by-pc" title="Permalink to this headline">¶</a></h3>
+</div>
+<div class="section" id="control-the-micro-bit-by-app-inventor">
+<h3><span class="section-number">6.1.3. </span>Control the micro:bit by App Inventor<a class="headerlink" href="#control-the-micro-bit-by-app-inventor" title="Permalink to this headline">¶</a></h3>
+</div>
+<div class="section" id="result">
+<h3><span class="section-number">6.1.4. </span>Result<a class="headerlink" href="#result" title="Permalink to this headline">¶</a></h3>
+</div>
+</div>
+<div class="section" id="example-2-xxxx">
+<h2><span class="section-number">6.2. </span>Example 2: XXXX<a class="headerlink" href="#example-2-xxxx" title="Permalink to this headline">¶</a></h2>
+<div class="section" id="id1">
+<h3><span class="section-number">6.2.1. </span>Programming (Makecode)<a class="headerlink" href="#id1" title="Permalink to this headline">¶</a></h3>
+</div>
+<div class="section" id="id2">
+<h3><span class="section-number">6.2.2. </span>Control the micro:bit by PC<a class="headerlink" href="#id2" title="Permalink to this headline">¶</a></h3>
+</div>
+<div class="section" id="id3">
+<h3><span class="section-number">6.2.3. </span>Control the micro:bit by App Inventor<a class="headerlink" href="#id3" title="Permalink to this headline">¶</a></h3>
+</div>
+<div class="section" id="id4">
+<h3><span class="section-number">6.2.4. </span>Result<a class="headerlink" href="#id4" title="Permalink to this headline">¶</a></h3>
+</div>
+</div>
 </div>
 
 
@@ -187,7 +234,7 @@
         <a href="chapter5.html" class="btn btn-neutral float-right" title="7. Chapter 5: WI-FI Group communication" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
       
       
-        <a href="chapter3.html" class="btn btn-neutral float-left" title="5. Chapter 3: [IoT Services] Send Email by IFTTT" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+        <a href="chapter3.html" class="btn btn-neutral float-left" title="5. Chapter 3: Send Email by IFTTT" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
       
     </div>
   

@@ -7,6 +7,10 @@ img[alt="small_pic"] {
   max-width:  300px; 
   display: block;
 }
+img[alt="small_pic2"] { 
+  max-width:  200px; 
+  display: block;
+}
 img[alt="iotbit"] { 
   max-width:  500px; 
   display: block;
@@ -20,6 +24,10 @@ img[alt="level"] {
 span[id="remarks"] { 
   color: red;
   
+}
+span[id="subtitle"] { 
+  font-size: 14pt;
+  font-weight: bold;
 }
 
 table[id="cus_table"] tr {
