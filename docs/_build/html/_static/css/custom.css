@@ -2,12 +2,20 @@ img[alt="pic"] {
   max-width:  500px; 
   display: block;
 }
+img[alt="pic_400"] { 
+  max-width:  400px; 
+  display: block;
+}
 
-img[alt="small_pic"] { 
+img[alt="pic_300"] { 
   max-width:  300px; 
   display: block;
 }
-img[alt="small_pic2"] { 
+img[alt="small_pic]"] { 
+  max-width:  300px; 
+  display: block;
+}
+img[alt="pic_200"] { 
   max-width:  200px; 
   display: block;
 }

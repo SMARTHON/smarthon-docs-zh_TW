@@ -4,7 +4,6 @@ Connecting WiFi is the very first step to access internet services, including Th
 ![pic](images/Ch1_01.png)
 
 ## Open Home Wi-Fi/Office Wi-Fi/Mobile phone Hotspot (Router)
-
 Before you start, you need to make sure there are wireless internet service (with 2.4GHz) available in your area. You can either access your home/office WiFi or set a WiFi hotspot in your mobile phone.
 
 ### Access your home/office WiFi
@@ -14,7 +13,6 @@ Before you start, you need to make sure there are wireless internet service (wit
 ### Set your mobile Hotspot
 * make sure your phone is connected to the internet first
 ![pic](images/Ch1_03.png)
-
 
 
 ## Programming (Makecode)

@@ -36,7 +36,7 @@
   <link rel="stylesheet" href="../_static/css/custom.css" type="text/css" />
     <link rel="index" title="Index" href="../genindex.html" />
     <link rel="search" title="Search" href="../search.html" />
-    <link rel="next" title="6. Chapter 4: [Mobile App/Web Control] Control your micro:bit by App inventor 2/Web" href="chapter4.html" />
+    <link rel="next" title="6. Chapter 4: Control your micro:bit by App inventor 2/Web" href="chapter4.html" />
     <link rel="prev" title="4. Chapter 2: Upload Data to ThingSpeak" href="chapter2.html" /> 
 </head>
 
@@ -88,12 +88,12 @@
 <li class="toctree-l2"><a class="reference internal" href="chapter1.html">3. Chapter 1: Connect the micro:bit to the Wi-Fi</a></li>
 <li class="toctree-l2"><a class="reference internal" href="chapter2.html">4. Chapter 2: Upload Data to ThingSpeak</a></li>
 <li class="toctree-l2 current"><a class="current reference internal" href="#">5. Chapter 3: Send Email by IFTTT</a><ul>
-<li class="toctree-l3"><a class="reference internal" href="#create-event-email-in-ifttt">5.1. Create event “Email” in IFTTT</a></li>
-<li class="toctree-l3"><a class="reference internal" href="#find-your-ifttt-key">5.2. Find your IFTTT key</a></li>
-<li class="toctree-l3"><a class="reference internal" href="#trigger-email-by-ifttt-in-makecode">5.3. Trigger Email by IFTTT in MakeCode</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#create-event-email-in-ifttt-and-get-the-key">5.1. Create event “Email” in IFTTT and get the key</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#programming-makecode">5.2. Programming (Makecode)</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#result">5.3. Result</a></li>
 </ul>
 </li>
-<li class="toctree-l2"><a class="reference internal" href="chapter4.html">6. Chapter 4: [Mobile App/Web Control] Control your micro:bit by App inventor 2/Web</a></li>
+<li class="toctree-l2"><a class="reference internal" href="chapter4.html">6. Chapter 4: Control your micro:bit by App inventor 2/Web</a></li>
 <li class="toctree-l2"><a class="reference internal" href="chapter5.html">7. Chapter 5: WI-FI Group communication</a></li>
 <li class="toctree-l2"><a class="reference internal" href="chapter6.html">8. Chapter 6: Access Internet information by IFTTT</a></li>
 <li class="toctree-l2"><a class="reference internal" href="case01.html">9. Case 01: Automated Smart Playground Lamp</a></li>
@@ -179,48 +179,83 @@
             
   <div class="section" id="chapter-3-send-email-by-ifttt">
 <h1><span class="section-number">5. </span>Chapter 3: Send Email by IFTTT<a class="headerlink" href="#chapter-3-send-email-by-ifttt" title="Permalink to this headline">¶</a></h1>
-<div class="section" id="create-event-email-in-ifttt">
-<h2><span class="section-number">5.1. </span>Create event “Email” in IFTTT<a class="headerlink" href="#create-event-email-in-ifttt" title="Permalink to this headline">¶</a></h2>
-<ol class="simple">
-<li><p>Go to http://www.ifttt.com, open the top right menu, then click「Create」
-<img alt="pic" src="../_images/Ch3_01.png" /></p></li>
+<p>IFTTT is the way to connect hundreds of the apps and devices, including Twitter, Dropbox, Email, Google Assistant, etc. You can connect Micro:bit to IFTTT to create more features by “If… then…”.
+<img alt="pic" src="../_images/Ch3_01.png" /></p>
+<div class="section" id="create-event-email-in-ifttt-and-get-the-key">
+<h2><span class="section-number">5.1. </span>Create event “Email” in IFTTT and get the key<a class="headerlink" href="#create-event-email-in-ifttt-and-get-the-key" title="Permalink to this headline">¶</a></h2>
+<p><span id="subtitle" >Step 1</span></p>
+<ul class="simple">
+<li><p>Go to http://www.ifttt.com, open the top right menu, then click “Create” &gt; “Applets”
+<img alt="pic" src="../_images/Ch3_02.png" /></p></li>
+</ul>
+<p><span id="subtitle" >Step 2</span></p>
+<ul class="simple">
 <li><p>Select this -&gt; select webhooks -&gt; input Event Name (eg. Event Name: SendEmail)，then click “Create trigger”
-<img alt="pic" src="../_images/Ch3_02.png" />
 <img alt="pic" src="../_images/Ch3_03.png" /></p></li>
+</ul>
+<p><span id="subtitle" >Step 3</span></p>
+<ul class="simple">
 <li><p>Select “That” &gt; Email
 <img alt="pic" src="../_images/Ch3_04.png" /></p></li>
-<li><p>Select “Send me an email”, Input email title and body, then click “Create action”
+</ul>
+<p><span id="subtitle" >Step 4</span></p>
+<ul class="simple">
+<li><p>Select “Send me an email” , Input email title and body, then click “Create action”
 <img alt="pic" src="../_images/Ch3_05.png" /></p></li>
-</ol>
-</div>
-<div class="section" id="find-your-ifttt-key">
-<h2><span class="section-number">5.2. </span>Find your IFTTT key<a class="headerlink" href="#find-your-ifttt-key" title="Permalink to this headline">¶</a></h2>
-<ol class="simple">
-<li><p>Open your web browser, open the top right menu, select「My services」&gt;「Webhooks」。
+</ul>
+<p><span id="subtitle" >Step 5</span></p>
+<ul class="simple">
+<li><p>Open your web browser, open the top right menu, select “My services” &gt; “Webhooks”
 <img alt="pic" src="../_images/Ch3_06.png" /></p></li>
-<li><p>Select「Documentation」，Copy your Webhooks Key as follows:
+</ul>
+<p><span id="subtitle" >Step 6</span></p>
+<ul class="simple">
+<li><p>Select “Documentation” ，Copy your Webhooks Key as follows:
 <img alt="pic" src="../_images/Ch3_07.png" /></p></li>
-</ol>
+</ul>
 </div>
-<div class="section" id="trigger-email-by-ifttt-in-makecode">
-<h2><span class="section-number">5.3. </span>Trigger Email by IFTTT in MakeCode<a class="headerlink" href="#trigger-email-by-ifttt-in-makecode" title="Permalink to this headline">¶</a></h2>
-<ol class="simple">
-<li><p>It will trigger the following function once after connected with WiFi.
-<img alt="pic" src="../_images/Ch3_08.png" /></p></li>
+<div class="section" id="programming-makecode">
+<h2><span class="section-number">5.2. </span>Programming (Makecode)<a class="headerlink" href="#programming-makecode" title="Permalink to this headline">¶</a></h2>
+<p><span id="subtitle" >Step 1</span></p>
+<ul class="simple">
+<li><p>It will trigger the following function once after button A is clicked
+<img alt="pic_200" src="../_images/Ch3_08.png" /></p></li>
+</ul>
+<p><span id="subtitle" >Step 2</span></p>
+<ul class="simple">
 <li><p>This function will send data (field1, field2, field3) and trigger event to IFTTT with the key provided
-<img alt="pic" src="../_images/Ch3_09.png" /></p></li>
-<li><p>Select「IoT」&gt; 「On WiFi connected」 and 「IoT」&gt;「Send IFTTT key….」.
+<img alt="pic_200" src="../_images/Ch3_09.png" /></p></li>
+</ul>
+<p><span id="subtitle" >Step 3</span></p>
+<ul class="simple">
+<li><p>Select “WiFi IoT:bit” &gt; “Initialize WiFi Iot:bit and OLED” and “Set WiFi to ssid…pwd”.</p></li>
+<li><p>Select “Input” -&gt;“on button A pressed” .
 <img alt="pic" src="../_images/Ch3_10.png" /></p></li>
-<li><p>Once WiFi is connected, it will send IFTTT request once.
+</ul>
+<p><span id="subtitle" >Step 4</span></p>
+<ul class="simple">
+<li><p>Select “WiFi IoT:bit” &gt; “Send IFTTT key….”</p></li>
+<li><p>Once button A is clicked, it will send IFTTT request (send an email to your email box)
 <img alt="pic" src="../_images/Ch3_11.png" /></p></li>
+</ul>
+<p><span id="subtitle" >Step 5</span></p>
+<ul class="simple">
 <li><p>Input the following value
-a.IFTTT API key: “HnXXXXXXXXXXXXXjb “.
-b.value 1-3: input value。
-c.event_name: event name to trigger in Webhooks (eg. SendEmail)
+a. IFTTT API key: “HnXXXXXXXXXXXXXjb “.
+b. event_name: event name to trigger in Webhooks (eg. SendEmail)
+c. value 1-3: input value1, value2, value3
 <img alt="pic" src="../_images/Ch3_12.png" /></p></li>
+</ul>
+</div>
+<div class="section" id="result">
+<h2><span class="section-number">5.3. </span>Result<a class="headerlink" href="#result" title="Permalink to this headline">¶</a></h2>
+<ul class="simple">
+<li><p>After micro:bit is connected to WiFi and click button A, it will upload data to IFTTT.</p></li>
 <li><p>If data is uploaded successfully, “Uploaded OK” will be shown.
 <img alt="pic" src="../_images/Ch3_13.png" /></p></li>
-</ol>
+<li><p>Email will be sent to your mailbox by IFTTT.
+<img alt="pic" src="../_images/Ch3_14.png" /></p></li>
+</ul>
 </div>
 </div>
 
@@ -232,7 +267,7 @@ c.event_name: event name to trigger in Webhooks (eg. SendEmail)
   
     <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
       
-        <a href="chapter4.html" class="btn btn-neutral float-right" title="6. Chapter 4: [Mobile App/Web Control] Control your micro:bit by App inventor 2/Web" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
+        <a href="chapter4.html" class="btn btn-neutral float-right" title="6. Chapter 4: Control your micro:bit by App inventor 2/Web" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
       
       
         <a href="chapter2.html" class="btn btn-neutral float-left" title="4. Chapter 2: Upload Data to ThingSpeak" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>

@@ -7,7 +7,7 @@ ThingSpeak is a great platform for user to uploading data for IOT. It allows you
 ## Create channel in ThingSpeak
 <span id="subtitle" >Step 1</span>
 * Go to https://thingspeak.com/, Register and account and login to the platform
-![small_pic](images/Ch2_02.png)
+![pic_300](images/Ch2_02.png)
 
 <span id="subtitle" >Step 2</span>
 * Choose Channels -> My Channels -> New Channel
@@ -31,11 +31,11 @@ ThingSpeak is a great platform for user to uploading data for IOT. It allows you
 ## Programming (Makecode)
 <span id="subtitle" >Step 1</span>
 * if WiFi is connected, it returns true, otherwise it returns false.
-![small_pic2](images/Ch2_06.png)
+![pic_200](images/Ch2_06.png)
 
 <span id="subtitle" >Step 2</span>
 * It will send data (field1, field2, field3) to Thingspeak with the key provided
-![small_pic2](images/Ch2_07.png)
+![pic_200](images/Ch2_07.png)
 
 <span id="subtitle" >Step 3</span>
 * Select “WiFi IoT:bit” > “Initialize WiFi Iot:bit and OLED” and “Set WiFi to ssid…pwd”. 
