@@ -14,6 +14,6 @@ To Program Smarthon modules with micro:bit, you need to add the Smarthon Smart H
 ![pic](images/07Step3_s.png)
 
 4. Initialize Smarthon Smart House Kit to add all the functions
-![pic](images/07Step4.png)
+![pic_600](images/07Step4.png)
 
 

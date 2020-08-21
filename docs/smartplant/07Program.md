@@ -13,4 +13,4 @@ Steps:
 ![pic](images/07programstep3.png)
 
 4.Initialize Smarthon Plant Kit to add all the functions
-![pic](images/07programstep4.png)
+![pic_600](images/07programstep4.png)

@@ -130,7 +130,7 @@ In this example, you can create a web connection, set the URL to the control com
 ![pic](images/Ch4_21.png)
 
 * After connected to WAN remote control is started, when Button1 is clicked, it will send WAN command “SetHour” with value “6’ to the micro:bit with provided Device ID.
-![pic]_600(images/Ch4_22.png)
+![pic_600](images/Ch4_22.png)
 
 * Once it receives the WAN command (SetHour) with value (6), the updated value will be shown. 
 ![pic](images/Ch4_23.png)
