@@ -30,7 +30,7 @@ In project 5, you can learn how to make a fan automation that allows you to cont
 8. **Download** the code and transfer to micro:bit
 9. Plug the micro:bit into Multiple Sensors
 
-![small_pic](images/P5_2.png)
+![pic_300](images/P5_2.png)
 
 ## Experiment:
 * How does temperature affect plant growth?

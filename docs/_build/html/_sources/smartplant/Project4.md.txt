@@ -31,7 +31,7 @@ In project 4, you can learn how to watering the plant automatically by soil mois
 10. **Download** the code and transfer to micro:bit
 11. Plug the micro:bit into Multiple Sensors
 
-![small_pic](images/P4_2.png)
+![pic_300](images/P4_2.png)
 
 ## Experiment:
 * How does soil moisture level affect seed germination?

@@ -16,7 +16,7 @@ You should learn how to read the sensor value which is the foundation of the oth
 2. Pressed the button in the right bottom corner of the Multiple Sensors for smart house (blue colour)
 
 It shows the instant value of the digital light sensor, temperature, humidity, button, motion, flame as well as town gas sensor.
-![small_pic](images/06HowtoRead.png)
+![pic_300](images/06HowtoRead.png)
 
 Button, Light Sensor and Town gas sensor are shown as examples:
 

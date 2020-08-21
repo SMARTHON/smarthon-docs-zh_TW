@@ -17,15 +17,15 @@ http://54.202.26.42:8080/publish?id=DeviceID&msg=ControlCommand
 ### Programming (MakeCode)
 <span id="subtitle" >Step 1. Start WiFi remote control </span>
 * Connect micro:bit to WiFi.
-![pic](images/Ch4_02.png)
+![pic_600](images/Ch4_02.png)
 
 <span id="subtitle" >Step 2. Set the Wi-Fi listening on Micro:bit WAN control command action</span>
 * If Wan command “Pin_On” is received, white LED will be turned on.
-![pic](images/Ch4_03.png)
+![pic_600](images/Ch4_03.png)
 
 <span id="subtitle" >Step 3. Get micro:bit Device ID</span>
 * Load the program to the micro:bit and connect the micro:bit to the WiFi IoT:bit.
-![pic](images/Ch4_04.png)
+![pic_600](images/Ch4_04.png)
 
 * Wi-Fi IoT:bit will start to connect to internet, when the connection is successful, the IP Address would be shown. 
 ![pic](images/Ch4_05.png)
@@ -41,7 +41,7 @@ http://54.202.26.42:8080/publish?id=DeviceID&msg=ControlCommand
 * The WAN control command URL is:
 http://54.202.26.42:8080/publish?id=DeviceID&msg=ControlCommand
 * Open your web browser and input control command URL, then press “enter”
-![pic](images/Ch4_07.png)
+![pic_600](images/Ch4_07.png)
 
 <span id="subtitle" >Step 2</span>
 * After connected to WAN remote control is started, when Button1 is clicked, it will send WAN command “Pin_On” to the micro:bit with provided Device ID.
@@ -116,7 +116,7 @@ http://54.202.26.42:8080/publish?id=DeviceID&msg=ControlCommand
 http://54.202.26.42:8080/publish?id=DeviceID&msg=ControlCommand&value=value
 
 * Open your web browser and input control command URL, then press “enter”
-![pic](images/Ch4_19.png)
+![pic_600](images/Ch4_19.png)
 
 ### Result (App inventor 2)
 
@@ -130,7 +130,7 @@ In this example, you can create a web connection, set the URL to the control com
 ![pic](images/Ch4_21.png)
 
 * After connected to WAN remote control is started, when Button1 is clicked, it will send WAN command “SetHour” with value “6’ to the micro:bit with provided Device ID.
-![pic](images/Ch4_22.png)
+![pic]_600(images/Ch4_22.png)
 
 * Once it receives the WAN command (SetHour) with value (6), the updated value will be shown. 
 ![pic](images/Ch4_23.png)

@@ -32,7 +32,7 @@ In project 6, you can learn how to increase humidity level by a humidity sensor.
 9. **Download** the code and transfer to micro:bit
 10. Plug the micro:bit into Multiple Sensors
 
-![small_pic](images/P6_2.png)
+![pic_300](images/P6_2.png)
 
 ## Experiment:
 * Does humidifier affect plant transpiration rates?

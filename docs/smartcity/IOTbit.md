@@ -2,12 +2,12 @@
 
 ## Introduction
 
-![pic](images/Intro_01.jpg)
+![pic_400](images/Intro_01.jpg)
 
 Smarthon IoT:bit is an WiFi extension board for micro:bit. With input/output ports, we can obtain information from different sensors for IoT and control the actuator (such as LED lights and servo)
 
 ## Structure Diagram
-![pic_structure](images/structure_diagram.png)
+![pic](images/structure_diagram.png)
 
 ## Pinout Table
 
@@ -54,7 +54,7 @@ To Program Smarthon modules with micro:bit, you need to add the Smarthon IoT pac
 
 <span id="subtitle" >Step 3</span>
 * “SmartCity” & “WiFi IoT:bit” package has been added successfully.
-![pic](images/ext_03.png)
+![pic_200](images/ext_03.png)
 
 
 <!--

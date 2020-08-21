@@ -34,7 +34,7 @@ In project 3, you can learn how to control LED grow light by digital light senso
 6. Plug the micro:bit into Multiple Sensors
 7. Try to cover the light sensor by hand to test if the LED Grow Light works properly
 
-![small_pic](images/P3_2.png)
+![pic_300](images/P3_2.png)
 
 ## Experiment:
 * Do different colours of LED grow lights affect the direction of plant growth?

@@ -40,11 +40,11 @@ ThingSpeak is a great platform for user to uploading data for IOT. It allows you
 <span id="subtitle" >Step 3</span>
 * Select “WiFi IoT:bit” > “Initialize WiFi Iot:bit and OLED” and “Set WiFi to ssid…pwd”. 
 * On every 15seconds, if the WiFi is connected, it will send data to ThingSpeak.
-![pic](images/Ch2_08.png)
+![pic_600](images/Ch2_08.png)
 
 <span id="subtitle" >Step 4</span>
 * Open your program and paste the ThingSpeak key and paste it here.
-![pic](images/Ch2_09.png)
+![pic_600](images/Ch2_09.png)
 
 ## Result
 * If data is uploaded successfully, “Uploaded OK” will be shown.

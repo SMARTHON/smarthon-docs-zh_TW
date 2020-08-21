@@ -1,12 +1,12 @@
 # Chapter 3: Send Email by IFTTT
 
 IFTTT is the way to connect hundreds of the apps and devices, including Twitter, Dropbox, Email, Google Assistant, etc. You can connect Micro:bit to IFTTT to create more features by “If… then…”.
-![pic](images/Ch3_01.png)
+![pic_400](images/Ch3_01.png)
 
 ## Create event “Email” in IFTTT and get the key
 <span id="subtitle" >Step 1</span>
 * Go to http://www.ifttt.com, open the top right menu, then click “Create” > “Applets”
-![pic](images/Ch3_02.png)
+![pic_400](images/Ch3_02.png)
 
 <span id="subtitle" >Step 2</span>
 * Select this -> select webhooks -> input Event Name (eg. Event Name: SendEmail)，then click “Create trigger” 
@@ -22,7 +22,7 @@ IFTTT is the way to connect hundreds of the apps and devices, including Twitter,
 
 <span id="subtitle" >Step 5</span>
 * Open your web browser, open the top right menu, select “My services” > “Webhooks” 
-![pic](images/Ch3_06.png)
+![pic_600](images/Ch3_06.png)
 
 <span id="subtitle" >Step 6</span>
 * Select “Documentation” ，Copy your Webhooks Key as follows:
@@ -41,12 +41,12 @@ IFTTT is the way to connect hundreds of the apps and devices, including Twitter,
 <span id="subtitle" >Step 3</span>
 * Select “WiFi IoT:bit” > “Initialize WiFi Iot:bit and OLED” and “Set WiFi to ssid…pwd”. 
 * Select “Input” ->“on button A pressed” .
-![pic](images/Ch3_10.png)
+![pic_600](images/Ch3_10.png)
 
 <span id="subtitle" >Step 4</span>
 * Select “WiFi IoT:bit” > “Send IFTTT key….” 
 * Once button A is clicked, it will send IFTTT request (send an email to your email box) 
-![pic](images/Ch3_11.png)
+![pic_600](images/Ch3_11.png)
 
 <span id="subtitle" >Step 5</span>
 * Input the following value
