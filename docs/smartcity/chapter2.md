@@ -6,19 +6,19 @@ ThingSpeak is a great platform for user to uploading data for IOT. It allows you
 
 ## Create channel in ThingSpeak
 <span id="subtitle" >Step 1</span>
-* Go to https://thingspeak.com/, Register and account and login to the platform
-![pic_300](images/Ch2_02.png)
+* Go to https://thingspeak.com/, register an account and login to the platform
 
 <span id="subtitle" >Step 2</span>
 * Choose Channels -> My Channels -> New Channel
-![pic](images/Ch2_03.png)
+![pic_300](images/Ch2_02.png)
 
 <span id="subtitle" >Step 3</span>
 * Input Channel name, Field1 and Field2 , then click “Save Channel”
-** Channel name: smart-house
-** Field 1: Light
-** Field 2: Temperature
- 
+> * Channel name: smart-house
+> * Field 1: Light
+> * Field 2: Temperature
+> ![pic_300](images/Ch2_03.png)
+
 <span id="subtitle" >Step 4</span>
 * You will see two chats for data (field1, field 2)
 ![pic](images/Ch2_04.png)

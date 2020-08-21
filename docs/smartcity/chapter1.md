@@ -43,8 +43,8 @@ Before you start, you need to make sure there are wireless internet service (wit
 
 <span id="subtitle" >Step 2</span>
 * Wi-Fi IoT:bit will start to connect to internet, when the connection is successful, the IP Address would be shown. 
-![pic_600](images/Ch1_09.png)
+![pic](images/Ch1_09.png)
 
 <span id="subtitle" >Step 3</span>
 * An icon “heart” will be shown on LED after WiFi is connected successfully.
-![pic](images/Ch1_10.png)
+![pic_200](images/Ch1_10.png)

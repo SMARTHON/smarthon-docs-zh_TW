@@ -6,7 +6,7 @@ IFTTT is the way to connect hundreds of the apps and devices, including Twitter,
 ## Create event “Email” in IFTTT and get the key
 <span id="subtitle" >Step 1</span>
 * Go to http://www.ifttt.com, open the top right menu, then click “Create” > “Applets”
-![pic_400](images/Ch3_02.png)
+![pic](images/Ch3_02.png)
 
 <span id="subtitle" >Step 2</span>
 * Select this -> select webhooks -> input Event Name (eg. Event Name: SendEmail)，then click “Create trigger” 
@@ -50,9 +50,9 @@ IFTTT is the way to connect hundreds of the apps and devices, including Twitter,
 
 <span id="subtitle" >Step 5</span>
 * Input the following value
-a. IFTTT API key: “HnXXXXXXXXXXXXXjb “. 
-b. event_name: event name to trigger in Webhooks (eg. SendEmail)
-c. value 1-3: input value1, value2, value3
+> * a. IFTTT API key: “XXXXXXXXXXXXXXXXX“
+> * b. event_name: event name to trigger in Webhooks (eg. SendEmail)
+> * c. value 1-3: input value1, value2, value3
 ![pic](images/Ch3_12.png)
 
 ## Result

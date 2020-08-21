@@ -20,6 +20,7 @@ http://54.202.26.42:8080/publish?id=DeviceID&msg=ControlCommand
 ![pic_600](images/Ch4_02.png)
 
 <span id="subtitle" >Step 2. Set the Wi-Fi listening on Micro:bit WAN control command action</span>
+* After micro:bit connected to WiFi, it will start WiFi remote control (WAN)
 * If Wan command “Pin_On” is received, white LED will be turned on.
 ![pic_600](images/Ch4_03.png)
 
