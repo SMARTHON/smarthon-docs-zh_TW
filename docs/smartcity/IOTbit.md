@@ -1,4 +1,4 @@
-# Smarthon IoT:bit Introduction
+# IoT:bit Introduction
 
 ## Introduction
 
