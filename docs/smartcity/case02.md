@@ -45,9 +45,13 @@ Build the model
 * Put together all the cardboard parts D1-D3
 
 ## Hardware connect:
+![pic](images/Case2_06.png)
 1. Connect Distance sensor to P14(Trig)/P15(Echo)
+![pic](images/Case2_07.png)
 2. Connect Light Sensor to P0
+![pic](images/Case2_08.png)
 3. Connect 180° Servo to P2
+![pic](images/Case2_09.png)
 4. Download the code and transfer to micro:bit
 5. Plug the micro:bit into WiFi IoT extension board
 
