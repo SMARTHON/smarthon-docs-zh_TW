@@ -39,7 +39,6 @@ Hole diameter: 4mm
 |ESP lead out|3 Pins for servo control(S1,S2,S3)|Control by ESP chip|
 |Net weight|||
 
-# Hardware Interface & Pinout Diagram
 
 ## Hardware Interface
 ![pic](images/iot_image02.png)
@@ -62,67 +61,67 @@ Hole diameter: 4mm
 ![pic_700](images/iot_image03.png)
 Please open the image in the new tab for full size
 
-# Detail Hardware Description
+## Detail Hardware Description
 
-## Mirco:bit edge connecter
+<B>Mirco:bit edge connecter</B>
 ![pic](images/iot_image04.png)
 Provide the socket for the Micro:bit to install. Follow the instruction icon right about that to install the Micro:bit to the expansion board.
 
-## Power port(USB, Battery, DC) & Switch
+<B>Power port(USB, Battery, DC) & Switch</B>
 ![pic](images/iot_image05.png)
 Provide three different type of methods to power on the expansion board and Mirco:bit. User can either choose common 5V USB power, or two different port which connect to 3.7V ~ 6V battery box. 
 
-## OLED Module
+<B>OLED Module</B>
 
 ![pic](images/iot_image06.png)
 The expansion board have the reserved space to place a SSD1306 0.96 inch OLED screen. User can use the I2C connection port to output the visual element on that module.
 
-## Wireless Module
+<B>Wireless Module</B>
 ![pic](images/iot_image07.png)
 The Wireless Module provide the Core function of the expansion board. Though different modules install on the socket, Mirco:bit gain the correspond connectivity ability. User may install ESP32, ESP8266, Bluetooth to implement various application project, make use of the IoT resource.
 
-## ESP Servo port
+<B>ESP Servo port</B>
 ![pic](images/iot_image08.png)
 When installed the ESP32 module, it provide extra 3 servo control port to connect the Servo motor. Compatible with general GVS 180/360 Servo motor (SG90/SG90S)
 
-## Micro:bit lead out Pins
+<B>Micro:bit lead out Pins</B>
 ![pic](images/iot_image09.png)
 The Lead Out from the Mirco:bit I/O pins, provide great expansion feature for the Mirco:bit , user can connect up to 13 different sensor/actuator at the same time. Each independent GVS socket make the connection become more connivance. 
 
-## Buzzer & Switch
+<B>Buzzer & Switch</B>
 ![pic](images/iot_image10.png)
 The IoT Bit built-in a Passive Buzzer on the board, which connected to P0. Using the program can generate different tone of sound. With the switch, it can have manual control to the audio.
 
-## QuickAccess GVS connecter
+<B>QuickAccess GVS connecter</B>
 ![pic](images/iot_image11.png)
 To some GVS sensor which provide the Quick Insert Pin, it can use on the QuickAccess GVS connecter. It do not need to use the cable to connect the sensor, simplify the product in the application.
 
-## Distance Sensor port
+<B>Distance Sensor port</B>
 ![pic](images/iot_image12.png)
 On the IoT Bit, a port is reserved for the HC-SR04 Distance Sensor. Whether use multi separate cable to connect two data pin, user can use a 4 pin connection cable to join the sensor and Mirco:bit. The two data pins in this port is p14 and p15 respectively.
 
-## Motor port
+<B>Motor port</B>
 
 Beside the 3pin single direction DC motor, IoT Bit is compatible with the 4pin bi-direction dc motor. User can use a 4pin connection cable to control the 4pin motor.
 The two data pins in this port is p12 and p13 respectively. 
 
-# Software Support
+## Software Support
 
-## MakeCode editor
+<B>MakeCode editor</B>
 
 The MakeCode editor is the official cross-platform editor designed for BBC Mirco:bit, it is available on Web Browser, Mobile and tablets Apps. The Colorful coding block is familiar to who previously used Scratch, providing a simple and clear way to programming on the Micro:bit.<P>
 The editor offer a text-based mode for user to programming using JavaScript rather than drag the blocks<BR>
 [MakeCode](https://makecode.microbit.org/#editor)
 ![pic_700](images/iot_image13.png)
 
-## Python editor
+<B>Python editor</B>
 Python is one of the most famous programming language, widely used in school and industry. Micro:bit provided an online python editor for user to study and exercise python on Micro:bit. User just need to connect Mirco:bit with USB and click the Flash button, the compile and upload progress will be finish automatically. <BR>
 [Python editor](https://python.microbit.org/v/2.0)
 ![pic_700](images/iot_image14.png)
 
-# QuickStart
+## QuickStart
 
-## Get ready to programming
+<B> Get ready to programming</B>
 Go to [MakeCode](https://makecode.microbit.org),create a new progject
 ![pic_700](images/iot_image15.png)<P>
 Give the project a name
