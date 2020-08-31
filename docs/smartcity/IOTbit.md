@@ -114,7 +114,7 @@ The editor offer a text-based mode for user to programming using JavaScript rath
 [MakeCode](https://makecode.microbit.org/#editor)
 ![pic_700](images/iot_image13.png)
 
-<B>Python editor</B>
+<B>Python editor</B><P>
 Python is one of the most famous programming language, widely used in school and industry. Micro:bit provided an online python editor for user to study and exercise python on Micro:bit. User just need to connect Mirco:bit with USB and click the Flash button, the compile and upload progress will be finish automatically. <BR>
 [Python editor](https://python.microbit.org/v/2.0)
 ![pic_700](images/iot_image14.png)
