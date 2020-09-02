@@ -22,7 +22,7 @@ Product size: 75mm X 65mm X 20mm
 PCB thinkness: 1.5mm
 Hole diameter: 4mm
 
-![pic](images/iot_image01.png)
+![pic_600](images/iot_image01.png)
 
 ## Specification
 
@@ -41,7 +41,7 @@ Hole diameter: 4mm
 
 
 ## Hardware Interface
-![pic](images/iot_image02.png)
+![pic_600](images/iot_image02.png)
 
 * 1.Micro:bit edge connecter
 * 2.USB power supply port
@@ -101,7 +101,7 @@ To some GVS sensor which provide the Quick Insert Pin, it can use on the QuickAc
 On the IoT Bit, a port is reserved for the HC-SR04 Distance Sensor. Whether use multi separate cable to connect two data pin, user can use a 4 pin connection cable to join the sensor and Mirco:bit. The two data pins in this port is p14 and p15 respectively.
 
 <B>Motor port</B>
-
+![pic](images/iot_image12_5.png)
 Beside the 3pin single direction DC motor, IoT Bit is compatible with the 4pin bi-direction dc motor. User can use a 4pin connection cable to control the 4pin motor.
 The two data pins in this port is p12 and p13 respectively. 
 
