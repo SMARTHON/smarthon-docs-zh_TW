@@ -64,6 +64,8 @@ Build the model
 ![pic_600](images/Case2_04.png)
 4. Snap if statement after measuring the distance, if light > 50, turn servo to 90 degree at P2, pause 5 seconds and turn servo to 0 degree at P2. <BR>That’s say when there is car entering and there is vacancy inside the car park, the car park gate will be opened for 5 seconds for car entering.
 ![pic](images/Case2_05.png)
+
+[Example Code](https://makecode.microbit.org/v2/#pub:_bCf1XwDEP7dq)<BR>
 <iframe width="700" height="500" frameborder="0" src="https://makecode.microbit.org/v2/#pub:_bCf1XwDEP7dq"></iframe>
 
 

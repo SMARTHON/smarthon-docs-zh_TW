@@ -48,6 +48,8 @@ Step2. Turn white LED to 1023 at P1 as turning on white LED and pause 10 seconds
 Step3. Else, turn white LED to 0 at P1 as turing off white LED.
 ![pic_600](images/Case1_10.png)
 <P>
+
+[Example Code](https://makecode.microbit.org/v2/#pub:_44zg2oKFRLhs)<BR>
 <iframe src="https://makecode.microbit.org/v2/#pub:_44zg2oKFRLhs" width="700" height="500" frameborder="0"></iframe>
 
 ## Result:
