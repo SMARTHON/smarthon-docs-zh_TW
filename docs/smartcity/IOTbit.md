@@ -1,6 +1,7 @@
 # IoT:bit Introduction
 
 ## Introduction
+![pic_600](images/iot_image00.png)
 Smarthon IoT Bit is an IoT orientated expansion board for Micro:bit. With the help of this, Micro:bit able to connect to different sensors or actuators without welding and start to use the internet services. 
 <P>
 It provides 13 regular GVS socket, allow user to connect batch of sensors at the same time to receive group of data. For some special purpose sensors/actuator, such distance sensor, motor and OLED display, an independent socket are offered, so not only the digital and analog I/O device can use in project, but also I2C device become an option to the Micro:bit from now on. Last but not least, a buzzer is built-in on the board to provide sound generation.
@@ -29,12 +30,12 @@ Hole diameter: 4mm
 |Item|Parameters|Remarks|
 |--|--|--|
 |Size|75mm X 65mm X 20mm| Without Packing|
-|Power supply| USB:5V 1A <BR> XH2.54 Battery port:3.7~6V<BR>DC 5.5mm:3.7~6V||
+|Power supply| USB:5V 0.5A <BR> XH2.54 Battery port:3.7~6V 1A <BR>DC 5.5mm:3.7~6V 1A|Maximun current limit<BR> of whole board: 1A |
 |Operation Temperature|-25 to 80℃||
 |Buzzer|Passive Buzzer(Musical)||
 |Wireless Module|ESP8266<BR>ESP32<BR>Bluetooth|Operate under UART protocol|
-|OLED Module|128*64 resolution OLED Screen SSD1306|Operate under I2C protocol|
-|Mirco:bit lead out|13 I/O Pins<BR>(13 Digital & AnalogOut Pins)<BR>(6 AnalogIn Pins)|<B>Reserved Pins:</B><BR>Wireless module:P8,P16<BR>Distance Sensor:P14,P15<BR>Motor:????|
+|OLED Module|128*64 resolution OLED<BR> Screen SSD1306|Operate under I2C protocol|
+|Mirco:bit lead out|13 I/O Pins<BR>(13 Digital & AnalogOut Pins)<BR>(6 AnalogIn Pins)|<B>Reserved Pins:</B><BR>Wireless module:P8,P16<BR>Distance Sensor:P14,P15<BR>Motor:P12,P13|
 |I2C Pins|P19,P20|3 available ports,<BR>1 port reserved for OLED|
 |ESP lead out|3 Pins for servo control(S1,S2,S3)|Control by ESP chip|
 |Net weight|||
