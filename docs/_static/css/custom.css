@@ -1,3 +1,7 @@
+img[alt="auto_fit"]{
+	max-width: 100%;
+	display:block;
+}
 img[alt="pic"] { 
   max-width:  500px; 
   display: block;
