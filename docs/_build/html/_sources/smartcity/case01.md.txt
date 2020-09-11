@@ -81,7 +81,7 @@ Else, turn white LED to 0 at P1 as turing off white LED.<P>
 ![auto_fit](images/Case1_08.png)<P>
 
 <span id="subtitle">Full Solution<BR><P>
-MakeCode:[https://makecode.microbit.org/_M75EdA7XVUHW](https://makecode.microbit.org/v2/#pub:_M75EdA7XVUHW)<BR><P>
+MakeCode: [https://makecode.microbit.org/_M75EdA7XVUHW](https://makecode.microbit.org/v2/#pub:_M75EdA7XVUHW)<BR><P>
 You could also download the program from the following website:<BR>
 <iframe src="https://makecode.microbit.org/v2/#pub:_M75EdA7XVUHW" width="100%" height="500" frameborder="0"></iframe>
 
