@@ -51,7 +51,7 @@ Choose Basic -> show icon “heart” inside “On WiFi connected”<BR><P>
 MakeCode:[https://makecode.microbit.org/_Ydr63W8HdLDU](https://makecode.microbit.org/v2/#pub:_Ydr63W8HdLDU)<BR><P>
 You could also download the program from the following website:<BR>
 <iframe src="https://makecode.microbit.org/v2/#pub:_Ydr63W8HdLDU" width="100%" height="500" frameborder="0"></iframe>
-
+<BR><P>
 
 ## Result
 <HR>
