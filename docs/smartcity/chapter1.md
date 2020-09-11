@@ -5,7 +5,7 @@ Connecting Wi-Fi is the very first step to access internet services, including T
 
 ## Open the Home Router or Mobile Phone Hotspot
 <HR>
-Before you start, you need to make sure there is a Wi-Fi signal (with 2.4GHz) available in your area. <BR>
+Please make sure there is a Wi-Fi signal (with 2.4GHz) available in your area. <BR>
 You can <B>either</B> setup a home router <B>or</B> a Wi-Fi hotspot from your mobile phone.<P>
 
 ### Setup your home/office Wi-Fi
