@@ -1,9 +1,20 @@
+img[alt="auto_fit"]{
+	max-width: 100%;
+	display:block;
+}
 img[alt="pic"] { 
   max-width:  500px; 
   display: block;
 }
-
-img[alt="pic_500"] { 
+img[alt="pic_700"] { 
+  max-width:  700px; 
+  display: block;
+}
+img[alt="pic_800"] { 
+  max-width:  800px; 
+  display: block;
+}
+img[alt="pic_600"] { 
   max-width:  600px; 
   display: block;
 }

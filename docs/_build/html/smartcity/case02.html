@@ -51,15 +51,15 @@
           
 
           
-            <a href="../index.html" class="icon icon-home"> Smarthon Documentation
+            <a href="../index.html">
           
 
+          
+            
+            <img src="../_static/logo.png" class="logo" alt="Logo"/>
           
           </a>
 
-          
-            
-            
           
 
           
@@ -83,8 +83,8 @@
             
               <ul class="current">
 <li class="toctree-l1 current"><a class="reference internal" href="index.html">Smarthon Smart City IoT Starter Kit</a><ul class="current">
-<li class="toctree-l2"><a class="reference internal" href="Introduction.html">1. About Smarthon Smart City IoT Starter Kit</a></li>
-<li class="toctree-l2"><a class="reference internal" href="IOTbit.html">2. Smarthon IoT:bit Introduction</a></li>
+<li class="toctree-l2"><a class="reference internal" href="Introduction.html">1. Introduction</a></li>
+<li class="toctree-l2"><a class="reference internal" href="IOTbit.html">2. IoT:bit Introduction</a></li>
 <li class="toctree-l2"><a class="reference internal" href="chapter1.html">3. Chapter 1: Connect the micro:bit to the Wi-Fi</a></li>
 <li class="toctree-l2"><a class="reference internal" href="chapter2.html">4. Chapter 2: Upload Data to ThingSpeak</a></li>
 <li class="toctree-l2"><a class="reference internal" href="chapter3.html">5. Chapter 3: Send Email by IFTTT</a></li>
@@ -93,7 +93,14 @@
 <li class="toctree-l2"><a class="reference internal" href="chapter6.html">8. Chapter 6: Access Internet information by IFTTT</a></li>
 <li class="toctree-l2"><a class="reference internal" href="case01.html">9. Case 01: Automated Smart Playground Lamp</a></li>
 <li class="toctree-l2 current"><a class="current reference internal" href="#">10. Case 02: Smart Car park Access Barrier</a><ul>
-<li class="toctree-l3"><a class="reference internal" href="#introduction">10.1. Introduction</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#goal">10.1. Goal:</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#background">10.2. Background:</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#part-list">10.3. Part List:</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#practical-operation">10.4. Practical operation</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#hardware-connect">10.5. Hardware connect:</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#programming">10.6. Programming:</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#result">10.7. Result</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#think">10.8. Think</a></li>
 </ul>
 </li>
 <li class="toctree-l2"><a class="reference internal" href="case03.html">11. Case 03: Garbage disposal system</a></li>
@@ -109,6 +116,7 @@
 </li>
 <li class="toctree-l1"><a class="reference internal" href="../smarthouse/index.html">Smarthon Smart House Kit for micro:bit</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../smartplant/index.html">Smarthon Plant Kit for micro:bit</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../IoTbit/index.html">Smarthon IoT:bit</a></li>
 </ul>
 
             
@@ -177,8 +185,95 @@
             
   <div class="section" id="case-02-smart-car-park-access-barrier">
 <h1><span class="section-number">10. </span>Case 02: Smart Car park Access Barrier<a class="headerlink" href="#case-02-smart-car-park-access-barrier" title="Permalink to this headline">¶</a></h1>
-<div class="section" id="introduction">
-<h2><span class="section-number">10.1. </span>Introduction<a class="headerlink" href="#introduction" title="Permalink to this headline">¶</a></h2>
+<p><img alt="pic" src="../_images/Case2_01.png" />
+Level: <img alt="level" src="../_images/level22.png" /></p>
+<div class="section" id="goal">
+<h2><span class="section-number">10.1. </span>Goal:<a class="headerlink" href="#goal" title="Permalink to this headline">¶</a></h2>
+<p>Make a smart car park gate which opens automatically if there are vacancies in the car park and there are cars near the car park gate.</p>
+</div>
+<div class="section" id="background">
+<h2><span class="section-number">10.2. </span>Background:<a class="headerlink" href="#background" title="Permalink to this headline">¶</a></h2>
+<p>Smart Car park Access Barrier can reduce manpower to control the car park gate for the driver and count the number of cars in the car park. The auto-car park gate allows people to live conveniently.
+<BR>
+<BR>
+<B>Car park gate operation</B><BR>
+The car park gate should be able to open if there are vacancies in the car park (i.e. detected by light sensor) and there are cars near the car park gate (i.e. detected by distance sensor). It is controlled by the servo; otherwise, the gate will keep closing.</p>
+</div>
+<div class="section" id="part-list">
+<h2><span class="section-number">10.3. </span>Part List:<a class="headerlink" href="#part-list" title="Permalink to this headline">¶</a></h2>
+<p>Electronics:</p>
+<ul class="simple">
+<li><p>micro:bit X1</p></li>
+<li><p>Smarthon IoT:bit X1</p></li>
+<li><p>OLED X1</p></li>
+<li><p>USB Wire/Battery Holder</p></li>
+<li><p>Light Sensor X1 (With Module wire)</p></li>
+<li><p>Distance Sensor X1 (With Module wire)</p></li>
+<li><p>180° Servo X1</p></li>
+</ul>
+<p>Model:</p>
+<ul class="simple">
+<li><p>Distance Sensor Stand Model D1-D3 X1</p></li>
+<li><p>M4 Screws X4</p></li>
+<li><p>M4 Nuts X4</p></li>
+<li><p>M2 Screw X2</p></li>
+<li><p>M2 Nuts X2</p></li>
+</ul>
+<p>Equipment:</p>
+<ul class="simple">
+<li><p>ScrewDriver X1</p></li>
+</ul>
+</div>
+<div class="section" id="practical-operation">
+<h2><span class="section-number">10.4. </span>Practical operation<a class="headerlink" href="#practical-operation" title="Permalink to this headline">¶</a></h2>
+<p>Screw the sensor (Paste photos here later)</p>
+<ul class="simple">
+<li><p>Attach the distance sensor to the stand model (D1)</p></li>
+<li><p>Screw the car park gate (D2) onto the stand model (D1)</p></li>
+</ul>
+<p>Build the model</p>
+<ul class="simple">
+<li><p>Put together all the cardboard parts D1-D3</p></li>
+</ul>
+</div>
+<div class="section" id="hardware-connect">
+<h2><span class="section-number">10.5. </span>Hardware connect:<a class="headerlink" href="#hardware-connect" title="Permalink to this headline">¶</a></h2>
+<p><img alt="pic" src="../_images/Case2_06.png" /></p>
+<ol class="simple">
+<li><p>Connect Distance sensor to P14(Trig)/P15(Echo)
+<img alt="pic" src="../_images/Case2_07.png" /></p></li>
+<li><p>Connect Light Sensor to P0
+<img alt="pic" src="../_images/Case2_08.png" /></p></li>
+<li><p>Connect 180° Servo to P2
+<img alt="pic" src="../_images/Case2_09.png" /></p></li>
+<li><p>Download the code and transfer to micro:bit</p></li>
+<li><p>Plug the micro:bit into WiFi IoT extension board</p></li>
+</ol>
+</div>
+<div class="section" id="programming">
+<h2><span class="section-number">10.6. </span>Programming:<a class="headerlink" href="#programming" title="Permalink to this headline">¶</a></h2>
+<ol class="simple">
+<li><p>Drag on start block from Basic. Set distance and light to 0 from variables and turn servo to 0 degree at P2 at the beginning.<BR>
+<img alt="pic_300" src="../_images/Case2_02.png" /></p></li>
+<li><p>Drag forever block from Basic. Set distance to get distance unit cm trig P14 echo P15.
+<img alt="pic_600" src="../_images/Case2_03.png" /></p></li>
+<li><p>Snap if statement into forever, set if distance ≤ 5 then, set light to get light value (percentage) at Pin P0.
+<img alt="pic_600" src="../_images/Case2_04.png" /></p></li>
+<li><p>Snap if statement after measuring the distance, if light &gt; 50, turn servo to 90 degree at P2, pause 5 seconds and turn servo to 0 degree at P2. <BR>That’s say when there is car entering and there is vacancy inside the car park, the car park gate will be opened for 5 seconds for car entering.
+<img alt="pic" src="../_images/Case2_05.png" /></p></li>
+</ol>
+<p><a class="reference external" href="https://makecode.microbit.org/v2/#pub:_bCf1XwDEP7dq">Example Code</a><BR></p>
+<iframe width="700" height="500" frameborder="0" src="https://makecode.microbit.org/v2/#pub:_bCf1XwDEP7dq"></iframe></div>
+<div class="section" id="result">
+<h2><span class="section-number">10.7. </span>Result<a class="headerlink" href="#result" title="Permalink to this headline">¶</a></h2>
+<p>The light sensor is used to check the vacancies in the car park while the distance sensor is used to sense if there are any cars coming near the car park gate. <BR>
+The car park gate controlled by the servo will open when there are vacancies in the car park and there are cars near the car park gate.</p>
+</div>
+<div class="section" id="think">
+<h2><span class="section-number">10.8. </span>Think<a class="headerlink" href="#think" title="Permalink to this headline">¶</a></h2>
+<p>Q1. When you find the light and distance value, how to show their value on the OLED?
+<BR><BR>
+Q2. Can you put some signal on micro:bit so that people know there is vacancy?</p>
 </div>
 </div>
 

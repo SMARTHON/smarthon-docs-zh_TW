@@ -8,12 +8,12 @@ Make a smart playground lamp by detecting the motion nearby.<P>
 
 ## Background
 <HR>
-<B>What is smart playground lamp?</B><P>
+<span id="subtitle">What is smart playground lamp?</span><P>
 
 Smart playground lamp is a lamp which can open automatically when someone passes by. Installing an
 auto-light can help the earth save electricity. When no one passes by, the light will automatically turn off.<P>
 
-<B>Smart playground lamp operation</B><P>
+<span id="subtitle">Smart playground lamp operation</span><P>
 
 Motion sensor should be able to detect if there are people moving in the playground.<BR>
 If there are people moving in the playground, the LED light should turn on, vice versa.<BR>
@@ -47,49 +47,60 @@ Electronics:
 ## Practical Operation
 <HR>
 
-1. Screw the sensor<BR>Attach the LED light to the model . Attach motion sensor to A1 model with M4 screws and nuts.<BR>
-![auto_fit](images/Case1_02.png)<P>
-2. Attach the white LED light to A3 model with M4 screws and nuts.<BR>
-![auto_fit](images/Case1_03.png)<BR>
-3. Put together all the cardboard parts (A1-A3)<BR>
-![auto_fit](images/Case1_04.png)
+<span id="subtitle">Step 1</span><BR><P>
+Screw the sensor. Attach the LED light to the model. Attach motion sensor to A1 model with M4 screws and nuts.<BR><P>
+![auto_fit](images/Case1_02.png)<BR><P>
+
+<span id="subtitle">Step 2</span><BR><P>
+Attach the white LED light to A3 model with M4 screws and nuts.<BR><P>
+![auto_fit](images/Case1_03.png)<BR><P>
+
+<span id="subtitle">Step 3</span><BR><P>
+Put together all the cardboard parts (A1-A3)<BR><P>
+![auto_fit](images/Case1_04.png)<BR><P>
 
 ## Hardware connect
 <HR>
 
-* Connect Motion sensor to the P0 port of Smarthon IoT:bit
-* Connect LED light to the P1 port of Smarthon IoT:bit
+Connect Motion sensor to the P0 port of Smarthon IoT:bit<BR><P>
+Connect LED light to the P1 port of Smarthon IoT:bit<BR><P>
 <BR>![auto_fit](images/Case1_05.png)
 <P>
 
 ## Programming:
 <HR>
 
-Step1. Drag forever block from Basic. Snap if statement into forever, set get motion (triggered or not) at P0=true, that's say motion is triggered, someone passes by.<BR>
-![auto_fit](images/Case1_06.png)
-Step2. Turn white LED to 1023 at P1 as turning on white LED and pause 10 seconds.
-![auto_fit](images/Case1_07.png)
-Step3. Else, turn white LED to 0 at P1 as turing off white LED.
-![auto_fit](images/Case1_08.png)
-<P>
+<span id="subtitle">Step 1</span><BR><P>
+Drag forever block from Basic. Snap if statement into forever, set get motion (triggered or not) at P0=true, that's say motion is triggered, someone passes by.<BR><P>
+![auto_fit](images/Case1_06.png)<P>
+<span id="subtitle">Step 2</span><BR><P>
+Turn white LED to 1023 at P1 as turning on white LED and pause 10 seconds.<P>
+![auto_fit](images/Case1_07.png)<P>
+<span id="subtitle">Step 3</span><BR><P>
+Else, turn white LED to 0 at P1 as turing off white LED.<P>
+![auto_fit](images/Case1_08.png)<P>
 
-[https://makecode.microbit.org/v2/_44zg2oKFRLhs](https://makecode.microbit.org/v2/#pub:_44zg2oKFRLhs)<BR>
-<iframe src="https://makecode.microbit.org/v2/#pub:_44zg2oKFRLhs" width="100%" height="500" frameborder="0"></iframe>
+<span id="subtitle">Full Solution<BR><P>
+MakeCode:[https://makecode.microbit.org/_M75EdA7XVUHW](https://makecode.microbit.org/v2/#pub:_M75EdA7XVUHW)<BR><P>
+You could also download the program from the following website:<BR>
+<iframe src="https://makecode.microbit.org/v2/#pub:_M75EdA7XVUHW" width="100%" height="500" frameborder="0"></iframe>
 
 <P>
 
 ## Result:
 <HR>
 
-![auto_fit](images/Case1_09.gif)
-Motion sensor is used to detect if there are people moving in the playground. If there are, the LED light will be turned on; otherwise, it will be turned off.
+Motion sensor is used to detect if there are people moving in the playground. If there are, the LED light will be turned on; otherwise, it will be turned off.<BR><P>
+![auto_fit](images/Case1_09.gif)<P>
 
 ## Think
 <HR> 
 
-Q1. How can you use motion sensors, other than turning  on the light automatically?<BR>
-Q2. How should we reset the programming if we connect the white LED light to P3?<BR>
-Tips: We need to disable LED to use Pin P3.
-![auto_fit](images/Case1_10.png)
-(Refer to [Micro:bit](https://makecode.microbit.org/device/pins))	
-<BR>Q3. Show motion sensor value on OLED
+Q1. How can you use motion sensors, other than turning  on the light automatically?<BR><P>
+Q2. How should we reset the programming if we connect the white LED light to P3?<BR><P>
+Tips: As P3 is used by micro:bit LED. 
+(Refer to [https://makecode.microbit.org/device/pins](https://makecode.microbit.org/device/pins))<BR>
+If we connect white LED light to P3, we need to disable micrbo:bit LED.<BR><P>
+![auto_fit](images/Case1_10.png)<P>
+	
+Q3. Show motion sensor value on OLED<P>
