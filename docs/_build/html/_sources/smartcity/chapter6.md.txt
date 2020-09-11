@@ -1,2 +1,2 @@
-# Chapter 6: Access Internet information by IFTTT
+# Chapter 6: Object to Object communication
 

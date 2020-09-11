@@ -1,4 +1,4 @@
-# Chapter 4: Control your micro:bit by App inventor 2/Web 
+# Chapter 4: Control your micro:bit by App Inventor 2
 
 In this example, PC/mobile and micro:bit are connected to LAN network through WAN
 PC/mobile will send a control command “Pin_On” to micro:bit. When the micro:bit receive the command, it will turn on the module on the pin.

@@ -1,2 +1,1 @@
-# Chapter 5: WI-FI Group communication
-
+# Chapter 5: Control your micro:bit by IFTTT Services

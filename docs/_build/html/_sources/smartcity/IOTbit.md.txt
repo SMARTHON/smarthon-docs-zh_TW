@@ -121,17 +121,4 @@ Python is one of the most famous programming language, widely used in school and
 [Python editor](https://python.microbit.org/v/2.0)
 ![pic_700](images/iot_image14.png)
 
-## QuickStart
 
-<B> Get ready to programming</B>
-Go to [MakeCode](https://makecode.microbit.org),create a new progject
-![pic_700](images/iot_image15.png)<P>
-Give the project a name
-![pic_700](images/iot_image16.png)<P>
-Click the more and choose extensions in the pull down menu
-![pic_700](images/iot_image17.png)<P>
-Input the URL of the extension for IoT:bit, then click on it to import the extension
-![pic_700](images/iot_image18.png)<P>
-Check the extension is exist in the list
-![pic_700](images/iot_image19.png)<P>
-That's all for the preparation to use the IoT:bit
