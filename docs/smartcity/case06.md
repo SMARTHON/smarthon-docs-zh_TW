@@ -81,7 +81,7 @@ Select your channel > “API Keys” ，copy the API key as follows:<BR><P>
 ![auto_fit](images/Case6/Case6_007.png)<P>
 <span id="remarks">* For more details, please refer to 2.1. Create channel in ThingSpeak and get the key</span><BR><P>
 
-## Programming
+## Programming (MakeCode)
 <HR>
 
 <span id="subtitle">Step 1</span><BR><P>
@@ -105,7 +105,7 @@ Pause for 11000ms after sending data to Thingspeak.<BR><P>
 
 
 <span id="subtitle">Full Solution<BR><P>
-MakeCode: [https://makecode.microbit.org/_LAkCCuesED5f)](https://makecode.microbit.org/v2/#pub:_LAkCCuesED5f)<BR><P>
+MakeCode: [https://makecode.microbit.org/_LAkCCuesED5f](https://makecode.microbit.org/v2/#pub:_LAkCCuesED5f)<BR><P>
 You could also download the program from the following website:<BR>
 <iframe src="https://makecode.microbit.org/v2/#pub:_LAkCCuesED5f" width="100%" height="500" frameborder="0"></iframe>
 

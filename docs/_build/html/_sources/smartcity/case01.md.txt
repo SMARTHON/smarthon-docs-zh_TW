@@ -67,7 +67,7 @@ Connect LED light to the P1 port of Smarthon IoT:bit<BR><P>
 <BR>![auto_fit](images/Case1/Case1_05.png)
 <P>
 
-## Programming:
+## Programming (MakeCode)
 <HR>
 
 <span id="subtitle">Step 1</span><BR><P>
@@ -87,7 +87,7 @@ You could also download the program from the following website:<BR>
 
 <P>
 
-## Result:
+## Result
 <HR>
 
 Motion sensor is used to detect if there are people moving in the playground. If there are, the LED light will be turned on; otherwise, it will be turned off.<BR><P>
