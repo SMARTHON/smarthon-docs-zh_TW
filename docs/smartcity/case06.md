@@ -10,7 +10,7 @@ Make a weather station which gets the values from the raindrop sensor, temperatu
 <HR>
 
 <span id="subtitle">What is Thingspeak?</span><P>
-ThingSpeak™ is an IoT analytics platform service which provides instant visualizations of data posted by your devices to ThingSpeak. In this case, we will use this platform to update our data to plot instant graphs. <BR><P>
+ThingSpeak is an IoT analytics platform service which provides instant visualizations of data posted by your devices to ThingSpeak. In this case, we will use this platform to update our data to plot instant graphs. <BR><P>
 
 <span id="subtitle">Weather station operation</span><P>
 Collecting temperature, humidity and raindrop consistently and uploading the data by using Thingspeak. This can help us to do analytical work more conveniently as we can refer to the automatically plotted graphs. <BR><P>
@@ -66,7 +66,7 @@ Connect the Temperature and humidity Sensor to P2 port of Smarthon IoT:bit<BR><P
 <HR>
 
 <span id="subtitle">Step 1</span><BR><P>
-Go to https://thingspeak.com/, Choose Channels -> My Channels -> New Channel<BR><P>
+Go to [https://thingspeak.com/](https://thingspeak.com/), Choose Channels -> My Channels -> New Channel<BR><P>
 ![auto_fit](images/Case6/Case6_006.png)<P>
   
 <span id="subtitle">Step 2</span><BR><P>
@@ -79,7 +79,7 @@ Input Channel name, Field1 and Field2 , then click “Save Channel”<BR><P>
 <span id="subtitle">Step 3</span><BR><P>
 Select your channel > “API Keys” ，copy the API key as follows:<BR><P>
 ![auto_fit](images/Case6/Case6_007.png)<P>
-* For more details, please refer to 2.1. Create channel in ThingSpeak and get the key
+<span id="remarks">* For more details, please refer to 2.1. Create channel in ThingSpeak and get the key</span><BR><P>
 
 ## Programming
 <HR>
@@ -114,5 +114,5 @@ We can find three graphs on Thingspeak including temperature, humidity and raind
 ## Think
 <HR>
 
-Q1. How can we upload other module values (i.e. noise) to Thingspeak?<BR><P>
+Q1. How can we upload other module values (e.g. noise) to ThingSpeak?<BR><P>
 
