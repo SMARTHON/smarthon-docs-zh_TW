@@ -64,7 +64,7 @@ Connect the Temperature and humidity Sensor to P2 port of Smarthon IoT:bit<BR><P
 
 ## IoT (ThingSpeak)
 
-<span id="remarks">* For more details, please refer to Ch1.1. Create channel in ThingSpeak and get the key</span><BR><P>
+<span id="remarks">* For more details, please refer to Chapter 1: Upload Data to ThingSpeak</span><BR><P>
 
 <HR>
 
