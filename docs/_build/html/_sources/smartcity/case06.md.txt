@@ -97,7 +97,7 @@ Drag forever block from Basic. Snap if statement into forever. If WiFi is connec
 Show string Temperature, humidity and raindrop on the OLED by using join from text.<BR><P>
 ![auto_fit](images/Case6/Case6_011.png)<P>
 <span id="subtitle">Step 5</span><BR><P>
-Drag Send Thingspeak with key (paste thingspeak key) from WiFi IoT:bit.. Set field 1 to temperature, set field 2 to humidity and set field 3 to raindrop.<BR><P>
+Drag Send Thingspeak with key (paste thingspeak key) from WiFi IoT:bit. Set field 1 to temperature, set field 2 to humidity and set field 3 to raindrop.<BR><P>
 ![auto_fit](images/Case6/Case6_012.png)<P>
 <span id="subtitle">Step 6</span><BR><P>
 Pause for 11000ms after sending data to Thingspeak.<BR><P>
@@ -105,9 +105,9 @@ Pause for 11000ms after sending data to Thingspeak.<BR><P>
 
 
 <span id="subtitle">Full Solution<BR><P>
-MakeCode: [https://makecode.microbit.org/_PXR8VHVV5dUX](https://makecode.microbit.org/v2/#pub:_PXR8VHVV5dUX)<BR><P>
+MakeCode: [https://makecode.microbit.org/_LAkCCuesED5f)](https://makecode.microbit.org/v2/#pub:_LAkCCuesED5f)<BR><P>
 You could also download the program from the following website:<BR>
-<iframe src="https://makecode.microbit.org/v2/#pub:_PXR8VHVV5dUX" width="100%" height="500" frameborder="0"></iframe>
+<iframe src="https://makecode.microbit.org/v2/#pub:_LAkCCuesED5f" width="100%" height="500" frameborder="0"></iframe>
 
 ## Result
 <HR>
