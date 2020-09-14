@@ -63,6 +63,9 @@ Connect the Temperature and humidity Sensor to P2 port of Smarthon IoT:bit<BR><P
 ![auto_fit](images/Case6/Case6_005.png)<P>
 
 ## IoT (ThingSpeak)
+
+<span id="remarks">* For more details, please refer to Ch1.1. Create channel in ThingSpeak and get the key</span><BR><P>
+
 <HR>
 
 <span id="subtitle">Step 1</span><BR><P>
@@ -79,7 +82,6 @@ Input Channel name, Field1 and Field2 , then click “Save Channel”<BR><P>
 <span id="subtitle">Step 3</span><BR><P>
 Select your channel > “API Keys” ，copy the API key as follows:<BR><P>
 ![auto_fit](images/Case6/Case6_007.png)<P>
-<span id="remarks">* For more details, please refer to 2.1. Create channel in ThingSpeak and get the key</span><BR><P>
 
 ## Programming (MakeCode)
 <HR>

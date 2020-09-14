@@ -1,6 +1,5 @@
-# Getting started
+# Getting started: Add the extension
 
-## Add the extension
 <HR>
 
 <span id="subtitle">Step 1</span><BR><P>

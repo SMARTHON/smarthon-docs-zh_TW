@@ -1,72 +1,53 @@
-# Chapter 1: Connect the micro:bit to the Wi-Fi
+# Chapter 1: Upload Data to ThingSpeak
 
-Connecting Wi-Fi is the very first step to access internet services, including ThingSpeak, IFTTT, email, etc. Before you start, make sure your micro:bit device is connected to the Internet.<BR><P>
-![auto_fit](images/Ch1_01.png)
+ThingSpeak is a great platform for user to uploading data for IOT. It allows you to create channel for uploading data. You can visualize the information in charts, for data visualization.
+![pic](images/Ch2_01.png)
+ 
 
-## Open the Home Router or Mobile Phone Hotspot
-<HR>
-Please make sure there is a Wi-Fi signal (with 2.4GHz) available in your area. <BR>
-You can <B>either</B> setup a home router <B>or</B> a Wi-Fi hotspot from your mobile phone.<P>
+## Create channel in ThingSpeak
+<span id="subtitle" >Step 1</span>
+* Go to https://thingspeak.com/, register an account and login to the platform
 
-### Setup your home/office Wi-Fi
-![auto_fit](images/Ch1_02.png)<BR><P>
+<span id="subtitle" >Step 2</span>
+* Choose Channels -> My Channels -> New Channel
+![pic_300](images/Ch2_02.png)
 
-### Setup your mobile phone Hotspot
-<span id="remarks">* make sure your phone has internet service.</span><BR><P>
-![auto_fit](images/Ch1_03.png)<BR><P>
+<span id="subtitle" >Step 3</span>
+* Input Channel name, Field1 and Field2 , then click “Save Channel”
+> * Channel name: smart-house
+> * Field 1: Light
+> * Field 2: Temperature
+> ![pic_300](images/Ch2_03.png)
 
-* For android:
-![auto_fit](images/Ch1_03a.png)<BR><P>
-* For iPhone:</span>
-![auto_fit](images/Ch1_03b.png)<BR><P>
+<span id="subtitle" >Step 4</span>
+* You will see two chats for data (field1, field 2)
+![pic](images/Ch2_04.png)
+
+<span id="subtitle" >Step 5</span>
+* Open your web browser, go to https://thingspeak.com , select your channel > “API Keys” ，copy the API key as follows:
+![pic](images/Ch2_05.png)
 
 
 ## Programming (Makecode)
-<HR>
+<span id="subtitle" >Step 1</span>
+* if WiFi is connected, it returns true, otherwise it returns false.
+![pic_200](images/Ch2_06.png)
 
-<span id="subtitle" >Step 1</span><BR><P>
-Before you start, you need to initialize the WiFi IoT:bit.<BR>
-Choose WiFi IoT:bit -> Initialize WiFi IoT:bit and OLED<BR><P>
-![auto_fit](images/Ch1_04.png)<BR>
-<P>
+<span id="subtitle" >Step 2</span>
+* It will send data (field1, field2, field3) to Thingspeak with the key provided
+![pic_200](images/Ch2_07.png)
 
-<span id="subtitle" >Step 2</span><BR><P>
-After initializing, you can connect to the WiFi:<BR>
-Choose WiFi IoT:bit -> Set Wi-Fi to ssid “”, pwd “”. Enter your Wi-Fi name and password<BR><P>
-![auto_fit](images/Ch1_05.png)
-<P>
+<span id="subtitle" >Step 3</span>
+* Select “WiFi IoT:bit” > “Initialize WiFi Iot:bit and OLED” and “Set WiFi to ssid…pwd”. 
+* On every 15seconds, if the WiFi is connected, it will send data to ThingSpeak.
+![pic_600](images/Ch2_08.png)
 
-<span id="subtitle" >Step 3</span><BR><P>
-“On WiFi connected” is an event handler.<BR>
-It will be triggered once after connected with WiFi.<BR><P>
-![auto_fit](images/Ch1_06.png)
-<P>
-
-<span id="subtitle" >Step 4</span><BR><P>
-Choose Basic -> show icon “heart” inside “On WiFi connected”<BR><P>
-![auto_fit](images/Ch1_07.png)
-<P>
-
-<span id="subtitle">Full Solution<BR><P>
-MakeCode: [https://makecode.microbit.org/_Ydr63W8HdLDU](https://makecode.microbit.org/v2/#pub:_Ydr63W8HdLDU)<BR><P>
-You could also download the program from the following website:<BR>
-<iframe src="https://makecode.microbit.org/v2/#pub:_Ydr63W8HdLDU" width="100%" height="500" frameborder="0"></iframe>
-<BR><P>
+<span id="subtitle" >Step 4</span>
+* Open your program and paste the ThingSpeak key and paste it here.
+![pic_600](images/Ch2_09.png)
 
 ## Result
-<HR>
-
-<span id="subtitle" >Step 1</span><BR><P>
-Load the program to the micro:bit and connect the micro:bit to WiFi IoT:bit.<BR><P>
-![auto_fit](images/Ch1_08.png)
-<P>
-
-<span id="subtitle" >Step 2</span><BR><P>
-Wi-Fi IoT:bit will start to connect to internet, when the connection is successful, the IP Address would be shown.<BR><P>
-![auto_fit](images/Ch1_09.png)
-<P>
-
-<span id="subtitle" >Step 3</span><BR><P>
-An icon “heart” will be shown on LED after WiFi is connected successfully.<BR><P>
-![auto_fit](images/Ch1_10.png)
-<P>
+* If data is uploaded successfully, “Uploaded OK” will be shown.
+![pic](images/Ch2_10.png)
+* The charts in your channel in ThingSpeak will be updated.
+![pic](images/Ch2_11.png)

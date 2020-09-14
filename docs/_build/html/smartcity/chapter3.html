@@ -8,7 +8,7 @@
   
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   
-  <title>6. Chapter 3: Send Email by IFTTT &mdash; Smarthon Documentation 1.0 documentation</title>
+  <title>7. Chapter 3: Control your micro:bit by App Inventor 2 &mdash; Smarthon Documentation 1.0 documentation</title>
   
 
   
@@ -36,8 +36,8 @@
   <link rel="stylesheet" href="../_static/css/custom.css" type="text/css" />
     <link rel="index" title="Index" href="../genindex.html" />
     <link rel="search" title="Search" href="../search.html" />
-    <link rel="next" title="7. Chapter 4: Control your micro:bit by App Inventor 2" href="chapter4.html" />
-    <link rel="prev" title="5. Chapter 2: Upload Data to ThingSpeak" href="chapter2.html" /> 
+    <link rel="next" title="8. Chapter 4: Control your micro:bit by IFTTT Services" href="chapter4.html" />
+    <link rel="prev" title="6. Chapter 2: Send Email by IFTTT" href="chapter2.html" /> 
 </head>
 
 <body class="wy-body-for-nav">
@@ -83,20 +83,32 @@
             
               <ul class="current">
 <li class="toctree-l1 current"><a class="reference internal" href="index.html">Smarthon Smart City IoT Starter Kit</a><ul class="current">
-<li class="toctree-l2"><a class="reference internal" href="Introduction.html">1. Introduction</a></li>
-<li class="toctree-l2"><a class="reference internal" href="IOTbit.html">2. IoT:bit Introduction</a></li>
-<li class="toctree-l2"><a class="reference internal" href="getstart.html">3. Getting started</a></li>
-<li class="toctree-l2"><a class="reference internal" href="chapter1.html">4. Chapter 1: Connect the micro:bit to the Wi-Fi</a></li>
-<li class="toctree-l2"><a class="reference internal" href="chapter2.html">5. Chapter 2: Upload Data to ThingSpeak</a></li>
-<li class="toctree-l2 current"><a class="current reference internal" href="#">6. Chapter 3: Send Email by IFTTT</a><ul>
-<li class="toctree-l3"><a class="reference internal" href="#create-event-email-in-ifttt-and-get-the-key">6.1. Create event “Email” in IFTTT and get the key</a></li>
-<li class="toctree-l3"><a class="reference internal" href="#programming-makecode">6.2. Programming (Makecode)</a></li>
-<li class="toctree-l3"><a class="reference internal" href="#result">6.3. Result</a></li>
+<li class="toctree-l2"><a class="reference internal" href="1_Introduction.html">1. Introduction</a></li>
+<li class="toctree-l2"><a class="reference internal" href="2_IOTbit.html">2. IoT:bit Introduction</a></li>
+<li class="toctree-l2"><a class="reference internal" href="3_getstart.html">3. Getting started: Add the extension</a></li>
+<li class="toctree-l2"><a class="reference internal" href="4_wificonnect.html">4. First step: Connect the micro:bit to the Wi-Fi</a></li>
+<li class="toctree-l2"><a class="reference internal" href="chapter1.html">5. Chapter 1: Upload Data to ThingSpeak</a></li>
+<li class="toctree-l2"><a class="reference internal" href="chapter2.html">6. Chapter 2: Send Email by IFTTT</a></li>
+<li class="toctree-l2 current"><a class="current reference internal" href="#">7. Chapter 3: Control your micro:bit by App Inventor 2</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#what-is-api">7.1. What is API</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#example-1-control-your-micro-bit-with-modules">7.2. Example 1: Control your micro:bit with modules</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="#know-the-api-control-command-without-value">7.2.1. Know the API (control command without value)</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#programming-makecode">7.2.2. Programming (MakeCode)</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#result-web">7.2.3. Result (WEB)</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#result-app-inventor-2">7.2.4. Result (App inventor 2)</a></li>
 </ul>
 </li>
-<li class="toctree-l2"><a class="reference internal" href="chapter4.html">7. Chapter 4: Control your micro:bit by App Inventor 2</a></li>
-<li class="toctree-l2"><a class="reference internal" href="chapter5.html">8. Chapter 5: Control your micro:bit by IFTTT Services</a></li>
-<li class="toctree-l2"><a class="reference internal" href="chapter6.html">9. Chapter 6: Object to Object communication</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#example-2-set-the-parameter-via-wi-fi-e-g-clock">7.3. Example 2: Set the parameter via Wi-Fi (e.g. clock)</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="#id1">7.3.1. Know the API (control command without value)</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#id2">7.3.2. Programming (Makecode)</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#id3">7.3.3. Result (WEB)</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#id4">7.3.4. Result (App inventor 2)</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="chapter4.html">8. Chapter 4: Control your micro:bit by IFTTT Services</a></li>
+<li class="toctree-l2"><a class="reference internal" href="chapter5.html">9. Chapter 5: Object to Object communication</a></li>
 <li class="toctree-l2"><a class="reference internal" href="case01.html">10. Case 01: Automated Smart Playground Lamp</a></li>
 <li class="toctree-l2"><a class="reference internal" href="case02.html">11. Case 02: Smart Car park Access Barrier</a></li>
 <li class="toctree-l2"><a class="reference internal" href="case03.html">12. Case 03: Garbage disposal system</a></li>
@@ -160,7 +172,7 @@
         
           <li><a href="index.html">Smarthon Smart City IoT Starter Kit</a> &raquo;</li>
         
-      <li><span class="section-number">6. </span>Chapter 3: Send Email by IFTTT</li>
+      <li><span class="section-number">7. </span>Chapter 3: Control your micro:bit by App Inventor 2</li>
     
     
       <li class="wy-breadcrumbs-aside">
@@ -179,89 +191,153 @@
           <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
            <div itemprop="articleBody">
             
-  <div class="section" id="chapter-3-send-email-by-ifttt">
-<h1><span class="section-number">6. </span>Chapter 3: Send Email by IFTTT<a class="headerlink" href="#chapter-3-send-email-by-ifttt" title="Permalink to this headline">¶</a></h1>
-<p>IFTTT is the way to connect hundreds of the apps and devices, including Twitter, Dropbox, Email, Google Assistant, etc. You can connect Micro:bit to IFTTT to create more features by “If… then…”.
-<img alt="pic_400" src="../_images/Ch3_01.png" /></p>
-<div class="section" id="create-event-email-in-ifttt-and-get-the-key">
-<h2><span class="section-number">6.1. </span>Create event “Email” in IFTTT and get the key<a class="headerlink" href="#create-event-email-in-ifttt-and-get-the-key" title="Permalink to this headline">¶</a></h2>
-<p><span id="subtitle" >Step 1</span></p>
-<ul class="simple">
-<li><p>Go to http://www.ifttt.com, open the top right menu, then click “Create” &gt; “Applets”
-<img alt="pic" src="../_images/Ch3_02.png" /></p></li>
-</ul>
-<p><span id="subtitle" >Step 2</span></p>
-<ul class="simple">
-<li><p>Select this -&gt; select webhooks -&gt; input Event Name (eg. Event Name: SendEmail)，then click “Create trigger”
-<img alt="pic" src="../_images/Ch3_03.png" /></p></li>
-</ul>
-<p><span id="subtitle" >Step 3</span></p>
-<ul class="simple">
-<li><p>Select “That” &gt; Email
-<img alt="pic" src="../_images/Ch3_04.png" /></p></li>
-</ul>
-<p><span id="subtitle" >Step 4</span></p>
-<ul class="simple">
-<li><p>Select “Send me an email” , Input email title and body, then click “Create action”
-<img alt="pic" src="../_images/Ch3_05.png" /></p></li>
-</ul>
-<p><span id="subtitle" >Step 5</span></p>
-<ul class="simple">
-<li><p>Open your web browser, open the top right menu, select “My services” &gt; “Webhooks”
-<img alt="pic_600" src="../_images/Ch3_06.png" /></p></li>
-</ul>
-<p><span id="subtitle" >Step 6</span></p>
-<ul class="simple">
-<li><p>Select “Documentation” ，Copy your Webhooks Key as follows:
-<img alt="pic" src="../_images/Ch3_07.png" /></p></li>
-</ul>
+  <div class="section" id="chapter-3-control-your-micro-bit-by-app-inventor-2">
+<h1><span class="section-number">7. </span>Chapter 3: Control your micro:bit by App Inventor 2<a class="headerlink" href="#chapter-3-control-your-micro-bit-by-app-inventor-2" title="Permalink to this headline">¶</a></h1>
+<p>In this example, PC/mobile and micro:bit are connected to LAN network through WAN
+PC/mobile will send a control command “Pin_On” to micro:bit. When the micro:bit receive the command, it will turn on the module on the pin.
+<img alt="pic" src="../_images/Ch4_01.png" />
+<span id="remarks">***Before we control the micro:bit, please make sure your micro:bit is connected to the Wi-Fi.</span></p>
+<div class="section" id="what-is-api">
+<h2><span class="section-number">7.1. </span>What is API<a class="headerlink" href="#what-is-api" title="Permalink to this headline">¶</a></h2>
+<p>API is HTTP URL, it is one of the way to communicate with other objects.
+http://54.202.26.42:8080/publish?id=DeviceID&amp;msg=ControlCommand</p>
+</div>
+<div class="section" id="example-1-control-your-micro-bit-with-modules">
+<h2><span class="section-number">7.2. </span>Example 1: Control your micro:bit with modules<a class="headerlink" href="#example-1-control-your-micro-bit-with-modules" title="Permalink to this headline">¶</a></h2>
+<div class="section" id="know-the-api-control-command-without-value">
+<h3><span class="section-number">7.2.1. </span>Know the API (control command without value)<a class="headerlink" href="#know-the-api-control-command-without-value" title="Permalink to this headline">¶</a></h3>
+<p>http://54.202.26.42:8080/publish?id=DeviceID&amp;msg=ControlCommand</p>
 </div>
 <div class="section" id="programming-makecode">
-<h2><span class="section-number">6.2. </span>Programming (Makecode)<a class="headerlink" href="#programming-makecode" title="Permalink to this headline">¶</a></h2>
-<p><span id="subtitle" >Step 1</span></p>
+<h3><span class="section-number">7.2.2. </span>Programming (MakeCode)<a class="headerlink" href="#programming-makecode" title="Permalink to this headline">¶</a></h3>
+<p><span id="subtitle" >Step 1. Start WiFi remote control </span></p>
 <ul class="simple">
-<li><p>It will trigger the following function once after button A is clicked
-<img alt="pic_200" src="../_images/Ch3_08.png" /></p></li>
+<li><p>Connect micro:bit to WiFi.
+<img alt="pic_600" src="../_images/Ch4_02.png" /></p></li>
+</ul>
+<p><span id="subtitle" >Step 2. Set the Wi-Fi listening on Micro:bit WAN control command action</span></p>
+<ul class="simple">
+<li><p>After micro:bit connected to WiFi, it will start WiFi remote control (WAN)</p></li>
+<li><p>If Wan command “Pin_On” is received, white LED will be turned on.
+<img alt="pic_600" src="../_images/Ch4_03.png" /></p></li>
+</ul>
+<p><span id="subtitle" >Step 3. Get micro:bit Device ID</span></p>
+<ul class="simple">
+<li><p>Load the program to the micro:bit and connect the micro:bit to the WiFi IoT:bit.
+<img alt="pic_600" src="../_images/Ch4_04.png" /></p></li>
+<li><p>Wi-Fi IoT:bit will start to connect to internet, when the connection is successful, the IP Address would be shown.
+<img alt="pic" src="../_images/Ch4_05.png" /></p></li>
+<li><p>Then, it will start WAN remote control. If the connection is successful, the Device ID would be shown.</p></li>
+<li><p>Remember the Device ID, it will be used for WAN connection on the next step.
+<img alt="pic" src="../_images/Ch4_06.png" /></p></li>
+</ul>
+</div>
+<div class="section" id="result-web">
+<h3><span class="section-number">7.2.3. </span>Result (WEB)<a class="headerlink" href="#result-web" title="Permalink to this headline">¶</a></h3>
+<p><span id="subtitle" >Step 1. Get WAN control URL (command without value)</span></p>
+<ul class="simple">
+<li><p>The WAN control command URL is:
+http://54.202.26.42:8080/publish?id=DeviceID&amp;msg=ControlCommand</p></li>
+<li><p>Open your web browser and input control command URL, then press “enter”
+<img alt="pic_600" src="../_images/Ch4_07.png" /></p></li>
 </ul>
 <p><span id="subtitle" >Step 2</span></p>
 <ul class="simple">
-<li><p>This function will send data (field1, field2, field3) and trigger event to IFTTT with the key provided
-<img alt="pic_200" src="../_images/Ch3_09.png" /></p></li>
+<li><p>After connected to WAN remote control is started, when Button1 is clicked, it will send WAN command “Pin_On” to the micro:bit with provided Device ID.</p></li>
+<li><p>The LED on P0 will be turned on.
+<img alt="pic" src="../_images/Ch4_08.png" /></p></li>
 </ul>
-<p><span id="subtitle" >Step 3</span></p>
+</div>
+<div class="section" id="result-app-inventor-2">
+<h3><span class="section-number">7.2.4. </span>Result (App inventor 2)<a class="headerlink" href="#result-app-inventor-2" title="Permalink to this headline">¶</a></h3>
+<p><span id="subtitle" >Step 1. Get WAN control URL (command without value)</span></p>
 <ul class="simple">
-<li><p>Select “WiFi IoT:bit” &gt; “Initialize WiFi Iot:bit and OLED” and “Set WiFi to ssid…pwd”.</p></li>
-<li><p>Select “Input” -&gt;“on button A pressed” .
-<img alt="pic_600" src="../_images/Ch3_10.png" /></p></li>
+<li><p>The WAN control command URL is:
+http://54.202.26.42:8080/publish?id=DeviceID&amp;msg=ControlCommand</p></li>
 </ul>
-<p><span id="subtitle" >Step 4</span></p>
+<p><span id="subtitle" >Step 2. Get controlled by mobile app in App Invetor</span></p>
 <ul class="simple">
-<li><p>Select “WiFi IoT:bit” &gt; “Send IFTTT key….”</p></li>
-<li><p>Once button A is clicked, it will send IFTTT request (send an email to your email box)
-<img alt="pic_600" src="../_images/Ch3_11.png" /></p></li>
+<li><p>In below example, you can create a web connection, set the URL to the control command URL in App inventor.</p></li>
 </ul>
-<p><span id="subtitle" >Step 5</span></p>
+<p><span id="subtitle" >A. Designer</span>
+<img alt="pic" src="../_images/Ch4_09.png" /></p>
+<p><span id="subtitle" >B. Blocks</span></p>
 <ul class="simple">
-<li><p>Input the following value</p></li>
+<li><p>When the remote button is clicked, it direct to the command URL, and control the micro:bit by Wi-Fi (WAN connection).
+<img alt="pic" src="../_images/Ch4_10.png" /></p></li>
+</ul>
+<p><span id="subtitle" >Step 3 </span></p>
+<ul class="simple">
+<li><p>After connected to WAN remote control is started, when Button1 is clicked, it will send WAN command “Pin_On” to the micro:bit with provided Device ID.</p></li>
+<li><p>The LED on P0 will be turned on.
+<img alt="pic" src="../_images/Ch4_11.png" /></p></li>
+</ul>
+</div>
+</div>
+<div class="section" id="example-2-set-the-parameter-via-wi-fi-e-g-clock">
+<h2><span class="section-number">7.3. </span>Example 2: Set the parameter via Wi-Fi (e.g. clock)<a class="headerlink" href="#example-2-set-the-parameter-via-wi-fi-e-g-clock" title="Permalink to this headline">¶</a></h2>
+<div class="section" id="id1">
+<h3><span class="section-number">7.3.1. </span>Know the API (control command without value)<a class="headerlink" href="#id1" title="Permalink to this headline">¶</a></h3>
+<p>http://54.202.26.42:8080/publish?id=DeviceID&amp;msg=ControlCommand</p>
+</div>
+<div class="section" id="id2">
+<h3><span class="section-number">7.3.2. </span>Programming (Makecode)<a class="headerlink" href="#id2" title="Permalink to this headline">¶</a></h3>
+<p><span id="subtitle" >Step 1. Set the Wi-Fi listening on micro:bit WAN control command action</span></p>
+<ul class="simple">
+<li><p>Using variable is useful when you need to change a program setting in micro:bit; for example: clock</p></li>
+<li><p>Also, you will need parameters “hour” for the clock.</p></li>
+<li><p>The initial value for the clock (hour) is 0.
+<img alt="pic_400" src="../_images/Ch4_12.png" /></p></li>
+<li><p>Connect Wi-Fi remote control (WAN) after Wi-Fi connected.
+<img alt="pic_300" src="../_images/Ch4_13.png" /></p></li>
+<li><p>After an hour, the parameter “hour” will be changed by 1.
+<img alt="pic_300" src="../_images/Ch4_14.png" /></p></li>
+<li><p>The time (current hour) can be changed by a WAN command received:</p></li>
 </ul>
 <blockquote>
 <div><ul class="simple">
-<li><p>a. IFTTT API key: “XXXXXXXXXXXXXXXXX“</p></li>
-<li><p>b. event_name: event name to trigger in Webhooks (eg. SendEmail)</p></li>
-<li><p>c. value 1-3: input value1, value2, value3
-<img alt="pic" src="../_images/Ch3_12.png" /></p></li>
+<li><p>Device ID: Your micro:bit Device ID (to identify micro:bit device to receive the command)</p></li>
+<li><p>WAN_Command: SetHour (command for micro:bit)</p></li>
+<li><p>Value: 6 (the value for the command)
+<img alt="pic_400" src="../_images/Ch4_15.png" /></p></li>
 </ul>
 </div></blockquote>
-</div>
-<div class="section" id="result">
-<h2><span class="section-number">6.3. </span>Result<a class="headerlink" href="#result" title="Permalink to this headline">¶</a></h2>
+<p><span id="subtitle" >Step 2. Get micro:bit Device ID</span></p>
 <ul class="simple">
-<li><p>After micro:bit is connected to WiFi and click button A, it will upload data to IFTTT.</p></li>
-<li><p>If data is uploaded successfully, “Uploaded OK” will be shown.
-<img alt="pic" src="../_images/Ch3_13.png" /></p></li>
-<li><p>Email will be sent to your mailbox by IFTTT.
-<img alt="pic" src="../_images/Ch3_14.png" /></p></li>
+<li><p>Load the program to the micro:bit and connect the micro:bit to the WiFi IoT:bit.
+<img alt="pic" src="../_images/Ch4_16.png" /></p></li>
+<li><p>Wi-Fi IoT:bit will start to connect to internet, when the connection is successful, the IP Address would be shown.
+<img alt="pic" src="../_images/Ch4_17.png" /></p></li>
+<li><p>Then, it will start WAN remote control. If the connection is successful, the Device ID would be shown.</p></li>
+<li><p>Remember the Device ID, it will be used for WAN connection on the next step.
+<img alt="pic" src="../_images/Ch4_18.png" /></p></li>
 </ul>
+</div>
+<div class="section" id="id3">
+<h3><span class="section-number">7.3.3. </span>Result (WEB)<a class="headerlink" href="#id3" title="Permalink to this headline">¶</a></h3>
+<p><span id="subtitle" >Step 1. Send controlled by browser (command with value)</span></p>
+<ul class="simple">
+<li><p>The control command URL is:
+http://54.202.26.42:8080/publish?id=DeviceID&amp;msg=ControlCommand&amp;value=value</p></li>
+<li><p>Open your web browser and input control command URL, then press “enter”
+<img alt="pic_600" src="../_images/Ch4_19.png" /></p></li>
+</ul>
+</div>
+<div class="section" id="id4">
+<h3><span class="section-number">7.3.4. </span>Result (App inventor 2)<a class="headerlink" href="#id4" title="Permalink to this headline">¶</a></h3>
+<p>In this example, you can create a web connection, set the URL to the control command URL (http://54.202.26.42:8080/publish?id=0xa3240ac45916&amp;msg=SetHour&amp;value=6)</p>
+<p><span id="subtitle" >A. Designer</span>
+<img alt="pic" src="../_images/Ch4_20.png" /></p>
+<p><span id="subtitle" >B. Blocks</span></p>
+<ul class="simple">
+<li><p>When the remote button is clicked, it direct to the command URL, and control the micro:bit by Wi-Fi (WAN connection).
+<img alt="pic" src="../_images/Ch4_21.png" /></p></li>
+<li><p>After connected to WAN remote control is started, when Button1 is clicked, it will send WAN command “SetHour” with value “6’ to the micro:bit with provided Device ID.
+<img alt="pic_600" src="../_images/Ch4_22.png" /></p></li>
+<li><p>Once it receives the WAN command (SetHour) with value (6), the updated value will be shown.
+<img alt="pic" src="../_images/Ch4_23.png" /></p></li>
+</ul>
+</div>
 </div>
 </div>
 
@@ -273,10 +349,10 @@
   
     <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
       
-        <a href="chapter4.html" class="btn btn-neutral float-right" title="7. Chapter 4: Control your micro:bit by App Inventor 2" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
+        <a href="chapter4.html" class="btn btn-neutral float-right" title="8. Chapter 4: Control your micro:bit by IFTTT Services" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
       
       
-        <a href="chapter2.html" class="btn btn-neutral float-left" title="5. Chapter 2: Upload Data to ThingSpeak" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+        <a href="chapter2.html" class="btn btn-neutral float-left" title="6. Chapter 2: Send Email by IFTTT" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
       
     </div>
   

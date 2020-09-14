@@ -8,7 +8,7 @@
   
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   
-  <title>4. Chapter 1: Connect the micro:bit to the Wi-Fi &mdash; Smarthon Documentation 1.0 documentation</title>
+  <title>5. Chapter 1: Upload Data to ThingSpeak &mdash; Smarthon Documentation 1.0 documentation</title>
   
 
   
@@ -36,8 +36,8 @@
   <link rel="stylesheet" href="../_static/css/custom.css" type="text/css" />
     <link rel="index" title="Index" href="../genindex.html" />
     <link rel="search" title="Search" href="../search.html" />
-    <link rel="next" title="5. Chapter 2: Upload Data to ThingSpeak" href="chapter2.html" />
-    <link rel="prev" title="3. Getting started" href="getstart.html" /> 
+    <link rel="next" title="6. Chapter 2: Send Email by IFTTT" href="chapter2.html" />
+    <link rel="prev" title="4. First step: Connect the micro:bit to the Wi-Fi" href="4_wificonnect.html" /> 
 </head>
 
 <body class="wy-body-for-nav">
@@ -83,24 +83,20 @@
             
               <ul class="current">
 <li class="toctree-l1 current"><a class="reference internal" href="index.html">Smarthon Smart City IoT Starter Kit</a><ul class="current">
-<li class="toctree-l2"><a class="reference internal" href="Introduction.html">1. Introduction</a></li>
-<li class="toctree-l2"><a class="reference internal" href="IOTbit.html">2. IoT:bit Introduction</a></li>
-<li class="toctree-l2"><a class="reference internal" href="getstart.html">3. Getting started</a></li>
-<li class="toctree-l2 current"><a class="current reference internal" href="#">4. Chapter 1: Connect the micro:bit to the Wi-Fi</a><ul>
-<li class="toctree-l3"><a class="reference internal" href="#open-the-home-router-or-mobile-phone-hotspot">4.1. Open the Home Router or Mobile Phone Hotspot</a><ul>
-<li class="toctree-l4"><a class="reference internal" href="#setup-your-home-office-wi-fi">4.1.1. Setup your home/office Wi-Fi</a></li>
-<li class="toctree-l4"><a class="reference internal" href="#setup-your-mobile-phone-hotspot">4.1.2. Setup your mobile phone Hotspot</a></li>
+<li class="toctree-l2"><a class="reference internal" href="1_Introduction.html">1. Introduction</a></li>
+<li class="toctree-l2"><a class="reference internal" href="2_IOTbit.html">2. IoT:bit Introduction</a></li>
+<li class="toctree-l2"><a class="reference internal" href="3_getstart.html">3. Getting started: Add the extension</a></li>
+<li class="toctree-l2"><a class="reference internal" href="4_wificonnect.html">4. First step: Connect the micro:bit to the Wi-Fi</a></li>
+<li class="toctree-l2 current"><a class="current reference internal" href="#">5. Chapter 1: Upload Data to ThingSpeak</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#create-channel-in-thingspeak">5.1. Create channel in ThingSpeak</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#programming-makecode">5.2. Programming (Makecode)</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#result">5.3. Result</a></li>
 </ul>
 </li>
-<li class="toctree-l3"><a class="reference internal" href="#programming-makecode">4.2. Programming (Makecode)</a></li>
-<li class="toctree-l3"><a class="reference internal" href="#result">4.3. Result</a></li>
-</ul>
-</li>
-<li class="toctree-l2"><a class="reference internal" href="chapter2.html">5. Chapter 2: Upload Data to ThingSpeak</a></li>
-<li class="toctree-l2"><a class="reference internal" href="chapter3.html">6. Chapter 3: Send Email by IFTTT</a></li>
-<li class="toctree-l2"><a class="reference internal" href="chapter4.html">7. Chapter 4: Control your micro:bit by App Inventor 2</a></li>
-<li class="toctree-l2"><a class="reference internal" href="chapter5.html">8. Chapter 5: Control your micro:bit by IFTTT Services</a></li>
-<li class="toctree-l2"><a class="reference internal" href="chapter6.html">9. Chapter 6: Object to Object communication</a></li>
+<li class="toctree-l2"><a class="reference internal" href="chapter2.html">6. Chapter 2: Send Email by IFTTT</a></li>
+<li class="toctree-l2"><a class="reference internal" href="chapter3.html">7. Chapter 3: Control your micro:bit by App Inventor 2</a></li>
+<li class="toctree-l2"><a class="reference internal" href="chapter4.html">8. Chapter 4: Control your micro:bit by IFTTT Services</a></li>
+<li class="toctree-l2"><a class="reference internal" href="chapter5.html">9. Chapter 5: Object to Object communication</a></li>
 <li class="toctree-l2"><a class="reference internal" href="case01.html">10. Case 01: Automated Smart Playground Lamp</a></li>
 <li class="toctree-l2"><a class="reference internal" href="case02.html">11. Case 02: Smart Car park Access Barrier</a></li>
 <li class="toctree-l2"><a class="reference internal" href="case03.html">12. Case 03: Garbage disposal system</a></li>
@@ -164,7 +160,7 @@
         
           <li><a href="index.html">Smarthon Smart City IoT Starter Kit</a> &raquo;</li>
         
-      <li><span class="section-number">4. </span>Chapter 1: Connect the micro:bit to the Wi-Fi</li>
+      <li><span class="section-number">5. </span>Chapter 1: Upload Data to ThingSpeak</li>
     
     
       <li class="wy-breadcrumbs-aside">
@@ -183,64 +179,77 @@
           <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
            <div itemprop="articleBody">
             
-  <div class="section" id="chapter-1-connect-the-micro-bit-to-the-wi-fi">
-<h1><span class="section-number">4. </span>Chapter 1: Connect the micro:bit to the Wi-Fi<a class="headerlink" href="#chapter-1-connect-the-micro-bit-to-the-wi-fi" title="Permalink to this headline">¶</a></h1>
-<p>Connecting Wi-Fi is the very first step to access internet services, including ThingSpeak, IFTTT, email, etc. Before you start, make sure your micro:bit device is connected to the Internet.<BR><P>
-<img alt="auto_fit" src="../_images/Ch1_01.png" /></p>
-<div class="section" id="open-the-home-router-or-mobile-phone-hotspot">
-<h2><span class="section-number">4.1. </span>Open the Home Router or Mobile Phone Hotspot<a class="headerlink" href="#open-the-home-router-or-mobile-phone-hotspot" title="Permalink to this headline">¶</a></h2>
-<HR>
-Please make sure there is a Wi-Fi signal (with 2.4GHz) available in your area. <BR>
-You can <B>either</B> setup a home router <B>or</B> a Wi-Fi hotspot from your mobile phone.<P><div class="section" id="setup-your-home-office-wi-fi">
-<h3><span class="section-number">4.1.1. </span>Setup your home/office Wi-Fi<a class="headerlink" href="#setup-your-home-office-wi-fi" title="Permalink to this headline">¶</a></h3>
-<p><img alt="auto_fit" src="../_images/Ch1_02.png" /><BR><P></p>
-</div>
-<div class="section" id="setup-your-mobile-phone-hotspot">
-<h3><span class="section-number">4.1.2. </span>Setup your mobile phone Hotspot<a class="headerlink" href="#setup-your-mobile-phone-hotspot" title="Permalink to this headline">¶</a></h3>
-<p><span id="remarks">* make sure your phone has internet service.</span><BR><P>
-<img alt="auto_fit" src="../_images/Ch1_03.png" /><BR><P></p>
+  <div class="section" id="chapter-1-upload-data-to-thingspeak">
+<h1><span class="section-number">5. </span>Chapter 1: Upload Data to ThingSpeak<a class="headerlink" href="#chapter-1-upload-data-to-thingspeak" title="Permalink to this headline">¶</a></h1>
+<p>ThingSpeak is a great platform for user to uploading data for IOT. It allows you to create channel for uploading data. You can visualize the information in charts, for data visualization.
+<img alt="pic" src="../_images/Ch2_01.png" /></p>
+<div class="section" id="create-channel-in-thingspeak">
+<h2><span class="section-number">5.1. </span>Create channel in ThingSpeak<a class="headerlink" href="#create-channel-in-thingspeak" title="Permalink to this headline">¶</a></h2>
+<p><span id="subtitle" >Step 1</span></p>
 <ul class="simple">
-<li><p>For android:
-<img alt="auto_fit" src="../_images/Ch1_03a.png" /><BR><P></p></li>
-<li><p>For iPhone:</span>
-<img alt="auto_fit" src="../_images/Ch1_03b.png" /><BR><P></p></li>
+<li><p>Go to https://thingspeak.com/, register an account and login to the platform</p></li>
+</ul>
+<p><span id="subtitle" >Step 2</span></p>
+<ul class="simple">
+<li><p>Choose Channels -&gt; My Channels -&gt; New Channel
+<img alt="pic_300" src="../_images/Ch2_02.png" /></p></li>
+</ul>
+<p><span id="subtitle" >Step 3</span></p>
+<ul class="simple">
+<li><p>Input Channel name, Field1 and Field2 , then click “Save Channel”</p></li>
+</ul>
+<blockquote>
+<div><ul class="simple">
+<li><p>Channel name: smart-house</p></li>
+<li><p>Field 1: Light</p></li>
+<li><p>Field 2: Temperature
+<img alt="pic_300" src="../_images/Ch2_03.png" /></p></li>
+</ul>
+</div></blockquote>
+<p><span id="subtitle" >Step 4</span></p>
+<ul class="simple">
+<li><p>You will see two chats for data (field1, field 2)
+<img alt="pic" src="../_images/Ch2_04.png" /></p></li>
+</ul>
+<p><span id="subtitle" >Step 5</span></p>
+<ul class="simple">
+<li><p>Open your web browser, go to https://thingspeak.com , select your channel &gt; “API Keys” ，copy the API key as follows:
+<img alt="pic" src="../_images/Ch2_05.png" /></p></li>
 </ul>
 </div>
-</div>
 <div class="section" id="programming-makecode">
-<h2><span class="section-number">4.2. </span>Programming (Makecode)<a class="headerlink" href="#programming-makecode" title="Permalink to this headline">¶</a></h2>
-<HR><p><span id="subtitle" >Step 1</span><BR><P>
-Before you start, you need to initialize the WiFi IoT:bit.<BR>
-Choose WiFi IoT:bit -&gt; Initialize WiFi IoT:bit and OLED<BR><P>
-<img alt="auto_fit" src="../_images/Ch1_04.png" /><BR></p>
-<P><p><span id="subtitle" >Step 2</span><BR><P>
-After initializing, you can connect to the WiFi:<BR>
-Choose WiFi IoT:bit -&gt; Set Wi-Fi to ssid “”, pwd “”. Enter your Wi-Fi name and password<BR><P>
-<img alt="auto_fit" src="../_images/Ch1_05.png" /></p>
-<P><p><span id="subtitle" >Step 3</span><BR><P>
-“On WiFi connected” is an event handler.<BR>
-It will be triggered once after connected with WiFi.<BR><P>
-<img alt="auto_fit" src="../_images/Ch1_06.png" /></p>
-<P><p><span id="subtitle" >Step 4</span><BR><P>
-Choose Basic -&gt; show icon “heart” inside “On WiFi connected”<BR><P>
-<img alt="auto_fit" src="../_images/Ch1_07.png" /></p>
-<P><p><span id="subtitle">Full Solution<BR><P>
-MakeCode: <a class="reference external" href="https://makecode.microbit.org/v2/#pub:_Ydr63W8HdLDU">https://makecode.microbit.org/_Ydr63W8HdLDU</a><BR><P>
-You could also download the program from the following website:<BR></p>
-<iframe src="https://makecode.microbit.org/v2/#pub:_Ydr63W8HdLDU" width="100%" height="500" frameborder="0"></iframe>
-<BR><P></div>
+<h2><span class="section-number">5.2. </span>Programming (Makecode)<a class="headerlink" href="#programming-makecode" title="Permalink to this headline">¶</a></h2>
+<p><span id="subtitle" >Step 1</span></p>
+<ul class="simple">
+<li><p>if WiFi is connected, it returns true, otherwise it returns false.
+<img alt="pic_200" src="../_images/Ch2_06.png" /></p></li>
+</ul>
+<p><span id="subtitle" >Step 2</span></p>
+<ul class="simple">
+<li><p>It will send data (field1, field2, field3) to Thingspeak with the key provided
+<img alt="pic_200" src="../_images/Ch2_07.png" /></p></li>
+</ul>
+<p><span id="subtitle" >Step 3</span></p>
+<ul class="simple">
+<li><p>Select “WiFi IoT:bit” &gt; “Initialize WiFi Iot:bit and OLED” and “Set WiFi to ssid…pwd”.</p></li>
+<li><p>On every 15seconds, if the WiFi is connected, it will send data to ThingSpeak.
+<img alt="pic_600" src="../_images/Ch2_08.png" /></p></li>
+</ul>
+<p><span id="subtitle" >Step 4</span></p>
+<ul class="simple">
+<li><p>Open your program and paste the ThingSpeak key and paste it here.
+<img alt="pic_600" src="../_images/Ch2_09.png" /></p></li>
+</ul>
+</div>
 <div class="section" id="result">
-<h2><span class="section-number">4.3. </span>Result<a class="headerlink" href="#result" title="Permalink to this headline">¶</a></h2>
-<HR><p><span id="subtitle" >Step 1</span><BR><P>
-Load the program to the micro:bit and connect the micro:bit to WiFi IoT:bit.<BR><P>
-<img alt="auto_fit" src="../_images/Ch1_08.png" /></p>
-<P><p><span id="subtitle" >Step 2</span><BR><P>
-Wi-Fi IoT:bit will start to connect to internet, when the connection is successful, the IP Address would be shown.<BR><P>
-<img alt="auto_fit" src="../_images/Ch1_09.png" /></p>
-<P><p><span id="subtitle" >Step 3</span><BR><P>
-An icon “heart” will be shown on LED after WiFi is connected successfully.<BR><P>
-<img alt="auto_fit" src="../_images/Ch1_10.png" /></p>
-<P></div>
+<h2><span class="section-number">5.3. </span>Result<a class="headerlink" href="#result" title="Permalink to this headline">¶</a></h2>
+<ul class="simple">
+<li><p>If data is uploaded successfully, “Uploaded OK” will be shown.
+<img alt="pic" src="../_images/Ch2_10.png" /></p></li>
+<li><p>The charts in your channel in ThingSpeak will be updated.
+<img alt="pic" src="../_images/Ch2_11.png" /></p></li>
+</ul>
+</div>
 </div>
 
 
@@ -251,10 +260,10 @@ An icon “heart” will be shown on LED after WiFi is connected successfully.<B
   
     <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
       
-        <a href="chapter2.html" class="btn btn-neutral float-right" title="5. Chapter 2: Upload Data to ThingSpeak" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
+        <a href="chapter2.html" class="btn btn-neutral float-right" title="6. Chapter 2: Send Email by IFTTT" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
       
       
-        <a href="getstart.html" class="btn btn-neutral float-left" title="3. Getting started" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+        <a href="4_wificonnect.html" class="btn btn-neutral float-left" title="4. First step: Connect the micro:bit to the Wi-Fi" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
       
     </div>
   

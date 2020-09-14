@@ -1,2 +1,2 @@
-# Chapter 6: Object to Object communication
+# Chapter 5: Object to Object communication
 

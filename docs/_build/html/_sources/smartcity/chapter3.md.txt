@@ -1,65 +1,137 @@
-# Chapter 3: Send Email by IFTTT
+# Chapter 3: Control your micro:bit by App Inventor 2
 
-IFTTT is the way to connect hundreds of the apps and devices, including Twitter, Dropbox, Email, Google Assistant, etc. You can connect Micro:bit to IFTTT to create more features by “If… then…”.
-![pic_400](images/Ch3_01.png)
+In this example, PC/mobile and micro:bit are connected to LAN network through WAN
+PC/mobile will send a control command “Pin_On” to micro:bit. When the micro:bit receive the command, it will turn on the module on the pin.
+![pic](images/Ch4_01.png)
+<span id="remarks">***Before we control the micro:bit, please make sure your micro:bit is connected to the Wi-Fi.</span>
 
-## Create event “Email” in IFTTT and get the key
-<span id="subtitle" >Step 1</span>
-* Go to http://www.ifttt.com, open the top right menu, then click “Create” > “Applets”
-![pic](images/Ch3_02.png)
+## What is API
+API is HTTP URL, it is one of the way to communicate with other objects.
+http://54.202.26.42:8080/publish?id=DeviceID&msg=ControlCommand
+
+## Example 1: Control your micro:bit with modules
+
+### Know the API (control command without value)
+http://54.202.26.42:8080/publish?id=DeviceID&msg=ControlCommand
+
+### Programming (MakeCode)
+<span id="subtitle" >Step 1. Start WiFi remote control </span>
+* Connect micro:bit to WiFi.
+![pic_600](images/Ch4_02.png)
+
+<span id="subtitle" >Step 2. Set the Wi-Fi listening on Micro:bit WAN control command action</span>
+* After micro:bit connected to WiFi, it will start WiFi remote control (WAN)
+* If Wan command “Pin_On” is received, white LED will be turned on.
+![pic_600](images/Ch4_03.png)
+
+<span id="subtitle" >Step 3. Get micro:bit Device ID</span>
+* Load the program to the micro:bit and connect the micro:bit to the WiFi IoT:bit.
+![pic_600](images/Ch4_04.png)
+
+* Wi-Fi IoT:bit will start to connect to internet, when the connection is successful, the IP Address would be shown. 
+![pic](images/Ch4_05.png)
+
+* Then, it will start WAN remote control. If the connection is successful, the Device ID would be shown.
+* Remember the Device ID, it will be used for WAN connection on the next step.
+![pic](images/Ch4_06.png)
+ 
+
+### Result (WEB)
+
+<span id="subtitle" >Step 1. Get WAN control URL (command without value)</span>
+* The WAN control command URL is:
+http://54.202.26.42:8080/publish?id=DeviceID&msg=ControlCommand
+* Open your web browser and input control command URL, then press “enter”
+![pic_600](images/Ch4_07.png)
 
 <span id="subtitle" >Step 2</span>
-* Select this -> select webhooks -> input Event Name (eg. Event Name: SendEmail)，then click “Create trigger” 
-![pic](images/Ch3_03.png)
+* After connected to WAN remote control is started, when Button1 is clicked, it will send WAN command “Pin_On” to the micro:bit with provided Device ID.
+* The LED on P0 will be turned on.
+![pic](images/Ch4_08.png)
 
-<span id="subtitle" >Step 3</span>
-* Select “That” > Email
-![pic](images/Ch3_04.png)
+### Result (App inventor 2)
 
-<span id="subtitle" >Step 4</span>
-* Select “Send me an email” , Input email title and body, then click “Create action” 
-![pic](images/Ch3_05.png)
+<span id="subtitle" >Step 1. Get WAN control URL (command without value)</span>
 
-<span id="subtitle" >Step 5</span>
-* Open your web browser, open the top right menu, select “My services” > “Webhooks” 
-![pic_600](images/Ch3_06.png)
+* The WAN control command URL is:
+http://54.202.26.42:8080/publish?id=DeviceID&msg=ControlCommand
 
-<span id="subtitle" >Step 6</span>
-* Select “Documentation” ，Copy your Webhooks Key as follows:
-![pic](images/Ch3_07.png)
+<span id="subtitle" >Step 2. Get controlled by mobile app in App Invetor</span>
+* In below example, you can create a web connection, set the URL to the control command URL in App inventor.
 
-## Programming (Makecode)
 
-<span id="subtitle" >Step 1</span>
-* It will trigger the following function once after button A is clicked
-![pic_200](images/Ch3_08.png)
+<span id="subtitle" >A. Designer</span>
+![pic](images/Ch4_09.png)  
 
-<span id="subtitle" >Step 2</span>
-* This function will send data (field1, field2, field3) and trigger event to IFTTT with the key provided
-![pic_200](images/Ch3_09.png)
+<span id="subtitle" >B. Blocks</span>
+* When the remote button is clicked, it direct to the command URL, and control the micro:bit by Wi-Fi (WAN connection). 
+![pic](images/Ch4_10.png)
 
-<span id="subtitle" >Step 3</span>
-* Select “WiFi IoT:bit” > “Initialize WiFi Iot:bit and OLED” and “Set WiFi to ssid…pwd”. 
-* Select “Input” ->“on button A pressed” .
-![pic_600](images/Ch3_10.png)
+<span id="subtitle" >Step 3 </span>
+* After connected to WAN remote control is started, when Button1 is clicked, it will send WAN command “Pin_On” to the micro:bit with provided Device ID.
+* The LED on P0 will be turned on.
+![pic](images/Ch4_11.png)
 
-<span id="subtitle" >Step 4</span>
-* Select “WiFi IoT:bit” > “Send IFTTT key….” 
-* Once button A is clicked, it will send IFTTT request (send an email to your email box) 
-![pic_600](images/Ch3_11.png)
 
-<span id="subtitle" >Step 5</span>
-* Input the following value
-> * a. IFTTT API key: “XXXXXXXXXXXXXXXXX“
-> * b. event_name: event name to trigger in Webhooks (eg. SendEmail)
-> * c. value 1-3: input value1, value2, value3
-![pic](images/Ch3_12.png)
+## Example 2: Set the parameter via Wi-Fi (e.g. clock)
 
-## Result
-* After micro:bit is connected to WiFi and click button A, it will upload data to IFTTT.
-* If data is uploaded successfully, “Uploaded OK” will be shown. 
-![pic](images/Ch3_13.png)
+### Know the API (control command without value)
+http://54.202.26.42:8080/publish?id=DeviceID&msg=ControlCommand
 
-* Email will be sent to your mailbox by IFTTT.
-![pic](images/Ch3_14.png)
+### Programming (Makecode)
 
+<span id="subtitle" >Step 1. Set the Wi-Fi listening on micro:bit WAN control command action</span>
+* Using variable is useful when you need to change a program setting in micro:bit; for example: clock
+* Also, you will need parameters “hour” for the clock.
+* The initial value for the clock (hour) is 0.
+![pic_400](images/Ch4_12.png)
+
+* Connect Wi-Fi remote control (WAN) after Wi-Fi connected.
+![pic_300](images/Ch4_13.png)
+
+* After an hour, the parameter “hour” will be changed by 1.
+![pic_300](images/Ch4_14.png)
+
+* The time (current hour) can be changed by a WAN command received:
+> * Device ID: Your micro:bit Device ID (to identify micro:bit device to receive the command)
+> * WAN_Command: SetHour (command for micro:bit)
+> * Value: 6 (the value for the command)
+![pic_400](images/Ch4_15.png)
+
+<span id="subtitle" >Step 2. Get micro:bit Device ID</span>
+* Load the program to the micro:bit and connect the micro:bit to the WiFi IoT:bit.
+![pic](images/Ch4_16.png)
+
+* Wi-Fi IoT:bit will start to connect to internet, when the connection is successful, the IP Address would be shown. 
+![pic](images/Ch4_17.png)
+
+* Then, it will start WAN remote control. If the connection is successful, the Device ID would be shown. 
+* Remember the Device ID, it will be used for WAN connection on the next step.
+![pic](images/Ch4_18.png)
+
+
+### Result (WEB)
+
+<span id="subtitle" >Step 1. Send controlled by browser (command with value)</span>
+* The control command URL is:
+http://54.202.26.42:8080/publish?id=DeviceID&msg=ControlCommand&value=value
+
+* Open your web browser and input control command URL, then press “enter”
+![pic_600](images/Ch4_19.png)
+
+### Result (App inventor 2)
+
+In this example, you can create a web connection, set the URL to the control command URL (http://54.202.26.42:8080/publish?id=0xa3240ac45916&msg=SetHour&value=6)
+
+<span id="subtitle" >A. Designer</span>
+![pic](images/Ch4_20.png)
+
+<span id="subtitle" >B. Blocks</span>
+* When the remote button is clicked, it direct to the command URL, and control the micro:bit by Wi-Fi (WAN connection).
+![pic](images/Ch4_21.png)
+
+* After connected to WAN remote control is started, when Button1 is clicked, it will send WAN command “SetHour” with value “6’ to the micro:bit with provided Device ID.
+![pic_600](images/Ch4_22.png)
+
+* Once it receives the WAN command (SetHour) with value (6), the updated value will be shown. 
+![pic](images/Ch4_23.png)

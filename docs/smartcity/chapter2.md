@@ -1,53 +1,65 @@
-# Chapter 2: Upload Data to ThingSpeak
+# Chapter 2: Send Email by IFTTT
 
-ThingSpeak is a great platform for user to uploading data for IOT. It allows you to create channel for uploading data. You can visualize the information in charts, for data visualization.
-![pic](images/Ch2_01.png)
- 
+IFTTT is the way to connect hundreds of the apps and devices, including Twitter, Dropbox, Email, Google Assistant, etc. You can connect Micro:bit to IFTTT to create more features by “If… then…”.
+![pic_400](images/Ch3_01.png)
 
-## Create channel in ThingSpeak
+## Create event “Email” in IFTTT and get the key
 <span id="subtitle" >Step 1</span>
-* Go to https://thingspeak.com/, register an account and login to the platform
+* Go to http://www.ifttt.com, open the top right menu, then click “Create” > “Applets”
+![pic](images/Ch3_02.png)
 
 <span id="subtitle" >Step 2</span>
-* Choose Channels -> My Channels -> New Channel
-![pic_300](images/Ch2_02.png)
+* Select this -> select webhooks -> input Event Name (eg. Event Name: SendEmail)，then click “Create trigger” 
+![pic](images/Ch3_03.png)
 
 <span id="subtitle" >Step 3</span>
-* Input Channel name, Field1 and Field2 , then click “Save Channel”
-> * Channel name: smart-house
-> * Field 1: Light
-> * Field 2: Temperature
-> ![pic_300](images/Ch2_03.png)
+* Select “That” > Email
+![pic](images/Ch3_04.png)
 
 <span id="subtitle" >Step 4</span>
-* You will see two chats for data (field1, field 2)
-![pic](images/Ch2_04.png)
+* Select “Send me an email” , Input email title and body, then click “Create action” 
+![pic](images/Ch3_05.png)
 
 <span id="subtitle" >Step 5</span>
-* Open your web browser, go to https://thingspeak.com , select your channel > “API Keys” ，copy the API key as follows:
-![pic](images/Ch2_05.png)
+* Open your web browser, open the top right menu, select “My services” > “Webhooks” 
+![pic_600](images/Ch3_06.png)
 
+<span id="subtitle" >Step 6</span>
+* Select “Documentation” ，Copy your Webhooks Key as follows:
+![pic](images/Ch3_07.png)
 
 ## Programming (Makecode)
+
 <span id="subtitle" >Step 1</span>
-* if WiFi is connected, it returns true, otherwise it returns false.
-![pic_200](images/Ch2_06.png)
+* It will trigger the following function once after button A is clicked
+![pic_200](images/Ch3_08.png)
 
 <span id="subtitle" >Step 2</span>
-* It will send data (field1, field2, field3) to Thingspeak with the key provided
-![pic_200](images/Ch2_07.png)
+* This function will send data (field1, field2, field3) and trigger event to IFTTT with the key provided
+![pic_200](images/Ch3_09.png)
 
 <span id="subtitle" >Step 3</span>
 * Select “WiFi IoT:bit” > “Initialize WiFi Iot:bit and OLED” and “Set WiFi to ssid…pwd”. 
-* On every 15seconds, if the WiFi is connected, it will send data to ThingSpeak.
-![pic_600](images/Ch2_08.png)
+* Select “Input” ->“on button A pressed” .
+![pic_600](images/Ch3_10.png)
 
 <span id="subtitle" >Step 4</span>
-* Open your program and paste the ThingSpeak key and paste it here.
-![pic_600](images/Ch2_09.png)
+* Select “WiFi IoT:bit” > “Send IFTTT key….” 
+* Once button A is clicked, it will send IFTTT request (send an email to your email box) 
+![pic_600](images/Ch3_11.png)
+
+<span id="subtitle" >Step 5</span>
+* Input the following value
+> * a. IFTTT API key: “XXXXXXXXXXXXXXXXX“
+> * b. event_name: event name to trigger in Webhooks (eg. SendEmail)
+> * c. value 1-3: input value1, value2, value3
+![pic](images/Ch3_12.png)
 
 ## Result
-* If data is uploaded successfully, “Uploaded OK” will be shown.
-![pic](images/Ch2_10.png)
-* The charts in your channel in ThingSpeak will be updated.
-![pic](images/Ch2_11.png)
+* After micro:bit is connected to WiFi and click button A, it will upload data to IFTTT.
+* If data is uploaded successfully, “Uploaded OK” will be shown. 
+![pic](images/Ch3_13.png)
+
+* Email will be sent to your mailbox by IFTTT.
+![pic](images/Ch3_14.png)
+
