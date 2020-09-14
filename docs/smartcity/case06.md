@@ -103,6 +103,12 @@ Drag Send Thingspeak with key (paste thingspeak key) from WiFi IoT:bit.. Set fie
 Pause for 11000ms after sending data to Thingspeak.<BR><P>
 ![auto_fit](images/Case6/Case6_013.png)<P>
 
+
+<span id="subtitle">Full Solution<BR><P>
+MakeCode: [https://makecode.microbit.org/_PXR8VHVV5dUX](https://makecode.microbit.org/v2/#pub:_PXR8VHVV5dUX)<BR><P>
+You could also download the program from the following website:<BR>
+<iframe src="https://makecode.microbit.org/v2/#pub:_PXR8VHVV5dUX" width="100%" height="500" frameborder="0"></iframe>
+
 ## Result
 <HR>
 
