@@ -95,7 +95,14 @@
 <li class="toctree-l2"><a class="reference internal" href="case01.html">10. Case 01: Automated Smart Playground Lamp</a></li>
 <li class="toctree-l2"><a class="reference internal" href="case02.html">11. Case 02: Smart Car park Access Barrier</a></li>
 <li class="toctree-l2 current"><a class="current reference internal" href="#">12. Case 03: Garbage disposal system</a><ul>
-<li class="toctree-l3"><a class="reference internal" href="#introduction">12.1. Introduction</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#goal">12.1. Goal</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#background">12.2. Background</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#part-list">12.3. Part List</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#practical-operation">12.4. Practical operation</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#hardware-connect">12.5. Hardware connect</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#programming-makecode">12.6. Programming (MakeCode)</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#result">12.7. Result</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#think">12.8. Think</a></li>
 </ul>
 </li>
 <li class="toctree-l2"><a class="reference internal" href="case04.html">13. Case 04: Urban noise detection</a></li>
@@ -179,8 +186,90 @@
             
   <div class="section" id="case-03-garbage-disposal-system">
 <h1><span class="section-number">12. </span>Case 03: Garbage disposal system<a class="headerlink" href="#case-03-garbage-disposal-system" title="Permalink to this headline">¶</a></h1>
-<div class="section" id="introduction">
-<h2><span class="section-number">12.1. </span>Introduction<a class="headerlink" href="#introduction" title="Permalink to this headline">¶</a></h2>
+<p>Level: <img alt="level" src="../_images/level22.png" /></p>
+<div class="section" id="goal">
+<h2><span class="section-number">12.1. </span>Goal<a class="headerlink" href="#goal" title="Permalink to this headline">¶</a></h2>
+<HR><p>Make a smart garbage bin by showing different colors of light according to the volume of garbage inside.<BR><P></p>
+</div>
+<div class="section" id="background">
+<h2><span class="section-number">12.2. </span>Background<a class="headerlink" href="#background" title="Permalink to this headline">¶</a></h2>
+<HR><p><span id="subtitle">What is garbage disposal system?</span><P>
+LED light on the garbage bin can show people the amount of garbage inside the garbage bin so that garbage truck can easily determine if the garbage is full or not. This can minimize the wastage of the garbage bags and become a more environmental-friendly city.<BR><P></p>
+<p><span id="subtitle">Garbage disposal system operation</span><P>
+The distance sensor should be able to sense the amount of garbage is inside the garbage bin. Multi-colour LED can be used to emit different colour of light (green and red light), which represent the emptiness of the garbage bin.<BR><P></p>
+</div>
+<div class="section" id="part-list">
+<h2><span class="section-number">12.3. </span>Part List<a class="headerlink" href="#part-list" title="Permalink to this headline">¶</a></h2>
+<HR><table><tr><td>
+Electronics:
+<ul display='inline-block'><li>micro:bit X1</li>
+<li>IoT:bit X1</li>
+<li>USB Wire/Battery Holder</li>
+&nbsp;&nbsp;1. Multi-colour LED (WS2812) X1 (with 3-pin module wire)<BR>
+&nbsp;&nbsp;2. Distance Sensor X1 (with 4-pin module wire)<BR>
+</ul>
+</td></tr>
+<tr>
+<td>Model:
+<ul>
+<li>Garbage disposal Model C1-C2 X1</li>
+<li>M4 Screw X6</li>
+<li>M4 Nuts X6</li>
+</ul>
+</td></tr>
+<tr><td>Equipment:
+<ul><li>ScrewDriver X1</li></ul></td></tr></table><p><img alt="pic" src="../_images/Case3_parts.png" /><P></p>
+</div>
+<div class="section" id="practical-operation">
+<h2><span class="section-number">12.4. </span>Practical operation<a class="headerlink" href="#practical-operation" title="Permalink to this headline">¶</a></h2>
+<HR><p><span id="subtitle">Step1</span><P>
+Attach the Multi-colour LED to C1 model with M4 screws and nuts.<BR><P>
+<img alt="pic" src="../_images/Case3_op1.png" /><P>
+<img alt="pic" src="../_images/Case3_op2.png" /><P>
+<span id="subtitle">Step 2</span><P>
+Attach the distance sensor to C2 model with M4 screw and nuts.<BR><P>
+<img alt="pic" src="../_images/Case3_op3.png" /><P>
+<img alt="pic" src="../_images/Case3_op4.png" /><P>
+<span id="subtitle">Step 3</span><P>
+Put together all the cardboard parts (C1-C2).<BR><P>
+<img alt="pic" src="../_images/Case3_op5.png" /><P>
+<img alt="pic" src="../_images/Case3_op6.png" /><P></p>
+</div>
+<div class="section" id="hardware-connect">
+<h2><span class="section-number">12.5. </span>Hardware connect<a class="headerlink" href="#hardware-connect" title="Permalink to this headline">¶</a></h2>
+<HR><p>Connect the Distance Sensor to P14 (trig)/ P15 (echo) port of IoT:bit<BR><P>
+Connect Multi-color LED to P1 port of IoT:bit<BR><P>
+<img alt="pic" src="../_images/Case3_hardware.png" /><P></p>
+</div>
+<div class="section" id="programming-makecode">
+<h2><span class="section-number">12.6. </span>Programming (MakeCode)<a class="headerlink" href="#programming-makecode" title="Permalink to this headline">¶</a></h2>
+<HR><p><span id="subtitle">Step 1</span><P>
+Drag on start block from Basic. Set distance to 0 and set strip to NeoPixel at pin P1 with 1 leds as RGB (GRB format).<BR><P>
+<img alt="pic" src="../_images/Case3_p1.png" /><P>
+<span id="subtitle">Step 2</span><P>
+strip set brightness to 50, pause for 5 seconds for initializing the multi-colour LED.<BR><P>
+<img alt="pic" src="../_images/Case3_p2.png" /><P>
+<span id="subtitle">Step 3</span><P>
+Drag forever block from Basic. Set distance to get distance unit cm trig P14 echo P15, that’s say get the distance value by connecting the distance sensor to P14 and P15.<BR><P>
+<img alt="pic" src="../_images/Case3_p3.png" /><P>
+<span id="subtitle">Step 4</span><P>
+Snap if statement into forever, set if distance ≤ 4, then strip show colour red, that’s say the garbage bin is full.<BR><P>
+<img alt="pic" src="../_images/Case3_p4.png" /><P>
+<span id="subtitle">Step 5</span><P>
+Else, strip show colour green, that’s say the garbage bin is not full.<BR><P>
+<img alt="pic" src="../_images/Case3_p5.png" /><P>
+<span id="subtitle">Step 6</span><P>
+Pause for 1 seconds from basic.<BR><P>
+<img alt="pic" src="../_images/Case3_p6.png" /><P></p>
+</div>
+<div class="section" id="result">
+<h2><span class="section-number">12.7. </span>Result<a class="headerlink" href="#result" title="Permalink to this headline">¶</a></h2>
+<HR><p>The distance sensor can return the distance value between the top of the garbage bin and the level of garbage inside the garbage bin. The LED light is used to indicate if the bin is full or not. If it is empty or there are some garbage, the LED turns green, if it is full, the LED turns red.<BR><P>
+<img alt="pic" src="../_images/Case3_result.gif" /><P></p>
+</div>
+<div class="section" id="think">
+<h2><span class="section-number">12.8. </span>Think<a class="headerlink" href="#think" title="Permalink to this headline">¶</a></h2>
+<HR><p>Q1. What other sensor can we use to measure the amount of garbage?<BR><P></p>
 </div>
 </div>
 
