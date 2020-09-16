@@ -96,7 +96,14 @@
 <li class="toctree-l2"><a class="reference internal" href="case02.html">11. Case 02: Smart Car park Access Barrier</a></li>
 <li class="toctree-l2"><a class="reference internal" href="case03.html">12. Case 03: Garbage disposal system</a></li>
 <li class="toctree-l2 current"><a class="current reference internal" href="#">13. Case 04: Urban noise detection</a><ul>
-<li class="toctree-l3"><a class="reference internal" href="#introduction">13.1. Introduction</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#goal">13.1. Goal</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#background">13.2. Background</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#part-list">13.3. Part List</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#practical-operation">13.4. Practical operation</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#hardware-connect">13.5. Hardware connect</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#programming-makecode">13.6. Programming (MakeCode)</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#results">13.7. Results</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#think">13.8. Think</a></li>
 </ul>
 </li>
 <li class="toctree-l2"><a class="reference internal" href="case05.html">14. Case 05: Car speed monitoring</a></li>
@@ -179,8 +186,88 @@
             
   <div class="section" id="case-04-urban-noise-detection">
 <h1><span class="section-number">13. </span>Case 04: Urban noise detection<a class="headerlink" href="#case-04-urban-noise-detection" title="Permalink to this headline">¶</a></h1>
-<div class="section" id="introduction">
-<h2><span class="section-number">13.1. </span>Introduction<a class="headerlink" href="#introduction" title="Permalink to this headline">¶</a></h2>
+<div class="section" id="goal">
+<h2><span class="section-number">13.1. </span>Goal<a class="headerlink" href="#goal" title="Permalink to this headline">¶</a></h2>
+<HR><p>Make a noise detection point to detect the noise volume near the roadside using noise sensor.<BR><P></p>
+</div>
+<div class="section" id="background">
+<h2><span class="section-number">13.2. </span>Background<a class="headerlink" href="#background" title="Permalink to this headline">¶</a></h2>
+<HR><p><span id="subtitle">What is urban noise detection?</span><P>
+It is a system to detect noise near the road as noise pollution caused by cars on the road seriously affect the living standard of people. By installing a monitor to detect the noise volume near the roadside can help engineer to gather noise information and find solution to solve the problem in the future.<BR><P></p>
+<p><span id="subtitle">Noise detection operation</span><P>
+The sound sensor can detect the volume in dB near the roadside and show the volume on the OLED. A bar graph of sound intensity will be shown on the micro:bit.<BR><P></p>
+</div>
+<div class="section" id="part-list">
+<h2><span class="section-number">13.3. </span>Part List<a class="headerlink" href="#part-list" title="Permalink to this headline">¶</a></h2>
+<HR><table><tr><td>
+Electronics:
+<ul display='inline-block'><li>micro:bit X1</li>
+<li>IoT:bit (with OLED) X1</li>
+<li>OLED extension wire x1</li>
+<li>USB Wire/Battery Holder</li>
+&nbsp;&nbsp;1. Sound Sensor X1 (With 3-pin module wire)<BR></ul>
+</td></tr>
+<tr>
+<td>Model:
+<ul>
+<li>Noise detection stand Model D1-D2 X1</li>
+<li>M4 Screws X2</li>
+<li>M4 Nuts X2</li>
+<li>M2 Screws X4</li>
+<li>M2 Nuts X4</li>
+</ul>
+</td></tr>
+<tr><td>Equipment:
+<ul><li>ScrewDriver X1</li></ul></td></tr></table><p><img alt="pic" src="../_images/Case4_parts.png" /><P></p>
+</div>
+<div class="section" id="practical-operation">
+<h2><span class="section-number">13.4. </span>Practical operation<a class="headerlink" href="#practical-operation" title="Permalink to this headline">¶</a></h2>
+<HR><p><span id="subtitle">Step 1</span><P>
+Attach the OLED to D1 model with M2 x10mm screws and nuts.<BR><P>
+<img alt="pic" src="../_images/Case4_po1.png" /><P>
+<span id="subtitle">Step 2</span><P>
+Attach sound sensor to D1 model with M4 screws and nuts.<BR><P>
+<img alt="pic" src="../_images/Case4_po2.png" /><P>
+<span id="subtitle">Step 3</span><P>
+Put together all the cardboard parts (D1-D2).<BR><P>
+<img alt="pic" src="../_images/Case4_po3.png" /><P></p>
+</div>
+<div class="section" id="hardware-connect">
+<h2><span class="section-number">13.5. </span>Hardware connect<a class="headerlink" href="#hardware-connect" title="Permalink to this headline">¶</a></h2>
+<HR><p>Connect Noise Sensor to P1 port of IoT:bit<BR><P>
+Extend the connection of OLED to I2C connection port of IoT:bit<BR><P>
+<img alt="pic" src="../_images/Case4_hardware.png" /><P></p>
+</div>
+<div class="section" id="programming-makecode">
+<h2><span class="section-number">13.6. </span>Programming (MakeCode)<a class="headerlink" href="#programming-makecode" title="Permalink to this headline">¶</a></h2>
+<HR><p><span id="subtitle">Step 1</span><P>
+Drag on start block from Basic. Drag Initialize IoT:bit at OLED from IoT:bit, set OLED height:64, width:128. Set noise to 0 from variables.<BR><P>
+<img alt="pic" src="../_images/Case4_p1.png" /><P>
+<span id="subtitle">Step 2</span><P>
+Drag forever block from Basic. Set noise to round get noise level (dB) at pin P1.<BR><P>
+<img alt="pic" src="../_images/Case4_p2.png" /><P>
+<span id="subtitle">Step 3</span><P>
+Show string Noise: noise (variable) dB by using join from text.<BR><P>
+<img alt="pic" src="../_images/Case4_p3.png" /><P>
+<span id="subtitle">Step 4</span><P>
+Plot bar graph of noise up to 100 from LED, which means showing a bar graph on Micro:bit based on the recorded sound level.<BR><P>
+<img alt="pic" src="../_images/Case4_p4.png" /><P>
+<span id="subtitle">Step 5</span><P>
+Pause for 0.5 second.<BR><P>
+<img alt="pic" src="../_images/Case4_p5.png" /><P></p>
+<p><span id="subtitle">Full Solution<BR><P>
+MakeCode: <a class="reference external" href="https://makecode.microbit.org/#pub:_RqJ2yEJaVMEk">https://makecode.microbit.org/_RqJ2yEJaVMEk</a><BR><P>
+You could also download the program from the following website:<BR></p>
+<iframe src="https://makecode.microbit.org/#pub:_RqJ2yEJaVMEk" width="100%" height="500" frameborder="0"></iframe></div>
+<div class="section" id="results">
+<h2><span class="section-number">13.7. </span>Results<a class="headerlink" href="#results" title="Permalink to this headline">¶</a></h2>
+<HR><p>After initializing WiFi extension board and OLED, micro:bit will show a bar graph for the sound intensity in a city.<BR><P>
+<img alt="pic" src="../_images/Case4_result.gif" /><P>
+<img alt="pic" src="../_images/Case4_result2.png" /><P></p>
+</div>
+<div class="section" id="think">
+<h2><span class="section-number">13.8. </span>Think<a class="headerlink" href="#think" title="Permalink to this headline">¶</a></h2>
+<HR><p>Q1. How to make a notification if noise pollution problem is serious? i.e. showing red LED<BR><P></p>
 </div>
 </div>
 

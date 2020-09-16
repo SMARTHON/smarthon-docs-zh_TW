@@ -88,6 +88,13 @@ Else, strip show colour green, that’s say the garbage bin is not full.<BR><P>
 Pause for 1 seconds from basic.<BR><P>
 ![pic](images/Case3/Case3_p6.png)<P>
 
+
+<span id="subtitle">Full Solution<BR><P>
+MakeCode: [https://makecode.microbit.org/_HtTDzdT543PV](https://makecode.microbit.org/#pub:_HtTDzdT543PV)<BR><P>
+You could also download the program from the following website:<BR>
+<iframe src="https://makecode.microbit.org/#pub:_HtTDzdT543PV" width="100%" height="500" frameborder="0"></iframe>
+
+
 ## Result
 <HR>
 
