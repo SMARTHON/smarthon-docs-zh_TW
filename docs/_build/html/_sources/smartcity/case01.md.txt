@@ -26,8 +26,8 @@ Electronics:
 <li>micro:bit X1</li>
 <li>Smarthon IoT:bit X1</li>
 <li>USB Wire/Battery Holder X1</li>
-&nbsp;&nbsp;1. White LED Light X1(With Module Wire)<BR>
-&nbsp;&nbsp;2. Motion Sensor X1 (With Module Wire)
+&nbsp;&nbsp;1. White LED Light X1(With 3-pin module wire)<BR>
+&nbsp;&nbsp;2. Motion Sensor X1 (With 3-pin module wire)
 </ul>
 </td></tr>
 <tr>
@@ -41,30 +41,27 @@ Electronics:
 <tr><td>Equipment:
 <ul><li>ScrewDriver X1</li></ul></td></tr></table>
 
-![auto_fit](images/Case1/Case1_01.png)
-<P>
+![auto_fit](images/Case1/Case1_parts.png)<P>
 
 ## Practical Operation
 <HR>
 
 <span id="subtitle">Step 1</span><BR><P>
-Screw the sensor. Attach the LED light to the model. Attach motion sensor to A1 model with M4 screws and nuts.<BR><P>
-![auto_fit](images/Case1/Case1_02.png)<BR><P>
-
+Attach motion sensor to A1 model with M4 screws and nuts.<BR><P>
+![pic](images/Case1/Case1_op1.png)<P>
 <span id="subtitle">Step 2</span><BR><P>
-Attach the white LED light to A3 model with M4 screws and nuts.<BR><P>
-![auto_fit](images/Case1/Case1_03.png)<BR><P>
-
+Attach the white LED light to A2 model with M4 screws and nuts.<BR><P>
+![pic](images/Case1/Case1_op2.png)<P>
 <span id="subtitle">Step 3</span><BR><P>
 Put together all the cardboard parts (A1-A3)<BR><P>
-![auto_fit](images/Case1/Case1_04.png)<BR><P>
+![pic](images/Case1/Case1_op3.png)<P>
 
 ## Hardware connect
 <HR>
 
 Connect Motion sensor to the P0 port of Smarthon IoT:bit<BR><P>
 Connect LED light to the P1 port of Smarthon IoT:bit<BR><P>
-<BR>![auto_fit](images/Case1/Case1_05.png)
+<BR>![auto_fit](images/Case1/Case1_hardware.png)
 <P>
 
 ## Programming (MakeCode)
@@ -72,18 +69,18 @@ Connect LED light to the P1 port of Smarthon IoT:bit<BR><P>
 
 <span id="subtitle">Step 1</span><BR><P>
 Drag forever block from Basic. Snap if statement into forever, set get motion (triggered or not) at P0=true, that's say motion is triggered, someone passes by.<BR><P>
-![auto_fit](images/Case1/Case1_06.png)<P>
+![auto_fit](images/Case1/Case1_p1.png)<P>
 <span id="subtitle">Step 2</span><BR><P>
 Turn white LED to 1023 at P1 as turning on white LED and pause 10 seconds.<P>
-![auto_fit](images/Case1/Case1_07.png)<P>
+![auto_fit](images/Case1/Case1_p2.png)<P>
 <span id="subtitle">Step 3</span><BR><P>
 Else, turn white LED to 0 at P1 as turing off white LED.<P>
-![auto_fit](images/Case1/Case1_08.png)<P>
+![auto_fit](images/Case1/Case1_p3.png)<P>
 
 <span id="subtitle">Full Solution<BR><P>
-MakeCode: [https://makecode.microbit.org/_M75EdA7XVUHW](https://makecode.microbit.org/v2/#pub:_M75EdA7XVUHW)<BR><P>
+MakeCode: [https://makecode.microbit.org/_P36fA38jVih2](https://makecode.microbit.org/#pub:_P36fA38jVih2)<BR><P>
 You could also download the program from the following website:<BR>
-<iframe src="https://makecode.microbit.org/v2/#pub:_M75EdA7XVUHW" width="100%" height="500" frameborder="0"></iframe>
+<iframe src="https://makecode.microbit.org/#pub:_P36fA38jVih2" width="100%" height="500" frameborder="0"></iframe>
 
 <P>
 
@@ -91,7 +88,7 @@ You could also download the program from the following website:<BR>
 <HR>
 
 Motion sensor is used to detect if there are people moving in the playground. If there are, the LED light will be turned on; otherwise, it will be turned off.<BR><P>
-![auto_fit](images/Case1/Case1_09.gif)<P>
+![auto_fit](images/Case1/Case1_result.gif)<P>
 
 ## Think
 <HR> 
@@ -101,6 +98,6 @@ Q2. How should we reset the programming if we connect the white LED light to P3?
 Tips: As P3 is used by micro:bit LED. 
 (Refer to [https://makecode.microbit.org/device/pins](https://makecode.microbit.org/device/pins))<BR>
 If we connect white LED light to P3, we need to disable micrbo:bit LED.<BR><P>
-![auto_fit](images/Case1/Case1_10.png)<P>
+![auto_fit](images/Case1/Case1_think.png)<P>
 	
 Q3. Show motion sensor value on OLED<P>

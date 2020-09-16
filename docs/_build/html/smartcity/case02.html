@@ -94,12 +94,12 @@
 <li class="toctree-l2"><a class="reference internal" href="chapter5.html">9. Chapter 5: Object to Object communication</a></li>
 <li class="toctree-l2"><a class="reference internal" href="case01.html">10. Case 01: Automated Smart Playground Lamp</a></li>
 <li class="toctree-l2 current"><a class="current reference internal" href="#">11. Case 02: Smart Car park Access Barrier</a><ul>
-<li class="toctree-l3"><a class="reference internal" href="#goal">11.1. Goal:</a></li>
-<li class="toctree-l3"><a class="reference internal" href="#background">11.2. Background:</a></li>
-<li class="toctree-l3"><a class="reference internal" href="#part-list">11.3. Part List:</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#goal">11.1. Goal</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#background">11.2. Background</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#part-list">11.3. Part List</a></li>
 <li class="toctree-l3"><a class="reference internal" href="#practical-operation">11.4. Practical operation</a></li>
-<li class="toctree-l3"><a class="reference internal" href="#hardware-connect">11.5. Hardware connect:</a></li>
-<li class="toctree-l3"><a class="reference internal" href="#programming">11.6. Programming:</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#hardware-connect">11.5. Hardware connect</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#programming">11.6. Programming</a></li>
 <li class="toctree-l3"><a class="reference internal" href="#result">11.7. Result</a></li>
 <li class="toctree-l3"><a class="reference internal" href="#think">11.8. Think</a></li>
 </ul>
@@ -189,20 +189,19 @@
 <p><img alt="pic" src="../_images/Case2_01.png" />
 Level: <img alt="level" src="../_images/level22.png" /></p>
 <div class="section" id="goal">
-<h2><span class="section-number">11.1. </span>Goal:<a class="headerlink" href="#goal" title="Permalink to this headline">¶</a></h2>
-<p>Make a smart car park gate which opens automatically if there are vacancies in the car park and there are cars near the car park gate.</p>
+<h2><span class="section-number">11.1. </span>Goal<a class="headerlink" href="#goal" title="Permalink to this headline">¶</a></h2>
+<HR><p>Make a smart car park gate which opens automatically if there are vacancies in the car park and there are cars coming in.<BR><P></p>
 </div>
 <div class="section" id="background">
-<h2><span class="section-number">11.2. </span>Background:<a class="headerlink" href="#background" title="Permalink to this headline">¶</a></h2>
-<p>Smart Car park Access Barrier can reduce manpower to control the car park gate for the driver and count the number of cars in the car park. The auto-car park gate allows people to live conveniently.
-<BR>
-<BR>
-<B>Car park gate operation</B><BR>
-The car park gate should be able to open if there are vacancies in the car park (i.e. detected by light sensor) and there are cars near the car park gate (i.e. detected by distance sensor). It is controlled by the servo; otherwise, the gate will keep closing.</p>
+<h2><span class="section-number">11.2. </span>Background<a class="headerlink" href="#background" title="Permalink to this headline">¶</a></h2>
+<HR><p><span id="subtitle">What is smart car park access barrier?</span><P>
+Smart Car park Access Barrier is used to allow people to live conveniently. It can reduce manpower and time in controlling the gate and manage information (e.g. car park vacancies). It will be opened automatically if there are vacancies in the car park and there are cars coming in.<BR><P></p>
+<p><span id="subtitle">Car park gate operation</span><P>
+The car park gate open and close operation is controlled by 180ᵒ servo. It will be opened if there are vacancies in the car park (i.e. detected by light sensor) and cars near the car park gate (i.e. detected by distance sensor). Otherwise, the gate will be closed.<BR><P></p>
 </div>
 <div class="section" id="part-list">
-<h2><span class="section-number">11.3. </span>Part List:<a class="headerlink" href="#part-list" title="Permalink to this headline">¶</a></h2>
-<p>Electronics:</p>
+<h2><span class="section-number">11.3. </span>Part List<a class="headerlink" href="#part-list" title="Permalink to this headline">¶</a></h2>
+<HR><p>Electronics:</p>
 <ul class="simple">
 <li><p>micro:bit X1</p></li>
 <li><p>Smarthon IoT:bit X1</p></li>
@@ -227,7 +226,7 @@ The car park gate should be able to open if there are vacancies in the car park 
 </div>
 <div class="section" id="practical-operation">
 <h2><span class="section-number">11.4. </span>Practical operation<a class="headerlink" href="#practical-operation" title="Permalink to this headline">¶</a></h2>
-<p>Screw the sensor (Paste photos here later)</p>
+<HR><p>Screw the sensor (Paste photos here later)</p>
 <ul class="simple">
 <li><p>Attach the distance sensor to the stand model (D1)</p></li>
 <li><p>Screw the car park gate (D2) onto the stand model (D1)</p></li>
@@ -238,43 +237,38 @@ The car park gate should be able to open if there are vacancies in the car park 
 </ul>
 </div>
 <div class="section" id="hardware-connect">
-<h2><span class="section-number">11.5. </span>Hardware connect:<a class="headerlink" href="#hardware-connect" title="Permalink to this headline">¶</a></h2>
-<p><img alt="pic" src="../_images/Case2_06.png" /></p>
-<ol class="simple">
-<li><p>Connect Distance sensor to P14(Trig)/P15(Echo)
-<img alt="pic" src="../_images/Case2_07.png" /></p></li>
-<li><p>Connect Light Sensor to P0
-<img alt="pic" src="../_images/Case2_08.png" /></p></li>
-<li><p>Connect 180° Servo to P2
-<img alt="pic" src="../_images/Case2_09.png" /></p></li>
-<li><p>Download the code and transfer to micro:bit</p></li>
-<li><p>Plug the micro:bit into WiFi IoT extension board</p></li>
-</ol>
+<h2><span class="section-number">11.5. </span>Hardware connect<a class="headerlink" href="#hardware-connect" title="Permalink to this headline">¶</a></h2>
+<HR><p>Connect the Distance Sensor to P14 (trig)/ P15 (echo) port of IoT:bit<BR><P>
+Connect Light Sensor to P0 port of IoT:bit<BR><P>
+Connect 180° Servo to P2 port of IoT:bit<BR><P>
+<img alt="pic" src="../_images/Case2_hardware.png" /><P></p>
 </div>
 <div class="section" id="programming">
-<h2><span class="section-number">11.6. </span>Programming:<a class="headerlink" href="#programming" title="Permalink to this headline">¶</a></h2>
-<ol class="simple">
-<li><p>Drag on start block from Basic. Set distance and light to 0 from variables and turn servo to 0 degree at P2 at the beginning.<BR>
-<img alt="pic_300" src="../_images/Case2_02.png" /></p></li>
-<li><p>Drag forever block from Basic. Set distance to get distance unit cm trig P14 echo P15.
-<img alt="pic_600" src="../_images/Case2_03.png" /></p></li>
-<li><p>Snap if statement into forever, set if distance ≤ 5 then, set light to get light value (percentage) at Pin P0.
-<img alt="pic_600" src="../_images/Case2_04.png" /></p></li>
-<li><p>Snap if statement after measuring the distance, if light &gt; 50, turn servo to 90 degree at P2, pause 5 seconds and turn servo to 0 degree at P2. <BR>That’s say when there is car entering and there is vacancy inside the car park, the car park gate will be opened for 5 seconds for car entering.
-<img alt="pic" src="../_images/Case2_05.png" /></p></li>
-</ol>
-<p><a class="reference external" href="https://makecode.microbit.org/v2/#pub:_bCf1XwDEP7dq">Example Code</a><BR></p>
-<iframe width="700" height="500" frameborder="0" src="https://makecode.microbit.org/v2/#pub:_bCf1XwDEP7dq"></iframe></div>
+<h2><span class="section-number">11.6. </span>Programming<a class="headerlink" href="#programming" title="Permalink to this headline">¶</a></h2>
+<HR><p><span id="subtitle">Step 1</span><BR><P>
+Drag on start block from Basic. Set distance and light to 0 from variables and turn servo to 0 degree at P2 at the beginning.<BR><P>
+<img alt="pic" src="../_images/Case2_p1.png" /><P>
+<span id="subtitle">Step 2</span><BR><P>
+Drag forever block from Basic. Set distance to get distance unit cm trig P14 echo P15. set light to get light value (percentage) at Pin P0.<BR><P>
+<img alt="pic" src="../_images/Case2_p2.png" /><P>
+<span id="subtitle">Step 3</span><BR><P>
+Snap if statement into forever, set if distance ≤ 5. Snap another if and set light value &gt;50 then, <BR><P>
+<img alt="pic" src="../_images/Case2_p3.png" /><P>
+<span id="subtitle">Step 4</span><BR><P>
+After measuring the distance and light, turn servo to 90 degree at P2, pause 5 seconds and turn servo to 0 degree at P2. <BR><P>
+That’s say when there is car entering and there is vacancy inside the car park, the car park gate will be opened for 5 seconds for car entering.<BR><P>
+<img alt="pic" src="../_images/Case2_p4.png" /><P></p>
+</div>
 <div class="section" id="result">
 <h2><span class="section-number">11.7. </span>Result<a class="headerlink" href="#result" title="Permalink to this headline">¶</a></h2>
-<p>The light sensor is used to check the vacancies in the car park while the distance sensor is used to sense if there are any cars coming near the car park gate. <BR>
-The car park gate controlled by the servo will open when there are vacancies in the car park and there are cars near the car park gate.</p>
+<HR><p>The light sensor is used to check the vacancies in the car park while the distance sensor is used to detect if there are any cars coming near the car park gate<BR><P>
+The car park gate is controlled by 180ᵒ servo. When there are vacancies in the car park and there are cars near the car park gate, the car park is available. The gate will be opened for 5 seconds and then closed to let the car entering the car park.<BR><P></p>
 </div>
 <div class="section" id="think">
 <h2><span class="section-number">11.8. </span>Think<a class="headerlink" href="#think" title="Permalink to this headline">¶</a></h2>
-<p>Q1. When you find the light and distance value, how to show their value on the OLED?
-<BR><BR>
-Q2. Can you put some signal on micro:bit so that people know there is vacancy?</p>
+<HR><p>Q1. How can you show the light and distance value on OLED?<BR><P>
+<img alt="pic" src="../_images/Case2_think.png" /><P>
+Q2. Can you show signals on micro:bit LED to let drivers know there are vacancies in the car park?<BR><P></p>
 </div>
 </div>
 
