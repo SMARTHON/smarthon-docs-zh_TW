@@ -27,24 +27,24 @@ You can <B>either</B> setup a home router <B>or</B> a Wi-Fi hotspot from your mo
 <span id="subtitle" >Step 1</span><BR><P>
 Before you start, you need to initialize the WiFi IoT:bit.<BR>
 Choose WiFi IoT:bit -> Initialize WiFi IoT:bit and OLED<BR><P>
-![auto_fit](images/4_ConnectWiFi/Wifi_04.png)<BR>
+![auto_fit](images/4_ConnectWiFi/Wifi_p1.png)<BR>
 <P>
 
 <span id="subtitle" >Step 2</span><BR><P>
 After initializing, you can connect to the WiFi:<BR>
 Choose WiFi IoT:bit -> Set Wi-Fi to ssid “”, pwd “”. Enter your Wi-Fi name and password<BR><P>
-![auto_fit](images/4_ConnectWiFi/Wifi_05.png)
+![auto_fit](images/4_ConnectWiFi/Wifi_p2.png)
 <P>
 
 <span id="subtitle" >Step 3</span><BR><P>
 “On WiFi connected” is an event handler.<BR>
 It will be triggered once after connected with WiFi.<BR><P>
-![auto_fit](images/4_ConnectWiFi/Wifi_06.png)
+![auto_fit](images/4_ConnectWiFi/Wifi_p3.png)
 <P>
 
 <span id="subtitle" >Step 4</span><BR><P>
 Choose Basic -> show icon “heart” inside “On WiFi connected”<BR><P>
-![auto_fit](images/4_ConnectWiFi/Wifi_07.png)
+![auto_fit](images/4_ConnectWiFi/Wifi_p4.png)
 <P>
 
 <span id="subtitle">Full Solution<BR><P>
@@ -58,15 +58,15 @@ You could also download the program from the following website:<BR>
 
 <span id="subtitle" >Step 1</span><BR><P>
 Load the program to the micro:bit and connect the micro:bit to WiFi IoT:bit.<BR><P>
-![auto_fit](images/4_ConnectWiFi/Wifi_08.png)
+![auto_fit](images/4_ConnectWiFi/Wifi_result1.png)
 <P>
 
 <span id="subtitle" >Step 2</span><BR><P>
 Wi-Fi IoT:bit will start to connect to internet, when the connection is successful, the IP Address would be shown.<BR><P>
-![auto_fit](images/4_ConnectWiFi/Wifi_09.png)
+![auto_fit](images/4_ConnectWiFi/Wifi_result2.png)
 <P>
 
 <span id="subtitle" >Step 3</span><BR><P>
 An icon “heart” will be shown on LED after WiFi is connected successfully.<BR><P>
-![auto_fit](images/4_ConnectWiFi/Wifi_10.png)
+![auto_fit](images/4_ConnectWiFi/Wifi_result3.png)
 <P>

@@ -41,20 +41,28 @@ Electronics:
 <tr><td>Equipment:
 <ul><li>ScrewDriver X1</li></ul></td></tr></table>
 
+
 ![auto_fit](images/Case1/Case1_parts.png)<P>
+
+## Practical Operation 1
+<HR>
+
+[Read more](https://smarthon-docs-en.readthedocs.io/en/latest/_files/Case1e.pdf)<P>
+
+![auto_fit](files/Case1e.jpg)<P>
 
 ## Practical Operation
 <HR>
 
 <span id="subtitle">Step 1</span><BR><P>
 Attach motion sensor to A1 model with M4 screws and nuts.<BR><P>
-![pic](images/Case1/Case1_op1.png)<P>
+![auto_fit](images/Case1/Case1_op1.png)<P>
 <span id="subtitle">Step 2</span><BR><P>
 Attach the white LED light to A2 model with M4 screws and nuts.<BR><P>
-![pic](images/Case1/Case1_op2.png)<P>
+![auto_fit](images/Case1/Case1_op2.png)<P>
 <span id="subtitle">Step 3</span><BR><P>
 Put together all the cardboard parts (A1-A3)<BR><P>
-![pic](images/Case1/Case1_op3.png)<P>
+![auto_fit](images/Case1/Case1_op3.png)<P>
 
 ## Hardware connect
 <HR>
