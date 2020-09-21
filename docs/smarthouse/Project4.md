@@ -21,7 +21,7 @@ In project 4, you can learn how to use the button to open the door.
 5. Basic (Add block pause (ms) 100)
 
 *degrees of the servo have to be adjusted under the different condition
-![pic](images/P4_1.png)
+![auto_fit](images/P4_1.png)
 
 6. **Download** the code and transfer to micro:bit
 7. Plug the micro:bit into Multiple Sensors
@@ -30,7 +30,7 @@ In project 4, you can learn how to use the button to open the door.
 10. Stick “+” with the lolly sticks and stick it up on the horn
 11. Connect the module to 180° servo port of the Multiple Actuators and install it to the door
 12. Pressed the button to open the door
-![pic](images/P4_2.png)
+![auto_fit](images/P4_2.png)
 <span id="remarks" >* Try to use the other sensors, such as motion sensor to control the door. </span>
 
 

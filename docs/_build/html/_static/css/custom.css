@@ -2,34 +2,18 @@ img[alt="auto_fit"]{
 	max-width: 100%;
 	display:block;
 }
-img[alt="pic"] { 
-  max-width:  100%;
-  display: block;
-}
-img[alt="pic_700"] { 
-  max-width:  100%; 
-  display: block;
-}
-img[alt="pic_800"] { 
-  max-width:  100%;
-  display: block;
-}
-img[alt="pic_600"] { 
-  max-width:  100%;
-  display: block;
-}
 
-img[alt="pic_400"] { 
+img[alt="pic_70"] { 
   max-width:  70%;
   display: block;
 }
 
-img[alt="pic_300"] { 
+img[alt="pic_60"] { 
   max-width:  60%;
   display: block;
 }
 
-img[alt="pic_200"] { 
+img[alt="pic_50"] { 
   max-width:  50%;
   display: block;
 }

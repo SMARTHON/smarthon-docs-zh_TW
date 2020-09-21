@@ -182,38 +182,38 @@
   <div class="section" id="chapter-2-send-email-by-ifttt">
 <h1><span class="section-number">6. </span>Chapter 2: Send Email by IFTTT<a class="headerlink" href="#chapter-2-send-email-by-ifttt" title="Permalink to this headline">¶</a></h1>
 <p>IFTTT is the way to connect hundreds of the apps and devices, including Twitter, Dropbox, Email, Google Assistant, etc. You can connect Micro:bit to IFTTT to create more features by “If… then…”.
-<img alt="pic_400" src="../_images/Ch3_01.png" /></p>
+<img alt="pic_70" src="../_images/Ch3_01.png" /></p>
 <div class="section" id="create-event-email-in-ifttt-and-get-the-key">
 <h2><span class="section-number">6.1. </span>Create event “Email” in IFTTT and get the key<a class="headerlink" href="#create-event-email-in-ifttt-and-get-the-key" title="Permalink to this headline">¶</a></h2>
 <p><span id="subtitle" >Step 1</span></p>
 <ul class="simple">
 <li><p>Go to http://www.ifttt.com, open the top right menu, then click “Create” &gt; “Applets”
-<img alt="pic" src="../_images/Ch3_02.png" /></p></li>
+<img alt="auto_fit" src="../_images/Ch3_02.png" /></p></li>
 </ul>
 <p><span id="subtitle" >Step 2</span></p>
 <ul class="simple">
 <li><p>Select this -&gt; select webhooks -&gt; input Event Name (eg. Event Name: SendEmail)，then click “Create trigger”
-<img alt="pic" src="../_images/Ch3_03.png" /></p></li>
+<img alt="auto_fit" src="../_images/Ch3_03.png" /></p></li>
 </ul>
 <p><span id="subtitle" >Step 3</span></p>
 <ul class="simple">
 <li><p>Select “That” &gt; Email
-<img alt="pic" src="../_images/Ch3_04.png" /></p></li>
+<img alt="auto_fit" src="../_images/Ch3_04.png" /></p></li>
 </ul>
 <p><span id="subtitle" >Step 4</span></p>
 <ul class="simple">
 <li><p>Select “Send me an email” , Input email title and body, then click “Create action”
-<img alt="pic" src="../_images/Ch3_05.png" /></p></li>
+<img alt="auto_fit" src="../_images/Ch3_05.png" /></p></li>
 </ul>
 <p><span id="subtitle" >Step 5</span></p>
 <ul class="simple">
 <li><p>Open your web browser, open the top right menu, select “My services” &gt; “Webhooks”
-<img alt="pic_600" src="../_images/Ch3_06.png" /></p></li>
+<img alt="auto_fit" src="../_images/Ch3_06.png" /></p></li>
 </ul>
 <p><span id="subtitle" >Step 6</span></p>
 <ul class="simple">
 <li><p>Select “Documentation” ，Copy your Webhooks Key as follows:
-<img alt="pic" src="../_images/Ch3_07.png" /></p></li>
+<img alt="auto_fit" src="../_images/Ch3_07.png" /></p></li>
 </ul>
 </div>
 <div class="section" id="programming-makecode">
@@ -221,24 +221,24 @@
 <p><span id="subtitle" >Step 1</span></p>
 <ul class="simple">
 <li><p>It will trigger the following function once after button A is clicked
-<img alt="pic_200" src="../_images/Ch3_08.png" /></p></li>
+<img alt="pic_50" src="../_images/Ch3_08.png" /></p></li>
 </ul>
 <p><span id="subtitle" >Step 2</span></p>
 <ul class="simple">
 <li><p>This function will send data (field1, field2, field3) and trigger event to IFTTT with the key provided
-<img alt="pic_200" src="../_images/Ch3_09.png" /></p></li>
+<img alt="pic_50" src="../_images/Ch3_09.png" /></p></li>
 </ul>
 <p><span id="subtitle" >Step 3</span></p>
 <ul class="simple">
 <li><p>Select “WiFi IoT:bit” &gt; “Initialize WiFi Iot:bit and OLED” and “Set WiFi to ssid…pwd”.</p></li>
 <li><p>Select “Input” -&gt;“on button A pressed” .
-<img alt="pic_600" src="../_images/Ch3_10.png" /></p></li>
+<img alt="auto_fit" src="../_images/Ch3_10.png" /></p></li>
 </ul>
 <p><span id="subtitle" >Step 4</span></p>
 <ul class="simple">
 <li><p>Select “WiFi IoT:bit” &gt; “Send IFTTT key….”</p></li>
 <li><p>Once button A is clicked, it will send IFTTT request (send an email to your email box)
-<img alt="pic_600" src="../_images/Ch3_11.png" /></p></li>
+<img alt="auto_fit" src="../_images/Ch3_11.png" /></p></li>
 </ul>
 <p><span id="subtitle" >Step 5</span></p>
 <ul class="simple">
@@ -249,7 +249,7 @@
 <li><p>a. IFTTT API key: “XXXXXXXXXXXXXXXXX“</p></li>
 <li><p>b. event_name: event name to trigger in Webhooks (eg. SendEmail)</p></li>
 <li><p>c. value 1-3: input value1, value2, value3
-<img alt="pic" src="../_images/Ch3_12.png" /></p></li>
+<img alt="auto_fit" src="../_images/Ch3_12.png" /></p></li>
 </ul>
 </div></blockquote>
 </div>
@@ -258,9 +258,9 @@
 <ul class="simple">
 <li><p>After micro:bit is connected to WiFi and click button A, it will upload data to IFTTT.</p></li>
 <li><p>If data is uploaded successfully, “Uploaded OK” will be shown.
-<img alt="pic" src="../_images/Ch3_13.png" /></p></li>
+<img alt="auto_fit" src="../_images/Ch3_13.png" /></p></li>
 <li><p>Email will be sent to your mailbox by IFTTT.
-<img alt="pic" src="../_images/Ch3_14.png" /></p></li>
+<img alt="auto_fit" src="../_images/Ch3_14.png" /></p></li>
 </ul>
 </div>
 </div>

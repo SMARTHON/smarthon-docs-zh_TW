@@ -15,14 +15,14 @@ You can learn how to get the value of the sensor and show on micro:bit LED. Temp
 1. Basic (Add block on start) > House (Add block Initialize Smarthon multiple-sensor)
 2. Input (Add block on button A is pressed) > Basic (Add block show number) > House (Add block Get temperature (°C))
 3. Input (Add block on button A is pressed, change “A” into “B” ) > Basic (Add block show number) > House (Add block Get humidity)
-![pic](images/P1_1.png)
-![pic](images/P1_2.png)
-![pic](images/P1_3.png)
+![auto_fit](images/P1_1.png)
+![auto_fit](images/P1_2.png)
+![auto_fit](images/P1_3.png)
 
 ## Hardware
 1. Connect the Temperature/Humidity sensor to Temperature Sensor port of Multiple Sensors
 2. Download the code and transfer to micro:bit
 3. Plug the micro:bit into Multiple Sensors
 4. Pressed micro:bit button A to see the temperature and button B to see the humidity
-![pic](images/P1_4.jpg)
+![pic_70](images/P1_4.jpg)
 <span id="remarks" >* Try to show the other sensors value on micro:bit LED.</span>

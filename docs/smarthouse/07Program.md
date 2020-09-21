@@ -5,15 +5,15 @@ To Program Smarthon modules with micro:bit, you need to add the Smarthon Smart H
 **Steps:**
 
 1. Find the “Extensions” block at the bottom 
-![pic](images/07Step1.png)
+![pic_60](images/07Step1.png)
 
 2. Search “https://github.com/SMARTHON/multiple-sensors-house”
-![pic](images/07Step2.png)
+![auto_fit](images/07Step2.png)
 
 3. Clicked “multiple-sensors-house” and you can see “House” package has been successfully added under “Led”.
-![pic](images/07Step3_s.png)
+![auto_fit](images/07Step3_s.png)
 
 4. Initialize Smarthon Smart House Kit to add all the functions
-![pic_600](images/07Step4.png)
+![auto_fit](images/07Step4.png)
 
 

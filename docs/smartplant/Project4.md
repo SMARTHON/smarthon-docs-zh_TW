@@ -22,7 +22,7 @@ In project 4, you can learn how to watering the plant automatically by soil mois
 5. For else if: Logic (Add block 0 = 0, change “0” to Plant “Get soil moisture”; “=” to “>”; “0” to “90” )
 6. For then: Plant-More (Add block Set Water pump to intensity 0)
 
-![pic](images/P4_1.png)
+![auto_fit](images/P4_1.png)
 
 ## Hardware:
 7. Connect Multiple Sensors and Multiple Actuators by connecting wire
@@ -31,7 +31,7 @@ In project 4, you can learn how to watering the plant automatically by soil mois
 10. **Download** the code and transfer to micro:bit
 11. Plug the micro:bit into Multiple Sensors
 
-![pic_300](images/P4_2.png)
+![pic_60](images/P4_2.png)
 
 ## Experiment:
 * How does soil moisture level affect seed germination?

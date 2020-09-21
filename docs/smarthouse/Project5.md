@@ -18,7 +18,7 @@ In project 5, you can learn how to use motion sensor and buzzer to design an ala
 3. For then: House-More (Add block Set Buzzer to intensity 0, change “0” to “1023”) > Basic (Add block show leds – create a telephone symbol)
 4. For else: House-More (Add block Set Buzzer to intensity 0)
 5. Basic (Add block pause (ms) 100)
-![pic](images/P5_1.png)
+![auto_fit](images/P5_1.png)
 
 ## Hardware
 6. Connect the **Motion sensor** to Motion Trigger port of Multiple Sensors
@@ -26,6 +26,6 @@ In project 5, you can learn how to use motion sensor and buzzer to design an ala
 8. Plug the micro:bit into Multiple Sensors
 9. Connect Multiple Sensors and Multiple Actuators by connecting wire
 10. Try shake your hand nearby the motion sensor to test
-![pic](images/P5_2.png)
+![auto_fit](images/P5_2.png)
 <span id="remarks" >* Try to use other actuators, such as LED lights (green and red) to make an alarm system. </span>
 

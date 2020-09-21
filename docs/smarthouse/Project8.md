@@ -21,7 +21,7 @@ In project 8, you can learn how to use micro:bit to make Alert LED (Red/Green). 
 5. For else: House (Add block Set RED LED to intensity 0)
 6. For else: House (Add block Set GREEN LED to intensity 0, change 0 to 1023)
 7. Basic (Add block pause (ms) 100)
-![pic](images/P8_1.png)
+![auto_fit](images/P8_1.png)
 
 ## Hardware
 8. **Download** the code and transfer to micro:bit
@@ -29,5 +29,5 @@ In project 8, you can learn how to use micro:bit to make Alert LED (Red/Green). 
 10. Connect Multiple Sensors and Multiple Actuators by connecting wire
 11. Connect the RED LED and GREEN LED module to the corresponding port of the Multiple Actuators
 12. You can test it by lighter
-![pic](images/P8_2.png)
+![auto_fit](images/P8_2.png)
 <span id="remarks" >* Try to make some blinking of the RED LED and buzzer turned on if there is a fire.</span>

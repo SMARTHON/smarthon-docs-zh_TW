@@ -17,7 +17,7 @@ In project 7, you can learn how to make an smart fan automation that allows you 
 2. Basic (Add block forever) > Logic (Add block if…then…else, add 1 more if…then…else) > For 1st if : Logic (Add block 0 = 0, change “0” to House “Get temperature(°C)”; “=” to “>”; “0” to “26”) > For then: House-More (Add block Set Motor fan clockwisely to intensity 0, change “0” to “600”)
 3. For else if: Logic (Add block 0 = 0, change “0” to House “Get temperature(°C)”; “=” to “>”; “0” to “30”) > For then: House-More (Add block Set Motor fan anti-clockwisely to intensity 0, change “0” to “1023”)
 4. For else: House-More (Add block Set Motor fan clockwisely to intensity 0)
-![pic](images/P7_1.png)
+![auto_fit](images/P7_1.png)
 
 ## Hardware
 5. Connect the Temperature/Humidity sensor to Temperature Sensor port of Multiple Sensors
@@ -26,6 +26,6 @@ In project 7, you can learn how to make an smart fan automation that allows you 
 8. Connect Multiple Sensors and Multiple Actuators by connecting wire
 9. Connect the Motor fan to Motor port of the Multiple Actuators
 10. Conduct the test to see if the motor fan can be turn on > 26°C
-![pic](images/P7_2.png)
+![auto_fit](images/P7_2.png)
 <span id="remarks" >* Can you think of other possible combination for turning on the motor fan? Try to do it. </span>
 

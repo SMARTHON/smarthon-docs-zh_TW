@@ -2,7 +2,7 @@
 
 ## About Smarthon Smart House Kit
 Smarthon Smart House Kit for micro:bit is a collaboration of computing and engineering with art for users to design and build a smart house model. This educational tool contains 7 sensors and 7 actuators that cover all the basic areas of the smart house, including security, home automation, and comfortable living as well as energy management features. Let’s start to develop your prototype. 
-![pic](images/01Smarthouse.png)
+![auto_fit](images/01Smarthouse.png)
 
 ## Kit components
 

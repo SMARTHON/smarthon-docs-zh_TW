@@ -5,7 +5,7 @@ Plants are tremendously important to life on earth. They are the foundations of 
 
 Smarthon Plant Kit is a scientific aid with Multiple Sensors and Actuators for students to learn and conduct experiment on plant studies. Simply using the graphical programming on BBC micro:bit makecode platform, it would be much easier for students to set up plant experiment. Not only can students learn about plant biology, they are also encouraged to ignite their creativity to design and study the particular projects on plant growth in deep. 
 
-![pic](images/01Smartplant.png)
+![auto_fit](images/01Smartplant.png)
 
 ## Kit components
 

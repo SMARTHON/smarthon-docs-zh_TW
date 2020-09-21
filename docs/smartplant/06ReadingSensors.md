@@ -14,15 +14,15 @@ You can learn reading sensors and its' interruption which can help you to conduc
 
 It shows the temperature, humidity, air Pressure, light as well as soil humidity.
 
-![pic](images/06readingsensors.png)
+![auto_fit](images/06readingsensors.png)
 
 Soil moisture sensor will be shown as an example:
 1.Soil Moisture Sensor
-![pic](images/06soilmoisturesensors.png)
+![auto_fit](images/06soilmoisturesensors.png)
 
 When you plug the soil moisture sensor into the port on Multiple Sensors for micro:bit, the screen shows 0.10%; while when you put the soil moisture into the plant with watering, the screen shows around 94%. It indicates that the larger number of the screen shown, the soil moisture level is higher.
 Reading the other three sensors:
-![pic](images/06other3sensors.png)
+![auto_fit](images/06other3sensors.png)
 
 Temperature:__________________
 

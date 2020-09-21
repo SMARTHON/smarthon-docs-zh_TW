@@ -21,7 +21,7 @@ In project 9, you can learn how to use micro:bit to make Kitchen safety system. 
 5. For else: House (Add block Set Buzzer to intensity 0, change 0 to 1023)
 6. For else: House (Add block Set Motor fan anti-clockwisely to intensity 0, change 0 to 900)
 7. Basic (Add block pause (ms) 100)
-![pic](images/P9_1.png)
+![auto_fit](images/P9_1.png)
 
 ## Hardware
 8. **Download** the code and transfer to micro:bit
@@ -29,5 +29,5 @@ In project 9, you can learn how to use micro:bit to make Kitchen safety system. 
 10. Connect Multiple Sensors and Multiple Actuators by connecting wire
 11. Connect the Motor Fan module to motor port of the Multiple Actuators and install it in the kitchen
 12. You can test it by lighter
-![pic](images/P9_2.png)
+![auto_fit](images/P9_2.png)
 <span id="remarks" >* Try to adjust different speed of the motor fan. </span>

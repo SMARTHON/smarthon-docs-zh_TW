@@ -19,7 +19,7 @@ In project 2, you can learn how to use micro:bit Button A/B to control LED light
 2. Input (Add block on button A is pressed) > Plant-More (Add block Set LED to intensity 0, change “0” to “1023” )
 3. Input (Add block on button A is pressed, change “A” into “B” ) > Plant-More (Add block Set LED to intensity 0)
 
-![pic](images/P2_1.png)
+![auto_fit](images/P2_1.png)
 
 ## Hardware:
 4. Connect Multiple Sensors and Multiple Actuators by connecting wire
@@ -27,6 +27,6 @@ In project 2, you can learn how to use micro:bit Button A/B to control LED light
 6. Plug the micro:bit into Multiple Sensors
 7. Pressed micro:bit button A to turn on the LED light; button B to turn off the LED light
 
-![pic](images/P2_2.png)
+![auto_fit](images/P2_2.png)
 
 <span id="remarks" >*Try to use micro:bit Button A/B to control other outputs – motor fan, humidifier, water pump and LED grow lights</span>

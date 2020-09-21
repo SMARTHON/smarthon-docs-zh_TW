@@ -104,6 +104,13 @@ If the speed ≥0, then OLED will show the distance1, distance2 and speed.<BR><P
 Plot bar graph of speed up to 20 from LED, which means showing a bar graph on Micro:bit based on the recorded speed.<BR><P>
 ![auto_fit](images/Case5/Case5_p8.png)<P>
 
+
+<span id="subtitle">Full Solution<BR><P>
+MakeCode: [https://makecode.microbit.org/_iiiJeyMCe4Pi](https://makecode.microbit.org/#pub:_iiiJeyMCe4Pi)<BR><P>
+You could also download the program from the following website:<BR>
+<iframe src="https://makecode.microbit.org/#pub:_iiiJeyMCe4Pi" width="100%" height="500" frameborder="0"></iframe>
+
+
 ## Results
 <HR>
 

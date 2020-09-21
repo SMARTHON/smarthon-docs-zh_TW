@@ -21,7 +21,7 @@ In project 5, you can learn how to make a fan automation that allows you to cont
 4. For else if: Logic (Add block 0 = 0, change “0” to Plant “Get temperature(°C)”; “=” to “>”; “0” to “32” ) > For then: Plant-More (Add block Set Motor fan clockwisely to intensity 0, change “0” to “1023” )
 5. For else: Plant-More (Add block Set Motor fan clockwisely to intensity 0)
 
-![pic](images/P5_1.png)
+![auto_fit](images/P5_1.png)
 
 ## Hardware:
 
@@ -30,7 +30,7 @@ In project 5, you can learn how to make a fan automation that allows you to cont
 8. **Download** the code and transfer to micro:bit
 9. Plug the micro:bit into Multiple Sensors
 
-![pic_300](images/P5_2.png)
+![pic_60](images/P5_2.png)
 
 ## Experiment:
 * How does temperature affect plant growth?

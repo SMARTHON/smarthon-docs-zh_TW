@@ -22,7 +22,7 @@ In project 6, you can learn how to increase humidity level by a humidity sensor.
 4. For else if: Logic (Add block 0 = 0, change “0” to Plant “Get humidity”; “=” to “>”; “0” to “70” )
 5. For then: Plant-More (Add block Set Humidifier to intensity 0) > Basic (Add block show leds)
 
-![pic](images/P6_1.png)
+![auto_fit](images/P6_1.png)
 
 ## Hardware:
 
@@ -32,7 +32,7 @@ In project 6, you can learn how to increase humidity level by a humidity sensor.
 9. **Download** the code and transfer to micro:bit
 10. Plug the micro:bit into Multiple Sensors
 
-![pic_300](images/P6_2.png)
+![pic_60](images/P6_2.png)
 
 ## Experiment:
 * Does humidifier affect plant transpiration rates?

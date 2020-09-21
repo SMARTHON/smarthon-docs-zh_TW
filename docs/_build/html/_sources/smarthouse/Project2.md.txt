@@ -15,12 +15,12 @@ In project 2, you can learn how to use micro:bit button A & B to control mono-to
 1. Basic (Add block on start) > House (Add block Initialize Smarthon multiple-sensor)
 2. Input (Add block on button A is pressed) > House-More (Add block Set Buzzer to intensity 0, change “0” to “1023”)
 3. Input (Add block on button A is pressed, change “A” into “B”) > House (Add block Set Buzzer to intensity “0”)
-![pic](images/P2_2.png)
+![auto_fit](images/P2_2.png)
 
 ## Hardware
 4. **Download** the code and transfer to micro:bit.
 5. Plug the micro:bit into Multiple Sensors.
 6. Connect Multiple Sensors and Multiple Actuators by connecting wire.
 7. Pressed micro:bit button A to turn to the buzzer and button B to turn off the buzzer.
-![pic](images/P2_3.png)
+![auto_fit](images/P2_3.png)
 <span id="remarks" >* Try to use on shake to turn on and off buzzer. </span>
