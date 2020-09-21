@@ -97,7 +97,14 @@
 <li class="toctree-l2"><a class="reference internal" href="case03.html">12. Case 03: Garbage disposal system</a></li>
 <li class="toctree-l2"><a class="reference internal" href="case04.html">13. Case 04: Urban noise detection</a></li>
 <li class="toctree-l2 current"><a class="current reference internal" href="#">14. Case 05: Car speed monitoring</a><ul>
-<li class="toctree-l3"><a class="reference internal" href="#introduction">14.1. Introduction</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#goal">14.1. Goal</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#background">14.2. Background</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#part-list">14.3. Part List</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#practical-operation">14.4. Practical operation</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#hardware-connect">14.5. Hardware connect</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#programming-makecode">14.6. Programming (MakeCode)</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#results">14.7. Results</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#think">14.8. Think</a></li>
 </ul>
 </li>
 <li class="toctree-l2"><a class="reference internal" href="case06.html">15. IoT Case 06: Weather Station</a></li>
@@ -179,8 +186,110 @@
             
   <div class="section" id="case-05-car-speed-monitoring">
 <h1><span class="section-number">14. </span>Case 05: Car speed monitoring<a class="headerlink" href="#case-05-car-speed-monitoring" title="Permalink to this headline">¶</a></h1>
-<div class="section" id="introduction">
-<h2><span class="section-number">14.1. </span>Introduction<a class="headerlink" href="#introduction" title="Permalink to this headline">¶</a></h2>
+<p>Level: <img alt="level" src="../_images/level31.png" /></p>
+<div class="section" id="goal">
+<h2><span class="section-number">14.1. </span>Goal<a class="headerlink" href="#goal" title="Permalink to this headline">¶</a></h2>
+<HR><p>Make a car speed monitor to detect car speed on the road.<BR><P></p>
+</div>
+<div class="section" id="background">
+<h2><span class="section-number">14.2. </span>Background<a class="headerlink" href="#background" title="Permalink to this headline">¶</a></h2>
+<HR><p><span id="subtitle">What is car speed monitoring?</span><P>
+It is an automatic system to check car speed on the road at certain time interval. There are cars often over-speed causing traffic accidents, therefore installing a car speed monitoring is a must to minimize the chances of traffic accidents.<BR><P></p>
+<p><span id="subtitle">Car speed monitor operation</span><P>
+The distance sensor measures two different distances at certain time interval, and therefore car speed can be calculated and shows it on the OLED. <BR><P>
+On every 500ms (0.5 second), the distance sensor will keep updating distance between the sensor and the car. <BR><P>
+<img alt="auto_fit" src="../_images/Case5_des1.png" /><P>
+If distance 1 ≥ distance 2, that’s say the car is moving towards. The moving distance is distance1 -distance2. The speed is (distance1-distance2)/0.5 (unit: cm/s) <BR><P>
+If distance 1 = distance 2, that’s say the car has stop moving or there are no cars. The moving distance and speed are 0 <BR><P>
+For car speed &lt; 0, it is the exceptional case (the car turns left/right and leave the road) and the speed will not be shown. <BR><P>
+A bar graph on micro:bit LED is shown to indicate the instant speed of the cars. <BR><P>
+<img alt="auto_fit" src="../_images/Case5_des2.png" /><P></p>
+</div>
+<div class="section" id="part-list">
+<h2><span class="section-number">14.3. </span>Part List<a class="headerlink" href="#part-list" title="Permalink to this headline">¶</a></h2>
+<HR><table><tr><td>
+Electronics:
+<ul display='inline-block'>
+<li>micro:bit (with OLED) X1</li>
+<li>IoT:bit X1</li>
+<li>OLED extension wire X1</li>
+<li>USB Wire/Battery Holder </li>
+&nbsp;&nbsp;1. Distance Sensor X1 (wWith 4-pin mModule wire) <BR>
+</ul>
+</td></tr>
+<tr>
+<td>Model:
+<ul>
+<li>Car speed monitoring stand Model E1-E2 X1</li>
+<li>Car speed showing stand Model D1-D2 X1</li>
+<li>M4 Screws X4</li>
+<li>M4 Nuts X4</li>
+<li>M2 Screws X4</li>
+<li>M2 Nuts X4</li>
+</ul>
+</td></tr>
+<tr><td>Equipment:
+<ul><li>ScrewDriver X1</li></ul></td></tr></table><p><img alt="auto_fit" src="../_images/Case5_parts.png" /><P></p>
+</div>
+<div class="section" id="practical-operation">
+<h2><span class="section-number">14.4. </span>Practical operation<a class="headerlink" href="#practical-operation" title="Permalink to this headline">¶</a></h2>
+<HR><p><span id="subtitle">Step 1</span><P>
+Attach the OLED to D1 model using M2 x10mm screw and nut.<BR><P>
+<img alt="auto_fit" src="../_images/Case5_po1.png" /><P>
+<span id="subtitle">Step 2</span><P>
+Put D2 model onto the D1 model.<BR><P>
+<img alt="auto_fit" src="../_images/Case5_po2.png" /><P>
+<span id="subtitle">Step 3</span><P>
+Attach the distance sensor to E1 model using M4 screw and nut.<BR><P>
+<img alt="auto_fit" src="../_images/Case5_po3.png" /><P>
+<span id="subtitle">Step 4</span><P>
+Put the E2 model onto E1 model.<BR><P>
+<img alt="auto_fit" src="../_images/Case5_po4.png" /><P></p>
+</div>
+<div class="section" id="hardware-connect">
+<h2><span class="section-number">14.5. </span>Hardware connect<a class="headerlink" href="#hardware-connect" title="Permalink to this headline">¶</a></h2>
+<HR><p>Connect the Distance Sensor to P14 (trig)/ P15 (echo) port of IoT:bit <BR><P>
+Extend the connection of OLED to the I2C connection port of IoT:bit <BR><P>
+<img alt="auto_fit" src="../_images/Case5_hardware.png" /><P></p>
+</div>
+<div class="section" id="programming-makecode">
+<h2><span class="section-number">14.6. </span>Programming (MakeCode)<a class="headerlink" href="#programming-makecode" title="Permalink to this headline">¶</a></h2>
+<HR><p><span id="subtitle">Step 1</span><P>
+Drag on start block from Basic. Drag Initialize IoT:bit at OLED from IoT:bit, set OLED height:64, width:128.<BR><P>
+<img alt="auto_fit" src="../_images/Case5_p1.png" /><P>
+<span id="subtitle">Step 2</span><P>
+Set distance 1, distance 2 and speed to 0 from variables. <BR><P>
+<img alt="auto_fit" src="../_images/Case5_p2.png" /><P>
+<span id="subtitle">Step 3</span><P>
+Set up a new function (calculate_Speed). Set distance1 to get distance unit cm trig P14 echo P15 (distance from the car to the distance sensor before 0.5 second)<BR><P>
+<img alt="auto_fit" src="../_images/Case5_p3.png" /><P>
+<span id="subtitle">Step 4</span><P>
+Pause 500ms and get distance2 to get distance unit cm trig P14 echo P15 (distance from the car to the distance sensor after 0.5 second)<BR><P>
+<img alt="auto_fit" src="../_images/Case5_p4.png" /><P>
+<span id="subtitle">Step 5</span><P>
+By the equation of speed = distance / time. We get the speed of the moving car to (distance1-distance2)/0.5 (unit: cm/s)<BR><P>
+<img alt="auto_fit" src="../_images/Case5_p5.png" /><P>
+<span id="subtitle">Step 6</span><P>
+Drag forever block from Basic. Call function (calculate_Speed) to get the speed of the moving car.<BR><P>
+<img alt="auto_fit" src="../_images/Case5_p6.png" /><P>
+<span id="subtitle">Step 7</span><P>
+If the speed ≥0, then OLED will show the distance1, distance2 and speed.<BR><P>
+<img alt="auto_fit" src="../_images/Case5_p7.png" /><P>
+<span id="subtitle">Step 8</span><P>
+Plot bar graph of speed up to 20 from LED, which means showing a bar graph on Micro:bit based on the recorded speed.<BR><P>
+<img alt="auto_fit" src="../_images/Case5_p8.png" /><P></p>
+</div>
+<div class="section" id="results">
+<h2><span class="section-number">14.7. </span>Results<a class="headerlink" href="#results" title="Permalink to this headline">¶</a></h2>
+<HR><p>It will keep checking the distance of cars from distance sensor by distance sensor in every 500ms. The speed of the cars will be shown on OLED. A bar chart of speed will be shown on micro:bit LED also.<BR><P>
+<span id="subtitle">Car moving with low speed</span><P>
+<img alt="auto_fit" src="../_images/Case5_result1.gif" /><P>
+<span id="subtitle">Car moving with high speed</span><P>
+<img alt="auto_fit" src="../_images/Case5_result2.gif" /><P></p>
+</div>
+<div class="section" id="think">
+<h2><span class="section-number">14.8. </span>Think<a class="headerlink" href="#think" title="Permalink to this headline">¶</a></h2>
+<HR><p>How can we set a sound alert to notify that there is car over-speeding?<BR><P></p>
 </div>
 </div>
 
