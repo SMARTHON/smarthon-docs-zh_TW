@@ -47,7 +47,7 @@ Electronics:
 ## Practical Operation 1
 <HR>
 
-[Read more](https://smarthon-docs-en.readthedocs.io/en/latest/_files/Case1e.pdf)<P>
+[Read more](https://github.com/SMARTHON/smarthon-docs-en/blob/master/docs/smartcity/files/Case1e.pdf)<P>
 
 ![auto_fit](files/Case1e.jpg)<P>
 
