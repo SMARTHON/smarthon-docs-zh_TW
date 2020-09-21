@@ -28,7 +28,7 @@ Electronics:
 <li>OLED X1</li>
 <li>USB Wire/Battery Holder</li>
 &nbsp;&nbsp;1. Light Sensor X1 (with 3-pin module wire)<BR>
-&nbsp;&nbsp;2. Distance Sensor X1 (with 3-pin module wire)<BR>
+&nbsp;&nbsp;2. Distance Sensor X1 (with 4-pin module wire)<BR>
 &nbsp;&nbsp;3. 180° Servo X1<BR>
 </ul>
 </td></tr>
@@ -61,7 +61,7 @@ Attach the servo to B1 model with M2 x10mm screws and nuts<BR><P>
 Attach the B2 model to the servo with servo M2 sharp screw.<BR><P>
 ![auto_fit](images/Case2/Case2_po3.png)<P>
 <span id="subtitle">Step 4</span><BR><P>
-Put B2 model onto B1 model. <BR><P>
+Put B3 model onto B1 model. <BR><P>
 ![auto_fit](images/Case2/Case2_po4.png)<P>
 
 ## Hardware connect
