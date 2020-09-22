@@ -95,12 +95,13 @@
 <li class="toctree-l3"><a class="reference internal" href="#programming-makecode-get-the-device-id">7.3. Programming (Makecode), get the Device ID</a></li>
 <li class="toctree-l3"><a class="reference internal" href="#create-the-mobile-app-in-app-inventor-2">7.4. Create the mobile app in App Inventor 2</a></li>
 <li class="toctree-l3"><a class="reference internal" href="#result">7.5. Result</a></li>
-<li class="toctree-l3"><a class="reference internal" href="#know-more-with-value">7.6. Know more (with value)</a></li>
-<li class="toctree-l3"><a class="reference internal" href="#know-the-api-control-command-with-value">7.7. Know the API (control command with value)</a></li>
-<li class="toctree-l3"><a class="reference internal" href="#id1">7.8. Hardware connect</a></li>
-<li class="toctree-l3"><a class="reference internal" href="#programming-makecode">7.9. Programming (Makecode)</a></li>
-<li class="toctree-l3"><a class="reference internal" href="#app-inventor-2-setting">7.10. App Inventor 2 setting</a></li>
-<li class="toctree-l3"><a class="reference internal" href="#id2">7.11. Result</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#know-more-with-value">7.6. Know more (with value)</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="#know-the-api-control-command-with-value">7.6.1. Know the API (control command with value)</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#programming-makecode">7.6.2. Programming (Makecode)</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#app-inventor-2-setting">7.6.3. App Inventor 2 setting</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#id1">7.6.4. Result</a></li>
+</ul>
+</li>
 </ul>
 </li>
 <li class="toctree-l2"><a class="reference internal" href="chapter4.html">8. Chapter 4: Control your micro:bit by IFTTT Services</a></li>
@@ -198,7 +199,7 @@ PC/mobile will send a control command to micro:bit. When the micro:bit receive t
 <span id="remarks" >*Before we control the micro:bit, please make sure your micro:bit is connected to the Wi-Fi.</span></p>
 <div class="section" id="know-the-api-control-command">
 <h2><span class="section-number">7.1. </span>Know the API (control command)<a class="headerlink" href="#know-the-api-control-command" title="Permalink to this headline">¶</a></h2>
-<HR><p><a class="reference external" href="http://control.smarthon.cc/publish?id=DeviceID&amp;msg=ControlCommand">http://control.smarthon.cc/publish?id=DeviceID&amp;msg=ControlComman</a></p>
+<HR><p><a class="reference external" href="http://control.smarthon.cc/publish?id=DeviceID&amp;msg=ControlCommand">http://control.smarthon.cc/publish?id=DeviceID&amp;msg=ControlCommand</a></p>
 </div>
 <div class="section" id="hardware-connect">
 <h2><span class="section-number">7.2. </span>Hardware connect<a class="headerlink" href="#hardware-connect" title="Permalink to this headline">¶</a></h2>
@@ -217,9 +218,9 @@ Choose IoT:bit -&gt; Set Wi-Fi to ssid “”, pwd “”. Enter your Wi-Fi name
 It will be triggered once after connected with WiFi.<BR><P>
 <img alt="auto_fit" src="../_images/Ch3_p2.png" /><P></p>
 <p><span id="subtitle" >Step 3</span><BR><P>
-Set the Wi-Fi listening on Micro:bit WAN control command action<BR><P>
+Set the Wi-Fi listening on Micro:bit WAN control command action.
 After micro:bit connected to WiFi, it will start WiFi remote control (WAN)<BR><P>
-If Wan command “Pin_On” is received, white LED will be turned on (intensity:1023)<BR><P>
+If Wan command “Pin_On” is received, white LED will be turned on (intensity:1023).
 If Wan command “Pin_Off” is received, white LED will be turned off (intensity:0)<BR><P>
 <img alt="auto_fit" src="../_images/Ch3_p3.png" /><P></p>
 <p><span id="subtitle" >Step 4: Get micro:bit Device ID</span><BR><P></p>
@@ -227,7 +228,7 @@ If Wan command “Pin_Off” is received, white LED will be turned off (intensit
 <img alt="auto_fit" src="../_images/Ch3_p4.png" /><P>
 Wi-Fi IoT:bit will start to connect to internet, when the connection is successful, the IP Address would be shown. <BR><P>
 <img alt="auto_fit" src="../_images/Ch3_p5.png" /><P>
-Then, it will start WAN remote control. If the connection is successful, the Device ID would be shown. <BR><P>
+Then, it will start WAN remote control. If the connection is successful, the Device ID would be shown.
 Remember the Device ID, it will be used for WAN connection on the next step.<BR><P>
 <img alt="auto_fit" src="../_images/Ch3_p6.png" /><P></p>
 </div>
@@ -242,15 +243,18 @@ Drag Connectivity&gt; “Web” to the page <BR><P>
 The WAN control command URL is:<BR><P>
 <a class="reference external" href="http://control.smarthon.cc/publish?id=DeviceID&amp;msg=ControlCommand">http://control.smarthon.cc/publish?id=DeviceID&amp;msg=ControlCommand</a></p>
 <p><span id="subtitle" >Step 3: In App Inventor 2, on “Blocks”</span><BR><P>
-When “Button1” is clicked, it direct to the command URL, and control the micro:bit by Wi-Fi (WAN connection). <BR><P>
-a. Device ID: a unique ID (to identify micro:bit device to receive the command)<BR><P>
-b. WAN command: Pin_On<BR><P>
-<img alt="auto_fit" src="../_images/Ch3_app2a.png" /><P>
-<BR>
-When “Button2” is clicked, it direct to the command URL, and control the micro:bit by Wi-Fi (WAN connection).<BR><P>
-a. Device ID: a uniquie ID (to identify the micro:bit which receive the command)<BR><P>
-b. WAN command: Pin_Off<BR><P>
-<img alt="auto_fit" src="../_images/Ch3_app2b.png" /><P></p>
+When “Button1” is clicked, it direct to the command URL, and control the micro:bit by Wi-Fi (WAN connection).</p>
+<ul class="simple">
+<li><p>Device ID: a unique ID (to identify micro:bit device to receive the command)</p></li>
+<li><p>WAN command: Pin_On
+<img alt="auto_fit" src="../_images/Ch3_app2a.png" /><P><BR></p></li>
+</ul>
+<p>When “Button2” is clicked, it direct to the command URL, and control the micro:bit by Wi-Fi (WAN connection).</p>
+<ul class="simple">
+<li><p>Device ID: a uniquie ID (to identify the micro:bit which receive the command)</p></li>
+<li><p>WAN command: Pin_Off
+<img alt="auto_fit" src="../_images/Ch3_app2b.png" /><P><BR></p></li>
+</ul>
 </div>
 <div class="section" id="result">
 <h2><span class="section-number">7.5. </span>Result<a class="headerlink" href="#result" title="Permalink to this headline">¶</a></h2>
@@ -272,68 +276,55 @@ The LED on P0 will be turned off.<BR><P>
 <div class="section" id="know-more-with-value">
 <h2><span class="section-number">7.6. </span>Know more (with value)<a class="headerlink" href="#know-more-with-value" title="Permalink to this headline">¶</a></h2>
 <HR><p>The above example is for turning the LED on/off only. How about if we want to control the LED with intensity? The below example is to control your modules with intensity.<BR><P></p>
-</div>
 <div class="section" id="know-the-api-control-command-with-value">
-<h2><span class="section-number">7.7. </span>Know the API (control command with value)<a class="headerlink" href="#know-the-api-control-command-with-value" title="Permalink to this headline">¶</a></h2>
+<h3><span class="section-number">7.6.1. </span>Know the API (control command with value)<a class="headerlink" href="#know-the-api-control-command-with-value" title="Permalink to this headline">¶</a></h3>
 <HR><p><a class="reference external" href="http://control.smarthon.cc/publish?id=DeviceID&amp;msg=ControlCommand&amp;value=Value">http://control.smarthon.cc/publish?id=DeviceID&amp;msg=ControlCommand&amp;value=Value</a></p>
 </div>
-<div class="section" id="id1">
-<h2><span class="section-number">7.8. </span>Hardware connect<a class="headerlink" href="#id1" title="Permalink to this headline">¶</a></h2>
-<HR><p>Connect LED to P0<BR><P>
-<img alt="auto_fit" src="../_images/Ch3_hardware.png" /><P></p>
-</div>
 <div class="section" id="programming-makecode">
-<h2><span class="section-number">7.9. </span>Programming (Makecode)<a class="headerlink" href="#programming-makecode" title="Permalink to this headline">¶</a></h2>
+<h3><span class="section-number">7.6.2. </span>Programming (Makecode)<a class="headerlink" href="#programming-makecode" title="Permalink to this headline">¶</a></h3>
 <HR><p><span id="subtitle" >Step 1</span><BR><P>
-Set the Wi-Fi listening on micro:bit WAN control command action<BR><P>
-Initialize IoT:bit and OLED, the micro:bit start connecting Wifi.<BR><P>
-<img alt="auto_fit" src="../_images/Ch3_p2_1.png" /><P>
+Initialize IoT:bit and OLED, the micro:bit start connecting WiFi and start WiFi remote control (WAN)<BR><P>
+If Wan command “Pin_Value” is received, white LED will be turned on with the  given value (intensity). <BR><P></p>
+<p><img alt="auto_fit" src="../_images/Ch3_p2_1.png" /><P>
 <img alt="auto_fit" src="../_images/Ch3_p2_2.png" /><P>
 <img alt="auto_fit" src="../_images/Ch3_p2_3.png" /><P>
-The LED intensity on P0 can be changed by a WAN command received with value:<BR><P>
-a. Device ID: a unique ID (to identify micro:bit device to receive the command)<BR><P>
-b. WAN_Command: PinValue (command for micro:bit)<BR><P>
-c. Value: the intensity of the LED (the value for the command) <BR><P></p>
-<p><span id="subtitle" >Step 2: Get micro:bit Device ID</span><BR><P></p>
-<p>Load the program to the micro:bit and connect the micro:bit to the IoT:bit.<BR><P>
-<img alt="auto_fit" src="../_images/Ch3_p2_4.png" /><P>
-Wi-Fi IoT:bit will start to connect to internet, when the connection is successful, the IP Address would be shown. <BR><P>
+The LED intensity on P0 can be changed by a WAN command received with value:<BR><P></p>
+<ul class="simple">
+<li><p>Device ID: a unique ID (to identify micro:bit device to receive the command)</p></li>
+<li><p>WAN_Command: PinValue (command for micro:bit)</p></li>
+<li><p>Value: the intensity of the LED (the value for the command)</p></li>
+</ul>
+<p><span id="subtitle" >Step 2: Get micro:bit Device ID</span><BR><P>
+Step 2.	Get micro:bit Device ID
+Connect micro:bit to  internet, and start WAN remote control.
 <img alt="auto_fit" src="../_images/Ch3_p2_5.png" /><P>
-Then, it will start WAN remote control. If the connection is successful, the Device ID would be shown. <BR><P>
-Remember the Device ID, it will be used for WAN connection on the next step.<BR><P>
+Then, it will start WAN remote control. If the connection is successful, the Device ID would be shown.
+Remember the Device ID, it will be used for WAN connection on the next step.
 <img alt="auto_fit" src="../_images/Ch3_p2_6.png" /><P></p>
 </div>
 <div class="section" id="app-inventor-2-setting">
-<h2><span class="section-number">7.10. </span>App Inventor 2 setting<a class="headerlink" href="#app-inventor-2-setting" title="Permalink to this headline">¶</a></h2>
+<h3><span class="section-number">7.6.3. </span>App Inventor 2 setting<a class="headerlink" href="#app-inventor-2-setting" title="Permalink to this headline">¶</a></h3>
 <HR><p>In below example, you can create a web connection, set the URL to the control command URL in App inventor.<BR><P>
-<span id="subtitle" >Step 1</span><BR><P>
-Create a new project in App Inventor 2, on “Designer”. <BR><P>
+<span id="subtitle" >Step 1: Create a new project in App Inventor 2, on “Designer”. </span><BR><P>
 Drag “Layout”&gt;”HorizontalArragement” to the page. <BR><P>
-Drag “User Interface” &gt; “TextBox” to the place inside the HorizontalArrangement<BR><P>
-Drag “User Interface” &gt; “Button” to the place inside the HorizontalArrangement<BR><P>
+Drag “User Interface” &gt; “TextBox” and “Button” to the place inside the HorizontalArrangement<BR><P>
 Drag Connectivity&gt; “Web” to the page <BR><P>
 <img alt="auto_fit" src="../_images/Ch3_app2_1.png" /><P></p>
-<p><span id="subtitle" >Step 2</span><BR><P>
-Get WAN control URL (command with value)<BR><P></p>
-<p>The WAN control command URL is:<BR><P>
+<p><span id="subtitle" >Step 2: Get WAN control URL (command with value)</span><BR><P>
+The WAN control command URL is:<BR><P>
 <a class="reference external" href="http://control.smarthon.cc/publish?id=0xfa240ac45917&amp;msg=PinValue&amp;value=600">http://control.smarthon.cc/publish?id=0xfa240ac45917&amp;msg=PinValue&amp;value=600</a></p>
-<p><span id="subtitle" >Step 3</span><BR><P></p>
-<p>On “Blocks” <BR><P>
-When “Button3” is clicked, it direct to the command URL, and control the micro:bit by Wi-Fi (WAN connection). <BR><P>
-a. Device ID: a unique ID (to identify micro:bit device to receive the command)<BR><P>
-b. WAN command: PinValue<BR><P>
-c. Value: TextBox1.Text (refer to the input value)<BR><P>
-<img alt="auto_fit" src="../_images/Ch3_app2_2.png" /><P></p>
+<p><span id="subtitle" >Step 3: In App Inventor2, on “Blocks” </span><BR><P></p>
+<p>When “Button3” is clicked, it direct to the command URL, and control the micro:bit by Wi-Fi (WAN connection). <BR><P></p>
+<ul class="simple">
+<li><p>Device ID: a unique ID (to identify micro:bit device to receive the command)</p></li>
+<li><p>WAN command: PinValue</p></li>
+<li><p>Value: TextBox1.Text (refer to the input value)
+<img alt="auto_fit" src="../_images/Ch3_app2_2.png" /><P></p></li>
+</ul>
 </div>
-<div class="section" id="id2">
-<h2><span class="section-number">7.11. </span>Result<a class="headerlink" href="#id2" title="Permalink to this headline">¶</a></h2>
-<HR><p>In App Inventor 2, you can perform real-time testing in your mobile phone by AI Companion<BR><P>
-App Inventor 2 	Mobile phone (by AI Companion)<BR><P>
-<img alt="auto_fit" src="../_images/Ch3_app2_3.png" /><P>
-Also, you can also build and download the android app and open it in your mobile phone.<BR><P>
-App Inventor 2 	Mobile phone (by building the app)<BR><P>
-<img alt="auto_fit" src="../_images/Ch3_app2_4.png" /><P></p>
-<p><span id="subtitle" >Testing 1:</span><BR><P>
+<div class="section" id="id1">
+<h3><span class="section-number">7.6.4. </span>Result<a class="headerlink" href="#id1" title="Permalink to this headline">¶</a></h3>
+<HR><p><span id="subtitle" >Testing 1:</span><BR><P>
 After connected to WAN remote control is started, when Button3 is clicked, it will send WAN command “PinValue” with value “600” to the micro:bit with provided Device ID.<BR><P>
 The LED on P0 will be turned on (with intensity: 600)<BR><P>
 <img alt="auto_fit" src="../_images/Ch3_result2_1.png" /><P>
@@ -341,6 +332,7 @@ The LED on P0 will be turned on (with intensity: 600)<BR><P>
 when Button3 is clicked, it will send WAN command “PinValue” with value “0” to the micro:bit with provided Device ID.<BR><P>
 The LED on P0 will be turned off (with intensity: 0)<BR><P>
 <img alt="auto_fit" src="../_images/Ch3_result2_2.png" /><P></p>
+</div>
 </div>
 </div>
 
