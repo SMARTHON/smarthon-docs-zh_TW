@@ -1,137 +1,184 @@
-# Chapter 3: Control your micro:bit by App Inventor 2
+# Chapter 3: Control micro:bit by App Inventor 2
 
-In this example, PC/mobile and micro:bit are connected to LAN network through WAN
-PC/mobile will send a control command “Pin_On” to micro:bit. When the micro:bit receive the command, it will turn on the module on the pin.
-![auto_fit](images/Ch4_01.png)
-<span id="remarks">***Before we control the micro:bit, please make sure your micro:bit is connected to the Wi-Fi.</span>
+App inventor 2 is a blocks-based programming tool, which help beginners to build fully functional app in Android device. The interface is graphical base and support drag and drop operations. It consists of different components, such as button, slider, date pickers, image, camera, sensors including Accelerometer and connectivity to web, etc. The app can be exported or published to Play store for our daily life.<BR><P>
+For creating IoT application, you can use App Inventor 2 to create web connection with micro:bit. In WAN control, after micro:bit is connected to internet, it keep listening and execute customized operation when WAN command is received. The customized operation could be Pin On/off, such as “open/close LED”, or set value such as “set the light intensity” and “set current time”.<BR><P>
+![auto_fit](images/Ch3/Ch3_des1.png)<P>
+In the following example, PC/mobile and micro:bit are connected to LAN network through WAN<BR><P>
+PC/mobile will send a control command to micro:bit. When the micro:bit receive the command, it will turn on/off the module on the pin.<BR><P>
+![auto_fit](images/Ch3/Ch3_des2.png)<P>
+<span id="remarks" >*Before we control the micro:bit, please make sure your micro:bit is connected to the Wi-Fi.</span>
 
-## What is API
-API is HTTP URL, it is one of the way to communicate with other objects.
-http://54.202.26.42:8080/publish?id=DeviceID&msg=ControlCommand
+## Know the API (control command)
+<HR>
 
-## Example 1: Control your micro:bit with modules
+[http://control.smarthon.cc/publish?id=DeviceID&msg=ControlComman](http://control.smarthon.cc/publish?id=DeviceID&msg=ControlCommand) 
 
-### Know the API (control command without value)
-http://54.202.26.42:8080/publish?id=DeviceID&msg=ControlCommand
+## Hardware connect
+<HR>
 
-### Programming (MakeCode)
-<span id="subtitle" >Step 1. Start WiFi remote control </span>
-* Connect micro:bit to WiFi.
-![auto_fit](images/Ch4_02.png)
+Connect LED to P0
+![auto_fit](images/Ch3/Ch3_hardware.png)<P>
 
-<span id="subtitle" >Step 2. Set the Wi-Fi listening on Micro:bit WAN control command action</span>
-* After micro:bit connected to WiFi, it will start WiFi remote control (WAN)
-* If Wan command “Pin_On” is received, white LED will be turned on.
-![auto_fit](images/Ch4_03.png)
+## Programming (Makecode), get the Device ID
+<HR>
 
-<span id="subtitle" >Step 3. Get micro:bit Device ID</span>
-* Load the program to the micro:bit and connect the micro:bit to the WiFi IoT:bit.
-![auto_fit](images/Ch4_04.png)
+Goal: This example is to turn on/off micro:bit modules only.<BR><P>
 
-* Wi-Fi IoT:bit will start to connect to internet, when the connection is successful, the IP Address would be shown. 
-![auto_fit](images/Ch4_05.png)
+<span id="subtitle" >Step 1</span><BR><P>
+After initializing, you can connect to the WiFi:<BR><P>
+Choose IoT:bit -> Set Wi-Fi to ssid “”, pwd “”. Enter your Wi-Fi name and password<BR><P>
+![auto_fit](images/Ch3/Ch3_p1.png)<P>
 
-* Then, it will start WAN remote control. If the connection is successful, the Device ID would be shown.
-* Remember the Device ID, it will be used for WAN connection on the next step.
-![auto_fit](images/Ch4_06.png)
- 
+<span id="subtitle" >Step 2</span><BR><P>
+“On WiFi connected” is an event handler.<BR><P>
+It will be triggered once after connected with WiFi.<BR><P>
+![auto_fit](images/Ch3/Ch3_p2.png)<P>
 
-### Result (WEB)
+<span id="subtitle" >Step 3</span><BR><P>
+Set the Wi-Fi listening on Micro:bit WAN control command action<BR><P>
+After micro:bit connected to WiFi, it will start WiFi remote control (WAN)<BR><P>
+If Wan command “Pin_On” is received, white LED will be turned on (intensity:1023)<BR><P>
+If Wan command “Pin_Off” is received, white LED will be turned off (intensity:0)<BR><P>
+![auto_fit](images/Ch3/Ch3_p3.png)<P>
 
-<span id="subtitle" >Step 1. Get WAN control URL (command without value)</span>
-* The WAN control command URL is:
-http://54.202.26.42:8080/publish?id=DeviceID&msg=ControlCommand
-* Open your web browser and input control command URL, then press “enter”
-![auto_fit](images/Ch4_07.png)
+<span id="subtitle" >Step 4: Get micro:bit Device ID</span><BR><P>
 
-<span id="subtitle" >Step 2</span>
-* After connected to WAN remote control is started, when Button1 is clicked, it will send WAN command “Pin_On” to the micro:bit with provided Device ID.
-* The LED on P0 will be turned on.
-![auto_fit](images/Ch4_08.png)
+Load the program to the micro:bit and connect the micro:bit to the IoT:bit.<BR><P>
+![auto_fit](images/Ch3/Ch3_p4.png)<P>
+Wi-Fi IoT:bit will start to connect to internet, when the connection is successful, the IP Address would be shown. <BR><P>
+![auto_fit](images/Ch3/Ch3_p5.png)<P>
+Then, it will start WAN remote control. If the connection is successful, the Device ID would be shown. <BR><P>
+Remember the Device ID, it will be used for WAN connection on the next step.<BR><P>
+![auto_fit](images/Ch3/Ch3_p6.png)<P>
 
-### Result (App inventor 2)
+## Create the mobile app in App Inventor 2
+<HR>
 
-<span id="subtitle" >Step 1. Get WAN control URL (command without value)</span>
+<span id="subtitle" >Step 1: Create a new project in App Inventor 2, on “Designer”</span><BR><P>
+Drag “Layout”>”HorizontalArragement” to the page. <BR><P>
+Drag “User Interface” > “Button” twice to the place inside the HorizontalArrangement<BR><P>
+Drag Connectivity> “Web” to the page <BR><P>
+![auto_fit](images/Ch3/Ch3_app1.png)<P>
 
-* The WAN control command URL is:
-http://54.202.26.42:8080/publish?id=DeviceID&msg=ControlCommand
+<span id="subtitle" >Step 2: Get WAN control URL (command without value)</span><BR><P>
+The WAN control command URL is:<BR><P>
+[http://control.smarthon.cc/publish?id=DeviceID&msg=ControlCommand](http://control.smarthon.cc/publish?id=DeviceID&msg=ControlCommand)
 
-<span id="subtitle" >Step 2. Get controlled by mobile app in App Invetor</span>
-* In below example, you can create a web connection, set the URL to the control command URL in App inventor.
+<span id="subtitle" >Step 3: In App Inventor 2, on “Blocks”</span><BR><P>
+When “Button1” is clicked, it direct to the command URL, and control the micro:bit by Wi-Fi (WAN connection). <BR><P>
+a. Device ID: a unique ID (to identify micro:bit device to receive the command)<BR><P>
+b. WAN command: Pin_On<BR><P>
+![auto_fit](images/Ch3/Ch3_app2a.png)<P>
+<BR>
+When “Button2” is clicked, it direct to the command URL, and control the micro:bit by Wi-Fi (WAN connection).<BR><P> 
+a. Device ID: a uniquie ID (to identify the micro:bit which receive the command)<BR><P>
+b. WAN command: Pin_Off<BR><P>
+![auto_fit](images/Ch3/Ch3_app2b.png)<P>
 
+## Result
+<HR>
 
-<span id="subtitle" >A. Designer</span>
-![auto_fit](images/Ch4_09.png)  
-
-<span id="subtitle" >B. Blocks</span>
-* When the remote button is clicked, it direct to the command URL, and control the micro:bit by Wi-Fi (WAN connection). 
-![auto_fit](images/Ch4_10.png)
-
-<span id="subtitle" >Step 3 </span>
-* After connected to WAN remote control is started, when Button1 is clicked, it will send WAN command “Pin_On” to the micro:bit with provided Device ID.
-* The LED on P0 will be turned on.
-![auto_fit](images/Ch4_11.png)
-
-
-## Example 2: Set the parameter via Wi-Fi (e.g. clock)
-
-### Know the API (control command without value)
-http://54.202.26.42:8080/publish?id=DeviceID&msg=ControlCommand
-
-### Programming (Makecode)
-
-<span id="subtitle" >Step 1. Set the Wi-Fi listening on micro:bit WAN control command action</span>
-* Using variable is useful when you need to change a program setting in micro:bit; for example: clock
-* Also, you will need parameters “hour” for the clock.
-* The initial value for the clock (hour) is 0.
-![pic_70](images/Ch4_12.png)
-
-* Connect Wi-Fi remote control (WAN) after Wi-Fi connected.
-![pic_60](images/Ch4_13.png)
-
-* After an hour, the parameter “hour” will be changed by 1.
-![pic_60](images/Ch4_14.png)
-
-* The time (current hour) can be changed by a WAN command received:
-> * Device ID: Your micro:bit Device ID (to identify micro:bit device to receive the command)
-> * WAN_Command: SetHour (command for micro:bit)
-> * Value: 6 (the value for the command)
-![pic_70](images/Ch4_15.png)
-
-<span id="subtitle" >Step 2. Get micro:bit Device ID</span>
-* Load the program to the micro:bit and connect the micro:bit to the WiFi IoT:bit.
-![auto_fit](images/Ch4_16.png)
-
-* Wi-Fi IoT:bit will start to connect to internet, when the connection is successful, the IP Address would be shown. 
-![auto_fit](images/Ch4_17.png)
-
-* Then, it will start WAN remote control. If the connection is successful, the Device ID would be shown. 
-* Remember the Device ID, it will be used for WAN connection on the next step.
-![auto_fit](images/Ch4_18.png)
+In App Inventor 2, you can perform real-time testing in your mobile phone by AI Companion<BR><P>
+App Inventor 2 	Mobile phone (by AI Companion)<BR><P>
+![auto_fit](images/Ch3/Ch3_app3.png)<P>
+Also, you can also build and download the android app and open it in your mobile phone.<BR><P>
+App Inventor 2 	Mobile phone (by building app)<BR><P>
+![auto_fit](images/Ch3/Ch3_app4.png)<P>
 
 
-### Result (WEB)
+<span id="subtitle" >Testing 1:</span><BR><P>
+After connected to WAN remote control is started, when Button1 is clicked, it will send WAN command “Pin_On” to the micro:bit with provided Device ID.<BR><P>
+The LED on P0 will be turned on.<BR><P>
+![auto_fit](images/Ch3/Ch3_result1.png)<P>
+<span id="subtitle" >Testing 2:</span><BR><P>
+After connected to WAN remote control is started, when Button2 is clicked, it will send WAN command “Pin_Off” to the micro:bit with provided Device ID.<BR><P>
+The LED on P0 will be turned off.<BR><P>
+![auto_fit](images/Ch3/Ch3_result2.png)<P>
 
-<span id="subtitle" >Step 1. Send controlled by browser (command with value)</span>
-* The control command URL is:
-http://54.202.26.42:8080/publish?id=DeviceID&msg=ControlCommand&value=value
+## Know more (with value)
+<HR>
 
-* Open your web browser and input control command URL, then press “enter”
-![auto_fit](images/Ch4_19.png)
+The above example is for turning the LED on/off only. How about if we want to control the LED with intensity? The below example is to control your modules with intensity.<BR><P>
 
-### Result (App inventor 2)
 
-In this example, you can create a web connection, set the URL to the control command URL (http://54.202.26.42:8080/publish?id=0xa3240ac45916&msg=SetHour&value=6)
+## Know the API (control command with value)
+<HR>
 
-<span id="subtitle" >A. Designer</span>
-![auto_fit](images/Ch4_20.png)
+[http://control.smarthon.cc/publish?id=DeviceID&msg=ControlCommand&value=Value](http://control.smarthon.cc/publish?id=DeviceID&msg=ControlCommand&value=Value)
 
-<span id="subtitle" >B. Blocks</span>
-* When the remote button is clicked, it direct to the command URL, and control the micro:bit by Wi-Fi (WAN connection).
-![auto_fit](images/Ch4_21.png)
+## Hardware connect
+<HR>
 
-* After connected to WAN remote control is started, when Button1 is clicked, it will send WAN command “SetHour” with value “6’ to the micro:bit with provided Device ID.
-![auto_fit](images/Ch4_22.png)
+Connect LED to P0<BR><P>
+![auto_fit](images/Ch3/Ch3_hardware.png)<P>
 
-* Once it receives the WAN command (SetHour) with value (6), the updated value will be shown. 
-![auto_fit](images/Ch4_23.png)
+## Programming (Makecode)
+<HR>
+
+<span id="subtitle" >Step 1</span><BR><P>
+Set the Wi-Fi listening on micro:bit WAN control command action<BR><P>
+Initialize IoT:bit and OLED, the micro:bit start connecting Wifi.<BR><P>
+![auto_fit](images/Ch3/Ch3_p2_1.png)<P>
+![auto_fit](images/Ch3/Ch3_p2_2.png)<P>
+![auto_fit](images/Ch3/Ch3_p2_3.png)<P>
+The LED intensity on P0 can be changed by a WAN command received with value:<BR><P>
+a. Device ID: a unique ID (to identify micro:bit device to receive the command)<BR><P>
+b. WAN_Command: PinValue (command for micro:bit)<BR><P>
+c. Value: the intensity of the LED (the value for the command) <BR><P>
+
+<span id="subtitle" >Step 2: Get micro:bit Device ID</span><BR><P>
+
+Load the program to the micro:bit and connect the micro:bit to the IoT:bit.<BR><P>
+![auto_fit](images/Ch3/Ch3_p2_4.png)<P>
+Wi-Fi IoT:bit will start to connect to internet, when the connection is successful, the IP Address would be shown. <BR><P>
+![auto_fit](images/Ch3/Ch3_p2_5.png)<P>
+Then, it will start WAN remote control. If the connection is successful, the Device ID would be shown. <BR><P>
+Remember the Device ID, it will be used for WAN connection on the next step.<BR><P>
+![auto_fit](images/Ch3/Ch3_p2_6.png)<P>
+
+
+## App Inventor 2 setting
+<HR>
+
+In below example, you can create a web connection, set the URL to the control command URL in App inventor.<BR><P>
+<span id="subtitle" >Step 1</span><BR><P>
+Create a new project in App Inventor 2, on “Designer”. <BR><P>
+Drag “Layout”>”HorizontalArragement” to the page. <BR><P>
+Drag “User Interface” > “TextBox” to the place inside the HorizontalArrangement<BR><P>
+Drag “User Interface” > “Button” to the place inside the HorizontalArrangement<BR><P>
+Drag Connectivity> “Web” to the page <BR><P>
+![auto_fit](images/Ch3/Ch3_app2_1.png)<P>
+
+<span id="subtitle" >Step 2</span><BR><P>
+Get WAN control URL (command with value)<BR><P>
+
+The WAN control command URL is:<BR><P>
+[http://control.smarthon.cc/publish?id=0xfa240ac45917&msg=PinValue&value=600](http://control.smarthon.cc/publish?id=0xfa240ac45917&msg=PinValue&value=600)
+
+<span id="subtitle" >Step 3</span><BR><P>
+
+On “Blocks” <BR><P>
+When “Button3” is clicked, it direct to the command URL, and control the micro:bit by Wi-Fi (WAN connection). <BR><P>
+a. Device ID: a unique ID (to identify micro:bit device to receive the command)<BR><P>
+b. WAN command: PinValue<BR><P>
+c. Value: TextBox1.Text (refer to the input value)<BR><P>
+![auto_fit](images/Ch3/Ch3_app2_2.png)<P>
+
+## Result
+<HR>
+
+In App Inventor 2, you can perform real-time testing in your mobile phone by AI Companion<BR><P>
+App Inventor 2 	Mobile phone (by AI Companion)<BR><P>
+![auto_fit](images/Ch3/Ch3_app2_3.png)<P>
+Also, you can also build and download the android app and open it in your mobile phone.<BR><P>
+App Inventor 2 	Mobile phone (by building the app)<BR><P>
+![auto_fit](images/Ch3/Ch3_app2_4.png)<P>
+
+<span id="subtitle" >Testing 1:</span><BR><P>
+After connected to WAN remote control is started, when Button3 is clicked, it will send WAN command “PinValue” with value “600” to the micro:bit with provided Device ID.<BR><P>
+The LED on P0 will be turned on (with intensity: 600)<BR><P>
+![auto_fit](images/Ch3/Ch3_result2_1.png)<P>
+<span id="subtitle" >Testing 2:</span><BR><P>
+when Button3 is clicked, it will send WAN command “PinValue” with value “0” to the micro:bit with provided Device ID.<BR><P>
+The LED on P0 will be turned off (with intensity: 0)<BR><P>
+![auto_fit](images/Ch3/Ch3_result2_2.png)<P>

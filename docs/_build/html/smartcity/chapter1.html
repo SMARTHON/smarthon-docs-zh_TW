@@ -94,7 +94,7 @@
 </ul>
 </li>
 <li class="toctree-l2"><a class="reference internal" href="chapter2.html">6. Chapter 2: Send Email by IFTTT</a></li>
-<li class="toctree-l2"><a class="reference internal" href="chapter3.html">7. Chapter 3: Control your micro:bit by App Inventor 2</a></li>
+<li class="toctree-l2"><a class="reference internal" href="chapter3.html">7. Chapter 3: Control micro:bit by App Inventor 2</a></li>
 <li class="toctree-l2"><a class="reference internal" href="chapter4.html">8. Chapter 4: Control your micro:bit by IFTTT Services</a></li>
 <li class="toctree-l2"><a class="reference internal" href="chapter5.html">9. Chapter 5: Object to Object communication</a></li>
 <li class="toctree-l2"><a class="reference internal" href="case01.html">10. Case 01: Automated Smart Playground Lamp</a></li>
@@ -182,54 +182,54 @@
   <div class="section" id="chapter-1-upload-data-to-thingspeak">
 <h1><span class="section-number">5. </span>Chapter 1: Upload Data to ThingSpeak<a class="headerlink" href="#chapter-1-upload-data-to-thingspeak" title="Permalink to this headline">¶</a></h1>
 <p>ThingSpeak is IoT platform for user to gather real-time data; for instance, climate information, location data and other device data. In different channels in ThingSpeak, you can summarize information and visualize data online in charts and analyze useful information. ThingSpeak can integrate IoT:bit (micro:bit) and other software/ hardware platforms. Through IoT:bit, you can upload sensors data to ThingSpeak (e.g. temperature, humidity, light intensity, noise, motion, raindrop, distance and other device information).<BR><P>
-<img alt="auto_fit" src="../_images/Ch1_des.png" /><BR><P></p>
+<img alt="auto_fit" src="../_images/Ch1_des.png" /><P></p>
 <div class="section" id="create-channel-in-thingspeak-and-get-the-key">
 <h2><span class="section-number">5.1. </span>Create channel in ThingSpeak and get the key<a class="headerlink" href="#create-channel-in-thingspeak-and-get-the-key" title="Permalink to this headline">¶</a></h2>
 <HR><p><span id="subtitle" >Step 1</span><P>
 Go to <a class="reference external" href="https://thingspeak.com/">https://thingspeak.com/</a>, register an account and login to the platform<BR><P>
-<img alt="auto_fit" src="../_images/Ch1_reg1.png" /><BR><P></p>
+<img alt="auto_fit" src="../_images/Ch1_reg1.png" /><P></p>
 <p><span id="subtitle" >Step 2</span><P>
 Choose Channels -&gt; My Channels -&gt; New Channel<BR><P>
-<img alt="auto_fit" src="../_images/Ch1_reg2.png" /><BR><P></p>
+<img alt="auto_fit" src="../_images/Ch1_reg2.png" /><P></p>
 <p><span id="subtitle" >Step 3</span><P>
 Input Channel name, Field1 and Field2 , then click “Save Channel”<BR><P></p>
 <ul class="simple">
 <li><p>Channel name: smart-house</p></li>
 <li><p>Field 1: Light</p></li>
 <li><p>Field 2: Temperature
-<img alt="auto_fit" src="../_images/Ch1_reg3.png" /><BR><P></p></li>
+<img alt="auto_fit" src="../_images/Ch1_reg3.png" /><P></p></li>
 </ul>
 <p><span id="subtitle" >Step 4</span><P>
 You will see two chats for data (field1, field 2)<BR><P>
-<img alt="auto_fit" src="../_images/Ch1_reg4.png" /><BR><P></p>
+<img alt="auto_fit" src="../_images/Ch1_reg4.png" /><P></p>
 <p><span id="subtitle" >Step 5</span><P>
 Open your web browser, go to https://thingspeak.com , select your channel &gt; “API Keys” ，copy the API key as follows:<BR><P>
-<img alt="auto_fit" src="../_images/Ch1_reg5.png" /><BR><P></p>
+<img alt="auto_fit" src="../_images/Ch1_reg5.png" /><P></p>
 </div>
 <div class="section" id="programming-makecode">
 <h2><span class="section-number">5.2. </span>Programming (Makecode)<a class="headerlink" href="#programming-makecode" title="Permalink to this headline">¶</a></h2>
-<HR><p><img alt="auto_fit" src="../_images/Ch1_p1.png" /><BR><P></p>
+<HR><p><img alt="auto_fit" src="../_images/Ch1_p1.png" /><P></p>
 <p><span id="subtitle" >Step 1</span><P>
 Before you start, you need to initialize IoT:bit and connect micro:bit to the internet. <BR><P>
 Select “IoT:bit” &gt; “Initialize IoT:bit and OLED” and “Set WiFi to ssid…pwd”. <BR><P>
-<img alt="auto_fit" src="../_images/Ch1_p2.png" /><BR><P></p>
+<img alt="auto_fit" src="../_images/Ch1_p2.png" /><P></p>
 <p><span id="subtitle" >Step 2</span><P>
 Snap if statement into forever, set if WiFi is connected.<BR><P>
-<img alt="auto_fit" src="../_images/Ch1_p3.png" /><BR><P></p>
+<img alt="auto_fit" src="../_images/Ch1_p3.png" /><P></p>
 <p><span id="subtitle" >Step 3</span><P>
 On every 15seconds, if the WiFi is connected, it will send data to ThingSpeak.
-<img alt="auto_fit" src="../_images/Ch1_p4.png" /><BR><P></p>
+<img alt="auto_fit" src="../_images/Ch1_p4.png" /><P></p>
 <p><span id="subtitle" >Step 4</span><P>
 Open your program and paste the ThingSpeak key. You can also remove/add the input field and change the upload value.<BR><P>
-<img alt="auto_fit" src="../_images/Ch1_p5.png" /><BR><P></p>
+<img alt="auto_fit" src="../_images/Ch1_p5.png" /><P></p>
 </div>
 <div class="section" id="result">
 <h2><span class="section-number">5.3. </span>Result<a class="headerlink" href="#result" title="Permalink to this headline">¶</a></h2>
 <HR><p>Micro:bit start uploading, “thingspeak uploading… “ is shown.<BR><P>
 If data is uploaded successfully, “Uploaded OK” will be shown.<BR><P>
-<img alt="auto_fit" src="../_images/Ch1_result1.png" /><BR><P>
+<img alt="auto_fit" src="../_images/Ch1_result1.png" /><P>
 The charts in your channel in ThingSpeak will be updated.<BR><P>
-<img alt="auto_fit" src="../_images/Ch1_result2.png" /><BR><P></p>
+<img alt="auto_fit" src="../_images/Ch1_result2.png" /><P></p>
 </div>
 </div>
 
