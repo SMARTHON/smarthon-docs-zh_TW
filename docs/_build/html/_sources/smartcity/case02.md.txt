@@ -40,7 +40,7 @@ Electronics:
 <li>M4 Nuts X4</li>
 <li>M2 Screw x 10mm X2</li>
 <li>M2 Nuts X2</li>
-<li>Servo M2 Sharp Screw X2</li>
+<li>Servo M2 Sharp Screw X1</li>
 </ul>
 </td></tr>
 <tr><td>Equipment:
@@ -92,8 +92,7 @@ That’s say when there is car entering and there is vacancy inside the car park
 <span id="subtitle">Full Solution<BR><P>
 MakeCode: [https://makecode.microbit.org/_3tFXmYU3uKXW](https://makecode.microbit.org/#pub:_3tFXmYU3uKXW)<BR><P>
 You could also download the program from the following website:<BR>
-<div style="position:relative;height:0;padding-bottom:70%;overflow:hidden;"><iframe style="position:absolute;top:0;left:0;width:100%;height:100%;" src="https://makecode.microbit.org/#pub:_3tFXmYU3uKXW" frameborder="0" sandbox="allow-popups allow-forms allow-scripts allow-same-origin"></iframe></div>
-
+<iframe src="https://makecode.microbit.org/#pub:_3tFXmYU3uKXW" width="100%" height="500" frameborder="0"></iframe>
 
 ## Result
 <HR>

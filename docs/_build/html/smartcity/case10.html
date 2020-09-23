@@ -102,7 +102,15 @@
 <li class="toctree-l2"><a class="reference internal" href="case08.html">17. IoT Case 08: Automated Traffic Light</a></li>
 <li class="toctree-l2"><a class="reference internal" href="case09.html">18. IoT Case 09: Smart House door control</a></li>
 <li class="toctree-l2 current"><a class="current reference internal" href="#">19. IoT Case 10: Smart Street Light</a><ul>
-<li class="toctree-l3"><a class="reference internal" href="#introduction">19.1. Introduction</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#goal">19.1. Goal</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#background">19.2. Background</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#part-list">19.3. Part List</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#practical-operation">19.4. Practical operation</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#hardware-connect">19.5. Hardware connect</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#programming-makecode">19.6. Programming (MakeCode)</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#iot-ifttt">19.7. IoT (IFTTT)</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#result">19.8. Result</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#think">19.9. Think</a></li>
 </ul>
 </li>
 <li class="toctree-l2"><a class="reference internal" href="case11.html">20. IoT Case 11: Roof garden clothes rack</a></li>
@@ -179,8 +187,91 @@
             
   <div class="section" id="iot-case-10-smart-street-light">
 <h1><span class="section-number">19. </span>IoT Case 10: Smart Street Light<a class="headerlink" href="#iot-case-10-smart-street-light" title="Permalink to this headline">¶</a></h1>
-<div class="section" id="introduction">
-<h2><span class="section-number">19.1. </span>Introduction<a class="headerlink" href="#introduction" title="Permalink to this headline">¶</a></h2>
+<p>Level: <img alt="level" src="../_images/level4.png" /></p>
+<div class="section" id="goal">
+<h2><span class="section-number">19.1. </span>Goal<a class="headerlink" href="#goal" title="Permalink to this headline">¶</a></h2>
+<HR><p>Make a smart streetlight which can have a button to control on off.<BR><P></p>
+</div>
+<div class="section" id="background">
+<h2><span class="section-number">19.2. </span>Background<a class="headerlink" href="#background" title="Permalink to this headline">¶</a></h2>
+<HR><p><span id="subtitle">What is Smart Street Light?</span><BR><P>
+To make people living more conveniently, this light can be turned on and off with internal setting withing clicking buttons every day.<BR><P>
+<span id="subtitle">Smart Streetlight operation</span><BR><P>
+When WAN commands are received from WAN (eg. IFTTT), micro:bit will get the command name. If the command name is “light_on”, the LED light will be turned on. If the command name is “light_off”, the LED light will be turned off.<BR><P></p>
+</div>
+<div class="section" id="part-list">
+<h2><span class="section-number">19.3. </span>Part List<a class="headerlink" href="#part-list" title="Permalink to this headline">¶</a></h2>
+<HR><table><tr><td>
+Electronics:
+<ul display='inline-block'>
+<li>micro:bit (with OLED) X1</li>
+<li>IoT:bit X1</li>
+<li>USB Wire/Battery Holder </li>
+&nbsp;&nbsp;1. White LED Light X1 (With 3-pin Module wire)<BR>
+</ul>
+</td></tr>
+<tr>
+<td>Model:
+<ul>
+<li>Smart Street Light Model I1-I3 X1</li>
+<li>M4 Screw X2</li>
+<li>M4 nut X2</li>
+</ul>
+</td></tr>
+<tr><td>Equipment:
+<ul><li>ScrewDriver X1</li></ul></td></tr></table><p><img alt="auto_fit" src="../_images/Case10_parts.png" /><P></p>
+</div>
+<div class="section" id="practical-operation">
+<h2><span class="section-number">19.4. </span>Practical operation<a class="headerlink" href="#practical-operation" title="Permalink to this headline">¶</a></h2>
+<HR><p><span id="subtitle">Step 1</span><BR><P>
+Attach the LED light to the model I2 with M2 screw and nuts<BR><P>
+<img alt="auto_fit" src="../_images/Case10_po1.png" /><P></p>
+<p><span id="subtitle">Step 2</span><BR><P>
+Put together all the cardboard parts (I1-I3)<BR><P>
+<img alt="auto_fit" src="../_images/Case10_po2.png" /><P></p>
+</div>
+<div class="section" id="hardware-connect">
+<h2><span class="section-number">19.5. </span>Hardware connect<a class="headerlink" href="#hardware-connect" title="Permalink to this headline">¶</a></h2>
+<HR><p>Connect the white LED Light to P1 port of IoT:bit<BR><P>
+<img alt="auto_fit" src="../_images/Case10_hardware.png" /><P></p>
+</div>
+<div class="section" id="programming-makecode">
+<h2><span class="section-number">19.6. </span>Programming (MakeCode)<a class="headerlink" href="#programming-makecode" title="Permalink to this headline">¶</a></h2>
+<HR><p><span id="subtitle">Step 1</span><BR><P>
+Drag on start block from Basic. Drag Initialize IoT:bit at OLED from IoT:bit, set OLED height:64, width:128. Set WiFi to ssid “wifi_name” and pwd “WiFi_password”.<BR><P>
+<img alt="auto_fit" src="../_images/Case10_p1.png" /><P>
+<span id="subtitle">Step 2</span><BR><P>
+Drag on WiFi connected and start WiFi remote control (WAN) from IoT:bit.<BR><P>
+<img alt="auto_fit" src="../_images/Case10_p2.png" /><P>
+<span id="subtitle">Step 3</span><BR><P>
+Drag On WAN command received (WAN_command) from IoT:bit.<BR><P>
+<img alt="auto_fit" src="../_images/Case10_p3.png" /><P>
+<span id="subtitle">Step 4</span><BR><P>
+Drag if statement into On WAN command received (WAN_command) from logic. Set if WAN_command = light_on then, turn white LED to 1023 at P1.<BR><P>
+<img alt="auto_fit" src="../_images/Case10_p4.png" /><P>
+<span id="subtitle">Step 5</span><BR><P>
+Else if WAN_command = light_off then, turn white LED to 0 at P1.<BR><P>
+<img alt="auto_fit" src="../_images/Case10_p5.png" /><P></p>
+<p><span id="subtitle">Full Solution<BR><P>
+MakeCode: <a class="reference external" href="https://makecode.microbit.org/#pub:_cD9TLuDCEH7a">https://makecode.microbit.org/_cD9TLuDCEH7a</a><BR><P>
+You could also download the program from the following website:<BR></p>
+<iframe src="https://makecode.microbit.org/#pub:_cD9TLuDCEH7a" width="100%" height="500" frameborder="0"></iframe></div>
+<div class="section" id="iot-ifttt">
+<h2><span class="section-number">19.7. </span>IoT (IFTTT)<a class="headerlink" href="#iot-ifttt" title="Permalink to this headline">¶</a></h2>
+<HR><p><span id="remarks">* For the setting of IFTTT, please refer to “Chapter 4: Control your micro:bit by IFTTT Services”</span><BR><P>
+<img alt="auto_fit" src="../_images/Case10_ifttt1.png" /><P>
+<span id="subtitle">Step 1</span><BR><P>
+Create applet (If Date&amp;time then Smarthon)<BR><P>
+<img alt="auto_fit" src="../_images/Case10_ifttt2.png" /><P></p>
+</div>
+<div class="section" id="result">
+<h2><span class="section-number">19.8. </span>Result<a class="headerlink" href="#result" title="Permalink to this headline">¶</a></h2>
+<HR><p>The micro:bit is controlled by IFTTT (trigger by date&amp;time). The LED light will be turned on at 6pm and turned off at 6am every day.<BR><P>
+<img alt="auto_fit" src="../_images/Case10_result.png" /><P></p>
+</div>
+<div class="section" id="think">
+<h2><span class="section-number">19.9. </span>Think<a class="headerlink" href="#think" title="Permalink to this headline">¶</a></h2>
+<HR><p>Q1. How to turn on the light automatically if the today’s weather is cloudy reported by IFTTT.</p>
 </div>
 </div>
 
