@@ -95,7 +95,7 @@ After connected to WAN remote control is started, when Button2 is clicked, it wi
 The LED on P0 will be turned off.<BR><P>
 ![auto_fit](images/Ch3/Ch3_result2.png)<P>
 
-## Know more (with value)
+## Know more (Using WAN command with value in App Inventor 2)
 <HR>
 
 The above example is for turning the LED on/off only. How about if we want to control the LED with intensity? The below example is to control your modules with intensity.<BR><P>
@@ -125,9 +125,9 @@ The LED intensity on P0 can be changed by a WAN command received with value:<BR>
 
 <span id="subtitle" >Step 2: Get micro:bit Device ID</span><BR><P>
 Step 2.	Get micro:bit Device ID
-Connect micro:bit to  internet, and start WAN remote control. 
+Connect micro:bit to internet, IP address would be shown.
 ![auto_fit](images/Ch3/Ch3_p2_5.png)<P>
-Then, it will start WAN remote control. If the connection is successful, the Device ID would be shown. 
+Then, it will start WAN control. If the connection is successful, the Device ID would be shown. 
 Remember the Device ID, it will be used for WAN connection on the next step.
 ![auto_fit](images/Ch3/Ch3_p2_6.png)<P>
 

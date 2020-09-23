@@ -90,7 +90,22 @@
 <li class="toctree-l2"><a class="reference internal" href="chapter1.html">5. Chapter 1: Upload Data to ThingSpeak</a></li>
 <li class="toctree-l2"><a class="reference internal" href="chapter2.html">6. Chapter 2: Send Email by IFTTT</a></li>
 <li class="toctree-l2"><a class="reference internal" href="chapter3.html">7. Chapter 3: Control micro:bit by App Inventor 2</a></li>
-<li class="toctree-l2 current"><a class="current reference internal" href="#">8. Chapter 4: Control your micro:bit by IFTTT Services</a></li>
+<li class="toctree-l2 current"><a class="current reference internal" href="#">8. Chapter 4: Control your micro:bit by IFTTT Services</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#examples-of-services-used-in-ifttt">8.1. Examples of services used in IFTTT</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#know-the-api-control-command">8.2. Know the API (control command)</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#hardware-connect">8.3. Hardware connect</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#programming-makecode-get-the-device-id">8.4. Programming (Makecode), get the Device ID</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#create-your-own-applet-to-control-micro-bit-in-ifttt">8.5. Create your own applet to control micro:bit in IFTTT</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#result">8.6. Result</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#know-more-using-wan-command-with-value-in-ifttt">8.7. Know more (Using WAN command with value in IFTTT)</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="#know-the-api-control-command-with-value">8.7.1. Know the API (control command with value)</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#id1">8.7.2. Programming (Makecode), get the Device ID</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#id2">8.7.3. Create your own applet to control micro:bit in IFTTT</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#id3">8.7.4. Result</a></li>
+</ul>
+</li>
+</ul>
+</li>
 <li class="toctree-l2"><a class="reference internal" href="chapter5.html">9. Chapter 5: Object to Object communication</a></li>
 <li class="toctree-l2"><a class="reference internal" href="case01.html">10. Case 01: Automated Smart Playground Lamp</a></li>
 <li class="toctree-l2"><a class="reference internal" href="case02.html">11. Case 02: Smart Car park Access Barrier</a></li>
@@ -176,6 +191,153 @@
             
   <div class="section" id="chapter-4-control-your-micro-bit-by-ifttt-services">
 <h1><span class="section-number">8. </span>Chapter 4: Control your micro:bit by IFTTT Services<a class="headerlink" href="#chapter-4-control-your-micro-bit-by-ifttt-services" title="Permalink to this headline">¶</a></h1>
+<p>In this chapter, you will learn how to use trigger (other services) to implement action (micro:bit) by IFTTT. Below are the commonly used examples of services that can trigger micro:bit in IFTTT. <BR><P>
+<img alt="auto_fit" src="../_images/Ch4_des1.png" /><P></p>
+<div class="section" id="examples-of-services-used-in-ifttt">
+<h2><span class="section-number">8.1. </span>Examples of services used in IFTTT<a class="headerlink" href="#examples-of-services-used-in-ifttt" title="Permalink to this headline">¶</a></h2>
+<HR><p>With connection with different services in IFTTT, you can design your own applet with micro:bit projects using “if this then that (micro:bit)”. <BR><P>
+<img alt="auto_fit" src="../_images/Ch4_des2.png" /><P>
+You can tailor-make your own micro:bit projects by connecting Smarthon IoT (micro:bit) to over hundreds of services in cloud (IFTTT)! Create your IFTTT applet by choosing “If THIS then THAT”.<BR><P>
+<img alt="auto_fit" src="../_images/Ch4_des3.png" /><P></p>
+</div>
+<div class="section" id="know-the-api-control-command">
+<h2><span class="section-number">8.2. </span>Know the API (control command)<a class="headerlink" href="#know-the-api-control-command" title="Permalink to this headline">¶</a></h2>
+<HR><p><a class="reference external" href="http://control.smarthon.cc/publish?id=DeviceID&amp;msg=ControlCommand">http://control.smarthon.cc/publish?id=DeviceID&amp;msg=ControlCommand</a></p>
+</div>
+<div class="section" id="hardware-connect">
+<h2><span class="section-number">8.3. </span>Hardware connect<a class="headerlink" href="#hardware-connect" title="Permalink to this headline">¶</a></h2>
+<HR><p>Connect LED to P0<BR><P>
+<img alt="auto_fit" src="../_images/Ch4_hardware.png" /><P></p>
+</div>
+<div class="section" id="programming-makecode-get-the-device-id">
+<h2><span class="section-number">8.4. </span>Programming (Makecode), get the Device ID<a class="headerlink" href="#programming-makecode-get-the-device-id" title="Permalink to this headline">¶</a></h2>
+<HR><p>Goal: The below example is to turn on the light at 6 pm every day.<BR><P></p>
+<p><span id="subtitle" >Step 1</span><BR><P>
+After initializing, you can connect to the WiFi:<BR><P>
+Choose IoT:bit -&gt; Set Wi-Fi to ssid “”, pwd “”. Enter your Wi-Fi name and password<BR><P>
+<img alt="auto_fit" src="../_images/Ch4_p1.png" /><P></p>
+<p><span id="subtitle" >Step 2</span><BR><P>
+“On WiFi connected” is an event handler.<BR><P>
+It will be triggered once after connected with WiFi.<BR><P>
+<img alt="auto_fit" src="../_images/Ch4_p2.png" /><P></p>
+<p><span id="subtitle" >Step 3</span><BR><P>
+Set the Wi-Fi listening on Micro:bit WAN control command action<BR><P>
+After micro:bit connected to WiFi, it will start WiFi remote control (WAN)<BR><P>
+If Wan command “Pin_On” is received, white LED will be turned on (intensity:1023)<BR><P>
+<img alt="auto_fit" src="../_images/Ch4_p3.png" /><P></p>
+<p><span id="subtitle" >Step 4</span><BR><P>
+Get micro:bit Device ID
+Load the program to the micro:bit and connect the micro:bit to the IoT:bit.<BR><P>
+<img alt="auto_fit" src="../_images/Ch4_p4.png" /><P>
+Wi-Fi IoT:bit will start to connect to internet, when the connection is successful, the IP Address would be shown. <BR><P>
+<img alt="auto_fit" src="../_images/Ch4_p5.png" /><P>
+Then, it will start WAN remote control. If the connection is successful, the Device ID would be shown. <BR><P>
+Remember the Device ID, it will be used for WAN connection on the next step.<BR><P>
+<img alt="auto_fit" src="../_images/Ch4_p6.png" /><P></p>
+</div>
+<div class="section" id="create-your-own-applet-to-control-micro-bit-in-ifttt">
+<h2><span class="section-number">8.5. </span>Create your own applet to control micro:bit in IFTTT<a class="headerlink" href="#create-your-own-applet-to-control-micro-bit-in-ifttt" title="Permalink to this headline">¶</a></h2>
+<HR><p><span id="subtitle" >Step 1</span><BR><P>
+Open your browser  , go to <a class="reference external" href="https://ifttt.com/">https://ifttt.com/</a>. Register your IFTTT account and once completed, log in to your IFTTT account.<BR><P>
+<img alt="auto_fit" src="../_images/Ch4_ifttt1.png" /><P></p>
+<p><span id="subtitle" >Step 2</span><BR><P>
+On the top right menu, click “Create” &gt; “Applets”<BR><P>
+<img alt="auto_fit" src="../_images/Ch4_ifttt2.png" /><P></p>
+<p><span id="subtitle" >Step 3</span><BR><P>
+Create a trigger for the applet<BR><P></p>
+<ul class="simple">
+<li><p>Select “This” &gt; Choose service “Date &amp; Time”</p></li>
+<li><p>Choose trigger “Every day at”</p></li>
+<li><p>Select the time (e.g. 06PM, 00 Minutes; it means every day at 6pm) and click “Create trigger”.
+<img alt="auto_fit" src="../_images/Ch4_ifttt3.png" /><P></p></li>
+</ul>
+<p><span id="subtitle" >Step 4</span><BR><P>
+Create an action for the applet</p>
+<ul class="simple">
+<li><p>Select “That”, choose action service “Smarthon”</p></li>
+<li><p>Choose action “Control Command”</p></li>
+<li><p>Input your Device ID (e.g.0xa3240ac45916) and control command (e.g. Pin_On). Then click “Create action”.
+<img alt="auto_fit" src="../_images/Ch4_ifttt4.png" /><P></p></li>
+</ul>
+<p><span id="subtitle" >Step 5</span><BR><P>
+Review your applet, then click “Finish ”. <BR><P></p>
+<p><span id="subtitle" >Step 6</span><BR><P>
+After, the applet connection has been created it will show “connected”. <BR><P>
+The light will be turned on at 6pm every day!<BR><P>
+<img alt="auto_fit" src="../_images/Ch4_ifttt5.png" /><P></p>
+</div>
+<div class="section" id="result">
+<h2><span class="section-number">8.6. </span>Result<a class="headerlink" href="#result" title="Permalink to this headline">¶</a></h2>
+<HR><ul class="simple">
+<li><p>After connected to WAN remote control, micro:bit will keep listening to the WAN command</p></li>
+<li><p>Every day at 6pm, clock will trigger IFTTT to send out micro:bit WAN command “Pin_On”</p></li>
+<li><p>The LED on P0 will be turned on.
+<img alt="auto_fit" src="../_images/Ch4_result.png" /><P></p></li>
+</ul>
+</div>
+<div class="section" id="know-more-using-wan-command-with-value-in-ifttt">
+<h2><span class="section-number">8.7. </span>Know more (Using WAN command with value in IFTTT)<a class="headerlink" href="#know-more-using-wan-command-with-value-in-ifttt" title="Permalink to this headline">¶</a></h2>
+<HR><p>The above example is used to give on/off command only. What if we want to pass values to the micro:bit (e.g. control the LED intensity)? Below is an example of using control command with value.<BR><P></p>
+<div class="section" id="know-the-api-control-command-with-value">
+<h3><span class="section-number">8.7.1. </span>Know the API (control command with value)<a class="headerlink" href="#know-the-api-control-command-with-value" title="Permalink to this headline">¶</a></h3>
+<HR><p><a class="reference external" href="http://control.smarthon.cc/publish?id=DeviceID&amp;msg=ControlCommand&amp;value=Value">http://control.smarthon.cc/publish?id=DeviceID&amp;msg=ControlCommand&amp;value=Value</a></p>
+</div>
+<div class="section" id="id1">
+<h3><span class="section-number">8.7.2. </span>Programming (Makecode), get the Device ID<a class="headerlink" href="#id1" title="Permalink to this headline">¶</a></h3>
+<HR><p><span id="subtitle" >Step 1</span><BR><P>
+Set the Wi-Fi listening on micro:bit WAN control command action<BR><P></p>
+<ul class="simple">
+<li><p>Initialize IoT:bit and OLED, the micro:bit start connecting Wifi.
+<img alt="auto_fit" src="../_images/Ch4_2_p1.png" /><P>
+<img alt="auto_fit" src="../_images/Ch4_2_p2.png" /><P>
+<img alt="auto_fit" src="../_images/Ch4_2_p3.png" /><P></p></li>
+</ul>
+<p>The LED intensity on P0 can be changed by a WAN command received with value:<BR><P></p>
+<ul class="simple">
+<li><p>Device ID: a unique ID (to identify micro:bit device to receive the command)</p></li>
+<li><p>WAN_Command: PinValue (command for micro:bit)</p></li>
+<li><p>Value: the intensity of the LED (the value for the command)</p></li>
+</ul>
+<p><span id="subtitle" >Step 2</span><BR><P>
+Get micro:bit Device ID<BR><P></p>
+<ul class="simple">
+<li><p>Connect micro:bit to internet, IP address would be shown.
+<img alt="auto_fit" src="../_images/Ch4_2_p5.png" /><P></p></li>
+<li><p>Then, it will start WAN remote control. If the connection is successful, the Device ID would be shown.</p></li>
+<li><p>Remember the Device ID, it will be used for WAN connection on the next step.
+<img alt="auto_fit" src="../_images/Ch4_2_p6.png" /><P></p></li>
+</ul>
+</div>
+<div class="section" id="id2">
+<h3><span class="section-number">8.7.3. </span>Create your own applet to control micro:bit in IFTTT<a class="headerlink" href="#id2" title="Permalink to this headline">¶</a></h3>
+<HR><p><span id="subtitle" >Step 1</span><BR><P>
+You can send WAN command with value in IFTTT. In this example, click “That” to select the action<BR><P>
+<img alt="auto_fit" src="../_images/Ch4_2_ifttt1.png" /><P></p>
+<p><span id="subtitle" >Step 2</span><BR><P>
+Create an action for the applet</p>
+<ul class="simple">
+<li><p>Select “That”, choose action service “Smarthon”</p></li>
+<li><p>Choose action “Control Command (with value)”</p></li>
+<li><p>Input your Device ID (e.g. 0xfa240ac45917), control command (e.g. PinValue) and Value (e.g. 600). Then click “Create action”.
+<img alt="auto_fit" src="../_images/Ch4_2_ifttt2.png" /><P></p></li>
+</ul>
+<p><span id="subtitle" >Step 3</span><BR><P>
+Review your applet, then click “Finish ”. <BR><P></p>
+<p><span id="subtitle" >Step 4</span><BR><P>
+After, the applet connection has been created it will show “connected”. <BR><P>
+The light will be turned on at 6pm every day!<BR><P>
+<img alt="auto_fit" src="../_images/Ch4_2_ifttt3.png" /><P></p>
+</div>
+<div class="section" id="id3">
+<h3><span class="section-number">8.7.4. </span>Result<a class="headerlink" href="#id3" title="Permalink to this headline">¶</a></h3>
+<HR><ul class="simple">
+<li><p>After connected to WAN remote control, micro:bit will keep listening to the WAN command</p></li>
+<li><p>Every day at 6pm, clock will trigger IFTTT to send out micro:bit WAN command “PinValue” (with value “600”)</p></li>
+<li><p>The LED on P0 will be turned on (with light intensity: 600).
+<img alt="auto_fit" src="../_images/Ch4_2_result.png" /><P></p></li>
+</ul>
+</div>
+</div>
 </div>
 
 
