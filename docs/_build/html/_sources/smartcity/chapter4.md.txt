@@ -1,6 +1,6 @@
 # Chapter 4: Control your micro:bit by IFTTT Services
 
-In this chapter, you will learn how to use trigger (other services) to implement action (micro:bit) by IFTTT. Below are the commonly used examples of services that can trigger micro:bit in IFTTT. <BR><P>
+In this chapter , you will learn how to use trigger (other services) to implement action (micro:bit) by IFTTT. Below are the commonly used examples of services that can trigger micro:bit in IFTTT. <BR><P>
 ![auto_fit](images/Ch4/Ch4_des1.png)<P>
  
 ## Examples of services used in IFTTT
@@ -14,7 +14,7 @@ You can tailor-make your own micro:bit projects by connecting Smarthon IoT (micr
 ## Know the API (control command)
 <HR>
 
-[http://control.smarthon.cc/publish?id=DeviceID&msg=ControlCommand](http://control.smarthon.cc/publish?id=DeviceID&msg=ControlCommand)
+http://control.smarthon.cc/publish?id=`DeviceID`&msg=`ControlCommand`
 
 ## Hardware connect
 <HR>
@@ -111,7 +111,7 @@ The above example is used to give on/off command only. What if we want to pass v
 ### Know the API (control command with value)
 <HR>
 
-[http://control.smarthon.cc/publish?id=DeviceID&msg=ControlCommand&value=Value](http://control.smarthon.cc/publish?id=DeviceID&msg=ControlCommand&value=Value) 
+http://control.smarthon.cc/publish?id=DeviceID&msg=`ControlCommand`&value=`Value`
 
 ### Programming (Makecode), get the Device ID
 <HR>
