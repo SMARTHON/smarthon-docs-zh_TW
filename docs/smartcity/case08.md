@@ -206,10 +206,13 @@ You could also download the program from the following website:<BR>
 <iframe src="https://makecode.microbit.org/#pub:_hjoATDhYTMqd" width="100%" height="500" frameborder="0"></iframe>
 
 
-### Result (Photo here need to change later; model no. should be C1)
+### Result
 <HR>
 
-By receiving wifi message, traffic LED Module will turn to the corresponding colour automatically.<BR><P>
+By receiving wifi message, traffic LED Module will turn to the corresponding colour automatically.
+If there are no traffic jam ahead (detected by light sensor). Micro:bit (sender) will send wifi message “nojam” to the micro:bit (receiver). The traffic light will turn green.
+If there are traffic jam ahead (detected by light sensor). Micro:bit (sender) will send wifi message “nojam” to the micro:bit (receiver). The traffic light will turn red.
+<BR><P>
 ![auto_fit](images/Case8/Case8b_result.gif)<P>
 
 ### Think

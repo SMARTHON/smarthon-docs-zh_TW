@@ -118,8 +118,8 @@
 <li class="toctree-l4"><a class="reference internal" href="#id4">17.2.4. Practical operation</a></li>
 <li class="toctree-l4"><a class="reference internal" href="#id5">17.2.5. Hardware connect</a></li>
 <li class="toctree-l4"><a class="reference internal" href="#id6">17.2.6. Programming (MakeCode)</a></li>
-<li class="toctree-l4"><a class="reference internal" href="#result-photo-here-need-to-change-later-model-no-should-be-c1">17.2.7. Result (Photo here need to change later; model no. should be C1)</a></li>
-<li class="toctree-l4"><a class="reference internal" href="#id7">17.2.8. Think</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#id7">17.2.7. Result</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#id8">17.2.8. Think</a></li>
 </ul>
 </li>
 </ul>
@@ -355,13 +355,16 @@ Set up a new function (TurnGreen). Control traffic light at P0 red on from Smart
 MakeCode: <a class="reference external" href="https://makecode.microbit.org/#pub:_hjoATDhYTMqd">https://makecode.microbit.org/_hjoATDhYTMqd</a><BR><P>
 You could also download the program from the following website:<BR></p>
 <iframe src="https://makecode.microbit.org/#pub:_hjoATDhYTMqd" width="100%" height="500" frameborder="0"></iframe></div>
-<div class="section" id="result-photo-here-need-to-change-later-model-no-should-be-c1">
-<h3><span class="section-number">17.2.7. </span>Result (Photo here need to change later; model no. should be C1)<a class="headerlink" href="#result-photo-here-need-to-change-later-model-no-should-be-c1" title="Permalink to this headline">¶</a></h3>
-<HR><p>By receiving wifi message, traffic LED Module will turn to the corresponding colour automatically.<BR><P>
+<div class="section" id="id7">
+<h3><span class="section-number">17.2.7. </span>Result<a class="headerlink" href="#id7" title="Permalink to this headline">¶</a></h3>
+<HR><p>By receiving wifi message, traffic LED Module will turn to the corresponding colour automatically.
+If there are no traffic jam ahead (detected by light sensor). Micro:bit (sender) will send wifi message “nojam” to the micro:bit (receiver). The traffic light will turn green.
+If there are traffic jam ahead (detected by light sensor). Micro:bit (sender) will send wifi message “nojam” to the micro:bit (receiver). The traffic light will turn red.
+<BR><P>
 <img alt="auto_fit" src="../_images/Case8b_result.gif" /><P></p>
 </div>
-<div class="section" id="id7">
-<h3><span class="section-number">17.2.8. </span>Think<a class="headerlink" href="#id7" title="Permalink to this headline">¶</a></h3>
+<div class="section" id="id8">
+<h3><span class="section-number">17.2.8. </span>Think<a class="headerlink" href="#id8" title="Permalink to this headline">¶</a></h3>
 <HR><p>Q1. How can we add sound effect to the traffic LED Module according to the corresponding color?<BR><P></p>
 </div>
 </div>
