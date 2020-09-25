@@ -264,7 +264,10 @@ If status ≠ check_status then, set status to check status and WiFi send messag
 <p><span id="subtitle">Step 8</span><P>
 Pause for 1000ms.<BR><P>
 <img alt="auto_fit" src="../_images/Case8a_p8.png" /><P></p>
-</div>
+<p><span id="subtitle">Full Solution<BR><P>
+MakeCode: <a class="reference external" href="https://makecode.microbit.org/#pub:_EroCeHYWbeiC">https://makecode.microbit.org/_EroCeHYWbeiC</a><BR><P>
+You could also download the program from the following website:<BR></p>
+<iframe src="https://makecode.microbit.org/#pub:_EroCeHYWbeiC" width="100%" height="500" frameborder="0"></iframe></div>
 <div class="section" id="result">
 <h3><span class="section-number">17.1.7. </span>Result<a class="headerlink" href="#result" title="Permalink to this headline">¶</a></h3>
 <HR><p>Light sensor is used to detect if there are traffic jam. Once the light intensity is not low, it indicates that there is a traffic jam on the road. Wi-Fi message “nojam” will be sent to another micro:bit (receiver).<BR><P>
@@ -285,9 +288,9 @@ Once the light intensity is too low, it indicates that there is a traffic jam on
 </div>
 <div class="section" id="id2">
 <h3><span class="section-number">17.2.2. </span>Background<a class="headerlink" href="#id2" title="Permalink to this headline">¶</a></h3>
-<HR><p><span id="subtitle">How to receive signal from another micro:bit?</span>
+<HR><p><span id="subtitle">How to receive signal from another micro:bit?</span><P>
 Micro:bit (sender and receiver) are connected to the same channel so wifi message can be sent between the micro:bit. If receiver micro:bit receives a WiFi message “trafficjam” from sender, the connected traffic light will turn red.<BR><P></p>
-<p><span id="subtitle">Receiver micro:bit operation</span>
+<p><span id="subtitle">Receiver micro:bit operation</span><P>
 When a wifi message “trafficjam” is received, it means there is traffic jam forward. The traffic LED Module will turn red. When a wifi message “nojam” is received, it means there is no traffic jam forward. The traffic LED Module will turn green. By using smart traffic light, the problem of traffic jam can be reduced as automatic traffic control is used.<BR><P></p>
 </div>
 <div class="section" id="id3">
@@ -348,7 +351,10 @@ Set up a new function (TurnRed). Control traffic light at P0 green on from Smart
 <p><span id="subtitle">Step 6</span><P>
 Set up a new function (TurnGreen). Control traffic light at P0 red on from SmartCity and pause for 2000ms from basic, then control traffic light at P0 red and yellow on and pause for 2000ms. Lastly, control traffic light at P0 green on and pause for 2000ms.<BR><P>
 <img alt="auto_fit" src="../_images/Case8b_p6.png" /><P></p>
-</div>
+<p><span id="subtitle">Full Solution<BR><P>
+MakeCode: <a class="reference external" href="https://makecode.microbit.org/#pub:_hjoATDhYTMqd">https://makecode.microbit.org/_hjoATDhYTMqd</a><BR><P>
+You could also download the program from the following website:<BR></p>
+<iframe src="https://makecode.microbit.org/#pub:_hjoATDhYTMqd" width="100%" height="500" frameborder="0"></iframe></div>
 <div class="section" id="result-photo-here-need-to-change-later-model-no-should-be-c1">
 <h3><span class="section-number">17.2.7. </span>Result (Photo here need to change later; model no. should be C1)<a class="headerlink" href="#result-photo-here-need-to-change-later-model-no-should-be-c1" title="Permalink to this headline">¶</a></h3>
 <HR><p>By receiving wifi message, traffic LED Module will turn to the corresponding colour automatically.<BR><P>

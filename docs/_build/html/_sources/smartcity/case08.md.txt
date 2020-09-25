@@ -86,6 +86,10 @@ If status ≠ check_status then, set status to check status and WiFi send messag
 Pause for 1000ms.<BR><P>
 ![auto_fit](images/Case8/Case8a_p8.png)<P>
 
+<span id="subtitle">Full Solution<BR><P>
+MakeCode: [https://makecode.microbit.org/_EroCeHYWbeiC](https://makecode.microbit.org/#pub:_EroCeHYWbeiC)<BR><P>
+You could also download the program from the following website:<BR>
+<iframe src="https://makecode.microbit.org/#pub:_EroCeHYWbeiC" width="100%" height="500" frameborder="0"></iframe>
 
 
 ### Result
@@ -113,10 +117,10 @@ Make an auto-traffic LED Module by receiving signal from sender micro:bit.<BR><P
 ### Background
 <HR>
 
-<span id="subtitle">How to receive signal from another micro:bit?</span>
+<span id="subtitle">How to receive signal from another micro:bit?</span><P>
 Micro:bit (sender and receiver) are connected to the same channel so wifi message can be sent between the micro:bit. If receiver micro:bit receives a WiFi message “trafficjam” from sender, the connected traffic light will turn red.<BR><P>
 
-<span id="subtitle">Receiver micro:bit operation</span>
+<span id="subtitle">Receiver micro:bit operation</span><P>
 When a wifi message “trafficjam” is received, it means there is traffic jam forward. The traffic LED Module will turn red. When a wifi message “nojam” is received, it means there is no traffic jam forward. The traffic LED Module will turn green. By using smart traffic light, the problem of traffic jam can be reduced as automatic traffic control is used.<BR><P>
 
 
@@ -195,6 +199,11 @@ Set up a new function (TurnRed). Control traffic light at P0 green on from Smart
 <span id="subtitle">Step 6</span><P>
 Set up a new function (TurnGreen). Control traffic light at P0 red on from SmartCity and pause for 2000ms from basic, then control traffic light at P0 red and yellow on and pause for 2000ms. Lastly, control traffic light at P0 green on and pause for 2000ms.<BR><P>
 ![auto_fit](images/Case8/Case8b_p6.png)<P>
+
+<span id="subtitle">Full Solution<BR><P>
+MakeCode: [https://makecode.microbit.org/_hjoATDhYTMqd](https://makecode.microbit.org/#pub:_hjoATDhYTMqd)<BR><P>
+You could also download the program from the following website:<BR>
+<iframe src="https://makecode.microbit.org/#pub:_hjoATDhYTMqd" width="100%" height="500" frameborder="0"></iframe>
 
 
 ### Result (Photo here need to change later; model no. should be C1)
