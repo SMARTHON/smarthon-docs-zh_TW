@@ -2,6 +2,9 @@
 
 Level: ![level](images/level1.png)
 
+![auto_fit](images/Case1/concept-2.4.png)<P>
+
+
 ## Goal
 <HR>
 Make a smart playground lamp by detecting the motion nearby.<P>
