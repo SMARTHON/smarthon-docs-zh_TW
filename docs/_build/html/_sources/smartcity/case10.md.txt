@@ -44,7 +44,7 @@ Electronics:
 <HR>
 
 <span id="subtitle">Step 1</span><BR><P>
-Attach the LED light to the model I2 with M2 screw and nuts<BR><P>
+Attach the LED light to the model I2 with M4 screw and nuts<BR><P>
 ![auto_fit](images/Case10/Case10_po1.png)<P>
 
 <span id="subtitle">Step 2</span><BR><P>

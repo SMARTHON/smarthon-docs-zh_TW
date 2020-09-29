@@ -103,7 +103,15 @@
 <li class="toctree-l2"><a class="reference internal" href="case09.html">18. IoT Case 09: Smart House door control</a></li>
 <li class="toctree-l2"><a class="reference internal" href="case10.html">19. IoT Case 10: Smart Street Light</a></li>
 <li class="toctree-l2 current"><a class="current reference internal" href="#">20. IoT Case 11: Roof garden clothes rack</a><ul>
-<li class="toctree-l3"><a class="reference internal" href="#introduction">20.1. Introduction</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#goal">20.1. Goal</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#background">20.2. Background</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#part-list">20.3. Part List</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#practical-operation">20.4. Practical operation</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#hardware-connect">20.5. Hardware connect</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#programming-makecode">20.6. Programming (MakeCode)</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#iot-ifttt">20.7. IoT (IFTTT)</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#result">20.8. Result</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#think">20.9. Think</a></li>
 </ul>
 </li>
 </ul>
@@ -179,8 +187,146 @@
             
   <div class="section" id="iot-case-11-roof-garden-clothes-rack">
 <h1><span class="section-number">20. </span>IoT Case 11: Roof garden clothes rack<a class="headerlink" href="#iot-case-11-roof-garden-clothes-rack" title="Permalink to this headline">¶</a></h1>
-<div class="section" id="introduction">
-<h2><span class="section-number">20.1. </span>Introduction<a class="headerlink" href="#introduction" title="Permalink to this headline">¶</a></h2>
+<p>Level: <img alt="level" src="../_images/level51.png" /></p>
+<div class="section" id="goal">
+<h2><span class="section-number">20.1. </span>Goal<a class="headerlink" href="#goal" title="Permalink to this headline">¶</a></h2>
+<HR><p>Make a smart roof garden clothes rack, once raindrop is detected, the rack can be opened automatically.</p>
+</div>
+<div class="section" id="background">
+<h2><span class="section-number">20.2. </span>Background<a class="headerlink" href="#background" title="Permalink to this headline">¶</a></h2>
+<HR><p>People no long need to rush up to the roof when raining as the clothes rack can be closed automatically even when house owner is not at home.
+Smart roof garden operation
+When raindrop sensor sensed that it is raining, it will send a signal to micro:bit and therefore the clothes rack will be opened. When there is no rain, the clothes rack will be closed.
+Also, micro:bit can receive WAN commands from WAN (eg. IFTTT), the the micro:bit will get the command name. If the command name is “rain”, the servo will turn to 90ᵒ and the rack will be opened. If the command name is “clear”, servo will turn to 180ᵒ and the rack will be closed.</p>
+</div>
+<div class="section" id="part-list">
+<h2><span class="section-number">20.3. </span>Part List<a class="headerlink" href="#part-list" title="Permalink to this headline">¶</a></h2>
+<HR><table><tr><td>
+Electronics:
+<ul display='inline-block'>
+<li>micro:bit X1</li>
+<li>IoT:bit X1</li>
+<li>USB Wire/Battery Holder </li>
+&nbsp;&nbsp;1. 180ᵒ Servo X1<BR>
+&nbsp;&nbsp;2. Raindrop Sensor X1<BR>
+</ul>
+</td></tr>
+<tr>
+<td>Model:
+<ul>
+<li>Smart Street Light Model H1-H7 X1</li>
+<li>M4 Screw X4</li>
+<li>M4 Nut X4</li>
+<li>M2 Screw x 10mm X2</li>
+<li>M2 Nut X2</li>
+<li>Servo M2 sharp screw X1</li>
+</ul>
+</td></tr>
+<tr><td>Equipment:
+<ul><li>ScrewDriver X1</li></ul></td></tr></table><p><img alt="auto_fit" src="../_images/Case11_parts.png" /><P></p>
+</div>
+<div class="section" id="practical-operation">
+<h2><span class="section-number">20.4. </span>Practical operation<a class="headerlink" href="#practical-operation" title="Permalink to this headline">¶</a></h2>
+<HR><p><span id="subtitle">Step 1</span><BR><P>
+Attach the raindrop sensor to the model H2<BR><P>
+<img alt="auto_fit" src="../_images/Case11_po1.png" /><P>
+<span id="subtitle">Step 2</span><BR><P>
+Screw the cloth rack (H5) onto the 180ᵒ servo using M2 screws<BR><P>
+<img alt="auto_fit" src="../_images/Case11_po2.png" /><P>
+<span id="subtitle">Step 3</span><BR><P>
+Put together the models H4-H5 and H6-H7<BR><P>
+<img alt="auto_fit" src="../_images/Case11_po3.png" /><P>
+<span id="subtitle">Step 4</span><BR><P>
+Attach the long stand (H3) to the model H1<BR><P>
+<img alt="auto_fit" src="../_images/Case11_po4.png" /><P>
+<span id="subtitle">Step 5</span><BR><P>
+Put together all the cardboard parts.<BR><P>
+<img alt="auto_fit" src="../_images/Case11_po5.png" /><P></p>
+</div>
+<div class="section" id="hardware-connect">
+<h2><span class="section-number">20.5. </span>Hardware connect<a class="headerlink" href="#hardware-connect" title="Permalink to this headline">¶</a></h2>
+<HR><p>Connect the Raindrop sensor to P0 port of IoT:bit<BR><P>
+Connect the 180ᵒ Servo to P1 port of IoT:bit<BR><P></p>
+<table border="1" class="docutils">
+<thead>
+<tr>
+<th align="center">Micro:bit P1</th>
+<th align="center">Servo</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="center">S (yellow)</td>
+<td align="center">S (orange)</td>
+</tr>
+<tr>
+<td align="center">V (red)</td>
+<td align="center">V (red)</td>
+</tr>
+<tr>
+<td align="center">G (black)</td>
+<td align="center">G (brown)</td>
+</tr>
+</tbody>
+</table><p><img alt="auto_fit" src="../_images/Case11_hardware.png" /><P></p>
+</div>
+<div class="section" id="programming-makecode">
+<h2><span class="section-number">20.6. </span>Programming (MakeCode)<a class="headerlink" href="#programming-makecode" title="Permalink to this headline">¶</a></h2>
+<HR><p><span id="subtitle">Step 1</span><BR><P>
+Drag on start block fro Basic. Drag Initialize IoT:bit at OLED from IoT:bit, set OLED height:64, width:128. Set WiFi to ssid “wifi_name” and pwd “WiFi_password”.<BR><P>
+<img alt="auto_fit" src="../_images/Case11_p1.png" /><P>
+<span id="subtitle">Step 2</span><BR><P>
+Set raindrop to 0.<BR><P>
+<img alt="auto_fit" src="../_images/Case11_p2.png" /><P>
+<span id="subtitle">Step 3</span><BR><P>
+Set Forcast_rain to false.<BR><P>
+<img alt="auto_fit" src="../_images/Case11_p3.png" /><P>
+<span id="subtitle">Step 4
+span&gt;<BR><P>Turn servo to 180 degree at P1 from Smartcity. The rack is closed.<BR><P>
+<img alt="auto_fit" src="../_images/Case11_p4.png" /><P>
+<span id="subtitle">Step 5</span><BR><P>
+Drag On WiFi connected and start WiFi remote control (WAN) from IoT:bit.<BR><P>
+<img alt="auto_fit" src="../_images/Case11_p5.png" /><P>
+<span id="subtitle">Step 6</span><BR><P>
+Drag on WAN command received (WAN_Command) from IoT:bit.<BR><P>
+<img alt="auto_fit" src="../_images/Case11_p6.png" /><P>
+<span id="subtitle">Step 7</span><BR><P>
+If WAN_Command = clear then, set Forcast_rain to false.<BR><P>
+<img alt="auto_fit" src="../_images/Case11_p7.png" /><P>
+<span id="subtitle">Step 8</span><BR><P>
+Else (i.e. WAN_Command ≠ clear, set Forcast_rain to true).<BR><P>
+<img alt="auto_fit" src="../_images/Case11_p8.png" /><P>
+<span id="subtitle">Step 9</span><BR><P>
+Drag forever block from Basic. Set raindrop to get raindrop value (percentage) at Pin P0 and show number raindrop from OLED.<BR><P>
+<img alt="auto_fit" src="../_images/Case11_p9.png" /><P>
+<span id="subtitle">Step 10</span><BR><P>
+Snap if statement into forever. Set if raindrop &gt; 5 (raining) or Forcast_rain=true (it will rain) then.<BR><P>
+Snap turn Servo to 90 degree at P1 from Smartcity. That’s say the rack can be opened.<BR><P>
+<img alt="auto_fit" src="../_images/Case11_p10.png" /><P>
+<span id="subtitle">Step 11</span><BR><P>
+Else, turn servo to 180 degree at P1. That’s say the rack will be closed otherwise.<BR><P>
+<img alt="auto_fit" src="../_images/Case11_p11.png" /><P>
+<span id="subtitle">Step 12</span><BR><P>
+Pause for 15000ms.<BR><P>
+<img alt="auto_fit" src="../_images/Case11_p12.png" /><P></p>
+</div>
+<div class="section" id="iot-ifttt">
+<h2><span class="section-number">20.7. </span>IoT (IFTTT)<a class="headerlink" href="#iot-ifttt" title="Permalink to this headline">¶</a></h2>
+<HR><p><span id="remarks">For the setting of IFTTT, please refer to “Chapter 4: Control your micro:bit by IFTTT Services”</span><BR><P></p>
+<p><span id="subtitle">Step 1</span><BR><P>
+Create applet (If Weather Underground then Smarthon)<BR><P>
+<img alt="auto_fit" src="../_images/Case11_iot1.png" /><P>
+If it is at 06:00pm, send WAN control command: light_on to the micro:bit<BR><P>
+<img alt="auto_fit" src="../_images/Case11_iot1.png" /><P></p>
+</div>
+<div class="section" id="result">
+<h2><span class="section-number">20.8. </span>Result<a class="headerlink" href="#result" title="Permalink to this headline">¶</a></h2>
+<HR><p>The micro:bit is controlled by IFTTT (trigger by weather open data). When the weather condition change to “rain”, the cloth rack will be opened. When the weather condition change to “clear”, the cloth rack will be closed.<BR><P>
+<img alt="auto_fit" src="../_images/Case11_result.gif" /><P></p>
+</div>
+<div class="section" id="think">
+<h2><span class="section-number">20.9. </span>Think<a class="headerlink" href="#think" title="Permalink to this headline">¶</a></h2>
+<HR><p>Q1. How to notify the house owner the weather status (rain) by email through IFTTT?<BR><P></p>
 </div>
 </div>
 
