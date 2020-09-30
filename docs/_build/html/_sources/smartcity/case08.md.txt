@@ -30,7 +30,7 @@ Electronics:
 <li>IoT:bit X1</li>
 <li>OLED X1</li>
 <li>USB Wire/Battery Holder </li>
-&nbsp;&nbsp;1. Light Sensor (With 3-pin module wire)<BR>
+&nbsp;&nbsp;1. Light Sensor (With 3-pin module wire) X1<BR>
 </ul>
 </td></tr>
 <tr><td>Equipment:
