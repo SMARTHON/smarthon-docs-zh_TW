@@ -25,7 +25,7 @@ Electronics:
 <li>IoT:bit X1</li>
 <li>USB Wire/Battery Holder </li>
 &nbsp;&nbsp;1. 180ᵒ Servo X1<BR>
-&nbsp;&nbsp;2. Raindrop Sensor X1<BR>
+&nbsp;&nbsp;2. Raindrop Sensor (with 3-pin module wire) X1<BR>
 </ul>
 </td></tr>
 <tr>
@@ -117,6 +117,13 @@ Else, turn servo to 180 degree at P1. That’s say the rack will be closed other
 <span id="subtitle">Step 12</span><BR><P>
 Pause for 15000ms.<BR><P>
 ![auto_fit](images/Case11/Case11_p12.png)<P>
+
+
+<span id="subtitle">Full Solution<BR><P>
+MakeCode: [https://makecode.microbit.org/_UC24pMak66dT](https://makecode.microbit.org/#pub:_UC24pMak66dT)<BR><P>
+You could also download the program from the following website:<BR>
+<iframe src="https://makecode.microbit.org/#pub:_UC24pMak66dT" width="100%" height="500" frameborder="0"></iframe>
+
 
 ## IoT (IFTTT)
 <HR>
