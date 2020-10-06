@@ -44,7 +44,7 @@ Electronics:
 
 ![pic](images/Case4/Case4_parts.png)<P>
 
-## Practical operation 
+## Assembly step 
 <HR>
 
 <span id="subtitle">Step 1</span><P>

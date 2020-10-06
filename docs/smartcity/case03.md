@@ -43,7 +43,7 @@ Electronics:
 
 ![pic](images/Case3/Case3_parts.png)<P>
 
-## Practical operation
+## Assembly step
 <HR>
 
 <span id="subtitle">Step1</span><P>

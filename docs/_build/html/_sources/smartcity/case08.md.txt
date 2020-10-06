@@ -39,7 +39,7 @@ Electronics:
 ![auto_fit](images/Case8/Case8a_parts.png)<P>
 
  
-### Practical operation
+### Assembly step
 <HR>
 
 N/A
@@ -150,7 +150,7 @@ Electronics:
 
 ![auto_fit](images/Case8/Case8b_parts.png)<P>
 
-### Practical operation
+### Assembly step
 <HR>
 
 <span id="subtitle">Step 1</span><P>

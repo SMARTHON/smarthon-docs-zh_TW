@@ -42,7 +42,7 @@ Electronics:
 
 ![auto_fit](images/Case6/Case6_parts.png)<P>
 
-## Practical operation
+## Assembly step
 <HR>
 
 <span id="subtitle"> Step 1</span><BR><P>

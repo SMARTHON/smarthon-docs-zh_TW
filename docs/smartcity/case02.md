@@ -47,7 +47,7 @@ Electronics:
 
 ![auto_fit](images/Case2/Case2_parts.png)<P>
 
-## Practical operation
+## Assembly step
 <HR>
 
 <span id="subtitle">Step 1</span><BR><P>
