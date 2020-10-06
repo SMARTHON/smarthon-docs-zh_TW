@@ -29,6 +29,13 @@ When Wifi is connected, it start WiFi Listening in channel “chatroom” <BR><P
 * when it receive a WiFi message called “sad”, the LED will show a sad icon.
 ![auto_fit](images/Ch5/Ch5_p3.png)<P>
 
+
+<span id="subtitle">Full Solution<BR><P>
+MakeCode: [https://makecode.microbit.org/_boM473hYHeVw](https://makecode.microbit.org/#pub:_boM473hYHeVw)<BR><P>
+You could also download the program from the following website:<BR>
+<iframe src="https://makecode.microbit.org/#pub:_boM473hYHeVw" width="100%" height="500" frameborder="0"></iframe>
+
+
 ## Send Wi-Fi message in a channel (Sender)
 
 <span id="subtitle">Step 1</span><BR><P>
@@ -43,6 +50,13 @@ After WiFi is connected, we can press button A / button B to send WiFi message<B
 * Button B:  send a WiFi message “sad” to channel “chatroom” 
 ![auto_fit](images/Ch5/Ch5_p5.png)<P>
 
+
+<span id="subtitle">Full Solution<BR><P>
+MakeCode: [https://makecode.microbit.org/_2pWTEyLWqFDu](https://makecode.microbit.org/#pub:_2pWTEyLWqFDu)<BR><P>
+You could also download the program from the following website:<BR>
+<iframe src="https://makecode.microbit.org/#pub:_2pWTEyLWqFDu" width="100%" height="500" frameborder="0"></iframe>
+
+
 ## Result
 
 ### Sender
@@ -50,7 +64,6 @@ After connected to WiFi, IP address would be shown.<BR><P>
 Pressed “A” button, it will send WiFi message “smile” in channel “chatroom”. <BR><P>
 ![auto_fit](images/Ch5/Ch5_result1.png)<P>
  
-
 Pressed “B” button, it will send WiFi message “sad” in channel “chatroom”. <BR><P>
 ![auto_fit](images/Ch5/Ch5_result2.png)<P>
 
