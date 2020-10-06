@@ -46,6 +46,12 @@ After the micro:bit is connected to Wi-Fi successfully, it will start WAN contro
 ![auto_fit](images/Ch3/Ch3_p4.png)<P>
 
 
+<span id="subtitle">Full Solution<BR><P>
+MakeCode: [https://makecode.microbit.org/_923eWocsr17q](https://makecode.microbit.org/#pub:_923eWocsr17q)<BR><P>
+You could also download the program from the following website:<BR>
+<iframe src="https://makecode.microbit.org/#pub:_923eWocsr17q" width="100%" height="500" frameborder="0"></iframe>
+
+
 ## Create the mobile app in App Inventor 2
 <HR>
 
@@ -104,6 +110,12 @@ Similarly, initialize the Wi-Fi and connect wifi on start. For this turn, we wil
 ![auto_fit](images/Ch3/Ch3_2_p1.png)<P>
 If Wan command “PinValue” is received, white LED will be turned on with the given intensity. <BR><P>
 ![auto_fit](images/Ch3/Ch3_2_p2.png)<P>
+
+<span id="subtitle">Full Solution<BR><P>
+MakeCode: [https://makecode.microbit.org/_8sbfHLTTvReE](https://makecode.microbit.org/#pub:_8sbfHLTTvReE)<BR><P>
+You could also download the program from the following website:<BR>
+<iframe src="https://makecode.microbit.org/#pub:_8sbfHLTTvReE" width="100%" height="500" frameborder="0"></iframe>
+
 
 ### App Inventor 2 setting
 <HR>

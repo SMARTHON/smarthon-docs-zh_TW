@@ -57,6 +57,12 @@ Remember the Device ID, it will be used for WAN connection on the next step.<BR>
  ![auto_fit](images/Ch4/Ch4_p6.png)<P>
 
 
+<span id="subtitle">Full Solution<BR><P>
+MakeCode: [https://makecode.microbit.org/_gK16DWV6UMV0](https://makecode.microbit.org/#pub:_gK16DWV6UMV0)<BR><P>
+You could also download the program from the following website:<BR>
+<iframe src="https://makecode.microbit.org/#pub:_gK16DWV6UMV0" width="100%" height="500" frameborder="0"></iframe>
+
+
 ## Create your own applet to control micro:bit in IFTTT
 <HR>
 
@@ -137,6 +143,12 @@ Get micro:bit Device ID<BR><P>
 * Then, it will start WAN remote control. If the connection is successful, the Device ID would be shown. 
 * Remember the Device ID, it will be used for WAN connection on the next step.
 ![auto_fit](images/Ch4/Ch4_2_p6.png)<P>
+
+
+<span id="subtitle">Full Solution<BR><P>
+MakeCode: [https://makecode.microbit.org/_8sbfHLTTvReE](https://makecode.microbit.org/#pub:_8sbfHLTTvReE)<BR><P>
+You could also download the program from the following website:<BR>
+<iframe src="https://makecode.microbit.org/#pub:_8sbfHLTTvReE" width="100%" height="500" frameborder="0"></iframe>
 
 
 ### Create your own applet to control micro:bit in IFTTT

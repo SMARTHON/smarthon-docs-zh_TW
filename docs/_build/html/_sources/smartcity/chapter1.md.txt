@@ -51,6 +51,13 @@ On every 15seconds, if the WiFi is connected, it will send data to ThingSpeak.
 Open your program and paste the ThingSpeak key. You can also remove/add the input field and change the upload value.<BR><P>
 ![auto_fit](images/Ch1/Ch1_p5.png)<P>
 
+
+<span id="subtitle">Full Solution<BR><P>
+MakeCode: [https://makecode.microbit.org/_gHM58bgf5e41](https://makecode.microbit.org/#pub:_gHM58bgf5e41)<BR><P>
+You could also download the program from the following website:<BR>
+<iframe src="https://makecode.microbit.org/#pub:_gHM58bgf5e41" width="100%" height="500" frameborder="0"></iframe>
+
+
 ## Result
 <HR>
 

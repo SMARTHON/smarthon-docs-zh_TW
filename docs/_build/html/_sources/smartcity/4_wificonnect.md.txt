@@ -45,6 +45,12 @@ After initializing, you can connect to the Wi-Fi<BR><P>
 ![auto_fit](images/4_ConnectWiFi/Wifi_p4.png)<P>
 
 
+<span id="subtitle">Full Solution<BR><P>
+MakeCode: [https://makecode.microbit.org/_CjaTJE4LHLbW](https://makecode.microbit.org/#pub:_CjaTJE4LHLbW)<BR><P>
+You could also download the program from the following website:<BR>
+<iframe src="https://makecode.microbit.org/#pub:_CjaTJE4LHLbW" width="100%" height="500" frameborder="0"></iframe>
+
+
 ## Result
 <HR>
 

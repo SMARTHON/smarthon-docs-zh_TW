@@ -66,6 +66,14 @@ b. event_name: event name to trigger in Webhooks (eg. SendEmail)<BR><P>
 c. value 1-3: input value1, value2, value3<BR><P>
 ![auto_fit](images/Ch2/Ch2_p6.png)<P>
 
+
+<span id="subtitle">Full Solution<BR><P>
+MakeCode: [https://makecode.microbit.org/_AK9d8aYbALx1](https://makecode.microbit.org/#pub:_AK9d8aYbALx1)<BR><P>
+You could also download the program from the following website:<BR>
+<iframe src="https://makecode.microbit.org/#pub:_AK9d8aYbALx1" width="100%" height="500" frameborder="0"></iframe>
+
+
+
 ## Result
 <HR>
 
