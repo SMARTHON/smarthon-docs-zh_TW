@@ -91,7 +91,16 @@
 <li class="toctree-l2"><a class="reference internal" href="chapter2.html">6. Chapter 2: Send Email by IFTTT</a></li>
 <li class="toctree-l2"><a class="reference internal" href="chapter3.html">7. Chapter 3: Control micro:bit by App Inventor 2</a></li>
 <li class="toctree-l2"><a class="reference internal" href="chapter4.html">8. Chapter 4: Control your micro:bit by IFTTT Services</a></li>
-<li class="toctree-l2 current"><a class="current reference internal" href="#">9. Chapter 5: Object to Object communication</a></li>
+<li class="toctree-l2 current"><a class="current reference internal" href="#">9. Chapter 5: Object to Object communication</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#set-the-channel-name-receiver">9.1. Set the channel name (Receiver)</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#send-wi-fi-message-in-a-channel-sender">9.2. Send Wi-Fi message in a channel (Sender)</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#result">9.3. Result</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="#sender">9.3.1. Sender</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#receiver">9.3.2. Receiver</a></li>
+</ul>
+</li>
+</ul>
+</li>
 <li class="toctree-l2"><a class="reference internal" href="case01.html">10. Case 01: Automated Smart Playground Lamp</a></li>
 <li class="toctree-l2"><a class="reference internal" href="case02.html">11. Case 02: Smart Car park Access Barrier</a></li>
 <li class="toctree-l2"><a class="reference internal" href="case03.html">12. Case 03: Garbage disposal system</a></li>
@@ -176,6 +185,66 @@
             
   <div class="section" id="chapter-5-object-to-object-communication">
 <h1><span class="section-number">9. </span>Chapter 5: Object to Object communication<a class="headerlink" href="#chapter-5-object-to-object-communication" title="Permalink to this headline">¶</a></h1>
+<p>In this example, micro:bit (sender and receiver) are connected to a channel called “chatroom”.<BR><P>
+Peter want to send a smile message to Sally via internet (WAN). Peter’s micro:bit will send a Wi-Fi message “smile” to Sally’s micro:bit. When Sally receive a WiFi message smile, her micro:bit LED will show a smile icon.<BR><P>
+<img alt="auto_fit" src="../_images/Ch5_des.png" /><P></p>
+<p><span id="remarks">*Before we control the micro:bit, please make sure your micro:bit is connected to the Wi-Fi.</span><BR><P></p>
+<div class="section" id="set-the-channel-name-receiver">
+<h2><span class="section-number">9.1. </span>Set the channel name (Receiver)<a class="headerlink" href="#set-the-channel-name-receiver" title="Permalink to this headline">¶</a></h2>
+<p><span id="subtitle">Step 1</span><BR><P>
+After initializing, you can connect to the WiFi:<BR><P>
+Choose <code class="docutils literal notranslate"><span class="pre">IoT:bit</span></code> -&gt; <code class="docutils literal notranslate"><span class="pre">Set</span> <span class="pre">Wi-Fi</span> <span class="pre">to</span> <span class="pre">ssid</span> <span class="pre">“”,</span> <span class="pre">pwd</span> <span class="pre">“”</span></code>. Enter your Wi-Fi name and password<BR><P>
+<img alt="auto_fit" src="../_images/Ch5_p1.png" /><P></p>
+<p><span id="subtitle">Step 2</span><BR><P>
+<code class="docutils literal notranslate"><span class="pre">On</span> <span class="pre">WiFi</span> <span class="pre">connected</span></code> is an event handler.<BR><P>
+It will be triggered once after connected with WiFi.<BR><P>
+<img alt="auto_fit" src="../_images/Ch5_p2.png" /><P></p>
+<p><span id="subtitle">Step 3</span><BR><P>
+When Wifi is connected, it start WiFi Listening in channel “chatroom” <BR><P>
+<span id="remarks">(sender and receiver must be in the same channel)</span><BR><P></p>
+<ul class="simple">
+<li><p>When it receive a WiFi message called “smile”, the LED will show a smile icon;</p></li>
+<li><p>when it receive a WiFi message called “sad”, the LED will show a sad icon.
+<img alt="auto_fit" src="../_images/Ch5_p3.png" /><P></p></li>
+</ul>
+</div>
+<div class="section" id="send-wi-fi-message-in-a-channel-sender">
+<h2><span class="section-number">9.2. </span>Send Wi-Fi message in a channel (Sender)<a class="headerlink" href="#send-wi-fi-message-in-a-channel-sender" title="Permalink to this headline">¶</a></h2>
+<p><span id="subtitle">Step 1</span><BR><P>
+After initializing, you can connect to the WiFi:<BR><P>
+Choose <code class="docutils literal notranslate"><span class="pre">IoT:bit</span></code> -&gt; <code class="docutils literal notranslate"><span class="pre">Set</span> <span class="pre">Wi-Fi</span> <span class="pre">to</span> <span class="pre">ssid</span> <span class="pre">“”,</span> <span class="pre">pwd</span> <span class="pre">“”</span></code>. Enter your Wi-Fi name and password<BR><P>
+<img alt="auto_fit" src="../_images/Ch5_p4.png" /><P></p>
+<p><span id="subtitle">Step 2</span><BR><P>
+After WiFi is connected, we can press button A / button B to send WiFi message<BR><P>
+<span id="remarks">(the channel name of the sender and receiver must be the same)</span><BR><P></p>
+<ul class="simple">
+<li><p>Button A: send a WiFi message “smile” to channel “chatroom”</p></li>
+<li><p>Button B:  send a WiFi message “sad” to channel “chatroom”
+<img alt="auto_fit" src="../_images/Ch5_p5.png" /><P></p></li>
+</ul>
+</div>
+<div class="section" id="result">
+<h2><span class="section-number">9.3. </span>Result<a class="headerlink" href="#result" title="Permalink to this headline">¶</a></h2>
+<div class="section" id="sender">
+<h3><span class="section-number">9.3.1. </span>Sender<a class="headerlink" href="#sender" title="Permalink to this headline">¶</a></h3>
+<p>After connected to WiFi, IP address would be shown.<BR><P>
+Pressed “A” button, it will send WiFi message “smile” in channel “chatroom”. <BR><P>
+<img alt="auto_fit" src="../_images/Ch5_result1.png" /><P></p>
+<p>Pressed “B” button, it will send WiFi message “sad” in channel “chatroom”. <BR><P>
+<img alt="auto_fit" src="../_images/Ch5_result2.png" /><P></p>
+</div>
+<div class="section" id="receiver">
+<h3><span class="section-number">9.3.2. </span>Receiver<a class="headerlink" href="#receiver" title="Permalink to this headline">¶</a></h3>
+<p>After connected to WiFi, IP it will start listening in channel “chatroom”. When connected successfully, Channel name “chatroom” will be shown.<BR><P>
+<img alt="auto_fit" src="../_images/Ch5_result3.png" /><P></p>
+<ul class="simple">
+<li><p>When WiFi message “smile” is received, OLED will show “WIFI msg: smile”. Micro:bit will show an smile icon: <img alt="icon" src="../_images/smile.png" />
+<img alt="auto_fit" src="../_images/Ch5_result4.png" /><P></p></li>
+<li><p>When WiFi message “sad” is received, OLED will show “WIFI msg: smile”. LED will show a sad icon: <img alt="icon" src="../_images/sad.png" />
+<img alt="auto_fit" src="../_images/Ch5_result5.png" /><P></p></li>
+</ul>
+</div>
+</div>
 </div>
 
 

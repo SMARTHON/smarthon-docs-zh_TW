@@ -9,7 +9,7 @@ Go to [MakeCode](https://makecode.microbit.org), create a new project<BR><P>
 Give the project a name<BR><P>
 ![auto_fit](images/3_Getstart/getstart02.png)<P>
 <span id="subtitle">Step 3</span><BR><P>
-Click "![](images/3_Getstart/icon_more.png)" and choose "Extensions" in the pull-down menu<BR><P>
+Click "![icon](images/3_Getstart/icon_more.png)" and choose "Extensions" in the pull-down menu<BR><P>
 ![auto_fit](images/3_Getstart/getstart03.png)<BR><P>
 <span id="subtitle">Step 4</span><BR><P>
 Search "[https://github.com/smarthon/pxt-smartcity](https://github.com/smarthon/pxt-smartcity)" and click “smartcity”
