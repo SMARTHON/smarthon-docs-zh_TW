@@ -12,7 +12,7 @@ For creating IoT application, you can use App Inventor 2 to create web connectio
 API is one way to communicate between the objects on the Internet world. API is just like an “URL” which is website link.<BR><P>
 ![auto_fit](images/Ch3/Ch3_des3.png)<P>
 This is the API you can use to control the micro:bit<BR><P>
-http://control.smarthon.cc/publish?id=DeviceID&msg=ControlCommand
+http://control.smarthon.cc/publish?id=`DeviceID`&msg=`ControlCommand`
 
 ## Hardware connect
 <HR>
@@ -27,11 +27,11 @@ Goal: This example is to turn on/off micro:bit modules only.<BR><P>
 
 <span id="subtitle">Step 1</span><BR><P>
 After initializing, you can connect to the WiFi:<BR><P>
-Choose IoT:bit -> Set Wi-Fi to ssid “”, pwd “”. Enter your Wi-Fi name and password<BR><P>
+Choose `IoT:bit` -> `Set Wi-Fi to ssid “”, pwd “”`. Enter your Wi-Fi name and password<BR><P>
 ![auto_fit](images/Ch3/Ch3_p1.png)<P>
 
 <span id="subtitle">Step 2</span><BR><P>
-“On WiFi connected” is an event handler.<BR><P>
+`On WiFi connected` is an event handler.<BR><P>
 It will be triggered once after connected with WiFi.<BR><P>
 ![auto_fit](images/Ch3/Ch3_p2.png)<P>
 
@@ -61,7 +61,7 @@ Set the program in app inventor 2, on “Blocks” <BR><P>
 * Take the block as below
 ![auto_fit](images/Ch3/Ch3_app2.png)<P>
 * When Button 1 and 2 is pressed, it calls the WAN control API respectively
-* http://control.smarthon.cc/publish?id=DeviceID&msg=ControlCommand 
+* http://control.smarthon.cc/publish?id=`DeviceID`&msg=`ControlCommand`
 ![auto_fit](images/Ch3/Ch3_app3.png)<P>
  
 
@@ -91,9 +91,10 @@ The above example is for turning the LED on/off only. How about if we want to co
 ### Know the API (control command with value)
 <HR>
 
-1. http://control.smarthon.cc/publish?id=DeviceID&msg=ControlCommand
 
-2. http://control.smarthon.cc/publish?id=DeviceID&msg=ControlCommand&value=Value 
+1. http://control.smarthon.cc/publish?id=`DeviceID`&msg=`ControlCommand` <BR><P>
+
+2. http://control.smarthon.cc/publish?id=`DeviceID`&msg=`ControlCommand`&value=`Value` <BR><P>
 
 
 ### Programming (Makecode)
@@ -116,7 +117,7 @@ Create a new project in App Inventor 2, on “Designer”. <BR><P>
 
 <span id="subtitle">Step 2</span><BR><P>
 When Button 3 is pressed, it calls the WAN control API respectively<BR><P>
-* http://control.smarthon.cc/publish?id=0xfa240ac45917&msg=PinValue&value=600 
+* http://control.smarthon.cc/publish?id=`0xfa240ac45917`&msg=`PinValue`&value=`600` 
 ![auto_fit](images/Ch3/Ch3_2_app2.png)<P>
 
  

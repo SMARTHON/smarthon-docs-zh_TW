@@ -15,5 +15,5 @@ Click "![](images/3_Getstart/icon_more.png)" and choose "Extensions" in the pull
 Search "[https://github.com/smarthon/pxt-smartcity](https://github.com/smarthon/pxt-smartcity)" and click “smartcity”
 ![auto_fit](images/3_Getstart/getstart04.png)<P>
 <span id="subtitle">Step 5</span><BR><P>
-Extension “SmartCity” & “WiFi IoT:bit” package has been added successfully.<BR><P>
+Extension `SmartCity` & `WiFi IoT:bit` package has been added successfully.<BR><P>
 ![auto_fit](images/3_Getstart/getstart05.png)<P>

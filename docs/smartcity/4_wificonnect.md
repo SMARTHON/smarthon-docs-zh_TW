@@ -28,21 +28,22 @@ You can either setup a home router or a Wi-Fi hotspot from your mobile phone.<BR
 
 <span id="subtitle">Step 1: Initialize the IoT:bit</span><BR><P>
 Before you start, you need to initialize the IoT:bit, go to IoT:bit tab.<BR><P>
-* Snap “Initialize IoT:bit at OLED height: 64, width:128 Wifi info shown: true” to “on start”
+* Snap `Initialize IoT:bit at OLED height: 64, width:128 Wifi info shown: true` to `on start`
 ![auto_fit](images/4_ConnectWiFi/Wifi_p1.png)<P>
 
 <span id="subtitle">Step 2: Connect to the Wi-Fi</span><BR><P>
 After initializing, you can connect to the Wi-Fi<BR><P>
-* Snap “Set Wi-Fi to ssid pwd” to “on start”
-* Enter your Wi-Fi name and password. Here we set “wifi_name” as SSID and “12345678” as password.
+* Snap `Set Wi-Fi to ssid pwd` to `on start`
+* Enter your Wi-Fi name and password. Here we set “wifi_name” as `SSID` and “12345678” as `password`.
 ![auto_fit](images/4_ConnectWiFi/Wifi_p2.png)<P>
 
 <span id="subtitle">Step 3: Show the Heart if it is connected</span><BR><P>
-On WiFi connected” is an event handler. It will be triggered once after connected with WiFi.<BR><P>
-* Snap “On WiFi connected” to the stage
-* On “Basic” tab, snap “show icon heart inside “On WiFi connected”
+`On WiFi connected` is an event handler. It will be triggered once after connected with WiFi.<BR><P>
+* Snap `On WiFi connected` to the stage
+* On `Basic` tab, snap `show icon heart` inside `On WiFi connected`
 ![auto_fit](images/4_ConnectWiFi/Wifi_p3.png)<P>
 ![auto_fit](images/4_ConnectWiFi/Wifi_p4.png)<P>
+
 
 ## Result
 <HR>

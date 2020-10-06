@@ -38,7 +38,7 @@ Select “Documentation” ，Copy your Webhooks Key as follows:<BR><P>
 ![auto_fit](images/Ch2/Ch2_p1.png)<P>
 It will trigger the following function once after button A is clicked<BR><P>
 
-<span id="subtitle" >Send IFTTT key “”, event name “” value1””:</span><BR><P>
+<span id="subtitle" >`Send IFTTT key “”, event name “” value1””`:</span><BR><P>
 ![auto_fit](images/Ch2/Ch2_p2.png)<P>
 This function will trigger webhooks to IFTTT with the key provided<BR><P>
 a. Event name: webhooks event name<BR><P>
@@ -47,15 +47,15 @@ b. Value1,2,3: you can send values to IFTTT<BR><P>
 
 <span id="subtitle" >Step 1</span><BR><P>
 Before you start, you need to initialize IoT:bit and connect micro:bit to the internet. <BR><P>
-Select “IoT:bit” > “Initialize IoT:bit and OLED” and “Set WiFi to ssid…pwd”.<BR><P> 
+Select `IoT:bit` > `Initialize IoT:bit and OLED` and `Set WiFi to ssid…pwd`.<BR><P> 
 ![auto_fit](images/Ch2/Ch2_p3.png)<P>
 
 <span id="subtitle" >Step 2</span><BR><P>
-Select “Input” ->“on button A pressed” .<BR><P>
+Select `Input` >`on button A pressed` .<BR><P>
 ![auto_fit](images/Ch2/Ch2_p4.png)<P>
 
 <span id="subtitle" >Step 3</span><BR><P>
-Select “IoT:bit” > “Send IFTTT key….” <BR><P>
+Select `IoT:bit` > `Send IFTTT key….` <BR><P>
 Once button A is clicked, it will send IFTTT request (send an email to your email box) <BR><P>
 ![auto_fit](images/Ch2/Ch2_p5.png)<P>
 

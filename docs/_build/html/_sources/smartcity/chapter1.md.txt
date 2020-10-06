@@ -36,11 +36,11 @@ Open your web browser, go to https://thingspeak.com , select your channel > “A
 
 <span id="subtitle" >Step 1</span><P>
 Before you start, you need to initialize IoT:bit and connect micro:bit to the internet. <BR><P>
-Select “IoT:bit” > “Initialize IoT:bit and OLED” and “Set WiFi to ssid…pwd”. <BR><P>
+Select `IoT:bit` > `Initialize IoT:bit and OLED` and `Set WiFi to ssid…pwd`. <BR><P>
 ![auto_fit](images/Ch1/Ch1_p2.png)<P>
 
 <span id="subtitle" >Step 2</span><P>
-Snap if statement into forever, set if WiFi is connected.<BR><P>
+Snap `if` statement into `forever`, set `if WiFi is connected`.<BR><P>
 ![auto_fit](images/Ch1/Ch1_p3.png)<P>
 
 <span id="subtitle" >Step 3</span><P>

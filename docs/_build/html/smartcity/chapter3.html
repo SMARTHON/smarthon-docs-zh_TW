@@ -199,7 +199,7 @@ For creating IoT application, you can use App Inventor 2 to create web connectio
 <HR><p>API is one way to communicate between the objects on the Internet world. API is just like an “URL” which is website link.<BR><P>
 <img alt="auto_fit" src="../_images/Ch3_des3.png" /><P>
 This is the API you can use to control the micro:bit<BR><P>
-http://control.smarthon.cc/publish?id=DeviceID&amp;msg=ControlCommand</p>
+http://control.smarthon.cc/publish?id=<code class="docutils literal notranslate"><span class="pre">DeviceID</span></code>&amp;msg=<code class="docutils literal notranslate"><span class="pre">ControlCommand</span></code></p>
 </div>
 <div class="section" id="hardware-connect">
 <h2><span class="section-number">7.2. </span>Hardware connect<a class="headerlink" href="#hardware-connect" title="Permalink to this headline">¶</a></h2>
@@ -211,10 +211,10 @@ http://control.smarthon.cc/publish?id=DeviceID&amp;msg=ControlCommand</p>
 <HR><p>Goal: This example is to turn on/off micro:bit modules only.<BR><P></p>
 <p><span id="subtitle">Step 1</span><BR><P>
 After initializing, you can connect to the WiFi:<BR><P>
-Choose IoT:bit -&gt; Set Wi-Fi to ssid “”, pwd “”. Enter your Wi-Fi name and password<BR><P>
+Choose <code class="docutils literal notranslate"><span class="pre">IoT:bit</span></code> -&gt; <code class="docutils literal notranslate"><span class="pre">Set</span> <span class="pre">Wi-Fi</span> <span class="pre">to</span> <span class="pre">ssid</span> <span class="pre">“”,</span> <span class="pre">pwd</span> <span class="pre">“”</span></code>. Enter your Wi-Fi name and password<BR><P>
 <img alt="auto_fit" src="../_images/Ch3_p1.png" /><P></p>
 <p><span id="subtitle">Step 2</span><BR><P>
-“On WiFi connected” is an event handler.<BR><P>
+<code class="docutils literal notranslate"><span class="pre">On</span> <span class="pre">WiFi</span> <span class="pre">connected</span></code> is an event handler.<BR><P>
 It will be triggered once after connected with WiFi.<BR><P>
 <img alt="auto_fit" src="../_images/Ch3_p2.png" /><P></p>
 <p><span id="subtitle">Step 3: Set the Wi-Fi listening on Micro:bit WAN control command action</span><BR><P>
@@ -244,7 +244,7 @@ Set the program in app inventor 2, on “Blocks” <BR><P></p>
 <li><p>Take the block as below
 <img alt="auto_fit" src="../_images/Ch3_app2.png" /><P></p></li>
 <li><p>When Button 1 and 2 is pressed, it calls the WAN control API respectively</p></li>
-<li><p>http://control.smarthon.cc/publish?id=DeviceID&amp;msg=ControlCommand
+<li><p>http://control.smarthon.cc/publish?id=<code class="docutils literal notranslate"><span class="pre">DeviceID</span></code>&amp;msg=<code class="docutils literal notranslate"><span class="pre">ControlCommand</span></code>
 <img alt="auto_fit" src="../_images/Ch3_app3.png" /><P></p></li>
 </ul>
 </div>
@@ -271,8 +271,8 @@ After the WAN remote control is started, <BR><P></p>
 <div class="section" id="know-the-api-control-command-with-value">
 <h3><span class="section-number">7.6.1. </span>Know the API (control command with value)<a class="headerlink" href="#know-the-api-control-command-with-value" title="Permalink to this headline">¶</a></h3>
 <HR><ol class="simple">
-<li><p>http://control.smarthon.cc/publish?id=DeviceID&amp;msg=ControlCommand</p></li>
-<li><p>http://control.smarthon.cc/publish?id=DeviceID&amp;msg=ControlCommand&amp;value=Value</p></li>
+<li><p>http://control.smarthon.cc/publish?id=<code class="docutils literal notranslate"><span class="pre">DeviceID</span></code>&amp;msg=<code class="docutils literal notranslate"><span class="pre">ControlCommand</span></code> <BR><P></p></li>
+<li><p>http://control.smarthon.cc/publish?id=<code class="docutils literal notranslate"><span class="pre">DeviceID</span></code>&amp;msg=<code class="docutils literal notranslate"><span class="pre">ControlCommand</span></code>&amp;value=<code class="docutils literal notranslate"><span class="pre">Value</span></code> <BR><P></p></li>
 </ol>
 </div>
 <div class="section" id="programming-makecode">
@@ -295,7 +295,7 @@ Create a new project in App Inventor 2, on “Designer”. <BR><P></p>
 <p><span id="subtitle">Step 2</span><BR><P>
 When Button 3 is pressed, it calls the WAN control API respectively<BR><P></p>
 <ul class="simple">
-<li><p>http://control.smarthon.cc/publish?id=0xfa240ac45917&amp;msg=PinValue&amp;value=600
+<li><p>http://control.smarthon.cc/publish?id=<code class="docutils literal notranslate"><span class="pre">0xfa240ac45917</span></code>&amp;msg=<code class="docutils literal notranslate"><span class="pre">PinValue</span></code>&amp;value=<code class="docutils literal notranslate"><span class="pre">600</span></code>
 <img alt="auto_fit" src="../_images/Ch3_2_app2.png" /><P></p></li>
 </ul>
 </div>
