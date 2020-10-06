@@ -25,7 +25,6 @@ Electronics:
 <ul display='inline-block'>
 <li>micro:bit X1</li>
 <li>IoT:bit X1</li>
-<li>OLED X1</li>
 <li>USB Wire/Battery Holder</li>
 &nbsp;&nbsp;1. Light Sensor X1 (with 3-pin module wire)<BR>
 &nbsp;&nbsp;2. Distance Sensor X1 (with 4-pin module wire)<BR>
@@ -90,9 +89,9 @@ That’s say when there is car entering and there is vacancy inside the car park
 ![auto_fit](images/Case2/Case2_p4.png)<P>
 
 <span id="subtitle">Full Solution<BR><P>
-MakeCode: [https://makecode.microbit.org/_3tFXmYU3uKXW](https://makecode.microbit.org/#pub:_3tFXmYU3uKXW)<BR><P>
+MakeCode: [https://makecode.microbit.org/_1AtWbYbjDdHg](https://makecode.microbit.org/#pub:_1AtWbYbjDdHg)<BR><P>
 You could also download the program from the following website:<BR>
-<iframe src="https://makecode.microbit.org/#pub:_3tFXmYU3uKXW" width="100%" height="500" frameborder="0"></iframe>
+<iframe src="https://makecode.microbit.org/#pub:_1AtWbYbjDdHg" width="100%" height="500" frameborder="0"></iframe>
 
 ## Result
 <HR>

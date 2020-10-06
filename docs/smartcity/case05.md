@@ -33,7 +33,7 @@ Electronics:
 <li>IoT:bit X1</li>
 <li>OLED extension wire X1</li>
 <li>USB Wire/Battery Holder </li>
-&nbsp;&nbsp;1. Distance Sensor X1 (wWith 4-pin mModule wire) <BR>
+&nbsp;&nbsp;1. Distance Sensor X1 (With 4-pin mModule wire) <BR>
 </ul>
 </td></tr>
 <tr>
