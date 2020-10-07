@@ -15,7 +15,7 @@ Make a noise detection point to detect the noise volume near the roadside using 
 It is a system to detect noise near the road as noise pollution caused by cars on the road seriously affect the living standard of people. By installing a monitor to detect the noise volume near the roadside can help engineer to gather noise information and find solution to solve the problem in the future.<BR><P>
 
 <span id="subtitle">Noise detection operation</span><P>
-The sound sensor can detect the volume in dB near the roadside and show the volume on the OLED. A bar graph of sound intensity will be shown on the micro:bit.<BR><P>
+The noise sensor can detect the volume in dB near the roadside and show the volume on the OLED. A bar graph of sound intensity will be shown on the micro:bit.<BR><P>
 
 
 
@@ -30,7 +30,7 @@ Electronics:
 <li>IoT:bit (with OLED) X1</li>
 <li>OLED extension wire X1</li>
 <li>3-pin module wire X1</li>
-&nbsp;&nbsp;1. Sound Sensor X1<BR>
+&nbsp;&nbsp;1. Noise Sensor X1<BR>
 
 </ul>
 </td></tr>
@@ -56,7 +56,7 @@ Electronics:
 Attach the OLED to D1 model with M2 x10mm screws and nuts.<BR><P>
 ![pic](images/Case4/Case4_po1.png)<P>
 <span id="subtitle">Step 2</span><P>
-Attach sound sensor to D1 model with M4 screws and nuts.<BR><P>
+Attach noise sensor to D1 model with M4 screws and nuts.<BR><P>
 ![pic](images/Case4/Case4_po2.png)<P>
 <span id="subtitle">Step 3</span><P>
 Put together all the cardboard parts (D1-D2).<BR><P>
