@@ -21,10 +21,10 @@ When WAN commands are received from WAN (eg. IFTTT), micro:bit will get the comm
 <table><tr><td>
 Electronics:
 <ul display='inline-block'>
-<li>micro:bit (with OLED) X1</li>
-<li>IoT:bit X1</li>
-<li>USB Wire/Battery Holder </li>
-&nbsp;&nbsp;1. White LED Light X1 (With 3-pin Module wire)<BR>
+<li>micro:bit X1</li>
+<li>IoT:bit(with OLED) X1</li>
+<li>3-pin Module wire X1</li>
+&nbsp;&nbsp;1. White LED Light X1<BR>
 </ul>
 </td></tr>
 <tr>

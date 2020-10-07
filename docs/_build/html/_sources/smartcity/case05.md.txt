@@ -1,6 +1,7 @@
 # Case 05: Car speed monitoring 
 
 Level: ![level](images/level3.png)
+![pic_70](images/Case5/case-05.png)<P>
 
 ## Goal
 <HR>
@@ -29,11 +30,11 @@ A bar graph on micro:bit LED is shown to indicate the instant speed of the cars.
 <table><tr><td>
 Electronics:
 <ul display='inline-block'>
-<li>micro:bit (with OLED) X1</li>
-<li>IoT:bit X1</li>
+<li>micro:bit X1</li>
+<li>IoT:bit(with OLED) X1</li>
 <li>OLED extension wire X1</li>
-<li>USB Wire/Battery Holder </li>
-&nbsp;&nbsp;1. Distance Sensor X1 (With 4-pin mModule wire) <BR>
+<li>4-pin Module wire X1</li>
+&nbsp;&nbsp;1. Distance Sensor X1 <BR>
 </ul>
 </td></tr>
 <tr>

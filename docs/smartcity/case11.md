@@ -22,10 +22,10 @@ Also, micro:bit can receive WAN commands from WAN (eg. IFTTT), the the micro:bit
 Electronics:
 <ul display='inline-block'>
 <li>micro:bit X1</li>
-<li>IoT:bit X1</li>
-<li>USB Wire/Battery Holder </li>
+<li>IoT:bit(with OLED) X1</li>
+<li>3-pin module wire X1 </li>
 &nbsp;&nbsp;1. 180ᵒ Servo X1<BR>
-&nbsp;&nbsp;2. Raindrop Sensor (with 3-pin module wire) X1<BR>
+&nbsp;&nbsp;2. Raindrop Sensor X1<BR>
 </ul>
 </td></tr>
 <tr>

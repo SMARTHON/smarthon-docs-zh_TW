@@ -24,9 +24,8 @@ Electronics:
 <ul display='inline-block'>
 
 <li>micro:bit X1</li>
-<li>Smarthon IoT:bit X1</li>
-<li>USB Wire/Battery Holder </li>
-&nbsp;&nbsp;1. 180ᵒ servo<BR>
+<li>IoT:bit(with OLED) X1</li>
+&nbsp;&nbsp;1. 180ᵒ servo X1<BR>
 </ul>
 </td></tr>
 <tr>
@@ -35,8 +34,8 @@ Electronics:
 <li>House Model H1-H2 X1</li>
 <li>L-shaped stand X1</li>
 <li>Paper Clip X1</li>
-<li>M2 Screw x 10mm X2</li>
-<li>M2 Nut X2</li>
+<li>M3 Screw x 10mm X2</li>
+<li>M3 Nut X2</li>
 <li>Servo M2 sharp screw X1</li>
 </ul>
 </td></tr>

@@ -1,5 +1,8 @@
 # Case 04: Urban noise detection
 
+Level: ![level](images/level1.png)
+![pic_70](images/Case4/case-04.png)<P>
+
 ## Goal
 <HR>
 
@@ -14,6 +17,8 @@ It is a system to detect noise near the road as noise pollution caused by cars o
 <span id="subtitle">Noise detection operation</span><P>
 The sound sensor can detect the volume in dB near the roadside and show the volume on the OLED. A bar graph of sound intensity will be shown on the micro:bit.<BR><P>
 
+
+
 ## Part List
 <HR>
 
@@ -23,9 +28,9 @@ Electronics:
 
 <li>micro:bit X1</li>
 <li>IoT:bit (with OLED) X1</li>
-<li>OLED extension wire x1</li>
-<li>USB Wire/Battery Holder</li>
-&nbsp;&nbsp;1. Sound Sensor X1 (With 3-pin module wire)<BR>
+<li>OLED extension wire X1</li>
+<li>3-pin module wire X1</li>
+&nbsp;&nbsp;1. Sound Sensor X1<BR>
 
 </ul>
 </td></tr>

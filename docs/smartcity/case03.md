@@ -1,6 +1,8 @@
 # Case 03: Garbage disposal system 
 
 Level: ![level](images/level2.png)
+![pic_70](images/Case3/case-03.png)<P>
+
 
 ## Goal
 <HR>
@@ -15,6 +17,7 @@ LED light on the garbage bin can show people the amount of garbage inside the ga
 
 <span id="subtitle">Garbage disposal system operation</span><P>
 The distance sensor should be able to sense the amount of garbage is inside the garbage bin. Multi-colour LED can be used to emit different colour of light (green and red light), which represent the emptiness of the garbage bin.<BR><P>
+
 
 ## Part List
 <HR>
