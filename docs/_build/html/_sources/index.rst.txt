@@ -16,4 +16,4 @@ Quick Start Guide
     smartcity/index
     smarthouse/index
     smartplant/index
-    IoTbit/index
+    Sensors_and_actuators/index

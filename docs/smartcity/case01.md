@@ -1,7 +1,7 @@
 # Case 01: Automated Smart Playground Lamp
 
 Level: ![level](images/level1.png)
-![pic_70](images/Case1/case-01.png)<P>
+![auto_fit](images/Case1/case-01.png)<P>
 
 
 ## Goal
@@ -20,7 +20,7 @@ auto-light can help the earth save electricity. When no one passes by, the light
 Motion sensor should be able to detect if there are people moving in the playground.<BR>
 If there are people moving in the playground, the LED light should turn on, vice versa.<BR>
 
-![pic_70](images/Case1/Case1-concept-diagram.png)<P>
+![pic_70](images/Case1/Concept-diagram-Case1.png)<P>
 
 ## Part List
 <HR>

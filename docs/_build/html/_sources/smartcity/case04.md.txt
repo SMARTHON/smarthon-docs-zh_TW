@@ -1,7 +1,7 @@
 # Case 04: Urban noise detection
 
 Level: ![level](images/level1.png)
-![pic_70](images/Case4/case-04.png)<P>
+![auto_fit](images/Case4/case-04.png)<P>
 
 ## Goal
 <HR>
@@ -16,7 +16,7 @@ It is a system to detect noise near the road as noise pollution caused by cars o
 
 <span id="subtitle">Noise detection operation</span><P>
 The noise sensor can detect the volume in dB near the roadside and show the volume on the OLED. A bar graph of sound intensity will be shown on the micro:bit.<BR><P>
-
+![pic_70](images/Case4/Concept-diagram-Case4.png)<P>
 
 
 ## Part List

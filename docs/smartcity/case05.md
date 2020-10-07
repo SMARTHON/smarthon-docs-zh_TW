@@ -1,7 +1,7 @@
 # Case 05: Car speed monitoring 
 
 Level: ![level](images/level3.png)
-![pic_70](images/Case5/case-05.png)<P>
+![auto_fit](images/Case5/case-05.png)<P>
 
 ## Goal
 <HR>
@@ -24,6 +24,7 @@ For car speed < 0, it is the exceptional case (the car turns left/right and leav
 A bar graph on micro:bit LED is shown to indicate the instant speed of the cars. <BR><P>
 ![auto_fit](images/Case5/Case5_des2.png)<P>
 
+![pic_70](images/Case5/Concept-diagram-Case5.png)<P>
 ## Part List
 <HR>
 

@@ -1,7 +1,7 @@
 # Case 02: Smart Car park Access Barrier
 
 Level: ![level](images/level2.png)
-![pic_70](images/Case2/case-02.png)<P>
+![auto_fit](images/Case2/case-02.png)<P>
 
 ## Goal
 <HR>
@@ -17,7 +17,7 @@ Smart Car park Access Barrier is used to allow people to live conveniently. It c
 <span id="subtitle">Car park gate operation</span><P>
 The car park gate open and close operation is controlled by 180ᵒ servo. It will be opened if there are vacancies in the car park (i.e. detected by light sensor) and cars near the car park gate (i.e. detected by distance sensor). Otherwise, the gate will be closed.<BR><P>
 When there are no vacancies (detected by light sensor), then the gate will keep closed.<BR><P>
-![pic_70](images/Case2/Case2-concept-diagram.png)<P>
+![pic_70](images/Case2/Concept-diagram-Case2.png)<P>
 
 
 ## Part List
