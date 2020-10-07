@@ -21,6 +21,9 @@ auto-light can help the earth save electricity. When no one passes by, the light
 Motion sensor should be able to detect if there are people moving in the playground.<BR>
 If there are people moving in the playground, the LED light should turn on, vice versa.<BR>
 
+![pic_70](images/Case1/Cases-concept-diagram.png)<P>
+
+
 ## Part List
 <HR>
 
