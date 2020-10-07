@@ -28,9 +28,10 @@ Electronics:
 
 <li>micro:bit X1</li>
 <li>IoT:bit X1</li>
-<li>USB Wire/Battery Holder</li>
-&nbsp;&nbsp;1. Multi-colour LED (WS2812) X1 (with 3-pin module wire)<BR>
-&nbsp;&nbsp;2. Distance Sensor X1 (with 4-pin module wire)<BR>
+<li>3-pin module wire X1</li>
+<li>4-pin module wire X1</li>
+&nbsp;&nbsp;1. Multi-colour LED (WS2812) X1 <BR>
+&nbsp;&nbsp;2. Distance Sensor X1 <BR>
 </ul>
 </td></tr>
 <tr>
