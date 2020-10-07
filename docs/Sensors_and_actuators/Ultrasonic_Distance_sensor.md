@@ -1,18 +1,55 @@
-# Introduction & Features
+# Ultrasonic Distance Sensor US-025A
 
+![pic_70](images/Ultrasonic_Distance_Sensor_0.png)
 ## Introduction
-Smarthon IoT Bit is an IoT orientated expansion board for Micro:bit. With the help of this, Micro:bit able to connect to different sensors or actuators without welding and start to use the internet services. 
-<P>
-It provides 13 regular GVS socket, allow user to connect batch of sensors at the same time to receive group of data. For some special purpose sensors/actuator, such distance sensor, motor and OLED display, an independent socket are offered, so not only the digital and analog I/O device can use in project, but also I2C device become an option to the Micro:bit from now on. Last but not least, a buzzer is built-in on the board to provide sound generation.
-<P>
-Several of wireless modules are compatible with the Smarthon IoT Bit, such Bluetooth and Wi-Fi modules. Beside of the commonly used Wi-Fi module ESP8266, the advanced version ESP32 is available to use on the IoT Bit too. After connect to internet, user able to enjoy the abundant internet resource to create the IoT project.
+The Distance sensor using two ultrasonic sensors to detect the distance between current position and object. In most situation, the availability of ultrasonic allow it provided quick and accurate result.
 <P>
 
-## Features
-* Exchangeable wireless modular design (ESP8266, ESP32, BLE)
-* Extended I/O pin from Mirco:bit with GVS socket
-* Independent socket for OLED screen, Distance sensor and Motor
-* Separate Servo pin from ESP module
-* On board Buzzer with on/off switch
-* Various types of power supply (USB, XH2.54 battery port, DC jack) 
+
+## The principle
+The Distance sensor use the ultrasonic to measure the distance between the sensor and object. When the sensor emit a wave of ultrasonic wave, it will start passing thought the air until it hit the object, then rebound and back to the receiver. The sound wave travel in the air is approximately 340meter per second, with it, use the interval time between sent and received can calculate the distance. <P>
+![auto_fit](images/Ultrasonic_Distance_Sensor_1.png)
+
+
+## Specification 
+* Supply voltage: 5V
+* Working Frequency: 40kHz
+* Range: 3cm to 4m 
+* MeasuringAngle: <15°
+
+## Pinout Diagram
+
+|Pin|Function|
+|--|--|
+|GND|Ground|
+|VCC|Voltage Supply|
+|Trig|Starting trigger signal Input|
+|Echo|Response signal Output|
+
+## Outlook and Dimension
+![pic_70](images/Ultrasonic_Distance_Sensor_2.png)
+
+Size: 41 X 25mm
+
+## Quick to Start/Sample
+
+* Connect the sensor to development board (using wire)
+![auto_fit](images/Ultrasonic_Distance_Sensor_3.png)<P>
+
+* Open Makecode, using the https://github.com/smarthon/pxt-smartcity PXT <P>
+![auto_fit](images/Ultrasonic_Distance_Sensor_4.png)<P>
+
+* Initial the OLED and show the distance value on the OLED screen
+![auto_fit](images/Ultrasonic_Distance_Sensor_5.png)
+
+## Result
+
+The Distance will be increasing when moving out the hand from sensor
+![pic_70](images/Ultrasonic_Distance_Sensor_6.png)
+
+
+## FAQ
+
+Q: Why I cannot get the correct reading in far distance?<BR>
+A: Because of the ultrasonic sender and receiver both on the board, limited by the physical reason, the reflection angle of the object will affect the result correctly, especially when the distance is far, little reflection angle can create large displacement of mainstream, so please adjust the angle of detection.
 
