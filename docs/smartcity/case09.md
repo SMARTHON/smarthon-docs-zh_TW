@@ -15,6 +15,7 @@ Use app inventor to create an APP to control the door of the house. <BR><P>
 App Inventor allows user to develop their own app for Android phones by simple programming and design work.<BR><P>
 <span id="subtitle">Smart House door operation</span><BR><P>
 When the micro:bit receives the signal “opendoor” from the app, the 180o servo will turn for 180o to open the door. When the micro:bit receives the signal “closedoor” from the app, the 180o servo will turn back 180o to close the door.<BR><P>
+![pic_90](images/Case9/Concept-diagram-Case9.png)<P>
 
 ## Part List
 <HR>

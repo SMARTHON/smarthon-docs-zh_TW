@@ -3,6 +3,11 @@ img[alt="auto_fit"]{
 	display:block;
 }
 
+img[alt="pic_90"] { 
+  max-width:  90%;
+  display: block;
+}
+
 img[alt="pic_80"] { 
   max-width:  80%;
   display: block;
