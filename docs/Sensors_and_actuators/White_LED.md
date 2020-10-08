@@ -1,18 +1,53 @@
-# Introduction & Features
+# White LED
 
+![pic_70](images/White_LED_0.png)
 ## Introduction
-Smarthon IoT Bit is an IoT orientated expansion board for Micro:bit. With the help of this, Micro:bit able to connect to different sensors or actuators without welding and start to use the internet services. 
-<P>
-It provides 13 regular GVS socket, allow user to connect batch of sensors at the same time to receive group of data. For some special purpose sensors/actuator, such distance sensor, motor and OLED display, an independent socket are offered, so not only the digital and analog I/O device can use in project, but also I2C device become an option to the Micro:bit from now on. Last but not least, a buzzer is built-in on the board to provide sound generation.
-<P>
-Several of wireless modules are compatible with the Smarthon IoT Bit, such Bluetooth and Wi-Fi modules. Beside of the commonly used Wi-Fi module ESP8266, the advanced version ESP32 is available to use on the IoT Bit too. After connect to internet, user able to enjoy the abundant internet resource to create the IoT project.
+White LED module build in a high-performance LED for different usage, such illuminate, express program status, or make visual presentation. User just need to provide voltage, then can control the brightness by the corresponding input.
 <P>
 
-## Features
-* Exchangeable wireless modular design (ESP8266, ESP32, BLE)
-* Extended I/O pin from Mirco:bit with GVS socket
-* Independent socket for OLED screen, Distance sensor and Motor
-* Separate Servo pin from ESP module
-* On board Buzzer with on/off switch
-* Various types of power supply (USB, XH2.54 battery port, DC jack) 
+
+## The principle
+The LED is a two-lead semiconductor light source. Under electroluminescence theory, when a suitable voltage is applied to the leads, electrons are able to release energy in the form of photons, which means emit of light. The color of light emitted depend on the energy level drop when doing electroluminescence, it is relative to material of the semiconductor.<P>
+![auto_fit](images/White_LED_1.png)
+
+
+
+## Specification 
+* Operate voltage: 3 - 5V
+* Power consumption: 0.06W
+* Efficiency: 90 lm/W
+
+## Pinout Diagram
+
+|Pin|Function|
+|--|--|
+|G|Ground|
+|V|Voltage Supply|
+|S|Signal Input(Digital/Analog)|
+
+## Outlook and Dimension
+![pic_70](images/White_LED_2.png)
+
+Size: 25mm X 25mm
+
+## Quick to Start/Sample
+
+* Connect the sensor to development board (direct plugin or using wire)
+![auto_fit](images/White_LED_3.png)<P>
+
+* Open Makecode, using the https://github.com/smarthon/pxt-smartcity PXT <P>
+![auto_fit](images/White_LED_4.png)<P>
+
+* Set different buttons to on/off the LED
+![auto_fit](images/White_LED_5.png)
+
+## Result
+Press A button the turn off the LED (set to 0)
+![auto_fit](images/White_LED_6.png)
+
+Press B button the turn on the LED (set to 1023)
+![auto_fit](images/White_LED_7.png)
+
+
+
 
