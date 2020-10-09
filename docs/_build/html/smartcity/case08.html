@@ -212,7 +212,8 @@
 <HR><p><span id="subtitle">How to send signal to another micro:bit?</span><P>
 Micro:bit (sender and receiver) are connected to the same channel so wifi message can be sent between the micro:bit. Such that when the sender micro:bit sends a Wi-Fi message “trafficjam” to receiver micro:bit. When receiver micro:bit receives a WiFi message “trafficjam”, the connected traffic light will turn red.<BR><P></p>
 <p><span id="subtitle">Sender micro:bit operation</span><P>
-When the light value detected is too low, this would represent there is a traffic jam and and a ‘trafficjam’ wifi message to another microbit. When the light value detected is high, this would represent there is no traffic jam and send a “nojam” wifi message to another micro:bit.<BR><P></p>
+When the light value detected is too low, this would represent there is a traffic jam and and a ‘trafficjam’ wifi message to another microbit. When the light value detected is high, this would represent there is no traffic jam and send a “nojam” wifi message to another micro:bit.<BR><P>
+<img alt="pic_90" src="../_images/Concept-diagram-Case8_sender.png" /><P></p>
 </div>
 <div class="section" id="part-list">
 <h3><span class="section-number">17.1.3. </span>Part List<a class="headerlink" href="#part-list" title="Permalink to this headline">¶</a></h3>
@@ -290,7 +291,8 @@ Once the light intensity is too low, it indicates that there is a traffic jam on
 <HR><p><span id="subtitle">How to receive signal from another micro:bit?</span><P>
 Micro:bit (sender and receiver) are connected to the same channel so wifi message can be sent between the micro:bit. If receiver micro:bit receives a WiFi message “trafficjam” from sender, the connected traffic light will turn red.<BR><P></p>
 <p><span id="subtitle">Receiver micro:bit operation</span><P>
-When a wifi message “trafficjam” is received, it means there is traffic jam forward. The traffic LED Module will turn red. When a wifi message “nojam” is received, it means there is no traffic jam forward. The traffic LED Module will turn green. By using smart traffic light, the problem of traffic jam can be reduced as automatic traffic control is used.<BR><P></p>
+When a wifi message “trafficjam” is received, it means there is traffic jam forward. The traffic LED Module will turn red. When a wifi message “nojam” is received, it means there is no traffic jam forward. The traffic LED Module will turn green. By using smart traffic light, the problem of traffic jam can be reduced as automatic traffic control is used.<BR><P>
+<img alt="pic_90" src="../_images/Concept-diagram-Case8_receiver.png" /><P></p>
 </div>
 <div class="section" id="id3">
 <h3><span class="section-number">17.2.3. </span>Part List<a class="headerlink" href="#id3" title="Permalink to this headline">¶</a></h3>

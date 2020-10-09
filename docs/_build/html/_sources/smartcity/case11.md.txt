@@ -14,6 +14,7 @@ People no long need to rush up to the roof when raining as the clothes rack can 
 Smart roof garden operation
 When raindrop sensor sensed that it is raining, it will send a signal to micro:bit and therefore the clothes rack will be opened. When there is no rain, the clothes rack will be closed.
 Also, micro:bit can receive WAN commands from WAN (eg. IFTTT), the the micro:bit will get the command name. If the command name is “rain”, the servo will turn to 90ᵒ and the rack will be opened. If the command name is “clear”, servo will turn to 180ᵒ and the rack will be closed.
+![pic_90](images/Case11/Concept-diagram-Case11.png)<P>
 
 ## Part List
 <HR>

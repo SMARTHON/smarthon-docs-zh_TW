@@ -19,6 +19,7 @@ Micro:bit (sender and receiver) are connected to the same channel so wifi messag
 
 <span id="subtitle">Sender micro:bit operation</span><P>
 When the light value detected is too low, this would represent there is a traffic jam and and a ‘trafficjam’ wifi message to another microbit. When the light value detected is high, this would represent there is no traffic jam and send a “nojam” wifi message to another micro:bit.<BR><P>
+![pic_90](images/Case8/Concept-diagram-Case8_sender.png)<P>
 
 ### Part List
 <HR>
@@ -121,7 +122,7 @@ Micro:bit (sender and receiver) are connected to the same channel so wifi messag
 
 <span id="subtitle">Receiver micro:bit operation</span><P>
 When a wifi message “trafficjam” is received, it means there is traffic jam forward. The traffic LED Module will turn red. When a wifi message “nojam” is received, it means there is no traffic jam forward. The traffic LED Module will turn green. By using smart traffic light, the problem of traffic jam can be reduced as automatic traffic control is used.<BR><P>
-
+![pic_90](images/Case8/Concept-diagram-Case8_receiver.png)<P>
 
 ### Part List
 <HR>
