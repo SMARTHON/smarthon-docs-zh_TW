@@ -23,49 +23,24 @@ When there are no vacancies (detected by light sensor), then the gate will keep 
 ## Part List
 <HR>
 
-<table><tr><td>
-Electronics:
-<ul display='inline-block'>
-<li>micro:bit X1</li>
-<li>IoT:bit X1</li>
-<li>3-pin module wire X1</li>
-<li>4-pin module wire X1</li>
-&nbsp;&nbsp;1. Light Sensor X1 <BR>
-&nbsp;&nbsp;2. Distance Sensor X1<BR>
-&nbsp;&nbsp;3. 180° Servo X1<BR>
-</ul>
-</td></tr>
-<tr>
-<td>Model:
-<ul>
-<li>Distance Sensor Stand Model B1-B3 X1</li>
-<li>M4 Screws X4</li>
-<li>M4 Nuts X4</li>
-<li>M2 Screw x 10mm X2</li>
-<li>M2 Nuts X2</li>
-<li>Servo M2 Sharp Screw X1</li>
-</ul>
-</td></tr>
-<tr><td>Equipment:
-<ul><li>ScrewDriver X1</li></ul></td></tr></table>
-
 ![auto_fit](images/Case2/Case2_parts.png)<P>
 
 ## Assembly step
 <HR>
 
 <span id="subtitle">Step 1</span><BR><P>
-Attach the distance sensor to B1 model with M4 screws and nuts<BR><P>
-![auto_fit](images/Case2/Case2_po1.png)<P>
+Attach the distance sensor to B1 model with M4 screws and nuts. <BR><P>
+![auto_fit](images/Case2/Case2_ass1.png)<P>
 <span id="subtitle">Step 2</span><BR><P>
 Attach the servo to B1 model with M2 x10mm screws and nuts<BR><P>
-![auto_fit](images/Case2/Case2_po2.png)<P>
+![auto_fit](images/Case2/Case2_ass2.png)<P>
 <span id="subtitle">Step 3</span><BR><P>
-Attach the B2 model to the servo with servo M2 sharp screw.<BR><P>
-![auto_fit](images/Case2/Case2_po3.png)<P>
+Attach the B2 model to the servo with servo M2 sharp screw. Put B3 model onto B1 model.<BR><P>
+![auto_fit](images/Case2/Case2_ass3.png)<P>
 <span id="subtitle">Step 4</span><BR><P>
-Put B3 model onto B1 model. <BR><P>
-![auto_fit](images/Case2/Case2_po4.png)<P>
+Assembly completed! <BR><P>
+![auto_fit](images/Case2/Case2_ass4.png)<P>
+
 
 ## Hardware connect
 <HR>
