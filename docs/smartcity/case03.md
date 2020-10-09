@@ -22,29 +22,6 @@ The distance sensor should be able to sense the amount of garbage is inside the 
 ## Part List
 <HR>
 
-<table><tr><td>
-Electronics:
-<ul display='inline-block'>
-
-<li>micro:bit X1</li>
-<li>IoT:bit X1</li>
-<li>3-pin module wire X1</li>
-<li>4-pin module wire X1</li>
-&nbsp;&nbsp;1. Multi-colour LED (WS2812) X1 <BR>
-&nbsp;&nbsp;2. Distance Sensor X1 <BR>
-</ul>
-</td></tr>
-<tr>
-<td>Model:
-<ul>
-<li>Garbage disposal Model C1-C2 X1</li>
-<li>M4 Screw X6</li>
-<li>M4 Nuts X6</li>
-</ul>
-</td></tr>
-<tr><td>Equipment:
-<ul><li>ScrewDriver X1</li></ul></td></tr></table>
-
 ![pic](images/Case3/Case3_parts.png)<P>
 
 ## Assembly step
