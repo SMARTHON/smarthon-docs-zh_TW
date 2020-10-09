@@ -52,16 +52,16 @@ Electronics:
 
 <span id="subtitle">Step1</span><P>
 Attach the Multi-colour LED to C1 model with M4 screws and nuts.<BR><P>
-![pic](images/Case3/Case3_op1.png)<P>
-![pic](images/Case3/Case3_op2.png)<P>
+![pic](images/Case3/Case3_ass1.png)<P>
 <span id="subtitle">Step 2</span><P>
 Attach the distance sensor to C2 model with M4 screw and nuts.<BR><P>
-![pic](images/Case3/Case3_op3.png)<P>
-![pic](images/Case3/Case3_op4.png)<P>
+![pic](images/Case3/Case3_ass2.png)<P>
 <span id="subtitle">Step 3</span><P>
 Put together all the cardboard parts (C1-C2).<BR><P>
-![pic](images/Case3/Case3_op5.png)<P>
-![pic](images/Case3/Case3_op6.png)<P>
+![pic](images/Case3/Case3_ass3.png)<P>
+<span id="subtitle">Step 4</span><P>
+Assembly completed!<BR><P>
+![pic](images/Case3/Case3_ass4.png)<P>
 
 ## Hardware connect
 <HR>

@@ -1,6 +1,7 @@
 # IoT Case 06: Weather Station 
 
 Level: ![level](images/level2.png)
+![auto_fit](images/Case6/case-06.png)<P>
 
 ## Goal
 <HR>
