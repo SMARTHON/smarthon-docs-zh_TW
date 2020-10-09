@@ -1,6 +1,7 @@
 # IoT Case 07: Smart defense system
 
 Level: ![level](images/level3.png)
+![auto_fit](images/Case7/case-07.png)<P>
 
 ## Goal
 <HR>

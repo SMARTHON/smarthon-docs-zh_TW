@@ -32,7 +32,7 @@ If there are people moving in the playground, the LED light should turn on, vice
 <HR>
 
 <span id="subtitle">Step 1</span><BR><P>
-Attach motion sensor and white LED to A1 model with M4 screws and nuts.<BR><P>
+Attach motion sensor and white LED to A1 model with M4 * 10mm screws and nuts.<BR><P>
 ![auto_fit](images/Case1/Case1_ass1.png)<P>
 <span id="subtitle">Step 2</span><BR><P>
 Assembly completed!<BR><P>

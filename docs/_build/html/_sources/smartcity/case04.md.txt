@@ -22,45 +22,23 @@ The noise sensor can detect the volume in dB near the roadside and show the volu
 ## Part List
 <HR>
 
-<table><tr><td>
-Electronics:
-<ul display='inline-block'>
-
-<li>micro:bit X1</li>
-<li>IoT:bit (with OLED) X1</li>
-<li>OLED extension wire X1</li>
-<li>3-pin module wire X1</li>
-&nbsp;&nbsp;1. Noise Sensor X1<BR>
-
-</ul>
-</td></tr>
-<tr>
-<td>Model:
-<ul>
-<li>Noise detection stand Model D1-D2 X1</li>
-<li>M4 Screws X2</li>
-<li>M4 Nuts X2</li>
-<li>M2 Screws X4</li>
-<li>M2 Nuts X4</li>
-</ul>
-</td></tr>
-<tr><td>Equipment:
-<ul><li>ScrewDriver X1</li></ul></td></tr></table>
-
 ![pic](images/Case4/Case4_parts.png)<P>
 
 ## Assembly step 
 <HR>
 
 <span id="subtitle">Step 1</span><P>
-Attach the OLED to D1 model with M2 x10mm screws and nuts.<BR><P>
-![pic](images/Case4/Case4_po1.png)<P>
+Attach the OLED to D1 model with M2 * 10mm screws and nuts.<BR><P>
+![pic](images/Case4/Case4_ass1.png)<P>
 <span id="subtitle">Step 2</span><P>
-Attach noise sensor to D1 model with M4 screws and nuts.<BR><P>
-![pic](images/Case4/Case4_po2.png)<P>
+Attach noise sensor to D1 model with M4 * 10mm screws and nuts.<BR><P>
+![pic](images/Case4/Case4_ass2.png)<P>
 <span id="subtitle">Step 3</span><P>
 Put together all the cardboard parts (D1-D2).<BR><P>
-![pic](images/Case4/Case4_po3.png)<P>
+![pic](images/Case4/Case4_ass3.png)<P>
+<span id="subtitle">Step 4</span><P>
+Assembly completed!<BR><P>
+![pic](images/Case4/Case4_ass4.png)<P>
 
 ## Hardware connect
 <HR>

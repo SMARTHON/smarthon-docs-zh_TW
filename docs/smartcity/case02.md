@@ -29,13 +29,13 @@ When there are no vacancies (detected by light sensor), then the gate will keep 
 <HR>
 
 <span id="subtitle">Step 1</span><BR><P>
-Attach the distance sensor to B1 model with M4 screws and nuts. <BR><P>
+Attach the distance sensor to B1 model with M4 * 10mm screws and nuts. <BR><P>
 ![auto_fit](images/Case2/Case2_ass1.png)<P>
 <span id="subtitle">Step 2</span><BR><P>
-Attach the servo to B1 model with M2 x10mm screws and nuts<BR><P>
+Attach the servo to B1 model with M2 * 10mm screws and nuts<BR><P>
 ![auto_fit](images/Case2/Case2_ass2.png)<P>
 <span id="subtitle">Step 3</span><BR><P>
-Attach the B2 model to the servo with servo M2 sharp screw. Put B3 model onto B1 model.<BR><P>
+Attach the B2 model to the servo with servo M2 * 7.5mm sharp screw. Put B3 model onto B1 model.<BR><P>
 ![auto_fit](images/Case2/Case2_ass3.png)<P>
 <span id="subtitle">Step 4</span><BR><P>
 Assembly completed! <BR><P>
