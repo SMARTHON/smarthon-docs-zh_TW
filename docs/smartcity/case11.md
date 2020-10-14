@@ -1,6 +1,7 @@
 # IoT Case 11: Roof garden clothes rack
 
 Level: ![level](images/level5.png)
+![auto_fit](images/Case11/case-11.png)<P>
 
 ## Goal
 <HR>

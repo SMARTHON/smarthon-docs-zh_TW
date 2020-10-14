@@ -1,7 +1,7 @@
 # IoT Case 08: Automated Traffic Light
 
 Level: ![level](images/level3.png)
-
+![auto_fit](images/Case8/case-08.png)<P>
 
 ## Sender
 <HR>
@@ -23,18 +23,6 @@ When the light value detected is too low, this would represent there is a traffi
 
 ### Part List
 <HR>
-
-<table><tr><td>
-Electronics:
-<ul display='inline-block'>
-<li>micro:bit X1</li>
-<li>IoT:bit (with OLED) X1</li>
-<li>3-pin module wire X1</li>
-&nbsp;&nbsp;1. Light Sensor X1<BR>
-</ul>
-</td></tr>
-<tr><td>Equipment:
-<ul><li>ScrewDriver X1</li></ul></td></tr></table>
 
 ![auto_fit](images/Case8/Case8a_parts.png)<P>
 
@@ -127,41 +115,18 @@ When a wifi message “trafficjam” is received, it means there is traffic jam 
 ### Part List
 <HR>
 
-<table><tr><td>
-Electronics:
-<ul display='inline-block'>
-<li>micro:bit X1</li>
-<li>IoT:bit(with OLED) X1</li>
-<li>3-pin module wire X1 </li>
-&nbsp;&nbsp;1. Traffic LED Module X1<BR>
-</ul>
-</td></tr>
-<tr>
-<td>Model:
-<ul>
-<li>Traffic light stand Model G1-G2 X1</li>
-<li>M4 Screws X2</li>
-<li>M4 Nuts X2</li>
-</ul>
-</td></tr>
-<tr><td>Equipment:
-<ul><li>ScrewDriver X1</li></ul></td></tr></table>
-
 ![auto_fit](images/Case8/Case8b_parts.png)<P>
 
 ### Assembly step
 <HR>
 
 <span id="subtitle">Step 1</span><P>
-Attach the Traffic light Module to G1 model using M4 screw and nut.<BR><P>
-![auto_fit](images/Case8/Case8b_po1.png)<P>
-
+Attach the Traffic light Module to G1 model using M4 screw and nut. Put together all the cardboard parts (G1-G2)<BR><P>
+![auto_fit](images/Case8/Case8b_ass1.png)<P>
 
 <span id="subtitle">Step 2</span><P>
-Put together all the cardboard parts (G1-G2)<BR><P>
-![auto_fit](images/Case8/Case8b_po2.png)<P>
- 
- 
+Assembly completed!<BR><P>
+![auto_fit](images/Case8/Case8b_ass2.png)<P>
 
 
 ### Hardware connect

@@ -21,27 +21,6 @@ Collecting temperature, humidity and raindrop consistently and uploading the dat
 ## Part List
 <HR>
 
-<table><tr><td>
-Electronics:
-<ul display='inline-block'>
-<li>micro:bit X1</li>
-<li>IoT:bit(with OLED) X1</li>
-<li>3-pin-module wire X2 </li>
-&nbsp;&nbsp;1. Temperature and humidity Sensor X1 <BR>
-&nbsp;&nbsp;2. Raindrop Sensor X1 <BR>
-</ul>
-</td></tr>
-<tr>
-<td>Model:
-<ul>
-<li>House Model F1-F2 X1</li>
-<li>M4 Screws X4</li>
-<li>M4 Nuts X4</li>
-</ul>
-</td></tr>
-<tr><td>Equipment:
-<ul><li>ScrewDriver X1</li></ul></td></tr></table>
-
 ![auto_fit](images/Case6/Case6_parts.png)<P>
 
 ## Assembly step
@@ -49,16 +28,16 @@ Electronics:
 
 <span id="subtitle"> Step 1</span><BR><P>
 Attach the raindrop sensor to F2 model.<BR><P>
-![auto_fit](images/Case6/Case6_po1.png)<P>
-
+![auto_fit](images/Case6/Case6_ass1.png)<P>
 <span id="subtitle"> Step 2</span><BR><P>
-Attach the temperature and humidity sensor to F2 model.<BR><P>
-![auto_fit](images/Case6/Case6_po2.png)<P>
-
+Attach the temperature and humidity sensor to F2 model.
+![auto_fit](images/Case6/Case6_ass2.png)<P>
 <span id="subtitle"> Step 3</span><BR><P>
-Put together all the cardboard parts (F1-F2).<BR><P>
-![auto_fit](images/Case6/Case6_po3.png)<P>
-
+Put together all the cardboard parts (F1-F2).
+![auto_fit](images/Case6/Case6_ass3.png)<P>
+<span id="subtitle"> Step 4</span><BR><P>
+Assembly completed!
+![auto_fit](images/Case6/Case6_ass4.png)<P>
 
 ## Hardware connect
 <HR>

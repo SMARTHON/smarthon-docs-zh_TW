@@ -20,39 +20,21 @@ The motion sensor can deliver a motion signal to the micro:bit. When the micro:b
 ## Part List
 <HR>
 
-<table><tr><td>
-Electronics:
-<ul display='inline-block'>
-<li>micro:bit X1</li>
-<li>IoT:bit(with OLED) X1</li>
-<li>3-pin module wire X1 </li>
-&nbsp;&nbsp;1. Motion Sensor X1<BR>
-</ul>
-</td></tr>
-<tr>
-<td>Model:
-<ul>
-<li>House Model F1-F2 X1</li>
-<li>M4 Screws X2</li>
-<li>M4 Nuts X2</li>
-</ul>
-</td></tr>
-<tr><td>Equipment:
-<ul><li>ScrewDriver X1</li></ul></td></tr></table>
-
 ![auto_fit](images/Case7/Case7_parts.png)<P>
 
 ## Assembly step 
 <HR>
 
 <span id="subtitle">Step 1</span><BR><P>
-Attach the motion sensor to F1 model <BR><P>
-![auto_fit](images/Case7/Case7_po1.png)<P>
-
+Attach the motion sensor to F1 model.
+![auto_fit](images/Case7/Case7_ass1.png)<P>
+![auto_fit](images/Case7/Case7_ass2.png)<P>
 <span id="subtitle">Step 2</span><BR><P>
-Put together all the cardboard parts (F1-F2)<BR><P>
-![auto_fit](images/Case7/Case7_po2.png)<P>
-
+Put together all the cardboard parts (F1-F2)
+![auto_fit](images/Case7/Case7_ass3.png)<P>
+<span id="subtitle">Step 3</span><BR><P>
+Assembly completed!
+![auto_fit](images/Case7/Case7_ass4.png)<P>
 
 
 ## Hardware connect

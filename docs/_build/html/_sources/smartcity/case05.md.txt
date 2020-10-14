@@ -28,48 +28,29 @@ A bar graph on micro:bit LED is shown to indicate the instant speed of the cars.
 ## Part List
 <HR>
 
-<table><tr><td>
-Electronics:
-<ul display='inline-block'>
-<li>micro:bit X1</li>
-<li>IoT:bit(with OLED) X1</li>
-<li>OLED extension wire X1</li>
-<li>4-pin Module wire X1</li>
-&nbsp;&nbsp;1. Distance Sensor X1 <BR>
-</ul>
-</td></tr>
-<tr>
-<td>Model:
-<ul>
-<li>Car speed monitoring stand Model E1-E2 X1</li>
-<li>Car speed showing stand Model D1-D2 X1</li>
-<li>M4 Screws X4</li>
-<li>M4 Nuts X4</li>
-<li>M2 Screws X4</li>
-<li>M2 Nuts X4</li>
-</ul>
-</td></tr>
-<tr><td>Equipment:
-<ul><li>ScrewDriver X1</li></ul></td></tr></table>
-
 ![auto_fit](images/Case5/Case5_parts.png)<P>
 
 ## Assembly step
 <HR>
 
 <span id="subtitle">Step 1</span><P>
-Attach the OLED to D1 model using M2 x10mm screw and nut.<BR><P>
-![auto_fit](images/Case5/Case5_po1.png)<P>
+Attach the OLED to D1 model using M2 * 10mm screw and nut.<BR><P>
+![pic_70](images/Case5/Case5_ass1.png)<P>
 <span id="subtitle">Step 2</span><P>
 Put D2 model onto the D1 model.<BR><P>
-![auto_fit](images/Case5/Case5_po2.png)<P>
+![pic_70](images/Case5/Case5_ass2.png)<P>
 <span id="subtitle">Step 3</span><P>
-Attach the distance sensor to E1 model using M4 screw and nut.<BR><P>
-![auto_fit](images/Case5/Case5_po3.png)<P>
+Assembly completed!
+![pic_70](images/Case5/Case5_ass3.png)<P>
 <span id="subtitle">Step 4</span><P>
+Attach the distance sensor to E1 model using M4 screw and nut.<BR><P>
+![pic_70](images/Case5/Case5_ass4.png)<P>
+<span id="subtitle">Step 5</span><P>
 Put the E2 model onto E1 model.<BR><P>
-![auto_fit](images/Case5/Case5_po4.png)<P>
-
+![pic_70](images/Case5/Case5_ass5.png)<P>
+<span id="subtitle">Step 6</span><P>
+Assembly completed!<BR><P>
+![pic_70](images/Case5/Case5_ass6.png)<P>
 
 ## Hardware connect
 <HR>
