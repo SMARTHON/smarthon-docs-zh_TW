@@ -20,58 +20,27 @@ When the micro:bit receives the signal “opendoor” from the app, the 180o ser
 ## Part List
 <HR>
 
-<table><tr><td>
-Electronics:
-<ul display='inline-block'>
-
-<li>micro:bit X1</li>
-<li>IoT:bit(with OLED) X1</li>
-&nbsp;&nbsp;1. 180ᵒ servo X1<BR>
-</ul>
-</td></tr>
-<tr>
-<td>Model:
-<ul>
-<li>House Model H1-H2 X1</li>
-<li>L-shaped stand X1</li>
-<li>Paper Clip X1</li>
-<li>M3 Screw x 10mm X2</li>
-<li>M3 Nut X2</li>
-<li>Servo M2 sharp screw X1</li>
-</ul>
-</td></tr>
-<tr><td>Equipment:
-<ul><li>ScrewDriver X1</li></ul></td></tr></table>
-
 ![auto_fit](images/Case9/Case9_parts.png)<P>
 
 ## Assembly step
 <HR>
 
 <span id="subtitle">Step 1</span><BR><P>
-Attach the L-shaped stand with paper clip to the model H1<BR><P>
-
+Attach the L-shaped stand with M4 screws and nuts to the model H1. Make a small hole to fix into the stand securely.<BR><P>
+![auto_fit](images/Case9/Case9_ass1.png)<P>
 <span id="subtitle">Step 2</span><BR><P>
-Straighten the paper clip and cut it to 6.5 cm<BR><P>
-
+Attach the servo to the model H1.<BR><P>
+![auto_fit](images/Case9/Case9_ass2.png)<P>
 <span id="subtitle">Step 3</span><BR><P>
-Use pilers to fix the paper clip into the L-shaped stand<BR><P>
-![auto_fit](images/Case9/Case9_po1.png)<P>
-
+Straighten the paper clip and cut it to 6.5 cm. Use pilers to fix the paper clip into the L-shaped stand.<BR><P>
+![auto_fit](images/Case9/Case9_ass3.png)<P>
 <span id="subtitle">Step 4</span><BR><P>
-Make a small hole to fix into the stand securely<BR><P>
-![auto_fit](images/Case9/Case9_po2.png)<P>
-
-<span id="subtitle">Step 5</span><BR><P>
-Attach the servo to the model H1<BR><P>
-![auto_fit](images/Case9/Case9_po3.png)<P>
-<span id="subtitle">Step 6</span><BR><P>
 Put together all the cardboard parts (H1-H2)<BR><P>
-![auto_fit](images/Case9/Case9_po4.png)<P>
+![auto_fit](images/Case9/Case9_ass4.png)<P>
+<span id="subtitle">Step 5</span><BR><P>
+Assembly completed!<BR><P>
+![auto_fit](images/Case9/Case9_ass5.png)<P>
 
-
-
- 
 
 ## Hardware connect
 <HR>

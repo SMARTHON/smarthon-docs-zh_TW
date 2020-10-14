@@ -20,38 +20,18 @@ When WAN commands are received from WAN (eg. IFTTT), micro:bit will get the comm
 ## Part List
 <HR>
 
-<table><tr><td>
-Electronics:
-<ul display='inline-block'>
-<li>micro:bit X1</li>
-<li>IoT:bit(with OLED) X1</li>
-<li>3-pin Module wire X1</li>
-&nbsp;&nbsp;1. White LED Light X1<BR>
-</ul>
-</td></tr>
-<tr>
-<td>Model:
-<ul>
-<li>Smart Street Light Model I1-I3 X1</li>
-<li>M4 Screw X2</li>
-<li>M4 nut X2</li>
-</ul>
-</td></tr>
-<tr><td>Equipment:
-<ul><li>ScrewDriver X1</li></ul></td></tr></table>
-
 ![auto_fit](images/Case10/Case10_parts.png)<P>
 
 ## Assembly step
 <HR>
 
 <span id="subtitle">Step 1</span><BR><P>
-Attach the LED light to the model I2 with M4 screw and nuts<BR><P>
-![auto_fit](images/Case10/Case10_po1.png)<P>
+Attach the LED light to the model I2 with M4 screw and nuts. Put together all the cardboard parts (I1-I3)<BR><P>
+![auto_fit](images/Case10/Case10_ass1.png)<P>
 
 <span id="subtitle">Step 2</span><BR><P>
-Put together all the cardboard parts (I1-I3)<BR><P>
-![auto_fit](images/Case10/Case10_po2.png)<P>
+Assembly completed!<BR><P>
+![auto_fit](images/Case10/Case10_ass2.png)<P>
 
 
 ## Hardware connect

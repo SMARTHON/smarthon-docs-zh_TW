@@ -20,29 +20,6 @@ Also, micro:bit can receive WAN commands from WAN (eg. IFTTT), the the micro:bit
 ## Part List
 <HR>
 
-<table><tr><td>
-Electronics:
-<ul display='inline-block'>
-<li>micro:bit X1</li>
-<li>IoT:bit(with OLED) X1</li>
-<li>3-pin module wire X1 </li>
-&nbsp;&nbsp;1. 180ᵒ Servo X1<BR>
-&nbsp;&nbsp;2. Raindrop Sensor X1<BR>
-</ul>
-</td></tr>
-<tr>
-<td>Model:
-<ul>
-<li>Smart Street Light Model H1-H7 X1</li>
-<li>M4 Screw X4</li>
-<li>M4 Nut X4</li>
-<li>M2 Screw x 10mm X2</li>
-<li>M2 Nut X2</li>
-<li>Servo M2 sharp screw X1</li>
-</ul>
-</td></tr>
-<tr><td>Equipment:
-<ul><li>ScrewDriver X1</li></ul></td></tr></table>
 
 ![auto_fit](images/Case11/Case11_parts.png)<P>
  
@@ -50,20 +27,25 @@ Electronics:
 <HR>
 
 <span id="subtitle">Step 1</span><BR><P>
-Attach the raindrop sensor to the model H2<BR><P>
-![auto_fit](images/Case11/Case11_po1.png)<P>
+Step 1. Attach the raindrop sensor to the model H2<BR><P>
+![auto_fit](images/Case11/Case11_ass1.png)<P>
 <span id="subtitle">Step 2</span><BR><P>
-Screw the cloth rack (H5) onto the 180ᵒ servo using M2 screws<BR><P>
-![auto_fit](images/Case11/Case11_po2.png)<P>
+Step 2. Attach the long stand (H3) to the model H1<BR><P>
+![auto_fit](images/Case11/Case11_ass2.png)<P>
 <span id="subtitle">Step 3</span><BR><P>
-Put together the models H4-H5 and H6-H7<BR><P>
-![auto_fit](images/Case11/Case11_po3.png)<P>
+Step 3. Put together all the cardboard parts.<BR><P>
+![auto_fit](images/Case11/Case11_ass3.png)<P>
 <span id="subtitle">Step 4</span><BR><P>
-Attach the long stand (H3) to the model H1<BR><P>
-![auto_fit](images/Case11/Case11_po4.png)<P>
+Step 4. Screw the cloth rack (H5) onto the 180ᵒ servo using M2 screws  <BR><P>
+![auto_fit](images/Case11/Case11_ass4.png)<P>
 <span id="subtitle">Step 5</span><BR><P>
-Put together all the cardboard parts.<BR><P>
-![auto_fit](images/Case11/Case11_po5.png)<P>
+Step 5. Put together the models H4-H5 and H6-H7. <BR><P>
+![auto_fit](images/Case11/Case11_ass5.png)<P>
+![auto_fit](images/Case11/Case11_ass6.png)<P>
+<span id="subtitle">Step 6</span><BR><P>
+Step 6. Assembly completed!<BR><P>
+![auto_fit](images/Case11/Case11_ass7.png)<P>
+
 
 ## Hardware connect
 <HR>
