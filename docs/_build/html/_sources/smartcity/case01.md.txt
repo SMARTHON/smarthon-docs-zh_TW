@@ -1,7 +1,7 @@
 # Case 01: Automated Smart Playground Lamp
 
 Level: ![level](images/level1.png)
-![auto_fit](images/Case1/case-01.png)<P>
+![auto_fit](images/Case1/case-01_1.png)<P>
 
 
 ## Goal
@@ -36,7 +36,7 @@ Attach motion sensor and white LED to A1 model with M4 * 10mm screws and nuts.<B
 ![auto_fit](images/Case1/Case1_ass1.png)<P>
 <span id="subtitle">Step 2</span><BR><P>
 Assembly completed!<BR><P>
-![auto_fit](images/Case1/Case1_ass2.png)<P>
+![pic_60](images/Case1/Case1_ass2.png)<P>
 
 
 ## Hardware connect
