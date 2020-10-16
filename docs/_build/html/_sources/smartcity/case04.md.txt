@@ -38,7 +38,7 @@ Put together all the cardboard parts (D1-D2).<BR><P>
 ![pic](images/Case4/Case4_ass3.png)<P>
 <span id="subtitle">Step 4</span><P>
 Assembly completed!<BR><P>
-![pic](images/Case4/Case4_ass4.png)<P>
+![pic_40](images/Case4/Case4_ass4.png)<P>
 
 ## Hardware connect
 <HR>

@@ -37,7 +37,7 @@ Put together all the cardboard parts (F1-F2).
 ![auto_fit](images/Case6/Case6_ass3.png)<P>
 <span id="subtitle"> Step 4</span><BR><P>
 Assembly completed!
-![auto_fit](images/Case6/Case6_ass4.png)<P>
+![pic_60](images/Case6/Case6_ass4.png)<P>
 
 ## Hardware connect
 <HR>

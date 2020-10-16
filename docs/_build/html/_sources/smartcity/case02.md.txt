@@ -39,7 +39,7 @@ Attach the B2 model to the servo with servo M2 * 7.5mm sharp screw. Put B3 model
 ![auto_fit](images/Case2/Case2_ass3.png)<P>
 <span id="subtitle">Step 4</span><BR><P>
 Assembly completed! <BR><P>
-![auto_fit](images/Case2/Case2_ass4.png)<P>
+![pic_60](images/Case2/Case2_ass4.png)<P>
 
 
 ## Hardware connect

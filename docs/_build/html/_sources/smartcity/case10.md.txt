@@ -31,7 +31,7 @@ Attach the LED light to the model I2 with M4 screw and nuts. Put together all th
 
 <span id="subtitle">Step 2</span><BR><P>
 Assembly completed!<BR><P>
-![auto_fit](images/Case10/Case10_ass2.png)<P>
+![pic_40](images/Case10/Case10_ass2.png)<P>
 
 
 ## Hardware connect

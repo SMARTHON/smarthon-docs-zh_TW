@@ -35,22 +35,22 @@ A bar graph on micro:bit LED is shown to indicate the instant speed of the cars.
 
 <span id="subtitle">Step 1</span><P>
 Attach the OLED to D1 model using M2 * 10mm screw and nut.<BR><P>
-![pic_70](images/Case5/Case5_ass1.png)<P>
+![auto_fit](images/Case5/Case5_ass1.png)<P>
 <span id="subtitle">Step 2</span><P>
 Put D2 model onto the D1 model.<BR><P>
-![pic_70](images/Case5/Case5_ass2.png)<P>
+![auto_fit](images/Case5/Case5_ass2.png)<P>
 <span id="subtitle">Step 3</span><P>
 Assembly completed!
-![pic_70](images/Case5/Case5_ass3.png)<P>
+![pic_40](images/Case5/Case5_ass3.png)<P>
 <span id="subtitle">Step 4</span><P>
 Attach the distance sensor to E1 model using M4 screw and nut.<BR><P>
-![pic_70](images/Case5/Case5_ass4.png)<P>
+![auto_fit](images/Case5/Case5_ass4.png)<P>
 <span id="subtitle">Step 5</span><P>
 Put the E2 model onto E1 model.<BR><P>
-![pic_70](images/Case5/Case5_ass5.png)<P>
+![auto_fit](images/Case5/Case5_ass5.png)<P>
 <span id="subtitle">Step 6</span><P>
 Assembly completed!<BR><P>
-![pic_70](images/Case5/Case5_ass6.png)<P>
+![pic_40](images/Case5/Case5_ass6.png)<P>
 
 ## Hardware connect
 <HR>

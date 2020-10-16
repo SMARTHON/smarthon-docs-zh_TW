@@ -35,10 +35,10 @@ Attach the distance sensor to C2 model with M4 * 10mm screw and nuts.<BR><P>
 ![pic](images/Case3/Case3_ass2.png)<P>
 <span id="subtitle">Step 3</span><P>
 Put together all the cardboard parts (C1-C2).<BR><P>
-![pic](images/Case3/Case3_ass3.png)<P>
+![pic_60](images/Case3/Case3_ass3.png)<P>
 <span id="subtitle">Step 4</span><P>
 Assembly completed!<BR><P>
-![pic](images/Case3/Case3_ass4.png)<P>
+![pic_60](images/Case3/Case3_ass4.png)<P>
 
 ## Hardware connect
 <HR>

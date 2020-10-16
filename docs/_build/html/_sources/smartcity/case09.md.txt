@@ -39,7 +39,7 @@ Put together all the cardboard parts (H1-H2)<BR><P>
 ![auto_fit](images/Case9/Case9_ass4.png)<P>
 <span id="subtitle">Step 5</span><BR><P>
 Assembly completed!<BR><P>
-![auto_fit](images/Case9/Case9_ass5.png)<P>
+![pic_50](images/Case9/Case9_ass5.png)<P>
 
 
 ## Hardware connect

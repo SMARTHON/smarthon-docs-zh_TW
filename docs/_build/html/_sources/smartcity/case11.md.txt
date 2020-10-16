@@ -40,11 +40,11 @@ Step 4. Screw the cloth rack (H5) onto the 180ᵒ servo using M2 screws  <BR><P>
 ![auto_fit](images/Case11/Case11_ass4.png)<P>
 <span id="subtitle">Step 5</span><BR><P>
 Step 5. Put together the models H4-H5 and H6-H7. <BR><P>
-![auto_fit](images/Case11/Case11_ass5.png)<P>
+![pic_60](images/Case11/Case11_ass5.png)<P>
 ![auto_fit](images/Case11/Case11_ass6.png)<P>
 <span id="subtitle">Step 6</span><BR><P>
 Step 6. Assembly completed!<BR><P>
-![auto_fit](images/Case11/Case11_ass7.png)<P>
+![pic_40](images/Case11/Case11_ass7.png)<P>
 
 
 ## Hardware connect
