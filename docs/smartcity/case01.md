@@ -36,7 +36,7 @@ Attach motion sensor and white LED to A1 model with M4 * 10mm screws and nuts.<B
 ![auto_fit](images/Case1/Case1_ass1.png)<P>
 <span id="subtitle">Step 2</span><BR><P>
 Assembly completed!<BR><P>
-![pic_60](images/Case1/Case1_ass2.png)<P>
+![pic_40](images/Case1/Case1_ass2.png)<P>
 
 
 ## Hardware connect

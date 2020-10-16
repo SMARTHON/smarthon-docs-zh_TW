@@ -28,6 +28,11 @@ img[alt="pic_50"] {
   display: block;
 }
 
+img[alt="pic_40"] { 
+  max-width:  40%;
+  display: block;
+}
+
 img[alt="icon"]{
 	max-width: 50px;
 	display: inline;
