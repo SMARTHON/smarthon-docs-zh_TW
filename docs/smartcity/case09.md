@@ -1,7 +1,7 @@
 # IoT Case 09: Smart House door control 
 
 Level: ![level](images/level4.png)
-![auto_fit](images/Case9/case-09_1.png)<P>
+![auto_fit](images/Case9/case-09.png)<P>
 
 ## Goal
 <HR>

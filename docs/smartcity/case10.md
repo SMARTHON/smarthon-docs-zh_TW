@@ -1,7 +1,7 @@
 # IoT Case 10: Smart Street Light
 
 Level: ![level](images/level4.png)
-![auto_fit](images/Case10/case-10_1.png)<P>
+![auto_fit](images/Case10/case-10.png)<P>
 
 ## Goal
 <HR>
