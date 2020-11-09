@@ -12,7 +12,7 @@ Make a smart streetlight which can have a button to control on off.<BR><P>
 <HR>
 
 <span id="subtitle">What is Smart Street Light?</span><BR><P>
-To improve the living stand of citizen and to save electricity, smart street light can be automatically turned on at night and turned off in the morning. 
+To improve the living stand of citizen and to save electricity, smart street light can be automatically turned on at night and turned off in the morning. <BR><P>
 <span id="subtitle">Smart Streetlight operation</span><BR><P>
 When WAN commands are received from WAN (eg. IFTTT), micro:bit will get the command name. If the command name is “light_on”, the LED light will be turned on. If the command name is “light_off”, the LED light will be turned off.<BR><P>
 ![pic_90](images/Case10/Concept-diagram-Case10.png)<P>
