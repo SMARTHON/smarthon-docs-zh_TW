@@ -85,4 +85,4 @@ The distance sensor can return the distance value between the top of the garbage
 ## Think
 <HR>
 
-Q1. What other sensor can we use to measure the amount of garbage?<BR><P>
+Q1. How to make sound notification if there are full of garbage (i.e. using buzzer)?<BR><P>

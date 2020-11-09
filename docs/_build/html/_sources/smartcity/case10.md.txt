@@ -1,7 +1,7 @@
 # IoT Case 10: Smart Street Light
 
 Level: ![level](images/level4.png)
-![auto_fit](images/Case10/case-10_1.png)<P>
+![auto_fit](images/Case10/case-10.png)<P>
 
 ## Goal
 <HR>
@@ -12,7 +12,7 @@ Make a smart streetlight which can have a button to control on off.<BR><P>
 <HR>
 
 <span id="subtitle">What is Smart Street Light?</span><BR><P>
-To make people living more conveniently, this light can be turned on and off with internal setting withing clicking buttons every day.<BR><P>
+To improve the living stand of citizen and to save electricity, smart street light can be automatically turned on at night and turned off in the morning. 
 <span id="subtitle">Smart Streetlight operation</span><BR><P>
 When WAN commands are received from WAN (eg. IFTTT), micro:bit will get the command name. If the command name is “light_on”, the LED light will be turned on. If the command name is “light_off”, the LED light will be turned off.<BR><P>
 ![pic_90](images/Case10/Concept-diagram-Case10.png)<P>
@@ -71,7 +71,7 @@ You could also download the program from the following website:<BR>
 <span id="remarks">* For the setting of IFTTT, please refer to “Chapter 4: Control your micro:bit by IFTTT Services”</span><BR><P>
 ![auto_fit](images/Case10/Case10_ifttt1.png)<P>
 <span id="subtitle">Step 1</span><BR><P>
-Create applet (If Date&time then Smarthon)<BR><P>
+Create applet: If Date&time then Smarthon IoT (micro:bit)<BR><P>
 ![auto_fit](images/Case10/Case10_ifttt2.png)<P>
 
 

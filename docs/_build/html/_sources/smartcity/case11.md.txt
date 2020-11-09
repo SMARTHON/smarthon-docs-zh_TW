@@ -115,7 +115,7 @@ You could also download the program from the following website:<BR>
 <span id="remarks">For the setting of IFTTT, please refer to “Chapter 4: Control your micro:bit by IFTTT Services”</span><BR><P>
 
 <span id="subtitle">Step 1</span><BR><P>
-Create applet (If Weather Underground then Smarthon)<BR><P>
+Create applet: If Weather Underground then Smarthon IoT (micro:bit)<BR><P>
 ![auto_fit](images/Case11/Case11_iot1.png)<P>
 If it is at 06:00pm, send WAN control command: light_on to the micro:bit<BR><P>
 ![auto_fit](images/Case11/Case11_iot1.png)<P>

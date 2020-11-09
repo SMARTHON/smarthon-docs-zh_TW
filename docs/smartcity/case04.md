@@ -1,6 +1,6 @@
 # Case 04: Urban noise detection
 
-Level: ![level](images/level1.png)
+Level: ![level](images/level2.png)
 ![auto_fit](images/Case4/case-04_1.png)<P>
 
 ## Goal
