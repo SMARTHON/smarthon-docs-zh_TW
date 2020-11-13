@@ -14,7 +14,7 @@ Make a smart roof garden clothes rack, once raindrop is detected, the rack can b
 People no long need to rush up to the roof when raining as the clothes rack can be closed automatically even when house owner is not at home.
 Smart roof garden operation
 When raindrop sensor sensed that it is raining, it will send a signal to micro:bit and therefore the clothes rack will be opened. When there is no rain, the clothes rack will be closed.
-Also, micro:bit can receive WAN commands from WAN (eg. IFTTT), the the micro:bit will get the command name. If the command name is “rain”, the servo will turn to 90ᵒ and the rack will be opened. If the command name is “clear”, servo will turn to 180ᵒ and the rack will be closed.
+Also, micro:bit can receive WAN commands from WAN (eg. IFTTT), the the micro:bit will get the command name. If the command name is “rain”, the servo will turn to 90ᵒ and the rack will be opened. 
 ![pic_90](images/Case11/Concept-diagram-Case11.png)<P>
 
 ## Part List
@@ -83,10 +83,10 @@ Drag On WiFi connected and start WiFi remote control (WAN) from IoT:bit.<BR><P>
 Drag on WAN command received (WAN_Command) from IoT:bit.<BR><P>
 ![auto_fit](images/Case11/Case11_p6.png)<P>
 <span id="subtitle">Step 7</span><BR><P>
-If WAN_Command = clear then, set Forcast_rain to false.<BR><P>
+If WAN_Command = Rain then, set Forcast_rain to true.<BR><P>
 ![auto_fit](images/Case11/Case11_p7.png)<P>
 <span id="subtitle">Step 8</span><BR><P>
-Else (i.e. WAN_Command ≠ clear, set Forcast_rain to true).<BR><P>
+Else (i.e. WAN_Command ≠ Rain, set Forcast_rain to false).<BR><P>
 ![auto_fit](images/Case11/Case11_p8.png)<P>
 <span id="subtitle">Step 9</span><BR><P>
 Drag forever block from Basic. Set raindrop to get raindrop value (percentage) at Pin P0 and show number raindrop from OLED.<BR><P>
@@ -104,9 +104,9 @@ Pause for 15000ms.<BR><P>
 
 
 <span id="subtitle">Full Solution<BR><P>
-MakeCode: [https://makecode.microbit.org/_UC24pMak66dT](https://makecode.microbit.org/#pub:_UC24pMak66dT)<BR><P>
+MakeCode: [https://makecode.microbit.org/_0WxM73eqK1Tf](https://makecode.microbit.org/#pub:_0WxM73eqK1Tf)<BR><P>
 You could also download the program from the following website:<BR>
-<iframe src="https://makecode.microbit.org/#pub:_UC24pMak66dT" width="100%" height="500" frameborder="0"></iframe>
+<iframe src="https://makecode.microbit.org/#pub:_0WxM73eqK1Tf" width="100%" height="500" frameborder="0"></iframe>
 
 
 ## IoT (IFTTT)
@@ -117,8 +117,8 @@ You could also download the program from the following website:<BR>
 <span id="subtitle">Step 1</span><BR><P>
 Create applet: If Weather Underground then Smarthon IoT (micro:bit)<BR><P>
 ![auto_fit](images/Case11/Case11_iot1.png)<P>
-If it is at 06:00pm, send WAN control command: light_on to the micro:bit<BR><P>
-![auto_fit](images/Case11/Case11_iot1.png)<P>
+If the weather condition change to Rain, send WAN control command (condition: Rain) to the micro:bit<BR><P>
+![auto_fit](images/Case11/Case11_iot2.png)<P>
 
 
 ## Result
@@ -130,4 +130,4 @@ The micro:bit is controlled by IFTTT (trigger by weather open data). When the we
 ## Think
 <HR>
 
-Q1. How to notify the house owner the weather status (rain) by email through IFTTT?<BR><P>
+Q1. How to close the rack if the weather condition change to "Clear" in IFTTT? <BR><P>
