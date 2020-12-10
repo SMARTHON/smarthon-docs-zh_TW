@@ -19,6 +19,8 @@ For more practical case, please refer to the materials.<P>
 
 ## Component List
 
+![auto_fit](images/1_Intro/PartList.png)
+
 No | Component |Quantity|Remark
 :-: | :-- | :--| :--
 |Micro: bit|1|not included

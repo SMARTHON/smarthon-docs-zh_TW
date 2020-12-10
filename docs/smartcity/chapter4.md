@@ -1,4 +1,4 @@
-# Chapter 4: Control your micro:bit by IFTTT Services
+# Chapter 4: Control micro:bit by IFTTT Services
 
 In this chapter , you will learn how to use trigger (other services) to implement action (micro:bit) by IFTTT. Below are the commonly used examples of services that can trigger micro:bit in IFTTT. <BR><P>
 ![auto_fit](images/Ch4/Ch4_des1.png)<P>

@@ -78,7 +78,7 @@ If the upload is success, it will show `OK` with error code `0`<P>
 
 ![auto_fit](images/Ch2/Ch2_result1.png)<P>
 
-If the upload is fail (such input wrong API key in this case), it will show `Fail` with `error code`.<BR>
+If the upload is fail (such input wrong API key in this case), it will show `FAIL` with `error code`.<BR>
 For the error 401, the user inputted the wrong API Key. For the error code -28674, there is no internet connection.<P>
 
 ![auto_fit](images/Ch2/Ch2_result1_1.png)<P>

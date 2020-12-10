@@ -69,9 +69,9 @@ You could also download the program from the following website:<BR>
 <HR>
 
 
-After Connected to Internet, the program start upload the data to Thingspeak.<P> When the Upload is finish, it will shown the status OK and Error Code 0.<BR>
+After Connected to Internet, the program start upload the data to Thingspeak.<P> When the Upload is finish, it will shown the status `OK` and Error Code `0`.<BR>
 ![auto_fit](images/Ch1/Ch1_result1.png)<P>
-If the thingspeak cannot be uploaded successfully, the status will return “FAIL” with error code.<BR> For the error 400, the user inputted the wrong API Key. For the error code -28674, there is no internet connection. <BR>
+If the thingspeak cannot be uploaded successfully, the status will return `FAIL` with `error code`.<BR> For the error 400, the user inputted the wrong API Key. For the error code -28674, there is no internet connection. <BR>
 ![auto_fit](images/Ch1/Ch1_result1_1.png)<P>
 The charts in your channel in ThingSpeak will be updated.
 ![auto_fit](images/Ch1/Ch1_result2.png)<P>
