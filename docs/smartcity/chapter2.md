@@ -37,17 +37,17 @@ Select “Documentation” ，Copy your Webhooks Key as follows:<BR><P>
 ## Coding (Makecode)
 <HR>
 
-<span id="subtitle" >Step 0</span><BR><P>
+<span id="subtitle" >Step 1</span><BR><P>
 Before we do the IFTTT uploading part, we have already know how to connect to the WiFi on the first chapter. <BR><P>
 ![auto_fit](images/Ch2/Ch2_p3.png)<P>
 
-<span id="subtitle" >Step 1</span><BR><P>
+<span id="subtitle" >Step 2</span><BR><P>
 When need to send ITFFF request, if `WiFi connected`, send data to IFTTT.<BR>
 Input the following data of the IFTTT Application to the `Send IFTTT key…` block
 <BR><P>
 * `IFTTT API key`: XXXXXXXXXXXXXXXX. 
 * `event_name`: event name to trigger in Webhooks (eg. SendEmail)
-* `value 1-3`: input value1, value2, value3<P>
+* `value 1-3`: if user want to add the value inside the email, click the add button and input value1, value2, value3<P>
 
 ![auto_fit](images/Ch2/Ch2_p5.png)<P>
 
@@ -59,18 +59,14 @@ If you want to show the IFTTT upload status, you can use the “on IFTTT Uploade
 * Snap the `show string` inside the `On IFTTT Uploaded`
 * Draw the variable from `On IFTTT Uploaded` to the `show string` block placeholder<P>
 
-*<u>Common error code</u>:<BR>
-`401`: wrong IFTTT API KEY<BR>
-`-28674`: No internet connection
-
 ![auto_fit](images/Ch2/Ch2_p6.png)<P>
 
 
 
 <span id="subtitle">Full Solution<BR><P>
-MakeCode: [https://makecode.microbit.org/#pub:_5yDAATKrxLJh](https://makecode.microbit.org/#pub:_5yDAATKrxLJh)<BR><P>
+MakeCode: [https://makecode.microbit.org/#pub:_i1PgamYHVWX1](https://makecode.microbit.org/#pub:_i1PgamYHVWX1)<BR><P>
 You could also download the program from the following website:<BR>
-<iframe src="https://makecode.microbit.org/#pub:_5yDAATKrxLJh" width="100%" height="500" frameborder="0"></iframe>
+<iframe src="https://makecode.microbit.org/#pub:_i1PgamYHVWX1" width="100%" height="500" frameborder="0"></iframe>
 
 
 
@@ -82,7 +78,8 @@ If the upload is success, it will show `OK` with error code `0`<P>
 
 ![auto_fit](images/Ch2/Ch2_result1.png)<P>
 
-If the upload is fail (such input wrong API key in this case), it will show `Fail` with `error code`.<P>
+If the upload is fail (such input wrong API key in this case), it will show `Fail` with `error code`.<BR>
+For the error 401, the user inputted the wrong API Key. For the error code -28674, there is no internet connection.<P>
 
 ![auto_fit](images/Ch2/Ch2_result1_1.png)<P>
 
