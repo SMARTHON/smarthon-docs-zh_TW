@@ -60,7 +60,7 @@ If you want to see the IP address, you may show it on the OLED display.<BR>
 
 ![auto_fit](images/4_ConnectWiFi/Wifi_p3_5.png)<P>
 
-<B>Optional</B>:<BR>
+<B><u>Optional</u></B>:<BR>
 On WiFi disconnected handler will be triggered when the WiFi connection is loss, it may useful when you get disconnection to the WiFi Station during the application running.<BR>
 
 ![auto_fit](images/4_ConnectWiFi/Wifi_p5.png)<P>
