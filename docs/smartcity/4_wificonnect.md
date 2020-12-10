@@ -46,7 +46,8 @@ After the WiFi is connected, it provide two variable `IP_Address` and `Device_ID
 control the IoT:bit though network.<BR>
 * Snap `On WiFi connected` to the stage
 * On `Basic` tab, snap `show icon heart` inside `On WiFi connected`
-* Swtich the heart to tick
+* Swtich the heart to tick<BR>
+
 ![auto_fit](images/4_ConnectWiFi/Wifi_p3.png)<P>
 
 <span id="subtitle">Step 4: Show you IP</span><BR><P>
@@ -55,11 +56,13 @@ If you want to see the IP address, you may show it on the OLED display.<BR>
 * Snap “initialize OLED with width…height..” to on start 
 * Snap the “show string“ inside the On WiFi connected 
 * Draw the variable from On WiFi connected to the “show string” block placeholder
-* You may control the text format by the function in Text tab
+* You may control the text format by the function in Text tab<BR>
+
 ![auto_fit](images/4_ConnectWiFi/Wifi_p3_5.png)<P>
 
 <B>Optional</B>:<BR>
-On WiFi disconnected handler will be triggered when the WiFi connection is loss, it may useful when you get disconnection to the WiFi Station during the application running.
+On WiFi disconnected handler will be triggered when the WiFi connection is loss, it may useful when you get disconnection to the WiFi Station during the application running.<BR>
+
 ![auto_fit](images/4_ConnectWiFi/Wifi_p5.png)<P>
 
 <span id="subtitle">Full Solution<BR><P>
