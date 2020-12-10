@@ -3,8 +3,10 @@
 ThingSpeak is IoT platform for user to gather real-time data; for instance, climate information, location data and other device data. In different channels in ThingSpeak, you can summarize information and visualize data online in charts and analyze useful information.<BR> ThingSpeak can integrate IoT:bit (micro:bit) and other software/ hardware platforms. Through IoT:bit, you can upload sensors data to ThingSpeak (e.g. temperature, humidity, light intensity, noise, motion, raindrop, distance and other device information).<BR><P>
 ![auto_fit](images/Ch1/Ch1_des.png)<P>
 
-## Create channel in ThingSpeak and get the key
+## Thingspeak Configuration
 <HR>
+
+<H3>Goal:</H3> we need to create the thingspeak channel and get the key
 
 <span id="subtitle" >Step 1</span><P>
 Go to [https://thingspeak.com/](https://thingspeak.com/), register an account and login to the platform<BR><P>
@@ -15,14 +17,13 @@ Choose Channels -> My Channels -> New Channel<BR><P>
 ![auto_fit](images/Ch1/Ch1_reg2.png)<P>
 
 <span id="subtitle" >Step 3</span><P>
-Input Channel name, Field1 and Field2 , then click “Save Channel”<BR><P>
+Input Channel name, Field1 , then click “Save Channel”<BR><P>
 * Channel name: smart-house
-* Field 1: Light
-* Field 2: Temperature
+* Field 1: Temperature
 ![auto_fit](images/Ch1/Ch1_reg3.png)<P>
 
 <span id="subtitle" >Step 4</span><P>
-You will see two chats for data (field1, field 2)<BR><P>
+You will see a chat for data field1 <BR><P>
 ![auto_fit](images/Ch1/Ch1_reg4.png)<P>
 
 <span id="subtitle" >Step 5</span><P>
@@ -38,10 +39,22 @@ Before we do the thingspeak uploading part, we already know how to connect to th
 
 <span id="subtitle" >Step 2</span><P>
 On every 15 seconds, if the WiFi is connected, it will send data to ThingSpeak.<BR>
+
+* Use `if-statement` inside the `forever` loop to check `WiFi connected?` status
+* Snap the `Send Thingspeak key.....` block inside the `if-statement`
+* Fill in the `api key` from Thingspeak and the `temperature` values
+* Snap `pause` to the loop to wait 15 second<P>
+
 ![auto_fit](images/Ch1/Ch1_p3.png)<P>
 
 <span id="subtitle" >Step 3</span><P>
-If you want to show the thingspeak status, you can use the on Thingspeak Uploaded handler to get the variable for status and error code. <BR>
+If you want to show the thingspeak status, you can use the on Thingspeak Uploaded handler to get the variable for status and error code. You may use the OLED to display the status and error code.<BR>
+
+* Go to OLED Tab
+* Snap `initialize OLED with width 128 height 64` to `on start`
+* Snap the `show string` inside the `On Thingspeak Uploaded`
+* Draw the variable from `On Thingspeak Uploaded` to the `show string` block placeholder.<BR>
+
 ![auto_fit](images/Ch1/Ch1_p4.png)<P>
 
 
