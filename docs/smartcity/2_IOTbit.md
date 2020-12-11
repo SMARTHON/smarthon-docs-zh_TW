@@ -10,18 +10,19 @@ Several of wireless modules are compatible with the Smarthon IoT Bit, such Bluet
 
 ![auto_fit](images/2_IOT/iot_image00.png)
 
-## Feature 
+## Product Features
 
 ![auto_fit](images/2_IOT/iot_image005.jpg)
 
 
+* The Most powerful IoT chip ESP32 embedded for micro:bit
 * Exchangeable wireless modular design (ESP8266, ESP32, BLE)
-* Extended I/O pin from Mirco:bit with GVS socket
-* Independent socket for OLED screen,I2C and 4-pin Modules(Distance sensor/Motor/etc)
-* Separate Servo pin from ESP module
-* On board Buzzer with on/off switch
-* Various types of power supply (USB, XH2.54 battery port, DC jack) 
-* Crocodile Port for crocodile clip
+* Integrated OLED and Onboard buzzer embedded
+* Extended I/O port x13, I2C port x2 from mirco:bit with GVS socket
+* Extended Servo port x3 from ESP module 
+* Various types of power supply (USB, 3.7V lithium battery, 6V Normal battery)
+* Extra Port: Crocodile Pin, Quick Access Port and 4-Pin Port for different usage
+
 
 
 ## Hardware Size
