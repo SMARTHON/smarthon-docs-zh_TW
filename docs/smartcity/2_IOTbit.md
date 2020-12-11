@@ -10,13 +10,19 @@ Several of wireless modules are compatible with the Smarthon IoT Bit, such Bluet
 
 ![auto_fit](images/2_IOT/iot_image00.png)
 
-## Features
+## Feature 
+
+![auto_fit](images/2_IOT/iot_image005.jpg)
+
+
 * Exchangeable wireless modular design (ESP8266, ESP32, BLE)
 * Extended I/O pin from Mirco:bit with GVS socket
-* Independent socket for OLED screen, Distance sensor and Motor
+* Independent socket for OLED screen,I2C and 4-pin Modules(Distance sensor/Motor/etc)
 * Separate Servo pin from ESP module
 * On board Buzzer with on/off switch
 * Various types of power supply (USB, XH2.54 battery port, DC jack) 
+* Crocodile Port for crocodile clip
+
 
 ## Hardware Size
 
@@ -24,7 +30,7 @@ Product size: 75mm X 65mm X 20mm<BR>
 PCB thinkness: 1.5mm<BR>
 Hole diameter: 4mm<BR>
 
-![auto_fit](images/2_IOT/iot_image01.png)
+![auto_fit](images/2_IOT/iot_image01.jpg)
 
 ## Specification
 
@@ -42,25 +48,11 @@ Hole diameter: 4mm<BR>
 |Net weight|||
 
 
-## Hardware Interface
-![auto_fit](images/2_IOT/iot_image02.png)
-
-* 1.Micro:bit edge connecter
-* 2.USB power supply port
-* 3.Power Switch
-* 4.XH2.54 Battery port
-* 5.DC Battery port
-* 6.Wireless Module socket
-* 7.I2C connection port(1 reserved for OLED)
-* 8.GVS I/O Pins Lead Out
-* 9.Buzzer /w Switch
-* 10.Motor port
-* 11.ESP Servo port
-* 12.Distance Sensor port
-* 13.QuickAccess GVS port
-
-## Pinout Diagram
-![auto_fit](images/2_IOT/iot_image03.png)
+## Pinout Information
+<H3>Pinout Diagram:</H3><BR>
+![auto_fit](images/2_IOT/iot_image03.png)<P>
+<H3>Port Diagram:</H3><BR>
+![auto_fit](images/2_IOT/iot_image006.jpg)
 Please open the image in the new tab for full size
 
 ## Detail Hardware Description
