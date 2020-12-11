@@ -54,26 +54,26 @@ Hole diameter: 4mm<BR>
 <H3>Port Diagram:</H3><BR>
 ![auto_fit](images/2_IOT/iot_image006.jpg)
 
-| |Mirco:bit || IoT:bit | Extra Port ||
---|--|--|--|--|--|
-|P0||~|Buzzer|Crocodile Pin|Quick Access Port|
-|P1||~||Crocodile Pin|Quick Access Port|
-|P2||~||Crocodile Pin|Quick Access Port|
-|P3|LED|~||||
-|P4|LED|~||||
-|P5|LED|||||
-|P6|LED|||||
-|P7|LED|||||
-|P8|UART (TX)||ESP32(RX)|||
-|P9|LED|||||
-|P10|LED|~||||
-|P12||||4Pin Module||
-|P13|SPI (SCK)|||4Pin Module||
-|P14|SPI (MISO)|||4Pin Module||
-|P15|SPI (MOSI)|||4Pin Module||
-|P16|UART (RX)||ESP32 (TX)|||
-|P19|I2C(SCL)||OLED|||
-|P20|I2C(SDA)||OLED|||
+| |Mirco:bit || IoT:bit | <span style="text-align: center;width: 100%">Extra Port</span> |
+--|--|--|--|--|
+|P0||~|Buzzer|Crocodile Pin/Quick Access Port|
+|P1||~||Crocodile Pin/Quick Access Port|
+|P2||~||Crocodile Pin/Quick Access Port|
+|P3|LED|~|||
+|P4|LED|~|||
+|P5|LED||||
+|P6|LED||||
+|P7|LED||||
+|P8|UART (TX)||ESP32 (RX)||
+|P9|LED||||
+|P10|LED|~|||
+|P12||||4-Pin Module Port|
+|P13|SPI (SCK)|||4-Pin Module Port|
+|P14|SPI (MISO)|||4-Pin Module Port|
+|P15|SPI (MOSI)|||4-Pin Module Port|
+|P16|UART (RX)||ESP32 (TX)||
+|P19|I2C(SCL)||OLED||
+|P20|I2C(SDA)||OLED||
 
 Please open the image in the new tab for full size
 
