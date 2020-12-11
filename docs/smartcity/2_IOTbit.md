@@ -51,9 +51,11 @@ Hole diameter: 4mm<BR>
 
 ## Pinout Information
 <H3>Pinout Diagram:</H3><BR>
-![auto_fit](images/2_IOT/iot_image03.png)<P>
+![auto_fit](images/2_IOT/iot_image03.jpg)<P>
 <H3>Port Diagram:</H3><BR>
 ![auto_fit](images/2_IOT/iot_image006.jpg)
+
+<H3>Pinout Table</H3>
 
 | |Mirco:bit || IoT:bit | <span style="text-align: center;width: 100%">Extra Port</span> |
 --|--|--|--|--|

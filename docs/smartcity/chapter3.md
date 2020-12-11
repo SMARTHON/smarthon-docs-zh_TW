@@ -1,4 +1,4 @@
-# Chapter 3: Control micro:bit by App Inventor 2
+# Chapter 3: Direct Control micro:bit by App Inventor 2
 
 App inventor 2 is a blocks-based programming tool, which help beginners to build fully functional app in Android device. The interface is graphical base and support drag and drop operations. It consists of different components, such as button, slider, date pickers, image, camera, sensors including Accelerometer and connectivity to web, etc. The app can be exported or published to Play store for our daily life.<BR><P>
 ![auto_fit](images/Ch3/Ch3_des1.png)<P>

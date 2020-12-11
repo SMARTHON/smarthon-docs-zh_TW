@@ -1,4 +1,4 @@
-# Chapter 4: Control micro:bit by IFTTT Services
+# Chapter 4: Cloud Control micro:bit by IFTTT Services
 
 In this chapter , you will learn how to use trigger (other services) to implement action (micro:bit) by IFTTT. Below are the commonly used examples of services that can trigger micro:bit in IFTTT. <BR><P>
 ![auto_fit](images/Ch4/Ch4_des1.png)<P>
@@ -65,7 +65,7 @@ Attention: Please be aware that the **P** is in capital letter.
 
 ![auto_fit](images/Ch4/Ch4_2_p3.png)<P>
 
-<H3><U>Advanced Usage: Command with value</U></H3>
+<H3><U>Advanced Usage(with value):</U></H3>
 
 If you want to control the module with value, you can use the another block which contain `value` variable.<BR>
 If `Wan command` “PinValue” is received, white LED will be turned on with the given intensity `value`.<P>
@@ -94,7 +94,7 @@ Open your browser , go to [https://ifttt.com/](https://ifttt.com/). Register you
 On the top right menu, click “Create” > “Applets”<BR><P>
 ![auto_fit](images/Ch4/Ch4_ifttt2.png)<P>
 
-<span id="subtitle" >Step 3: Create the trigger of Applets</span><BR><P>
+<span id="subtitle" >Step 3: Create the <u>trigger</u> of Applets</span><BR><P>
 Create a trigger for the applet<BR><P>
 * Select “This” > Choose service “Date & Time”
 * Choose trigger “Every day at” 
@@ -118,7 +118,7 @@ The light will be turned on at 6pm every day!<BR><P>
 ![auto_fit](images/Ch4/Ch4_ifttt5.png)<P>
 <P>
 <HR>
-<H3><U>Advanced Usage: command with value</U></H3>
+<H3><U>Advanced Usage(with value):</U></H3>
 
 <span id="subtitle" >Step 1: Create the applet</span><BR><P>
 You can send WAN command with value in IFTTT. In this example, click “That” to select the action<BR><P>
@@ -134,15 +134,6 @@ Create an action for the applet
  
  
 
-<span id="subtitle" >Step 3:Review the configuration</span><BR><P>
-Review your applet, then click “Finish ”. <BR><P>
-
-
-<span id="subtitle" >Step 4:Ready to use</span><BR><P>
-After, the applet connection has been created it will show “connected”. <BR><P>
-The light will be turned on at 6pm every day!<BR><P>
-![auto_fit](images/Ch4/Ch4_2_ifttt3.png)<P>
-
 
 ## Result
 <HR>
@@ -156,6 +147,7 @@ After connected to WiFi, micro:bit will connect to control server and keep liste
 * The LED on P0 will be turned on.
 ![auto_fit](images/Ch4/Ch4_2_result.png)<P>
 
+<H3><U>Advanced Usage(with value):</U></H3>
 
 When change the applet to contain value version, it will have an additional variable `value` included
 * Every day at 6pm, clock will trigger IFTTT to send out micro:bit WAN command “PinValue” (with value “600”)
