@@ -1,4 +1,4 @@
-# Chapter 4: Cloud Control micro:bit by IFTTT Services
+# Chapter 4: Cloud Control micro:bit by IFTTT
 
 In this chapter , you will learn how to use trigger (other services) to implement action (micro:bit) by IFTTT. Below are the commonly used examples of services that can trigger micro:bit in IFTTT. <BR><P>
 ![auto_fit](images/Ch4/Ch4_des1.png)<P>
@@ -10,17 +10,6 @@ With connection with different services in IFTTT, you can design your own applet
 ![auto_fit](images/Ch4/Ch4_des2.png)<P>
 You can tailor-make your own micro:bit projects by connecting Smarthon IoT (micro:bit) to over hundreds of services in cloud (IFTTT)! Create your IFTTT applet by choosing “If THIS then THAT”.<BR><P>
 ![auto_fit](images/Ch4/Ch4_des3.png)<P>
-
-## Know the API (control command)
-<HR>
-
-API is one way to communicate between the objects on the Internet world. API is just like an “URL” which is website link.
-<P>
-This is the API you can use to control the micro:bit
-
-http://control.smarthon.cc/publish?id=`DeviceID`&msg=`ControlCommand`
-
-http://control.smarthon.cc/publish?id=`DeviceID`&msg=`ControlCommand`&value=`Value`
 
 
 ## Coding
@@ -65,17 +54,26 @@ Attention: Please be aware that the **P** is in capital letter.
 
 ![auto_fit](images/Ch4/Ch4_2_p3.png)<P>
 
+<span id="subtitle">Step 4: Show the Command</span><BR><P>
+Sometimes you may need to show the recevied command for debugging, so if you need that, you can use the OLED `show string` to display the command on the OLED.
+* Go to OLED
+* Snap the `show string` to `On WiFi received`
+* Draw the `WAN_Command` variable to `show string` placeholder
+
+![auto_fit](images/Ch4/Ch4_2_p3_05.png)<P>
+
 <H3><U>Advanced Usage(with value):</U></H3>
 
 If you want to control the module with value, you can use the another block which contain `value` variable.<BR>
-If `Wan command` “PinValue” is received, white LED will be turned on with the given intensity `value`.<P>
+If `Wan command` “PinValue” is received, white LED will be turned on with the given intensity `value`.<BR>
+You may also show the `WAN_Command` and `value` by `show string`.<P>
 ![auto_fit](images/Ch4/Ch4_2_p3_1.png)<P>
 
 
 <span id="subtitle">Full Solution<BR><P>
-MakeCode: [https://makecode.microbit.org/#pub:_JqFcEAXWJ032](https://makecode.microbit.org/#pub:_JqFcEAXWJ032)<BR><P>
+MakeCode: [https://makecode.microbit.org/#pub:_7dc5R9WHyFbd](https://makecode.microbit.org/#pub:_7dc5R9WHyFbd)<BR><P>
 You could also download the program from the following website:<BR>
-<iframe src="https://makecode.microbit.org/#pub:_JqFcEAXWJ032" width="100%" height="500" frameborder="0"></iframe>
+<iframe src="https://makecode.microbit.org/#pub:_7dc5R9WHyFbd" width="100%" height="500" frameborder="0"></iframe>
 
 
 ## Create your own Applet to control micro:bit in IFTTT

@@ -6,16 +6,28 @@ For creating IoT application, you can use App Inventor 2 to create web connectio
 ![auto_fit](images/Ch3/Ch3_des2.png)<P>
 
 
-## Know the API (Control command)
+## Know the API (control command)
 <HR>
 
-API is one way to communicate between the objects on the Internet world. API is just like an “URL” which is website link.<BR><P>
-![auto_fit](images/Ch3/Ch3_des3.png)<P>
-This is the API you can use to control the micro:bit<BR><P>
-http://control.smarthon.cc/publish?id=`DeviceID`&msg=`ControlCommand` <BR>
+API is one way to communicate between the objects on the Internet world. API is just like an “URL” which is website link.
+![auto_fit](images/Ch3/Ch3_des3.png)
+<P>
+This is the API you can use to control the micro:bit, when call the API, the command will be send to the micro:bit.<BR>
+Normally, use the Basic API can control the micro:bit. If you need to send a value as extra information, you may use the Advanced API which provide one more parameter to send value.
 
-http://control.smarthon.cc/publish?id=`DeviceID`&msg=`ControlCommand`&value=`Value`<BR>
+(1) Basic API:
+```
+https://control.smarthon.cc/publish?id=DeviceID&msg=ControlCommand
+```
+(2) Advanced API:
+```
+https://control.smarthon.cc/publish?id=DeviceID&msg=ControlCommand&value=Value
+```
 
+`id`: The unique ID of device, used to identify the target .<BR>
+`msg`: The command needs to send.<BR>
+`value`(optional): Used when need for the command.<P>
+Change the `DeviceID` and `ControlCommand` and `Value` to which your application using.
 
 
  
@@ -66,17 +78,27 @@ Attention: Please be aware that the **P** is in capital letter.
 
 ![auto_fit](images/Ch3/Ch3_p3.png)<P>
 
+<span id="subtitle">Step 4: Show the Command</span><BR><P>
+Sometimes you may need to show the recevied command for debugging, so if you need that, you can use the OLED `show string` to display the command on the OLED.
+* Go to OLED
+* Snap the `show string` to `On WiFi received`
+* Draw the `WAN_Command` variable to `show string` placeholder
+
+![auto_fit](images/Ch3/Ch3_p3_1.png)<P>
+
+
 <span id="subtitle"><u>Advanced Usage: Command with value</u></span><BR><P>
 If you want to control the module with value, you can use the another block which contain `value` variable.<BR>
 If `Wan command` “PinValue” is received, white LED will be turned on with the given intensity `value`. 
-<BR><P>
+<BR>
+You may also show the `WAN_Command` and `value` by `show string`.<P>
 ![auto_fit](images/Ch3/Ch3_p4.png)<P>
 
 
 <span id="subtitle">Full Solution<BR><P>
-MakeCode: [https://makecode.microbit.org/#pub:_PJ493LcYxE9H](https://makecode.microbit.org/#pub:_PJ493LcYxE9H)<BR><P>
+MakeCode: [https://makecode.microbit.org/#pub:_iFR2PXieC1X6](https://makecode.microbit.org/#pub:_iFR2PXieC1X6)<BR><P>
 You could also download the program from the following website:<BR>
-<iframe src="https://makecode.microbit.org/#pub:_PJ493LcYxE9H" width="100%" height="500" frameborder="0"></iframe><P>
+<iframe src="https://makecode.microbit.org/#pub:_iFR2PXieC1X6" width="100%" height="500" frameborder="0"></iframe><P>
 
 
 ## App Inventor 2 configuration
