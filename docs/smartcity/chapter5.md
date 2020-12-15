@@ -67,12 +67,6 @@ Normally, if no internet connection or the Channel Server is down, the code will
 
 ![auto_fit](images/Ch5/Ch5_p4.png)<P>
 
-
-<span id="subtitle">Full Solution<BR><P>
-MakeCode: [https://makecode.microbit.org/_YK8afdWsmRYA](https://makecode.microbit.org/#pub:_YK8afdWsmRYA)<BR><P>
-You could also download the program from the following website:<BR>
-<iframe src="https://makecode.microbit.org/#pub:_YK8afdWsmRYA" width="100%" height="500" frameborder="0"></iframe><P>
-
 <span id="subtitle">2. Show the source channel name of the message </span><p>
 
 When you join different channels, you may receive same command from each of them alternately, so you need to identify the message is come from which channel. The `On WiFi Receiver received` provide the variable used to identify. 
@@ -83,9 +77,9 @@ When you join different channels, you may receive same command from each of them
 ![auto_fit](images/Ch5/Ch5_p5.png)<P>
 
 <span id="subtitle">Full Solution<BR><P>
-MakeCode: [https://makecode.microbit.org/_ToHetbXt8Cv7](https://makecode.microbit.org/#pub:_ToHetbXt8Cv7)<BR><P>
+MakeCode: [https://makecode.microbit.org/_5jP54jAt8f4F](https://makecode.microbit.org/#pub:_5jP54jAt8f4F)<BR><P>
 You could also download the program from the following website:<BR>
-<iframe src="https://makecode.microbit.org/#pub:_ToHetbXt8Cv7" width="100%" height="500" frameborder="0"></iframe><P><P>
+<iframe src="https://makecode.microbit.org/#pub:_5jP54jAt8f4F" width="100%" height="500" frameborder="0"></iframe><P><P>
 
 ## Sender side
 <HR>
