@@ -115,6 +115,7 @@ You could also download the program from the following website:<BR>
 <h2>Optional:</h2>
 <HR>
 <span id="subtitle">Check message sent status:</span><P>
+
 When the sender sending the message, if use the `On WiFi message sent`, it can know the sending result of message to channel. 
 * Go to OLED Tab
 * Snap the `initialize OLED…` to `on Start`
