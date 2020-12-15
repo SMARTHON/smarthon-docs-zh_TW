@@ -1,15 +1,32 @@
 # Chapter 4: Cloud Control micro:bit by IFTTT
 
-In this chapter , you will learn how to use trigger (other services) to implement action (micro:bit) by IFTTT. Below are the commonly used examples of services that can trigger micro:bit in IFTTT. <BR><P>
-![auto_fit](images/Ch4/Ch4_des1.png)<P>
- 
-## Examples of services used in IFTTT
-<HR>
+In this chapter, you will know how to control micro:bit from the IFTTT cloud. Once there are some changes on Internet services like weather, time or different connected devices like voice assistant and some smart home device, you can send the command to micro:bit to do the action. <BR><P>
 
-With connection with different services in IFTTT, you can design your own applet with micro:bit projects using “if this then that (micro:bit)”. <BR><P>
-![auto_fit](images/Ch4/Ch4_des2.png)<P>
-You can tailor-make your own micro:bit projects by connecting Smarthon IoT (micro:bit) to over hundreds of services in cloud (IFTTT)! Create your IFTTT applet by choosing “If THIS then THAT”.<BR><P>
-![auto_fit](images/Ch4/Ch4_des3.png)<P>
+## Scenario Example
+
+Example: The micro:bit is connected to the Internet. Once the time is changed to 6 pm, the IFTTT cloud will send the command to the micro:bit to turn on the LED.
+
+![auto_fit](images/Ch4/Ch4_2_ifttt0.png)<P>
+
+On IFTTT configuration, set the IFTTT Applet:
+
+![auto_fit](images/Ch4/Ch4_2_ifttt1.png)<P>
+
+In this example:<BR>
+If "it is 6pm today", then"turn on the light"
+![auto_fit](images/Ch4/Ch4_2_ifttt1_5.png)<P>
+
+<B>A. Trigger Part</B><BR>
+The below are the most common internet service or connected device that can control back the micro:bit. Or course, there are tons of the connected things/services you can control micro:bit.<P>
+![auto_fit](images/Ch4/Ch4_2_ifttt2.png)<P>
+
+<B>B. Action Part</B><BR>
+With connection with different services in IFTTT, you can design your own applet with micro:bit projects using “if this then that (micro:bit)”. <P>
+
+![auto_fit](images/Ch4/Ch4_2_ifttt3.png)<P>
+
+
+ 
 
 
 ## Coding
@@ -75,8 +92,9 @@ MakeCode: [https://makecode.microbit.org/#pub:_7dc5R9WHyFbd](https://makecode.mi
 You could also download the program from the following website:<BR>
 <iframe src="https://makecode.microbit.org/#pub:_7dc5R9WHyFbd" width="100%" height="500" frameborder="0"></iframe>
 
+<P>
 
-## Create your own Applet to control micro:bit in IFTTT
+## IFTTT Applet Configuration
 <HR>
 
 <H3>Goal:</H3>
