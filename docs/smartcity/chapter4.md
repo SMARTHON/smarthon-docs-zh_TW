@@ -8,19 +8,16 @@ Example: The micro:bit is connected to the Internet. Once the time is changed to
 
 ![auto_fit](images/Ch4/Ch4_2_ifttt0.png)<P>
 
-On IFTTT configuration, set the IFTTT Applet:
+On IFTTT configuration, set the below:
 
 ![auto_fit](images/Ch4/Ch4_2_ifttt1.png)<P>
 
-In this example:<BR>
-If "it is 6pm today", then"turn on the light"
-![auto_fit](images/Ch4/Ch4_2_ifttt1_5.png)<P>
 
-<B>A. Trigger Part</B><BR>
+<span id="subtitle" ><u>A. Trigger Part</u></span><P>
 The below are the most common internet service or connected device that can control back the micro:bit. Or course, there are tons of the connected things/services you can control micro:bit.<P>
 ![auto_fit](images/Ch4/Ch4_2_ifttt2.png)<P>
 
-<B>B. Action Part</B><BR>
+<span id="subtitle" ><u>B. Action Part</u></span><P>
 With connection with different services in IFTTT, you can design your own applet with micro:bit projects using “if this then that (micro:bit)”. <P>
 
 ![auto_fit](images/Ch4/Ch4_2_ifttt3.png)<P>
@@ -32,10 +29,10 @@ With connection with different services in IFTTT, you can design your own applet
 ## Coding
 <HR>
 
-<B>Goal:</B><BR>
+<span id="subtitle" >Goal:</span><P>
 The below example is to turn on the light at 6 pm every day.<BR><P>
 
-<B><U>Connection Diagram:</U></B><BR>
+<span id="subtitle" >Connection Diagram:</span><BR>
 * Connect LED to P0<BR><P>
 ![auto_fit](images/Ch4/Ch4_hardware.png)<P>
 
@@ -101,7 +98,7 @@ You could also download the program from the following website:<BR>
 We need to setup the IFTTT Applet to control the Mircobit
 
 
-<span id="subtitle" >Step 1: Create or login to IFTTT account</span><BR>
+<span id="subtitle" >Step 1: Create or login to IFTTT account</span><P>
 Open your browser , go to [https://ifttt.com/](https://ifttt.com/). Register your IFTTT account and once completed, log in to your IFTTT account.<BR><P>
 ![auto_fit](images/Ch4/Ch4_ifttt1.png)<P>
 
