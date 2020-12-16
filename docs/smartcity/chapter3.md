@@ -1,33 +1,35 @@
 # Chapter 3: Direct Control micro:bit by App Inventor 2
 
 ## Introduction
-
+<HR>
 App inventor 2 is a blocks-based programming tool, which help beginners to build fully functional app in Android device. The interface is graphical base and support drag and drop operations. It consists of different components, such as button, slider, date pickers, image, camera, sensors including Accelerometer and connectivity to web, etc. The app can be exported or published to Play store for our daily life.<BR><P>
+
 ![auto_fit](images/Ch3/Ch3_des1.png)<P>
 For creating IoT application, you can use App Inventor 2 to create web connection with micro:bit. In WAN control, after micro:bit is connected to internet, it keep listening and execute customized operation when WAN command is received. The customized operation could be Pin On/off, such as “open/close LED”, or set value such as “set the light intensity” and “set current time”.<BR><P>
+
 ![auto_fit](images/Ch3/Ch3_des2.png)<P>
 
 
 ## Know the API (control command)
 <HR>
 
-What is API? API is one way to communicate between the objects in the Internet world. API is just like an “URL” which is website link. <BR>
+What is API? API is one way to communicate between the objects in the Internet world. API is just like an “URL” which is website link. <P>
 In App inventor, we use “API” to communicate with micro:bit. Normally, we need to know the (1) device ID (2) the message need to be sent to the micro:bit and optionally (3) value if needed.
 
 ![auto_fit](images/Ch3/Ch3_des3.png)
 <P>
 
-(1) Basic API:
+<B><u>(1) Basic API:</u></B>
 ```
 https://control.smarthon.cc/publish?id=DeviceID&msg=ControlCommand
 ```
 `id`: The unique ID of device, used to identify the target .<BR>
 `msg`: The command needs to send.<P>
-Example: https://control.smarthon.cc/publish?id=0x123456781&msg=lighton <P>
-In this example, we send the msg command “lighton” to device id “0x123456781”.<P>
+Example: "https://control.smarthon.cc/publish?id=0x123456781&msg=lighton". 
+In this case, we send the msg command “lighton” to device id “0x123456781”.<P>
 
 
-(2) Advanced API:
+<B><u>(2) Advanced API:</u></B>
 ```
 https://control.smarthon.cc/publish?id=DeviceID&msg=ControlCommand&value=Value
 ```
@@ -35,16 +37,21 @@ https://control.smarthon.cc/publish?id=DeviceID&msg=ControlCommand&value=Value
 `id`: The unique ID of device, used to identify the target .<BR>
 `msg`: The command needs to send.<BR>
 `value`(optional): Used when need for the command.<P>
-Example: https://control.smarthon.cc/publish?id=0x123456781&msg=lighton&value=500 <P>
-In this example, we send the msg command “lighton” with intensity value 500 to device id “0x123456781”.<P>
+Example: "https://control.smarthon.cc/publish?id=0x123456781&msg=lighton&value=500" .
+In this case, we send the msg command “lighton” with intensity value "500" to device id “0x123456781”.<P>
 
  
 ## Scenario Example
+<HR>
+<span id="subtitle">Goal:</span><P>
 
-Goal: This example is to turn on/off micro:bit LED by using app inventor 2.<BR>
-Description: In this example, there are 2 parts involved. <BR>
+This example is to turn on/off micro:bit LED by using app inventor 2.<BR>
+
+Description: In this example, there are 2 parts involved. <P>
+
 * In part 1, we need to connect the micro:bit to the internet and get the device ID. 
 * In part 2, design the mobile app and set the API with the device ID from part 1.
+
 <P>
 
 ![auto_fit](images/Ch3/Ch3_des4.png)<P>
@@ -53,7 +60,8 @@ Description: In this example, there are 2 parts involved. <BR>
 ## Part 1: Coding
 <HR>
 
-Goal: We need to get the Device ID and set the corresponding action.<BR><P>
+<span id="subtitle">Goal:</span><P>
+We need to get the Device ID and set the corresponding action.<BR><P>
 
 <u>Connection Diagram:</u><br>
 * Connect LED to P0<BR>

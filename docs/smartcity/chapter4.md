@@ -14,9 +14,11 @@ The below example you may apply for:
 
 
 ## Know the concept
-
+<HR>
 <span id="subtitle" ><u>A. Trigger Part</u></span><P>
+
 The below are the most common internet service or connected device that can control back the micro:bit. Or course, there are tons of the connected things/services you can control micro:bit.<P>
+
 ![auto_fit](images/Ch4/Ch4_2_ifttt2.png)<P>
 
 <span id="subtitle" ><u>B. Action Part</u></span><P>
@@ -25,8 +27,11 @@ With connection with different services in IFTTT, you can design your own applet
 ![auto_fit](images/Ch4/Ch4_2_ifttt3.png)<P>
 
 ## Scenario Example
+<HR>
+<span id="subtitle">Goal:</span> <P>
 
-Goal: The micro:bit is connected to the Internet. Once the time is changed to 6 pm, the IFTTT cloud will send the command to the micro:bit to turn on the LED.<P>
+The micro:bit is connected to the Internet. Once the time is changed to 6 pm, the IFTTT cloud will send the command to the micro:bit to turn on the LED.<P>
+
 Description: In this example, there are 2 parts involved. 
 * In part 1, we need to connect the micro:bit to the internet and get the device ID. 
 * In part 2, set the rule on IFTTT applet. If the time is 6 pm, set the command “light_on”
@@ -38,12 +43,6 @@ Example:<P>
 On IFTTT configuration, set the below. We can set the rule on the IFTTT, if something happened like time at 6:00 p.m., we can do the corresponding action.<P>
 
 ![auto_fit](images/Ch4/Ch4_2_ifttt1.png)<P>
-
-
-
-
-
- 
 
 
 ## Part 1: Coding
