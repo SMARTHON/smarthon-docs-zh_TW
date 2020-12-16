@@ -99,8 +99,8 @@ After connected to the WiFI, the connection to the server will be done automatic
 To get the command, we can use the `on Wi-Fi received` handler in WAN control tab.<BR>
 * Snap the `on WiFi received` handler to stage
 * Do the `if-condition statement` to the variable `WAN_Command`
-* If `Wan_command` “Pin_on” is received, white LED will be turned on (intensity:1023)
-* If `Wan_command` “Pin_off” is received, white LED will be turned off (intensity:0)<BR>
+* If `Wan_command` “Pin_On” is received, white LED will be turned on (intensity:1023)
+* If `Wan_command` “Pin_Off” is received, white LED will be turned off (intensity:0)<BR>
 
 Attention: Please be aware that the **P** is in capital letter.
 <P>
@@ -126,9 +126,9 @@ You may also show the `WAN_Command` and `value` by `show string`.<P>
 
 
 <span id="subtitle">Full Solution<BR><P>
-MakeCode: [https://makecode.microbit.org/_dfpWpXcU1JjY](https://makecode.microbit.org/#pub:_dfpWpXcU1JjY)<BR><P>
+MakeCode: [https://makecode.microbit.org/_bMFRmFYP2fdv](https://makecode.microbit.org/#pub:_bMFRmFYP2fdv)<BR><P>
 You could also download the program from the following website:<BR>
-<iframe src="https://makecode.microbit.org/#pub:_dfpWpXcU1JjY" width="100%" height="500" frameborder="0"></iframe><P>
+<iframe src="https://makecode.microbit.org/#pub:_bMFRmFYP2fdv" width="100%" height="500" frameborder="0"></iframe><P>
 
 
 ## Part 2: App Inventor 2 configuration

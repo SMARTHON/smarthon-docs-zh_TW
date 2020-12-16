@@ -136,3 +136,24 @@ Python is one of the most famous programming language, widely used in school and
 ![auto_fit](images/2_IOT/iot_image14.png)
 
 
+## Quick Start
+
+<H4>1.Plug the Mirco:bit(with Program) into the the slot</H4><P>
+
+>![auto_fit](images/2_IOT/iot_MBsolt.gif)<P>
+
+<H4>2.Get the power supply and turn on</H4><P>
+
+Method 1:<P>
+
+>Plug the USB cable into the USB port and turn on the switch<P>
+
+>![auto_fit](images/2_IOT/iot_usb.gif)<P>
+
+Method 2:<P>
+
+>Plug the battery case(1.5V AA*4) into the battery port and turn on the switch<P>
+
+>![auto_fit](images/2_IOT/iot_battery.gif)<P>
+
+
