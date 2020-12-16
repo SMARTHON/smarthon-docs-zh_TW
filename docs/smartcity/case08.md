@@ -1,6 +1,6 @@
 # IoT Case 08: Automated Traffic Light
 
-Level: ![level](images/level3.png)
+Level: ![level](images/level5.png)
 ![auto_fit](images/Case8/case-08_1.png)<P>
 
 ## Sender
