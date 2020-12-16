@@ -1,17 +1,19 @@
 # Chapter 4: Cloud Control micro:bit by IFTTT
 
+## Introduction
 In this chapter, you will know how to control micro:bit from the IFTTT cloud. Once there are some changes on Internet services like weather, time or different connected devices like voice assistant and some smart home device, you can send the command to micro:bit to do the action. <BR><P>
 
-## Scenario Example
+![auto_fit](images/Ch4/Ch4_2_intro.png)<P>
 
-Example: The micro:bit is connected to the Internet. Once the time is changed to 6 pm, the IFTTT cloud will send the command to the micro:bit to turn on the LED.
+The below example you may apply for:
+* Turn the street light on at 6pm and off after 6am everyday
+* Turn on the water pump every day at 06:00 for 2 second
+* If the forecast weather is rain, open the umbrella
+* Use voice command to control robot actions
+* When the door is closed, LED is turned on.
 
-![auto_fit](images/Ch4/Ch4_2_ifttt0.png)<P>
 
-On IFTTT configuration, set the below:
-
-![auto_fit](images/Ch4/Ch4_2_ifttt1.png)<P>
-
+## Know the concept
 
 <span id="subtitle" ><u>A. Trigger Part</u></span><P>
 The below are the most common internet service or connected device that can control back the micro:bit. Or course, there are tons of the connected things/services you can control micro:bit.<P>
@@ -22,15 +24,33 @@ With connection with different services in IFTTT, you can design your own applet
 
 ![auto_fit](images/Ch4/Ch4_2_ifttt3.png)<P>
 
+## Scenario Example
+
+Goal: The micro:bit is connected to the Internet. Once the time is changed to 6 pm, the IFTTT cloud will send the command to the micro:bit to turn on the LED.<P>
+Description: In this example, there are 2 parts involved. 
+* In part 1, we need to connect the micro:bit to the internet and get the device ID. 
+* In part 2, set the rule on IFTTT applet. If the time is 6 pm, set the command “light_on”
+
+Example:<P>
+
+![auto_fit](images/Ch4/Ch4_2_ifttt0.png)<P>
+
+On IFTTT configuration, set the below. We can set the rule on the IFTTT, if something happened like time at 6:00 p.m., we can do the corresponding action.<P>
+
+![auto_fit](images/Ch4/Ch4_2_ifttt1.png)<P>
+
+
+
+
 
  
 
 
-## Coding
+## Part 1: Coding
 <HR>
 
 <span id="subtitle" >Goal:</span><P>
-The below example is to turn on the light at 6 pm every day.<BR><P>
+We need to get the Device ID and set the corresponding action.<BR><P>
 
 <span id="subtitle" >Connection Diagram:</span><BR>
 * Connect LED to P0<BR><P>
@@ -61,8 +81,8 @@ After connected to the WiFI, the connection to the server will be done automatic
 
 * Snap the `on WiFi received` handler to stage
 * Do the `if-condition statement` to the variable `WAN_Command`
-* If `Wan_command` “Pin_on” is received, white LED will be turned on (intensity:1023)
-* If `Wan_command` “Pin_off” is received, white LED will be turned off (intensity:0)
+* If `Wan_command` “Light_on” is received, white LED will be turned on (intensity:1023)
+* If `Wan_command` “Light_off” is received, white LED will be turned off (intensity:0)
 
 Attention: Please be aware that the **P** is in capital letter.
 
@@ -71,6 +91,7 @@ Attention: Please be aware that the **P** is in capital letter.
 <span id="subtitle">Step 4: Show the Command</span><BR><P>
 Sometimes you may need to show the recevied command for debugging, so if you need that, you can use the OLED `show string` to display the command on the OLED.
 * Go to OLED
+* Snap the `clear OLED display` to `On WiFi received` to avoid overlap
 * Snap the `show string` to `On WiFi received`
 * Draw the `WAN_Command` variable to `show string` placeholder
 
@@ -79,19 +100,19 @@ Sometimes you may need to show the recevied command for debugging, so if you nee
 <H3><U>Advanced Usage(with value):</U></H3>
 
 If you want to control the module with value, you can use the another block which contain `value` variable.<BR>
-If `Wan command` “PinValue” is received, white LED will be turned on with the given intensity `value`.<BR>
+If `Wan command` “LightValue” is received, white LED will be turned on with the given intensity `value`.<BR>
 You may also show the `WAN_Command` and `value` by `show string`.<P>
 ![auto_fit](images/Ch4/Ch4_2_p3_1.png)<P>
 
 
 <span id="subtitle">Full Solution<BR><P>
-MakeCode: [https://makecode.microbit.org/#pub:_7dc5R9WHyFbd](https://makecode.microbit.org/#pub:_7dc5R9WHyFbd)<BR><P>
+MakeCode: [https://makecode.microbit.org/_JmF1kVKaThzv](https://makecode.microbit.org/#pub:_JmF1kVKaThzv)<BR><P>
 You could also download the program from the following website:<BR>
-<iframe src="https://makecode.microbit.org/#pub:_7dc5R9WHyFbd" width="100%" height="500" frameborder="0"></iframe>
+<iframe src="https://makecode.microbit.org/#pub:_JmF1kVKaThzv" width="100%" height="500" frameborder="0"></iframe>
 
 <P>
 
-## IFTTT Applet Configuration
+## Part 2: IFTTT Applet Configuration
 <HR>
 
 <H3>Goal:</H3>
@@ -119,7 +140,7 @@ Create a trigger for the applet<BR><P>
 Create an action for the applet
 * Select “That”, choose action service “Smarthon”
 * Choose action “Control Command”
-* Input your `Device ID` (e.g.0xa3240ac45916) and control command (e.g. Pin_On). Then click “Create action”.
+* Input your `Device ID` (e.g.0xa3240ac45916) and control command (e.g. Light_On). Then click “Create action”.
 ![auto_fit](images/Ch4/Ch4_ifttt4.png)<P>
 
 <span id="subtitle" >Step 5: Review the configuration</span><BR><P>
@@ -142,7 +163,7 @@ You can send WAN command with value in IFTTT. In this example, click “That” 
 Create an action for the applet
 * Select “That”, choose action service “Smarthon”
 * Choose action “Control Command (with value)”
-* Input your Device ID (e.g. 0xfa240ac45917), control command (e.g. PinValue) and Value (e.g. 600). Then click “Create action”.
+* Input your Device ID (e.g. 0xfa240ac45917), control command (e.g. LightValue) and Value (e.g. 600). Then click “Create action”.
 ![auto_fit](images/Ch4/Ch4_2_ifttt2.png)<P>
  
  
@@ -155,7 +176,7 @@ Create an action for the applet
 
 After connected to WiFi, micro:bit will connect to control server and keep listening to the WAN command
 
-* Every day at 6pm, clock will trigger IFTTT to send out micro:bit WAN command “Pin_On”
+* Every day at 6pm, clock will trigger IFTTT to send out micro:bit WAN command “Light_On”
 * Micro:bit will recevie the command
 * The LED on P0 will be turned on.
 ![auto_fit](images/Ch4/Ch4_2_result.png)<P>
@@ -163,7 +184,7 @@ After connected to WiFi, micro:bit will connect to control server and keep liste
 <H3><U>Advanced Usage(with value):</U></H3>
 
 When change the applet to contain value version, it will have an additional variable `value` included
-* Every day at 6pm, clock will trigger IFTTT to send out micro:bit WAN command “PinValue” (with value “600”)
+* Every day at 6pm, clock will trigger IFTTT to send out micro:bit WAN command “LightValue” (with value “600”)
 * Micro:bit will recevie the command
 * The LED on P0 will be turned on (with light intensity: 600).
 ![auto_fit](images/Ch4/Ch4_2_result_1.png)<P>

@@ -1,5 +1,7 @@
 # Chapter 3: Direct Control micro:bit by App Inventor 2
 
+## Introduction
+
 App inventor 2 is a blocks-based programming tool, which help beginners to build fully functional app in Android device. The interface is graphical base and support drag and drop operations. It consists of different components, such as button, slider, date pickers, image, camera, sensors including Accelerometer and connectivity to web, etc. The app can be exported or published to Play store for our daily life.<BR><P>
 ![auto_fit](images/Ch3/Ch3_des1.png)<P>
 For creating IoT application, you can use App Inventor 2 to create web connection with micro:bit. In WAN control, after micro:bit is connected to internet, it keep listening and execute customized operation when WAN command is received. The customized operation could be Pin On/off, such as “open/close LED”, or set value such as “set the light intensity” and “set current time”.<BR><P>
@@ -9,16 +11,22 @@ For creating IoT application, you can use App Inventor 2 to create web connectio
 ## Know the API (control command)
 <HR>
 
-API is one way to communicate between the objects on the Internet world. API is just like an “URL” which is website link.
+What is API? API is one way to communicate between the objects in the Internet world. API is just like an “URL” which is website link. <BR>
+In App inventor, we use “API” to communicate with micro:bit. Normally, we need to know the (1) device ID (2) the message need to be sent to the micro:bit and optionally (3) value if needed.
+
 ![auto_fit](images/Ch3/Ch3_des3.png)
 <P>
-This is the API you can use to control the micro:bit, when call the API, the command will be send to the micro:bit.<BR>
-Normally, use the Basic API can control the micro:bit. If you need to send a value as extra information, you may use the Advanced API which provide one more parameter to send value.
 
 (1) Basic API:
 ```
 https://control.smarthon.cc/publish?id=DeviceID&msg=ControlCommand
 ```
+`id`: The unique ID of device, used to identify the target .<BR>
+`msg`: The command needs to send.<P>
+Example: https://control.smarthon.cc/publish?id=0x123456781&msg=lighton <P>
+In this example, we send the msg command “lighton” to device id “0x123456781”.<P>
+
+
 (2) Advanced API:
 ```
 https://control.smarthon.cc/publish?id=DeviceID&msg=ControlCommand&value=Value
@@ -27,14 +35,25 @@ https://control.smarthon.cc/publish?id=DeviceID&msg=ControlCommand&value=Value
 `id`: The unique ID of device, used to identify the target .<BR>
 `msg`: The command needs to send.<BR>
 `value`(optional): Used when need for the command.<P>
-Change the `DeviceID` and `ControlCommand` and `Value` to which your application using.
-
+Example: https://control.smarthon.cc/publish?id=0x123456781&msg=lighton&value=500 <P>
+In this example, we send the msg command “lighton” with intensity value 500 to device id “0x123456781”.<P>
 
  
-## Coding
+## Scenario Example
+
+Goal: This example is to turn on/off micro:bit LED by using app inventor 2.<BR>
+Description: In this example, there are 2 parts involved. <BR>
+* In part 1, we need to connect the micro:bit to the internet and get the device ID. 
+* In part 2, design the mobile app and set the API with the device ID from part 1.
+<P>
+
+![auto_fit](images/Ch3/Ch3_des4.png)<P>
+ 
+ 
+## Part 1: Coding
 <HR>
 
-Goal: This example is to turn on/off micro:bit modules only.<BR><P>
+Goal: We need to get the Device ID and set the corresponding action.<BR><P>
 
 <u>Connection Diagram:</u><br>
 * Connect LED to P0<BR>
@@ -81,6 +100,7 @@ Attention: Please be aware that the **P** is in capital letter.
 <span id="subtitle">Step 4: Show the Command</span><BR><P>
 Sometimes you may need to show the recevied command for debugging, so if you need that, you can use the OLED `show string` to display the command on the OLED.
 * Go to OLED
+* Snap the `clear OLED display` to `On WiFi received` to avoid overlap 
 * Snap the `show string` to `On WiFi received`
 * Draw the `WAN_Command` variable to `show string` placeholder
 
@@ -96,12 +116,12 @@ You may also show the `WAN_Command` and `value` by `show string`.<P>
 
 
 <span id="subtitle">Full Solution<BR><P>
-MakeCode: [https://makecode.microbit.org/#pub:_iFR2PXieC1X6](https://makecode.microbit.org/#pub:_iFR2PXieC1X6)<BR><P>
+MakeCode: [https://makecode.microbit.org/_dfpWpXcU1JjY](https://makecode.microbit.org/#pub:_dfpWpXcU1JjY)<BR><P>
 You could also download the program from the following website:<BR>
-<iframe src="https://makecode.microbit.org/#pub:_iFR2PXieC1X6" width="100%" height="500" frameborder="0"></iframe><P>
+<iframe src="https://makecode.microbit.org/#pub:_dfpWpXcU1JjY" width="100%" height="500" frameborder="0"></iframe><P>
 
 
-## App Inventor 2 configuration
+## Part 2: App Inventor 2 configuration
 <HR>
 
 <H3>Goal:</H3>
