@@ -1,7 +1,7 @@
 # Chapter 3: Direct Control micro:bit by App Inventor 2
 
 ## Introduction
-<HR>
+
 App inventor 2 is a blocks-based programming tool, which help beginners to build fully functional app in Android device. The interface is graphical base and support drag and drop operations. It consists of different components, such as button, slider, date pickers, image, camera, sensors including Accelerometer and connectivity to web, etc. The app can be exported or published to Play store for our daily life.<BR><P>
 
 ![auto_fit](images/Ch3/Ch3_des1.png)<P>
@@ -47,7 +47,9 @@ In this case, we send the msg command “lighton” with intensity value "500" t
 
 This example is to turn on/off micro:bit LED by using app inventor 2.<BR>
 
-Description: In this example, there are 2 parts involved. <P>
+<span id="subtitle">Description: </span><P>
+
+In this example, there are 2 parts involved. <P>
 
 * In part 1, we need to connect the micro:bit to the internet and get the device ID. 
 * In part 2, design the mobile app and set the API with the device ID from part 1.
@@ -63,7 +65,7 @@ Description: In this example, there are 2 parts involved. <P>
 <span id="subtitle">Goal:</span><P>
 We need to get the Device ID and set the corresponding action.<BR><P>
 
-<u>Connection Diagram:</u><br>
+<span id="subtitle">Connection Diagram:</span><br>
 * Connect LED to P0<BR>
 
 ![auto_fit](images/Ch3/Ch3_hardware.png)<P>

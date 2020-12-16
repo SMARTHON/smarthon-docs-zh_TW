@@ -32,11 +32,12 @@ With connection with different services in IFTTT, you can design your own applet
 
 The micro:bit is connected to the Internet. Once the time is changed to 6 pm, the IFTTT cloud will send the command to the micro:bit to turn on the LED.<P>
 
-Description: In this example, there are 2 parts involved. 
+<span id="subtitle">Description:</span><P>
+
+In this example, there are 2 parts involved. 
+
 * In part 1, we need to connect the micro:bit to the internet and get the device ID. 
 * In part 2, set the rule on IFTTT applet. If the time is 6 pm, set the command “light_on”
-
-Example:<P>
 
 ![auto_fit](images/Ch4/Ch4_2_ifttt0.png)<P>
 
