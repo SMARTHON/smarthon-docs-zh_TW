@@ -5,26 +5,13 @@ In this chapter, you will know how to control micro:bit from the IFTTT cloud. On
 
 ![auto_fit](images/Ch4/Ch4_2_intro.png)<P>
 
-The below example you may apply for:
+In practice, the below example you may apply for:
 * Turn the street light on at 6pm and off after 6am everyday
 * Turn on the water pump every day at 06:00 for 2 second
 * If the forecast weather is rain, open the umbrella
 * Use voice command to control robot actions
 * When the door is closed, LED is turned on.
 
-
-## Know the concept
-<HR>
-<span id="subtitle" ><u>A. Trigger Part</u></span><P>
-
-The below are the most common internet service or connected device that can control back the micro:bit. Or course, there are tons of the connected things/services you can control micro:bit.<P>
-
-![auto_fit](images/Ch4/Ch4_2_ifttt2.png)<P>
-
-<span id="subtitle" ><u>B. Action Part</u></span><P>
-With connection with different services in IFTTT, you can design your own applet with micro:bit projects using “if this then that (micro:bit)”. <P>
-
-![auto_fit](images/Ch4/Ch4_2_ifttt3.png)<P>
 
 ## Scenario Example
 <HR>
@@ -40,10 +27,6 @@ In this example, there are 2 parts involved.
 * In part 2, set the rule on IFTTT applet. If the time is 6 pm, set the command “light_on”
 
 ![auto_fit](images/Ch4/Ch4_2_ifttt0.png)<P>
-
-On IFTTT configuration, set the below. We can set the rule on the IFTTT, if something happened like time at 6:00 p.m., we can do the corresponding action.<P>
-
-![auto_fit](images/Ch4/Ch4_2_ifttt1.png)<P>
 
 
 ## Part 1: Coding
@@ -81,8 +64,8 @@ After connected to the WiFI, the connection to the server will be done automatic
 
 * Snap the `on WiFi received` handler to stage
 * Do the `if-condition statement` to the variable `WAN_Command`
-* If `Wan_command` “Light_on” is received, white LED will be turned on (intensity:1023)
-* If `Wan_command` “Light_off” is received, white LED will be turned off (intensity:0)
+* If `Wan_command` “light_on” is received, white LED will be turned on (intensity:1023)
+* If `Wan_command` “light_off” is received, white LED will be turned off (intensity:0)
 
 Attention: Please be aware that the **P** is in capital letter.
 
@@ -128,45 +111,37 @@ Open your browser , go to [https://ifttt.com/](https://ifttt.com/). Register you
 On the top right menu, click “Create” > “Applets”<BR><P>
 ![auto_fit](images/Ch4/Ch4_ifttt2.png)<P>
 
-<span id="subtitle" >Step 3: Create the <u>trigger</u> of Applets</span><BR><P>
-Create a trigger for the applet<BR><P>
-* Select “This” > Choose service “Date & Time”
-* Choose trigger “Every day at” 
-* Select the time (e.g. 06PM, 00 Minutes; it means every day at 6pm) and click “Create trigger”.
-![auto_fit](images/Ch4/Ch4_ifttt3.png)<P>
+<span id="subtitle" >Step 3: Set the Rules</span><BR><P>
+On IFTTT configuration, set the below. We can set the rule on the IFTTT, if something happened like time at 6:00 p.m., we can do the corresponding action.<P>
 
-
-<span id="subtitle" >Step 4: Create the action of Applet</span><BR><P>
-Create an action for the applet
-* Select “That”, choose action service “Smarthon”
-* Choose action “Control Command”
-* Input your `Device ID` (e.g.0xa3240ac45916) and control command (e.g. Light_On). Then click “Create action”.
-![auto_fit](images/Ch4/Ch4_ifttt4.png)<P>
-
-<span id="subtitle" >Step 5: Review the configuration</span><BR><P>
-Review your applet, then click “Finish ”. <BR><P>
-
-<span id="subtitle" >Step 6: Ready to use</span><BR><P>
-After, the applet connection has been created it will show “connected”. <BR><P>
-The light will be turned on at 6pm every day!<BR><P>
-![auto_fit](images/Ch4/Ch4_ifttt5.png)<P>
-<P>
-<HR>
-<H3><U>Advanced Usage(with value):</U></H3>
-
-<span id="subtitle" >Step 1: Create the applet</span><BR><P>
-You can send WAN command with value in IFTTT. In this example, click “That” to select the action<BR><P>
 ![auto_fit](images/Ch4/Ch4_2_ifttt1.png)<P>
 
-        
-<span id="subtitle" >Step 2: Setup the applet</span><BR><P>
-Create an action for the applet
-* Select “That”, choose action service “Smarthon”
-* Choose action “Control Command (with value)”
-* Input your Device ID (e.g. 0xfa240ac45917), control command (e.g. LightValue) and Value (e.g. 600). Then click “Create action”.
-![auto_fit](images/Ch4/Ch4_2_ifttt2.png)<P>
- 
- 
+<span id="subtitle" ><u>A. Trigger Part</u></span><P>
+![auto_fit](images/Ch4/Ch4_2_ifttt1_1.png)<P>
+1.Search "Date" and select "Date & Time"<P>
+![auto_fit](images/Ch4/Ch4_2_ifttt1_2.png)<P>
+2.Finish the time setting.<P>
+* Choose trigger "Every day at"
+* Select the time (e.g. 06PM, 00Minutes; it menas every day at 6pm) and click "Create trigger"
+
+![auto_fit](images/Ch4/Ch4_2_ifttt1_3.png)<P>
+
+<span id="subtitle" ><u>B. Action Part</u></span><P>
+
+![auto_fit](images/Ch4/Ch4_2_ifttt1_4.png)<P>
+1.Search “micro:bit” and you will see “Smarthon IoT(micro:bit)”<P>
+![auto_fit](images/Ch4/Ch4_2_ifttt1_6.png)<P>
+
+2.Finish the mirco:bit setting.
+* Choose action "Control Command"
+* Input your `Device ID` (e.g. 0xa3240ac45916) and `control command` (e.g. light_on). Then click "Create action"
+![auto_fit](images/Ch4/Ch4_2_ifttt1_7.png)<P>
+
+
+<span id="subtitle" ><u>Optional</u></span><P>
+If you need to send the command with value to the micro:bit<BR>
+
+![auto_fit](images/Ch4/Ch4_2_ifttt1_8.png)<P>
 
 
 ## Result
@@ -176,7 +151,7 @@ Create an action for the applet
 
 After connected to WiFi, micro:bit will connect to control server and keep listening to the WAN command
 
-* Every day at 6pm, clock will trigger IFTTT to send out micro:bit WAN command “Light_On”
+* Every day at 6pm, clock will trigger IFTTT to send out micro:bit WAN command “light_On”
 * Micro:bit will recevie the command
 * The LED on P0 will be turned on.
 ![auto_fit](images/Ch4/Ch4_2_result.png)<P>
