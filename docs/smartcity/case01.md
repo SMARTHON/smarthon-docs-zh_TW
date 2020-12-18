@@ -51,22 +51,23 @@ Connect LED light to the P3 port of Smarthon IoT:bit<BR><P>
 <HR>
 
 <span id="subtitle">Step 1</span><BR><P>
-Drag on start block from Basic. set Led enable is false (as P3 is used for micro:bit LED by default, LED need to be disable before using P3).
+As P3 is used for micro:bit LED by default, LED need to be disable before using P3.<BR><P>
+* Snap `led enable false` to `on start` 
 ![auto_fit](images/Case1/Case1_p1.png)<P>
-<span id="subtitle">Step 2</span><BR><P>
-Drag forever block from Basic. Snap if statement into forever, set get motion (triggered or not) at P0 = true, that’s say motion is triggered, someone passes by.<P>
+
+<span id="subtitle">Step 2</span><BR><P> 
+If there are movement nearby (motion sensor is triggered), while LED will be turned on for 10 seconds. <BR><P>
+* Drag `forever” from Basic
+* Snap `if statement` into `forever`
+* Set `get motion (triggered or not) at P0 = true`, into `if statement` that’s say motion is triggered, someone passes by. 
+* Then, `turn white LED to 1023 at P3` as turning on white LED and pause 10 seconds. 
+* Else, `turn white LED at P3 to 0` as turning off.
 ![auto_fit](images/Case1/Case1_p2.png)<P>
-<span id="subtitle">Step 3</span><BR><P>
-Turn white LED to 1023 at P3 as turning on white LED and pause 10 seconds.<P>
-![auto_fit](images/Case1/Case1_p3.png)<P>
-<span id="subtitle">Step 4</span><BR><P>
-Else, turn white LED to 0 at P3 as turning off white LED.<P>
-![auto_fit](images/Case1/Case1_p4.png)<P>
 
 <span id="subtitle">Full Solution<BR><P>
-MakeCode: [https://makecode.microbit.org/_5jAUk558DTXC](https://makecode.microbit.org/#pub:_5jAUk558DTXC)<BR><P>
+MakeCode: [https://makecode.microbit.org/_PVf42KbHx0zY](https://makecode.microbit.org/#pub:_PVf42KbHx0zY_5jAUk558DTXC)<BR><P>
 You could also download the program from the following website:<BR>
-<iframe src="https://makecode.microbit.org/#pub:_5jAUk558DTXC" width="100%" height="500" frameborder="0"></iframe>
+<iframe src="https://makecode.microbit.org/#pub:_PVf42KbHx0zY" width="100%" height="500" frameborder="0"></iframe>
 
 <P>
 
