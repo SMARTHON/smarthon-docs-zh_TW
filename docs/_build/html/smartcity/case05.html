@@ -89,8 +89,8 @@
 <li class="toctree-l2"><a class="reference internal" href="4_wificonnect.html">4. First step: Connect the micro:bit to the Wi-Fi</a></li>
 <li class="toctree-l2"><a class="reference internal" href="chapter1.html">5. Chapter 1: Upload Data to ThingSpeak</a></li>
 <li class="toctree-l2"><a class="reference internal" href="chapter2.html">6. Chapter 2: Send Email by IFTTT</a></li>
-<li class="toctree-l2"><a class="reference internal" href="chapter3.html">7. Chapter 3: Control micro:bit by App Inventor 2</a></li>
-<li class="toctree-l2"><a class="reference internal" href="chapter4.html">8. Chapter 4: Control your micro:bit by IFTTT Services</a></li>
+<li class="toctree-l2"><a class="reference internal" href="chapter3.html">7. Chapter 3: Direct Control micro:bit by App Inventor 2</a></li>
+<li class="toctree-l2"><a class="reference internal" href="chapter4.html">8. Chapter 4: Cloud Control micro:bit by IFTTT</a></li>
 <li class="toctree-l2"><a class="reference internal" href="chapter5.html">9. Chapter 5: Object to Object communication</a></li>
 <li class="toctree-l2"><a class="reference internal" href="case01.html">10. Case 01: Automated Smart Playground Lamp</a></li>
 <li class="toctree-l2"><a class="reference internal" href="case02.html">11. Case 02: Smart Car park Access Barrier</a></li>
@@ -241,33 +241,35 @@ Extend the connection of OLED to the I2C connection port of IoT:bit <BR><P>
 <div class="section" id="programming-makecode">
 <h2><span class="section-number">14.6. </span>Programming (MakeCode)<a class="headerlink" href="#programming-makecode" title="Permalink to this headline">¶</a></h2>
 <HR><p><span id="subtitle">Step 1</span><P>
-Drag on start block from Basic. Drag Initialize IoT:bit at OLED from IoT:bit, set OLED height:64, width:128.<BR><P>
-<img alt="auto_fit" src="../_images/Case5_p1.png" /><P>
-<span id="subtitle">Step 2</span><P>
-Set distance 1, distance 2 and speed to 0 from variables. <BR><P>
-<img alt="auto_fit" src="../_images/Case5_p2.png" /><P>
-<span id="subtitle">Step 3</span><P>
-Set up a new function (calculate_Speed). Set distance1 to get distance unit cm trig P14 echo P15 (distance from the car to the distance sensor before 0.5 second)<BR><P>
-<img alt="auto_fit" src="../_images/Case5_p3.png" /><P>
-<span id="subtitle">Step 4</span><P>
-Pause 500ms and get distance2 to get distance unit cm trig P14 echo P15 (distance from the car to the distance sensor after 0.5 second)<BR><P>
-<img alt="auto_fit" src="../_images/Case5_p4.png" /><P>
-<span id="subtitle">Step 5</span><P>
-By the equation of speed = distance / time. We get the speed of the moving car to (distance1-distance2)/0.5 (unit: cm/s)<BR><P>
-<img alt="auto_fit" src="../_images/Case5_p5.png" /><P>
-<span id="subtitle">Step 6</span><P>
-Drag forever block from Basic. Call function (calculate_Speed) to get the speed of the moving car.<BR><P>
-<img alt="auto_fit" src="../_images/Case5_p6.png" /><P>
-<span id="subtitle">Step 7</span><P>
-If the speed ≥0, then OLED will show the distance1, distance2 and speed.<BR><P>
-<img alt="auto_fit" src="../_images/Case5_p7.png" /><P>
-<span id="subtitle">Step 8</span><P>
-Plot bar graph of speed up to 20 from LED, which means showing a bar graph on Micro:bit based on the recorded speed.<BR><P>
-<img alt="auto_fit" src="../_images/Case5_p8.png" /><P></p>
+Initialize OLED screen and variable for calculating the car speed.<BR><P></p>
+<ul class="simple">
+<li><p>Drag <code class="docutils literal notranslate"><span class="pre">Initialize</span> <span class="pre">OLED</span> <span class="pre">with</span> <span class="pre">width:128,</span> <span class="pre">height:</span> <span class="pre">64</span></code> to <code class="docutils literal notranslate"><span class="pre">on</span> <span class="pre">start</span></code></p></li>
+<li><p>Set <code class="docutils literal notranslate"><span class="pre">distance1</span></code>, <code class="docutils literal notranslate"><span class="pre">distance2</span></code> and <code class="docutils literal notranslate"><span class="pre">speed</span></code> to 0 from <code class="docutils literal notranslate"><span class="pre">variables</span></code>
+<img alt="auto_fit" src="../_images/Case5_p1.png" /><P></p></li>
+</ul>
+<p><span id="subtitle">Step 2</span><P>
+Set up a new function to get the distance form the car and calculate the speed.<BR><P></p>
+<ul class="simple">
+<li><p>Set up a new function <code class="docutils literal notranslate"><span class="pre">calculate_Speed</span></code> from <code class="docutils literal notranslate"><span class="pre">Advanced</span></code> &gt; <code class="docutils literal notranslate"><span class="pre">Functions</span></code>.</p></li>
+<li><p>Set <code class="docutils literal notranslate"><span class="pre">distance1</span></code> to <code class="docutils literal notranslate"><span class="pre">get</span> <span class="pre">distance</span> <span class="pre">unit</span> <span class="pre">cm</span> <span class="pre">trig</span> <span class="pre">P14</span> <span class="pre">echo</span> <span class="pre">P15</span></code> (distance from the car to the distance sensor before 0.5 second)
+Drag <code class="docutils literal notranslate"><span class="pre">Pause</span></code> to wait 500ms and set <code class="docutils literal notranslate"><span class="pre">distance2</span></code> to <code class="docutils literal notranslate"><span class="pre">get</span> <span class="pre">distance</span> <span class="pre">unit</span> <span class="pre">cm</span> <span class="pre">trig</span> <span class="pre">P14</span> <span class="pre">echo</span> <span class="pre">P15</span></code> (distance from the car to the distance sensor after 0.5 second)</p></li>
+<li><p>By the equation of speed = distance / time. We get the <code class="docutils literal notranslate"><span class="pre">speed</span></code> of the moving car to (<code class="docutils literal notranslate"><span class="pre">distance1</span></code>-<code class="docutils literal notranslate"><span class="pre">distance2</span></code>)/0.5 (unit: cm/s)
+<img alt="auto_fit" src="../_images/Case5_p2.png" /><P></p></li>
+</ul>
+<p><span id="subtitle">Step 3</span><P>
+Call function to calculate the car speed, if the car speed is valid, then show it on the OLED screen and plot as an animated graph on micro:bit LED.<BR><P></p>
+<ul class="simple">
+<li><p>In block <code class="docutils literal notranslate"><span class="pre">forever</span></code>, call function <code class="docutils literal notranslate"><span class="pre">calculate_Speed</span></code> from <code class="docutils literal notranslate"><span class="pre">Advanced</span></code> &gt; <code class="docutils literal notranslate"><span class="pre">Functions</span></code> to get the speed of the moving car</p></li>
+<li><p>Snap <code class="docutils literal notranslate"><span class="pre">If</span> <span class="pre">statement</span></code> into the loop</p></li>
+<li><p>If <code class="docutils literal notranslate"><span class="pre">speed</span> <span class="pre">≥0</span></code>, then it will <code class="docutils literal notranslate"><span class="pre">plot</span> <span class="pre">bar</span> <span class="pre">graph</span> <span class="pre">of</span> <span class="pre">…</span></code> from <code class="docutils literal notranslate"><span class="pre">Led</span></code> and draw variable <code class="docutils literal notranslate"><span class="pre">speed</span></code> into the plotted value. Set value up to 20</p></li>
+<li><p>Snap <code class="docutils literal notranslate"><span class="pre">clear</span> <span class="pre">OLED</span> <span class="pre">display</span></code> from <code class="docutils literal notranslate"><span class="pre">OLED</span></code> to avoid overlap</p></li>
+<li><p>Snap <code class="docutils literal notranslate"><span class="pre">show</span> <span class="pre">string</span></code> and show value of variables <code class="docutils literal notranslate"><span class="pre">distance1</span></code>, <code class="docutils literal notranslate"><span class="pre">distance2</span></code> and <code class="docutils literal notranslate"><span class="pre">speed</span></code>
+<img alt="auto_fit" src="../_images/Case5_p3.png" /><P></p></li>
+</ul>
 <p><span id="subtitle">Full Solution<BR><P>
-MakeCode: <a class="reference external" href="https://makecode.microbit.org/#pub:_iiiJeyMCe4Pi">https://makecode.microbit.org/_iiiJeyMCe4Pi</a><BR><P>
+MakeCode: <a class="reference external" href="https://makecode.microbit.org/#pub:_YaLE8D4cMCFP">https://makecode.microbit.org/_YaLE8D4cMCFP</a><BR><P>
 You could also download the program from the following website:<BR></p>
-<iframe src="https://makecode.microbit.org/#pub:_iiiJeyMCe4Pi" width="100%" height="500" frameborder="0"></iframe></div>
+<iframe src="https://makecode.microbit.org/#pub:_YaLE8D4cMCFP" width="100%" height="500" frameborder="0"></iframe></div>
 <div class="section" id="results">
 <h2><span class="section-number">14.7. </span>Results<a class="headerlink" href="#results" title="Permalink to this headline">¶</a></h2>
 <HR><p>It will keep checking the distance of cars from distance sensor by distance sensor in every 500ms. The speed of the cars will be shown on OLED. A bar chart of speed will be shown on micro:bit LED also.<BR><P>

@@ -54,23 +54,36 @@ Connect 180° Servo to P2 port of IoT:bit<BR><P>
 <HR>
 
 <span id="subtitle">Step 1</span><BR><P>
-Drag on start block from Basic. Set distance and light to 0 from variables and turn servo to 0 degree at P2 at the beginning.<BR><P>
+Initialize variables and turn servo to start position at the beginning.<BR><P>
+* Inside `on start`, snap `set variable distance to 0` and `set light to 0` from `variables`. 
+* Snap `Turn Servo to 0 degree at P2`.
 ![auto_fit](images/Case2/Case2_p1.png)<P>
+
 <span id="subtitle">Step 2</span><BR><P>
-Drag forever block from Basic. Set distance to get distance unit cm trig P14 echo P15. set light to get light value (percentage) at Pin P0.<BR><P>
+It will continuously check the distance from distance sensor and light value from light sensor.<BR><P>
+* Drag `get distance to get distance unit cm trig P14 echo P15`, store the value to variable `distance`.
+* `Get light value (percentage) at Pin P0`, store the value to variable `light`
 ![auto_fit](images/Case2/Case2_p2.png)<P>
+
 <span id="subtitle">Step 3</span><BR><P>
-Snap if statement into forever, set if distance ≤ 5. Snap another if and set light value >20 then, <BR><P>
+When the car is in front of the distance sensor of the gate and there are vacancies in car park (light sensor value is high).<BR><P>
+* Snap `if statement` into forever, set if variable `distance` ≤ 5
+* Snap another `if statement` set variable `light` value >20
 ![auto_fit](images/Case2/Case2_p3.png)<P>
+
 <span id="subtitle">Step 4</span><BR><P>
-After measuring the distance and light, turn servo to 90 degree at P2, pause 5 seconds and turn servo to 0 degree at P2. <BR><P>
-That’s say when there is car entering and there is vacancy inside the car park, the car park gate will be opened for 5 seconds for car entering.<BR><P>
+If the statement is true, then the gate will be opened for 5 seconds and then closed.<BR><P>
+* Snap `Turn Servo to 90 degree at P2` as the gate is opened.
+* Snap `pause` to the loop to wait 5 seconds
+* Snap `Turn Servo to 0 degree at P2` as the gate is closed.
 ![auto_fit](images/Case2/Case2_p4.png)<P>
 
+
+
 <span id="subtitle">Full Solution<BR><P>
-MakeCode: [https://makecode.microbit.org/_1AtWbYbjDdHg](https://makecode.microbit.org/#pub:_1AtWbYbjDdHg)<BR><P>
+MakeCode: [https://makecode.microbit.org/_6xjh8hAhi81j](https://makecode.microbit.org/#pub:_6xjh8hAhi81j)<BR><P>
 You could also download the program from the following website:<BR>
-<iframe src="https://makecode.microbit.org/#pub:_1AtWbYbjDdHg" width="100%" height="500" frameborder="0"></iframe>
+<iframe src="https://makecode.microbit.org/#pub:_6xjh8hAhi81j" width="100%" height="500" frameborder="0"></iframe>
 
 ## Result
 <HR>

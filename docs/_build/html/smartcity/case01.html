@@ -89,8 +89,8 @@
 <li class="toctree-l2"><a class="reference internal" href="4_wificonnect.html">4. First step: Connect the micro:bit to the Wi-Fi</a></li>
 <li class="toctree-l2"><a class="reference internal" href="chapter1.html">5. Chapter 1: Upload Data to ThingSpeak</a></li>
 <li class="toctree-l2"><a class="reference internal" href="chapter2.html">6. Chapter 2: Send Email by IFTTT</a></li>
-<li class="toctree-l2"><a class="reference internal" href="chapter3.html">7. Chapter 3: Control micro:bit by App Inventor 2</a></li>
-<li class="toctree-l2"><a class="reference internal" href="chapter4.html">8. Chapter 4: Control your micro:bit by IFTTT Services</a></li>
+<li class="toctree-l2"><a class="reference internal" href="chapter3.html">7. Chapter 3: Direct Control micro:bit by App Inventor 2</a></li>
+<li class="toctree-l2"><a class="reference internal" href="chapter4.html">8. Chapter 4: Cloud Control micro:bit by IFTTT</a></li>
 <li class="toctree-l2"><a class="reference internal" href="chapter5.html">9. Chapter 5: Object to Object communication</a></li>
 <li class="toctree-l2 current"><a class="current reference internal" href="#">10. Case 01: Automated Smart Playground Lamp</a><ul>
 <li class="toctree-l3"><a class="reference internal" href="#goal">10.1. Goal</a></li>
@@ -224,21 +224,25 @@ Connect LED light to the P3 port of Smarthon IoT:bit<BR><P>
 <div class="section" id="programming-makecode">
 <h2><span class="section-number">10.6. </span>Programming (MakeCode)<a class="headerlink" href="#programming-makecode" title="Permalink to this headline">¶</a></h2>
 <HR><p><span id="subtitle">Step 1</span><BR><P>
-Drag on start block from Basic. set Led enable is false (as P3 is used for micro:bit LED by default, LED need to be disable before using P3).
-<img alt="auto_fit" src="../_images/Case1_p1.png" /><P>
-<span id="subtitle">Step 2</span><BR><P>
-Drag forever block from Basic. Snap if statement into forever, set get motion (triggered or not) at P0 = true, that’s say motion is triggered, someone passes by.<P>
-<img alt="auto_fit" src="../_images/Case1_p2.png" /><P>
-<span id="subtitle">Step 3</span><BR><P>
-Turn white LED to 1023 at P3 as turning on white LED and pause 10 seconds.<P>
-<img alt="auto_fit" src="../_images/Case1_p3.png" /><P>
-<span id="subtitle">Step 4</span><BR><P>
-Else, turn white LED to 0 at P3 as turning off white LED.<P>
-<img alt="auto_fit" src="../_images/Case1_p4.png" /><P></p>
+As P3 is used for micro:bit LED by default, LED need to be disable before using P3.<BR><P></p>
+<ul class="simple">
+<li><p>Snap <code class="docutils literal notranslate"><span class="pre">led</span> <span class="pre">enable</span> <span class="pre">false</span></code> to <code class="docutils literal notranslate"><span class="pre">on</span> <span class="pre">start</span></code>
+<img alt="auto_fit" src="../_images/Case1_p1.png" /><P></p></li>
+</ul>
+<p><span id="subtitle">Step 2</span><BR><P>
+If there are movement nearby (motion sensor is triggered), while LED will be turned on for 10 seconds. <BR><P></p>
+<ul class="simple">
+<li><p>Drag `forever” from Basic</p></li>
+<li><p>Snap <code class="docutils literal notranslate"><span class="pre">if</span> <span class="pre">statement</span></code> into <code class="docutils literal notranslate"><span class="pre">forever</span></code></p></li>
+<li><p>Set <code class="docutils literal notranslate"><span class="pre">get</span> <span class="pre">motion</span> <span class="pre">(triggered</span> <span class="pre">or</span> <span class="pre">not)</span> <span class="pre">at</span> <span class="pre">P0</span> <span class="pre">=</span> <span class="pre">true</span></code>, into <code class="docutils literal notranslate"><span class="pre">if</span> <span class="pre">statement</span></code> that’s say motion is triggered, someone passes by.</p></li>
+<li><p>Then, <code class="docutils literal notranslate"><span class="pre">turn</span> <span class="pre">white</span> <span class="pre">LED</span> <span class="pre">to</span> <span class="pre">1023</span> <span class="pre">at</span> <span class="pre">P3</span></code> as turning on white LED and pause 10 seconds.</p></li>
+<li><p>Else, <code class="docutils literal notranslate"><span class="pre">turn</span> <span class="pre">white</span> <span class="pre">LED</span> <span class="pre">at</span> <span class="pre">P3</span> <span class="pre">to</span> <span class="pre">0</span></code> as turning off.
+<img alt="auto_fit" src="../_images/Case1_p2.png" /><P></p></li>
+</ul>
 <p><span id="subtitle">Full Solution<BR><P>
-MakeCode: <a class="reference external" href="https://makecode.microbit.org/#pub:_5jAUk558DTXC">https://makecode.microbit.org/_5jAUk558DTXC</a><BR><P>
+MakeCode: <a class="reference external" href="https://makecode.microbit.org/#pub:_PVf42KbHx0zY_5jAUk558DTXC">https://makecode.microbit.org/_PVf42KbHx0zY</a><BR><P>
 You could also download the program from the following website:<BR></p>
-<iframe src="https://makecode.microbit.org/#pub:_5jAUk558DTXC" width="100%" height="500" frameborder="0"></iframe><P></div>
+<iframe src="https://makecode.microbit.org/#pub:_PVf42KbHx0zY" width="100%" height="500" frameborder="0"></iframe><P></div>
 <div class="section" id="result">
 <h2><span class="section-number">10.7. </span>Result<a class="headerlink" href="#result" title="Permalink to this headline">¶</a></h2>
 <HR><p>Motion sensor is used to detect if there are people moving in the playground. If there are, the LED light will be turned on; otherwise, it will be turned off.<BR><P>

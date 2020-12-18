@@ -89,8 +89,8 @@
 <li class="toctree-l2"><a class="reference internal" href="4_wificonnect.html">4. First step: Connect the micro:bit to the Wi-Fi</a></li>
 <li class="toctree-l2"><a class="reference internal" href="chapter1.html">5. Chapter 1: Upload Data to ThingSpeak</a></li>
 <li class="toctree-l2"><a class="reference internal" href="chapter2.html">6. Chapter 2: Send Email by IFTTT</a></li>
-<li class="toctree-l2"><a class="reference internal" href="chapter3.html">7. Chapter 3: Control micro:bit by App Inventor 2</a></li>
-<li class="toctree-l2"><a class="reference internal" href="chapter4.html">8. Chapter 4: Control your micro:bit by IFTTT Services</a></li>
+<li class="toctree-l2"><a class="reference internal" href="chapter3.html">7. Chapter 3: Direct Control micro:bit by App Inventor 2</a></li>
+<li class="toctree-l2"><a class="reference internal" href="chapter4.html">8. Chapter 4: Cloud Control micro:bit by IFTTT</a></li>
 <li class="toctree-l2"><a class="reference internal" href="chapter5.html">9. Chapter 5: Object to Object communication</a></li>
 <li class="toctree-l2"><a class="reference internal" href="case01.html">10. Case 01: Automated Smart Playground Lamp</a></li>
 <li class="toctree-l2"><a class="reference internal" href="case02.html">11. Case 02: Smart Car park Access Barrier</a></li>
@@ -236,31 +236,44 @@ Go to “My services” &gt; “Webhooks”, select “Documentation” . Copy y
 </div>
 <div class="section" id="programming-makecode">
 <h2><span class="section-number">16.7. </span>Programming (MakeCode)<a class="headerlink" href="#programming-makecode" title="Permalink to this headline">¶</a></h2>
-<HR><p><span id="subtitle">Step 1</span><BR><P>
-Drag on start block from Basic. Drag Initialize IoT:bit at OLED from IoT:bit, set OLED height:64, width:128. Set WiFi to ssid “wifi_name” and pwd “WiFi_password”.<BR><P>
-<img alt="auto_fit" src="../_images/Case7_p1.png" /><P>
-<span id="subtitle">Step 2</span><BR><P>
-Set sendEmail to false from variable and logic.<BR><P>
-<img alt="auto_fit" src="../_images/Case7_p2.png" /><P>
-<span id="subtitle">Step 3</span><BR><P>
-Drag forever block from Basic. Snap if statement into forever. If WiFi is connected then, add another if statement. If get motion (triggered or not) at Pin P1 = true then, that’s say someone is near the door.<BR><P>
-<img alt="auto_fit" src="../_images/Case7_p3.png" /><P>
-<span id="subtitle">Step 4</span><BR><P>
-Snap if statement under the above two if statement. If not sendEmail then, set sendEmail to true and send IFTTT key and event_name. That’s say an email will be sent to the house owner once when triggered. <BR><P>
-<img alt="auto_fit" src="../_images/Case7_p4.png" /><P>
-<span id="subtitle">Step 5</span><BR><P>
-Set play tone Middle C for 1 beat from music and show a monster icon on the micro:bit from basic.<BR><P>
-<img alt="auto_fit" src="../_images/Case7_p5.png" /><P>
-<span id="subtitle">Step 6</span><BR><P>
-Else, set sendEmail to false from variable and logic and clear screen from more of basic. That’s means there is no email, sound emit and no monster appear if there is no suspicious movement near the door.<BR><P>
-<img alt="auto_fit" src="../_images/Case7_p6.png" /><P>
-<span id="subtitle">Step 7</span><BR><P>
-Pause for 1000ms after the programming running for one loop.<BR><P>
-<img alt="auto_fit" src="../_images/Case7_p7.png" /><P></p>
+<HR><p><span id="subtitle">Step 1. Initialize OLED, IoT:bit and connect to WiFi</span><BR><P></p>
+<ul class="simple">
+<li><p>Snap <code class="docutils literal notranslate"><span class="pre">Initialize</span> <span class="pre">OLED</span> <span class="pre">with</span> <span class="pre">width:128,</span> <span class="pre">height:</span> <span class="pre">64</span></code> to <code class="docutils literal notranslate"><span class="pre">on</span> <span class="pre">start</span></code></p></li>
+<li><p>Snap <code class="docutils literal notranslate"><span class="pre">Initialize</span> <span class="pre">IoT:bit</span> <span class="pre">TX</span> <span class="pre">P16</span> <span class="pre">RX</span> <span class="pre">P8</span></code> from <code class="docutils literal notranslate"><span class="pre">IoT:bit</span></code> to <code class="docutils literal notranslate"><span class="pre">on</span> <span class="pre">start</span></code></p></li>
+<li><p>Snap <code class="docutils literal notranslate"><span class="pre">Set</span> <span class="pre">Wi-Fi</span> <span class="pre">to</span> <span class="pre">ssid</span> <span class="pre">pwd</span></code> from <code class="docutils literal notranslate"><span class="pre">IoT:bit</span></code></p></li>
+<li><p>Enter your Wi-Fi name and password. Here we set <code class="docutils literal notranslate"><span class="pre">smarthon</span></code> as <code class="docutils literal notranslate"><span class="pre">SSID</span></code> and <code class="docutils literal notranslate"><span class="pre">12345678</span></code> as <code class="docutils literal notranslate"><span class="pre">password</span></code>
+<img alt="auto_fit" src="../_images/Case7_p1.png" /><P></p></li>
+</ul>
+<p><span id="subtitle">Step 2: Show icon “tick” after WiFi connection</span><BR><P></p>
+<ul class="simple">
+<li><p>Snap <code class="docutils literal notranslate"><span class="pre">show</span> <span class="pre">icon</span></code> from <code class="docutils literal notranslate"><span class="pre">basic</span></code> to <code class="docutils literal notranslate"><span class="pre">On</span> <span class="pre">WiFi</span> <span class="pre">connected</span></code> and select icon <code class="docutils literal notranslate"><span class="pre">tick</span></code>
+<img alt="auto_fit" src="../_images/Case7_p2.png" /><P></p></li>
+</ul>
+<p><span id="subtitle">Step 3. Check motion sensor value</span><BR><P></p>
+<ul class="simple">
+<li><p>Snap <code class="docutils literal notranslate"><span class="pre">if</span> <span class="pre">statement</span></code> to block <code class="docutils literal notranslate"><span class="pre">forever</span></code></p></li>
+<li><p>If <code class="docutils literal notranslate"><span class="pre">WiFi</span> <span class="pre">is</span> <span class="pre">connected</span></code>,</p></li>
+<li><p>If <code class="docutils literal notranslate"><span class="pre">get</span> <span class="pre">motion</span> <span class="pre">(triggered</span> <span class="pre">or</span> <span class="pre">not)</span> <span class="pre">at</span> <span class="pre">Pin</span> <span class="pre">P1</span></code> = <code class="docutils literal notranslate"><span class="pre">true</span></code> then, that’s say someone is near the door.
+<img alt="auto_fit" src="../_images/Case7_p3.png" /><P></p></li>
+</ul>
+<p><span id="subtitle">Step 4. Send notification when someone pass by </span><BR><P></p>
+<ul class="simple">
+<li><p>Snap <code class="docutils literal notranslate"><span class="pre">if</span> <span class="pre">statement</span></code> to block <code class="docutils literal notranslate"><span class="pre">forever</span></code></p></li>
+<li><p>If <code class="docutils literal notranslate"><span class="pre">WiFi</span> <span class="pre">is</span> <span class="pre">connected</span></code>, then snap <code class="docutils literal notranslate"><span class="pre">play</span> <span class="pre">tone</span> <span class="pre">Middle</span> <span class="pre">C</span> <span class="pre">for</span> <span class="pre">1</span> <span class="pre">beat</span></code> from <code class="docutils literal notranslate"><span class="pre">music</span></code></p></li>
+<li><p>Snap <code class="docutils literal notranslate"><span class="pre">show</span> <span class="pre">icon</span></code> from <code class="docutils literal notranslate"><span class="pre">basic</span></code> and select a <code class="docutils literal notranslate"><span class="pre">monster</span> <span class="pre">icon</span></code></p></li>
+<li><p>Snap <code class="docutils literal notranslate"><span class="pre">Send</span> <span class="pre">IFTTT</span> <span class="pre">key…</span></code> from <code class="docutils literal notranslate"><span class="pre">IoT:bit</span></code> &gt; <code class="docutils literal notranslate"><span class="pre">IoT</span> <span class="pre">Services</span></code>, input your <code class="docutils literal notranslate"><span class="pre">IFTTT</span> <span class="pre">key</span></code> and input event name <code class="docutils literal notranslate"><span class="pre">SendEmail</span></code>
+<img alt="auto_fit" src="../_images/Case7_p4.png" /><P></p></li>
+</ul>
+<p><span id="subtitle">Step 5. Show smile icon when no one pass by </span><BR><P></p>
+<ul class="simple">
+<li><p>Snap <code class="docutils literal notranslate"><span class="pre">show</span> <span class="pre">icon</span></code> into <code class="docutils literal notranslate"><span class="pre">Else</span></code>, and select icon <code class="docutils literal notranslate"><span class="pre">smile</span></code></p></li>
+<li><p>Snap <code class="docutils literal notranslate"><span class="pre">Pause</span></code> after <code class="docutils literal notranslate"><span class="pre">if</span> <span class="pre">statement</span></code> to the loop for 1 second delay for checking
+<img alt="auto_fit" src="../_images/Case7_p5.png" /><P></p></li>
+</ul>
 <p><span id="subtitle">Full Solution<BR><P>
-MakeCode: <a class="reference external" href="https://makecode.microbit.org/#pub:_TTqYvaYVfWUw">https://makecode.microbit.org/_TTqYvaYVfWUw</a><BR><P>
+MakeCode: <a class="reference external" href="https://makecode.microbit.org/#pub:_DWy49KEoCgVX">https://makecode.microbit.org/_DWy49KEoCgVX</a><BR><P>
 You could also download the program from the following website:<BR></p>
-<iframe src="https://makecode.microbit.org/#pub:_TTqYvaYVfWUw" width="100%" height="500" frameborder="0"></iframe></div>
+<iframe src="https://makecode.microbit.org/#pub:_DWy49KEoCgVX" width="100%" height="500" frameborder="0"></iframe></div>
 <div class="section" id="result">
 <h2><span class="section-number">16.8. </span>Result<a class="headerlink" href="#result" title="Permalink to this headline">¶</a></h2>
 <HR><p>When WiFi is connected, if there are any suspicious movement near the door, the buzzer will emit sound and an email will be sent to the house owner. Also, a monster icon will be shown on the micro:bit.<BR><P>
@@ -269,7 +282,7 @@ You could also download the program from the following website:<BR></p>
 </div>
 <div class="section" id="think">
 <h2><span class="section-number">16.9. </span>Think<a class="headerlink" href="#think" title="Permalink to this headline">¶</a></h2>
-<HR><p>Q1. How to activate the smart defense system only during a certain period?<BR><P>
+<HR><p>Q1. Think: How to avoid sending duplicate emails? (tips: using variable)<BR><P>
 Q2. How to distinguish suspicious people (e.g. password authentication)?<BR><P></p>
 </div>
 </div>

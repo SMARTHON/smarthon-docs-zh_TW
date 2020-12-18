@@ -89,8 +89,8 @@
 <li class="toctree-l2"><a class="reference internal" href="4_wificonnect.html">4. First step: Connect the micro:bit to the Wi-Fi</a></li>
 <li class="toctree-l2"><a class="reference internal" href="chapter1.html">5. Chapter 1: Upload Data to ThingSpeak</a></li>
 <li class="toctree-l2"><a class="reference internal" href="chapter2.html">6. Chapter 2: Send Email by IFTTT</a></li>
-<li class="toctree-l2"><a class="reference internal" href="chapter3.html">7. Chapter 3: Control micro:bit by App Inventor 2</a></li>
-<li class="toctree-l2"><a class="reference internal" href="chapter4.html">8. Chapter 4: Control your micro:bit by IFTTT Services</a></li>
+<li class="toctree-l2"><a class="reference internal" href="chapter3.html">7. Chapter 3: Direct Control micro:bit by App Inventor 2</a></li>
+<li class="toctree-l2"><a class="reference internal" href="chapter4.html">8. Chapter 4: Cloud Control micro:bit by IFTTT</a></li>
 <li class="toctree-l2"><a class="reference internal" href="chapter5.html">9. Chapter 5: Object to Object communication</a></li>
 <li class="toctree-l2"><a class="reference internal" href="case01.html">10. Case 01: Automated Smart Playground Lamp</a></li>
 <li class="toctree-l2 current"><a class="current reference internal" href="#">11. Case 02: Smart Car park Access Barrier</a><ul>
@@ -230,22 +230,38 @@ Connect 180° Servo to P2 port of IoT:bit<BR><P>
 <div class="section" id="programming-makecode">
 <h2><span class="section-number">11.6. </span>Programming (MakeCode)<a class="headerlink" href="#programming-makecode" title="Permalink to this headline">¶</a></h2>
 <HR><p><span id="subtitle">Step 1</span><BR><P>
-Drag on start block from Basic. Set distance and light to 0 from variables and turn servo to 0 degree at P2 at the beginning.<BR><P>
-<img alt="auto_fit" src="../_images/Case2_p1.png" /><P>
-<span id="subtitle">Step 2</span><BR><P>
-Drag forever block from Basic. Set distance to get distance unit cm trig P14 echo P15. set light to get light value (percentage) at Pin P0.<BR><P>
-<img alt="auto_fit" src="../_images/Case2_p2.png" /><P>
-<span id="subtitle">Step 3</span><BR><P>
-Snap if statement into forever, set if distance ≤ 5. Snap another if and set light value &gt;20 then, <BR><P>
-<img alt="auto_fit" src="../_images/Case2_p3.png" /><P>
-<span id="subtitle">Step 4</span><BR><P>
-After measuring the distance and light, turn servo to 90 degree at P2, pause 5 seconds and turn servo to 0 degree at P2. <BR><P>
-That’s say when there is car entering and there is vacancy inside the car park, the car park gate will be opened for 5 seconds for car entering.<BR><P>
-<img alt="auto_fit" src="../_images/Case2_p4.png" /><P></p>
+Initialize variables and turn servo to start position at the beginning.<BR><P></p>
+<ul class="simple">
+<li><p>Inside <code class="docutils literal notranslate"><span class="pre">on</span> <span class="pre">start</span></code>, snap <code class="docutils literal notranslate"><span class="pre">set</span> <span class="pre">variable</span> <span class="pre">distance</span> <span class="pre">to</span> <span class="pre">0</span></code> and <code class="docutils literal notranslate"><span class="pre">set</span> <span class="pre">light</span> <span class="pre">to</span> <span class="pre">0</span></code> from <code class="docutils literal notranslate"><span class="pre">variables</span></code>.</p></li>
+<li><p>Snap <code class="docutils literal notranslate"><span class="pre">Turn</span> <span class="pre">Servo</span> <span class="pre">to</span> <span class="pre">0</span> <span class="pre">degree</span> <span class="pre">at</span> <span class="pre">P2</span></code>.
+<img alt="auto_fit" src="../_images/Case2_p1.png" /><P></p></li>
+</ul>
+<p><span id="subtitle">Step 2</span><BR><P>
+It will continuously check the distance from distance sensor and light value from light sensor.<BR><P></p>
+<ul class="simple">
+<li><p>Drag <code class="docutils literal notranslate"><span class="pre">get</span> <span class="pre">distance</span> <span class="pre">to</span> <span class="pre">get</span> <span class="pre">distance</span> <span class="pre">unit</span> <span class="pre">cm</span> <span class="pre">trig</span> <span class="pre">P14</span> <span class="pre">echo</span> <span class="pre">P15</span></code>, store the value to variable <code class="docutils literal notranslate"><span class="pre">distance</span></code>.</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">Get</span> <span class="pre">light</span> <span class="pre">value</span> <span class="pre">(percentage)</span> <span class="pre">at</span> <span class="pre">Pin</span> <span class="pre">P0</span></code>, store the value to variable <code class="docutils literal notranslate"><span class="pre">light</span></code>
+<img alt="auto_fit" src="../_images/Case2_p2.png" /><P></p></li>
+</ul>
+<p><span id="subtitle">Step 3</span><BR><P>
+When the car is in front of the distance sensor of the gate and there are vacancies in car park (light sensor value is high).<BR><P></p>
+<ul class="simple">
+<li><p>Snap <code class="docutils literal notranslate"><span class="pre">if</span> <span class="pre">statement</span></code> into forever, set if variable <code class="docutils literal notranslate"><span class="pre">distance</span></code> ≤ 5</p></li>
+<li><p>Snap another <code class="docutils literal notranslate"><span class="pre">if</span> <span class="pre">statement</span></code> set variable <code class="docutils literal notranslate"><span class="pre">light</span></code> value &gt;20
+<img alt="auto_fit" src="../_images/Case2_p3.png" /><P></p></li>
+</ul>
+<p><span id="subtitle">Step 4</span><BR><P>
+If the statement is true, then the gate will be opened for 5 seconds and then closed.<BR><P></p>
+<ul class="simple">
+<li><p>Snap <code class="docutils literal notranslate"><span class="pre">Turn</span> <span class="pre">Servo</span> <span class="pre">to</span> <span class="pre">90</span> <span class="pre">degree</span> <span class="pre">at</span> <span class="pre">P2</span></code> as the gate is opened.</p></li>
+<li><p>Snap <code class="docutils literal notranslate"><span class="pre">pause</span></code> to the loop to wait 5 seconds</p></li>
+<li><p>Snap <code class="docutils literal notranslate"><span class="pre">Turn</span> <span class="pre">Servo</span> <span class="pre">to</span> <span class="pre">0</span> <span class="pre">degree</span> <span class="pre">at</span> <span class="pre">P2</span></code> as the gate is closed.
+<img alt="auto_fit" src="../_images/Case2_p4.png" /><P></p></li>
+</ul>
 <p><span id="subtitle">Full Solution<BR><P>
-MakeCode: <a class="reference external" href="https://makecode.microbit.org/#pub:_1AtWbYbjDdHg">https://makecode.microbit.org/_1AtWbYbjDdHg</a><BR><P>
+MakeCode: <a class="reference external" href="https://makecode.microbit.org/#pub:_6xjh8hAhi81j">https://makecode.microbit.org/_6xjh8hAhi81j</a><BR><P>
 You could also download the program from the following website:<BR></p>
-<iframe src="https://makecode.microbit.org/#pub:_1AtWbYbjDdHg" width="100%" height="500" frameborder="0"></iframe></div>
+<iframe src="https://makecode.microbit.org/#pub:_6xjh8hAhi81j" width="100%" height="500" frameborder="0"></iframe></div>
 <div class="section" id="result">
 <h2><span class="section-number">11.7. </span>Result<a class="headerlink" href="#result" title="Permalink to this headline">¶</a></h2>
 <HR><p>The light sensor is used to check the vacancies in the car park while the distance sensor is used to detect if there are any cars coming near the car park gate<BR><P>

@@ -94,8 +94,8 @@
 </li>
 <li class="toctree-l2"><a class="reference internal" href="chapter1.html">5. Chapter 1: Upload Data to ThingSpeak</a></li>
 <li class="toctree-l2"><a class="reference internal" href="chapter2.html">6. Chapter 2: Send Email by IFTTT</a></li>
-<li class="toctree-l2"><a class="reference internal" href="chapter3.html">7. Chapter 3: Control micro:bit by App Inventor 2</a></li>
-<li class="toctree-l2"><a class="reference internal" href="chapter4.html">8. Chapter 4: Control your micro:bit by IFTTT Services</a></li>
+<li class="toctree-l2"><a class="reference internal" href="chapter3.html">7. Chapter 3: Direct Control micro:bit by App Inventor 2</a></li>
+<li class="toctree-l2"><a class="reference internal" href="chapter4.html">8. Chapter 4: Cloud Control micro:bit by IFTTT</a></li>
 <li class="toctree-l2"><a class="reference internal" href="chapter5.html">9. Chapter 5: Object to Object communication</a></li>
 <li class="toctree-l2"><a class="reference internal" href="case01.html">10. Case 01: Automated Smart Playground Lamp</a></li>
 <li class="toctree-l2"><a class="reference internal" href="case02.html">11. Case 02: Smart Car park Access Barrier</a></li>
@@ -185,7 +185,8 @@
 <img alt="auto_fit" src="../_images/Wifi_01.png" /><P></p>
 <div class="section" id="open-the-home-router-or-mobile-phone-hotspot">
 <h2><span class="section-number">4.1. </span>Open the Home Router or Mobile Phone Hotspot<a class="headerlink" href="#open-the-home-router-or-mobile-phone-hotspot" title="Permalink to this headline">¶</a></h2>
-<HR><p>Please sure there is a Wi-Fi signal (with 2.4GHz) available in your area. <BR><P>
+<HR><p>Please sure there is a Wi-Fi signal (with 2.4GHz) available in your area. <BR>
+*5GHz Wi-Fi signal is not supported<P>
 You can either setup a home router or a Wi-Fi hotspot from your mobile phone.<BR><P></p>
 <p><span id="subtitle">a) Setup your home/office Wi-Fi</span><BR><P>
 <img alt="auto_fit" src="../_images/Wifi_02.png" /><P></p>
@@ -200,38 +201,62 @@ You can either setup a home router or a Wi-Fi hotspot from your mobile phone.<BR
 <div class="section" id="programming-makecode">
 <h2><span class="section-number">4.2. </span>Programming (Makecode)<a class="headerlink" href="#programming-makecode" title="Permalink to this headline">¶</a></h2>
 <HR><p><span id="subtitle">Step 1: Initialize the IoT:bit</span><BR><P>
-Before you start, you need to initialize the IoT:bit, go to IoT:bit tab.<BR><P></p>
+Before you start, you need to initialize the IoT:bit.<BR></p>
 <ul class="simple">
-<li><p>Snap <code class="docutils literal notranslate"><span class="pre">Initialize</span> <span class="pre">IoT:bit</span> <span class="pre">at</span> <span class="pre">OLED</span> <span class="pre">height:</span> <span class="pre">64,</span> <span class="pre">width:128</span> <span class="pre">Wifi</span> <span class="pre">info</span> <span class="pre">shown:</span> <span class="pre">true</span></code> to <code class="docutils literal notranslate"><span class="pre">on</span> <span class="pre">start</span></code>
+<li><p>Go to IoT:bit tab.</p></li>
+<li><p>Snap <code class="docutils literal notranslate"><span class="pre">Initialize</span> <span class="pre">IoT:bit</span> <span class="pre">TX</span> <span class="pre">P16</span> <span class="pre">RX</span> <span class="pre">P8</span></code> to <code class="docutils literal notranslate"><span class="pre">on</span> <span class="pre">start</span></code>
 <img alt="auto_fit" src="../_images/Wifi_p1.png" /><P></p></li>
 </ul>
 <p><span id="subtitle">Step 2: Connect to the Wi-Fi</span><BR><P>
-After initializing, you can connect to the Wi-Fi<BR><P></p>
+After initializing, you can connect to the Wi-Fi<BR></p>
 <ul class="simple">
-<li><p>Snap <code class="docutils literal notranslate"><span class="pre">Set</span> <span class="pre">Wi-Fi</span> <span class="pre">to</span> <span class="pre">ssid</span> <span class="pre">pwd</span></code> to <code class="docutils literal notranslate"><span class="pre">on</span> <span class="pre">start</span></code></p></li>
-<li><p>Enter your Wi-Fi name and password. Here we set “wifi_name” as <code class="docutils literal notranslate"><span class="pre">SSID</span></code> and “12345678” as <code class="docutils literal notranslate"><span class="pre">password</span></code>.
+<li><p>Go to IoT:bit tab</p></li>
+<li><p>Snap <code class="docutils literal notranslate"><span class="pre">Set</span> <span class="pre">Wi-Fi</span> <span class="pre">to</span> <span class="pre">ssid</span> <span class="pre">pwd</span></code> to <code class="docutils literal notranslate"><span class="pre">on</span> <span class="pre">start</span></code> following initialize</p></li>
+<li><p>Enter your Wi-Fi name and password. Here we set <code class="docutils literal notranslate"><span class="pre">smarthon</span></code> as <code class="docutils literal notranslate"><span class="pre">SSID</span></code> and “12345678” as <code class="docutils literal notranslate"><span class="pre">password</span></code>.
 <img alt="auto_fit" src="../_images/Wifi_p2.png" /><P></p></li>
 </ul>
-<p><span id="subtitle">Step 3: Show the Heart if it is connected</span><BR><P>
-<code class="docutils literal notranslate"><span class="pre">On</span> <span class="pre">WiFi</span> <span class="pre">connected</span></code> is an event handler. It will be triggered once after connected with WiFi.<BR><P></p>
+<p><span id="subtitle">Step 3: Show the Tick if it is connected</span><BR><P>
+<code class="docutils literal notranslate"><span class="pre">On</span> <span class="pre">WiFi</span> <span class="pre">connected</span></code> is an event handler. It will be triggered once after connected with WiFi.
+After the WiFi is connected, it provide two variable <code class="docutils literal notranslate"><span class="pre">IP_Address</span></code> and <code class="docutils literal notranslate"><span class="pre">Device_ID</span></code> for you to
+control the IoT:bit though network.<BR></p>
 <ul class="simple">
 <li><p>Snap <code class="docutils literal notranslate"><span class="pre">On</span> <span class="pre">WiFi</span> <span class="pre">connected</span></code> to the stage</p></li>
-<li><p>On <code class="docutils literal notranslate"><span class="pre">Basic</span></code> tab, snap <code class="docutils literal notranslate"><span class="pre">show</span> <span class="pre">icon</span> <span class="pre">heart</span></code> inside <code class="docutils literal notranslate"><span class="pre">On</span> <span class="pre">WiFi</span> <span class="pre">connected</span></code>
-<img alt="auto_fit" src="../_images/Wifi_p3.png" /><P>
-<img alt="auto_fit" src="../_images/Wifi_p4.png" /><P></p></li>
+<li><p>On <code class="docutils literal notranslate"><span class="pre">Basic</span></code> tab, snap <code class="docutils literal notranslate"><span class="pre">show</span> <span class="pre">icon</span> <span class="pre">heart</span></code> inside <code class="docutils literal notranslate"><span class="pre">On</span> <span class="pre">WiFi</span> <span class="pre">connected</span></code></p></li>
+<li><p>Swtich the heart to tick<BR></p></li>
 </ul>
+<p><img alt="auto_fit" src="../_images/Wifi_p3.png" /><P></p>
+<p><span id="subtitle">Step 4: Show you IP</span><BR><P>
+If you want to see the IP address, you may show it on the OLED display.<BR></p>
+<ul class="simple">
+<li><p>Go to OLED tab</p></li>
+<li><p>Snap “initialize OLED with width…height..” to on start</p></li>
+<li><p>Snap the “show string“ inside the On WiFi connected</p></li>
+<li><p>Draw the variable from On WiFi connected to the “show string” block placeholder</p></li>
+<li><p>You may control the text format by the function in Text tab<BR></p></li>
+</ul>
+<p><img alt="auto_fit" src="../_images/Wifi_p3_5.png" /><P></p>
+<p><B><u>Optional</u></B>:<BR>
+On WiFi disconnected handler will be triggered when the WiFi connection is loss, it may useful when you get disconnection to the WiFi Station during the application running.<BR></p>
+<p><img alt="auto_fit" src="../_images/Wifi_p5.png" /><P></p>
 <p><span id="subtitle">Full Solution<BR><P>
-MakeCode: <a class="reference external" href="https://makecode.microbit.org/#pub:_CjaTJE4LHLbW">https://makecode.microbit.org/_CjaTJE4LHLbW</a><BR><P>
+MakeCode: <a class="reference external" href="https://makecode.microbit.org/#pub:_0bv5b2RPWCCE">https://makecode.microbit.org/_0bv5b2RPWCCE</a><BR><P>
 You could also download the program from the following website:<BR></p>
-<iframe src="https://makecode.microbit.org/#pub:_CjaTJE4LHLbW" width="100%" height="500" frameborder="0"></iframe></div>
+<iframe src="https://makecode.microbit.org/#pub:_0bv5b2RPWCCE" width="100%" height="500" frameborder="0"></iframe></div>
 <div class="section" id="result">
 <h2><span class="section-number">4.3. </span>Result<a class="headerlink" href="#result" title="Permalink to this headline">¶</a></h2>
 <HR><p><span id="subtitle">Step 1</span><BR><P>
 Load the program to the micro:bit and turn on the IoT:bit by using USB<BR><P>.
 <img alt="auto_fit" src="../_images/Wifi_result1.png" /><P></p>
 <p><span id="subtitle">Step 2</span><BR><P>
-Wi-Fi IoT:bit will start to connect to internet, when the connection is successful, the IP Address would be shown. AND the heart icon will be shown.<BR><P>
+Wi-Fi IoT:bit will start to connect to internet, when the connection is successful, the IP Address would be shown. AND the tick icon will be shown.<BR><P>
 <img alt="auto_fit" src="../_images/Wifi_result2.png" /><P></p>
+<p>After the IoT:bit is connected to the wifi, when disconnect to the router. It will show “cross” symbol and the error code will be shown. Normally, the code <code class="docutils literal notranslate"><span class="pre">201</span></code> means “No AP Found”. <BR>The reason might be:</p>
+<ol class="simple">
+<li><p>Router is too far away</p></li>
+<li><p>No that AP actually</p></li>
+<li><p>The typo on SSID/PWD</p></li>
+</ol>
+<p><img alt="auto_fit" src="../_images/Wifi_result3.png" /><P></p>
 </div>
 </div>
 

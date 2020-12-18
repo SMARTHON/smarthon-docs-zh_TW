@@ -10,21 +10,28 @@ Several of wireless modules are compatible with the Smarthon IoT Bit, such Bluet
 
 ![auto_fit](images/2_IOT/iot_image00.png)
 
-## Features
+## Product Features
+
+![auto_fit](images/2_IOT/iot_image005.jpg)
+
+
+* The Most powerful IoT chip ESP32 embedded for micro:bit
 * Exchangeable wireless modular design (ESP8266, ESP32, BLE)
-* Extended I/O pin from Mirco:bit with GVS socket
-* Independent socket for OLED screen, Distance sensor and Motor
-* Separate Servo pin from ESP module
-* On board Buzzer with on/off switch
-* Various types of power supply (USB, XH2.54 battery port, DC jack) 
+* Integrated OLED and Onboard buzzer embedded
+* Extended I/O port x13, I2C port x2 from mirco:bit with GVS socket
+* Extended Servo port x3 from ESP module 
+* Various types of power supply (USB, 3.7V lithium battery, 6V Normal battery)
+* Extra Port: Crocodile Pin, Quick Access Port and 4-Pin Port for different usage
+
+
 
 ## Hardware Size
 
-Product size: 75mm X 65mm X 20mm
-PCB thinkness: 1.5mm
-Hole diameter: 4mm
+Product size: 75mm X 65mm X 20mm<BR>
+PCB thinkness: 1.5mm<BR>
+Hole diameter: 4mm<BR>
 
-![auto_fit](images/2_IOT/iot_image01.png)
+![auto_fit](images/2_IOT/iot_image01.jpg)
 
 ## Specification
 
@@ -42,83 +49,111 @@ Hole diameter: 4mm
 |Net weight|||
 
 
-## Hardware Interface
-![auto_fit](images/2_IOT/iot_image02.png)
+## Pinout Information
+<H3>Pinout Diagram:</H3><BR>
+![auto_fit](images/2_IOT/iot_image03.jpg)<P>
+<H3>Port Diagram:</H3><BR>
+![auto_fit](images/2_IOT/iot_image006.jpg)
 
-* 1.Micro:bit edge connecter
-* 2.USB power supply port
-* 3.Power Switch
-* 4.XH2.54 Battery port
-* 5.DC Battery port
-* 6.Wireless Module socket
-* 7.I2C connection port(1 reserved for OLED)
-* 8.GVS I/O Pins Lead Out
-* 9.Buzzer /w Switch
-* 10.Motor port
-* 11.ESP Servo port
-* 12.Distance Sensor port
-* 13.QuickAccess GVS port
+<H3>Pinout Table</H3>
 
-## Pinout Diagram
-![auto_fit](images/2_IOT/iot_image03.png)
+| |Mirco:bit || IoT:bit | <span style="text-align: center;width: 100%">Extra Port</span> |
+--|--|--|--|--|
+|P0||~|Buzzer|Crocodile Pin/Quick Access Port|
+|P1||~||Crocodile Pin/Quick Access Port|
+|P2||~||Crocodile Pin/Quick Access Port|
+|P3|LED|~|||
+|P4|LED|~|||
+|P5|LED||||
+|P6|LED||||
+|P7|LED||||
+|P8|UART (TX)||ESP32 (RX)||
+|P9|LED||||
+|P10|LED|~|||
+|P12||||4-Pin Module Port|
+|P13|SPI (SCK)|||4-Pin Module Port|
+|P14|SPI (MISO)|||4-Pin Module Port|
+|P15|SPI (MOSI)|||4-Pin Module Port|
+|P16|UART (RX)||ESP32 (TX)||
+|P19|I2C(SCL)||OLED||
+|P20|I2C(SDA)||OLED||
+
 Please open the image in the new tab for full size
 
 ## Detail Hardware Description
 
-<B>Mirco:bit edge connecter</B>
+<H3>Mirco:bit edge connecter</H3><BR>
 ![pic](images/2_IOT/iot_image04.png)
-Provide the socket for the Micro:bit to install. Follow the instruction icon right about that to install the Micro:bit to the expansion board.
+<P>Provide the socket for the Micro:bit to install. Follow the instruction icon right about that to install the Micro:bit to the expansion board.
 
-<B>Power port(USB, Battery, DC) & Switch</B>
+<H3>Power port(USB, Battery, DC) & Switch</H3><BR>
 ![pic](images/2_IOT/iot_image05.png)
-Provide three different type of methods to power on the expansion board and Mirco:bit. User can either choose common 5V USB power, or two different port which connect to 3.7V ~ 6V battery box. 
+<P>Provide three different type of methods to power on the expansion board and Mirco:bit. User can either choose common 5V USB power, or two different port which connect to 3.7V ~ 6V battery box. 
 
-<B>OLED Module</B>
+<H3>OLED Module</H3>
 
 ![pic](images/2_IOT/iot_image06.png)
-The expansion board have the reserved space to place a SSD1306 0.96 inch OLED screen. User can use the I2C connection port to output the visual element on that module.
+<P>The expansion board have the reserved space to place a SSD1306 0.96 inch OLED screen. User can use the I2C connection port to output the visual element on that module.
 
-<B>Wireless Module</B>
+<H3>Wireless Module</H3><BR>
 ![pic](images/2_IOT/iot_image07.png)
-The Wireless Module provide the Core function of the expansion board. Though different modules install on the socket, Mirco:bit gain the correspond connectivity ability. User may install ESP32, ESP8266, Bluetooth to implement various application project, make use of the IoT resource.
+<P>The Wireless Module provide the Core function of the expansion board. Though different modules install on the socket, Mirco:bit gain the correspond connectivity ability. User may install ESP32, ESP8266, Bluetooth to implement various application project, make use of the IoT resource.
 
-<B>ESP Servo port</B>
+<H3>ESP Servo port</H3><BR>
 ![pic](images/2_IOT/iot_image08.png)
-When installed the ESP32 module, it provide extra 3 servo control port to connect the Servo motor. Compatible with general GVS 180/360 Servo motor (SG90/SG90S)
+<P>When installed the ESP32 module, it provide extra 3 servo control port to connect the Servo motor. Compatible with general GVS 180/360 Servo motor (SG90/SG90S)
 
-<B>Micro:bit lead out Pins</B>
+<H3>Micro:bit lead out Pins</H3><BR>
 ![pic](images/2_IOT/iot_image09.png)
-The Lead Out from the Mirco:bit I/O pins, provide great expansion feature for the Mirco:bit , user can connect up to 13 different sensor/actuator at the same time. Each independent GVS socket make the connection become more connivance. 
+<P>The Lead Out from the Mirco:bit I/O pins, provide great expansion feature for the Mirco:bit , user can connect up to 13 different sensor/actuator at the same time. Each independent GVS socket make the connection become more connivance. 
 
-<B>Buzzer & Switch</B>
+<H3>Buzzer & Switch</H3><BR>
 ![pic](images/2_IOT/iot_image10.png)
-The IoT Bit built-in a Passive Buzzer on the board, which connected to P0. Using the program can generate different tone of sound. With the switch, it can have manual control to the audio.
+<P>The IoT Bit built-in a Passive Buzzer on the board, which connected to P0. Using the program can generate different tone of sound. With the switch, it can have manual control to the audio.
 
-<B>QuickAccess GVS connecter</B>
+<H3>QuickAccess GVS connecter</H3><BR>
 ![pic](images/2_IOT/iot_image11.png)
-To some GVS sensor which provide the Quick Insert Pin, it can use on the QuickAccess GVS connecter. It do not need to use the cable to connect the sensor, simplify the product in the application.
+<P>To some GVS sensor which provide the Quick Insert Pin, it can use on the QuickAccess GVS connecter. It do not need to use the cable to connect the sensor, simplify the product in the application.
 
-<B>Distance Sensor port</B>
+<H3>4 Pins Module port</H3><BR>
 ![pic](images/2_IOT/iot_image12.png)
-On the IoT Bit, a port is reserved for the HC-SR04 Distance Sensor. Whether use multi separate cable to connect two data pin, user can use a 4 pin connection cable to join the sensor and Mirco:bit. The two data pins in this port is p14 and p15 respectively.
+<P>On the IoT Bit, two ports are reserved for the 4 Pins Module. Each port can connect to some sensors or actuators which required use two I/O Pins at the same time, such Distance Sesnor and Motor. In total, there are 4 I/O Pins being used, they are P12, P13, P14, P15 respectively.
 
-<B>Motor port</B>
-![pic](images/2_IOT/iot_image12_5.png)
-Beside the 3pin single direction DC motor, IoT Bit is compatible with the 4pin bi-direction dc motor. User can use a 4pin connection cable to control the 4pin motor.
-The two data pins in this port is p12 and p13 respectively. 
+
 
 ## Software Support
 
-<B>MakeCode editor</B>
+<H3>MakeCode editor</H3>
 
 The MakeCode editor is the official cross-platform editor designed for BBC Mirco:bit, it is available on Web Browser, Mobile and tablets Apps. The Colorful coding block is familiar to who previously used Scratch, providing a simple and clear way to programming on the Micro:bit.<P>
 The editor offer a text-based mode for user to programming using JavaScript rather than drag the blocks<BR>
 [MakeCode](https://makecode.microbit.org/#editor)
 ![auto_fit](images/2_IOT/iot_image13.png)
 
-<B>Python editor</B><P>
+<H3>Python editor</H3><P>
 Python is one of the most famous programming language, widely used in school and industry. Micro:bit provided an online python editor for user to study and exercise python on Micro:bit. User just need to connect Mirco:bit with USB and click the Flash button, the compile and upload progress will be finish automatically. <BR>
 [Python editor](https://python.microbit.org/v/2.0)
 ![auto_fit](images/2_IOT/iot_image14.png)
+
+
+## Quick Start
+
+<H4>1.Plug the Mirco:bit(with Program) into the the slot</H4><P>
+
+>![auto_fit](images/2_IOT/iot_MBsolt.gif)<P>
+
+<H4>2.Get the power supply and turn on</H4><P>
+
+Method 1:<P>
+
+>Plug the USB cable into the USB port and turn on the switch<P>
+
+>![auto_fit](images/2_IOT/iot_usb.gif)<P>
+
+Method 2:<P>
+
+>Plug the battery case(1.5V AA*4) into the battery port and turn on the switch<P>
+
+>![auto_fit](images/2_IOT/iot_battery.gif)<P>
 
 

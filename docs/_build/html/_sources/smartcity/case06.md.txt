@@ -72,35 +72,55 @@ Select your channel > “API Keys” ，copy the API key as follows:<BR><P>
 <HR>
 
 <span id="subtitle"> Step 1</span><BR><P>
-Drag on start block from Basic. Drag Initialize IoT:bit at OLED from IoT:bit, set OLED height:64, width:128. Set WiFi to ssid “wifi_name” and pwd “WiFi_password”.<BR><P>
+Initialize OLED and IoT:bit and connect to WiFi. <BR><P>
+* Snap `Initialize OLED with width:128, height: 64` to `on start`
+* Snap `Initialize IoT:bit TX P16 RX P8` from `IoT:bit` to `on start`
+* Snap `Set Wi-Fi to ssid pwd` from `IoT:bit`
+* Enter your Wi-Fi name and password. Here we set `smarthon` as `SSID` and `12345678` as `password`
+* Set variable `raindrop`, `humidity` and `temperature` to 0 from `variables`
 ![auto_fit](images/Case6/Case6_p1.png)<P>
-<span id="subtitle"> Step 2</span><BR><P>
-Set variable temperature, humidity and raindrop to 0.
-![auto_fit](images/Case6/Case6_p2.png)<P>
-<span id="subtitle"> Step 3</span><BR><P>
-Drag forever block from Basic. Snap if statement into forever. If WiFi is connected then, set humidity and temperature to get humidity and temperature values from DHT11 at Pin P2. Also, set raindrop to get raindrop value (percentage) from raindrop sensor at Pin P0.<BR><P>
-![auto_fit](images/Case6/Case6_p3.png)<P>
-<span id="subtitle"> Step 4</span><BR><P>
-Show string Temperature, humidity and raindrop on the OLED by using join from text.<BR><P>
-![auto_fit](images/Case6/Case6_p4.png)<P>
-<span id="subtitle"> Step 5</span><BR><P>
-Drag Send Thingspeak with key (paste thingspeak key) from IoT:bit.. Set field 1 to temperature, set field 2 to humidity and set field 3 to raindrop.<BR><P>
-![auto_fit](images/Case6/Case6_p5.png)<P>
-<span id="subtitle"> Step 6</span><BR><P>
-Pause for 11000ms after sending data to Thingspeak.<BR><P>
-![auto_fit](images/Case6/Case6_p6.png)<P>
 
+<span id="subtitle"> Step 2</span><BR><P>
+Show icon "tick" after WiFi connection. <BR><P>
+* Snap `show icon` from `basic` to `On WiFi connected` and select icon `tick`
+![auto_fit](images/Case6/Case6_p2.png)<P>
+
+<span id="subtitle"> Step 3</span><BR><P>
+Get values from Temperature and Humidity sensor (DHT11) and raindrop sensor. <BR><P>
+* Snap `if statement` to block `forever`
+* If `WiFi is connected`
+* Then, set `humidity` to `read humidity from DHT11 at Pin P2`
+* Set `temperature` to `read temperature from DHT11` 
+* Set `raindrop` to `get raindrop value (percentage) at Pin P0`
+![auto_fit](images/Case6/Case6_p3.png)<P>
+
+<span id="subtitle"> Step 4</span><BR><P>
+Show string Temperature, humidity and raindrop on the OLED by using join from text. <BR><P>
+* Snap `clear OLED display` from `OLED` to avoid overlap
+* Snap `show string` and show value of variables `Temperature`, `Humidity` and `Raindrop`
+![auto_fit](images/Case6/Case6_p4.png)<P>
+
+<span id="subtitle"> Step 5. Upload data to ThingSpeak</span><BR><P>
+* Snap `Send Thingspeak key...` inside the `if-statement`
+* Fill in the `api key` from Thingspeak with temperature, humidity and raindrop value
+* Snap `pause` to the loop to wait 15 second
+![auto_fit](images/Case6/Case6_p5.png)<P>
+
+<span id="subtitle"> Step 6. Show ThingSpeak upload status</span><BR><P>
+* Snap `show string` inside `On Thingspeak Uploaded`
+* Draw the variable `Status` and `Error_code` to block `show string`
+![auto_fit](images/Case6/Case6_p5.png)<P>
 
 <span id="subtitle">Full Solution<BR><P>
-MakeCode: [https://makecode.microbit.org/_h8MdVLFWWcf8](https://makecode.microbit.org/#pub:_h8MdVLFWWcf8)<BR><P>
+MakeCode: [https://makecode.microbit.org/_F9q1r4comWfR](https://makecode.microbit.org/#pub:_F9q1r4comWfR)<BR><P>
 You could also download the program from the following website:<BR>
-<iframe src="https://makecode.microbit.org/#pub:_h8MdVLFWWcf8" width="100%" height="500" frameborder="0"></iframe>
+<iframe src="https://makecode.microbit.org/#pub:_F9q1r4comWfR" width="100%" height="500" frameborder="0"></iframe>
 
 
 ## Result
 <HR>
 
-When micro:bit is connected to WiFi, it will check weather information (temperature, humidity from Temperature and humidity Sensor and raindrop value from raindrop sensor). Then, those data will be sent to ThingSpeak and pause for 11 seconds for another update.<BR><P>
+When micro:bit is connected to WiFi, it will check weather information (temperature, humidity from Temperature and humidity Sensor and raindrop value from raindrop sensor). Then, those data will be sent to ThingSpeak and pause for 15 seconds for another update.<BR><P>
 ![auto_fit](images/Case6/Case6_result1.png)<P>
 We can find three graphs on Thingspeak including temperature, humidity and raindrop (field1, field2, field3) respectively by collecting data using different sensors.<BR><P>
 ![auto_fit](images/Case6/Case6_result2.png)<P>

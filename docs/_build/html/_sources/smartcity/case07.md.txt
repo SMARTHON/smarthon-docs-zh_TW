@@ -60,32 +60,39 @@ Go to “My services” > “Webhooks”, select “Documentation” . Copy your
 ## Programming (MakeCode)
 <HR>
 
-<span id="subtitle">Step 1</span><BR><P>
-Drag on start block from Basic. Drag Initialize IoT:bit at OLED from IoT:bit, set OLED height:64, width:128. Set WiFi to ssid “wifi_name” and pwd “WiFi_password”.<BR><P>
+<span id="subtitle">Step 1. Initialize OLED, IoT:bit and connect to WiFi</span><BR><P>
+* Snap `Initialize OLED with width:128, height: 64` to `on start`
+* Snap `Initialize IoT:bit TX P16 RX P8` from `IoT:bit` to `on start`
+* Snap `Set Wi-Fi to ssid pwd` from `IoT:bit`
+* Enter your Wi-Fi name and password. Here we set `smarthon` as `SSID` and `12345678` as `password`
 ![auto_fit](images/Case7/Case7_p1.png)<P>
-<span id="subtitle">Step 2</span><BR><P>
-Set sendEmail to false from variable and logic.<BR><P>
+
+<span id="subtitle">Step 2: Show icon "tick" after WiFi connection</span><BR><P>
+* Snap `show icon` from `basic` to `On WiFi connected` and select icon `tick`
 ![auto_fit](images/Case7/Case7_p2.png)<P>
-<span id="subtitle">Step 3</span><BR><P>
-Drag forever block from Basic. Snap if statement into forever. If WiFi is connected then, add another if statement. If get motion (triggered or not) at Pin P1 = true then, that’s say someone is near the door.<BR><P>
+
+<span id="subtitle">Step 3. Check motion sensor value</span><BR><P>
+* Snap `if statement` to block `forever`
+* If `WiFi is connected`,
+* If `get motion (triggered or not) at Pin P1` = `true` then, that’s say someone is near the door.
 ![auto_fit](images/Case7/Case7_p3.png)<P>
-<span id="subtitle">Step 4</span><BR><P>
-Snap if statement under the above two if statement. If not sendEmail then, set sendEmail to true and send IFTTT key and event_name. That’s say an email will be sent to the house owner once when triggered. <BR><P>
+ 
+<span id="subtitle">Step 4. Send notification when someone pass by </span><BR><P>
+* Snap `if statement` to block `forever`
+* If `WiFi is connected`, then snap `play tone Middle C for 1 beat` from `music`
+* Snap `show icon` from `basic` and select a `monster icon`
+* Snap `Send IFTTT key…` from `IoT:bit` > `IoT Services`, input your `IFTTT key` and input event name `SendEmail`
 ![auto_fit](images/Case7/Case7_p4.png)<P>
-<span id="subtitle">Step 5</span><BR><P>
-Set play tone Middle C for 1 beat from music and show a monster icon on the micro:bit from basic.<BR><P>
+
+<span id="subtitle">Step 5. Show smile icon when no one pass by </span><BR><P>
+* Snap `show icon` into `Else`, and select icon `smile` 
+* Snap `Pause` after `if statement` to the loop for 1 second delay for checking
 ![auto_fit](images/Case7/Case7_p5.png)<P>
-<span id="subtitle">Step 6</span><BR><P>
-Else, set sendEmail to false from variable and logic and clear screen from more of basic. That’s means there is no email, sound emit and no monster appear if there is no suspicious movement near the door.<BR><P>
-![auto_fit](images/Case7/Case7_p6.png)<P>
-<span id="subtitle">Step 7</span><BR><P>
-Pause for 1000ms after the programming running for one loop.<BR><P>
-![auto_fit](images/Case7/Case7_p7.png)<P>
 
 <span id="subtitle">Full Solution<BR><P>
-MakeCode: [https://makecode.microbit.org/_TTqYvaYVfWUw](https://makecode.microbit.org/#pub:_TTqYvaYVfWUw)<BR><P>
+MakeCode: [https://makecode.microbit.org/_DWy49KEoCgVX](https://makecode.microbit.org/#pub:_DWy49KEoCgVX)<BR><P>
 You could also download the program from the following website:<BR>
-<iframe src="https://makecode.microbit.org/#pub:_TTqYvaYVfWUw" width="100%" height="500" frameborder="0"></iframe>
+<iframe src="https://makecode.microbit.org/#pub:_DWy49KEoCgVX" width="100%" height="500" frameborder="0"></iframe>
 
 
 ## Result 
@@ -99,6 +106,6 @@ When WiFi is connected, if there are any suspicious movement near the door, the 
 ## Think
 <HR>
 
-Q1. How to activate the smart defense system only during a certain period?<BR><P>
+Q1. Think: How to avoid sending duplicate emails? (tips: using variable)<BR><P>
 Q2. How to distinguish suspicious people (e.g. password authentication)?<BR><P>
 

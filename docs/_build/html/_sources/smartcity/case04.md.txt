@@ -51,26 +51,29 @@ Extend the connection of OLED to I2C connection port of IoT:bit<BR><P>
 <HR>
 
 <span id="subtitle">Step 1</span><P>
-Drag on start block from Basic. Drag Initialize IoT:bit at OLED from IoT:bit, set OLED height:64, width:128. Set noise to 0 from variables.<BR><P>
-![pic](images/Case4/Case4_p1.png)<P>
+Initialize OLED screen and variable for showing the noise value. <BR><P>
+* Drag `Initialize OLED with width:128, height: 64` to `on start`
+* Set `Noise` to 0 from `variables`
+![auto_fit](images/Case4/Case4_p1.png)<P>
+
 <span id="subtitle">Step 2</span><P>
-Drag forever block from Basic. Set noise to round get noise level (dB) at pin P1.<BR><P>
-![pic](images/Case4/Case4_p2.png)<P>
+Get the noise value from the noise sensor and show it on the micro:bit LED as an animated graph.<BR><P>
+* In block `forever`. Set `noise` to round `get noise level (dB) at pin P1`
+* Drag `plot bar graph of …` from `Led` and draw variable `Noise` into the plotted value. Set value up to 100
+* Drag `Pause` to the loop for wait for 0.5 second for next checking
+![auto_fit](images/Case4/Case4_p2.png)<P>
+
 <span id="subtitle">Step 3</span><P>
-Show string Noise: noise (variable) dB by using join from text.<BR><P>
-![pic](images/Case4/Case4_p3.png)<P>
-<span id="subtitle">Step 4</span><P>
-Plot bar graph of noise up to 100 from LED, which means showing a bar graph on Micro:bit based on the recorded sound level.<BR><P>
-![pic](images/Case4/Case4_p4.png)<P>
-<span id="subtitle">Step 5</span><P>
-Pause for 0.5 second.<BR><P>
-![pic](images/Case4/Case4_p5.png)<P>
+Show the noise value as a string on the micro:bit OLED screen.<BR><P>
+* Snap `clear OLED display` from `OLED` to avoid overlap
+* Snap `show string` to the loop and show value of the variable `Noise`
+![auto_fit](images/Case4/Case4_p3.png)<P>
 
 
 <span id="subtitle">Full Solution<BR><P>
-MakeCode: [https://makecode.microbit.org/_RqJ2yEJaVMEk](https://makecode.microbit.org/#pub:_RqJ2yEJaVMEk)<BR><P>
+MakeCode: [https://makecode.microbit.org/_WXXLErLTYEY9](https://makecode.microbit.org/#pub:_WXXLErLTYEY9)<BR><P>
 You could also download the program from the following website:<BR>
-<iframe src="https://makecode.microbit.org/#pub:_RqJ2yEJaVMEk" width="100%" height="500" frameborder="0"></iframe>
+<iframe src="https://makecode.microbit.org/#pub:_WXXLErLTYEY9" width="100%" height="500" frameborder="0"></iframe>
 
 
 ## Results

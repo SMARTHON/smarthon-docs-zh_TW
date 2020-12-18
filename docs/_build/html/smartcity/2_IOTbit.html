@@ -86,21 +86,21 @@
 <li class="toctree-l2"><a class="reference internal" href="1_Introduction.html">1. Introduction</a></li>
 <li class="toctree-l2 current"><a class="current reference internal" href="#">2. IoT:bit Introduction</a><ul>
 <li class="toctree-l3"><a class="reference internal" href="#introduction">2.1. Introduction</a></li>
-<li class="toctree-l3"><a class="reference internal" href="#features">2.2. Features</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#product-features">2.2. Product Features</a></li>
 <li class="toctree-l3"><a class="reference internal" href="#hardware-size">2.3. Hardware Size</a></li>
 <li class="toctree-l3"><a class="reference internal" href="#specification">2.4. Specification</a></li>
-<li class="toctree-l3"><a class="reference internal" href="#hardware-interface">2.5. Hardware Interface</a></li>
-<li class="toctree-l3"><a class="reference internal" href="#pinout-diagram">2.6. Pinout Diagram</a></li>
-<li class="toctree-l3"><a class="reference internal" href="#detail-hardware-description">2.7. Detail Hardware Description</a></li>
-<li class="toctree-l3"><a class="reference internal" href="#software-support">2.8. Software Support</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#pinout-information">2.5. Pinout Information</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#detail-hardware-description">2.6. Detail Hardware Description</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#software-support">2.7. Software Support</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#quick-start">2.8. Quick Start</a></li>
 </ul>
 </li>
 <li class="toctree-l2"><a class="reference internal" href="3_getstart.html">3. Getting started: Add the extension</a></li>
 <li class="toctree-l2"><a class="reference internal" href="4_wificonnect.html">4. First step: Connect the micro:bit to the Wi-Fi</a></li>
 <li class="toctree-l2"><a class="reference internal" href="chapter1.html">5. Chapter 1: Upload Data to ThingSpeak</a></li>
 <li class="toctree-l2"><a class="reference internal" href="chapter2.html">6. Chapter 2: Send Email by IFTTT</a></li>
-<li class="toctree-l2"><a class="reference internal" href="chapter3.html">7. Chapter 3: Control micro:bit by App Inventor 2</a></li>
-<li class="toctree-l2"><a class="reference internal" href="chapter4.html">8. Chapter 4: Control your micro:bit by IFTTT Services</a></li>
+<li class="toctree-l2"><a class="reference internal" href="chapter3.html">7. Chapter 3: Direct Control micro:bit by App Inventor 2</a></li>
+<li class="toctree-l2"><a class="reference internal" href="chapter4.html">8. Chapter 4: Cloud Control micro:bit by IFTTT</a></li>
 <li class="toctree-l2"><a class="reference internal" href="chapter5.html">9. Chapter 5: Object to Object communication</a></li>
 <li class="toctree-l2"><a class="reference internal" href="case01.html">10. Case 01: Automated Smart Playground Lamp</a></li>
 <li class="toctree-l2"><a class="reference internal" href="case02.html">11. Case 02: Smart Car park Access Barrier</a></li>
@@ -195,23 +195,25 @@ It provides 13 regular GVS socket, allow user to connect batch of sensors at the
 Several of wireless modules are compatible with the Smarthon IoT Bit, such Bluetooth and Wi-Fi modules. Beside of the commonly used Wi-Fi module ESP8266, the advanced version ESP32 is available to use on the IoT Bit too. After connect to internet, user able to enjoy the abundant internet resource to create the IoT project.
 <P><p><img alt="auto_fit" src="../_images/iot_image00.png" /></p>
 </div>
-<div class="section" id="features">
-<h2><span class="section-number">2.2. </span>Features<a class="headerlink" href="#features" title="Permalink to this headline">¶</a></h2>
+<div class="section" id="product-features">
+<h2><span class="section-number">2.2. </span>Product Features<a class="headerlink" href="#product-features" title="Permalink to this headline">¶</a></h2>
+<p><img alt="auto_fit" src="../_images/iot_image005.jpg" /></p>
 <ul class="simple">
+<li><p>The Most powerful IoT chip ESP32 embedded for micro:bit</p></li>
 <li><p>Exchangeable wireless modular design (ESP8266, ESP32, BLE)</p></li>
-<li><p>Extended I/O pin from Mirco:bit with GVS socket</p></li>
-<li><p>Independent socket for OLED screen, Distance sensor and Motor</p></li>
-<li><p>Separate Servo pin from ESP module</p></li>
-<li><p>On board Buzzer with on/off switch</p></li>
-<li><p>Various types of power supply (USB, XH2.54 battery port, DC jack)</p></li>
+<li><p>Integrated OLED and Onboard buzzer embedded</p></li>
+<li><p>Extended I/O port x13, I2C port x2 from mirco:bit with GVS socket</p></li>
+<li><p>Extended Servo port x3 from ESP module</p></li>
+<li><p>Various types of power supply (USB, 3.7V lithium battery, 6V Normal battery)</p></li>
+<li><p>Extra Port: Crocodile Pin, Quick Access Port and 4-Pin Port for different usage</p></li>
 </ul>
 </div>
 <div class="section" id="hardware-size">
 <h2><span class="section-number">2.3. </span>Hardware Size<a class="headerlink" href="#hardware-size" title="Permalink to this headline">¶</a></h2>
-<p>Product size: 75mm X 65mm X 20mm
-PCB thinkness: 1.5mm
-Hole diameter: 4mm</p>
-<p><img alt="auto_fit" src="../_images/iot_image01.png" /></p>
+<p>Product size: 75mm X 65mm X 20mm<BR>
+PCB thinkness: 1.5mm<BR>
+Hole diameter: 4mm<BR></p>
+<p><img alt="auto_fit" src="../_images/iot_image01.jpg" /></p>
 </div>
 <div class="section" id="specification">
 <h2><span class="section-number">2.4. </span>Specification<a class="headerlink" href="#specification" title="Permalink to this headline">¶</a></h2>
@@ -276,75 +278,207 @@ Hole diameter: 4mm</p>
 </tr>
 </tbody>
 </table></div>
-<div class="section" id="hardware-interface">
-<h2><span class="section-number">2.5. </span>Hardware Interface<a class="headerlink" href="#hardware-interface" title="Permalink to this headline">¶</a></h2>
-<p><img alt="auto_fit" src="../_images/iot_image02.png" /></p>
-<ul class="simple">
-<li><p>1.Micro:bit edge connecter</p></li>
-<li><p>2.USB power supply port</p></li>
-<li><p>3.Power Switch</p></li>
-<li><p>4.XH2.54 Battery port</p></li>
-<li><p>5.DC Battery port</p></li>
-<li><p>6.Wireless Module socket</p></li>
-<li><p>7.I2C connection port(1 reserved for OLED)</p></li>
-<li><p>8.GVS I/O Pins Lead Out</p></li>
-<li><p>9.Buzzer /w Switch</p></li>
-<li><p>10.Motor port</p></li>
-<li><p>11.ESP Servo port</p></li>
-<li><p>12.Distance Sensor port</p></li>
-<li><p>13.QuickAccess GVS port</p></li>
-</ul>
-</div>
-<div class="section" id="pinout-diagram">
-<h2><span class="section-number">2.6. </span>Pinout Diagram<a class="headerlink" href="#pinout-diagram" title="Permalink to this headline">¶</a></h2>
-<p><img alt="auto_fit" src="../_images/iot_image03.png" />
-Please open the image in the new tab for full size</p>
+<div class="section" id="pinout-information">
+<h2><span class="section-number">2.5. </span>Pinout Information<a class="headerlink" href="#pinout-information" title="Permalink to this headline">¶</a></h2>
+<p><H3>Pinout Diagram:</H3><BR>
+<img alt="auto_fit" src="../_images/iot_image03.jpg" /><P>
+<H3>Port Diagram:</H3><BR>
+<img alt="auto_fit" src="../_images/iot_image006.jpg" /></p>
+<p><H3>Pinout Table</H3></p>
+<table border="1" class="docutils">
+<thead>
+<tr>
+<th></th>
+<th>Mirco:bit</th>
+<th></th>
+<th>IoT:bit</th>
+<th><span style="text-align: center;width: 100%">Extra Port</span></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>P0</td>
+<td></td>
+<td>~</td>
+<td>Buzzer</td>
+<td>Crocodile Pin/Quick Access Port</td>
+</tr>
+<tr>
+<td>P1</td>
+<td></td>
+<td>~</td>
+<td></td>
+<td>Crocodile Pin/Quick Access Port</td>
+</tr>
+<tr>
+<td>P2</td>
+<td></td>
+<td>~</td>
+<td></td>
+<td>Crocodile Pin/Quick Access Port</td>
+</tr>
+<tr>
+<td>P3</td>
+<td>LED</td>
+<td>~</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>P4</td>
+<td>LED</td>
+<td>~</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>P5</td>
+<td>LED</td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>P6</td>
+<td>LED</td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>P7</td>
+<td>LED</td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>P8</td>
+<td>UART (TX)</td>
+<td></td>
+<td>ESP32 (RX)</td>
+<td></td>
+</tr>
+<tr>
+<td>P9</td>
+<td>LED</td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>P10</td>
+<td>LED</td>
+<td>~</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>P12</td>
+<td></td>
+<td></td>
+<td></td>
+<td>4-Pin Module Port</td>
+</tr>
+<tr>
+<td>P13</td>
+<td>SPI (SCK)</td>
+<td></td>
+<td></td>
+<td>4-Pin Module Port</td>
+</tr>
+<tr>
+<td>P14</td>
+<td>SPI (MISO)</td>
+<td></td>
+<td></td>
+<td>4-Pin Module Port</td>
+</tr>
+<tr>
+<td>P15</td>
+<td>SPI (MOSI)</td>
+<td></td>
+<td></td>
+<td>4-Pin Module Port</td>
+</tr>
+<tr>
+<td>P16</td>
+<td>UART (RX)</td>
+<td></td>
+<td>ESP32 (TX)</td>
+<td></td>
+</tr>
+<tr>
+<td>P19</td>
+<td>I2C(SCL)</td>
+<td></td>
+<td>OLED</td>
+<td></td>
+</tr>
+<tr>
+<td>P20</td>
+<td>I2C(SDA)</td>
+<td></td>
+<td>OLED</td>
+<td></td>
+</tr>
+</tbody>
+</table><p>Please open the image in the new tab for full size</p>
 </div>
 <div class="section" id="detail-hardware-description">
-<h2><span class="section-number">2.7. </span>Detail Hardware Description<a class="headerlink" href="#detail-hardware-description" title="Permalink to this headline">¶</a></h2>
-<p><B>Mirco:bit edge connecter</B>
-<img alt="pic" src="../_images/iot_image04.png" />
-Provide the socket for the Micro:bit to install. Follow the instruction icon right about that to install the Micro:bit to the expansion board.</p>
-<p><B>Power port(USB, Battery, DC) &amp; Switch</B>
-<img alt="pic" src="../_images/iot_image05.png" />
-Provide three different type of methods to power on the expansion board and Mirco:bit. User can either choose common 5V USB power, or two different port which connect to 3.7V ~ 6V battery box.</p>
-<p><B>OLED Module</B></p>
-<p><img alt="pic" src="../_images/iot_image06.png" />
-The expansion board have the reserved space to place a SSD1306 0.96 inch OLED screen. User can use the I2C connection port to output the visual element on that module.</p>
-<p><B>Wireless Module</B>
-<img alt="pic" src="../_images/iot_image07.png" />
-The Wireless Module provide the Core function of the expansion board. Though different modules install on the socket, Mirco:bit gain the correspond connectivity ability. User may install ESP32, ESP8266, Bluetooth to implement various application project, make use of the IoT resource.</p>
-<p><B>ESP Servo port</B>
-<img alt="pic" src="../_images/iot_image08.png" />
-When installed the ESP32 module, it provide extra 3 servo control port to connect the Servo motor. Compatible with general GVS 180/360 Servo motor (SG90/SG90S)</p>
-<p><B>Micro:bit lead out Pins</B>
-<img alt="pic" src="../_images/iot_image09.png" />
-The Lead Out from the Mirco:bit I/O pins, provide great expansion feature for the Mirco:bit , user can connect up to 13 different sensor/actuator at the same time. Each independent GVS socket make the connection become more connivance.</p>
-<p><B>Buzzer &amp; Switch</B>
-<img alt="pic" src="../_images/iot_image10.png" />
-The IoT Bit built-in a Passive Buzzer on the board, which connected to P0. Using the program can generate different tone of sound. With the switch, it can have manual control to the audio.</p>
-<p><B>QuickAccess GVS connecter</B>
-<img alt="pic" src="../_images/iot_image11.png" />
-To some GVS sensor which provide the Quick Insert Pin, it can use on the QuickAccess GVS connecter. It do not need to use the cable to connect the sensor, simplify the product in the application.</p>
-<p><B>Distance Sensor port</B>
-<img alt="pic" src="../_images/iot_image12.png" />
-On the IoT Bit, a port is reserved for the HC-SR04 Distance Sensor. Whether use multi separate cable to connect two data pin, user can use a 4 pin connection cable to join the sensor and Mirco:bit. The two data pins in this port is p14 and p15 respectively.</p>
-<p><B>Motor port</B>
-<img alt="pic" src="../_images/iot_image12_5.png" />
-Beside the 3pin single direction DC motor, IoT Bit is compatible with the 4pin bi-direction dc motor. User can use a 4pin connection cable to control the 4pin motor.
-The two data pins in this port is p12 and p13 respectively.</p>
-</div>
+<h2><span class="section-number">2.6. </span>Detail Hardware Description<a class="headerlink" href="#detail-hardware-description" title="Permalink to this headline">¶</a></h2>
+<p><H3>Mirco:bit edge connecter</H3><BR>
+<img alt="pic" src="../_images/iot_image04.png" /></p>
+<P>Provide the socket for the Micro:bit to install. Follow the instruction icon right about that to install the Micro:bit to the expansion board.<p><H3>Power port(USB, Battery, DC) &amp; Switch</H3><BR>
+<img alt="pic" src="../_images/iot_image05.png" /></p>
+<P>Provide three different type of methods to power on the expansion board and Mirco:bit. User can either choose common 5V USB power, or two different port which connect to 3.7V ~ 6V battery box. <p><H3>OLED Module</H3></p>
+<p><img alt="pic" src="../_images/iot_image06.png" /></p>
+<P>The expansion board have the reserved space to place a SSD1306 0.96 inch OLED screen. User can use the I2C connection port to output the visual element on that module.<p><H3>Wireless Module</H3><BR>
+<img alt="pic" src="../_images/iot_image07.png" /></p>
+<P>The Wireless Module provide the Core function of the expansion board. Though different modules install on the socket, Mirco:bit gain the correspond connectivity ability. User may install ESP32, ESP8266, Bluetooth to implement various application project, make use of the IoT resource.<p><H3>ESP Servo port</H3><BR>
+<img alt="pic" src="../_images/iot_image08.png" /></p>
+<P>When installed the ESP32 module, it provide extra 3 servo control port to connect the Servo motor. Compatible with general GVS 180/360 Servo motor (SG90/SG90S)<p><H3>Micro:bit lead out Pins</H3><BR>
+<img alt="pic" src="../_images/iot_image09.png" /></p>
+<P>The Lead Out from the Mirco:bit I/O pins, provide great expansion feature for the Mirco:bit , user can connect up to 13 different sensor/actuator at the same time. Each independent GVS socket make the connection become more connivance. <p><H3>Buzzer &amp; Switch</H3><BR>
+<img alt="pic" src="../_images/iot_image10.png" /></p>
+<P>The IoT Bit built-in a Passive Buzzer on the board, which connected to P0. Using the program can generate different tone of sound. With the switch, it can have manual control to the audio.<p><H3>QuickAccess GVS connecter</H3><BR>
+<img alt="pic" src="../_images/iot_image11.png" /></p>
+<P>To some GVS sensor which provide the Quick Insert Pin, it can use on the QuickAccess GVS connecter. It do not need to use the cable to connect the sensor, simplify the product in the application.<p><H3>4 Pins Module port</H3><BR>
+<img alt="pic" src="../_images/iot_image12.png" /></p>
+<P>On the IoT Bit, two ports are reserved for the 4 Pins Module. Each port can connect to some sensors or actuators which required use two I/O Pins at the same time, such Distance Sesnor and Motor. In total, there are 4 I/O Pins being used, they are P12, P13, P14, P15 respectively.</div>
 <div class="section" id="software-support">
-<h2><span class="section-number">2.8. </span>Software Support<a class="headerlink" href="#software-support" title="Permalink to this headline">¶</a></h2>
-<p><B>MakeCode editor</B></p>
+<h2><span class="section-number">2.7. </span>Software Support<a class="headerlink" href="#software-support" title="Permalink to this headline">¶</a></h2>
+<p><H3>MakeCode editor</H3></p>
 <p>The MakeCode editor is the official cross-platform editor designed for BBC Mirco:bit, it is available on Web Browser, Mobile and tablets Apps. The Colorful coding block is familiar to who previously used Scratch, providing a simple and clear way to programming on the Micro:bit.<P>
 The editor offer a text-based mode for user to programming using JavaScript rather than drag the blocks<BR>
 <a class="reference external" href="https://makecode.microbit.org/#editor">MakeCode</a>
 <img alt="auto_fit" src="../_images/iot_image13.png" /></p>
-<p><B>Python editor</B><P>
+<p><H3>Python editor</H3><P>
 Python is one of the most famous programming language, widely used in school and industry. Micro:bit provided an online python editor for user to study and exercise python on Micro:bit. User just need to connect Mirco:bit with USB and click the Flash button, the compile and upload progress will be finish automatically. <BR>
 <a class="reference external" href="https://python.microbit.org/v/2.0">Python editor</a>
 <img alt="auto_fit" src="../_images/iot_image14.png" /></p>
+</div>
+<div class="section" id="quick-start">
+<h2><span class="section-number">2.8. </span>Quick Start<a class="headerlink" href="#quick-start" title="Permalink to this headline">¶</a></h2>
+<p><H4>1.Plug the Mirco:bit(with Program) into the the slot</H4><P></p>
+<blockquote>
+<div><p><img alt="auto_fit" src="../_images/iot_MBsolt.gif" /><P></p>
+</div></blockquote>
+<p><H4>2.Get the power supply and turn on</H4><P></p>
+<p>Method 1:<P></p>
+<blockquote>
+<div><p>Plug the USB cable into the USB port and turn on the switch<P></p>
+</div></blockquote>
+<blockquote>
+<div><p><img alt="auto_fit" src="../_images/iot_usb.gif" /><P></p>
+</div></blockquote>
+<p>Method 2:<P></p>
+<blockquote>
+<div><p>Plug the battery case(1.5V AA*4) into the battery port and turn on the switch<P></p>
+</div></blockquote>
+<blockquote>
+<div><p><img alt="auto_fit" src="../_images/iot_battery.gif" /><P></p>
+</div></blockquote>
 </div>
 </div>
 
