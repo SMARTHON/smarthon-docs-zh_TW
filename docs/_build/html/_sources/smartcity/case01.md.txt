@@ -20,7 +20,7 @@ auto-light can help the earth save electricity. When no one passes by, the light
 Motion sensor should be able to detect if there are people moving in the playground.<BR>
 If there are people moving in the playground, the LED light should turn on, vice versa.<BR>
 
-![pic_70](images/Case1/Concept-diagram-Case1.png)<P>
+![pic_60](images/Case1/Concept-diagram-Case1.png)<P>
 
 ## Part List
 <HR>
@@ -50,19 +50,18 @@ Connect LED light to the P3 port of Smarthon IoT:bit<BR><P>
 ## Programming (MakeCode)
 <HR>
 
-<span id="subtitle">Step 1</span><BR><P>
-As P3 is used for micro:bit LED by default, LED need to be disable before using P3.<BR><P>
+<span id="subtitle">Step 1. Disable micro:bit LED.</span><BR><P>
 * Snap `led enable false` to `on start` 
+* Note that P3 is used as LED in default setting, LED need to be disable 
 ![auto_fit](images/Case1/Case1_p1.png)<P>
 
-<span id="subtitle">Step 2</span><BR><P> 
-If there are movement nearby (motion sensor is triggered), while LED will be turned on for 10 seconds. <BR><P>
-* Drag `forever” from Basic
+<span id="subtitle">Step 2. Turn on LED by motion sensor</span><BR><P> 
+* Drag `forever` from `Basic`
 * Snap `if statement` into `forever`
 * Set `get motion (triggered or not) at P0 = true`, into `if statement` that’s say motion is triggered, someone passes by. 
 * Then, `turn white LED to 1023 at P3` as turning on white LED and pause 10 seconds. 
 * Else, `turn white LED at P3 to 0` as turning off.
-![auto_fit](images/Case1/Case1_p2.png)<P>
+![pic_90](images/Case1/Case1_p2.png)<P>
 
 <span id="subtitle">Full Solution<BR><P>
 MakeCode: [https://makecode.microbit.org/_PVf42KbHx0zY](https://makecode.microbit.org/#pub:_PVf42KbHx0zY_5jAUk558DTXC)<BR><P>

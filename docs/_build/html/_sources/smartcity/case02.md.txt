@@ -53,37 +53,32 @@ Connect 180° Servo to P2 port of IoT:bit<BR><P>
 ## Programming (MakeCode)
 <HR>
 
-<span id="subtitle">Step 1</span><BR><P>
-Initialize variables and turn servo to start position at the beginning.<BR><P>
-* Inside `on start`, snap `set variable distance to 0` and `set light to 0` from `variables`. 
-* Snap `Turn Servo to 0 degree at P2`.
-![auto_fit](images/Case2/Case2_p1.png)<P>
+<span id="subtitle">Step 1. Set variables and servo at start position</span><BR><P>
+* Inside `on start`, snap `set variable distance to 0` and `set light to 0` from `variables`. Snap `Turn Servo to 0 degree at P2`.
+![pic_50](images/Case2/Case2_p1.png)<P>
 
-<span id="subtitle">Step 2</span><BR><P>
-It will continuously check the distance from distance sensor and light value from light sensor.<BR><P>
+<span id="subtitle">Step 2. Get distance and light value</span><BR><P>
 * Drag `get distance to get distance unit cm trig P14 echo P15`, store the value to variable `distance`.
 * `Get light value (percentage) at Pin P0`, store the value to variable `light`
-![auto_fit](images/Case2/Case2_p2.png)<P>
+![pic_90](images/Case2/Case2_p2.png)<P>
 
-<span id="subtitle">Step 3</span><BR><P>
-When the car is in front of the distance sensor of the gate and there are vacancies in car park (light sensor value is high).<BR><P>
+<span id="subtitle">Step 3. Open/close gate with light value</span><BR><P>
 * Snap `if statement` into forever, set if variable `distance` ≤ 5
 * Snap another `if statement` set variable `light` value >20
-![auto_fit](images/Case2/Case2_p3.png)<P>
+![pic_90](images/Case2/Case2_p3.png)<P>
 
-<span id="subtitle">Step 4</span><BR><P>
-If the statement is true, then the gate will be opened for 5 seconds and then closed.<BR><P>
+<span id="subtitle">Step 4. Set servo position</span><BR><P>
 * Snap `Turn Servo to 90 degree at P2` as the gate is opened.
 * Snap `pause` to the loop to wait 5 seconds
 * Snap `Turn Servo to 0 degree at P2` as the gate is closed.
-![auto_fit](images/Case2/Case2_p4.png)<P>
+![pic_90](images/Case2/Case2_p4.png)<P>
 
 
 
 <span id="subtitle">Full Solution<BR><P>
-MakeCode: [https://makecode.microbit.org/_6xjh8hAhi81j](https://makecode.microbit.org/#pub:_6xjh8hAhi81j)<BR><P>
+MakeCode: [https://makecode.microbit.org/_V1hdbVYzwCeD](https://makecode.microbit.org/#pub:_V1hdbVYzwCeD)<BR><P>
 You could also download the program from the following website:<BR>
-<iframe src="https://makecode.microbit.org/#pub:_6xjh8hAhi81j" width="100%" height="500" frameborder="0"></iframe>
+<iframe src="https://makecode.microbit.org/#pub:_V1hdbVYzwCeD" width="100%" height="500" frameborder="0"></iframe>
 
 ## Result
 <HR>

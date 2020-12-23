@@ -106,6 +106,6 @@ When WiFi is connected, if there are any suspicious movement near the door, the 
 ## Think
 <HR>
 
-Q1. Think: How to avoid sending duplicate emails? (tips: using variable)<BR><P>
+Q1. How to avoid sending duplicate emails? (tips: using variable)<BR><P>
 Q2. How to distinguish suspicious people (e.g. password authentication)?<BR><P>
 

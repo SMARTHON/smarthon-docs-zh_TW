@@ -130,4 +130,4 @@ The micro:bit is controlled by IFTTT (trigger by weather open data). When the we
 ## Think
 <HR>
 
-Q1. How to close the rack if the weather condition change to "Clear" in IFTTT? <BR><P>
+Q1. Can you control the clothing rack by other weather conditions? (e.g. sunlight)<BR><P>

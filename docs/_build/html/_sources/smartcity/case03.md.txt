@@ -50,25 +50,22 @@ Connect Multi-color LED to P1 port of IoT:bit<BR><P>
 ## Programming (MakeCode)
 <HR>
 
-<span id="subtitle">Step 1</span><P>
-Set variable distance to 0 and set strip for using Multi-Colour LED. Pause 5 seconds for initializing the Multi-Colour LED.<BR><P>
+<span id="subtitle">Step 1. Set variable and initialize multi-colour LED</span><P>
 * Inside `on start`, snap `set variable distance to 0` from `variables`
 * Snap `set strip to NeoPixel at pin... ` from `Neopixel`. Set pin P1 with 1 led of the block.
 * Snap `strip set brightness` from `Neopixel` > `more` and set brightness 50
 * Snap `pause` to wait 5 seconds
 ![auto_fit](images/Case3/Case3_p1.png)<P>
 
-<span id="subtitle">Step 2</span><P>
-Get the distance value from the distance sensor to determine if the rubbish bin is full or empty.<BR><P>
+<span id="subtitle">Step 2. Get distance value</span><P>
 * Inside block `forever`. Set `distance` to `get distance unit cm trig P14 echo P15`, that’s say get the distance value by connecting the distance sensor to P14 and P15
-* Snap `if statement` into `forever`, set `distance ≤ 4` into `if statement` 
+* Snap `if statement` into `forever`, set `distance ≤ 4` into `if statement`
 * Snap `Pause` to the loop to wait 1 second for next checking
-![auto_fit](images/Case3/Case3_p2.png)<P>
+![pic_90](images/Case3/Case3_p2.png)<P>
 
-<span id="subtitle">Step 3</span><P>
-If the distance is too short, then the garbage bin is nearly full, the Multi-color LED shows red color; otherwise, it shows green color. <BR><P>
-* If distance ≤ 4, then `strip show color red` , else `strip show color green`
-![auto_fit](images/Case3/Case3_p3.png)<P>
+<span id="subtitle">Step 3. Show indicating colours with distance value</span><P>
+* If distance ≤ 4, then `strip show color red`, else `strip show color green`
+![pic_90](images/Case3/Case3_p3.png)<P>
 
 
 <span id="subtitle">Full Solution<BR><P>

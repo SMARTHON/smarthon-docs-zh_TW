@@ -109,7 +109,7 @@ Show string Temperature, humidity and raindrop on the OLED by using join from te
 <span id="subtitle"> Step 6. Show ThingSpeak upload status</span><BR><P>
 * Snap `show string` inside `On Thingspeak Uploaded`
 * Draw the variable `Status` and `Error_code` to block `show string`
-![auto_fit](images/Case6/Case6_p5.png)<P>
+![auto_fit](images/Case6/Case6_p6.png)<P>
 
 <span id="subtitle">Full Solution<BR><P>
 MakeCode: [https://makecode.microbit.org/_F9q1r4comWfR](https://makecode.microbit.org/#pub:_F9q1r4comWfR)<BR><P>

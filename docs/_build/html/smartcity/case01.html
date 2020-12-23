@@ -200,7 +200,7 @@ auto-light can help the earth save electricity. When no one passes by, the light
 <p><span id="subtitle">Smart playground lamp operation</span><P></p>
 <p>Motion sensor should be able to detect if there are people moving in the playground.<BR>
 If there are people moving in the playground, the LED light should turn on, vice versa.<BR></p>
-<p><img alt="pic_70" src="../_images/Concept-diagram-Case1.png" /><P></p>
+<p><img alt="pic_60" src="../_images/Concept-diagram-Case1.png" /><P></p>
 </div>
 <div class="section" id="part-list">
 <h2><span class="section-number">10.3. </span>Part List<a class="headerlink" href="#part-list" title="Permalink to this headline">¶</a></h2>
@@ -223,21 +223,20 @@ Connect LED light to the P3 port of Smarthon IoT:bit<BR><P>
 <P></div>
 <div class="section" id="programming-makecode">
 <h2><span class="section-number">10.6. </span>Programming (MakeCode)<a class="headerlink" href="#programming-makecode" title="Permalink to this headline">¶</a></h2>
-<HR><p><span id="subtitle">Step 1</span><BR><P>
-As P3 is used for micro:bit LED by default, LED need to be disable before using P3.<BR><P></p>
+<HR><p><span id="subtitle">Step 1. Disable micro:bit LED.</span><BR><P></p>
 <ul class="simple">
-<li><p>Snap <code class="docutils literal notranslate"><span class="pre">led</span> <span class="pre">enable</span> <span class="pre">false</span></code> to <code class="docutils literal notranslate"><span class="pre">on</span> <span class="pre">start</span></code>
+<li><p>Snap <code class="docutils literal notranslate"><span class="pre">led</span> <span class="pre">enable</span> <span class="pre">false</span></code> to <code class="docutils literal notranslate"><span class="pre">on</span> <span class="pre">start</span></code></p></li>
+<li><p>Note that P3 is used as LED in default setting, LED need to be disable
 <img alt="auto_fit" src="../_images/Case1_p1.png" /><P></p></li>
 </ul>
-<p><span id="subtitle">Step 2</span><BR><P>
-If there are movement nearby (motion sensor is triggered), while LED will be turned on for 10 seconds. <BR><P></p>
+<p><span id="subtitle">Step 2. Turn on LED by motion sensor</span><BR><P></p>
 <ul class="simple">
-<li><p>Drag `forever” from Basic</p></li>
+<li><p>Drag <code class="docutils literal notranslate"><span class="pre">forever</span></code> from <code class="docutils literal notranslate"><span class="pre">Basic</span></code></p></li>
 <li><p>Snap <code class="docutils literal notranslate"><span class="pre">if</span> <span class="pre">statement</span></code> into <code class="docutils literal notranslate"><span class="pre">forever</span></code></p></li>
 <li><p>Set <code class="docutils literal notranslate"><span class="pre">get</span> <span class="pre">motion</span> <span class="pre">(triggered</span> <span class="pre">or</span> <span class="pre">not)</span> <span class="pre">at</span> <span class="pre">P0</span> <span class="pre">=</span> <span class="pre">true</span></code>, into <code class="docutils literal notranslate"><span class="pre">if</span> <span class="pre">statement</span></code> that’s say motion is triggered, someone passes by.</p></li>
 <li><p>Then, <code class="docutils literal notranslate"><span class="pre">turn</span> <span class="pre">white</span> <span class="pre">LED</span> <span class="pre">to</span> <span class="pre">1023</span> <span class="pre">at</span> <span class="pre">P3</span></code> as turning on white LED and pause 10 seconds.</p></li>
 <li><p>Else, <code class="docutils literal notranslate"><span class="pre">turn</span> <span class="pre">white</span> <span class="pre">LED</span> <span class="pre">at</span> <span class="pre">P3</span> <span class="pre">to</span> <span class="pre">0</span></code> as turning off.
-<img alt="auto_fit" src="../_images/Case1_p2.png" /><P></p></li>
+<img alt="pic_90" src="../_images/Case1_p2.png" /><P></p></li>
 </ul>
 <p><span id="subtitle">Full Solution<BR><P>
 MakeCode: <a class="reference external" href="https://makecode.microbit.org/#pub:_PVf42KbHx0zY_5jAUk558DTXC">https://makecode.microbit.org/_PVf42KbHx0zY</a><BR><P>
