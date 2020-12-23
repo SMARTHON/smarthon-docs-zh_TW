@@ -49,7 +49,7 @@ Before we try to use WiFi Control function, we need to connect to the network, w
 * Go to OLED Tab
 * Snap `initialize OLED with width…height..` to `on start`
 * Snap the `show string` inside the `On WiFi connected`
-* Draw the `Device ID` variable from `On WiFi connected` to the `show string` block placeholder
+* Draw the `Device ID` variable from `On WiFi connected` to the `show tring` block placeholder
 
 ![auto_fit](images/Ch4/Ch4_2_p2.png)<P>
 
@@ -66,6 +66,8 @@ After connected to the WiFI, the connection to the server will be done automatic
 * Do the `if-condition statement` to the variable `WAN_Command`
 * If `Wan_command` “light_on” is received, white LED will be turned on (intensity:1023)
 * If `Wan_command` “light_off” is received, white LED will be turned off (intensity:0)
+
+Attention: Please be aware that the **P** is in capital letter.
 
 ![auto_fit](images/Ch4/Ch4_2_p3.png)<P>
 
