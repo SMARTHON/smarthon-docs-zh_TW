@@ -54,33 +54,180 @@ Hole diameter: 4mm<BR>
 ![auto_fit](images/2_IOT/iot_image03.jpg)<P>
 <H3>Port Diagram:</H3><BR>
 ![auto_fit](images/2_IOT/iot_image006.jpg)
-
+<P>
+Please open the image in the new tab for full size
+<P>
 <H3>Pinout Table</H3>
 
-| |Mirco:bit || IoT:bit | <span style="text-align: center;width: 100%">Extra Port</span> |
---|--|--|--|--|
-|P0||~|Buzzer|Crocodile Pin/Quick Access Port|
-|P1||~||Crocodile Pin/Quick Access Port|
-|P2||~||Crocodile Pin/Quick Access Port|
-|P3|LED|~|||
-|P4|LED|~|||
-|P5|LED||||
-|P6|LED||||
-|P7|LED||||
-|P8|UART (TX)||ESP32 (RX)||
-|P9|LED||||
-|P10|LED|~|||
-|P12||||4-Pin Module Port|
-|P13|SPI (SCK)|||4-Pin Module Port|
-|P14|SPI (MISO)|||4-Pin Module Port|
-|P15|SPI (MOSI)|||4-Pin Module Port|
-|P16|UART (RX)||ESP32 (TX)||
-|P19|I2C(SCL)||OLED||
-|P20|I2C(SDA)||OLED||
+<style type="text/css">
+.tg  {border-collapse:collapse;border-spacing:0;}
+.tg td{border-color:black;border-style:solid;border-width:1px;font-family:Arial, sans-serif;font-size:14px;
+  overflow:hidden;padding:10px 5px;word-break:normal;}
+.tg th{border-color:black;border-style:solid;border-width:1px;font-family:Arial, sans-serif;font-size:14px;
+  font-weight:normal;overflow:hidden;padding:10px 5px;word-break:normal;}
+.tg .tg-ux7d{background-color:#c0c0c0;border-color:#000000;font-family:Arial, Helvetica, sans-serif !important;;text-align:center;
+  vertical-align:middle}
+.tg .tg-l89d{border-color:#000000;font-family:Arial, Helvetica, sans-serif !important;;text-align:center;vertical-align:middle}
+.tg .tg-j1bp{background-color:#efefef;border-color:#000000;font-family:Arial, Helvetica, sans-serif !important;;text-align:center;
+  vertical-align:middle}
+</style>
+<table class="tg" style="undefined;table-layout: fixed; width: 599px">
+<colgroup>
+<col style="width: 98.008404px">
+<col style="width: 80.008404px">
+<col style="width: 85.004202px">
+<col style="width: 101.004202px">
+<col style="width: 235.004202px">
+</colgroup>
+<thead>
+  <tr>
+    <th class="tg-ux7d">Type</th>
+    <th class="tg-ux7d"></th>
+    <th class="tg-ux7d">Mirco:bit</th>
+    <th class="tg-ux7d">IoT:bit</th>
+    <th class="tg-ux7d">Extra Port</th>
+  </tr>
+</thead>
+<tbody>
+  <tr>
+    <td class="tg-l89d" rowspan="6">Analog</td>
+    <td class="tg-l89d">P0</td>
+    <td class="tg-l89d"></td>
+    <td class="tg-l89d">Buzzer</td>
+    <td class="tg-l89d">Rapid Access Port</td>
+  </tr>
+  <tr>
+    <td class="tg-j1bp">P1</td>
+    <td class="tg-j1bp"></td>
+    <td class="tg-j1bp"></td>
+    <td class="tg-j1bp">Rapid Access Port</td>
+  </tr>
+  <tr>
+    <td class="tg-l89d">P2</td>
+    <td class="tg-l89d"></td>
+    <td class="tg-l89d"></td>
+    <td class="tg-l89d">Rapid Access Port</td>
+  </tr>
+  <tr>
+    <td class="tg-j1bp">P3</td>
+    <td class="tg-j1bp">LED</td>
+    <td class="tg-j1bp"></td>
+    <td class="tg-j1bp"></td>
+  </tr>
+  <tr>
+    <td class="tg-l89d">P4</td>
+    <td class="tg-l89d">LED</td>
+    <td class="tg-l89d"></td>
+    <td class="tg-l89d"></td>
+  </tr>
+  <tr>
+    <td class="tg-j1bp">P10</td>
+    <td class="tg-j1bp">LED</td>
+    <td class="tg-j1bp"></td>
+    <td class="tg-j1bp"></td>
+  </tr>
+  <tr>
+    <td class="tg-l89d" rowspan="6">Digital</td>
+    <td class="tg-l89d">P6</td>
+    <td class="tg-l89d">LED</td>
+    <td class="tg-l89d"></td>
+    <td class="tg-l89d"></td>
+  </tr>
+  <tr>
+    <td class="tg-j1bp">P9</td>
+    <td class="tg-j1bp">LED</td>
+    <td class="tg-j1bp"></td>
+    <td class="tg-j1bp"></td>
+  </tr>
+  <tr>
+    <td class="tg-l89d">P12</td>
+    <td class="tg-l89d"></td>
+    <td class="tg-l89d"></td>
+    <td class="tg-l89d">4-Pin Port</td>
+  </tr>
+  <tr>
+    <td class="tg-j1bp">P13</td>
+    <td class="tg-j1bp">SPI(SCK)</td>
+    <td class="tg-j1bp"></td>
+    <td class="tg-j1bp">4-Pin Port</td>
+  </tr>
+  <tr>
+    <td class="tg-l89d">P14</td>
+    <td class="tg-l89d">SPI(MISO)</td>
+    <td class="tg-l89d"></td>
+    <td class="tg-l89d">4-Pin Port</td>
+  </tr>
+  <tr>
+    <td class="tg-j1bp">P15</td>
+    <td class="tg-j1bp">SPI(MOSI)</td>
+    <td class="tg-j1bp"></td>
+    <td class="tg-j1bp">4-Pin Port</td>
+  </tr>
+  <tr>
+    <td class="tg-l89d" rowspan="2">Serial</td>
+    <td class="tg-l89d">P8</td>
+    <td class="tg-l89d">UART(TX)</td>
+    <td class="tg-l89d">ESP32(RX)</td>
+    <td class="tg-l89d"></td>
+  </tr>
+  <tr>
+    <td class="tg-j1bp">P16</td>
+    <td class="tg-j1bp">UART(RX)</td>
+    <td class="tg-j1bp">ESP32(TX)</td>
+    <td class="tg-j1bp"></td>
+  </tr>
+  <tr>
+    <td class="tg-l89d" rowspan="2">I2C</td>
+    <td class="tg-l89d">P19</td>
+    <td class="tg-l89d">I2C</td>
+    <td class="tg-l89d">OLED(SCL)</td>
+    <td class="tg-l89d"></td>
+  </tr>
+  <tr>
+    <td class="tg-j1bp">P20</td>
+    <td class="tg-j1bp">I2C</td>
+    <td class="tg-j1bp">OLED(SDA)</td>
+    <td class="tg-j1bp"></td>
+  </tr>
+  <tr>
+    <td class="tg-l89d" rowspan="3">External<br>Servo</td>
+    <td class="tg-l89d">S1</td>
+    <td class="tg-l89d"></td>
+    <td class="tg-l89d">ESP32(23)</td>
+    <td class="tg-l89d"></td>
+  </tr>
+  <tr>
+    <td class="tg-j1bp">S2</td>
+    <td class="tg-j1bp"></td>
+    <td class="tg-j1bp">ESP32(22)</td>
+    <td class="tg-j1bp"></td>
+  </tr>
+  <tr>
+    <td class="tg-l89d">S3</td>
+    <td class="tg-l89d"></td>
+    <td class="tg-l89d">ESP32(21)</td>
+    <td class="tg-l89d"></td>
+  </tr>
+</tbody>
+</table>
+<P>
 
-Please open the image in the new tab for full size
 
 ## Detail Hardware Description
+
+![pic](images/2_IOT/iot_image02.png)
+
+<H3> List</H3>
+1. Mirco:bit edge connecter
+2. Power port(USB, Battery, DC) & Switch
+3. OLED Module
+4. Wireless Module
+5. ESP Servo Port
+6. Micro:bit lead out Pins
+7. Buzzer & Switch
+8. Rapid Access Port
+9. 4-Pins Module Port
+
 
 <H3>Mirco:bit edge connecter</H3><BR>
 ![pic](images/2_IOT/iot_image04.png)
@@ -111,11 +258,11 @@ Please open the image in the new tab for full size
 ![pic](images/2_IOT/iot_image10.png)
 <P>The IoT Bit built-in a Passive Buzzer on the board, which connected to P0. Using the program can generate different tone of sound. With the switch, it can have manual control to the audio.
 
-<H3>QuickAccess GVS connecter</H3><BR>
+<H3>Raqid Access Port</H3><BR>
 ![pic](images/2_IOT/iot_image11.png)
-<P>To some GVS sensor which provide the Quick Insert Pin, it can use on the QuickAccess GVS connecter. It do not need to use the cable to connect the sensor, simplify the product in the application.
+<P>To some GVS sensor which provide the Rapid Insert Pin, it can use on the Rapid Access Port. It do not need to use the cable to connect the sensor, simplify the product in the application.
 
-<H3>4 Pins Module port</H3><BR>
+<H3>4-Pins Module port</H3><BR>
 ![pic](images/2_IOT/iot_image12.png)
 <P>On the IoT Bit, two ports are reserved for the 4 Pins Module. Each port can connect to some sensors or actuators which required use two I/O Pins at the same time, such Distance Sesnor and Motor. In total, there are 4 I/O Pins being used, they are P12, P13, P14, P15 respectively.
 
