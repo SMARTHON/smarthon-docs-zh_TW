@@ -220,17 +220,17 @@ Please open the image in the new tab for full size
 1. Mirco:bit edge connecter
 2. USB Port 
 3. Power Switch
-4. XH2.5 Port
-5. DC 5.5mm Port
+4. XH2.54 3.7V Lithium battery Port
+5. DC 5.5mm 6V 4*AA(1.5V) battery Port
 6. Rapid Access Port
-7. Crocodile Port
+7. Crocodile Pin
 8. I2C Port
 9. 4-Pins Port
 10. ESP Servo Port
 11. Buzzer switch
 12. 4mm Hole
 13. OLED Module
-14. Wireless Module
+14. ESP32 Wireless Module
 15. Buzzer
 16. General GVS Port
 
