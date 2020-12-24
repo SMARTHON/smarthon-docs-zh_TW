@@ -90,9 +90,10 @@
 <li class="toctree-l3"><a class="reference internal" href="#hardware-size">2.3. Hardware Size</a></li>
 <li class="toctree-l3"><a class="reference internal" href="#specification">2.4. Specification</a></li>
 <li class="toctree-l3"><a class="reference internal" href="#pinout-information">2.5. Pinout Information</a></li>
-<li class="toctree-l3"><a class="reference internal" href="#detail-hardware-description">2.6. Detail Hardware Description</a></li>
-<li class="toctree-l3"><a class="reference internal" href="#software-support">2.7. Software Support</a></li>
-<li class="toctree-l3"><a class="reference internal" href="#quick-start">2.8. Quick Start</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#hardware-interface">2.6. Hardware Interface</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#detail-hardware-description">2.7. Detail Hardware Description</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#software-support">2.8. Software Support</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#quick-start">2.9. Quick Start</a></li>
 </ul>
 </li>
 <li class="toctree-l2"><a class="reference internal" href="3_getstart.html">3. Getting started: Add the extension</a></li>
@@ -438,21 +439,30 @@ Please open the image in the new tab for full size
 </tbody>
 </table>
 <P></div>
-<div class="section" id="detail-hardware-description">
-<h2><span class="section-number">2.6. </span>Detail Hardware Description<a class="headerlink" href="#detail-hardware-description" title="Permalink to this headline">¶</a></h2>
-<p><img alt="pic" src="../_images/iot_image02.png" /></p>
-<p><H3> List</H3></p>
+<div class="section" id="hardware-interface">
+<h2><span class="section-number">2.6. </span>Hardware Interface<a class="headerlink" href="#hardware-interface" title="Permalink to this headline">¶</a></h2>
+<p><img alt="pic" src="../_images/iot_image02.jpg" /></p>
 <ol class="simple">
 <li><p>Mirco:bit edge connecter</p></li>
-<li><p>Power port(USB, Battery, DC) &amp; Switch</p></li>
-<li><p>OLED Module</p></li>
-<li><p>Wireless Module</p></li>
-<li><p>ESP Servo Port</p></li>
-<li><p>Micro:bit lead out Pins</p></li>
-<li><p>Buzzer &amp; Switch</p></li>
+<li><p>USB Port</p></li>
+<li><p>Power Switch</p></li>
+<li><p>3.7V Lithium battery Port [XH2.54]</p></li>
+<li><p>6V 4*AA(1.5V) battery Port [DC 5.5mm]</p></li>
 <li><p>Rapid Access Port</p></li>
-<li><p>4-Pins Module Port</p></li>
+<li><p>Crocodile Pin</p></li>
+<li><p>I2C Port</p></li>
+<li><p>4-Pins Port</p></li>
+<li><p>ESP Servo Port</p></li>
+<li><p>Buzzer switch</p></li>
+<li><p>4mm Hole</p></li>
+<li><p>OLED Module (128*64 pixel)</p></li>
+<li><p>ESP32 Wireless Module</p></li>
+<li><p>Buzzer</p></li>
+<li><p>General GVS Port</p></li>
 </ol>
+</div>
+<div class="section" id="detail-hardware-description">
+<h2><span class="section-number">2.7. </span>Detail Hardware Description<a class="headerlink" href="#detail-hardware-description" title="Permalink to this headline">¶</a></h2>
 <p><H3>Mirco:bit edge connecter</H3><BR>
 <img alt="pic" src="../_images/iot_image04.png" /></p>
 <P>Provide the socket for the Micro:bit to install. Follow the instruction icon right about that to install the Micro:bit to the expansion board.<p><H3>Power port(USB, Battery, DC) &amp; Switch</H3><BR>
@@ -467,13 +477,13 @@ Please open the image in the new tab for full size
 <img alt="pic" src="../_images/iot_image09.png" /></p>
 <P>The Lead Out from the Mirco:bit I/O pins, provide great expansion feature for the Mirco:bit , user can connect up to 13 different sensor/actuator at the same time. Each independent GVS socket make the connection become more connivance. <p><H3>Buzzer &amp; Switch</H3><BR>
 <img alt="pic" src="../_images/iot_image10.png" /></p>
-<P>The IoT Bit built-in a Passive Buzzer on the board, which connected to P0. Using the program can generate different tone of sound. With the switch, it can have manual control to the audio.<p><H3>Raqid Access Port</H3><BR>
+<P>The IoT Bit built-in a Passive Buzzer on the board, which connected to P0. Using the program can generate different tone of sound. With the switch, it can have manual control to the audio.<p><H3>Rapid Access Port</H3><BR>
 <img alt="pic" src="../_images/iot_image11.png" /></p>
 <P>To some GVS sensor which provide the Rapid Insert Pin, it can use on the Rapid Access Port. It do not need to use the cable to connect the sensor, simplify the product in the application.<p><H3>4-Pins Module port</H3><BR>
 <img alt="pic" src="../_images/iot_image12.png" /></p>
 <P>On the IoT Bit, two ports are reserved for the 4 Pins Module. Each port can connect to some sensors or actuators which required use two I/O Pins at the same time, such Distance Sesnor and Motor. In total, there are 4 I/O Pins being used, they are P12, P13, P14, P15 respectively.</div>
 <div class="section" id="software-support">
-<h2><span class="section-number">2.7. </span>Software Support<a class="headerlink" href="#software-support" title="Permalink to this headline">¶</a></h2>
+<h2><span class="section-number">2.8. </span>Software Support<a class="headerlink" href="#software-support" title="Permalink to this headline">¶</a></h2>
 <p><H3>MakeCode editor</H3></p>
 <p>The MakeCode editor is the official cross-platform editor designed for BBC Mirco:bit, it is available on Web Browser, Mobile and tablets Apps. The Colorful coding block is familiar to who previously used Scratch, providing a simple and clear way to programming on the Micro:bit.<P>
 The editor offer a text-based mode for user to programming using JavaScript rather than drag the blocks<BR>
@@ -485,7 +495,7 @@ Python is one of the most famous programming language, widely used in school and
 <img alt="auto_fit" src="../_images/iot_image14.png" /></p>
 </div>
 <div class="section" id="quick-start">
-<h2><span class="section-number">2.8. </span>Quick Start<a class="headerlink" href="#quick-start" title="Permalink to this headline">¶</a></h2>
+<h2><span class="section-number">2.9. </span>Quick Start<a class="headerlink" href="#quick-start" title="Permalink to this headline">¶</a></h2>
 <p><H4>1.Plug the Mirco:bit(with Program) into the the slot</H4><P></p>
 <blockquote>
 <div><p><img alt="auto_fit" src="../_images/iot_MBsolt.gif" /><P></p>

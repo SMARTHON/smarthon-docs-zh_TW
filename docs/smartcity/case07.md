@@ -100,8 +100,9 @@ You could also download the program from the following website:<BR>
 <HR>
 
 When WiFi is connected, if there are any suspicious movement near the door, the buzzer will emit sound and an email will be sent to the house owner. Also, a monster icon will be shown on the micro:bit.<BR><P>
-![pic_40](images/Case7/Case7_result1.png)
-![pic_40](images/Case7/Case7_result2.gif)
+![auto_fit](images/Case7/Case7_result1.png)
+
+![auto_fit](images/Case7/Case7_result2.gif)
 
 
 ## Think
