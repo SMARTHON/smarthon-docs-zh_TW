@@ -220,8 +220,8 @@ Please open the image in the new tab for full size
 1. Mirco:bit edge connecter
 2. USB Port 
 3. Power Switch
-4. XH2.54 3.7V Lithium battery Port
-5. DC 5.5mm 6V 4*AA(1.5V) battery Port
+4. 3.7V Lithium battery Port [XH2.54] 
+5. 6V 4*AA(1.5V) battery Port [DC 5.5mm] 
 6. Rapid Access Port
 7. Crocodile Pin
 8. I2C Port
@@ -229,7 +229,7 @@ Please open the image in the new tab for full size
 10. ESP Servo Port
 11. Buzzer switch
 12. 4mm Hole
-13. OLED Module
+13. OLED Module (128*64 pixel)
 14. ESP32 Wireless Module
 15. Buzzer
 16. General GVS Port
@@ -266,7 +266,7 @@ Please open the image in the new tab for full size
 ![pic](images/2_IOT/iot_image10.png)
 <P>The IoT Bit built-in a Passive Buzzer on the board, which connected to P0. Using the program can generate different tone of sound. With the switch, it can have manual control to the audio.
 
-<H3>Raqid Access Port</H3><BR>
+<H3>Rapid Access Port</H3><BR>
 ![pic](images/2_IOT/iot_image11.png)
 <P>To some GVS sensor which provide the Rapid Insert Pin, it can use on the Rapid Access Port. It do not need to use the cable to connect the sensor, simplify the product in the application.
 
