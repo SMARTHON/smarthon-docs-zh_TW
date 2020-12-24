@@ -72,22 +72,19 @@ Select your channel > “API Keys” ，copy the API key as follows:<BR><P>
 ## Programming (MakeCode)
 <HR>
 
-<span id="subtitle"> Step 1</span><BR><P>
-Initialize OLED and IoT:bit and connect to WiFi. <BR><P>
+<span id="subtitle">Step 1. Initialize OLED, IoT:bit and connect to WiFi</span><BR><P>
 * Snap `Initialize OLED with width:128, height: 64` to `on start`
 * Snap `Initialize IoT:bit TX P16 RX P8` from `IoT:bit` to `on start`
 * Snap `Set Wi-Fi to ssid pwd` from `IoT:bit`
 * Enter your Wi-Fi name and password. Here we set `smarthon` as `SSID` and `12345678` as `password`
-* Set variable `raindrop`, `humidity` and `temperature` to 0 from `variables`
+* Set variable `raindrop`, `humidity` and `temperature` to 0 from `variables`*  
 ![auto_fit](images/Case6/Case6_p1.png)<P>
 
-<span id="subtitle"> Step 2</span><BR><P>
-Show icon "tick" after WiFi connection. <BR><P>
+<span id="subtitle">Step 2. Show icon "tick" after WiFi connection</span><BR><P>
 * Snap `show icon` from `basic` to `On WiFi connected` and select icon `tick`
 ![auto_fit](images/Case6/Case6_p2.png)<P>
 
-<span id="subtitle"> Step 3</span><BR><P>
-Get values from Temperature and Humidity sensor (DHT11) and raindrop sensor. <BR><P>
+<span id="subtitle">Step 3. Get temperature, humidity and raindrop values</span><BR><P>
 * Snap `if statement` to block `forever`
 * If `WiFi is connected`
 * Then, set `humidity` to `read humidity from DHT11 at Pin P2`
@@ -95,22 +92,23 @@ Get values from Temperature and Humidity sensor (DHT11) and raindrop sensor. <BR
 * Set `raindrop` to `get raindrop value (percentage) at Pin P0`
 ![auto_fit](images/Case6/Case6_p3.png)<P>
 
-<span id="subtitle"> Step 4</span><BR><P>
-Show string Temperature, humidity and raindrop on the OLED by using join from text. <BR><P>
+<span id="subtitle">Step 4. Show values on OLED</span><BR><P>
 * Snap `clear OLED display` from `OLED` to avoid overlap
 * Snap `show string` and show value of variables `Temperature`, `Humidity` and `Raindrop`
 ![auto_fit](images/Case6/Case6_p4.png)<P>
 
-<span id="subtitle"> Step 5. Upload data to ThingSpeak</span><BR><P>
+<span id="subtitle">Step 5. Upload data to ThingSpeak</span><BR><P>
 * Snap `Send Thingspeak key...` inside the `if-statement`
 * Fill in the `api key` from Thingspeak with temperature, humidity and raindrop value
 * Snap `pause` to the loop to wait 15 second
 ![auto_fit](images/Case6/Case6_p5.png)<P>
 
-<span id="subtitle"> Step 6. Show ThingSpeak upload status</span><BR><P>
+<span id="subtitle">Step 6. Show ThingSpeak upload status</span><BR><P>
 * Snap `show string` inside `On Thingspeak Uploaded`
 * Draw the variable `Status` and `Error_code` to block `show string`
 ![auto_fit](images/Case6/Case6_p6.png)<P>
+
+
 
 <span id="subtitle">Full Solution<BR><P>
 MakeCode: [https://makecode.microbit.org/_F9q1r4comWfR](https://makecode.microbit.org/#pub:_F9q1r4comWfR)<BR><P>

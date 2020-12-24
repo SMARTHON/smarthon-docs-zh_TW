@@ -62,22 +62,19 @@ Extend the connection of OLED to the I2C connection port of IoT:bit <BR><P>
 ## Programming (MakeCode)
 <HR>
 
-<span id="subtitle">Step 1</span><P>
-Initialize OLED screen and variable for calculating the car speed.<BR><P>
+<span id="subtitle">Step 1. Initialize OLED screen</span><P>
 * Drag `Initialize OLED with width:128, height: 64` to `on start`
 * Set `distance1`, `distance2` and `speed` to 0 from `variables`
 ![auto_fit](images/Case5/Case5_p1.png)<P>
 
-<span id="subtitle">Step 2</span><P>
-Set up a new function to get the distance form the car and calculate the speed.<BR><P>
+<span id="subtitle">Step 2. Set up function (calculate_Speed)</span><P>
 * Set up a new function `calculate_Speed` from `Advanced` > `Functions`. 
 * Set `distance1` to `get distance unit cm trig P14 echo P15` (distance from the car to the distance sensor before 0.5 second)
 Drag `Pause` to wait 500ms and set `distance2` to `get distance unit cm trig P14 echo P15` (distance from the car to the distance sensor after 0.5 second)
 * By the equation of speed = distance / time. We get the `speed` of the moving car to (`distance1`-`distance2`)/0.5 (unit: cm/s)
 ![auto_fit](images/Case5/Case5_p2.png)<P>
 
-<span id="subtitle">Step 3</span><P>
-Call function to calculate the car speed, if the car speed is valid, then show it on the OLED screen and plot as an animated graph on micro:bit LED.<BR><P>
+<span id="subtitle">Step 3. Calculate car speed</span><P>
 * In block `forever`, call function `calculate_Speed` from `Advanced` > `Functions` to get the speed of the moving car
 * Snap `If statement` into the loop
 * If `speed ≥0`, then it will `plot bar graph of …` from `Led` and draw variable `speed` into the plotted value. Set value up to 20 

@@ -240,15 +240,13 @@ Extend the connection of OLED to the I2C connection port of IoT:bit <BR><P>
 </div>
 <div class="section" id="programming-makecode">
 <h2><span class="section-number">14.6. </span>Programming (MakeCode)<a class="headerlink" href="#programming-makecode" title="Permalink to this headline">¶</a></h2>
-<HR><p><span id="subtitle">Step 1</span><P>
-Initialize OLED screen and variable for calculating the car speed.<BR><P></p>
+<HR><p><span id="subtitle">Step 1. Initialize OLED screen</span><P></p>
 <ul class="simple">
 <li><p>Drag <code class="docutils literal notranslate"><span class="pre">Initialize</span> <span class="pre">OLED</span> <span class="pre">with</span> <span class="pre">width:128,</span> <span class="pre">height:</span> <span class="pre">64</span></code> to <code class="docutils literal notranslate"><span class="pre">on</span> <span class="pre">start</span></code></p></li>
 <li><p>Set <code class="docutils literal notranslate"><span class="pre">distance1</span></code>, <code class="docutils literal notranslate"><span class="pre">distance2</span></code> and <code class="docutils literal notranslate"><span class="pre">speed</span></code> to 0 from <code class="docutils literal notranslate"><span class="pre">variables</span></code>
 <img alt="auto_fit" src="../_images/Case5_p1.png" /><P></p></li>
 </ul>
-<p><span id="subtitle">Step 2</span><P>
-Set up a new function to get the distance form the car and calculate the speed.<BR><P></p>
+<p><span id="subtitle">Step 2. Set up function (calculate_Speed)</span><P></p>
 <ul class="simple">
 <li><p>Set up a new function <code class="docutils literal notranslate"><span class="pre">calculate_Speed</span></code> from <code class="docutils literal notranslate"><span class="pre">Advanced</span></code> &gt; <code class="docutils literal notranslate"><span class="pre">Functions</span></code>.</p></li>
 <li><p>Set <code class="docutils literal notranslate"><span class="pre">distance1</span></code> to <code class="docutils literal notranslate"><span class="pre">get</span> <span class="pre">distance</span> <span class="pre">unit</span> <span class="pre">cm</span> <span class="pre">trig</span> <span class="pre">P14</span> <span class="pre">echo</span> <span class="pre">P15</span></code> (distance from the car to the distance sensor before 0.5 second)
@@ -256,8 +254,7 @@ Drag <code class="docutils literal notranslate"><span class="pre">Pause</span></
 <li><p>By the equation of speed = distance / time. We get the <code class="docutils literal notranslate"><span class="pre">speed</span></code> of the moving car to (<code class="docutils literal notranslate"><span class="pre">distance1</span></code>-<code class="docutils literal notranslate"><span class="pre">distance2</span></code>)/0.5 (unit: cm/s)
 <img alt="auto_fit" src="../_images/Case5_p2.png" /><P></p></li>
 </ul>
-<p><span id="subtitle">Step 3</span><P>
-Call function to calculate the car speed, if the car speed is valid, then show it on the OLED screen and plot as an animated graph on micro:bit LED.<BR><P></p>
+<p><span id="subtitle">Step 3. Calculate car speed</span><P></p>
 <ul class="simple">
 <li><p>In block <code class="docutils literal notranslate"><span class="pre">forever</span></code>, call function <code class="docutils literal notranslate"><span class="pre">calculate_Speed</span></code> from <code class="docutils literal notranslate"><span class="pre">Advanced</span></code> &gt; <code class="docutils literal notranslate"><span class="pre">Functions</span></code> to get the speed of the moving car</p></li>
 <li><p>Snap <code class="docutils literal notranslate"><span class="pre">If</span> <span class="pre">statement</span></code> into the loop</p></li>

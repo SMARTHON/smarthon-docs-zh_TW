@@ -51,20 +51,18 @@ Extend the connection of OLED to I2C connection port of IoT:bit<BR><P>
 <HR>
 
 <span id="subtitle">Step 1</span><P>
-Initialize OLED screen and variable for showing the noise value. <BR><P>
+<span id="subtitle">Step 1. Initialize OLED screen and variable
 * Drag `Initialize OLED with width:128, height: 64` to `on start`
 * Set `Noise` to 0 from `variables`
 ![auto_fit](images/Case4/Case4_p1.png)<P>
 
-<span id="subtitle">Step 2</span><P>
-Get the noise value from the noise sensor and show it on the micro:bit LED as an animated graph.<BR><P>
+<span id="subtitle">Step 2. Show noise value on micro:bit LED</span><P>
 * In block `forever`. Set `noise` to round `get noise level (dB) at pin P1`
 * Drag `plot bar graph of …` from `Led` and draw variable `Noise` into the plotted value. Set value up to 100
 * Drag `Pause` to the loop for wait for 0.5 second for next checking
 ![auto_fit](images/Case4/Case4_p2.png)<P>
 
-<span id="subtitle">Step 3</span><P>
-Show the noise value as a string on the micro:bit OLED screen.<BR><P>
+<span id="subtitle">Step 3. Show the noise value on OLED screen</span><P>
 * Snap `clear OLED display` from `OLED` to avoid overlap
 * Snap `show string` to the loop and show value of the variable `Noise`
 ![auto_fit](images/Case4/Case4_p3.png)<P>
