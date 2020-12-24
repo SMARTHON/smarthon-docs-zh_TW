@@ -213,21 +213,29 @@ Please open the image in the new tab for full size
 <P>
 
 
-## Detail Hardware Description
+## Hardware Interface
 
-![pic](images/2_IOT/iot_image02.png)
+![pic](images/2_IOT/iot_image02.jpg)
 
-<H3> List</H3>
 1. Mirco:bit edge connecter
-2. Power port(USB, Battery, DC) & Switch
-3. OLED Module
-4. Wireless Module
-5. ESP Servo Port
-6. Micro:bit lead out Pins
-7. Buzzer & Switch
-8. Rapid Access Port
-9. 4-Pins Module Port
+2. USB Port 
+3. Power Switch
+4. XH2.5 Port
+5. DC 5.5mm Port
+6. Rapid Access Port
+7. Crocodile Port
+8. I2C Port
+9. 4-Pins Port
+10. ESP Servo Port
+11. Buzzer switch
+12. 4mm Hole
+13. OLED Module
+14. Wireless Module
+15. Buzzer
+16. General GVS Port
 
+
+## Detail Hardware Description
 
 <H3>Mirco:bit edge connecter</H3><BR>
 ![pic](images/2_IOT/iot_image04.png)
