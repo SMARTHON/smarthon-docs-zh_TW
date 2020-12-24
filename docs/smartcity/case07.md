@@ -47,7 +47,8 @@ Turn on the Buzzer Switch on P0 port of IoT:bit<BR><P>
 ## IoT (IFTTT)
 <HR>
 
-<span id="remarks">* For more details, please refer to Chapter2: Send Email by IFTTT</span><BR><P>
+<span id="remarks">* For more details, please refer to Chapter 2: Send Email by IFTTT </span><BR><P>
+
 <span id="subtitle">Step 1</span><BR><P>
 Go to [https://ifttt.com](https://ifttt.com/) , create applet (if webhooks then Email)<BR><P>
 ![auto_fit](images/Case7/Case7_iot1.png)<P>

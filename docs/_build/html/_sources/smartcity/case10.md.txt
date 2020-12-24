@@ -43,38 +43,47 @@ Connect the white LED Light to P1 port of IoT:bit<BR><P>
 ## Programming (MakeCode)
 <HR>
 
-<span id="subtitle">Step 1</span><BR><P>
-Drag on start block from Basic. Drag Initialize IoT:bit at OLED from IoT:bit, set OLED height:64, width:128. Set WiFi to ssid “wifi_name” and pwd “WiFi_password”.<BR><P>
+<span id="subtitle">Step 1. Initialize OLED, IoT:bit and connect to WiFi</span><BR><P>
+* Snap `Initialize OLED with width:128, height: 64` to `on start`
+* Snap `Initialize IoT:bit TX P16 RX P8` from `IoT:bit` to `on start`
+* Snap `Set Wi-Fi to ssid pwd` from `IoT:bit`
+* Enter your Wi-Fi name and password. Here we set `smarthon` as `SSID` and `12345678` as `password`
 ![auto_fit](images/Case10/Case10_p1.png)<P>
-<span id="subtitle">Step 2</span><BR><P>
-Drag on WiFi connected and start WiFi remote control (WAN) from IoT:bit.<BR><P>
-![auto_fit](images/Case10/Case10_p2.png)<P>
-<span id="subtitle">Step 3</span><BR><P>
-Drag On WAN command received (WAN_command) from IoT:bit.<BR><P>
-![auto_fit](images/Case10/Case10_p3.png)<P>
-<span id="subtitle">Step 4</span><BR><P>
-Drag if statement into On WAN command received (WAN_command) from logic. Set if WAN_command = light_on then, turn white LED to 1023 at P1.<BR><P>
+
+<span id="subtitle">Step 2. Show icon “tick” after WiFi connection</span><BR><P>
+* Snap `show icon` from `basic` to `On WiFi connected` and select icon `tick`
+* Draw the `Device ID` variable from `On WiFi connected` to the `show string` block placeholder
+![pic_60](images/Case10/Case10_p2.png)<P>
+
+<span id="subtitle">Step 3. Receive WAN command</span><BR><P>
+* Go to OLED
+* Snap the` clear OLED display` to `On WiFi received` to avoid overlap
+* Snap the `show string` to `On WiFi received`
+* Draw the `WAN_Command` variable to show string placeholder
+![pic_80](images/Case10/Case10_p3.png)<P>
+
+<span id="subtitle">Step 4. Turn on/off LED by WAN command</span><BR><P>
+* Snap `if-condition`
+* Set variable `WAN_Command` = `lighton` into `if-condition`
+* `turn White LED …` from `SmartCity` > `Output`, turn white LED with intensity: 1023 at P1
+* Set variable `WAN_Command` = `lightoff` into `else-if-condition` 
+* Snap `turn White LED …` from `SmartCity` > `Output`, turn white LED with intensity: 0 at P1
 ![auto_fit](images/Case10/Case10_p4.png)<P>
-<span id="subtitle">Step 5</span><BR><P>
-Else if WAN_command = light_off then, turn white LED to 0 at P1.<BR><P>
-![auto_fit](images/Case10/Case10_p5.png)<P>
+
 
 <span id="subtitle">Full Solution<BR><P>
-MakeCode: [https://makecode.microbit.org/_cD9TLuDCEH7a](https://makecode.microbit.org/#pub:_cD9TLuDCEH7a)<BR><P>
+MakeCode: [https://makecode.microbit.org/_ew4HwdDqCaAc](https://makecode.microbit.org/#pub:_ew4HwdDqCaAc)<BR><P>
 You could also download the program from the following website:<BR>
-<iframe src="https://makecode.microbit.org/#pub:_cD9TLuDCEH7a" width="100%" height="500" frameborder="0"></iframe>
+<iframe src="https://makecode.microbit.org/#pub:_ew4HwdDqCaAc" width="100%" height="500" frameborder="0"></iframe>
 
 
 ## IoT (IFTTT)
 <HR>
 
-<span id="remarks">* For the setting of IFTTT, please refer to “Chapter 4: Control your micro:bit by IFTTT Services”</span><BR><P>
+<span id="remarks">* For the setting of IFTTT, please refer to “Chapter 4: Cloud Control micro:bit by IFTTT”</span><BR><P>
+
+<span id="subtitle">Step 1. Create applet in IFTTT</span><BR><P>
 ![auto_fit](images/Case10/Case10_ifttt1.png)<P>
-<span id="subtitle">Step 1</span><BR><P>
-Create applet: If Date&time then Smarthon IoT (micro:bit)<BR><P>
-![auto_fit](images/Case10/Case10_ifttt2.png)<P>
-
-
 
 
 ## Result

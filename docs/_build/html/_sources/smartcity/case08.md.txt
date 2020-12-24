@@ -1,6 +1,8 @@
 # IoT Case 08: Automated Traffic Light
 
 Level: ![level](images/level5.png)
+
+<span id="remarks">* For more details, please refer to “Chapter 5: Object to Object communication”</span>
 ![auto_fit](images/Case8/case-08_1.png)<P>
 
 ## Sender
@@ -42,42 +44,41 @@ Connect the Light Sensor to P0 port of IoT:bit<BR><P>
 ### Programming (MakeCode)
 <HR>
 
-<span id="subtitle">Step 1</span><P>
-Drag on start block from Basic. Drag Initialize IoT:bit at OLED from IoT:bit, set OLED height:64, width:128. Set WiFi to ssid “wifi_name” and pwd “WiFi_password”.<BR><P>
+<span id="subtitle">Step 1. Initialize OLED and IoT:bit and connect to WiFi</span><P>
+* Snap `Initialize OLED with width:128, height: 64` to `on start`
+* Snap `Initialize IoT:bit TX P16 RX P8` from `IoT:bit` to `on start`
+* Snap `Set Wi-Fi to ssid pwd` from `IoT:bit`
+* Enter your Wi-Fi name and password. Here we set `smarthon` as `SSID` and `12345678` as `password`
+* Set variable `light2` to 0 from `variables` 
 ![auto_fit](images/Case8/Case8a_p1.png)<P>
 
-<span id="subtitle">Step 2</span><P>
-Set light to 0 and set status and check status to “” from variable and text.<BR><P>
-![auto_fit](images/Case8/Case8a_p2.png)<P>
+<span id="subtitle">Step 2. Show icon “tick” after WiFi connection</span><P>
+* Snap `show icon` from `basic` to `On WiFi connected` and select icon `tick`
+![pic_60](images/Case8/Case8a_p2.png)<P>
 
-<span id="subtitle">Step 3</span><P>
-Drag forever block from Basic. Snap if statement into forever. Set if WiFi is connected then.<BR><P>
+<span id="subtitle">Step 3. Check traffic status</span><P>
+* Snap `if statement` to block `forever`
+* If `WiFi is connected`,
+* Set `variable2` to `light value from light sensor at P0`
+* Snap `clear OLED display` from `OLED` to avoid overlap
+* Snap `show string` and show value of variables `light2`
+* `Pause` 6000 (ms) to another checking
 ![auto_fit](images/Case8/Case8a_p3.png)<P>
 
-<span id="subtitle">Step 4</span><P>
-Set light to get percentage value (percentage) at Pin P0 from variables and Smartcity and show number light from OLED.<BR><P>
+<span id="subtitle">Step 4. Send notification when someone pass by</span><P>
+* Snap `if statement` 
+* Set `light` < `10` in to if-condition (traffic jam is detected)
+* Snap `WiFi Sender send channel… message…` from `IoT:bit` > `channel`
+* Set channel to `tsuenwan`, message `trafficjam`
+* Set else-condition (traffic jam is not detected)
+* Snap `WiFi Sender send channel… message…` from `IoT:bit` > `channel`
+* Set channel to `tsuenwan`, message `nojam`
 ![auto_fit](images/Case8/Case8a_p4.png)<P>
 
-<span id="subtitle">Step 5</span><P>
-Set if light < 50 then, set check_status to “trafficjam”. That’s say there is traffic jam on the road (i.e. light sensor value < 50 and therefore set check_status to “trafficjam”.<BR><P>
-![auto_fit](images/Case8/Case8a_p5.png)<P>
-
-<span id="subtitle">Step 6</span><P>
-Else, set check_status to “nojam”.<BR><P>
-![auto_fit](images/Case8/Case8a_p6.png)<P>
-
-<span id="subtitle">Step 7</span><P>
-If status ≠ check_status then, set status to check status and WiFi send message (status) in channel “traffic”.<BR><P>
-![auto_fit](images/Case8/Case8a_p7.png)<P>
-
-<span id="subtitle">Step 8</span><P>
-Pause for 1000ms.<BR><P>
-![auto_fit](images/Case8/Case8a_p8.png)<P>
-
 <span id="subtitle">Full Solution<BR><P>
-MakeCode: [https://makecode.microbit.org/_EroCeHYWbeiC](https://makecode.microbit.org/#pub:_EroCeHYWbeiC)<BR><P>
+MakeCode: [https://makecode.microbit.org/_16MRP0RtHJjx](https://makecode.microbit.org/#pub:_16MRP0RtHJjx)<BR><P>
 You could also download the program from the following website:<BR>
-<iframe src="https://makecode.microbit.org/#pub:_EroCeHYWbeiC" width="100%" height="500" frameborder="0"></iframe>
+<iframe src="https://makecode.microbit.org/#pub:_16MRP0RtHJjx" width="100%" height="500" frameborder="0"></iframe>
 
 
 ### Result
@@ -139,35 +140,60 @@ Connect the Traffic LED Module to P0 port of IoT:bit<BR><P>
 ### Programming (MakeCode)
 <HR>
 
-<span id="subtitle">Step 1</span><P>
-Drag on start block from Basic. Drag Initialize IoT:bit at OLED from IoT:bit, set OLED height:64, width:128. Set WiFi to ssid “wifi_name” and pwd “WiFi_password”.<BR><P>
+<span id="subtitle">Step 1. Initialize OLED and IoT:bit and connect to WiFi</span><P>
+* Snap `Initialize OLED with width:128, height: 64` to `on start`
+* Snap `Initialize IoT:bit TX P16 RX P8` from `IoT:bit` to `on start`
+* Snap `Set Wi-Fi to ssid pwd` from `IoT:bit`
+* Enter your Wi-Fi name and password. Here we set `smarthon` as `SSID` and `12345678` as `password`
+* Set variable `oldmsg` to “” from `variables` 
 ![auto_fit](images/Case8/Case8b_p1.png)<P>
 
-<span id="subtitle">Step 2</span><P>
-On WiFi connected, WiFi start listening in channel ‘traffic’ from IoT:bit and IoT:bit – channel.<BR><P>
+<span id="subtitle">Step 2. Join Channel “tsuenwan”</span><P>
+* Snap `show icon` from `basic` to `On WiFi connected` and select icon `tick`
+* Snap `WiFi Receiver join channel` from `IoT` > `Chanel`
+* Set channel name `tsuenwan`
 ![auto_fit](images/Case8/Case8b_p2.png)<P>
 
-<span id="subtitle">Step 3</span><P>
-Drag On WiFi received WiFiMessage from IoT:bit. <BR><P>
-If WiFiMessage = “trafficjam” then, call TurnRed. That’s say if the received message is traffic jam, call the traffic light to turn red.<BR><P>
-![auto_fit](images/Case8/Case8b_p3.png)<P>
-
-<span id="subtitle">Step 4</span><P>
-Else if WiFiMessage = “nojam” then, call TurnGreen. That’s say if the received message is no traffic jam, call the traffic light to turn green.<BR><P>
+<span id="subtitle">Step 3. Receive WiFi message</span><P>
+* Snap On WiFi Receiver received
+* Go to OLED
+* Snap the `clear OLED display` to `On WiFi received` to avoid overlap
+* Snap the `show string` 
+* Draw variable `receivedMessage` to show string placeholder
+![pic_70](images/Case8/Case8b_p3.png)<P>
+ 
+<span id="subtitle">Step 4. Set up a new function (TurnRed)</span><P>
+* `Control traffic light at P1` green on from `SmartCity` > `Output`
+* `Pause` for 2000ms from basic
+* `Control traffic light at P1` yellow on, `pause` for 2000ms
+* `Control traffic light at P1` red on and `pause` for 2000ms.
 ![auto_fit](images/Case8/Case8b_p4.png)<P>
 
-<span id="subtitle"> Stet 5</span><P>
-Set up a new function (TurnRed). Control traffic light at P0 green on from SmartCity and pause for 2000ms from basic, then control traffic light at P0 yellow on and pause for 2000ms. Lastly, control traffic light at P0 red on and pause for 2000ms.<BR><P>
+<span id="subtitle">Step 5. Set up a new function (TurnGreen)</span><P>
+* `Control traffic light at P1` red on from `SmartCity` > `Output`
+* `Pause` for 2000ms from basic
+* `Control traffic light at P1` red and yellow on, `pause` for 2000ms
+* `Control traffic light at P1` green on and `pause` for 2000ms.
 ![auto_fit](images/Case8/Case8b_p5.png)<P>
 
-<span id="subtitle">Step 6</span><P>
-Set up a new function (TurnGreen). Control traffic light at P0 red on from SmartCity and pause for 2000ms from basic, then control traffic light at P0 red and yellow on and pause for 2000ms. Lastly, control traffic light at P0 green on and pause for 2000ms.<BR><P>
-![auto_fit](images/Case8/Case8b_p6.png)<P>
+<span id="subtitle">Step 6. Set traffic light default status</span><P>
+* Insert function `TurnGreen` to `on start`
+![pic_60](images/Case8/Case8b_p6.png)<P>
+
+<span id="subtitle">Step 7. Change traffic light status</span><P>
+* Snap `if-statement`, set `received Message` ≠ `oldmsg` to `if-condition`
+* Set `oldmsg` = `receivedMessage` (renew the latest traffic status)
+* Snap another `if-statement` 
+* Set `receivedMessage` = `trafficjam` to `if-condition`
+* Call function `TurnRed`
+* Set `receivedMessage` = `nojam` to `else-if-condition`
+* Call function `TurnGreen`
+![auto_fit](images/Case8/Case8b_p7.png)<P>
 
 <span id="subtitle">Full Solution<BR><P>
-MakeCode: [https://makecode.microbit.org/_hjoATDhYTMqd](https://makecode.microbit.org/#pub:_hjoATDhYTMqd)<BR><P>
+MakeCode: [https://makecode.microbit.org/_Y4F6vH9qk7mw](https://makecode.microbit.org/#pub:_Y4F6vH9qk7mw)<BR><P>
 You could also download the program from the following website:<BR>
-<iframe src="https://makecode.microbit.org/#pub:_hjoATDhYTMqd" width="100%" height="500" frameborder="0"></iframe>
+<iframe src="https://makecode.microbit.org/#pub:_Y4F6vH9qk7mw" width="100%" height="500" frameborder="0"></iframe>
 
 
 ### Result

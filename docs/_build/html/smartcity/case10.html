@@ -221,32 +221,46 @@ Assembly completed!<BR><P>
 </div>
 <div class="section" id="programming-makecode">
 <h2><span class="section-number">19.6. </span>Programming (MakeCode)<a class="headerlink" href="#programming-makecode" title="Permalink to this headline">¶</a></h2>
-<HR><p><span id="subtitle">Step 1</span><BR><P>
-Drag on start block from Basic. Drag Initialize IoT:bit at OLED from IoT:bit, set OLED height:64, width:128. Set WiFi to ssid “wifi_name” and pwd “WiFi_password”.<BR><P>
-<img alt="auto_fit" src="../_images/Case10_p1.png" /><P>
-<span id="subtitle">Step 2</span><BR><P>
-Drag on WiFi connected and start WiFi remote control (WAN) from IoT:bit.<BR><P>
-<img alt="auto_fit" src="../_images/Case10_p2.png" /><P>
-<span id="subtitle">Step 3</span><BR><P>
-Drag On WAN command received (WAN_command) from IoT:bit.<BR><P>
-<img alt="auto_fit" src="../_images/Case10_p3.png" /><P>
-<span id="subtitle">Step 4</span><BR><P>
-Drag if statement into On WAN command received (WAN_command) from logic. Set if WAN_command = light_on then, turn white LED to 1023 at P1.<BR><P>
-<img alt="auto_fit" src="../_images/Case10_p4.png" /><P>
-<span id="subtitle">Step 5</span><BR><P>
-Else if WAN_command = light_off then, turn white LED to 0 at P1.<BR><P>
-<img alt="auto_fit" src="../_images/Case10_p5.png" /><P></p>
+<HR><p><span id="subtitle">Step 1. Initialize OLED, IoT:bit and connect to WiFi</span><BR><P></p>
+<ul class="simple">
+<li><p>Snap <code class="docutils literal notranslate"><span class="pre">Initialize</span> <span class="pre">OLED</span> <span class="pre">with</span> <span class="pre">width:128,</span> <span class="pre">height:</span> <span class="pre">64</span></code> to <code class="docutils literal notranslate"><span class="pre">on</span> <span class="pre">start</span></code></p></li>
+<li><p>Snap <code class="docutils literal notranslate"><span class="pre">Initialize</span> <span class="pre">IoT:bit</span> <span class="pre">TX</span> <span class="pre">P16</span> <span class="pre">RX</span> <span class="pre">P8</span></code> from <code class="docutils literal notranslate"><span class="pre">IoT:bit</span></code> to <code class="docutils literal notranslate"><span class="pre">on</span> <span class="pre">start</span></code></p></li>
+<li><p>Snap <code class="docutils literal notranslate"><span class="pre">Set</span> <span class="pre">Wi-Fi</span> <span class="pre">to</span> <span class="pre">ssid</span> <span class="pre">pwd</span></code> from <code class="docutils literal notranslate"><span class="pre">IoT:bit</span></code></p></li>
+<li><p>Enter your Wi-Fi name and password. Here we set <code class="docutils literal notranslate"><span class="pre">smarthon</span></code> as <code class="docutils literal notranslate"><span class="pre">SSID</span></code> and <code class="docutils literal notranslate"><span class="pre">12345678</span></code> as <code class="docutils literal notranslate"><span class="pre">password</span></code>
+<img alt="auto_fit" src="../_images/Case10_p1.png" /><P></p></li>
+</ul>
+<p><span id="subtitle">Step 2. Show icon “tick” after WiFi connection</span><BR><P></p>
+<ul class="simple">
+<li><p>Snap <code class="docutils literal notranslate"><span class="pre">show</span> <span class="pre">icon</span></code> from <code class="docutils literal notranslate"><span class="pre">basic</span></code> to <code class="docutils literal notranslate"><span class="pre">On</span> <span class="pre">WiFi</span> <span class="pre">connected</span></code> and select icon <code class="docutils literal notranslate"><span class="pre">tick</span></code></p></li>
+<li><p>Draw the <code class="docutils literal notranslate"><span class="pre">Device</span> <span class="pre">ID</span></code> variable from <code class="docutils literal notranslate"><span class="pre">On</span> <span class="pre">WiFi</span> <span class="pre">connected</span></code> to the <code class="docutils literal notranslate"><span class="pre">show</span> <span class="pre">string</span></code> block placeholder
+<img alt="pic_60" src="../_images/Case10_p2.png" /><P></p></li>
+</ul>
+<p><span id="subtitle">Step 3. Receive WAN command</span><BR><P></p>
+<ul class="simple">
+<li><p>Go to OLED</p></li>
+<li><p>Snap the<code class="docutils literal notranslate"> <span class="pre">clear</span> <span class="pre">OLED</span> <span class="pre">display</span></code> to <code class="docutils literal notranslate"><span class="pre">On</span> <span class="pre">WiFi</span> <span class="pre">received</span></code> to avoid overlap</p></li>
+<li><p>Snap the <code class="docutils literal notranslate"><span class="pre">show</span> <span class="pre">string</span></code> to <code class="docutils literal notranslate"><span class="pre">On</span> <span class="pre">WiFi</span> <span class="pre">received</span></code></p></li>
+<li><p>Draw the <code class="docutils literal notranslate"><span class="pre">WAN_Command</span></code> variable to show string placeholder
+<img alt="pic_80" src="../_images/Case10_p3.png" /><P></p></li>
+</ul>
+<p><span id="subtitle">Step 4. Turn on/off LED by WAN command</span><BR><P></p>
+<ul class="simple">
+<li><p>Snap <code class="docutils literal notranslate"><span class="pre">if-condition</span></code></p></li>
+<li><p>Set variable <code class="docutils literal notranslate"><span class="pre">WAN_Command</span></code> = <code class="docutils literal notranslate"><span class="pre">lighton</span></code> into <code class="docutils literal notranslate"><span class="pre">if-condition</span></code></p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">turn</span> <span class="pre">White</span> <span class="pre">LED</span> <span class="pre">…</span></code> from <code class="docutils literal notranslate"><span class="pre">SmartCity</span></code> &gt; <code class="docutils literal notranslate"><span class="pre">Output</span></code>, turn white LED with intensity: 1023 at P1</p></li>
+<li><p>Set variable <code class="docutils literal notranslate"><span class="pre">WAN_Command</span></code> = <code class="docutils literal notranslate"><span class="pre">lightoff</span></code> into <code class="docutils literal notranslate"><span class="pre">else-if-condition</span></code></p></li>
+<li><p>Snap <code class="docutils literal notranslate"><span class="pre">turn</span> <span class="pre">White</span> <span class="pre">LED</span> <span class="pre">…</span></code> from <code class="docutils literal notranslate"><span class="pre">SmartCity</span></code> &gt; <code class="docutils literal notranslate"><span class="pre">Output</span></code>, turn white LED with intensity: 0 at P1
+<img alt="auto_fit" src="../_images/Case10_p4.png" /><P></p></li>
+</ul>
 <p><span id="subtitle">Full Solution<BR><P>
-MakeCode: <a class="reference external" href="https://makecode.microbit.org/#pub:_cD9TLuDCEH7a">https://makecode.microbit.org/_cD9TLuDCEH7a</a><BR><P>
+MakeCode: <a class="reference external" href="https://makecode.microbit.org/#pub:_ew4HwdDqCaAc">https://makecode.microbit.org/_ew4HwdDqCaAc</a><BR><P>
 You could also download the program from the following website:<BR></p>
-<iframe src="https://makecode.microbit.org/#pub:_cD9TLuDCEH7a" width="100%" height="500" frameborder="0"></iframe></div>
+<iframe src="https://makecode.microbit.org/#pub:_ew4HwdDqCaAc" width="100%" height="500" frameborder="0"></iframe></div>
 <div class="section" id="iot-ifttt">
 <h2><span class="section-number">19.7. </span>IoT (IFTTT)<a class="headerlink" href="#iot-ifttt" title="Permalink to this headline">¶</a></h2>
-<HR><p><span id="remarks">* For the setting of IFTTT, please refer to “Chapter 4: Control your micro:bit by IFTTT Services”</span><BR><P>
-<img alt="auto_fit" src="../_images/Case10_ifttt1.png" /><P>
-<span id="subtitle">Step 1</span><BR><P>
-Create applet: If Date&amp;time then Smarthon IoT (micro:bit)<BR><P>
-<img alt="auto_fit" src="../_images/Case10_ifttt2.png" /><P></p>
+<HR><p><span id="remarks">* For the setting of IFTTT, please refer to “Chapter 4: Cloud Control micro:bit by IFTTT”</span><BR><P></p>
+<p><span id="subtitle">Step 1. Create applet in IFTTT</span><BR><P>
+<img alt="auto_fit" src="../_images/Case10_ifttt1.png" /><P></p>
 </div>
 <div class="section" id="result">
 <h2><span class="section-number">19.8. </span>Result<a class="headerlink" href="#result" title="Permalink to this headline">¶</a></h2>

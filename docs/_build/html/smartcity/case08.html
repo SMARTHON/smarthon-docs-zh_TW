@@ -200,7 +200,8 @@
             
   <div class="section" id="iot-case-08-automated-traffic-light">
 <h1><span class="section-number">17. </span>IoT Case 08: Automated Traffic Light<a class="headerlink" href="#iot-case-08-automated-traffic-light" title="Permalink to this headline">¶</a></h1>
-<p>Level: <img alt="level" src="../_images/level51.png" />
+<p>Level: <img alt="level" src="../_images/level51.png" /></p>
+<p><span id="remarks">* For more details, please refer to “Chapter 5: Object to Object communication”</span>
 <img alt="auto_fit" src="../_images/case-08_1.png" /><P></p>
 <div class="section" id="sender">
 <h2><span class="section-number">17.1. </span>Sender<a class="headerlink" href="#sender" title="Permalink to this headline">¶</a></h2>
@@ -231,34 +232,45 @@ When the light value detected is too low, this would represent there is a traffi
 </div>
 <div class="section" id="programming-makecode">
 <h3><span class="section-number">17.1.6. </span>Programming (MakeCode)<a class="headerlink" href="#programming-makecode" title="Permalink to this headline">¶</a></h3>
-<HR><p><span id="subtitle">Step 1</span><P>
-Drag on start block from Basic. Drag Initialize IoT:bit at OLED from IoT:bit, set OLED height:64, width:128. Set WiFi to ssid “wifi_name” and pwd “WiFi_password”.<BR><P>
-<img alt="auto_fit" src="../_images/Case8a_p1.png" /><P></p>
-<p><span id="subtitle">Step 2</span><P>
-Set light to 0 and set status and check status to “” from variable and text.<BR><P>
-<img alt="auto_fit" src="../_images/Case8a_p2.png" /><P></p>
-<p><span id="subtitle">Step 3</span><P>
-Drag forever block from Basic. Snap if statement into forever. Set if WiFi is connected then.<BR><P>
-<img alt="auto_fit" src="../_images/Case8a_p3.png" /><P></p>
-<p><span id="subtitle">Step 4</span><P>
-Set light to get percentage value (percentage) at Pin P0 from variables and Smartcity and show number light from OLED.<BR><P>
-<img alt="auto_fit" src="../_images/Case8a_p4.png" /><P></p>
-<p><span id="subtitle">Step 5</span><P>
-Set if light &lt; 50 then, set check_status to “trafficjam”. That’s say there is traffic jam on the road (i.e. light sensor value &lt; 50 and therefore set check_status to “trafficjam”.<BR><P>
-<img alt="auto_fit" src="../_images/Case8a_p5.png" /><P></p>
-<p><span id="subtitle">Step 6</span><P>
-Else, set check_status to “nojam”.<BR><P>
-<img alt="auto_fit" src="../_images/Case8a_p6.png" /><P></p>
-<p><span id="subtitle">Step 7</span><P>
-If status ≠ check_status then, set status to check status and WiFi send message (status) in channel “traffic”.<BR><P>
-<img alt="auto_fit" src="../_images/Case8a_p7.png" /><P></p>
-<p><span id="subtitle">Step 8</span><P>
-Pause for 1000ms.<BR><P>
-<img alt="auto_fit" src="../_images/Case8a_p8.png" /><P></p>
+<HR><p><span id="subtitle">Step 1. Initialize OLED and IoT:bit and connect to WiFi</span><P></p>
+<ul class="simple">
+<li><p>Snap <code class="docutils literal notranslate"><span class="pre">Initialize</span> <span class="pre">OLED</span> <span class="pre">with</span> <span class="pre">width:128,</span> <span class="pre">height:</span> <span class="pre">64</span></code> to <code class="docutils literal notranslate"><span class="pre">on</span> <span class="pre">start</span></code></p></li>
+<li><p>Snap <code class="docutils literal notranslate"><span class="pre">Initialize</span> <span class="pre">IoT:bit</span> <span class="pre">TX</span> <span class="pre">P16</span> <span class="pre">RX</span> <span class="pre">P8</span></code> from <code class="docutils literal notranslate"><span class="pre">IoT:bit</span></code> to <code class="docutils literal notranslate"><span class="pre">on</span> <span class="pre">start</span></code></p></li>
+<li><p>Snap <code class="docutils literal notranslate"><span class="pre">Set</span> <span class="pre">Wi-Fi</span> <span class="pre">to</span> <span class="pre">ssid</span> <span class="pre">pwd</span></code> from <code class="docutils literal notranslate"><span class="pre">IoT:bit</span></code></p></li>
+<li><p>Enter your Wi-Fi name and password. Here we set <code class="docutils literal notranslate"><span class="pre">smarthon</span></code> as <code class="docutils literal notranslate"><span class="pre">SSID</span></code> and <code class="docutils literal notranslate"><span class="pre">12345678</span></code> as <code class="docutils literal notranslate"><span class="pre">password</span></code></p></li>
+<li><p>Set variable <code class="docutils literal notranslate"><span class="pre">light2</span></code> to 0 from <code class="docutils literal notranslate"><span class="pre">variables</span></code>
+<img alt="auto_fit" src="../_images/Case8a_p1.png" /><P></p></li>
+</ul>
+<p><span id="subtitle">Step 2. Show icon “tick” after WiFi connection</span><P></p>
+<ul class="simple">
+<li><p>Snap <code class="docutils literal notranslate"><span class="pre">show</span> <span class="pre">icon</span></code> from <code class="docutils literal notranslate"><span class="pre">basic</span></code> to <code class="docutils literal notranslate"><span class="pre">On</span> <span class="pre">WiFi</span> <span class="pre">connected</span></code> and select icon <code class="docutils literal notranslate"><span class="pre">tick</span></code>
+<img alt="pic_60" src="../_images/Case8a_p2.png" /><P></p></li>
+</ul>
+<p><span id="subtitle">Step 3. Check traffic status</span><P></p>
+<ul class="simple">
+<li><p>Snap <code class="docutils literal notranslate"><span class="pre">if</span> <span class="pre">statement</span></code> to block <code class="docutils literal notranslate"><span class="pre">forever</span></code></p></li>
+<li><p>If <code class="docutils literal notranslate"><span class="pre">WiFi</span> <span class="pre">is</span> <span class="pre">connected</span></code>,</p></li>
+<li><p>Set <code class="docutils literal notranslate"><span class="pre">variable2</span></code> to <code class="docutils literal notranslate"><span class="pre">light</span> <span class="pre">value</span> <span class="pre">from</span> <span class="pre">light</span> <span class="pre">sensor</span> <span class="pre">at</span> <span class="pre">P0</span></code></p></li>
+<li><p>Snap <code class="docutils literal notranslate"><span class="pre">clear</span> <span class="pre">OLED</span> <span class="pre">display</span></code> from <code class="docutils literal notranslate"><span class="pre">OLED</span></code> to avoid overlap</p></li>
+<li><p>Snap <code class="docutils literal notranslate"><span class="pre">show</span> <span class="pre">string</span></code> and show value of variables <code class="docutils literal notranslate"><span class="pre">light2</span></code></p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">Pause</span></code> 6000 (ms) to another checking
+<img alt="auto_fit" src="../_images/Case8a_p3.png" /><P></p></li>
+</ul>
+<p><span id="subtitle">Step 4. Send notification when someone pass by</span><P></p>
+<ul class="simple">
+<li><p>Snap <code class="docutils literal notranslate"><span class="pre">if</span> <span class="pre">statement</span></code></p></li>
+<li><p>Set <code class="docutils literal notranslate"><span class="pre">light</span></code> &lt; <code class="docutils literal notranslate"><span class="pre">10</span></code> in to if-condition (traffic jam is detected)</p></li>
+<li><p>Snap <code class="docutils literal notranslate"><span class="pre">WiFi</span> <span class="pre">Sender</span> <span class="pre">send</span> <span class="pre">channel…</span> <span class="pre">message…</span></code> from <code class="docutils literal notranslate"><span class="pre">IoT:bit</span></code> &gt; <code class="docutils literal notranslate"><span class="pre">channel</span></code></p></li>
+<li><p>Set channel to <code class="docutils literal notranslate"><span class="pre">tsuenwan</span></code>, message <code class="docutils literal notranslate"><span class="pre">trafficjam</span></code></p></li>
+<li><p>Set else-condition (traffic jam is not detected)</p></li>
+<li><p>Snap <code class="docutils literal notranslate"><span class="pre">WiFi</span> <span class="pre">Sender</span> <span class="pre">send</span> <span class="pre">channel…</span> <span class="pre">message…</span></code> from <code class="docutils literal notranslate"><span class="pre">IoT:bit</span></code> &gt; <code class="docutils literal notranslate"><span class="pre">channel</span></code></p></li>
+<li><p>Set channel to <code class="docutils literal notranslate"><span class="pre">tsuenwan</span></code>, message <code class="docutils literal notranslate"><span class="pre">nojam</span></code>
+<img alt="auto_fit" src="../_images/Case8a_p4.png" /><P></p></li>
+</ul>
 <p><span id="subtitle">Full Solution<BR><P>
-MakeCode: <a class="reference external" href="https://makecode.microbit.org/#pub:_EroCeHYWbeiC">https://makecode.microbit.org/_EroCeHYWbeiC</a><BR><P>
+MakeCode: <a class="reference external" href="https://makecode.microbit.org/#pub:_16MRP0RtHJjx">https://makecode.microbit.org/_16MRP0RtHJjx</a><BR><P>
 You could also download the program from the following website:<BR></p>
-<iframe src="https://makecode.microbit.org/#pub:_EroCeHYWbeiC" width="100%" height="500" frameborder="0"></iframe></div>
+<iframe src="https://makecode.microbit.org/#pub:_16MRP0RtHJjx" width="100%" height="500" frameborder="0"></iframe></div>
 <div class="section" id="result">
 <h3><span class="section-number">17.1.7. </span>Result<a class="headerlink" href="#result" title="Permalink to this headline">¶</a></h3>
 <HR><p>Light sensor is used to detect if there are traffic jam. Once the light intensity is not low, it indicates that there is a traffic jam on the road. Wi-Fi message “nojam” will be sent to another micro:bit (receiver).<BR><P>
@@ -305,29 +317,67 @@ Assembly completed!<BR><P>
 </div>
 <div class="section" id="id6">
 <h3><span class="section-number">17.2.6. </span>Programming (MakeCode)<a class="headerlink" href="#id6" title="Permalink to this headline">¶</a></h3>
-<HR><p><span id="subtitle">Step 1</span><P>
-Drag on start block from Basic. Drag Initialize IoT:bit at OLED from IoT:bit, set OLED height:64, width:128. Set WiFi to ssid “wifi_name” and pwd “WiFi_password”.<BR><P>
-<img alt="auto_fit" src="../_images/Case8b_p1.png" /><P></p>
-<p><span id="subtitle">Step 2</span><P>
-On WiFi connected, WiFi start listening in channel ‘traffic’ from IoT:bit and IoT:bit – channel.<BR><P>
-<img alt="auto_fit" src="../_images/Case8b_p2.png" /><P></p>
-<p><span id="subtitle">Step 3</span><P>
-Drag On WiFi received WiFiMessage from IoT:bit. <BR><P>
-If WiFiMessage = “trafficjam” then, call TurnRed. That’s say if the received message is traffic jam, call the traffic light to turn red.<BR><P>
-<img alt="auto_fit" src="../_images/Case8b_p3.png" /><P></p>
-<p><span id="subtitle">Step 4</span><P>
-Else if WiFiMessage = “nojam” then, call TurnGreen. That’s say if the received message is no traffic jam, call the traffic light to turn green.<BR><P>
-<img alt="auto_fit" src="../_images/Case8b_p4.png" /><P></p>
-<p><span id="subtitle"> Stet 5</span><P>
-Set up a new function (TurnRed). Control traffic light at P0 green on from SmartCity and pause for 2000ms from basic, then control traffic light at P0 yellow on and pause for 2000ms. Lastly, control traffic light at P0 red on and pause for 2000ms.<BR><P>
-<img alt="auto_fit" src="../_images/Case8b_p5.png" /><P></p>
-<p><span id="subtitle">Step 6</span><P>
-Set up a new function (TurnGreen). Control traffic light at P0 red on from SmartCity and pause for 2000ms from basic, then control traffic light at P0 red and yellow on and pause for 2000ms. Lastly, control traffic light at P0 green on and pause for 2000ms.<BR><P>
-<img alt="auto_fit" src="../_images/Case8b_p6.png" /><P></p>
+<HR><p><span id="subtitle">Step 1. Initialize OLED and IoT:bit and connect to WiFi</span><P></p>
+<ul class="simple">
+<li><p>Snap <code class="docutils literal notranslate"><span class="pre">Initialize</span> <span class="pre">OLED</span> <span class="pre">with</span> <span class="pre">width:128,</span> <span class="pre">height:</span> <span class="pre">64</span></code> to <code class="docutils literal notranslate"><span class="pre">on</span> <span class="pre">start</span></code></p></li>
+<li><p>Snap <code class="docutils literal notranslate"><span class="pre">Initialize</span> <span class="pre">IoT:bit</span> <span class="pre">TX</span> <span class="pre">P16</span> <span class="pre">RX</span> <span class="pre">P8</span></code> from <code class="docutils literal notranslate"><span class="pre">IoT:bit</span></code> to <code class="docutils literal notranslate"><span class="pre">on</span> <span class="pre">start</span></code></p></li>
+<li><p>Snap <code class="docutils literal notranslate"><span class="pre">Set</span> <span class="pre">Wi-Fi</span> <span class="pre">to</span> <span class="pre">ssid</span> <span class="pre">pwd</span></code> from <code class="docutils literal notranslate"><span class="pre">IoT:bit</span></code></p></li>
+<li><p>Enter your Wi-Fi name and password. Here we set <code class="docutils literal notranslate"><span class="pre">smarthon</span></code> as <code class="docutils literal notranslate"><span class="pre">SSID</span></code> and <code class="docutils literal notranslate"><span class="pre">12345678</span></code> as <code class="docutils literal notranslate"><span class="pre">password</span></code></p></li>
+<li><p>Set variable <code class="docutils literal notranslate"><span class="pre">oldmsg</span></code> to “” from <code class="docutils literal notranslate"><span class="pre">variables</span></code>
+<img alt="auto_fit" src="../_images/Case8b_p1.png" /><P></p></li>
+</ul>
+<p><span id="subtitle">Step 2. Join Channel “tsuenwan”</span><P></p>
+<ul class="simple">
+<li><p>Snap <code class="docutils literal notranslate"><span class="pre">show</span> <span class="pre">icon</span></code> from <code class="docutils literal notranslate"><span class="pre">basic</span></code> to <code class="docutils literal notranslate"><span class="pre">On</span> <span class="pre">WiFi</span> <span class="pre">connected</span></code> and select icon <code class="docutils literal notranslate"><span class="pre">tick</span></code></p></li>
+<li><p>Snap <code class="docutils literal notranslate"><span class="pre">WiFi</span> <span class="pre">Receiver</span> <span class="pre">join</span> <span class="pre">channel</span></code> from <code class="docutils literal notranslate"><span class="pre">IoT</span></code> &gt; <code class="docutils literal notranslate"><span class="pre">Chanel</span></code></p></li>
+<li><p>Set channel name <code class="docutils literal notranslate"><span class="pre">tsuenwan</span></code>
+<img alt="auto_fit" src="../_images/Case8b_p2.png" /><P></p></li>
+</ul>
+<p><span id="subtitle">Step 3. Receive WiFi message</span><P></p>
+<ul class="simple">
+<li><p>Snap On WiFi Receiver received</p></li>
+<li><p>Go to OLED</p></li>
+<li><p>Snap the <code class="docutils literal notranslate"><span class="pre">clear</span> <span class="pre">OLED</span> <span class="pre">display</span></code> to <code class="docutils literal notranslate"><span class="pre">On</span> <span class="pre">WiFi</span> <span class="pre">received</span></code> to avoid overlap</p></li>
+<li><p>Snap the <code class="docutils literal notranslate"><span class="pre">show</span> <span class="pre">string</span></code></p></li>
+<li><p>Draw variable <code class="docutils literal notranslate"><span class="pre">receivedMessage</span></code> to show string placeholder
+<img alt="pic_70" src="../_images/Case8b_p3.png" /><P></p></li>
+</ul>
+<p><span id="subtitle">Step 4. Set up a new function (TurnRed)</span><P></p>
+<ul class="simple">
+<li><p><code class="docutils literal notranslate"><span class="pre">Control</span> <span class="pre">traffic</span> <span class="pre">light</span> <span class="pre">at</span> <span class="pre">P1</span></code> green on from <code class="docutils literal notranslate"><span class="pre">SmartCity</span></code> &gt; <code class="docutils literal notranslate"><span class="pre">Output</span></code></p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">Pause</span></code> for 2000ms from basic</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">Control</span> <span class="pre">traffic</span> <span class="pre">light</span> <span class="pre">at</span> <span class="pre">P1</span></code> yellow on, <code class="docutils literal notranslate"><span class="pre">pause</span></code> for 2000ms</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">Control</span> <span class="pre">traffic</span> <span class="pre">light</span> <span class="pre">at</span> <span class="pre">P1</span></code> red on and <code class="docutils literal notranslate"><span class="pre">pause</span></code> for 2000ms.
+<img alt="auto_fit" src="../_images/Case8b_p4.png" /><P></p></li>
+</ul>
+<p><span id="subtitle">Step 5. Set up a new function (TurnGreen)</span><P></p>
+<ul class="simple">
+<li><p><code class="docutils literal notranslate"><span class="pre">Control</span> <span class="pre">traffic</span> <span class="pre">light</span> <span class="pre">at</span> <span class="pre">P1</span></code> red on from <code class="docutils literal notranslate"><span class="pre">SmartCity</span></code> &gt; <code class="docutils literal notranslate"><span class="pre">Output</span></code></p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">Pause</span></code> for 2000ms from basic</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">Control</span> <span class="pre">traffic</span> <span class="pre">light</span> <span class="pre">at</span> <span class="pre">P1</span></code> red and yellow on, <code class="docutils literal notranslate"><span class="pre">pause</span></code> for 2000ms</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">Control</span> <span class="pre">traffic</span> <span class="pre">light</span> <span class="pre">at</span> <span class="pre">P1</span></code> green on and <code class="docutils literal notranslate"><span class="pre">pause</span></code> for 2000ms.
+<img alt="auto_fit" src="../_images/Case8b_p5.png" /><P></p></li>
+</ul>
+<p><span id="subtitle">Step 6. Set traffic light default status</span><P></p>
+<ul class="simple">
+<li><p>Insert function <code class="docutils literal notranslate"><span class="pre">TurnGreen</span></code> to <code class="docutils literal notranslate"><span class="pre">on</span> <span class="pre">start</span></code>
+<img alt="pic_60" src="../_images/Case8b_p6.png" /><P></p></li>
+</ul>
+<p><span id="subtitle">Step 7. Change traffic light status</span><P></p>
+<ul class="simple">
+<li><p>Snap <code class="docutils literal notranslate"><span class="pre">if-statement</span></code>, set <code class="docutils literal notranslate"><span class="pre">received</span> <span class="pre">Message</span></code> ≠ <code class="docutils literal notranslate"><span class="pre">oldmsg</span></code> to <code class="docutils literal notranslate"><span class="pre">if-condition</span></code></p></li>
+<li><p>Set <code class="docutils literal notranslate"><span class="pre">oldmsg</span></code> = <code class="docutils literal notranslate"><span class="pre">receivedMessage</span></code> (renew the latest traffic status)</p></li>
+<li><p>Snap another <code class="docutils literal notranslate"><span class="pre">if-statement</span></code></p></li>
+<li><p>Set <code class="docutils literal notranslate"><span class="pre">receivedMessage</span></code> = <code class="docutils literal notranslate"><span class="pre">trafficjam</span></code> to <code class="docutils literal notranslate"><span class="pre">if-condition</span></code></p></li>
+<li><p>Call function <code class="docutils literal notranslate"><span class="pre">TurnRed</span></code></p></li>
+<li><p>Set <code class="docutils literal notranslate"><span class="pre">receivedMessage</span></code> = <code class="docutils literal notranslate"><span class="pre">nojam</span></code> to <code class="docutils literal notranslate"><span class="pre">else-if-condition</span></code></p></li>
+<li><p>Call function <code class="docutils literal notranslate"><span class="pre">TurnGreen</span></code>
+<img alt="auto_fit" src="../_images/Case8b_p7.png" /><P></p></li>
+</ul>
 <p><span id="subtitle">Full Solution<BR><P>
-MakeCode: <a class="reference external" href="https://makecode.microbit.org/#pub:_hjoATDhYTMqd">https://makecode.microbit.org/_hjoATDhYTMqd</a><BR><P>
+MakeCode: <a class="reference external" href="https://makecode.microbit.org/#pub:_Y4F6vH9qk7mw">https://makecode.microbit.org/_Y4F6vH9qk7mw</a><BR><P>
 You could also download the program from the following website:<BR></p>
-<iframe src="https://makecode.microbit.org/#pub:_hjoATDhYTMqd" width="100%" height="500" frameborder="0"></iframe></div>
+<iframe src="https://makecode.microbit.org/#pub:_Y4F6vH9qk7mw" width="100%" height="500" frameborder="0"></iframe></div>
 <div class="section" id="id7">
 <h3><span class="section-number">17.2.7. </span>Result<a class="headerlink" href="#id7" title="Permalink to this headline">¶</a></h3>
 <HR><p>By receiving wifi message, traffic LED Module will turn to the corresponding colour automatically.

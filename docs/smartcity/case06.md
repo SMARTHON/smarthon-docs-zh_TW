@@ -50,7 +50,8 @@ Connect the Temperature and humidity Sensor to P2 port of IoT:bit<BR><P>
 ## IoT (ThingSpeak)
 <HR>
 
-* For more details, please refer to Chapter 1: Upload Data to ThingSpeak
+<span id="remarks">* For more details, please refer to Chapter 1: Upload Data to ThingSpeak</span><BR><P>
+
 <span id="subtitle"> Step 1</span><BR><P>
 Go to [https://thingspeak.com](https://thingspeak.com/), Choose Channels -> My Channels -> New Channel<BR><P>
 ![auto_fit](images/Case6/Case6_iot1.png)<P>

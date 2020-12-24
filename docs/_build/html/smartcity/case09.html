@@ -107,7 +107,7 @@
 <li class="toctree-l3"><a class="reference internal" href="#assembly-step">18.4. Assembly step</a></li>
 <li class="toctree-l3"><a class="reference internal" href="#hardware-connect">18.5. Hardware connect</a></li>
 <li class="toctree-l3"><a class="reference internal" href="#programming-makecode">18.6. Programming (MakeCode)</a></li>
-<li class="toctree-l3"><a class="reference internal" href="#iot-app-inventor">18.7. (IoT (App Inventor)</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#iot-app-inventor">18.7. IoT (App Inventor)</a></li>
 <li class="toctree-l3"><a class="reference internal" href="#result">18.8. Result</a></li>
 <li class="toctree-l3"><a class="reference internal" href="#think">18.9. Think</a></li>
 </ul>
@@ -251,29 +251,47 @@ Assembly completed!<BR><P>
 </div>
 <div class="section" id="programming-makecode">
 <h2><span class="section-number">18.6. </span>Programming (MakeCode)<a class="headerlink" href="#programming-makecode" title="Permalink to this headline">¶</a></h2>
-<HR><p><span id="subtitle">Step 1</span><BR><P>
-Drag on start block from Basic. Drag Initialize IoT:bit at OLED from IoT:bit, set OLED height:64, width:128. Set WiFi to ssid “wifi_name” and pwd “WiFi_password”.<BR><P>
-<img alt="auto_fit" src="../_images/Case9_p1.png" /><P>
-<span id="subtitle">Step 2</span><BR><P>
-Turn servo to 180 degree at P2 from Smartcity.<BR><P>
-<img alt="auto_fit" src="../_images/Case9_p2.png" /><P>
-<span id="subtitle">Step 3</span><BR><P>
-Drag On WiFi connected and start WiFi remote control (WAN) from IoT:bit.<BR><P>
-<img alt="auto_fit" src="../_images/Case9_p3.png" /><P>
-<span id="subtitle">Step 4</span><BR><P>
-Drag on WAN command received (WAN_Command) from IoT:bit. <BR><P>
-If WAN_Command = opendoor then, turn servo to 45 degree at P2 from Smartcity.<BR><P>
-<img alt="auto_fit" src="../_images/Case9_p4.png" /><P>
-<span id="subtitle">Step 5</span><BR><P>
-Else if WAN_Command = closedoor then, turn servo to 180 degree at P2 from Smartcity.<BR><P>
-<img alt="auto_fit" src="../_images/Case9_p5.png" /><P></p>
+<HR><p><span id="subtitle">Step 1. Initialize OLED, IoT:bit and connect to WiFi</p>
+<ul class="simple">
+<li><p>Snap <code class="docutils literal notranslate"><span class="pre">Initialize</span> <span class="pre">OLED</span> <span class="pre">with</span> <span class="pre">width:128,</span> <span class="pre">height:</span> <span class="pre">64</span></code> to <code class="docutils literal notranslate"><span class="pre">on</span> <span class="pre">start</span></code></p></li>
+<li><p>Snap <code class="docutils literal notranslate"><span class="pre">Initialize</span> <span class="pre">IoT:bit</span> <span class="pre">TX</span> <span class="pre">P16</span> <span class="pre">RX</span> <span class="pre">P8</span></code> from <code class="docutils literal notranslate"><span class="pre">IoT:bit</span></code> to <code class="docutils literal notranslate"><span class="pre">on</span> <span class="pre">start</span></code></p></li>
+<li><p>Snap <code class="docutils literal notranslate"><span class="pre">Set</span> <span class="pre">Wi-Fi</span> <span class="pre">to</span> <span class="pre">ssid</span> <span class="pre">pwd</span></code> from <code class="docutils literal notranslate"><span class="pre">IoT:bit</span></code></p></li>
+<li><p>Enter your Wi-Fi name and password. Here we set <code class="docutils literal notranslate"><span class="pre">smarthon</span></code> as <code class="docutils literal notranslate"><span class="pre">SSID</span></code> and <code class="docutils literal notranslate"><span class="pre">12345678</span></code> as <code class="docutils literal notranslate"><span class="pre">password</span></code>
+<img alt="pic_60" src="../_images/Case9_p1.png" /><P></p></li>
+</ul>
+<p><span id="subtitle">Step 2. Set servo initial position</span><BR><P></p>
+<ul class="simple">
+<li><p>Snap <code class="docutils literal notranslate"><span class="pre">Turn</span> <span class="pre">Servo</span> <span class="pre">to</span> <span class="pre">…</span> <span class="pre">degree</span></code> from <code class="docutils literal notranslate"><span class="pre">SmartCity</span></code> &gt; <code class="docutils literal notranslate"><span class="pre">Output</span></code></p></li>
+<li><p>Turn servo to <code class="docutils literal notranslate"><span class="pre">180</span></code> degree at pin <code class="docutils literal notranslate"><span class="pre">P2</span></code> (the servo will control the door to be closed initially)
+<img alt="pic_60" src="../_images/Case9_p2.png" /><P></p></li>
+</ul>
+<p><span id="subtitle">Step 3. Show icon “tick” after WiFi connection</span><BR><P></p>
+<ul class="simple">
+<li><p>Snap <code class="docutils literal notranslate"><span class="pre">show</span> <span class="pre">icon</span></code> from <code class="docutils literal notranslate"><span class="pre">basic</span></code> to <code class="docutils literal notranslate"><span class="pre">On</span> <span class="pre">WiFi</span> <span class="pre">connected</span></code> and select icon <code class="docutils literal notranslate"><span class="pre">tick</span></code></p></li>
+<li><p>Draw the <code class="docutils literal notranslate"><span class="pre">Device</span> <span class="pre">ID</span></code> variable from <code class="docutils literal notranslate"><span class="pre">On</span> <span class="pre">WiFi</span> <span class="pre">connected</span></code> to the <code class="docutils literal notranslate"><span class="pre">show</span> <span class="pre">string</span></code> block placeholder
+<img alt="pic_60" src="../_images/Case9_p3.png" /><P></p></li>
+</ul>
+<p><span id="subtitle">Step 4. Receive WAN command</span><BR><P></p>
+<ul class="simple">
+<li><p>Go to OLED</p></li>
+<li><p>Snap the<code class="docutils literal notranslate"> <span class="pre">clear</span> <span class="pre">OLED</span> <span class="pre">display</span></code> to <code class="docutils literal notranslate"><span class="pre">On</span> <span class="pre">WiFi</span> <span class="pre">received</span></code> to avoid overlap</p></li>
+<li><p>Snap the <code class="docutils literal notranslate"><span class="pre">show</span> <span class="pre">string</span></code> to <code class="docutils literal notranslate"><span class="pre">On</span> <span class="pre">WiFi</span> <span class="pre">received</span></code></p></li>
+<li><p>Draw the <code class="docutils literal notranslate"><span class="pre">WAN_Command</span></code> variable to show string placeholder
+<img alt="pic_80" src="../_images/Case9_p4.png" /><P></p></li>
+</ul>
+<p><span id="subtitle">Step 5. Open/close door by WAN command</span><BR><P></p>
+<ul class="simple">
+<li><p>If Wan command <code class="docutils literal notranslate"><span class="pre">opendoor</span></code> is received, <code class="docutils literal notranslate"><span class="pre">turn</span> <span class="pre">servo</span> <span class="pre">to</span> <span class="pre">45</span> <span class="pre">degree</span> <span class="pre">at</span> <span class="pre">P2</span></code> (open door angle)</p></li>
+<li><p>If Wan command <code class="docutils literal notranslate"><span class="pre">closedoor</span></code> is received, <code class="docutils literal notranslate"><span class="pre">turn</span> <span class="pre">servo</span> <span class="pre">to</span> <span class="pre">180</span> <span class="pre">degree</span> <span class="pre">at</span> <span class="pre">P2</span></code> (close door angle)
+<img alt="pic_80" src="../_images/Case9_p5.png" /><P></p></li>
+</ul>
 <p><span id="subtitle">Full Solution<BR><P>
-MakeCode: <a class="reference external" href="https://makecode.microbit.org/#pub:_L2V0LeAHo0hg">https://makecode.microbit.org/_L2V0LeAHo0hg</a><BR><P>
+MakeCode: <a class="reference external" href="https://makecode.microbit.org/#pub:_8wK2rzAYL1io">https://makecode.microbit.org/_8wK2rzAYL1io</a><BR><P>
 You could also download the program from the following website:<BR></p>
-<iframe src="https://makecode.microbit.org/#pub:_L2V0LeAHo0hg" width="100%" height="500" frameborder="0"></iframe></div>
+<iframe src="https://makecode.microbit.org/#pub:_8wK2rzAYL1io" width="100%" height="500" frameborder="0"></iframe></div>
 <div class="section" id="iot-app-inventor">
-<h2><span class="section-number">18.7. </span>(IoT (App Inventor)<a class="headerlink" href="#iot-app-inventor" title="Permalink to this headline">¶</a></h2>
-<HR><p><span id="remarks">* For more details, please refer to “Chapter 3: Control your micro:bit by App Inventor 2”.</span><BR><P></p>
+<h2><span class="section-number">18.7. </span>IoT (App Inventor)<a class="headerlink" href="#iot-app-inventor" title="Permalink to this headline">¶</a></h2>
+<HR><p><span id="remarks">* For more details, please refer to “Chapter 3: Direct control micro:bit by App Inventor 2”</span><BR><P></p>
 <p><span id="subtitle">Step 1</span><BR><P>
 Create the page with the components<BR><P></p>
 <ul class="simple">

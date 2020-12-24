@@ -6,20 +6,19 @@ Level: ![level](images/level4.png)
 ## Goal
 <HR>
 
-Make a smart roof garden clothes rack, once raindrop is detected, the rack can be opened automatically.
+Make a smart roof garden clothes rack, once the weather condition is changed, the rack can be opened/ closed automatically.
 
 ## Background
 <HR>
 
-People no long need to rush up to the roof when raining as the clothes rack can be closed automatically even when house owner is not at home.
-Smart roof garden operation
-When raindrop sensor sensed that it is raining, it will send a signal to micro:bit and therefore the clothes rack will be opened. When there is no rain, the clothes rack will be closed.
-Also, micro:bit can receive WAN commands from WAN (eg. IFTTT), the the micro:bit will get the command name. If the command name is “rain”, the servo will turn to 90ᵒ and the rack will be opened. 
+<span id="subtitle">What is Roof garden clothes rack?</span><BR><P>
+People no long need to rush up to the roof when raining as the clothes rack can be closed automatically even when house owner is not at home.<BR><P>
+<span id="subtitle">Roof garden clothes rack operation</span><BR><P>
+Micro:bit can receive WAN commands from WAN (eg. IFTTT), the the micro:bit will get the command name. If the command name is “Rain”, the servo will turn to 90ᵒ and the rack will be opened. If the command name is “Clear”, the servo will turn to 180ᵒ and the rack will be closed.<BR><P>
 ![pic_90](images/Case11/Concept-diagram-Case11.png)<P>
 
 ## Part List
 <HR>
-
 
 ![auto_fit](images/Case11/Case11_parts.png)<P>
  
@@ -64,70 +63,70 @@ G (black) | G (brown)
 ## Programming (MakeCode)
 <HR>
 
-<span id="subtitle">Step 1</span><BR><P>
-Drag on start block fro Basic. Drag Initialize IoT:bit at OLED from IoT:bit, set OLED height:64, width:128. Set WiFi to ssid “wifi_name” and pwd “WiFi_password”.<BR><P>
-![auto_fit](images/Case11/Case11_p1.png)<P>
-<span id="subtitle">Step 2</span><BR><P>
-Set raindrop to 0.<BR><P>
-![auto_fit](images/Case11/Case11_p2.png)<P>
-<span id="subtitle">Step 3</span><BR><P>
-Set Forcast_rain to false.<BR><P>
-![auto_fit](images/Case11/Case11_p3.png)<P>
-<span id="subtitle">Step 4
-span><BR><P>Turn servo to 180 degree at P1 from Smartcity. The rack is closed.<BR><P>
+<span id="subtitle">Step 1. Initialize OLED, IoT:bit and connect to WiFi</span><BR><P>
+* Snap `Initialize OLED with width:128, height: 64` to `on start`
+* Snap `Initialize IoT:bit TX P16 RX P8` from `IoT:bit` to `on start`
+* Snap `Set Wi-Fi to ssid pwd` from `IoT:bit`
+* Enter your Wi-Fi name and password. Here we set `smarthon` as `SSID` and `12345678` as `password`
+![pic_60](images/Case11/Case11_p1.png)<P>
+
+<span id="subtitle">Step 2. Show icon “tick” after WiFi connection</span><BR><P>
+* Snap `show icon` from `basic` to `On WiFi connected` and select icon `tick`
+* Draw the `Device ID` variable from `On WiFi connected` to the `show string` block placeholder
+![pic_50](images/Case11/Case11_p2.png)<P>
+
+<span id="subtitle">Step 3. Receive WAN command</span><BR><P>
+* Go to OLED
+* Snap the `clear OLED display` to `On WiFi received` to avoid overlap
+* Snap the `show string` to `On WiFi received`
+* Draw the `WAN_Command` variable to show string placeholder
+![pic_70](images/Case11/Case11_p3.png)<P>
+
+<span id="subtitle">Step 4. Control rack open/close by WAN command</span><BR><P>
+* Snap `if-condition`
+* Set variable `WAN_Command` = `Rain` into `if-condition`
+* Snap `Turn Servo to … degree` from `SmartCity` > `Output`
+* `Set Servo degree to 90 at P1` (control the servo to open the rack)
+* Set variable `WAN_Command` = `Clear` into `else-if-condition`
+* Snap `Turn Servo to … degree` from `SmartCity` > `Output`
+* `Set Servo degree to 180 at P1` (control the servo to close the rack)
 ![auto_fit](images/Case11/Case11_p4.png)<P>
-<span id="subtitle">Step 5</span><BR><P>
-Drag On WiFi connected and start WiFi remote control (WAN) from IoT:bit.<BR><P>
-![auto_fit](images/Case11/Case11_p5.png)<P>
-<span id="subtitle">Step 6</span><BR><P>
-Drag on WAN command received (WAN_Command) from IoT:bit.<BR><P>
-![auto_fit](images/Case11/Case11_p6.png)<P>
-<span id="subtitle">Step 7</span><BR><P>
-If WAN_Command = Rain then, set Forcast_rain to true.<BR><P>
-![auto_fit](images/Case11/Case11_p7.png)<P>
-<span id="subtitle">Step 8</span><BR><P>
-Else (i.e. WAN_Command ≠ Rain, set Forcast_rain to false).<BR><P>
-![auto_fit](images/Case11/Case11_p8.png)<P>
-<span id="subtitle">Step 9</span><BR><P>
-Drag forever block from Basic. Set raindrop to get raindrop value (percentage) at Pin P0 and show number raindrop from OLED.<BR><P>
-![auto_fit](images/Case11/Case11_p9.png)<P>
-<span id="subtitle">Step 10</span><BR><P>
-Snap if statement into forever. Set if raindrop > 5 (raining) or Forcast_rain=true (it will rain) then.<BR><P>
-Snap turn Servo to 90 degree at P1 from Smartcity. That’s say the rack can be opened.<BR><P>
-![auto_fit](images/Case11/Case11_p10.png)<P>
-<span id="subtitle">Step 11</span><BR><P>
-Else, turn servo to 180 degree at P1. That’s say the rack will be closed otherwise.<BR><P>
-![auto_fit](images/Case11/Case11_p11.png)<P>
-<span id="subtitle">Step 12</span><BR><P>
-Pause for 15000ms.<BR><P>
-![auto_fit](images/Case11/Case11_p12.png)<P>
+
+<span id="subtitle">Step 5. Press A to open clothes rack</span><BR><P>
+* Snap `on button … pressed` from `Input`, set button `A`
+* Snap `Turn Servo to…` from `SmartCity` > `Output`
+* `Set servo to 90 degree at P1` (open clothes rack)
+![pic_50](images/Case11/Case11_p5.png)<P>
+
+<span id="subtitle">Step 6. Press B to close clothes rack</span><BR><P>
+* Snap `on button … pressed` from `Input`, set button `B`
+* Snap `Turn Servo to…` from `SmartCity` > `Output`
+* `Set servo to 180 degree at P1` (close clothes rack)
+![pic_50](images/Case11/Case11_p6.png)<P>
 
 
 <span id="subtitle">Full Solution<BR><P>
-MakeCode: [https://makecode.microbit.org/_0WxM73eqK1Tf](https://makecode.microbit.org/#pub:_0WxM73eqK1Tf)<BR><P>
+MakeCode: [https://makecode.microbit.org/_HHtdfKEhXdVY](https://makecode.microbit.org/#pub:_HHtdfKEhXdVY)<BR><P>
 You could also download the program from the following website:<BR>
-<iframe src="https://makecode.microbit.org/#pub:_0WxM73eqK1Tf" width="100%" height="500" frameborder="0"></iframe>
+<iframe src="https://makecode.microbit.org/#pub:_HHtdfKEhXdVY" width="100%" height="500" frameborder="0"></iframe>
 
 
 ## IoT (IFTTT)
 <HR>
 
-<span id="remarks">For the setting of IFTTT, please refer to “Chapter 4: Control your micro:bit by IFTTT Services”</span><BR><P>
+<span id="remarks">* For the setting of IFTTT, please refer to “Chapter 4: Cloud Control micro:bit by IFTTT”</span><BR><P>
 
-<span id="subtitle">Step 1</span><BR><P>
-Create applet: If Weather Underground then Smarthon IoT (micro:bit)<BR><P>
+<span id="subtitle">Step 1. Create applet in IFTTT<BR><P>
 ![auto_fit](images/Case11/Case11_iot1.png)<P>
-If the weather condition change to Rain, send WAN control command (condition: Rain) to the micro:bit<BR><P>
-![auto_fit](images/Case11/Case11_iot2.png)<P>
 
 
 ## Result
 <HR>
 
-The micro:bit is controlled by IFTTT (trigger by weather open data). When the weather condition change to “rain”, the cloth rack will be opened. When the weather condition change to “clear”, the cloth rack will be closed.<BR><P>
+The micro:bit is controlled by IFTTT (trigger by weather open data). When the weather condition change to “Rain”, the cloth rack will be opened. When the weather condition change to “Clear”, the cloth rack will be closed.<BR><P>
 ![auto_fit](images/Case11/Case11_result.gif)<P>
 
 ## Think
 <HR>
 
-Q1. Can you control the clothing rack by other weather conditions? (e.g. sunlight)<BR><P>
+Q1. Can you control the clothes rack by other weather conditions? (e.g. sunlight)<BR><P>
