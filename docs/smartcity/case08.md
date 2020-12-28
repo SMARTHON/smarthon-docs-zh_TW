@@ -21,7 +21,7 @@ Micro:bit (sender and receiver) are connected to the same channel so wifi messag
 
 <span id="subtitle">Sender micro:bit operation</span><P>
 When the light value detected is too low, this would represent there is a traffic jam and and a ‘trafficjam’ wifi message to another microbit. When the light value detected is high, this would represent there is no traffic jam and send a “nojam” wifi message to another micro:bit.<BR><P>
-![pic_90](images/Case8/Concept-diagram-Case8_sender.png)<P>
+![auto_fit](images/Case8/Concept-diagram-Case8_sender.png)<P>
 
 ### Part List
 <HR>
@@ -70,7 +70,7 @@ Connect the Light Sensor to P0 port of IoT:bit<BR><P>
 * Set `light` < `10` in to if-condition (traffic jam is detected)
 * Snap `WiFi Sender send channel… message…` from `IoT:bit` > `channel`
 * Set channel to `tsuenwan`, message `trafficjam`
-* Set else-condition (traffic jam is not detected)
+* Set `else-condition` (traffic jam is not detected)
 * Snap `WiFi Sender send channel… message…` from `IoT:bit` > `channel`
 * Set channel to `tsuenwan`, message `nojam`
 ![auto_fit](images/Case8/Case8a_p4.png)<P>
@@ -111,7 +111,7 @@ Micro:bit (sender and receiver) are connected to the same channel so wifi messag
 
 <span id="subtitle">Receiver micro:bit operation</span><P>
 When a wifi message “trafficjam” is received, it means there is traffic jam forward. The traffic LED Module will turn red. When a wifi message “nojam” is received, it means there is no traffic jam forward. The traffic LED Module will turn green. By using smart traffic light, the problem of traffic jam can be reduced as automatic traffic control is used.<BR><P>
-![pic_90](images/Case8/Concept-diagram-Case8_receiver.png)<P>
+![auto_fit](images/Case8/Concept-diagram-Case8_receiver.png)<P>
 
 ### Part List
 <HR>
@@ -155,7 +155,7 @@ Connect the Traffic LED Module to P0 port of IoT:bit<BR><P>
 ![auto_fit](images/Case8/Case8b_p2.png)<P>
 
 <span id="subtitle">Step 3. Receive WiFi message</span><P>
-* Snap On WiFi Receiver received
+* Snap `On WiFi Receiver received`
 * Go to OLED
 * Snap the `clear OLED display` to `On WiFi received` to avoid overlap
 * Snap the `show string` 

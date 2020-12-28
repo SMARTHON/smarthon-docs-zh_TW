@@ -16,7 +16,7 @@ ThingSpeak is an IoT analytics platform service which provides instant visualiza
 
 <span id="subtitle">Weather station operation</span><BR><P>
 Collecting temperature, humidity and raindrop consistently and uploading the data by using Thingspeak. This can help us to do analytical work more conveniently as we can refer to the automatically plotted graphs.<BR><P>
-![pic_70](images/Case6/Concept-diagram-Case6.png)<P>
+![auto-fit](images/Case6/Concept-diagram-Case6.png)<P>
 
 ## Part List
 <HR>

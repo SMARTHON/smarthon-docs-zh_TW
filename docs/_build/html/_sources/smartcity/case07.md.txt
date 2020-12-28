@@ -15,7 +15,7 @@ Make a smart defense system which emits sound and sends an email to the house ow
 IFTTT can help connect all your different apps and devices which enables them to work together to do specific tasks.<BR><P>
 <span id="subtitle">Smart defense system operation</span><BR><P>
 The motion sensor can deliver a motion signal to the micro:bit. When the micro:bit detects the signal, the buzzer will emit sound and send an email to specific email account through IFTTT. Also, a monstor icon will be shown on the micro:bit if there are suspicious people passes by.<BR><P>
-![pic_80](images/Case7/Concept-diagram-Case7.png)<P>
+![auto_fit](images/Case7/Concept-diagram-Case7.png)<P>
 
 ## Part List
 <HR>

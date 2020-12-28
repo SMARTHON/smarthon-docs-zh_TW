@@ -15,7 +15,7 @@ Make a smart roof garden clothes rack, once the weather condition is changed, th
 People no long need to rush up to the roof when raining as the clothes rack can be closed automatically even when house owner is not at home.<BR><P>
 <span id="subtitle">Roof garden clothes rack operation</span><BR><P>
 Micro:bit can receive WAN commands from WAN (eg. IFTTT), the the micro:bit will get the command name. If the command name is “Rain”, the servo will turn to 90ᵒ and the rack will be opened. If the command name is “Clear”, the servo will turn to 180ᵒ and the rack will be closed.<BR><P>
-![pic_90](images/Case11/Concept-diagram-Case11.png)<P>
+![auto_fit](images/Case11/Concept-diagram-Case11.png)<P>
 
 ## Part List
 <HR>
@@ -49,7 +49,6 @@ Step 6. Assembly completed!<BR><P>
 ## Hardware connect
 <HR>
 
-Connect the Raindrop sensor to P0 port of IoT:bit<BR><P>
 Connect the 180ᵒ Servo to P1 port of IoT:bit<BR><P>
 
 Micro:bit P1|Servo
