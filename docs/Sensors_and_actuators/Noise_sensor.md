@@ -1,6 +1,6 @@
 # Noise Sensor
 
-![pic_50](images/Noise_Sensor_0.png)
+![pic_70](images/Noise_Sensor_0.jpg)
 ## Introduction
 Noise sensor use a microphone with an amplifier to detect the sound level of the environment. It will capture the original sound wave, enlarge, and reproduce it in voltage form. When using the sensor to calculate the sound level, use the amplitude to decide the result.
 <P>
@@ -45,6 +45,9 @@ Size: 25mm X 25mm
 * Initial the OLED screen and show the reading of the noise level.
 ![auto_fit](images/Noise_Sensor_7.png)
 
+The value will be in range of 0 to 100<P>
+
+
 ## Result
 
 When the environment is quite silent without noise
@@ -55,8 +58,7 @@ When people speak louder
 
 ## FAQ
 
-Q:Why the value of sensor is stay in the silent level?<BR>
-A: Try to adjust the sensitive level by the regulator, it is locate on the board, use a screwdriver can turning it easily.
+
 
 
 

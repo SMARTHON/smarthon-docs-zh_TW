@@ -1,6 +1,6 @@
 # DHT11
 
-![pic_50](images/DHT11_0.png)
+![pic_70](images/DHT11_0.jpg)
 ## Introduction
 DHT11 is a commonly used sensor to detect the humidity and temperature in a lot of STEM project, it contain different advantage such low cost, easy to use and digital output. 
 <P>
@@ -35,12 +35,17 @@ Size: 33.5mm X 25mm
 
 ## Quick to Start/Sample
 
+<H3><u>Best practice</u></H3>
 * Connect the DHT11 to development board (direct plugin or using wire)
 ![auto_fit](images/DHT11_4.png)<P>
 
 * Open Makecode, using the https://github.com/smarthon/pxt-smartcity PXT <P>
 
-* After Initial the OLED, show the temperature and humidity on the OLED
+* After Initial the OLED, setup two variables to store the reading value, then load the value from the DHT11 function to variable<P>
+
+* The DHT11 function have internal 1s delay for enough sampling time to ensure DHT11 working properly.<P>
+
+* Show the temperature and humidity variable on the OLED
 ![auto_fit](images/DHT11_5.png)
 
 ## Result
@@ -50,11 +55,8 @@ The Room Temperature and Humidity showing on the OLED screen
 
 ## FAQ
 
-Q:Why the mirco:bit program crashed after I use the DHT11 function in PXT?<BR>
-A: The Sampling rate of the DHT11 hardware is 1Hz, means <B>each time of reading should wait for at least 1 second</B>, and according to official datasheet, 2 second is better, otherwise the data stream between the DHT11 and micro:bit will be corrupted. <BR>Also, the function in the PXT using polling method to get the data, so the corrupted data stream may lead to undetermined state, it may crash the micro:bit program.<P>
-
-Q: Why the DHT11 have delay?<BR>
-A: The DHT11 required some time to make the reaction, form the official datasheet, the minimum response time of the Temperature and Humidity is 10 second and 6 second respectively.<P>
+Q: Why the termperature and humidity reaction on DHT11 have delay?<BR>
+A: The DHT11 sensor required some time to reach the accuracy value, form the official datasheet, the minimum response time of the Temperature and Humidity is 10 second and 6 second respectively.<P>
 
 ## Datasheet
 

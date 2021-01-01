@@ -1,6 +1,6 @@
 # Light Sensor
 
-![pic_50](images/Light_Sensor_0.png)
+![pic_70](images/Light_Sensor_0.jpg)
 ## Introduction
 The Light sensor use one photoresistor to detect the luminance of environment. The darker of the environment, the lower voltage will be provided. 
 <P>
@@ -37,7 +37,7 @@ Size: 25mm X 25mm
 
 ## Quick to Start/Sample
 
-* Connect the sensor to development board (direct plugin or using wire))
+* Connect the sensor to development board (direct plugin or using wire)
 ![auto_fit](images/Light_Sensor_3.png)<P>
 
 * Open Makecode, using the https://github.com/smarthon/pxt-smartcity PXT <P>
@@ -45,6 +45,8 @@ Size: 25mm X 25mm
 
 * Initial the OLED and show the reading of Voltage Output
 ![auto_fit](images/Light_Sensor_5.png)
+
+The value will in range 0 to 100<P>
 
 ## Result
 

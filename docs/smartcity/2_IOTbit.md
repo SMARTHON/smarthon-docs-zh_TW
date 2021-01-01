@@ -8,7 +8,7 @@ It provides 13 regular GVS socket, allow user to connect batch of sensors at the
 Several of wireless modules are compatible with the Smarthon IoT Bit, such Bluetooth and Wi-Fi modules. Beside of the commonly used Wi-Fi module ESP8266, the advanced version ESP32 is available to use on the IoT Bit too. After connect to internet, user able to enjoy the abundant internet resource to create the IoT project.
 <P>
 
-![auto_fit](images/2_IOT/iot_image00.png)
+![auto_fit](images/2_IOT/iot_image00.jpg)
 
 ## Product Features
 
@@ -274,7 +274,10 @@ Please open the image in the new tab for full size
 ![pic](images/2_IOT/iot_image12.png)
 <P>On the IoT Bit, two ports are reserved for the 4 Pins Module. Each port can connect to some sensors or actuators which required use two I/O Pins at the same time, such Distance Sesnor and Motor. In total, there are 4 I/O Pins being used, they are P12, P13, P14, P15 respectively.
 
-
+<H3>Crocodile Pin</H3><BR>
+![pic](images/2_IOT/iot_image12_5.png)
+<P>For the user who use the crocodile cable clips to connect parts, Iot Bit reserved 5 Pins for them to get easier access. There are 3 Pins from GVS Port 0,1,2 and 2 Pins for 3V and Ground.
+<P>
 
 ## Software Support
 

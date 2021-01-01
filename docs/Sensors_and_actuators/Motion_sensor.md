@@ -1,6 +1,6 @@
 # Motion Sensor
 
-![pic_50](images/Motion_Sensor_0.png)
+![pic_70](images/Motion_Sensor_0.jpg)
 ## Introduction
 The Motion Sensor use a pyroelectric infrared sensor to detect any moving object at front.When the infrared signal have rapid change, the sensor will return high to user, otherwise, return low.
 <P>
@@ -48,7 +48,8 @@ Size: 25mm X 30mm
 ## Result
 
 The LEDs on the micro:bit will change when hand is over the sensor
-![pic_70](images/Motion_Sensor_7.png)
+
+![pic_70](images/Motion_Sensor_7.jpg)
 
 
 ## Datasheet
