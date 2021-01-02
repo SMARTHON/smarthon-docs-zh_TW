@@ -5,10 +5,12 @@ Smarthon IoT Bit is an IoT orientated expansion board for Micro:bit. With the he
 <P>
 It provides 13 regular GVS socket, allow user to connect batch of sensors at the same time to receive group of data. For some special purpose sensors/actuator, such distance sensor, motor and OLED display, an independent socket are offered, so not only the digital and analog I/O device can use in project, but also I2C device become an option to the Micro:bit from now on. Last but not least, a buzzer is built-in on the board to provide sound generation.
 <P>
-Several of wireless modules are compatible with the Smarthon IoT Bit, such Bluetooth and Wi-Fi modules. Beside of the commonly used Wi-Fi module ESP8266, the advanced version ESP32 is available to use on the IoT Bit too. After connect to internet, user able to enjoy the abundant internet resource to create the IoT project.
+It is the most powerful Wi-Fi extension board for micro:bit in the STEM community. The core is using dual core processor ESP32 compared with the ESP8266 which is single core processor. Besides of the basic ThingSpeak and IFTTT Web services, it supports Wide Area Network (WAN) and can be controlled by mobile app, Amazon echo dot and Google home remotely. Also, it supports object to object communication (O to O) in the Internet. It can facilitate the students to learn the communication between the objects.
 <P>
 
 ![auto_fit](images/2_IOT/iot_image00.jpg)
+
+
 
 ## Product Features
 
@@ -22,7 +24,6 @@ Several of wireless modules are compatible with the Smarthon IoT Bit, such Bluet
 * Extended Servo port x3 from ESP module 
 * Various types of power supply (USB, 3.7V lithium battery, 6V Normal battery)
 * Extra Port: Crocodile Pin, Quick Access Port and 4-Pin Port for different usage
-
 
 
 ## Hardware Size
