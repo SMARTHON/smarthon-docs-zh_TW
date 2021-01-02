@@ -1,6 +1,6 @@
 # White LED
 
-![pic_70](images/White_LED_0.png)
+![pic_70](images/White_LED_0.jpg)
 ## Introduction
 White LED module build in a high-performance LED for different usage, such illuminate, express program status, or make visual presentation. User just need to provide voltage, then can control the brightness by the corresponding input.
 <P>

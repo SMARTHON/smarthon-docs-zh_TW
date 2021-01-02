@@ -1,6 +1,6 @@
 # Traffic Light
 
-![pic_70](images/Traffic_Light_0.png)
+![pic_70](images/Traffic_Light_0.jpg)
 ## Introduction
 The traffic light module including three different colors LED which are red, yellow and green color, like the real-life traffic light. When received different frequency of PWM signal, it will provide different pattern of light.
 <P>

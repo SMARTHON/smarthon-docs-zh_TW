@@ -31,35 +31,40 @@ Product size: 75mm X 65mm X 20mm<BR>
 PCB thinkness: 1.5mm<BR>
 Hole diameter: 4mm<BR>
 
-![auto_fit](images/2_IOT/iot_image01.jpg)
+![auto_fit](images/2_IOT/iot_image01.png)
 
 ## Specification
 
 |Item|Parameters|Remarks|
 |--|--|--|
 |Size|75mm X 65mm X 20mm| Without Packing|
-|Power supply| USB:5V 0.5A <BR> XH2.54 Battery port:3.7~6V 1A <BR>DC 5.5mm:3.7~6V 1A|Maximun current limit<BR> of whole board: 1A |
-|Operation Temperature|-25 to 80℃||
+|Power supply| USB:5V <BR> Lithium Battery :3.7~4.2V <BR>AA Battery*4 :6V |Maximun current limit<BR> of whole board: 1A |
+|Operation Temperature|0 to 80℃||
 |Buzzer|Passive Buzzer(Musical)||
 |Wireless Module|ESP8266<BR>ESP32<BR>Bluetooth|Operate under UART protocol|
 |OLED Module|128*64 resolution OLED<BR> Screen SSD1306|Operate under I2C protocol|
-|Mirco:bit lead out|13 I/O Pins<BR>(13 Digital & AnalogOut Pins)<BR>(6 AnalogIn Pins)|<B>Reserved Pins:</B><BR>Wireless module:P8,P16<BR>Distance Sensor:P14,P15<BR>Motor:P12,P13|
+|Mirco:bit lead out|13 I/O Pins<BR>(13 Digital & AnalogOut Pins)<BR>(6 AnalogIn Pins)|<B>Reserved Pins:</B><BR>Wireless module:P8,P16<BR>4-Pins module:P12,P13|
 |I2C Pins|P19,P20|3 available ports,<BR>1 port reserved for OLED|
 |ESP lead out|3 Pins for servo control(S1,S2,S3)|Control by ESP chip|
-|Net weight|||
+
 
 
 ## Pinout Information
 <H3>Pinout Diagram:</H3><BR>
-![auto_fit](images/2_IOT/iot_image03.jpg)<P>
+![auto_fit](images/2_IOT/iot_image03.png)<P>
 <H3>Port Diagram:</H3><BR>
-![auto_fit](images/2_IOT/iot_image006.jpg)
+![auto_fit](images/2_IOT/iot_image006.png)
 <P>
 Please open the image in the new tab for full size
 <P>
 <H3>Pinout Table</H3>
 
+<div style="overflow-x: scroll;">
 <style type="text/css">
+::-webkit-scrollbar {
+    width: 0px;  /* Remove scrollbar space */
+    background: transparent;  /* Optional: just make scrollbar invisible */
+}
 .tg  {border-collapse:collapse;border-spacing:0;}
 .tg td{border-color:black;border-style:solid;border-width:1px;font-family:Arial, sans-serif;font-size:14px;
   overflow:hidden;padding:10px 5px;word-break:normal;}
@@ -210,6 +215,7 @@ Please open the image in the new tab for full size
   </tr>
 </tbody>
 </table>
+</div>
 <P>
 
 

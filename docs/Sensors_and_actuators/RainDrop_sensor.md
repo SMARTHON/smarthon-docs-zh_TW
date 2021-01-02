@@ -1,6 +1,6 @@
 # RainDrop Sensor
 
-![pic_70](images/RainDrop_Sensor_0.png)
+![pic_70](images/RainDrop_Sensor_0.jpg)
 ## Introduction
 Raindrop sensor use the Conductivity to determine the rain drops is on the board or not, when there are no liquid on the board, the reading will be very small (0 if no liquid), however even one drop of rain, can increase the conductivity very much and make the reading to extremely high (100). 
 <P>
