@@ -43,10 +43,10 @@ Size: 25mm X 25mm
 
 ## Result
 Press A button the turn off the LED (set to 0)
-![auto_fit](images/White_LED_6.png)
+![auto_fit](images/White_LED_6.jpg)
 
 Press B button the turn on the LED (set to 1023)
-![auto_fit](images/White_LED_7.png)
+![auto_fit](images/White_LED_7.jpg)
 
 
 

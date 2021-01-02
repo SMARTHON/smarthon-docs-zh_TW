@@ -43,8 +43,8 @@ Size: 50mm X 40mm
 ## Result
 
 When there are no water on board, the reading is 0
-![pic_70](images/RainDrop_Sensor_6.png)
+![pic_70](images/RainDrop_Sensor_6.jpg)
 
 After put one waterdrop on that, the reading getting close to 100
-![pic_70](images/RainDrop_Sensor_7.png)
+![pic_70](images/RainDrop_Sensor_7.jpg)
 

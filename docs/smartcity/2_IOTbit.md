@@ -320,4 +320,10 @@ Method 2:<P>
 
 >![auto_fit](images/2_IOT/iot_battery.gif)<P>
 
+Method 3:<P>
 
+>Plug the lithium battery into the lithium battery port and turn on the switch<P>
+
+>![auto_fit](images/2_IOT/iot_li_battery.gif)<P>
+
+>*18650 battery holder and the battery are not included in the kit set
