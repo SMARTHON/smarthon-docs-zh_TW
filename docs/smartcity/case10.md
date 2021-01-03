@@ -72,9 +72,9 @@ Connect the white LED Light to P1 port of IoT:bit<BR><P>
 
 
 <span id="subtitle">Full Solution<BR><P>
-MakeCode: [https://makecode.microbit.org/_ew4HwdDqCaAc](https://makecode.microbit.org/#pub:_ew4HwdDqCaAc)<BR><P>
+MakeCode: [https://makecode.microbit.org/_gro09TAW8Whb](https://makecode.microbit.org/#pub:_gro09TAW8Whb)<BR><P>
 You could also download the program from the following website:<BR>
-<iframe src="https://makecode.microbit.org/#pub:_ew4HwdDqCaAc" width="100%" height="500" frameborder="0"></iframe>
+<iframe src="https://makecode.microbit.org/#pub:_gro09TAW8Whb" width="100%" height="500" frameborder="0"></iframe>
 
 
 ## IoT (IFTTT)
@@ -90,7 +90,7 @@ You could also download the program from the following website:<BR>
 <HR>
 
 The micro:bit is controlled by IFTTT (trigger by date&time). The LED light will be turned on at 6pm and turned off at 6am every day.<BR><P>
-![auto_fit](images/Case10/Case10_result.png)<P>
+![auto_fit](images/Case10/Case10_result.gif)<P>
 
 
 ## Think

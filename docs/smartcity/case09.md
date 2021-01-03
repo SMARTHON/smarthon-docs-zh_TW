@@ -88,9 +88,9 @@ G (black)|G (brown)
 ![pic_80](images/Case9/Case9_p5.png)<P>
 
 <span id="subtitle">Full Solution<BR><P>
-MakeCode: [https://makecode.microbit.org/_8wK2rzAYL1io](https://makecode.microbit.org/#pub:_8wK2rzAYL1io)<BR><P>
+MakeCode: [https://makecode.microbit.org/_FKDKfDYj1Le1](https://makecode.microbit.org/#pub:_FKDKfDYj1Le1)<BR><P>
 You could also download the program from the following website:<BR>
-<iframe src="https://makecode.microbit.org/#pub:_8wK2rzAYL1io" width="100%" height="500" frameborder="0"></iframe>
+<iframe src="https://makecode.microbit.org/#pub:_FKDKfDYj1Le1" width="100%" height="500" frameborder="0"></iframe>
 
  
 ## IoT (App Inventor)
@@ -124,8 +124,6 @@ Make the programming part
 Input your device ID number in the textbox, then click button “opendoor” to send command “opendoor”. Click button “Close Door” to send command “closedoor”.<BR><P>
 ![auto_fit](images/Case9/Case9_result1.png)<P>
 
-Micro:bit will wait for WAN command: <BR><P>
-![auto_fit](images/Case9/Case9_result2.png)<P>
  
 ![auto_fit](images/Case9/Case9_result3.png)<P>
 

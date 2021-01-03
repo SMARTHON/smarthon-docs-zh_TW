@@ -44,9 +44,9 @@ After press the A and B button at the same time, Micro:bit will start listening 
 
 
 <span id="subtitle">Full Solution<BR><P>
-MakeCode: [https://makecode.microbit.org/_VEgV8sH3Pgv3](https://makecode.microbit.org/#pub:_VEgV8sH3Pgv3)<BR><P>
+MakeCode: [https://makecode.microbit.org/_gwm8qKY4q6ze](https://makecode.microbit.org/#pub:_gwm8qKY4q6ze)<BR><P>
 You could also download the program from the following website:<BR>
-<iframe src="https://makecode.microbit.org/#pub:_VEgV8sH3Pgv3" width="100%" height="500" frameborder="0"></iframe>
+<iframe src="https://makecode.microbit.org/#pub:_gwm8qKY4q6ze" width="100%" height="500" frameborder="0"></iframe>
 <P><P>
 
 
@@ -77,9 +77,9 @@ When you join different channels, you may receive same command from each of them
 ![auto_fit](images/Ch5/Ch5_p5.png)<P>
 
 <span id="subtitle">Full Solution<BR><P>
-MakeCode: [https://makecode.microbit.org/_5jP54jAt8f4F](https://makecode.microbit.org/#pub:_5jP54jAt8f4F)<BR><P>
+MakeCode: [https://makecode.microbit.org/_XoiUx0a2Wga9](https://makecode.microbit.org/#pub:_XoiUx0a2Wga9)<BR><P>
 You could also download the program from the following website:<BR>
-<iframe src="https://makecode.microbit.org/#pub:_5jP54jAt8f4F" width="100%" height="500" frameborder="0"></iframe><P><P>
+<iframe src="https://makecode.microbit.org/#pub:_XoiUx0a2Wga9" width="100%" height="500" frameborder="0"></iframe><P><P>
 
 ## Sender side
 <HR>
@@ -102,9 +102,9 @@ After connected to the internet, we can start send the message to our friend tho
 
 
 <span id="subtitle">Full Solution<BR><P>
-MakeCode: [https://makecode.microbit.org/_0MuagzX1b0w9](https://makecode.microbit.org/#pub:_0MuagzX1b0w9)<BR><P>
+MakeCode: [https://makecode.microbit.org/_8tJhFCHxUcHH](https://makecode.microbit.org/#pub:_8tJhFCHxUcHH)<BR><P>
 You could also download the program from the following website:<BR>
-<iframe src="https://makecode.microbit.org/#pub:_0MuagzX1b0w9" width="100%" height="500" frameborder="0"></iframe><P><P>
+<iframe src="https://makecode.microbit.org/#pub:_8tJhFCHxUcHH" width="100%" height="500" frameborder="0"></iframe><P><P>
 
 <h2>Optional:</h2>
 <HR>
@@ -125,6 +125,6 @@ Normally, if no internet connection or the channel Server is down, it will be -2
 ![auto_fit](images/Ch5/Ch5_p8.png)<P>
 
 <span id="subtitle">Full Solution<BR><P>
-MakeCode: [https://makecode.microbit.org/_EK4JLLHKEbf8](https://makecode.microbit.org/#pub:_EK4JLLHKEbf8)<BR><P>
+MakeCode: [https://makecode.microbit.org/_aXRLd8Ee9Pwf](https://makecode.microbit.org/#pub:_aXRLd8Ee9Pwf)<BR><P>
 You could also download the program from the following website:<BR>
-<iframe src="https://makecode.microbit.org/#pub:_EK4JLLHKEbf8" width="100%" height="500" frameborder="0"></iframe><P>
+<iframe src="https://makecode.microbit.org/#pub:_aXRLd8Ee9Pwf" width="100%" height="500" frameborder="0"></iframe><P>

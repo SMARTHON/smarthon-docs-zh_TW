@@ -126,9 +126,9 @@ You may also show the `WAN_Command` and `value` by `show string`.<P>
 
 
 <span id="subtitle">Full Solution<BR><P>
-MakeCode: [https://makecode.microbit.org/_bMFRmFYP2fdv](https://makecode.microbit.org/#pub:_bMFRmFYP2fdv)<BR><P>
+MakeCode: [https://makecode.microbit.org/_43A5eiHmjTMH](https://makecode.microbit.org/#pub:_43A5eiHmjTMH)<BR><P>
 You could also download the program from the following website:<BR>
-<iframe src="https://makecode.microbit.org/#pub:_bMFRmFYP2fdv" width="100%" height="500" frameborder="0"></iframe><P>
+<iframe src="https://makecode.microbit.org/#pub:_43A5eiHmjTMH" width="100%" height="500" frameborder="0"></iframe><P>
 
 
 ## Part 2: App Inventor 2 configuration

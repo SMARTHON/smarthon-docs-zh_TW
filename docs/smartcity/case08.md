@@ -191,9 +191,9 @@ Connect the Traffic LED Module to P0 port of IoT:bit<BR><P>
 ![auto_fit](images/Case8/Case8b_p7.png)<P>
 
 <span id="subtitle">Full Solution<BR><P>
-MakeCode: [https://makecode.microbit.org/_Y4F6vH9qk7mw](https://makecode.microbit.org/#pub:_Y4F6vH9qk7mw)<BR><P>
+MakeCode: [https://makecode.microbit.org/_dXhFr77PyDi0](https://makecode.microbit.org/#pub:_dXhFr77PyDi0)<BR><P>
 You could also download the program from the following website:<BR>
-<iframe src="https://makecode.microbit.org/#pub:_Y4F6vH9qk7mw" width="100%" height="500" frameborder="0"></iframe>
+<iframe src="https://makecode.microbit.org/#pub:_dXhFr77PyDi0" width="100%" height="500" frameborder="0"></iframe>
 
 
 ### Result

@@ -105,9 +105,9 @@ G (black) | G (brown)
 
 
 <span id="subtitle">Full Solution<BR><P>
-MakeCode: [https://makecode.microbit.org/_HHtdfKEhXdVY](https://makecode.microbit.org/#pub:_HHtdfKEhXdVY)<BR><P>
+MakeCode: [https://makecode.microbit.org/_4m94VyctJYbr](https://makecode.microbit.org/#pub:_4m94VyctJYbr)<BR><P>
 You could also download the program from the following website:<BR>
-<iframe src="https://makecode.microbit.org/#pub:_HHtdfKEhXdVY" width="100%" height="500" frameborder="0"></iframe>
+<iframe src="https://makecode.microbit.org/#pub:_4m94VyctJYbr" width="100%" height="500" frameborder="0"></iframe>
 
 
 ## IoT (IFTTT)

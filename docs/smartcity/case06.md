@@ -111,16 +111,16 @@ Select your channel > “API Keys” ，copy the API key as follows:<BR><P>
 
 
 <span id="subtitle">Full Solution<BR><P>
-MakeCode: [https://makecode.microbit.org/_F9q1r4comWfR](https://makecode.microbit.org/#pub:_F9q1r4comWfR)<BR><P>
+MakeCode: [https://makecode.microbit.org/_RE7EaeAF1AUt](https://makecode.microbit.org/#pub:_RE7EaeAF1AUt)<BR><P>
 You could also download the program from the following website:<BR>
-<iframe src="https://makecode.microbit.org/#pub:_F9q1r4comWfR" width="100%" height="500" frameborder="0"></iframe>
+<iframe src="https://makecode.microbit.org/#pub:_RE7EaeAF1AUt" width="100%" height="500" frameborder="0"></iframe>
 
 
 ## Result
 <HR>
 
 When micro:bit is connected to WiFi, it will check weather information (temperature, humidity from Temperature and humidity Sensor and raindrop value from raindrop sensor). Then, those data will be sent to ThingSpeak and pause for 15 seconds for another update.<BR><P>
-![auto_fit](images/Case6/Case6_result1.png)<P>
+![auto_fit](images/Case6/Case6_result.gif)<P>
 We can find three graphs on Thingspeak including temperature, humidity and raindrop (field1, field2, field3) respectively by collecting data using different sensors.<BR><P>
 ![auto_fit](images/Case6/Case6_result2.png)<P>
 

@@ -64,9 +64,9 @@ If you want to show the IFTTT upload status, you can use the “on IFTTT Uploade
 
 
 <span id="subtitle">Full Solution<BR><P>
-MakeCode: [https://makecode.microbit.org/#pub:_i1PgamYHVWX1](https://makecode.microbit.org/#pub:_i1PgamYHVWX1)<BR><P>
+MakeCode: [https://makecode.microbit.org/_Txv1LF34edWu](https://makecode.microbit.org/#pub:_Txv1LF34edWu)<BR><P>
 You could also download the program from the following website:<BR>
-<iframe src="https://makecode.microbit.org/#pub:_i1PgamYHVWX1" width="100%" height="500" frameborder="0"></iframe>
+<iframe src="https://makecode.microbit.org/#pub:_Txv1LF34edWu" width="100%" height="500" frameborder="0"></iframe>
 
 
 

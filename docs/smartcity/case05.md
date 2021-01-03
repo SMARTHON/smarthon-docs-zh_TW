@@ -84,19 +84,16 @@ Drag `Pause` to wait 500ms and set `distance2` to `get distance unit cm trig P14
 
 
 <span id="subtitle">Full Solution<BR><P>
-MakeCode: [https://makecode.microbit.org/_YaLE8D4cMCFP](https://makecode.microbit.org/#pub:_YaLE8D4cMCFP)<BR><P>
+MakeCode: [https://makecode.microbit.org/_P8gPWe6iEg0g](https://makecode.microbit.org/#pub:_P8gPWe6iEg0g)<BR><P>
 You could also download the program from the following website:<BR>
-<iframe src="https://makecode.microbit.org/#pub:_YaLE8D4cMCFP" width="100%" height="500" frameborder="0"></iframe>
+<iframe src="https://makecode.microbit.org/#pub:_P8gPWe6iEg0g" width="100%" height="500" frameborder="0"></iframe>
 
 
 ## Results
 <HR>
 
 It will keep checking the distance of cars from distance sensor by distance sensor in every 500ms. The speed of the cars will be shown on OLED. A bar chart of speed will be shown on micro:bit LED also.<BR><P>
-<span id="subtitle">Car moving with low speed</span><P>
-![auto_fit](images/Case5/Case5_result1.gif)<P>
-<span id="subtitle">Car moving with high speed</span><P>
-![auto_fit](images/Case5/Case5_result2.gif)<P>
+![auto_fit](images/Case5/Case5_result.gif)<P>
 
 ## Think
 <HR>
