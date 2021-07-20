@@ -87,9 +87,9 @@ You may also show the `WAN_Command` and `value` by `show string`.<P>
 
 
 <span id="subtitle">Full Solution<BR><P>
-MakeCode: [https://makecode.microbit.org/_eAoCAYc47207](https://makecode.microbit.org/#pub:_eAoCAYc47207)<BR><P>
+MakeCode: [https://makecode.microbit.org/_Jdb8fA66r77Y](https://makecode.microbit.org/_Jdb8fA66r77Y)<BR><P>
 You could also download the program from the following website:<BR>
-<iframe src="https://makecode.microbit.org/#pub:_eAoCAYc47207" width="100%" height="500" frameborder="0"></iframe>
+<iframe src="https://makecode.microbit.org/#pub:_Jdb8fA66r77Y" width="100%" height="500" frameborder="0"></iframe>
 
 <P>
 

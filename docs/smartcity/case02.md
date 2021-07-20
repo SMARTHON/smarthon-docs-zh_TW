@@ -76,9 +76,9 @@ Connect 180° Servo to P2 port of IoT:bit<BR><P>
 
 
 <span id="subtitle">Full Solution<BR><P>
-MakeCode: [https://makecode.microbit.org/_03b9tCdf424k](https://makecode.microbit.org/#pub:_03b9tCdf424k)<BR><P>
+MakeCode: [https://makecode.microbit.org/_UgRKmX2XzH2u](https://makecode.microbit.org/_UgRKmX2XzH2u)<BR><P>
 You could also download the program from the following website:<BR>
-<iframe src="https://makecode.microbit.org/#pub:_03b9tCdf424k" width="100%" height="500" frameborder="0"></iframe>
+<iframe src="https://makecode.microbit.org/#pub:_UgRKmX2XzH2u" width="100%" height="500" frameborder="0"></iframe>
 
 ## Result
 <HR>
