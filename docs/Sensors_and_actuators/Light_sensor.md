@@ -1,63 +1,62 @@
-# Light Sensor
+# 光度傳感器
 
 ![pic_70](images/Light_Sensor_0.jpg)
-## Introduction
-The Light sensor use one photoresistor to detect the luminance of environment. The darker of the environment, the lower voltage will be provided. 
+## 簡介
+光度傳感器使用光敏電阻去檢測環境光度的變化,當環境變得越暗,經電阻輸出的電壓會更低。 
 <P>
 
 
-## The principle
-The Light sensor also call as Light Dependent Resistor(LDR), the physical property will change under different light source as the name implied.  <P>
+## 原理
+光敏電阻擁有著依照環境狀況改變物理性質的特性。 <P>
 ![auto_fit](images/Light_Sensor_1.png)
 
-Depend on the model of different LDR, the resistance value and curves have difference, but all follow the principle: <BR>
-When the Illumination is increase, the resistance of the resistor will reduce.<BR>
-When the Illumination is decrease, the resistance of resistor will increase. <BR>
+根據不同型號的光敏電阻,其電阻值及變化曲線亦有所不同,但基本依照以下原則。<BR>
+* 「當亮度提升,電阻值下降」<BR>
+* 「當亮度下降,電阻值提升」<BR>
 
 
-## Specification 
-* Supply Voltage: 3.3V to 5V
-* Interface: Analog 
-* Output Voltage Range: 1%~90% of supply Voltage
-* Reading in the PXT(with Mirco:bit): 1~100(0.04V~3.3V)
+## 規格
+* 供應電壓: 3.3V 至 5V
+* 介面: 類比
+* 輸出電壓範圍: 輸入電壓的1%至90%
+* PXT擴展裡的讀數: 1至100(0.04V~3.3V)
 
 
-## Pinout Diagram
+## 針腳
 
-|Pin|Function|
+|針腳|功能|
 |--|--|
-|G|Ground|
-|V|Voltage Supply|
-|S|Signal Output(Analog)|
+|G|接地|
+|V|電源供應|
+|S|訊號輸出(類比)|
 
-## Outlook and Dimension
+## 外觀及大小
 ![pic_60](images/Light_Sensor_2.png)
 
-Size: 25mm X 25mm
+大小: 25mm * 25mm
 
-## Quick to Start/Sample
+## 快速指引
 
-* Connect the sensor to development board (direct plugin or using wire)
+* 連接傳感器到開發板上(直接插入或使用連接線材)
 ![auto_fit](images/Light_Sensor_3.png)<P>
 
-* Open Makecode, using the https://github.com/smarthon/pxt-smartcity PXT <P>
+* 打開Makecode, 使用 https://github.com/smarthon/pxt-smartcity 擴展 <P>
 ![auto_fit](images/Light_Sensor_4.png)<P>
 
-* Initial the OLED and show the reading of Voltage Output
+* 初始化OLED顯示屏後,把讀數顯示在OLED顯示屏上
 ![auto_fit](images/Light_Sensor_5.png)
 
-The value will in range 0 to 100<P>
+讀取的數值會介0至100之間<P>
 
-## Result
+## 結果
 
-The reading of the luminance will show according to the environment. 
+當前環境的相對亮度會顯示出來
 ![pic_60](images/Light_Sensor_6.png)
 
 ## FAQ
 
-Q: Why the reading mostly stays in the middle range?<BR>
-A: Generally, using in a in-door environment (with electric light source) will have a middle range value.<BR>
-The close to limit value will only appear in the extreme cases, like under the sun/ close to light bulb, or stay in a full dark environment.
+Q: 為什麼讀數比較偏於中間?<BR>
+A: 即使在室內環境,一些光源例如電燈亦能夠提供一定光亮度給傳感器。如想測試極端的數值,可以嘗試放到全黑的環境或是暴露在太陽直射的地方。<BR>
 
 
 ## Datasheet

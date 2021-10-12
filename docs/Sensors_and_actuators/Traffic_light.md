@@ -1,67 +1,68 @@
-# Traffic Light
+# 交通燈模組
 
 ![pic_70](images/Traffic_Light_0.jpg)
-## Introduction
-The traffic light module including three different colors LED which are red, yellow and green color, like the real-life traffic light. When received different frequency of PWM signal, it will provide different pattern of light.
+## 簡介
+交通燈模組裝有3粒不同顏色的LED燈,分別為紅色,黃色和綠色,和真實生活中的交通燈一樣。當接收不同的PWM訊號,就能控制其輸出不同顏色的組合。
 <P>
 
 
-## The principle
+## 原理
 ![auto_fit](images/Traffic_Light_1.png)
-Most of the traffic light module on market will using the concept of common anode to make it easy to use. However, it required 4 pin on the module(3 signal and 1 ground) and consume 3 control pin from the controller, make it become heavy and hard to use on some tiny device.<BR>When using PWM method instead of common anode, it can reduce to 3pins and only consume 1 signal pin form the controller, more suitable for the tiny project.<P>
+目前普遍交通燈模組都使用共陽極方式操作,這種方法比較直觀及易於使用,但壞處是需要一共4端子去控制(3訊號端及1共地端)。當使用一些只有少量輸出端子的開發板的時候,這3個訊號端會占用大量端子。<BR>
+如果使用PWM方式去進行操作,即只需1個訊號端就可以控制3粒LED,在進行一些迷你的設計時更為適合。<P>
 ![pic_70](images/Traffic_Light_2.png)
 
-The PWM signal can represent in the average voltage output, or duty cycle % in one complete cycle. This module will control by the duty cycle method.<BR>The chip on the traffic light module keep recording the incoming PWM signal and distinguish the “states” of traffic light by the preset duty cycle % level table. Then control the turn on /off states of the three LED lights.<P>
+使用PWM訊號可以代表「平均電壓輸出」,或是「多少百份比的工作週期」。這交通燈模組利用「工作週期」的方法控制交通燈。當輸入的PWM訊號週期不同,交通燈就會按照其百份比去決定交通燈的亮燈方式。<P>
 
-## Specification 
-* Supply voltage: 3.3V~5V
-* Interface: Analog/Digital PWM
+## 規格
+* 操作電壓: 3.3V ~ 5V
+* 介面: 數位 PWM
 
-Duty Cycle:<BR>
+工作週期:<BR>
 
-|Duty cycle(%)|Light|
+|工作週期(%)|燈光|
 |--|--|
-|<5|OFF: Red Yellow Green|
-|5~12.5|ON: Green<BR>OFF: Red Yellow|
-|12.5~25|ON: Yellow<BR>OFF: Red Green|
-|25~37.5|ON: Yellow Green<BR>OFF: Red|
-|37.5~50|ON: Red<BR>OFF: Yellow Green|
-|50~62.5|ON: Red Green<BR>OFF: Yellow|
-|62.5~75|ON: Red Yellow<BR>OFF: Green|
-|>75|ON: Red Yellow Green|
+|<5|關: 紅 黃 綠|
+|5~12.5|亮: 綠<BR>關: 紅 黃|
+|12.5~25|亮: 黃<BR>關: 紅 綠|
+|25~37.5|亮: 黃 綠<BR>關: 紅|
+|37.5~50|亮: 紅<BR>關: 黃 綠|
+|50~62.5|亮: 紅 綠<BR>關: 黃|
+|62.5~75|亮: 紅 黃<BR>關: 綠|
+|>75|亮: 紅 黃 綠|
 
-## Pinout Diagram
+## 針腳
 
-|Pin|Function|
+|針腳|功能|
 |--|--|
-|G|Ground|
-|V|Voltage Supply|
-|S|Signal Input (PWM Voltage)|
+|G|接地|
+|V|電源供應|
+|S|訊號輸入(PWM)|
 
-## Outlook and Dimension
+## 外觀及大小
 ![pic_70](images/Traffic_Light_3.png)
 
-Size: 25mm X 45mm
+大小: 25mm X 45mm
 
-## Quick to Start/Sample
+## 快速指引
 
-* Connect the sensor to development board (using wire)
+* 把交通燈模組連接到開發板(使用連接線)
 ![auto_fit](images/Traffic_Light_4.png)<P>
 
-* Open Makecode, using the https://github.com/smarthon/pxt-smartcity PXT <P>
+* 打開Makecode, 使用https://github.com/smarthon/pxt-smartcity 擴展<P>
 ![auto_fit](images/Traffic_Light_5.png)<P>
 
-* Provide the corresponding PWM signal
+* 提供相應的訊號
 ![auto_fit](images/Traffic_Light_6.png)
 
-## Result
-The traffic light will turn on and off
+## 結果
+交通燈會交替開燈及關燈
 ![pic_70](images/Traffic_Light_7.gif)
 
 ## FAQ
 
-Q: Why the lights is out of control?<BR>
-A: Check the PWM signal duty cycle is fit the requirement or not. Also be care the change of light status should not too quick, at least wait for 1 second.
+Q: 為什麼交通燈不受控制?<BR>
+A:檢查輸入的PWM訊號是否合符工作週期要求,並且不要過於急速切換狀態,兩種狀態切換之間至少等待1秒。
 
 
 

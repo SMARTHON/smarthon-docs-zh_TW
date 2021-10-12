@@ -1,67 +1,63 @@
-# Noise Sensor
+# 聲音傳感器
 
 ![pic_70](images/Noise_Sensor_0.jpg)
-## Introduction
-Noise sensor use a microphone with an amplifier to detect the sound level of the environment. It will capture the original sound wave, enlarge, and reproduce it in voltage form. When using the sensor to calculate the sound level, use the amplitude to decide the result.
+## 簡介
+聲音傳感器使用了咪高峰及放大器去檢測出環境音量。透過錄取聲波後進行放大,就能用電壓的方式傳遞聲音訊號到發開板上。當接受到訊號後,就可以利用振幅計算結果。
 <P>
 
 
-## The principle
-The Noise Sensor is a combine of the microphone and amplifier, the microphone will capture the raw signal form the environment and let the amplifier chip lm386 to produce the amplified signal to the output. <P>
+## 原理
+聲音傳感器結合了咪高峰及放大器。錄取從空氣中傳播的聲波,然後利用lm386放大器去令微少振幅的聲波變得可偵測及輸出到開發板。 <P>
 ![auto_fit](images/Noise_Sensor_1.png)
 
 
-## Specification 
-* Supply voltage: 3.3V – 5V
-* Interface: Analog
-* Output Range: 0~3.5V
+## 規格
+* 供應電壓: 3.3V - 5V
+* 介面: 類比
+* 輸出電壓: 0~3.5V
  
-Voltage when silent: (1.74~1.83V)<BR>
+電壓(安靜時): 1.74~1.83V<BR>
 ![auto_fit](images/Noise_Sensor_2.png) <P>
-Voltage Under 440Hz sound:(0.98 ~ 2.58V)
+電壓(接收440hz聲波時): 0.98~2.58V<BR>
 ![auto_fit](images/Noise_Sensor_3.png) <P>
 
-## Pinout Diagram
+## 針腳
 
-|Pin|Function|
+|針腳|針腳|
 |--|--|
-|G|Ground|
-|V|Voltage Supply|
-|S|Voltage Signal Output|
+|G|接地|
+|V|電源供應|
+|S|聲波電壓訊號輸出|
 
-## Outlook and Dimension
+## 外觀及大小
 ![pic_70](images/Noise_Sensor_4.png)
 
-Size: 25mm X 25mm
+大小: 25mm * 25mm
 
-## Quick to Start/Sample
+## 快速指引
 
-* Connect the sensor to development board (using wire)
+* 連接傳感器到開發板(使用連接線)
 ![auto_fit](images/Noise_Sensor_5.png)<P>
 
-* Open Makecode, using the https://github.com/smarthon/pxt-smartcity PXT <P>
+* 打開Makecode, 使用https://github.com/smarthon/pxt-smartcity 擴展<P>
 ![auto_fit](images/Noise_Sensor_6.png)<P>
 
-* Initial the OLED screen and show the reading of the noise level.
+* 初始化OLED顯示屏及把傳感器讀取的數值顯示在OLED顯示屏上<P>
 ![auto_fit](images/Noise_Sensor_7.png)
 
-The value will be in range of 0 to 100<P>
+讀取的數值將會在0至100之間<P>
 
 
-## Result
+## 結果
 
-When the environment is quite silent without noise
+當環境十分安靜時的情形<BR>
 ![pic_70](images/Noise_Sensor_8.png)
 
-When people speak louder 
+當有人在說話時的情形<BR>
 ![pic_70](images/Noise_Sensor_9.png)
 
-## FAQ
 
 
-
-
-
-## Datasheet
+## 數據表
 
 [LM386-datasheet](https://www.ti.com/lit/ds/symlink/lm386.pdf)

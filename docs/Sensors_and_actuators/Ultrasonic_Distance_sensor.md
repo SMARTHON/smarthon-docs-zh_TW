@@ -1,55 +1,55 @@
-# Ultrasonic Distance Sensor US-025A
+# 超音波距離傳感器
 
 ![pic_70](images/Ultrasonic_Distance_Sensor_0.jpg)
-## Introduction
-The Distance sensor using two ultrasonic sensors to detect the distance between current position and object. In most situation, the availability of ultrasonic allow it provided quick and accurate result.
+## 簡介
+距離傳感器使用超音波原理進行與前方目標距離的檢測。大部分情況下,超音波能夠提供一個快速而準確的距離測量結果。
 <P>
 
 
-## The principle
-The Distance sensor use the ultrasonic to measure the distance between the sensor and object. When the sensor emit a wave of ultrasonic wave, it will start passing thought the air until it hit the object, then rebound and back to the receiver. The sound wave travel in the air is approximately 340meter per second, with it, use the interval time between sent and received can calculate the distance. <P>
+## 原理
+距離傳感器使用超音波去量度目標物與傳感器之間的距離。當傳感器向前方發出超音波的時候,超音波(聲波的一種)開始透過空氣傳播直到碰撞上目標物,然後反彈回來被傳感器偵測。<BR>因聲波在空氣中傳播的速度大約為340米/秒, 所以利用發送及接收之間的時間間距就能計算出距離。 <P>
 ![auto_fit](images/Ultrasonic_Distance_Sensor_1.png)
 
 
-## Specification 
-* Supply voltage: 5V
-* Working Frequency: 40kHz
-* Range: 3cm to 4m 
-* MeasuringAngle: <15°
+## 規格
+* 操作電壓: 5V
+* 工作頻率: 40kHz
+* 檢測距離: 3cm 至 4m
+* 量度角度: 小於15°
 
-## Pinout Diagram
+## 針腳
 
-|Pin|Function|
+|針腳|功能|
 |--|--|
-|GND|Ground|
-|VCC|Voltage Supply|
-|Trig|Starting trigger signal Input|
-|Echo|Response signal Output|
+|GND|接地|
+|VCC|電源供應|
+|Trig|觸發訊號輸入|
+|Echo|接收訊號輸出|
 
-## Outlook and Dimension
+## 外觀及大小
 ![pic_70](images/Ultrasonic_Distance_Sensor_2.png)
 
-Size: 41 X 25mm
+大小: 41mm X 25mm
 
-## Quick to Start/Sample
+## 快速指引
 
-* Connect the sensor to development board (using wire)
+* 連接傳感器到開發板(使用連接線)
 ![auto_fit](images/Ultrasonic_Distance_Sensor_3.png)<P>
 
-* Open Makecode, using the https://github.com/smarthon/pxt-smartcity PXT <P>
+* 打開Makecode, 使用https://github.com/smarthon/pxt-smartcity 擴展 <P>
 ![auto_fit](images/Ultrasonic_Distance_Sensor_4.png)<P>
 
-* Initial the OLED and show the distance value on the OLED screen
+* 初始化OLED顯示屏,然後把傳感器讀取的數值在顯示屏上顯示
 ![auto_fit](images/Ultrasonic_Distance_Sensor_5.png)
 
-## Result
+## 結果
 
-The Distance will be increasing when moving out the hand from sensor
+讀取到的距離數值會隨著手掌的遠離而增加。
 ![pic_70](images/Ultrasonic_Distance_Sensor_6.png)
 
 
 ## FAQ
 
-Q: Why I cannot get the correct reading in far distance?<BR>
-A: Because of the ultrasonic sender and receiver both on the board, limited by the physical reason, the reflection angle of the object will affect the result correctly, especially when the distance is far, little reflection angle can create large displacement of mainstream, so please adjust the angle of detection.
+Q: 為什麼我不能正確讀取與目標物的距離?<BR>
+A: 因為發射及接收端都處於傳感器上,受限於物理大小, 反射角度成為聲波能否成功反射回來的關鍵之一。在測量相對遠的距離時,因目標物擁有不同的反射面,視情況可能發生即使很小的反射角度差距也能夠令接收點產生巨大的位移,這會影響計算成功的機率,所以在遇上這情況時請調整角度。
 

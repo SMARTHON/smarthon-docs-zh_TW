@@ -1,57 +1,57 @@
-# Motion Sensor
+# 運動傳感器
 
 ![pic_70](images/Motion_Sensor_0.jpg)
-## Introduction
-The Motion Sensor use a pyroelectric infrared sensor to detect any moving object at front.When the infrared signal have rapid change, the sensor will return high to user, otherwise, return low.
+##  簡介
+運動傳感器是使用紅外線感測器去檢測出前方有沒有正在移動的物體。<P>
+當檢測到的訊號急劇變化,則輸出高電平訊號,否則輸出低電平訊號。
 <P>
 
-## The principle
-The pyroelectric infrared sensor will keeping record the infrared signal inside target area. Human will emit the infrared light cause by the body temperature, when they pass thought the detection area, the signal received by sensor will have fluctuation which can determine the movement of object. <P>
+## 原理
+焦電式感測器是一種紅外線感測器,它會一直吸收及記錄前方範圍的紅外線強度數據。像人體這種帶有體溫的物體,會不斷發放出紅外線。<BR>當經過傳感器檢測範圍時,傳感器接收到的數值就會發生改變,從而得知有物體的移動。<P>
 ![auto_fit](images/Motion_Sensor_1.png)
 
-Generally, the maximum range of the detection is 5 to 12 meters , create a spherical sector with 65 degree from normal line. <P>
+感測器最大偵測距離可達到5至12米,檢測出前方130度的物件移動。 <P>
 ![pic_70](images/Motion_Sensor_2.png)
 
 
-## Specification 
-* Supply Voltage: 3.3V
-* Interface: Analog
-* Operation Temperature: -20 ~ 85°C
-* Angle of detection: <65° from normal of center 
+## 規格
+* 輸入電壓: 3.3V
+* 介面: 類比
+* 操作溫度: -20°C至85°C
+* 檢測角度: 左右65°,共130°
 
 
 
-## Pinout Diagram
+## 針腳
 
-|Pin|Function|
+|針腳|功能|
 |--|--|
-|G|Ground|
-|V|Voltage Supply|
-|S|Moving detected signal Output|
+|G|接地|
+|V|電源供應|
+|S|感應訊號輸出|
 
-## Outlook and Dimension
+## 外觀及大小
 ![pic_70](images/Motion_Sensor_3.png)
 
-Size: 25mm X 30mm
+大小: 25mm X 30mm
 
-## Quick to Start/Sample
+## 快速指引
 
-* Connect the module to the development board (direct plugin or using wire)
+* 把傳感器連接到發開板上(直接插入或使用連接線)
 ![auto_fit](images/Motion_Sensor_4.png)<P>
 
-* Open Makecode, using the https://github.com/smarthon/pxt-smartcity PXT <P>
+* 打開Makecode, 使用 https://github.com/smarthon/pxt-smartcity 擴展 <P>
 ![auto_fit](images/Motion_Sensor_5.png)<P>
 
-* Use to PXT library to read the detection result, and make the LEDs change according the result
+* 使用PXT擴展去讀取數值,並令LED依照數值改變
 ![auto_fit](images/Motion_Sensor_6.png)
 
-## Result
+## 結果
 
-The LEDs on the micro:bit will change when hand is over the sensor
-
+當手在傳感器前方揮舞時,觸發了感應,Mirco:bit上的LED會改變<P>
 ![pic_70](images/Motion_Sensor_7.jpg)
 
 
-## Datasheet
+## 數據表
 
 [PIR-am312-datasheet](http://www.image.micros.com.pl/_dane_techniczne_auto/cz%20am312.pdf)

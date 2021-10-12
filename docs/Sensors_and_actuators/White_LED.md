@@ -1,51 +1,52 @@
-# White LED
+# 白色LED
 
 ![pic_70](images/White_LED_0.jpg)
-## Introduction
-White LED module build in a high-performance LED for different usage, such illuminate, express program status, or make visual presentation. User just need to provide voltage, then can control the brightness by the corresponding input.
+## 簡介
+白色LED模組使用了高效能LED燈,能夠用作照明,表達程序狀態,或是製造視覺效果。簡單的操作方式,透過改變電壓就能夠控制亮度。
 <P>
 
 
-## The principle
-The LED is a two-lead semiconductor light source. Under electroluminescence theory, when a suitable voltage is applied to the leads, electrons are able to release energy in the form of photons, which means emit of light. The color of light emitted depend on the energy level drop when doing electroluminescence, it is relative to material of the semiconductor.<P>
+## 原理
+LED全稱發光二極體,通過電場發光理論,當電流通過時,電子會與元素間的電洞進行複合過程,電子流失能量時會以光的形式釋放能量。光的顏色根據二極體的不同成份而有所不同。
+<P>
 ![auto_fit](images/White_LED_1.png)
 
 
 
-## Specification 
-* Operate voltage: 3 - 5V
-* Power consumption: 0.06W
-* Efficiency: 90 lm/W
+## 規格
+* 操作電壓: 3V ~ 5V
+* 功率: 0.06W
+* 效能: 90 lm/W
 
-## Pinout Diagram
+## 針腳
 
-|Pin|Function|
+|針腳|功能|
 |--|--|
-|G|Ground|
-|V|Voltage Supply|
-|S|Signal Input(Digital/Analog)|
+|G|接地|
+|V|電源供應|
+|S|訊號輸入(數位/類比)|
 
-## Outlook and Dimension
+##  外觀及大小
 ![pic_70](images/White_LED_2.png)
 
-Size: 25mm X 25mm
+大小: 25mm * 25mm
 
-## Quick to Start/Sample
+## 快速指引
 
-* Connect the sensor to development board (direct plugin or using wire)
+* 把白色LED燈連接到開發板上(直接插入或使用連接線)
 ![auto_fit](images/White_LED_3.png)<P>
 
-* Open Makecode, using the https://github.com/smarthon/pxt-smartcity PXT <P>
+* 打開Makecode, 使用https://github.com/smarthon/pxt-smartcity 擴展 <P>
 ![auto_fit](images/White_LED_4.png)<P>
 
-* Set different buttons to on/off the LED
+* 設定不同按鈕去開或關LED
 ![auto_fit](images/White_LED_5.png)
 
-## Result
-Press A button the turn off the LED (set to 0)
+## 結果
+按A按鈕去關閉LED(設成0)
 ![auto_fit](images/White_LED_6.jpg)
 
-Press B button the turn on the LED (set to 1023)
+按B按鈕去打開LED(設成1023)
 ![auto_fit](images/White_LED_7.jpg)
 
 
