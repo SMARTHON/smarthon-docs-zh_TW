@@ -1,85 +1,91 @@
-# Case 01: Automated Smart Playground Lamp
+# 案例1: 自動化感應街燈
 
-Level: ![level](images/level1.png)
+程度: ![level](images/level1.png)
 ![auto_fit](images/Case1/case-01_1.png)<P>
 
 
-## Goal
+## 目標
 <HR>
-Make a smart playground lamp by detecting the motion nearby.<P>
+製作一個能感應附近活動的智能街燈。<P>
 
-## Background
+## 背景
 <HR>
-<span id="subtitle">What is smart playground lamp?</span><P>
+<span id="subtitle">甚麼是智能街燈?</span><P>
 
-Smart playground lamp is a lamp which can open automatically when someone passes by. Installing an
-auto-light can help the earth save electricity. When no one passes by, the light will automatically turn off.<P>
+智能街燈能夠在有人活動時自動開啟,無人時自動關閉,以節省電力。<P>
 
-<span id="subtitle">Smart playground lamp operation</span><P>
+<span id="subtitle">運作原理</span><P>
 
-Motion sensor should be able to detect if there are people moving in the playground.<BR>
-If there are people moving in the playground, the LED light should turn on, vice versa.<BR>
+以附上的運動傳感器偵察附近的活動。如果傳感器回報 TRUE,則反映有人在附近,
+街燈會自動開啟,反之亦然。<BR>
 
 ![pic_60](images/Case1/Concept-diagram-Case1.png)<P>
 
-## Part List
+在以上邏輯圖可見,整個系統依賴「如果...那麼」邏輯運行。
+
+## 所用部件
 <HR>
 
 ![auto_fit](images/Case1/Case1_parts.png)<P>
 
 
-## Assembly step
+## 組裝步驟
 <HR>
 
-<span id="subtitle">Step 1</span><BR><P>
-Attach motion sensor and white LED to A1 model with M4 * 10mm screws and nuts.<BR><P>
+<span id="subtitle">步驟一.</span><BR><P>
+把運動傳感器和白色 LED 燈用 M4”10 毫米螺絲螺母組裝到 A1 卡板上。<BR><P>
 ![auto_fit](images/Case1/Case1_ass1.png)<P>
-<span id="subtitle">Step 2</span><BR><P>
-Assembly completed!<BR><P>
+<span id="subtitle">步驟二.</span><BR><P>
+組裝完成!<BR><P>
 ![pic_40](images/Case1/Case1_ass2.png)<P>
 
 
-## Hardware connect
+## 線路連接
 <HR>
 
-Connect Motion sensor to the P0 port of Smarthon IoT:bit<BR><P>
-Connect LED light to the P3 port of Smarthon IoT:bit<BR><P>
+連接運動傳感器和 IoT:bit 的 P0 端口<BR><P>
+連接白色 LED 燈和 IoT:bit 的 P3 端口<BR><P>
 <BR>![auto_fit](images/Case1/Case1_hardware.png)
 <P>
+注意:<BR>
 
-## Programming (MakeCode)
+>1.根據顏色連接接線和端口
+>2.P0 內建線路予蜂鳴器。在使用 P0 端口予其他外接設備時遇上問題,建議查
+看位於 IoT:bit 右上的蜂鳴器開關狀態
+
+## 編程 (MakeCode)
 <HR>
 
-<span id="subtitle">Step 1. Disable micro:bit LED.</span><BR><P>
-* Snap `led enable false` to `on start` 
-* Note that P3 is used as LED in default setting, LED need to be disable 
+<span id="subtitle">步驟一. 關閉 micro:bit 上的內建 LED</span><BR><P>
+* 在「燈光」模組裏尋找啟用設為”FALSE”並加入至「在啟動時」 
+* 因為P3預設是用於控制Micro:bit的LED,所以需先關閉
 ![auto_fit](images/Case1/Case1_p1.png)<P>
 
-<span id="subtitle">Step 2. Turn on LED by motion sensor</span><BR><P> 
-* Drag `forever` from `Basic`
-* Snap `if statement` into `forever`
-* Set `get motion (triggered or not) at P0 = true`, into `if statement` that’s say motion is triggered, someone passes by. 
-* Then, `turn white LED to 1023 at P3` as turning on white LED and pause 10 seconds. 
-* Else, `turn white LED at P3 to 0` as turning off.
+<span id="subtitle">步驟二. 以運動傳感器激活白色 LED 燈</span><BR><P> 
+* 加入「重復無限次」至主程式
+* 插入「如果...那麼」
+* 將”取得運動傳感器接口 P0 == TRUE”設為條件,用來進行其後的判斷
+* 加入”開啟白色 LED 至亮度 1023 接口 P3”和”等待 10 秒”至「如果」區域,這段程序將會在”取得運動傳感器接口 P0 == TRUE”為正確時運行
+* 加入”開啟白色 LED 至亮度 0 接口 P3”至「否則」區域,這段程序將會在”取得運動傳感器接口 P0 == TRUE”為錯誤時運行
 ![pic_90](images/Case1/Case1_p2.png)<P>
 
-<span id="subtitle">Full Solution<BR><P>
+<span id="subtitle">完整答案<BR><P>
 MakeCode: [https://makecode.microbit.org/_X4xYjzHU6d91](https://makecode.microbit.org/_X4xYjzHU6d91)<BR><P>
-You could also download the program from the following website:<BR>
+你可以從以下網頁中下載HEX檔案<BR>
 <iframe src="https://makecode.microbit.org/#pub:_X4xYjzHU6d91" width="100%" height="500" frameborder="0"></iframe>
 
 <P>
 
-## Result
+## 結果
 <HR>
 
-Motion sensor is used to detect if there are people moving in the playground. If there are, the LED light will be turned on; otherwise, it will be turned off.<BR><P>
+如果有人在旁邊移動,運動傳感器將會被觸發。這時候程式就會依照傳感器的狀態決定開燈或是關燈。<BR><P>
 ![auto_fit](images/Case1/Case1_result.gif)<P>
 
-## Think
+## 思考
 <HR> 
 
-Q1. How can you use motion sensors, other than turning  on the light automatically?<BR><P>
+Q1. 除了自動化感應街燈外,還可以怎使用運動傳感器?<BR><P>
 
 <!---
 Q2. How should we reset the programming if we connect the white LED light to P3?<BR><P>
@@ -89,4 +95,4 @@ If we connect white LED light to P3, we need to disable micrbo:bit LED.<BR><P>
 ![auto_fit](images/Case1/Case1_think.png)<P>
 -->
 
-Q2. Can you show motion sensor value on OLED?<P>
+Q2. 你能夠在OLED顯示器上顯示運動傳感器的狀況嗎?<P>

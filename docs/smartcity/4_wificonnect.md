@@ -1,90 +1,88 @@
-# First step: Connect the micro:bit to the Wi-Fi
+# 就能成功添加 SmartCity 及 WiFi IoT:bit PXT擴展
 
-Connecting Wi-Fi is the very first step to access internet services, including ThingSpeak, IFTTT, email, etc. Before you start, make sure your micro:bit device is connected to the Internet.<BR><P>
+在使用各種網絡服務像ThingSpeak, IFTTT, 電郵等之前,需要先把Micro:bit與Wifi路由器連接上,這樣才能存取互聯網。<BR><P>
 ![auto_fit](images/4_ConnectWiFi/Wifi_01.png)<P>
 
 
-## Open the Home Router or Mobile Phone Hotspot
+## 開啟家中的Wifi路由器或是電話上的Wifi熱點
 <HR>
 
-Please sure there is a Wi-Fi signal (with 2.4GHz) available in your area. <BR>
-*5GHz Wi-Fi signal is not supported<P>
-You can either setup a home router or a Wi-Fi hotspot from your mobile phone.<BR><P>
+請留意必須使用2.4Ghz頻道的Wifi發射模式,ESP32不支援5Ghz頻道的Wifi連接 <BR>
+你可以選擇使用家中的Wifi路由器或是由電話Wifi熱點模式所分享的Wifi<BR><P>
 
-<span id="subtitle">a) Setup your home/office Wi-Fi</span><BR><P>
+<span id="subtitle">a) 設定你的Wi-Fi路由器所分享的Wifi</span><BR><P>
 ![auto_fit](images/4_ConnectWiFi/Wifi_02.png)<P>
 
-<span id="subtitle">b) Setup your mobile phone Hotspot </span><BR><P>
-<span id="remarks">* make sure your phone has internet service.</span><BR><P>
+<span id="subtitle">b) 設定你電話熱點分享的Wifi</span><BR><P>
+<span id="remarks">* 請先確定你的電話能夠連接互聯網</span><BR><P>
 ![auto_fit](images/4_ConnectWiFi/Wifi_03.png)<P>
 
-<span id="subtitle">For android:</span><BR><P>
+<span id="subtitle">Android電話的設定方法:</span><BR><P>
 ![auto_fit](images/4_ConnectWiFi/Wifi_03a.png)<P>
-<span id="subtitle">For iPhone:</span><BR><P>
+<span id="subtitle">iPhone的設定方法:</span><BR><P>
 ![auto_fit](images/4_ConnectWiFi/Wifi_03b.png)<P>
 
 
-## Programming (Makecode)
+## 編程(MakeCode)
 <HR>
 
-<span id="subtitle">Step 1: Initialize the IoT:bit</span><BR><P>
-Before you start, you need to initialize the IoT:bit.<BR>
-* Go to IoT:bit tab.
-* Snap `Initialize IoT:bit TX P16 RX P8` to `on start`
+<span id="subtitle">第一步驟:初始化IoT:bit</span><BR><P>
+每次編程時,你需要先初始化IoT:bit才能夠正常使用<BR>
+* 前往IoT:bit分頁
+* 把「‵初始化IoT:bit TX RX‵」拖動到「‵當啟動時‵」裡面
 ![auto_fit](images/4_ConnectWiFi/Wifi_p1.png)<P>
 
-<span id="subtitle">Step 2: Connect to the Wi-Fi</span><BR><P>
-After initializing, you can connect to the Wi-Fi<BR>
-* Go to IoT:bit tab
-* Snap `Set Wi-Fi to ssid pwd` to `on start` following initialize
-* Enter your Wi-Fi name and password. Here we set `smarthon` as `SSID` and “12345678” as `password`.
+<span id="subtitle">第二步驟: 連接Wifi</span><BR><P>
+當你初始化IoT:bit後,你可以開始連接Wifi<BR>
+* 前往IoT:bit分頁
+* 把「`連接到WiFi 名稱 密碼`」拖動到「`初始化IoT:bit TX RX`」下方
+* 輸入你的Wifi名稱以及密碼
 ![auto_fit](images/4_ConnectWiFi/Wifi_p2.png)<P>
 
-<span id="subtitle">Step 3: Show the Tick if it is connected</span><BR><P>
-`On WiFi connected` is an event handler. It will be triggered once after connected with WiFi.
-After the WiFi is connected, it provide two variable `IP_Address` and `Device_ID` for you to 
-control the IoT:bit though network.<BR>
-* Snap `On WiFi connected` to the stage
-* On `Basic` tab, snap `show icon heart` inside `On WiFi connected`
-* Swtich the heart to tick<BR>
+<span id="subtitle">第三步驟: 成功連接後以圖案表達</span><BR><P>
+「`當Wifi連接後`」是一個事件處理器,當你成功連接wifi後,裡面的程式就會被執行。當你成功連接後,會獲得兩個變數,分別為IP地址及裝置ID,利用這兩個變數可以令你輕易地透過網路上控制你的Micro:bit。<BR>
+* 拖動「`當Wifi連接後`」到平台上
+* 在「`基本`」分頁,拖動「`顯示 圖示`」到「`當Wifi連接後`」裡面
+* 把圖示切換成剔<BR>
 
 ![auto_fit](images/4_ConnectWiFi/Wifi_p3.png)<P>
 
-<span id="subtitle">Step 4: Show you IP</span><BR><P>
-If you want to see the IP address, you may show it on the OLED display.<BR>
-* Go to OLED tab
-* Snap “initialize OLED with width…height..” to on start 
-* Snap the “show string“ inside the On WiFi connected 
-* Draw the variable from On WiFi connected to the “show string” block placeholder
-* You may control the text format by the function in Text tab<BR>
+<span id="subtitle">第四步驟: 顯示你的IP地址</span><BR><P>
+如果你想知道你的IP地址,你可以把這顯示在顯示屏上<BR>
+* 前往「`OLED`」分頁
+* 把「`OLED 初始化 寛128 高64`」拖動到「`當啟動時`」裡
+* 把「`顯示字符串`」拖動到「`當WiFi連接後`」裡面
+* 把「`當WiFi連接後`」裡面的變數「`IP_Address`」拖動到「`顯示字符串`」的輸入格裡
+* 你亦可以透過 「`進階->文字`」分頁裡的功能控制顯示的文字格式<BR>
 
 ![auto_fit](images/4_ConnectWiFi/Wifi_p3_5.png)<P>
 
-<B><u>Optional</u></B>:<BR>
-On WiFi disconnected handler will be triggered when the WiFi connection is loss, it may useful when you get disconnection to the WiFi Station during the application running.<BR>
+<B><u>額外嘗試</u></B>:<BR>
+和「`當Wifi連接後`」接收成功連接Wifi事件一樣,當你的Wifi連線斷開時,亦會觸發另一個事件。這時候你可以用「`當Wifi斷線`」來得知情況及原因,並作出相應的處理,如顯示X圖案及把錯誤碼顯示在顯示屏上<BR>
 
 ![auto_fit](images/4_ConnectWiFi/Wifi_p5.png)<P>
 
-<span id="subtitle">Full Solution<BR><P>
+<span id="subtitle">完整程式<BR><P>
 MakeCode: [https://makecode.microbit.org/_53Yf8qcx521m](https://makecode.microbit.org/_53Yf8qcx521m)<BR><P>
-You could also download the program from the following website:<BR>
+你亦可以從以下網頁下載程式HEX檔案<BR>
 <iframe src="https://makecode.microbit.org/#pub:_53Yf8qcx521m" width="100%" height="500" frameborder="0"></iframe>
 
 
-## Result
+## 成果
 <HR>
 
-<span id="subtitle">Step 1</span><BR><P>
-Load the program to the micro:bit and turn on the IoT:bit by using USB<BR><P>.
+<span id="subtitle">第一步驟</span><BR><P>
+把編寫好的程式先上載到Micro:bit,插入IoT:bit後,連接電源並打開開關<BR><P>.
 ![auto_fit](images/4_ConnectWiFi/Wifi_result1.png)<P>
 
-<span id="subtitle">Step 2</span><BR><P>
-Wi-Fi IoT:bit will start to connect to internet, when the connection is successful, the IP Address would be shown. AND the tick icon will be shown.<BR><P>
+<span id="subtitle">第二步驟</span><BR><P>
+程式會開始執行並嘗試連接Wifi,當成功連接後,會顯示出路由器分派給Micro:bit的IP地址。同時Micro:bit上也會顯示圖案<BR><P>
 ![auto_fit](images/4_ConnectWiFi/Wifi_result2.png)<P>
 
-After the IoT:bit is connected to the wifi, when disconnect to the router. It will show “cross” symbol and the error code will be shown. Normally, the code `201` means “No AP Found”. <BR>The reason might be:
-1. Router is too far away
-2. No that AP actually 
-3. The typo on SSID/PWD
+若你有在編程時添加好斷線的處理,你亦可以在此測試。當你連接Wifi後,嘗試把路由器關閉以切斷與Micro:bit的連線,這次將會在斷線後顯示X圖案及提示錯誤碼201,這代表「沒找到路由器」(因為我們已關上)。<BR>
+斷線的原因通常是: 
+1. 距離路由器過遠
+2. 沒法找到該路由器
+3. 輸入錯誤的名稱或密碼
 
 ![auto_fit](images/4_ConnectWiFi/Wifi_result3.png)<P>

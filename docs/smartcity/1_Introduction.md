@@ -1,58 +1,60 @@
-# Introduction
+# 簡介
 
-## Introduction
-Smarthon Smart City IoT Starter kit is designed to introduce Internet of things (IoT). With basic knowledge of computing knowledge and electronics provided in the kit, you can be a city creator and build a unique IoT system in the city. Based on Smarthon IoT board, which is compatible with multiple sensors and actuators, you can design city features; for example: using sensors to detect traffic status and upload city information to the internet.<BR><P>
+## 簡介
+Micro:bit 智慧城市是專門為了教授物聯網而設的套裝。透過學習基本的電腦編程及電子知識,你可以利用物聯網,建設一個獨一無二的智慧城市。套裝內提供的Smarthon IoT 開發板,能夠使用各種傳感器及驅動器,令你能夠在設計中實現多種有趣的功能。例如,使用傳感器去偵測交通狀況然後上載到互聯網,令你能夠作出統計或是控制等。
+
+<BR><P>
 
 ![auto_fit](images/1_Intro/box.jpg)<BR><P>
 
 
-## Application Scene
-<H3>Automated Playground Lamp</H3><P>
+## 應用場景
+<H3>自動感應路燈</H3><P>
 
 ![auto_fit](images/1_Intro/case01.png)
 
-<H3>Smart Car park Access Barrier</H3><P>
+<H3>智慧泊車系統</H3><P>
 
 ![auto_fit](images/1_Intro/case02.png)
 <P>
-For more practical case, please refer to the materials.<P>
+如想知道更多應用場景,請參考說明書<P>
 
-## Component List
+## 零件列表
 
 ![auto_fit](images/1_Intro/PartList.png)
 
-No | Component |Quantity|Remark
+No. | 零件 |數量|備註
 :-: | :-- | :--| :--
-|Micro: bit|1|not included
+|Micro: bit|1|不包含
 1|Smarthon IoT:bit|1|
-2|Raindrop sensor|1|
-3|Traffic Light|1|
-4|Ultrasonic Distance Sensor|1|
-5|White LED|1|
-6|Multi-Colour LED (WS2812)|1|
-7|Light Sensor|1|
-8|Noise sensor|1|
-9|PIR Motion Sensor|1|
-10|Temperature and Humidity sensor (DHT11)|1|
-11|180° Servo|1|
-12|Cardboard-wooden Model|1|
-13|City Map|1|
-14|Module Wire|9|
-15|Extension Wire(3P*5,4P*2,Servo*1)|8|
-16|Screw M2*10mm|12|
-17|Screw M3*10mm|6|
-18|Screw M4*10mm|30|
-19|Nut M2|12|
-20|Nut M3|6|
-21|Nut M4|30|
-22|Paper Clip|3|
-23|L-shaped Stand|2|
-24|Screwdriver|1|
-25|Sand Paper|2|
-26|Blu Tack|1|
-27|USB Cable|1|
-28|Battery Holder|1|
-29|Smart City Kit Manual Book|1|
+2|雨水傳感器|1|
+3|交通燈模組|1|
+4|超音波距離傳感器|1|
+5|白色LED|1|
+6|彩色LED燈(WS2812)|1|
+7|光度傳感器|1|
+8|聲音傳感器|1|
+9|運動傳感器|1|
+10|DHT11溫濕度傳感器|1|
+11|180° 舵機|1|
+12|紙板模型|1|
+13|城市地圖|1|
+14|模組連接線|9|
+15|延長線(3P*5,4P*2,Servo*1)|8|
+16|縲絲 M2*10mm|12|
+17|縲絲 M3*10mm|6|
+18|縲絲 M4*10mm|30|
+19|縲帽 M2|12|
+20|縲帽 M3|6|
+21|縲帽 M4|30|
+22|紙夾|3|
+23|L型支架|2|
+24|縲絲批|1|
+25|沙紙|2|
+26|黏膠(寶貼 Blu Tack)|1|
+27|USB連接線|1|
+28|電池倉(AA*4)|1|
+29|智慧城市套件使用手冊|1|
 
 
 
