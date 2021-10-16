@@ -1,86 +1,93 @@
-# Case 03: Garbage disposal system 
+# 案例 03: 智能垃圾桶
 
-Level: ![level](images/level2.png)
+程度: ![level](images/level2.png)
 ![auto_fit](images/Case3/case-03.png)<P>
 
 
-## Goal
+## 目標
 <HR>
 
-Make a smart garbage bin by showing different colors of light according to the volume of garbage inside.<BR><P>
+製作一個會根據內部當前容量改變 LED 燈顏色的智能垃圾桶。<BR><P>
 
-## Background
+## 背景
 <HR>
 
-<span id="subtitle">What is garbage disposal system?</span><P>
-LED light on the garbage bin can show people the amount of garbage inside the garbage bin so that garbage truck can easily determine if the garbage is full or not. This can minimize the wastage of the garbage bags and become a more environmental-friendly city.<BR><P>
+<span id="subtitle">甚麼是智能垃圾桶?</span><P>
+垃圾桶上的 LED 燈可以告訴人們桶內的當前容量,收集工人可以輕易判斷有否需要清
+理垃圾。這樣可以減少更換垃圾袋的次數,從而減少膠袋用量。<BR><P>
 
-<span id="subtitle">Garbage disposal system operation</span><P>
-The distance sensor should be able to sense the amount of garbage is inside the garbage bin. Multi-colour LED can be used to emit different colour of light (green and red light), which represent the emptiness of the garbage bin.<BR><P>
+<span id="subtitle">運作原理</span><P>
+距離傳感器可以探測桶內垃圾高度,從而轉化為當前容量。彩色 LED 燈則會隨著容量
+轉變。<BR><P>
 ![pic_70](images/Case3/Concept-diagram-Case3.png)<P>
 
-## Part List
+## 所用部件
 <HR>
 
 ![pic](images/Case3/Case3_parts.png)<P>
 
-## Assembly step
+## 組裝步驟
 <HR>
 
-<span id="subtitle">Step1</span><P>
-Attach the Multi-colour LED to C1 model with M4 * 10mm screws and nuts.<BR><P>
+<span id="subtitle">步驟一</span><P>
+用 M4”10 毫米螺絲螺母把距離傳感器組裝到 C2 卡板上。<BR><P>
 ![pic](images/Case3/Case3_ass1.png)<P>
-<span id="subtitle">Step 2</span><P>
-Attach the distance sensor to C2 model with M4 * 10mm screw and nuts.<BR><P>
+<span id="subtitle">步驟二</span><P>
+用 M4”10 毫米螺絲螺母把彩色 LED 燈組裝到 C1 卡板上。<BR><P>
 ![pic](images/Case3/Case3_ass2.png)<P>
-<span id="subtitle">Step 3</span><P>
-Put together all the cardboard parts (C1-C2).<BR><P>
+<span id="subtitle">步驟三</span><P>
+組合 C1 和 C2<BR><P>
 ![pic_60](images/Case3/Case3_ass3.png)<P>
-<span id="subtitle">Step 4</span><P>
-Assembly completed!<BR><P>
+<span id="subtitle">步驟四</span><P>
+組裝完成!<BR><P>
 ![pic_60](images/Case3/Case3_ass4.png)<P>
 
-## Hardware connect
+## 線路連接
 <HR>
 
-Connect the Distance Sensor to P14 (trig)/ P15 (echo) port of IoT:bit<BR><P>
-Connect Multi-color LED to P1 port of IoT:bit<BR><P>
+連接距離傳感器和 IoT:bit 的 P14(trig)/P15(echo)端口<BR><P>
+連接彩色 LED 燈和 IoT:bit 的 P1 端口<BR><P>
 ![pic](images/Case3/Case3_hardware.png)<P>
 
-## Programming (MakeCode)
+*注意
+
+>1. 根據顏色連接接線和端口
+>2. P0 內建線路予蜂鳴器。在使用 P0 端口予其他外接設備時遇上問題,建議查看位於 IoT:bit 右上的蜂鳴器開關狀態
+
+## 編程 (MakeCode)
 <HR>
 
-<span id="subtitle">Step 1. Set variable and initialize multi-colour LED</span><P>
-* Inside `on start`, snap `set variable distance to 0` from `variables`
-* Snap `set strip to NeoPixel at pin... ` from `Neopixel`. Set pin P1 with 1 led of the block.
-* Snap `strip set brightness` from `Neopixel` > `more` and set brightness 50
-* Snap `pause` to wait 5 seconds
+<span id="subtitle">步驟一. 定義新變數和啟動彩色 LED 燈</span><P>
+* 定義新變數”distance”並設值為 0
+* 在”Neopixel”模組中加入”變數 strip 設為 NeoPixel at pin P0 with 1 leds as RGB(BGB) format”至”當啟動時”
+* 插入”strip set brightness 50”
+* 插入”等待 5 秒”
 ![auto_fit](images/Case3/Case3_p1.png)<P>
 
-<span id="subtitle">Step 2. Get distance value</span><P>
-* Inside block `forever`. Set `distance` to `get distance unit cm trig P14 echo P15`, that’s say get the distance value by connecting the distance sensor to P14 and P15
-* Snap `if statement` into `forever`, set `distance ≤ 4` into `if statement`
-* Snap `Pause` to the loop to wait 1 second for next checking
+<span id="subtitle">步驟二. 讀取距離讀數</span><P>
+* 在「重復無限次」加入”變數 distance 設為取得量度距離使用單位厘米 trig 接口 P14echo 接口 P15”
+* 加入”如果...那麼”,設”distance ≤ 4”為前提
+* 加入”等待一秒鐘”
 ![pic_90](images/Case3/Case3_p2.png)<P>
 
-<span id="subtitle">Step 3. Show indicating colours with distance value</span><P>
-* If distance ≤ 4, then `strip show color red`, else `strip show color green`
+<span id="subtitle">步驟三. 根據回報距離顯示相應距離</span><P>
+* 如果 distance ≤ 4, strip 會顯示紅色,否則綠色
 ![pic_90](images/Case3/Case3_p3.png)<P>
 
 
-<span id="subtitle">Full Solution<BR><P>
+<span id="subtitle">完整答案<BR><P>
 MakeCode: [https://makecode.microbit.org/_F2x6j9UaM6wf](https://makecode.microbit.org/_F2x6j9UaM6wf)<BR><P>
-You could also download the program from the following website:<BR>
+你可以在以下網頁下載HEX檔案:<BR>
 <iframe src="https://makecode.microbit.org/#pub:_F2x6j9UaM6wf" width="100%" height="500" frameborder="0"></iframe>
 
 
-## Result
+## 結果
 <HR>
 
-The distance sensor can return the distance value between the top of the garbage bin and the level of garbage inside the garbage bin. The LED light is used to indicate if the bin is full or not. If it is empty or there are some garbage, the LED turns green, if it is full, the LED turns red.<BR><P>
+距離傳感器會傳回桶內垃圾與垃圾桶頂部的距離。LED 燈反映垃圾桶是否滿載。當滿載時,變為紅色,否則為綠色。<BR><P>
 ![pic](images/Case3/Case3_result.gif)<P>
 
-## Think
+## 思考
 <HR>
 
-Q1. How to make sound notification if there are full of garbage (i.e. using buzzer)?<BR><P>
+Q1. 如何加入音效提示滿載?(例如利用蜂鳴器)<BR><P>

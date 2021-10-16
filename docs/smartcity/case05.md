@@ -1,102 +1,103 @@
-# Case 05: Car speed monitoring 
+# 案例 05: 智能監速器
 
-Level: ![level](images/level3.png)
+程度: ![level](images/level3.png)
 ![auto_fit](images/Case5/case-05.png)<P>
 
-## Goal
+## 目標
 <HR>
 
-Make a car speed monitor to detect car speed on the road.<BR><P>
+製作一個智能監速器。<BR><P>
 
-## Background
+## 背景
 <HR>
 
-<span id="subtitle">What is car speed monitoring?</span><P>
-It is an automatic system to check car speed on the road at certain time interval. There are cars often over-speed causing traffic accidents, therefore installing a car speed monitoring is a must to minimize the chances of traffic accidents.<BR><P>
+<span id="subtitle">甚麼是測速器?</span><P>
+測速系統能根據車輛在一定時間內移動距離得出其車速。 安裝測速系統能有效減少交
+通意外發生。<BR><P>
 
-<span id="subtitle">Car speed monitor operation</span><P>
-The distance sensor measures two different distances at certain time interval, and therefore car speed can be calculated and shows it on the OLED. <BR><P>
-On every 500ms (0.5 second), the distance sensor will keep updating distance between the sensor and the car. <BR><P>
+<span id="subtitle">運作原理</span><P>
+距離傳感器可以在兩個時間點測量車輛與其之間的距離,從而計算其速率。 <BR><P>
+每 0.5 秒,傳感器會量度車輛與其之間距離。 <BR><P>
 ![auto_fit](images/Case5/Case5_des1.png)<P>
-If distance 1 ≥ distance 2, that’s say the car is moving towards. The moving distance is distance1 -distance2. The speed is (distance1-distance2)/0.5 (unit: cm/s) <BR><P>
-If distance 1 = distance 2, that’s say the car has stop moving or there are no cars. The moving distance and speed are 0 <BR><P>
-For car speed < 0, it is the exceptional case (the car turns left/right and leave the road) and the speed will not be shown. <BR><P>
-A bar graph on micro:bit LED is shown to indicate the instant speed of the cars. <BR><P>
+根據物理學,速率 = (距離一 – 距離二), 這時候可得知有三種情況。
+距離一 > 距離二.. 車輛正靠近
+距離一 = 距離二.. 車輛已停止移動/路面沒有車輛
+距離一 < 距離二.. 車輛正轉向/駛離,此情況無視
+這速率可以在 micro:bit LED 以圖表表達車速..<BR><P>
 ![auto_fit](images/Case5/Case5_des2.png)<P>
 
 ![pic_70](images/Case5/Concept-diagram-Case5.png)<P>
-## Part List
+## 所用部件
 <HR>
 
 ![auto_fit](images/Case5/Case5_parts.png)<P>
 
-## Assembly step
+## 組裝步驟
 <HR>
 
-<span id="subtitle">Step 1</span><P>
-Attach the OLED to D1 model using M2 * 10mm screw and nut.<BR><P>
+<span id="subtitle">步驟一</span><P>
+用 M2”10 毫米螺絲螺母把 OLED 組裝到 D1 卡板上。<BR><P>
 ![auto_fit](images/Case5/Case5_ass1.png)<P>
-<span id="subtitle">Step 2</span><P>
-Put D2 model onto the D1 model.<BR><P>
+<span id="subtitle">步驟二</span><P>
+組裝 D1 和 D2。<BR><P>
 ![auto_fit](images/Case5/Case5_ass2.png)<P>
-<span id="subtitle">Step 3</span><P>
-Assembly completed!
+<span id="subtitle">步驟三</span><P>
+底座組裝完成!
 ![pic_40](images/Case5/Case5_ass3.png)<P>
-<span id="subtitle">Step 4</span><P>
-Attach the distance sensor to E1 model using M4 screw and nut.<BR><P>
+<span id="subtitle">步驟四</span><P>
+用 M4 螺絲螺母把距離傳感器組裝到 E1 卡板。<BR><P>
 ![auto_fit](images/Case5/Case5_ass4.png)<P>
-<span id="subtitle">Step 5</span><P>
-Put the E2 model onto E1 model.<BR><P>
+<span id="subtitle">步驟五</span><P>
+組裝 E1 和 E2 卡板。<BR><P>
 ![auto_fit](images/Case5/Case5_ass5.png)<P>
-<span id="subtitle">Step 6</span><P>
-Assembly completed!<BR><P>
+<span id="subtitle">步驟六</span><P>
+組裝完成。!<BR><P>
 ![pic_40](images/Case5/Case5_ass6.png)<P>
 
-## Hardware connect
+## 線路連接
 <HR>
 
-Connect the Distance Sensor to P14 (trig)/ P15 (echo) port of IoT:bit <BR><P>
-Extend the connection of OLED to the I2C connection port of IoT:bit <BR><P>
+連接距離傳感器和 IoT:bit 的 P14(trig)/P15(echo)端口 <BR><P>
+把 OLED 連到 IoT:bit 的 I2C 端口 <BR><P>
 ![auto_fit](images/Case5/Case5_hardware.png)<P>
 
-## Programming (MakeCode)
+## 編程 (MakeCode)
 <HR>
 
-<span id="subtitle">Step 1. Initialize OLED screen</span><P>
-* Drag `Initialize OLED with width:128, height: 64` to `on start`
-* Set `distance1`, `distance2` and `speed` to 0 from `variables`
+<span id="subtitle">步驟一. 啟動 OLED 顯示屏</span><P>
+* 初始化OLED顯示屏(128闊64高)
+* 宣告新變數”distance1”,”distance2”,”speed”為0
 ![auto_fit](images/Case5/Case5_p1.png)<P>
 
-<span id="subtitle">Step 2. Set up function (calculate_Speed)</span><P>
-* Set up a new function `calculate_Speed` from `Advanced` > `Functions`. 
-* Set `distance1` to `get distance unit cm trig P14 echo P15` (distance from the car to the distance sensor before 0.5 second)
-Drag `Pause` to wait 500ms and set `distance2` to `get distance unit cm trig P14 echo P15` (distance from the car to the distance sensor after 0.5 second)
-* By the equation of speed = distance / time. We get the `speed` of the moving car to (`distance1`-`distance2`)/0.5 (unit: cm/s)
+<span id="subtitle">步驟二. 宣告函式(calculate_Speed)</span><P>
+* 在進階模塊「函式」宣告新函式 "calculate_Speed"
+* 從”取得距離...”中取得數值,分別放入”distance1”和”distance2”
+* 根據速率公式,設”speed” 為”(distane1 – distance2) / 0.5”
 ![auto_fit](images/Case5/Case5_p2.png)<P>
 
-<span id="subtitle">Step 3. Calculate car speed</span><P>
-* In block `forever`, call function `calculate_Speed` from `Advanced` > `Functions` to get the speed of the moving car
-* Snap `If statement` into the loop
-* If `speed ≥0`, then it will `plot bar graph of …` from `Led` and draw variable `speed` into the plotted value. Set value up to 20 
-* Snap `clear OLED display` from `OLED` to avoid overlap
-* Snap `show string` and show value of variables `distance1`, `distance2` and `speed`
+<span id="subtitle">步驟三. 計算車速</span><P>
+* 在「重復無限次」叫喚”calculate_Speed”
+* 加入”如果...那麼”,”speed ≥ 0”為前設
+* 在邏輯中加入”點亮長條圖 顯示值為 speed 最大值為 20”
+* 加入”清除顯示”,”新行顯示字符串(Distance1: distance1), (Distance2: distance2), (Speed: speed)”
 ![auto_fit](images/Case5/Case5_p3.png)<P>
 
 
-<span id="subtitle">Full Solution<BR><P>
+<span id="subtitle">完整答案<BR><P>
 MakeCode: [https://makecode.microbit.org/_0Y0h5MWPde4A](https://makecode.microbit.org/_0Y0h5MWPde4A)<BR><P>
-You could also download the program from the following website:<BR>
+你可以在以下網頁下載HEX檔案:<BR>
 <iframe src="https://makecode.microbit.org/#pub:_0Y0h5MWPde4A" width="100%" height="500" frameborder="0"></iframe>
 
 
-## Results
+## 結果
 <HR>
 
-It will keep checking the distance of cars from distance sensor by distance sensor in every 500ms. The speed of the cars will be shown on OLED. A bar chart of speed will be shown on micro:bit LED also.<BR><P>
+距離傳感器會持續監察車輛的距離。車速經計算後會顯示在 OLED 顯示屏,同時以圖
+表形式表現在 LED 上。<BR><P>
 ![auto_fit](images/Case5/Case5_result.gif)<P>
 
-## Think
+## 思考
 <HR>
 
-How can we set a sound alert to notify that there is car over-speeding?<BR><P>
+如何設定音效提示以警示超速?<BR><P>
 

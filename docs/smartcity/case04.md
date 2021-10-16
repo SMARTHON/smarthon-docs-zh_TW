@@ -1,87 +1,88 @@
-# Case 04: Urban noise detection
+# 案例 04: 智能都市噪音監控
 
-Level: ![level](images/level2.png)
+程度: ![level](images/level2.png)
 ![auto_fit](images/Case4/case-04_1.png)<P>
 
-## Goal
+## 目標
 <HR>
 
-Make a noise detection point to detect the noise volume near the roadside using noise sensor.<BR><P>
+製作一個能夠偵查路邊噪音的監測點。<BR><P>
 
-## Background
+## 背景
 <HR>
 
-<span id="subtitle">What is urban noise detection?</span><P>
-It is a system to detect noise near the road as noise pollution caused by cars on the road seriously affect the living standard of people. By installing a monitor to detect the noise volume near the roadside can help engineer to gather noise information and find solution to solve the problem in the future.<BR><P>
+<span id="subtitle">甚麼是都市噪音監測?</span><P>
+都市噪音監測系統監測公路上的噪音污染,因為過大的噪音會降低周遭人們的生活水
+平。安裝一個系統可以幫助工程師收集有關數據用於城市規劃。<BR><P>
 
-<span id="subtitle">Noise detection operation</span><P>
-The noise sensor can detect the volume in dB near the roadside and show the volume on the OLED. A bar graph of sound intensity will be shown on the micro:bit.<BR><P>
+<span id="subtitle">運作原理</span><P>
+噪音傳感器可以偵測公路上的噪音水平,數據可以以圖表形式顯然。<BR><P>
 ![pic_70](images/Case4/Concept-diagram-Case4.png)<P>
 
 
-## Part List
+## 所用部件
 <HR>
 
 ![pic](images/Case4/Case4_parts.png)<P>
 
-## Assembly step 
+## 組裝步驟
 <HR>
 
-<span id="subtitle">Step 1</span><P>
-Attach the OLED to D1 model with M2 * 10mm screws and nuts.<BR><P>
+<span id="subtitle">步驟一</span><P>
+用 M2”10 毫米螺絲螺母把 OLED 組裝至 D1 卡板。<BR><P>
 ![pic](images/Case4/Case4_ass1.png)<P>
-<span id="subtitle">Step 2</span><P>
-Attach noise sensor to D1 model with M4 * 10mm screws and nuts.<BR><P>
+<span id="subtitle">步驟二</span><P>
+用 M4”10 毫米螺絲螺母把噪音乓 感器組裝至 D1 卡板。<BR><P>
 ![pic](images/Case4/Case4_ass2.png)<P>
-<span id="subtitle">Step 3</span><P>
-Put together all the cardboard parts (D1-D2).<BR><P>
+<span id="subtitle">步驟三</span><P>
+組裝 D1 和 D2。<BR><P>
 ![pic](images/Case4/Case4_ass3.png)<P>
-<span id="subtitle">Step 4</span><P>
-Assembly completed!<BR><P>
+<span id="subtitle">步驟四</span><P>
+組裝完成!<BR><P>
 ![pic_40](images/Case4/Case4_ass4.png)<P>
 
-## Hardware connect
+## 線路連接
 <HR>
 
-Connect Noise Sensor to P1 port of IoT:bit<BR><P>
-Extend the connection of OLED to I2C connection port of IoT:bit<BR><P>
+連接噪音傳感器和 IoT:bit 的 P1 端口<BR><P>
+把 OLED 接到 I2C 端口<BR><P>
 ![pic](images/Case4/Case4_hardware.png)<P>
 
-## Programming (MakeCode)
+## 編程(MakeCode)
 <HR>
 
-<span id="subtitle">Step 1</span><P>
-<span id="subtitle">Step 1. Initialize OLED screen and variable
-* Drag `Initialize OLED with width:128, height: 64` to `on start`
-* Set `Noise` to 0 from `variables`
+<span id="subtitle">步驟一. 啟動 OLED 顯示屏和宣告新變數</span><p>
+* 初始化 OLED (128闊64高)
+* 宣告變數”Noise”並設值為 0
 ![auto_fit](images/Case4/Case4_p1.png)<P>
 
-<span id="subtitle">Step 2. Show noise value on micro:bit LED</span><P>
-* In block `forever`. Set `noise` to round `get noise level (dB) at pin P1`
-* Drag `plot bar graph of …` from `Led` and draw variable `Noise` into the plotted value. Set value up to 100
-* Drag `Pause` to the loop for wait for 0.5 second for next checking
+<span id="subtitle">步驟二. 在 OLED 上顯示噪音數值</span><P>
+* 在「重復無限次」加入”變數 Noise 設為四捨五入取得聲音傳感感器數值接口 P1
+* 在「燈光」模塊中加入點亮長條圖顯示值為 Noise, 最大值為 100
+* 等待 0.5 毫秒
 ![auto_fit](images/Case4/Case4_p2.png)<P>
 
-<span id="subtitle">Step 3. Show the noise value on OLED screen</span><P>
-* Snap `clear OLED display` from `OLED` to avoid overlap
-* Snap `show string` to the loop and show value of the variable `Noise`
+<span id="subtitle">步驟三. 在 OLED 上顯示噪音數值</span><P>
+* 加入”清除顯示”
+* 加入”新行顯示字符(字申組合(“Noise: ‵Noise‵ dB”))”
 ![auto_fit](images/Case4/Case4_p3.png)<P>
 
 
-<span id="subtitle">Full Solution<BR><P>
+<span id="subtitle">完整答案<BR><P>
 MakeCode: [https://makecode.microbit.org/_TiW9H7CuU5M5](https://makecode.microbit.org/_TiW9H7CuU5M5)<BR><P>
-You could also download the program from the following website:<BR>
+你可以在以下網頁下載HEX檔案:<BR>
 <iframe src="https://makecode.microbit.org/#pub:_TiW9H7CuU5M5" width="100%" height="500" frameborder="0"></iframe>
 
 
-## Results
+## 結果
 <HR>
 
-After initializing WiFi extension board and OLED, micro:bit will show a bar graph for the sound intensity in a city.<BR><P>
+在初始化 IoT:bit 和 OLED 後,將會顯示噪音的圖表。<BR><P>
 ![pic](images/Case4/Case4_result.gif)<P>
 ![pic](images/Case4/Case4_result2.png)<P>
-## Think
+
+## 思考
 <HR>
 
-Q1. How to make a notification if noise pollution problem is serious? i.e. showing red LED<BR><P>
+Q1. 當噪音太大可以如何發出提示?<BR><P>
 

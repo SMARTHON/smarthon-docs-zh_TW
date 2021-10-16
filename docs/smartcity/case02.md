@@ -1,94 +1,107 @@
-# Case 02: Smart Car park Access Barrier
+# 案例 02: 智慧停車場閘門
 
-Level: ![level](images/level2.png)
+程度: ![level](images/level2.png)
 ![auto_fit](images/Case2/case-02.png)<P>
 
-## Goal
+## 目標
 <HR>
 
-Make a smart car park gate which opens automatically if there are vacancies in the car park and there are cars coming in.<BR><P>
+製作一個會根據停車場內車位狀況和是否有來車自動開閉閘門的智慧停車場閘門。<BR><P>
 
-## Background
+## 背景
 <HR>
 
-<span id="subtitle">What is smart car park access barrier?</span><P>
-Smart Car park Access Barrier is used to allow people to live conveniently. It can reduce manpower and time in controlling the gate and manage information (e.g. car park vacancies). It will be opened automatically if there are vacancies in the car park and there are cars coming in.<BR><P>
+<span id="subtitle">甚麼是智慧停車場閘門?</span><P>
+智慧停車場能為人們帶來便利。通過自動偵測停車場內車位狀況,它能夠節省司機等
+候閘門開啟和尋找車位的時間。<BR><P>
 
-<span id="subtitle">Car park gate operation</span><P>
-The car park gate open and close operation is controlled by 180ᵒ servo. It will be opened if there are vacancies in the car park (i.e. detected by light sensor) and cars near the car park gate (i.e. detected by distance sensor). Otherwise, the gate will be closed.<BR><P>
-When there are no vacancies (detected by light sensor), then the gate will keep closed.<BR><P>
+<span id="subtitle">運作原理</span><P>
+180 度舵機控制閘門的開關。如果停車場內尚有空位,閘門會在有車駛近時自動開
+啟。若然已無車位,即使有車到訪,閘門也不會開啟。<BR><P>
 ![pic_70](images/Case2/Concept-diagram-Case2.png)<P>
+從上述示意圖可見,在「重復無限次」裏會一直檢測到訪車輛和場內空位。
 
-
-## Part List
+## 所用部件
 <HR>
 
 ![auto_fit](images/Case2/Case2_parts.png)<P>
 
-## Assembly step
+## 組裝步驟
 <HR>
 
-<span id="subtitle">Step 1</span><BR><P>
-Attach the distance sensor to B1 model with M4 * 10mm screws and nuts. <BR><P>
+<span id="subtitle">步驟一</span><BR><P>
+用 M4”10 毫米螺絲螺母把距離傳感器裝到 B1 卡板上。 <BR><P>
 ![auto_fit](images/Case2/Case2_ass1.png)<P>
-<span id="subtitle">Step 2</span><BR><P>
-Attach the servo to B1 model with M2 * 10mm screws and nuts<BR><P>
+<span id="subtitle">步驟二</span><BR><P>
+用 M2”10 毫米螺絲螺母把 180 度舵機組裝到 B1 卡板上。<BR><P>
 ![auto_fit](images/Case2/Case2_ass2.png)<P>
-<span id="subtitle">Step 3</span><BR><P>
-Attach the B2 model to the servo with servo M2 * 7.5mm sharp screw. Put B3 model onto B1 model.<BR><P>
+<span id="subtitle">步驟三</span><BR><P>
+用 舵機用M2”7.5毫米尖頭螺絲 把 B2 卡板連上舵機。 把 B3 卡板放在
+B1 卡板下。<BR><P>
 ![auto_fit](images/Case2/Case2_ass3.png)<P>
-<span id="subtitle">Step 4</span><BR><P>
-Assembly completed! <BR><P>
+<span id="subtitle">步驟四</span><BR><P>
+組裝完成!<BR><P>
 ![pic_60](images/Case2/Case2_ass4.png)<P>
 
 
-## Hardware connect
+## 線路連接
 <HR>
 
-Connect the Distance Sensor to P14 (trig)/ P15 (echo) port of IoT:bit<BR><P>
-Connect Light Sensor to P0 port of IoT:bit<BR><P>
-Connect 180° Servo to P2 port of IoT:bit<BR><P>
+連接運動傳感器和 IoT:bit 上的 P14(trig)/P15(echo) 端口<BR><P>
+連接光傳感器和 IoT:bit 上的 P0 端口<BR><P>
+連接 180 度舵機和 IoT:bit 上的 P2 端口<BR><P>
 ![auto_fit](images/Case2/Case2_hardware.png)<P>
 
-## Programming (MakeCode)
-<HR>
+*注意<BR>
 
-<span id="subtitle">Step 1. Set variables and servo at start position</span><BR><P>
-* Inside `on start`, snap `set variable distance to 0` and `set light to 0` from `variables`. Snap `Turn Servo to 0 degree at P2`.
+>1.根據顏色連接接線和端口
+>2.P0 內建線路予蜂鳴器。在使用 P0 端口予其他外接設備時遇上問題,建議查
+看位於 IoT:bit 右上的蜂鳴器開關狀態
+
+## 編程 (MakeCode)<HR>
+
+<span id="subtitle">步驟一. 定義新變數和舵機起始位置</span><BR><P>
+* 定義新變數”distance”和”light2”
+* 在「當啟動時」裏設”distance” 和”light2” 數值為 0,”轉動舵機到 0 度 接口 P2”
 ![pic_50](images/Case2/Case2_p1.png)<P>
 
-<span id="subtitle">Step 2. Get distance and light value</span><BR><P>
-* Drag `get distance to get distance unit cm trig P14 echo P15`, store the value to variable `distance`.
-* `Get light value (percentage) at Pin P0`, store the value to variable `light`
+<span id="subtitle">步驟二. 讀取距離和光強度數值</span><BR><P>
+* 在「重復無限次」把”distance”變數設為 “取得量度距離使用單位厘米 trig 接口 P14echo 接口 P15”
+
+* 把”light2”變數設為”取得亮度傳感器數值接口P0”
+
 ![pic_90](images/Case2/Case2_p2.png)<P>
 
-<span id="subtitle">Step 3. Open/close gate with light value</span><BR><P>
-* Snap `if statement` into forever, set if variable `distance` ≤ 5
-* Snap another `if statement` set variable `light` value >20
+<span id="subtitle">步驟三. 以光強度值決定開閘與否</span><BR><P>
+* 在「重復無限次」加入”如果...那麼”,前提設為”distance ≤ 5”
+* 在上述邏輯內再加一個”如果...那麼”,前提設為”light2 > 20”
 ![pic_90](images/Case2/Case2_p3.png)<P>
 
-<span id="subtitle">Step 4. Set servo position</span><BR><P>
-* Snap `Turn Servo to 90 degree at P2` as the gate is opened.
-* Snap `pause` to the loop to wait 5 seconds
-* Snap `Turn Servo to 0 degree at P2` as the gate is closed.
+<span id="subtitle">步驟四. 設定舵機位置</span><BR><P>
+* 在”light2 > 20”內加入” 轉動舵機到 90 度接口 P2”
+* 等待 5 秒
+* 轉動舵機到 0 度接口 P2
 ![pic_90](images/Case2/Case2_p4.png)<P>
 
+*注意
 
+>1.如果舵機轉動角度/方向與程式不符,重設舵機至 0 度再嘗試
+>2.如果遭遇錯誤,嘗試分開測試光傳感器和距離傳感器並決定讀數是否正確。
+>3.查看接線是否正確
 
-<span id="subtitle">Full Solution<BR><P>
+<span id="subtitle">完整答案<BR><P>
 MakeCode: [https://makecode.microbit.org/_UgRKmX2XzH2u](https://makecode.microbit.org/_UgRKmX2XzH2u)<BR><P>
-You could also download the program from the following website:<BR>
+你可以在以下網頁中下載HEX檔案:<BR>
 <iframe src="https://makecode.microbit.org/#pub:_UgRKmX2XzH2u" width="100%" height="500" frameborder="0"></iframe>
 
-## Result
+## 結果
 <HR>
 
-The light sensor is used to check the vacancies in the car park while the distance sensor is used to detect if there are any cars coming near the car park gate<BR><P>
-The car park gate is controlled by 180ᵒ servo. When there are vacancies in the car park and there are cars near the car park gate, the car park is available. The gate will be opened for 5 seconds and then closed to let the car entering the car park.<BR><P>
+透過光度傳感器,成功得知有沒有空缺的車位。當車經過超聲波距離傳感器時,因應車位的空缺狀況就能控制180度舵機轉動來打開車閘5秒,讓車輛駛進停車場。<BR><P>
 ![auto_fit](images/Case2/Case2_result.gif)<P>
 
-## Think
+## 思考
 <HR>
 
-Q1. How can you show the light and distance value on OLED?<BR><P>
-Q2. Can you show signals on micro:bit LED to let drivers know there are vacancies in the car park?<BR><P>
+Q1. 你可以怎麼在 OLED 顯示屏上顯示光和距離讀數?<BR><P>
+Q2. 試在 Micro:bit的LED陣列上顯示停車場內狀況。<BR><P>
