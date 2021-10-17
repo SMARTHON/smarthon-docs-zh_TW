@@ -1,99 +1,104 @@
-# IoT Case 10: Smart Street Light
+# 案例 10:智能街燈
 
-Level: ![level](images/level4.png)
+程度: ![level](images/level4.png)
 ![auto_fit](images/Case10/case-10.png)<P>
 
-## Goal
+## 目標
 <HR>
 
-Make a smart streetlight which can have a button to control on off.<BR><P>
+製作一個能以指令開關的街燈<BR><P>
 
-## Background
+## 背景
 <HR>
 
-<span id="subtitle">What is Smart Street Light?</span><BR><P>
-To improve the living stand of citizen and to save electricity, smart street light can be automatically turned on at night (eg.6pm) and turned off in the morning (eg.6am) <BR><P>
-<span id="subtitle">Smart Streetlight operation</span><BR><P>
-When WAN commands are received from WAN (eg. IFTTT), micro:bit will get the command name. If the command name is “light_on”, the LED light will be turned on. If the command name is “light_off”, the LED light will be turned off.<BR><P>
+<span id="subtitle">甚麼是智能街燈?</span><BR><P>
+智能街燈是可以在指定時間自動開關的街燈,能夠同時兼顧節省能源及照明需求。<BR><P>
+<span id="subtitle">運作原理</span><BR><P>
+當從 WAN 收到指令,micro:bit 會根據指令控制街燈。所以只需要在不同時間及場合發送指令即可。<BR><P>
 ![auto_fit](images/Case10/Concept-diagram-Case10.png)<P>
 
-## Part List
+## 所用部件
 <HR>
 
 ![auto_fit](images/Case10/Case10_parts.png)<P>
 
-## Assembly step
+## 組裝步驟
 <HR>
 
-<span id="subtitle">Step 1</span><BR><P>
-Attach the LED light to the model I2 with M4 screw and nuts. Put together all the cardboard parts (I1-I3)<BR><P>
+<span id="subtitle">步驟一</span><BR><P>
+用 M4 螺絲螺母把 LED 組裝到 I2 卡板上。組裝 I1 至 I3 卡板。<BR><P>
 ![auto_fit](images/Case10/Case10_ass1.png)<P>
 
-<span id="subtitle">Step 2</span><BR><P>
-Assembly completed!<BR><P>
+<span id="subtitle">步驟二</span><BR><P>
+組裝完成<BR><P>
 ![pic_40](images/Case10/Case10_ass2.png)<P>
 
 
-## Hardware connect
+## 線路連接
 <HR>
 
-Connect the white LED Light to P1 port of IoT:bit<BR><P>
+連接 LED 和 IoT:bit 的 P1 端口<BR><P>
 ![auto_fit](images/Case10/Case10_hardware.png)<P>
 
-## Programming (MakeCode)
+*注意:
+
+>1. 根據顏色連接接線和端口
+>2. P0 內建線路予蜂鳴器。在使用 P0 端口予其他外接設備時遇上問題,建
+議查看位於 IoT:bit 右上的蜂鳴器開關狀態
+
+## 編程 (MakeCode)
 <HR>
 
-<span id="subtitle">Step 1. Initialize OLED, IoT:bit and connect to WiFi</span><BR><P>
-* Snap `Initialize OLED with width:128, height: 64` to `on start`
-* Snap `Initialize IoT:bit TX P16 RX P8` from `IoT:bit` to `on start`
-* Snap `Set Wi-Fi to ssid pwd` from `IoT:bit`
-* Enter your Wi-Fi name and password. Here we set `smarthon` as `SSID` and `12345678` as `password`
+<span id="subtitle">步驟一. 啟動 OLED,Iot:bit 和連接至 WiFi</span><BR><P>
 ![auto_fit](images/Case10/Case10_p1.png)<P>
 
-<span id="subtitle">Step 2. Show icon “tick” after WiFi connection</span><BR><P>
-* Snap `show icon` from `basic` to `On WiFi connected` and select icon `tick`
-* Draw the `Device ID` variable from `On WiFi connected` to the `show string` block placeholder
+<span id="subtitle">步驟二 1. 在連接至 WiFi 後顯示剔號及ID</span><BR><P>
 ![pic_60](images/Case10/Case10_p2.png)<P>
 
-<span id="subtitle">Step 3. Receive WAN command</span><BR><P>
-* Go to OLED
-* Snap the` clear OLED display` to `On WiFi received` to avoid overlap
-* Snap the `show string` to `On WiFi received`
-* Draw the `WAN_Command` variable to show string placeholder
+<span id="subtitle">步驟三. 接收 WAN 指令</span><BR><P>
+* 把接收到的指令顯示出來
 ![pic_80](images/Case10/Case10_p3.png)<P>
 
-<span id="subtitle">Step 4. Turn on/off LED by WAN command</span><BR><P>
-* Snap `if-condition`
-* Set variable `WAN_Command` = `lighton` into `if-condition`
-* `turn White LED …` from `SmartCity` > `Output`, turn white LED with intensity: 1023 at P1
-* Set variable `WAN_Command` = `lightoff` into `else-if-condition` 
-* Snap `turn White LED …` from `SmartCity` > `Output`, turn white LED with intensity: 0 at P1
+<span id="subtitle">步驟四. 控制 LED 開關</span><BR><P>
+* 加入”如果...那麼”
+* ”WAN_Command = lighton”設為第一個條件
+* 在"如果"裏加入”turn white LED to 1023 at P1”
+* 點擊加號,在那添加第二個條件”WAN_Command = lightoff”
+* 在第二個"如果"裏加入”turn white LED to 0 at P1
 ![auto_fit](images/Case10/Case10_p4.png)<P>
 
 
-<span id="subtitle">Full Solution<BR><P>
+<span id="subtitle">完整答案<BR><P>
 MakeCode: [https://makecode.microbit.org/_2cRf6LWq69AL](https://makecode.microbit.org/_2cRf6LWq69AL)<BR><P>
-You could also download the program from the following website:<BR>
+你可以在以下網頁下載HEX檔案:<BR>
 <iframe src="https://makecode.microbit.org/#pub:_2cRf6LWq69AL" width="100%" height="500" frameborder="0"></iframe>
 
 
 ## IoT (IFTTT)
 <HR>
 
-<span id="remarks">* For the setting of IFTTT, please refer to “Chapter 4: Cloud Control micro:bit by IFTTT”</span><BR><P>
+<span id="remarks">* 詳情參考"附錄:IFTTT"<BR>
+本案例一共需要兩個專案
+</span><BR><P>
 
-<span id="subtitle">Step 1. Create applet in IFTTT</span><BR><P>
+<span id="subtitle">步驟一. 在 IFTTT 開立新專案</span><BR><P>
+<span id="subtitle">步驟二. 選擇”Date & Time” 為 IF THIS</span><BR><P>
+<span id="subtitle">步驟三。 選擇時間間隔,時區,時間為上午6時</span><BR><P>
+<span id="subtitle">步驟四。 選擇 Smarthon IoT:bit 為 Then That</span><BR><P>
+<span id="subtitle">步驟五。 選擇指令</span><BR><P>	
+<span id="subtitle">步驟六。 輸入指令和 Device ID後儲存</span><BR><P>
+<span id="subtitle">步驟七。 重複以上動作,時間設為下午6時</span><BR><P>
 ![auto_fit](images/Case10/Case10_ifttt1.png)<P>
 
 
-## Result
+## 結果
 <HR>
 
-The micro:bit is controlled by IFTTT (trigger by date&time). The LED light will be turned on at 6pm and turned off at 6am every day.<BR><P>
+在IFTTT平台上會在每天早晚6時發送訊號,因此LED會在每天早晚6時開關。<BR><P>
 ![auto_fit](images/Case10/Case10_result.gif)<P>
 
 
-## Think
+## 思考
 <HR>
 
-Q1. How to turn on the light automatically if the today’s weather is cloudy reported by IFTTT.
+Q1. 除了時間之外,IFTTT能否用其他條件觸發?

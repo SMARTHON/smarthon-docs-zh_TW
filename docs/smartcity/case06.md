@@ -1,130 +1,133 @@
-# IoT Case 06: Weather Station 
+# 案例 06:都市氣象站
 
-Level: ![level](images/level2.png)
+程度: ![level](images/level2.png)
 ![auto_fit](images/Case6/case-06.png)<P>
 
-## Goal
+## 目標
 <HR>
 
-Make a weather station which gets the values from the raindrop sensor, temperature and humidity sensor. The data will be sent to IoT platform - ThingSpeak.<BR><P>
+製作一個能收集雨滴,溫度及濕度傳感器數據的氣象站,並自動把數據送上ThingSpeak 平台。<BR><P>
 
-## Background
+## 背景
 <HR>
 
-<span id="subtitle">What is Thingspeak?</span><BR><P>
-ThingSpeak is an IoT analytics platform service which provides instant visualizations of data posted by your devices to ThingSpeak. In this case, we will use this platform to update our data to plot instant graphs. <BR><P>
+<span id="subtitle">甚麼是 Thingspeak?</span><BR><P>
+ThingSpeak 是一個物聯網數據分析平台,提供即時數據圖表分顯然及分析。在這個
+案例,我們僧使用該平台製作數據圖表。<BR><P>
 
-<span id="subtitle">Weather station operation</span><BR><P>
-Collecting temperature, humidity and raindrop consistently and uploading the data by using Thingspeak. This can help us to do analytical work more conveniently as we can refer to the automatically plotted graphs.<BR><P>
+<span id="subtitle">運作原理</span><BR><P>
+實時收集溫度,濕度和雨滴並上傳至 ThingSpeak,令分析數據更輕鬆。<BR><P>
 ![auto-fit](images/Case6/Concept-diagram-Case6.png)<P>
 
-## Part List
+## 所用部件
 <HR>
 
 ![auto_fit](images/Case6/Case6_parts.png)<P>
 
-## Assembly step
+## 組裝步驟
 <HR>
 
-<span id="subtitle"> Step 1</span><BR><P>
-Attach the raindrop sensor to F2 model.<BR><P>
+<span id="subtitle"> 步驟一</span><BR><P>
+把雨滴傳感器組裝到 F2 卡板上。<BR><P>
 ![auto_fit](images/Case6/Case6_ass1.png)<P>
-<span id="subtitle"> Step 2</span><BR><P>
-Attach the temperature and humidity sensor to F2 model.
+<span id="subtitle"> 步驟二</span><BR><P>
+把溫度及濕度傳感器組裝到 F2 卡板上。
 ![auto_fit](images/Case6/Case6_ass2.png)<P>
-<span id="subtitle"> Step 3</span><BR><P>
-Put together all the cardboard parts (F1-F2).
+<span id="subtitle">步驟三</span><BR><P>
+組裝 F1 和 F2 卡板。
 ![auto_fit](images/Case6/Case6_ass3.png)<P>
-<span id="subtitle"> Step 4</span><BR><P>
-Assembly completed!
+<span id="subtitle">步驟四</span><BR><P>
+組裝完成!
 ![pic_60](images/Case6/Case6_ass4.png)<P>
 
-## Hardware connect
+## 線路連接
 <HR>
 
-Connect the Raindrop Sensor to P0 port of IoT:bit<BR><P>
-Connect the Temperature and humidity Sensor to P2 port of IoT:bit<BR><P>
+連接雨滴傳感器和 IoT:bit 的 P0 端口<BR><P>
+連接溫度及濕度傳感器和 IoT:bit 的 P2 端口<BR><P>
 ![auto_fit](images/Case6/Case6_hardware.png)<P>
+
+*注意
+
+>1. 根據顏色連接接線和端口
+>2. P0 內建線路予蜂鳴器。在使用 P0 端口予其他外接設備時遇上問題,建議查看位於 IoT:bit 右上的蜂鳴器開關狀態
 
 
 ## IoT (ThingSpeak)
 <HR>
 
-<span id="remarks">* For more details, please refer to Chapter 1: Upload Data to ThingSpeak</span><BR><P>
+<span id="remarks">*詳細步驟參考* 附錄..上傳資料至 ThingSpeak”</span><BR><P>
 
-<span id="subtitle"> Step 1</span><BR><P>
-Go to [https://thingspeak.com](https://thingspeak.com/), Choose Channels -> My Channels -> New Channel<BR><P>
+<span id="subtitle">步驟一</span><BR><P>
+訪問 [https://thingspeak.com](https://thingspeak.com/), 選擇 Channels -> My Channels -> New Channel<BR><P>
 ![auto_fit](images/Case6/Case6_iot1.png)<P>
   
-<span id="subtitle"> Step 2</span><BR><P>
-Input Channel name, Field1 and Field2 , then click “Save Channel”<BR><P>
+<span id="subtitle">步驟二</span><BR><P>
+輸入 Channel name, Field1, Field2,點擊 Save Channel<BR><P>
 * Channel name: Smart Weather Station
 * Field 1: temperature
 * Field 2: humidity
 * Freld 3: raindrop
 
 
-<span id="subtitle"> Step 3</span><BR><P>
-Select your channel > “API Keys” ，copy the API key as follows:<BR><P>
+<span id="subtitle">步驟三</span><BR><P>
+選擇 your channel >> API Keys,複製 API key<BR><P>
 ![auto_fit](images/Case6/Case6_iot2.png)<P>
 
 
-## Programming (MakeCode)
+## 編程 (MakeCode)
 <HR>
 
-<span id="subtitle">Step 1. Initialize OLED, IoT:bit and connect to WiFi</span><BR><P>
-* Snap `Initialize OLED with width:128, height: 64` to `on start`
-* Snap `Initialize IoT:bit TX P16 RX P8` from `IoT:bit` to `on start`
-* Snap `Set Wi-Fi to ssid pwd` from `IoT:bit`
-* Enter your Wi-Fi name and password. Here we set `smarthon` as `SSID` and `12345678` as `password`
-* Set variable `raindrop`, `humidity` and `temperature` to 0 from `variables`*  
+<span id="subtitle">步驟一. 啟動OLED,IoT:bit 和 WiFi</span><BR><P>
+* 啟動 OLED,IoT:bit 和 WiFI
+* 宣告新變數”raindrop",”humidity”,”temperature”並設值為0
 ![auto_fit](images/Case6/Case6_p1.png)<P>
 
-<span id="subtitle">Step 2. Show icon "tick" after WiFi connection</span><BR><P>
-* Snap `show icon` from `basic` to `On WiFi connected` and select icon `tick`
+<span id="subtitle">步驟二.連上網絡</span><BR><P>
+* 在連上網絡後於 OLED上顯示剔號
 ![auto_fit](images/Case6/Case6_p2.png)<P>
 
-<span id="subtitle">Step 3. Get temperature, humidity and raindrop values</span><BR><P>
-* Snap `if statement` to block `forever`
-* If `WiFi is connected`
-* Then, set `humidity` to `read humidity from DHT11 at Pin P2`
-* Set `temperature` to `read temperature from DHT11` 
-* Set `raindrop` to `get raindrop value (percentage) at Pin P0`
+<span id="subtitle">步驟三.讀取溫度,濕度和雨滴讀數</span><BR><P>
+* 在「重復無限次」加入”如果...那麼”,”WiFi connected?”為前設
+* 設”humidity”為”DHT11 讀取濕度接口 P2”
+* 設”temperature”為”DHT11 讀取溫度接口 P2”
+* 設”raindrop”為”取得雨水傳感器數值接口 P0”
 ![auto_fit](images/Case6/Case6_p3.png)<P>
 
-<span id="subtitle">Step 4. Show values on OLED</span><BR><P>
-* Snap `clear OLED display` from `OLED` to avoid overlap
-* Snap `show string` and show value of variables `Temperature`, `Humidity` and `Raindrop`
+<span id="subtitle">步驟四. 在 OLED 上顯示讀數</span><BR><P>
+* 加入”清除顯示”
+* 新行顯示”Temperature: temperature, Humidity: humidity, Raindrop:
+raindrop”
 ![auto_fit](images/Case6/Case6_p4.png)<P>
 
-<span id="subtitle">Step 5. Upload data to ThingSpeak</span><BR><P>
-* Snap `Send Thingspeak key...` inside the `if-statement`
-* Fill in the `api key` from Thingspeak with temperature, humidity and raindrop value
-* Snap `pause` to the loop to wait 15 second
+<span id="subtitle">步驟五. 上傳資料至 ThingSpeak</span><BR><P>
+* 在”如果...那麼”加入”Send ThingSPeak key...”
+* 在 Field x value 加入 temperature, humidity, raindrop
+* 等待 15 秒
 ![auto_fit](images/Case6/Case6_p5.png)<P>
 
-<span id="subtitle">Step 6. Show ThingSpeak upload status</span><BR><P>
-* Snap `show string` inside `On Thingspeak Uploaded`
-* Draw the variable `Status` and `Error_code` to block `show string`
+<span id="subtitle">步驟六. 顯示上傳狀態</span><BR><P>
+* 加入”On ThingSpeak Uploaded”
+* 新行顯示”ThingSpeak: Status, Error: Error_code”
 ![auto_fit](images/Case6/Case6_p6.png)<P>
 
 
 
-<span id="subtitle">Full Solution<BR><P>
+<span id="subtitle">完整答案<BR><P>
 MakeCode: [https://makecode.microbit.org/_TMyYxL8Re1du](https://makecode.microbit.org/_TMyYxL8Re1du)<BR><P>
-You could also download the program from the following website:<BR>
+你可以在以下網頁下載HEX檔案:<BR>
 <iframe src="https://makecode.microbit.org/#pub:_TMyYxL8Re1du" width="100%" height="500" frameborder="0"></iframe>
 
 
-## Result
+## 結果
 <HR>
 
-When micro:bit is connected to WiFi, it will check weather information (temperature, humidity from Temperature and humidity Sensor and raindrop value from raindrop sensor). Then, those data will be sent to ThingSpeak and pause for 15 seconds for another update.<BR><P>
+當 micro:bit 連到了互聯網,它會開始從傳感器讀取數據並上傳至 ThingSpeak。<BR><P>
 ![auto_fit](images/Case6/Case6_result.gif)<P>
-We can find three graphs on Thingspeak including temperature, humidity and raindrop (field1, field2, field3) respectively by collecting data using different sensors.<BR><P>
+在 ThingSpeak 上設立的三個 fields 會反映實時數據。<BR><P>
 ![auto_fit](images/Case6/Case6_result2.png)<P>
 
-## Think
+## 思考
 <HR>
 
-Q1. How can we upload other module values (e.g. noise) to ThingSpeak?<BR><P>
+Q1. 我們可以怎上傳其他種類的數據至 ThingSpeak?<BR><P>

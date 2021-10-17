@@ -1,131 +1,123 @@
-# IoT Case 11: Roof garden clothes rack
+# 案例 11: 自動天台布架
 
-Level: ![level](images/level4.png)
+程度: ![level](images/level4.png)
 ![auto_fit](images/Case11/case-11.png)<P>
 
-## Goal
+## 目標
 <HR>
 
-Make a smart roof garden clothes rack, once the weather condition is changed, the rack can be opened/ closed automatically.
+製作一個會在天氣改變時自動開關的布架,避免衣物被雨水沾濕。
 
-## Background
+## 背景
 <HR>
 
-<span id="subtitle">What is Roof garden clothes rack?</span><BR><P>
-People no long need to rush up to the roof when raining as the clothes rack can be closed automatically even when house owner is not at home.<BR><P>
-<span id="subtitle">Roof garden clothes rack operation</span><BR><P>
-Micro:bit can receive WAN commands from WAN (eg. IFTTT), the the micro:bit will get the command name. If the command name is “Rain”, the servo will turn to 90ᵒ and the rack will be opened. If the command name is “Clear”, the servo will turn to 180ᵒ and the rack will be closed.<BR><P>
+<span id="subtitle">為什麼我們需要自動布架?</span><BR><P>
+這樣當下雨時人們再不需要衝上天台把衣服收回。<BR><P>
+<span id="subtitle">運作原理</span><BR><P>
+Micro:bit通過IFTTT平台上的天氣預報系統,取得指令內容開關布架。<BR><P>
 ![auto_fit](images/Case11/Concept-diagram-Case11.png)<P>
 
-## Part List
+## 所用部件
 <HR>
 
 ![auto_fit](images/Case11/Case11_parts.png)<P>
  
-## Assembly step
+## 組裝步驟
 <HR>
 
-<span id="subtitle">Step 1</span><BR><P>
-Step 1. Attach the raindrop sensor to the model H2<BR><P>
+<span id="subtitle">步驟一</span><BR><P>
+把雨滴傳感器組裝至 H2 卡板。<BR><P>
 ![auto_fit](images/Case11/Case11_ass1.png)<P>
-<span id="subtitle">Step 2</span><BR><P>
-Step 2. Attach the long stand (H3) to the model H1<BR><P>
+<span id="subtitle">步驟二</span><BR><P>
+把 H1 和 H3 卡板組裝。<BR><P>
 ![auto_fit](images/Case11/Case11_ass2.png)<P>
-<span id="subtitle">Step 3</span><BR><P>
-Step 3. Put together all the cardboard parts.<BR><P>
+<span id="subtitle">步驟三</span><BR><P>
+組裝所有卡板。<BR><P>
 ![auto_fit](images/Case11/Case11_ass3.png)<P>
-<span id="subtitle">Step 4</span><BR><P>
-Step 4. Screw the cloth rack (H5) onto the 180ᵒ servo using M2 screws  <BR><P>
+<span id="subtitle">步驟四</span><BR><P>
+用 M2 螺絲把舵機組裝到 H5 卡板。  <BR><P>
 ![auto_fit](images/Case11/Case11_ass4.png)<P>
-<span id="subtitle">Step 5</span><BR><P>
-Step 5. Put together the models H4-H5 and H6-H7. <BR><P>
+<span id="subtitle">步驟五</span><BR><P>
+組裝 H4-H5 和 H6-H7<BR><P>
 ![pic_60](images/Case11/Case11_ass5.png)<P>
 ![auto_fit](images/Case11/Case11_ass6.png)<P>
-<span id="subtitle">Step 6</span><BR><P>
-Step 6. Assembly completed!<BR><P>
+<span id="subtitle">步驟六</span><BR><P>
+組裝完成!<BR><P>
 ![pic_40](images/Case11/Case11_ass7.png)<P>
 
 
-## Hardware connect
+## 線路連接
 <HR>
 
-Connect the 180ᵒ Servo to P1 port of IoT:bit<BR><P>
+連接180度舵機和 IoT:bit 的 P1 端口<BR><P>
 
-Micro:bit P1|Servo
+Micro:bit P1|舵機
 :-: | :-: 
-S (yellow) |S (orange)
-V (red)	| V (red)
-G (black) | G (brown)
+S (黃) |S (橙)
+V (紅)	| V (紅)
+G (黑) | G (棕)
 
 ![auto_fit](images/Case11/Case11_hardware.png)<P>
 
-## Programming (MakeCode)
+## 編程 (MakeCode)
 <HR>
 
-<span id="subtitle">Step 1. Initialize OLED, IoT:bit and connect to WiFi</span><BR><P>
-* Snap `Initialize OLED with width:128, height: 64` to `on start`
-* Snap `Initialize IoT:bit TX P16 RX P8` from `IoT:bit` to `on start`
-* Snap `Set Wi-Fi to ssid pwd` from `IoT:bit`
-* Enter your Wi-Fi name and password. Here we set `smarthon` as `SSID` and `12345678` as `password`
+<span id="subtitle">步驟一. 啟動 OLED,IoT:bit 和連接 WiFi</span><BR><P>
 ![pic_60](images/Case11/Case11_p1.png)<P>
 
-<span id="subtitle">Step 2. Show icon “tick” after WiFi connection</span><BR><P>
-* Snap `show icon` from `basic` to `On WiFi connected` and select icon `tick`
-* Draw the `Device ID` variable from `On WiFi connected` to the `show string` block placeholder
+<span id="subtitle">步驟二. 在連接 WiFi 後顯示剔號及ID</span><BR><P>
 ![pic_50](images/Case11/Case11_p2.png)<P>
 
-<span id="subtitle">Step 3. Receive WAN command</span><BR><P>
-* Go to OLED
-* Snap the `clear OLED display` to `On WiFi received` to avoid overlap
-* Snap the `show string` to `On WiFi received`
-* Draw the `WAN_Command` variable to show string placeholder
+<span id="subtitle">步驟三. 接收指令</span><BR><P>
+* 每次接收時都先清除顯示
+* 把接收到的拍令用顯示字串"Command: WAN_Command" 顯示出來
 ![pic_70](images/Case11/Case11_p3.png)<P>
 
-<span id="subtitle">Step 4. Control rack open/close by WAN command</span><BR><P>
-* Snap `if-condition`
-* Set variable `WAN_Command` = `Rain` into `if-condition`
-* Snap `Turn Servo to … degree` from `SmartCity` > `Output`
-* `Set Servo degree to 90 at P1` (control the servo to open the rack)
-* Set variable `WAN_Command` = `Clear` into `else-if-condition`
-* Snap `Turn Servo to … degree` from `SmartCity` > `Output`
-* `Set Servo degree to 180 at P1` (control the servo to close the rack)
+<span id="subtitle">步驟四. 以指令控制開關</span><BR><P>
+* 加入”如果...那麼”,以”WAN_Command = Rain”為條件
+* 在第一個"那麼"裡添加”Turn Servo to 90 degree at P1”
+* 點擊加號,以”WAN_Command = Clear” 為第二條件
+* 在第二個"那麼"裡添加”Turn Servo to 180 degree at P1”
 ![auto_fit](images/Case11/Case11_p4.png)<P>
 
-<span id="subtitle">Step 5. Press A to open clothes rack</span><BR><P>
-* Snap `on button … pressed` from `Input`, set button `A`
-* Snap `Turn Servo to…` from `SmartCity` > `Output`
-* `Set servo to 90 degree at P1` (open clothes rack)
+<span id="subtitle">步驟五. 按 A 以開啟布架</span><BR><P>
+* 當按A按鈕時,轉動舵機
 ![pic_50](images/Case11/Case11_p5.png)<P>
 
-<span id="subtitle">Step 6. Press B to close clothes rack</span><BR><P>
-* Snap `on button … pressed` from `Input`, set button `B`
-* Snap `Turn Servo to…` from `SmartCity` > `Output`
-* `Set servo to 180 degree at P1` (close clothes rack)
+<span id="subtitle">步驟六. 按 B 以開啟布架</span><BR><P>
+* 當按B按鈕時,向另一角度轉動舵機
 ![pic_50](images/Case11/Case11_p6.png)<P>
 
 
-<span id="subtitle">Full Solution<BR><P>
+<span id="subtitle">完整答案<BR><P>
 MakeCode: [https://makecode.microbit.org/_6KyfVPJEd10A](https://makecode.microbit.org/_6KyfVPJEd10A)<BR><P>
-You could also download the program from the following website:<BR>
+你可以在以下網頁下載HEX檔案:<BR>
 <iframe src="https://makecode.microbit.org/#pub:_6KyfVPJEd10A" width="100%" height="500" frameborder="0"></iframe>
 
 
 ## IoT (IFTTT)
 <HR>
 
-<span id="remarks">* For the setting of IFTTT, please refer to “Chapter 4: Cloud Control micro:bit by IFTTT”</span><BR><P>
+<span id="remarks">* 詳情參考 附錄:IFTTT</span><BR><P>
 
-<span id="subtitle">Step 1. Create applet in IFTTT<BR><P>
+<span id="subtitle">步驟一. 創建新專案(共需要兩個專案),選擇 weather underground<BR><P>
+<span id="subtitle">步驟二. 選擇”Current condition changes to”<BR><P>
+<span id="subtitle">步驟三. 選擇地點和觸發條件<BR><P>
+<span id="subtitle">步驟四. 選擇 Snarthon IoT:Bit 為 Then<BR><P>
+<span id="subtitle">步驟五. 選擇指令<BR><P>
+<span id="subtitle">步驟六. 輸入 ID和指令(Rain)<BR><P>
+<span id="subtitle">步驟七. 重複以上動作,觸發條件和指令改為晴天和clear
+
 ![auto_fit](images/Case11/Case11_iot1.png)<P>
 
 
-## Result
+## 結果
 <HR>
-
-The micro:bit is controlled by IFTTT (trigger by weather open data). When the weather condition change to “Rain”, the cloth rack will be opened. When the weather condition change to “Clear”, the cloth rack will be closed.<BR><P>
+IFTTT會依照地點的天氣發送指令。
+當 micro:bit 收到”RAIN"指疑,布架會關上。反之則開啟。<BR><P>
 ![auto_fit](images/Case11/Case11_result.gif)<P>
 
-## Think
+## 思考
 <HR>
 
-Q1. Can you control the clothes rack by other weather conditions? (e.g. sunlight)<BR><P>
+Q1. 除了雨天和晴天,能否根據其他天氣狀態作出反應?<BR><P>

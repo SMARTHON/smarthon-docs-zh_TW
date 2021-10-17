@@ -1,211 +1,203 @@
-# IoT Case 08: Automated Traffic Light
+# 案例 08: 智能交通燈
 
-Level: ![level](images/level5.png)
+程度: ![level](images/level5.png)
 
-<span id="remarks">* For more details, please refer to “Chapter 5: Object to Object communication”</span>
+<span id="remarks">* 詳情參考 附錄:點對點通訊<BR>
+* 本案例分為兩部分:發送者及接收者。要完成這案例,需要兩套組件。</span>
 ![auto_fit](images/Case8/case-08_1.png)<P>
 
-## Sender
+## 發送者
 <HR>
 
-### Goal
+### 目標
 <HR>
 
-Make a sender to send signal to another micro:bit to show if there is traffic jam or not.<BR><P>
+製作一個可以向其他設備反映該地區有沒有塞車的系統。<BR><P>
 
-### Background
+### 背景
 <HR>
 
-<span id="subtitle">How to send signal to another micro:bit?</span><P>
-Micro:bit (sender and receiver) are connected to the same channel so wifi message can be sent between the micro:bit. Such that when the sender micro:bit sends a Wi-Fi message “trafficjam” to receiver micro:bit. When receiver micro:bit receives a WiFi message “trafficjam”, the connected traffic light will turn red.<BR><P>
+<span id="subtitle">如何向其他 micro:bit 傳送訊號?</span><P>
+發送者和接收者連接至同一個頻道,容許 WiFi 訊號在之間傳遞。當發送者發
+出”trafficjam”,接收者會因應訊號作出反應。<BR><P>
 
-<span id="subtitle">Sender micro:bit operation</span><P>
-When the light value detected is too low, this would represent there is a traffic jam and and a ‘trafficjam’ wifi message to another microbit. When the light value detected is high, this would represent there is no traffic jam and send a “nojam” wifi message to another micro:bit.<BR><P>
+<span id="subtitle">發出者運作原理</span><P>
+當光傳感器回饋過低數值,這代表有車長期停在此處,即有塞車發生。發送者傳
+送”trafficjam”至 microbit。反之則發送”nojam”。<BR><P>
 ![auto_fit](images/Case8/Concept-diagram-Case8_sender.png)<P>
 
-### Part List
+### 所有部件
 <HR>
 
 ![auto_fit](images/Case8/Case8a_parts.png)<P>
 
- 
-### Assembly step
+
+### 線路連接
 <HR>
 
-N/A
-
-### Hardware connect
-<HR>
-
-Connect the Light Sensor to P0 port of IoT:bit<BR><P>
+連接光傳感器和 IoT:bit 的 P0 端口。<BR><P>
 ![auto_fit](images/Case8/Case8a_hardware.png)<P>
 
+*注意
 
-### Programming (MakeCode)
+>1. 根據顏色連接接線和端口
+>2. P0 內建線路予蜂鳴器。在使用 P0 端口予其他外接設備時遇上問題,建議查看位於 IoT:bit 右上的蜂鳴器開關狀態
+
+
+### 編程 (MakeCode)
 <HR>
 
-<span id="subtitle">Step 1. Initialize OLED and IoT:bit and connect to WiFi</span><P>
-* Snap `Initialize OLED with width:128, height: 64` to `on start`
-* Snap `Initialize IoT:bit TX P16 RX P8` from `IoT:bit` to `on start`
-* Snap `Set Wi-Fi to ssid pwd` from `IoT:bit`
-* Enter your Wi-Fi name and password. Here we set `smarthon` as `SSID` and `12345678` as `password`
-* Set variable `light2` to 0 from `variables` 
+<span id="subtitle">步驟一. 啟動 OLED,IoT:bit 和連接至 WiFi</span><P>
+* 啟動 OLED,IoT:bit 和連接至 WiFi
+* 宣告新變數”light2”並設值為 0 
 ![auto_fit](images/Case8/Case8a_p1.png)<P>
 
-<span id="subtitle">Step 2. Show icon “tick” after WiFi connection</span><P>
-* Snap `show icon` from `basic` to `On WiFi connected` and select icon `tick`
+<span id="subtitle">步驟二. 在連接至 WiFi 後顯示剔號</span><P>
 ![pic_60](images/Case8/Case8a_p2.png)<P>
 
-<span id="subtitle">Step 3. Check traffic status</span><P>
-* Snap `if statement` to block `forever`
-* If `WiFi is connected`,
-* Set `variable2` to `light value from light sensor at P0`
-* Snap `clear OLED display` from `OLED` to avoid overlap
-* Snap `show string` and show value of variables `light2`
-* `Pause` 6000 (ms) to another checking
+<span id="subtitle">步驟三. 檢查交通狀況</span><P>
+* 在「重復無限次」加入”如果...那麼”並以”WiFi connected?”為前設
+* 設”light2” 為”取得光傳感器數值接口 P0
+* 清除顯示
+* 新行顯示”字串組合”Light: light2”
+* 等待 6 秒
 ![auto_fit](images/Case8/Case8a_p3.png)<P>
 
-<span id="subtitle">Step 4. Send notification when someone pass by</span><P>
-* Snap `if statement` 
-* Set `light` < `10` in to if-condition (traffic jam is detected)
-* Snap `WiFi Sender send channel… message…` from `IoT:bit` > `channel`
-* Set channel to `tsuenwan`, message `trafficjam`
-* Set `else-condition` (traffic jam is not detected)
-* Snap `WiFi Sender send channel… message…` from `IoT:bit` > `channel`
-* Set channel to `tsuenwan`, message `nojam`
+<span id="subtitle">步驟四. 當交通擠塞發出提示</span><P>
+* 在邏輯內加入新”如果...那麼”,”ligh12 < 10”為前設
+* 在"如果...那麼"裡面添加"“Wifi Sender send Channel"的訊息,分別依照交通情況來傳送"trafficjam"或"nojam"
 ![auto_fit](images/Case8/Case8a_p4.png)<P>
 
-<span id="subtitle">Full Solution<BR><P>
+<span id="subtitle">完整答案<BR><P>
 MakeCode: [https://makecode.microbit.org/_P5fAujhip5Lh](https://makecode.microbit.org/_P5fAujhip5Lh)<BR><P>
-You could also download the program from the following website:<BR>
+你可以在以下網頁下載HEX檔案<BR>
 <iframe src="https://makecode.microbit.org/#pub:_P5fAujhip5Lh" width="100%" height="500" frameborder="0"></iframe>
 
 
-### Result
+### 結果
 <HR>
 
-Light sensor is used to detect if there are traffic jam. Once the light intensity is not low, it indicates that there is a traffic jam on the road. Wi-Fi message “nojam” will be sent to another micro:bit (receiver).<BR><P>
+光傳感器用以偵測有沒有出現塞車。當光強度正常,"nojam”會被送出。<BR><P>
 ![auto_fit](images/Case8/Case8a_result1.png)<P>
-Once the light intensity is too low, it indicates that there is a traffic jam on the road. Wi-Fi message “trafficjam” will be sent to another micro:bit (receiver).<BR><P>
+當光強度過低,”trafficjam”會被送出。<BR><P>
 ![auto_fit](images/Case8/Case8a_result2.png)<P>
 
-### Think
+### 思考
 <HR>
 
-Q1. How can we use distance sensor to detect traffic status?<BR><P>
+Q1. 我們可以用距離傳感器偵測有否塞車嗎?<BR><P>
 
 
-## Receiver
+## 接收者
 <HR>
 
-### Goal
+### 目標
 <HR>
 
-Make an auto-traffic LED Module by receiving signal from sender micro:bit.<BR><P>
+製作一個能接收訊號的交通系統。<BR><P>
 
-### Background
+### 背景
 <HR>
 
-<span id="subtitle">How to receive signal from another micro:bit?</span><P>
-Micro:bit (sender and receiver) are connected to the same channel so wifi message can be sent between the micro:bit. If receiver micro:bit receives a WiFi message “trafficjam” from sender, the connected traffic light will turn red.<BR><P>
+<span id="subtitle">如何接收另一個 micro:bit 的訊號?</span><P>
+讓發送者和接收者連接至同一個頻道。然後讀取訊息。<BR><P>
 
-<span id="subtitle">Receiver micro:bit operation</span><P>
-When a wifi message “trafficjam” is received, it means there is traffic jam forward. The traffic LED Module will turn red. When a wifi message “nojam” is received, it means there is no traffic jam forward. The traffic LED Module will turn green. By using smart traffic light, the problem of traffic jam can be reduced as automatic traffic control is used.<BR><P>
+<span id="subtitle">接收者運作原理</span><P>
+當收到”trafficjam”訊號,代表有塞車狀況出現。交通燈會轉為紅色。反之則會維持
+綠色。<BR><P>
 ![auto_fit](images/Case8/Concept-diagram-Case8_receiver.png)<P>
 
-### Part List
+### 所用物資
 <HR>
 
 ![auto_fit](images/Case8/Case8b_parts.png)<P>
 
-### Assembly step
+### 組裝步驟
 <HR>
 
-<span id="subtitle">Step 1</span><P>
-Attach the Traffic light Module to G1 model using M4 screw and nut. Put together all the cardboard parts (G1-G2)<BR><P>
+<span id="subtitle">步驟一</span><P>
+用 M4 螺絲螺母把交通燈組裝到 G1 卡板上。組裝 G1 和 G2。<BR><P>
 ![auto_fit](images/Case8/Case8b_ass1.png)<P>
 
-<span id="subtitle">Step 2</span><P>
-Assembly completed!<BR><P>
+<span id="subtitle">步驟二</span><P>
+組裝完成!<BR><P>
 ![auto_fit](images/Case8/Case8b_ass2.png)<P>
 
 
-### Hardware connect
+### 線路連接
 <HR>
 
-Connect the Traffic LED Module to P0 port of IoT:bit<BR><P>
+連接交通燈和 IoT:bit 的 P0 端口<BR><P>
 ![auto_fit](images/Case8/Case8b_hardware.png)<P>
 
+*注意:
 
-### Programming (MakeCode)
+>1. 根據顏色連接接線和端口
+>2. P0 內建線路予蜂鳴器。在使用 P0 端口予其他外接設備時遇上問題,建議查
+看位於 IoT:bit 右上的蜂鳴器開關狀態
+
+### 編程 (MakeCode)
 <HR>
 
-<span id="subtitle">Step 1. Initialize OLED and IoT:bit and connect to WiFi</span><P>
-* Snap `Initialize OLED with width:128, height: 64` to `on start`
-* Snap `Initialize IoT:bit TX P16 RX P8` from `IoT:bit` to `on start`
-* Snap `Set Wi-Fi to ssid pwd` from `IoT:bit`
-* Enter your Wi-Fi name and password. Here we set `smarthon` as `SSID` and `12345678` as `password`
-* Set variable `oldmsg` to “” from `variables` 
+<span id="subtitle">步驟一. 啟動 OLED,IoT:bit 皚連接至 WiFi</span><P>
+* 啟動 OLED,IoT:bit 和連接至 WiFi
+* 宣告新變數”oldmsg”為” “。
 ![auto_fit](images/Case8/Case8b_p1.png)<P>
 
-<span id="subtitle">Step 2. Join Channel “tsuenwan”</span><P>
-* Snap `show icon` from `basic` to `On WiFi connected` and select icon `tick`
-* Snap `WiFi Receiver join channel` from `IoT` > `Chanel`
-* Set channel name `tsuenwan`
+<span id="subtitle">步驟二. 加入”tsuenwan”頻道</span><P>
+* 在”on WiFi connected”加入剔號和”WiFi Receiver join channel tsuenwan”
 ![auto_fit](images/Case8/Case8b_p2.png)<P>
 
-<span id="subtitle">Step 3. Receive WiFi message</span><P>
-* Snap `On WiFi Receiver received`
-* Go to OLED
-* Snap the `clear OLED display` to `On WiFi received` to avoid overlap
-* Snap the `show string` 
-* Draw variable `receivedMessage` to show string placeholder
+<span id="subtitle">步驟三. 接收 WiFi 訊息</span><P>
+* 在”On WiFi Receiver received”加入清除顯示
+* 新行顯示”字串組合”Message: receivedmessage””
 ![pic_70](images/Case8/Case8b_p3.png)<P>
  
-<span id="subtitle">Step 4. Set up a new function (TurnRed)</span><P>
-* `Control traffic light at P1` green on from `SmartCity` > `Output`
-* `Pause` for 2000ms from basic
-* `Control traffic light at P1` yellow on, `pause` for 2000ms
-* `Control traffic light at P1` red on and `pause` for 2000ms.
+<span id="subtitle">步驟四. 宣告新函式(TurnRed)</span><P>
+* 在”SmartCity”,”output”加入”Control traffic light at P1”
+* 等待兩秒
+* 轉顏色為黃色,等待兩秒
+* 轉顏色為紅,等待兩南
 ![auto_fit](images/Case8/Case8b_p4.png)<P>
 
-<span id="subtitle">Step 5. Set up a new function (TurnGreen)</span><P>
-* `Control traffic light at P1` red on from `SmartCity` > `Output`
-* `Pause` for 2000ms from basic
-* `Control traffic light at P1` red and yellow on, `pause` for 2000ms
-* `Control traffic light at P1` green on and `pause` for 2000ms.
+<span id="subtitle">步驟五. 宣告新函式(TurnGreen)</span><P>
+* 加入”Control traffic light at P1”
+* 轉為紅色,等待兩秒
+* 轉為黃色,等待兩秒
+* 轉為綠色,等待兩秒
 ![auto_fit](images/Case8/Case8b_p5.png)<P>
 
-<span id="subtitle">Step 6. Set traffic light default status</span><P>
-* Insert function `TurnGreen` to `on start`
+<span id="subtitle">步驟六. 設定交通燈初始狀態</span><P>
+* 在「當啟動時」加入”TurnGreen”
 ![pic_60](images/Case8/Case8b_p6.png)<P>
 
-<span id="subtitle">Step 7. Change traffic light status</span><P>
-* Snap `if-statement`, set `received Message` ≠ `oldmsg` to `if-condition`
-* Set `oldmsg` = `receivedMessage` (renew the latest traffic status)
-* Snap another `if-statement` 
-* Set `receivedMessage` = `trafficjam` to `if-condition`
-* Call function `TurnRed`
-* Set `receivedMessage` = `nojam` to `else-if-condition`
-* Call function `TurnGreen`
+<span id="subtitle">步驟七. 轉變交通燈狀態</span><P>
+* 在”On WiFi Receiver received”加入”如果...那麼”
+* “receivedMessage ≠ oldmsg”為前設
+* 設”oldmsg” = receivedMessage
+* 在邏輯裏加入”如果...那麼”,”receivedMessage = trafficjam”為前設
+* 呼叫”TurnRed”
+* 將“receivedMessage = nojam”設為否則前設
+* 在否則內呼叫”TurnGreen”
 ![auto_fit](images/Case8/Case8b_p7.png)<P>
 
-<span id="subtitle">Full Solution<BR><P>
+<span id="subtitle">完整答案<BR><P>
 MakeCode: [https://makecode.microbit.org/_V5jcy5Pvm7hF](https://makecode.microbit.org/_V5jcy5Pvm7hF)<BR><P>
-You could also download the program from the following website:<BR>
+你可以在以下網頁下載HEX檔案:<BR>
 <iframe src="https://makecode.microbit.org/#pub:_V5jcy5Pvm7hF" width="100%" height="500" frameborder="0"></iframe>
 
 
-### Result
+### 結果
 <HR>
 
-By receiving wifi message, traffic LED Module will turn to the corresponding colour automatically.
-If there are no traffic jam ahead (detected by light sensor). Micro:bit (sender) will send wifi message “nojam” to the micro:bit (receiver). The traffic light will turn green.
-If there are traffic jam ahead (detected by light sensor). Micro:bit (sender) will send wifi message “nojam” to the micro:bit (receiver). The traffic light will turn red.
+B交通燈會根據 WiFi 訊息轉變顏色。
+如接收到”nojam”,燈會轉綠。
+如接收到”trafficjam”,燈會轉紅。
 <BR><P>
 ![auto_fit](images/Case8/Case8b_result.gif)<P>
 
-### Think
+### 思考
 <HR>
 
-Q1. How can we add sound effect to the traffic LED Module according to the corresponding color?<BR><P>
+Q1. 試就顏色添加音效?<BR><P>
+Q2. 如果我們不加入邏輯檢查新舊訊息,會發生甚麼?<BR>
