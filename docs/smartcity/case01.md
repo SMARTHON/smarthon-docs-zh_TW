@@ -1,4 +1,4 @@
-# 案例1: 自動化感應街燈
+# 案例 01: 自動化感應街燈
 
 程度: ![level](images/level1.png)
 ![auto_fit](images/Case1/case-01_1.png)<P>
