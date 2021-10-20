@@ -1,4 +1,4 @@
-# 就能成功添加 SmartCity 及 WiFi IoT:bit PXT擴展
+# 把Micro:bit連接到Wifi
 
 在使用各種網絡服務像ThingSpeak, IFTTT, 電郵等之前,需要先把Micro:bit與Wifi路由器連接上,這樣才能存取互聯網。<BR><P>
 ![auto_fit](images/4_ConnectWiFi/Wifi_01.png)<P>

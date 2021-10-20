@@ -1,4 +1,4 @@
-# 案例 10:智能街燈
+# 案例 10: 智能街燈
 
 程度: ![level](images/level4.png)
 ![auto_fit](images/Case10/case-10.png)<P>

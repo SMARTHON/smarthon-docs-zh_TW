@@ -1,130 +1,126 @@
-# Chapter 5: Object to Object communication
+# 章節5: Micro:bit溝通網絡
 
-In this example, micro:bit (sender and receiver) are connected to a channel called “chatroom”.<BR><P>
-Peter want to send a smile message to Sally via internet (WAN). Peter’s micro:bit will send a Wi-Fi message “smile” to Sally’s micro:bit. When Sally receive a WiFi message smile, her micro:bit LED will show a smile icon.<BR><P>
+在這章節,Micro:bit們會同時連接到同一個頻道 'chatroom'。<BR><P>
+
+這個例子中,Peter希望透過互聯網傳送訊息給Sally,因此,他們事先約好連接到同一個頻道 'chatroom',打算在那裡進行聊天。當Peter發送了一個微笑的訊息後,sally的Micro:bit LED顯示了一個微笑圖案。<BR><P>
 ![auto_fit](images/Ch5/Ch5_des.png)<P>
 
-<span id="remarks">*Before we control the micro:bit, please make sure your micro:bit is connected to the Wi-Fi.</span><BR><P>
+<span id="remarks">*在進行溝通前,請先確保兩台Micro:bit都連接上互聯網</span><BR><P>
 
 
 
  
-## Receiver side
+## 接收端
 <HR>
 
-<span id="subtitle">Goal:</span><P>
-The receiver joins the channel, set the corresponding action when message received.
+<span id="subtitle">目標:</span><P>
+
+接收端需要加入頻道,然後在頻道中讀取訊息並依照訊息來作出反應
 
 
-<span id="subtitle">Step 1: Connect Wi-Fi</span><BR><P>
-Before we join the channel, we need to connect to the network first. We have already known how to connect to the Wi-Fi on the first chapter.<P>
+
+<span id="subtitle">第一步驟:連接Wifi</span><BR><P>
+在使用互聯網控制功能之前,需要先確保已連接上網絡<P>
 ![auto_fit](images/Ch5/Ch5_p1.png)<P>
 
-<span id="subtitle">Step 2: Join the channel</span><BR><P>
-We can let the Micro:bit listening on specific channel to receive the command<BR>
-* Snap the `on button A+B pressed` to stage
-* Put the `WiFi Receiver join channel` to the `on button A+B pressed`
-* Type the name of the channel “Chatroom”
+<span id="subtitle">第二步驟:加入頻道</span><BR><P>
+我們可以讓Micro:bit加入指定頻道去接收訊息<BR>
+* 拖動 '加入到頻道...'到平台上
+* 在 '加入到頻道...'中輸入頻道名稱(chatroom)
 
 ![auto_fit](images/Ch5/Ch5_p2.png)<P>
 
-*<B>The user can join more than 1 channel, the maximum is 4.</B>
+*<B>最多可以同時加入4條頻道</B>
 
 
-<span id="subtitle">Step 3: Set the corresponding action</span><BR><P>
-After press the A and B button at the same time, Micro:bit will start listening on channel “chatroom” to wait other people send message to it. We need to use the `On WiFi Receiver received` to read the command and take action.<P>
+<span id="subtitle">第三步驟:設定反應</span><BR><P>
+當程式執行 '加入到頻道...' 後,將會連接到所輸入的頻道,這時候就可以使用 '當從頻道接收到訊息' 來讀取訊息及作出反應<P>
 
-* Snap `On WiFi Receiver received` to stage
-* If need to received include value message, can use the <b>include value version</b> `On WiFi Receiver received` at the same time 
-* Do the `if-condition statement` to the variable `receivedMessage`
-* When the `receivedMessage` called “smile”, the LED will show a smile icon; 
-* When the `receivedMessage` not called “smile”, the LED will show a sad icon. 
+* 拖動 '當從頻道接收到訊息' 到平台
+* 如需要接收帶有數值的訊息時,可以同時使用<b>另一個能接收數值的版本</b>
+* 添加一個 '如果' 條件式, 在設定條件時,對接收到的訊息進行對比以分辦
+* 當接收到的訊息是 'smile' 時, 令LED顯示出微笑圖案 
+* 當接收到的訊息不是 'smile' 時,每LED顯示出傷心圖案. 
 
 ![auto_fit](images/Ch5/Ch5_p3.png)<P>
 
 
-<span id="subtitle">Full Solution<BR><P>
+<span id="subtitle">完整答案<BR><P>
 MakeCode: [https://makecode.microbit.org/_KbxHgu7xfHhP](https://makecode.microbit.org/_KbxHgu7xfHhP)<BR><P>
-You could also download the program from the following website:<BR>
+你可以在以下網頁下載HEX檔案:<BR>
 <iframe src="https://makecode.microbit.org/#pub:_KbxHgu7xfHhP" width="100%" height="500" frameborder="0"></iframe>
 <P><P>
 
 
 
-<h2>Optional:</h2>
+<h2>附加功能:</h2>
 <HR>
-<span id="subtitle">1. Check channel joined status</span><P>
+<span id="subtitle">1.檢查頻道的加入是否成功</span><P>
 
-When the Receiver was joined the channel, it can check the listening was started successfully or not. The `On WiFi channel joined` will provide the `Error_code` for you to determine the result.
-* Go to the OLED Tab
-* Snap `initialize OLED …` to `on Start`
-* Snap the `On WiFi channel joined` to stage
-* Use `show string` to show the `Error_code` with `channel` name
+在加入頻道時,可以檢查是否已經成功連接及開始監聽。只需要使用 '當加入頻道時' 這功能,就可以知道加入頻道的過程中有沒有發生錯誤。如發生錯誤,則會返回錯誤碼。
+* 初始化OLED顯示屏
+* 拖動 '當加入頻道時' 到平台
+* 把錯誤碼顯示出來
 
-If `Error_code` is 0, means no error occur<BR>
-If `Error_code` is not 0, means error occur<BR>
-Normally, if no internet connection or the Channel Server is down, the code will be -28674<P>
+如果錯誤碼為0, 表示沒有問題發生,連接成功<BR>
+如果錯誤碼不為0,表示加入失敗<BR>
+通常如果沒有網絡連接或是頻道伺服器故障,錯誤碼為-28674<P>
 
 ![auto_fit](images/Ch5/Ch5_p4.png)<P>
 
-<span id="subtitle">2. Show the source channel name of the message </span><p>
+<span id="subtitle">2. 在接收訊息時顯示頻道名稱 </span><p>
 
-When you join different channels, you may receive same command from each of them alternately, so you need to identify the message is come from which channel. The `On WiFi Receiver received` provide the variable used to identify. 
-* Snap `clear OLED display` to make sure the display will not overlap.
-* Snap `show string` to the `On WiFi Receiver received`
-* Draw the `Channel` and `receivedMessage` variable to the `show string` to display the on OLED<P>
+在加入多個頻道時,多個訊息的同時接收容易就成混淆,因此可以利用頻道名稱作區分。
+ '當從頻道收到訊息' 有提供頻道名稱變數,只需要把這顯示出來即可輕易分辦出來自那一個頻道。
+* 先清除舊畫面以免重疊造成不正常顯示
+* 利用 '字串格式' 在OLED上同時顯示出頻道的名稱及訊息內容<P>
 
 ![auto_fit](images/Ch5/Ch5_p5.png)<P>
 
-<span id="subtitle">Full Solution<BR><P>
+<span id="subtitle">完整答案<BR><P>
 MakeCode: [https://makecode.microbit.org/_ApFMuua7d072](https://makecode.microbit.org/_ApFMuua7d072)<BR><P>
-You could also download the program from the following website:<BR>
+你可以在以下網頁下載HEX檔案:<BR>
 <iframe src="https://makecode.microbit.org/#pub:_ApFMuua7d072" width="100%" height="500" frameborder="0"></iframe><P><P>
 
-## Sender side
+## 發送端
 <HR>
-<span id="subtitle">Goal:</span><BR><P>
- The sender can send the message to specific channel
+<span id="subtitle">目標:</span><BR><P>
+ 發送端能夠發送訊息到指定頻道
  
-<span id="subtitle">Step 1: Connect WiFi</span><BR><P>
-Before we try to use WiFi Control function, we need to connect to the network, we have already know how to connect to the WiFi on the first chapter.<P>
+<span id="subtitle">第一步驟:連接Wifi</span><BR><P>
+在使用互聯網控制功能之前,需要先確保已連接上網絡<P>
 ![auto_fit](images/Ch5/Ch5_p6.png)<P>
 
-<span id="subtitle">Step 2: Send the message</span><BR><P>
-After connected to the internet, we can start send the message to our friend though the channel. 
-* Snap the `on button … press` to stage
-* Snap the `WiFi Sender send channel…` inside the `on button … press`
-* Input the correct channel name for your target channel, for example chatroom
-* Input the message which need to be send
-* If need to send the message with value, use another version of `WiFi Sender send channel…` which **include the value input** <P>
+<span id="subtitle">第二步驟:傳送訊息</span><BR><P>
+當連接到網絡後,可以開始發送訊息到頻道
+* 在 '傳送到頻道...訊息為...'那分別輸入頻道及要發送的訊息
+* 若要發送的訊息帶有數值,可以使用 '傳送到頻道...訊息為...數值為...' <P>
 
 ![auto_fit](images/Ch5/Ch5_p7.png)<P>
 
 
-<span id="subtitle">Full Solution<BR><P>
+<span id="subtitle">完整答案<BR><P>
 MakeCode: [https://makecode.microbit.org/_AygdmqgfTCXb](https://makecode.microbit.org/_AygdmqgfTCXb)<BR><P>
-You could also download the program from the following website:<BR>
+你可以在以下網頁下載HEX檔案:<BR>
 <iframe src="https://makecode.microbit.org/#pub:_AygdmqgfTCXb" width="100%" height="500" frameborder="0"></iframe><P><P>
 
-<h2>Optional:</h2>
+<h2>附加功能:</h2>
 <HR>
-<span id="subtitle">Check message sent status:</span><P>
+<span id="subtitle">檢查訊息發送狀態:</span><P>
 
-When the sender sending the message, if use the `On WiFi message sent`, it can know the sending result of message to channel. 
-* Go to OLED Tab
-* Snap the `initialize OLED…` to `on Start`
-* Snap the `On Wifi message sent` to stage
-* Snap the `show string` inside to `On Wifi message sent`
-* Snap the `clear OLED display` to avoid overlap
-* Draw the `Status` and `Error_code` variable into the `show string` text placeholder
+當發送端在發送訊息時,如果使用 '當訊息發送到頻道' ,就能夠知悉發送的狀態。
 
-If the sending result is success, the `Status` will be `OK` and `Error_code` is `0`<BR>
-If the sending result is fail, the `Status` will be `FAIL` with `Error_code`<BR>
-Normally, if no internet connection or the channel Server is down, it will be -28674<P>
+* 初始化OLED顯示屏
+* 在 '當訊息發送到頻道' 裡加入 '顯示字串' 
+* 把 'Status' 及 'Error_code' 變數顯示出來
+
+如果發送訊息成功,將會取得一個 'OK' 的 Status,以及 '0' 的Error_code。<BR>
+如果發送訊息失敗,將會取得一個 'FAIL' 的 Status,以及相應的Error_code。<BR>
+通常如果沒有網絡連接或是頻道伺服器故障,錯誤碼為-28674<P>
 
 ![auto_fit](images/Ch5/Ch5_p8.png)<P>
 
-<span id="subtitle">Full Solution<BR><P>
+<span id="subtitle">完整答案<BR><P>
 MakeCode: [https://makecode.microbit.org/_2H1fHvgMv6jg](https://makecode.microbit.org/_2H1fHvgMv6jg)<BR><P>
-You could also download the program from the following website:<BR>
+你可以在以下網頁下載HEX檔案:<BR>
 <iframe src="https://makecode.microbit.org/#pub:_2H1fHvgMv6jg" width="100%" height="500" frameborder="0"></iframe><P>
