@@ -5,7 +5,7 @@ ThingSpeak支援多種不同的裝置及平台,例如電腦,智能電話,以及I
 <BR><P>
 ![auto_fit](images/Ch1/Ch1_des.png)<P>
 
-## Thingspeak設定
+## ThingSpeak設定
 <HR>
 
 <H3>目標:</H3> 我們需要先建立一個頻道及取得頻道的密鑰
@@ -19,7 +19,7 @@ ThingSpeak支援多種不同的裝置及平台,例如電腦,智能電話,以及I
 ![auto_fit](images/Ch1/Ch1_reg2.png)<P>
 
 <span id="subtitle" >第三步驟</span><P>
-分別輸入頻頻名稱,用來儲存上載數據的域名稱,然後儲存。<BR>
+分別輸入頻道名稱,資料"類別",然後儲存。<BR>
 例如:<BR>
 名稱:智能家居<BR>
 Field1: 溫度<BR>
@@ -30,7 +30,7 @@ Field1: 溫度<BR>
 ![auto_fit](images/Ch1/Ch1_reg4.png)<P>
 
 <span id="subtitle" >第五步驟</span><P>
-切換到 'API Keys' , 取得用於輸入的密鑰,記下<BR><P>
+切換到 'API Keys' , 取得用於輸入資料的密鑰,記下<BR><P>
 ![auto_fit](images/Ch1/Ch1_reg5.png)<P>
 
 ## 編程(Makecode)
@@ -73,11 +73,11 @@ MakeCode: [https://makecode.microbit.org/_PHU0oJLwHAYD](https://makecode.microbi
 
 在連接上網絡後,程式就會開始自動上載數據到ThingSpeak。<P>
 在每一次的上傳完成後,都會在OLED上顯示狀態及錯誤碼。<BR>
-在正常的情況,狀態會是 'OK' 及錯誤碼 '0' 。<BR>
+在正常的情況,狀態會是 `OK` 及錯誤碼 `0` 。<BR>
 ![auto_fit](images/Ch1/Ch1_result1.png)<P>
-如果無法成功上載數據,狀態將會顯示為 'FAIL',以及有不同的錯誤碼。<BR>
-* 若錯誤碼為400,為輸入了錯誤的密鑰。
-* 若錯誤碼為-28674,為沒有網絡連接。
+如果無法成功上載數據,狀態將會顯示為 `FAIL`,以及有不同的錯誤碼。<BR>
+* 若錯誤碼為`400`,為輸入了錯誤的密鑰。
+* 若錯誤碼為`-28674`,為沒有網絡連接。
 ![auto_fit](images/Ch1/Ch1_result1_1.png)<P>
 成功上載後,在ThingSpeak頻道上的圖表會更新
 ![auto_fit](images/Ch1/Ch1_result2.png)<P>

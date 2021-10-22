@@ -6,7 +6,7 @@ App Inventor 2 是一個類似Makecode的積木型編程平台,能夠幫助初�
 裡面包含各種功能的元素,例如按鈕,拖拉條,日期選擇器,圖片,相機,傳感器,網頁瀏覽器等,只需要拖拉及簡單編程即可使用。<BR><P>
 
 ![auto_fit](images/Ch3/Ch3_des1.png)<P>
-你可以嘗試用App inventor 2去建立一個使用網絡連接的IoT App程式來控制Micro:bit。當Micro:bit配合上IoT:bit使用互聯網控制功能時,這會一直監聽互聯網中傳來的訊息,然後執行取得的指令。所以可以在智能電話上實現一些遙控的功能,像打開LED開關等。<BR><P>
+你可以嘗試用App inventor 2去建立一個使用網絡連接的IoT App程式來控制Micro:bit。當Micro:bit配合上IoT:bit使用互聯網控制功能時,這會一直監聽互聯網中傳來的訊息,然後執行相應的行為。所以可以在智能電話上實現一些遙控的功能,像打開LED開關等。<BR><P>
 
 ![auto_fit](images/Ch3/Ch3_des2.png)<P>
 
@@ -28,7 +28,7 @@ https://control.smarthon.cc/publish?id=DeviceID&msg=ControlCommand
 `id`: IoT:bit的獨立ID, 用於區分及選擇要控制/進行溝通的IoT:bit <BR>
 `msg`: 要傳送的訊息<P>
 例子: "https://control.smarthon.cc/publish?id=0x123456781&msg=lighton". <BR>
-在這裡我們傳送 'lighton' 訊息到ID為 '0x123456781' 的IoT:bit<P>
+在這裡我們傳送 `lighton` 訊息到ID為 `0x123456781` 的IoT:bit<P>
 
 
 <B><u>(2) 進階API:</u></B>
@@ -40,7 +40,7 @@ https://control.smarthon.cc/publish?id=DeviceID&msg=ControlCommand&value=Value
 `msg`: 要傳送的訊息<BR>
 `value`: 要額外傳送的數值<P>
 例子: "https://control.smarthon.cc/publish?id=0x123456781&msg=lighton&value=500" <BR>
-和基本API的例子裡一樣,這裡我們傳送 'lighton' 訊息到ID為 '0x123456781' 的IoT:bit,但額外增加了一個500的數值,讓Micro:bit知道開燈的亮度<P>
+和基本API的例子裡一樣,這裡我們傳送 `lighton` 訊息到ID為 `0x123456781` 的IoT:bit,但額外增加了一個`500`的數值,讓Micro:bit知道開燈的亮度<P>
 
  
 ## 場景例子
@@ -78,9 +78,9 @@ https://control.smarthon.cc/publish?id=DeviceID&msg=ControlCommand&value=Value
 ![auto_fit](images/Ch3/Ch3_p1.png)<P>
 
 <span id="subtitle">第二步驟:取得ID</span><BR><P>
-'當Wifi連接後' 是一個事件處理器.當連接上Wifi後,這個處理器會把取得的IP地址及裝置的ID都以變量的形式提供。因此可以利用這來取得裝置的ID來進行互聯網控制。<BR>
+'當Wifi連接後' 是一個事件處理器.當連接上Wifi後,這個處理器會把取得的`IP地址`及`裝置的ID`都以變量的形式提供。因此可以利用這來取得裝置的ID來進行互聯網控制。<BR>
 * 初始化OLED顯示屏
-* 在 '當Wifi連接後' 裡添加 '顯示字串' ,並把ID放進去
+* 在 `當Wifi連接後` 裡添加 `顯示字符串` ,並把ID放進去
 
 ![auto_fit](images/Ch3/Ch3_p2.png)<P>
 
@@ -93,10 +93,10 @@ https://control.smarthon.cc/publish?id=DeviceID&msg=ControlCommand&value=Value
 <span id="subtitle">第三步驟:按訊息執行動作</span><BR><P>
 當連接上Wifi後,與控制伺服器的連接將會自動建立,可以接收訊息。<BR>
 若要提取接收到的訊息,可以使用 '當從互聯網接收到指令' 來讀取訊息。然後依照訊息來執行不同的動作。<BR>
-* 在 '當從互聯網接收到指令' 在添加 '如果' 條件式
+* 在 `當從互聯網接收到指令` 在添加 `如果` 條件式
 * 在設定條件時,對接收到的訊息進行對比,是否與我們設定的指令相同
-* 當接收到 'Pin_On' 時,把LED燈打開
-* 當接收到 'Pin_Off' 時,把LED燈關閉<BR>
+* 當接收到 `Pin_On` 時,把LED燈打開
+* 當接收到 `Pin_Off` 時,把LED燈關閉<BR>
 
 *注意,指令是需要區分大小階的
 <P>
@@ -106,14 +106,14 @@ https://control.smarthon.cc/publish?id=DeviceID&msg=ControlCommand&value=Value
 <span id="subtitle">第四步驟:顯示指令</span><BR><P>
 在接收指令時,或者有需要把指令顯示出來以方便知悉。
 * 初始化OLED顯示屏
-* 添加 '顯示字串' 並把指令顯示出來
+* 添加 `顯示字符串` 並把指令顯示出來
 
 ![auto_fit](images/Ch3/Ch3_p3_1.png)<P>
 
 
 <span id="subtitle"><u>進階應用:指令+數值</u></span><BR><P>
 有時侯除了指令外,亦可能需要同時附加一個數值來控制,例如控制舵機轉動角度,LED燈的亮度等。<BR>
-這時侯需使用另一個事件處理器 '當從互聯網接收到指令及數值' ,就能夠同時讀取指令及數值,並依此進行操作。<BR>
+這時侯需使用另一個事件處理器 `當從互聯網接收到指令及數值` ,就能夠同時讀取指令及數值,並依此進行操作。<BR>
 
 ![auto_fit](images/Ch3/Ch3_p4.png) <P>
 
@@ -132,9 +132,9 @@ MakeCode: [https://makecode.microbit.org/_5i7gKJ4KVK9X](https://makecode.microbi
 
 <span id="subtitle">第一步驟: 設計面板</span><BR><P>
 建立一個新專案,切換到Designer板面<BR>
-* 在 'Layout' ,拖動'HorizontalArragement'到面板上<BR>
-* 在 'User Interface' ,分別拖動'Button'兩次到'HorizontalArragement'
-* 在 'Connectivity' 裡,拖動'Web'到面板上
+* 在 'Layout' ,拖動 'HorizontalArragement' 到面板上<BR>
+* 在 'User Interface' ,分別拖動 'Button' 兩次到 'HorizontalArragement'
+* 在 'Connectivity' 裡,拖動 'Web' 到面板上
 ![auto_fit](images/Ch3/Ch3_app1.png)<P>
     
 <span id="subtitle">第二步驟:定義功能</span><BR><P>
@@ -177,14 +177,14 @@ http://control.smarthon.cc/publish?id=`0xfa240ac45917`&msg=`PinValue`&value=`600
 
 
 <U><B>簡易情況:</B></U><BR>
-當Button 1被按下時,將會發送"Pin_on"的指令到指定ID的Micro:bit。<BR>當Micro:bit接收到指令後,將會打開在P0的LED燈。<BR>
-如按下Button 2,則會發送"Pin_Off",而Micro:bit則會把LED關燈
+當Button 1被按下時,將會發送 "Pin_on" 的指令到指定ID的Micro:bit。<BR>當Micro:bit接收到指令後,將會打開在P0的LED燈。<BR>
+如按下Button 2,則會發送 "Pin_Off" ,而Micro:bit則會把LED關燈
 <P>
 
 ![auto_fit](images/Ch3/Ch3_result2.png)<P>
 
 <U><B>使用數值控制:</B></U><BR>
-當使用Button 3時,Micro:bit會依照文字區塊的數值(0/600)來控制LED燈。<P>
+當使用Button 3時,Micro:bit會依照文字區塊的數值(0或600)來控制LED燈。<P>
 
 ![auto_fit](images/Ch3/Ch3_result3.png)<P>
 

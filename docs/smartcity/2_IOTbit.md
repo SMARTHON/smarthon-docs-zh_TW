@@ -1,11 +1,11 @@
 # IoT:bit 介紹
 
 ## 介紹
-Smarthon IoT:Bit是一塊專為讓Micro:bit加入物聯網而設計的開發板,有了Iot:Bit, Micro:bit除了能夠連接不同的傳感器,亦能透過wifi連上互聯網,成為物聯網中的一員。 
+Smarthon IoT:bit是一塊專為讓Micro:bit加入物聯網而設計的開發板,有了Iot:bit, Micro:bit除了能夠連接不同的傳感器,亦能透過wifi連上互聯網,成為物聯網中的一員。 
 <P>
 這提供了13個常規GVS插座,能夠讓使用者同時連接多個不同的傳感器以接收及傳送資料。對於一些比較特別的模組,例如超聲波距離傳感器,馬達以及OLED顯示屏等,都留有額外的插座供它們使用。另外,不止能夠使用一些簡單的類比或是數位控制的模組,像一些需要使用I2C,SPI等協議的模組亦能夠透過Smarton IoT:Bit供Micro:bit使用。為了方便使用第一代Micro:bit的使用者,IoT:bit也內置了揚聲器讓Micro:bit能夠發出聲音。
 <P>
-IoT:bit是供Micro:bit使用Wifi功能的強大擴展板,能夠有效幫助進行STEM項目。IoT:bit使用了最新款的ESP系列模組ESP32,其雙核心效能對比上一代的ESP8266有著明顯的提升,配合上記憶體的增加,能夠提供更加穩定的Wifi功能。IoT:bit除了支援Thingspeak及IFTTT等常用IoT平台服務,亦提供互聯網遙距控制功能,讓使用者能夠透過智能電話, Amazon 智能喇叭, 或是Google 智能家居裝置操控Micro:bit。而IoT:bit亦可以與其他IoT:bit進行溝通,經由wifi接上互聯網後,就能夠長距離地與其他Micro:bit進行資料交換,不像Micro:bit原來的無線電通訊有著短距離的限制。
+IoT:bit是供Micro:bit使用Wifi功能的強大擴展板,能夠有效幫助進行STEM項目。IoT:bit使用了最新款的ESP系列模組ESP32,其雙核心效能對比上一代的ESP8266有著明顯的提升,配合上記憶體的增加,能夠提供更加穩定的Wifi功能。<BR>IoT:bit除了支援Thingspeak及IFTTT等常用IoT平台服務,亦提供互聯網遙距控制功能,讓使用者能夠透過智能電話, Amazon 智能喇叭, 或是Google 智能家居裝置操控Micro:bit。而IoT:bit亦可以與其他IoT:bit進行溝通,經由wifi接上互聯網後,就能夠長距離地與其他Micro:bit進行資料交換,不像Micro:bit原來的無線電通訊有著短距離的限制。
 <P>
 
 ![auto_fit](images/2_IOT/iot_image00.jpg)
@@ -44,7 +44,7 @@ IoT:bit是供Micro:bit使用Wifi功能的強大擴展板,能夠有效幫助進�
 |揚聲器|被動式揚聲器(音樂)||
 |無線模組|ESP8266<BR>ESP32<BR>藍芽|使用UART協議|
 |OLED顯示屏模組|128*64解析度 OLED<BR>顯示屏 SSD1306|使用I2C協議|
-|Mirco:bit引腳|13 I/O 引腳<BR>(13 數位及類比輸出)<BR>(6 類比輸入)|<B>已被保留使用的引腳:</B><BR>無線模組:P8,P16<BR>4針模組引腳:P12,P13|
+|Micro:bit引腳|13 I/O 引腳<BR>(13 數位及類比輸出)<BR>(6 類比輸入)|<B>已被保留使用的引腳:</B><BR>無線模組:P8,P16<BR>4針模組引腳:P12,P13|
 |I2C 引腳|P19,P20|共3個可用的I2C接口,<BR>其中1個專門供OLED顯示屏使用|
 |ESP 引腳|3個舵機控制插座(S1,S2,S3)|由ESP晶片進行控制|
 
@@ -86,7 +86,7 @@ IoT:bit是供Micro:bit使用Wifi功能的強大擴展板,能夠有效幫助進�
   <tr>
     <th class="tg-ux7d">類型</th>
     <th class="tg-ux7d"></th>
-    <th class="tg-ux7d">Mirco:bit</th>
+    <th class="tg-ux7d">Micro:bit</th>
     <th class="tg-ux7d">IoT:bit</th>
     <th class="tg-ux7d">額外接口</th>
   </tr>
@@ -256,7 +256,7 @@ IoT:bit是供Micro:bit使用Wifi功能的強大擴展板,能夠有效幫助進�
 
 <H3>無線Wifi模組</H3><BR>
 ![pic](images/2_IOT/iot_image07.png)
-<P>無線模組是整塊擴展板中最重要的核心部份。這能夠安裝不同的無線模組,例如ESP32, ESP8266, 藍牙等等,讓使用者依照不同情況使用合適的模組,以配合不同的項目。
+<P>無線模組是整塊擴展板中的核心部份。這能夠安裝不同的無線模組,例如ESP32, ESP8266, 藍牙等等,讓使用者依照不同情況使用合適的模組,以配合不同的項目。
 
 <H3>ESP舵機接口</H3><BR>
 ![pic](images/2_IOT/iot_image08.png)

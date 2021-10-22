@@ -1,6 +1,6 @@
 # 把Micro:bit連接到Wifi
 
-在使用各種網絡服務像ThingSpeak, IFTTT, 電郵等之前,需要先把Micro:bit與Wifi路由器連接上,這樣才能存取互聯網。<BR><P>
+在使用各種網絡服務像ThingSpeak, IFTTT, 電郵等之前,需要先把Micro:bit與Wifi路由器連接上,才能存取互聯網。<BR><P>
 ![auto_fit](images/4_ConnectWiFi/Wifi_01.png)<P>
 
 
@@ -29,7 +29,7 @@
 <span id="subtitle">第一步驟:初始化IoT:bit</span><BR><P>
 每次編程時,你需要先初始化IoT:bit才能夠正常使用<BR>
 * 前往IoT:bit分頁
-* 把「‵初始化IoT:bit TX RX‵」拖動到「‵當啟動時‵」裡面
+* 把 `初始化IoT:bit TX RX` 拖動到 `當啟動時` 裡面
 ![auto_fit](images/4_ConnectWiFi/Wifi_p1.png)<P>
 
 <span id="subtitle">第二步驟: 連接Wifi</span><BR><P>
@@ -40,10 +40,11 @@
 ![auto_fit](images/4_ConnectWiFi/Wifi_p2.png)<P>
 
 <span id="subtitle">第三步驟: 成功連接後以圖案表達</span><BR><P>
-「`當Wifi連接後`」是一個事件處理器,當你成功連接wifi後,裡面的程式就會被執行。當你成功連接後,會獲得兩個變數,分別為IP地址及裝置ID,利用這兩個變數可以令你輕易地透過網路上控制你的Micro:bit。<BR>
+「`當Wifi連接後`」是一個事件處理器,當你成功連接wifi後,裡面的程式就會被執行。<BR>
+當你成功連接後,會獲得兩個變數,分別為`IP地址`及`裝置ID`,利用這兩個變數可以令你輕易地透過網路上控制你的Micro:bit。<BR>
 * 拖動「`當Wifi連接後`」到平台上
 * 在「`基本`」分頁,拖動「`顯示 圖示`」到「`當Wifi連接後`」裡面
-* 把圖示切換成剔<BR>
+* 把圖示切換成`剔`<BR>
 
 ![auto_fit](images/4_ConnectWiFi/Wifi_p3.png)<P>
 
@@ -57,8 +58,8 @@
 
 ![auto_fit](images/4_ConnectWiFi/Wifi_p3_5.png)<P>
 
-<B><u>額外嘗試</u></B>:<BR>
-和「`當Wifi連接後`」接收成功連接Wifi事件一樣,當你的Wifi連線斷開時,亦會觸發另一個事件。這時候你可以用「`當Wifi斷線`」來得知情況及原因,並作出相應的處理,如顯示X圖案及把錯誤碼顯示在顯示屏上<BR>
+<B><u>額外功能</u></B>:<BR>
+和「`當Wifi連接後`」接收成功連接Wifi事件一樣,當你的Wifi連線斷開時,亦會觸發另一個事件。這時候你可以用「`當Wifi斷線`」來得知情況及原因,並作出相應的處理,如顯示`X圖案`及把`錯誤碼`顯示在顯示屏上<BR>
 
 ![auto_fit](images/4_ConnectWiFi/Wifi_p5.png)<P>
 
@@ -76,7 +77,7 @@ MakeCode: [https://makecode.microbit.org/_53Yf8qcx521m](https://makecode.microbi
 ![auto_fit](images/4_ConnectWiFi/Wifi_result1.png)<P>
 
 <span id="subtitle">第二步驟</span><BR><P>
-程式會開始執行並嘗試連接Wifi,當成功連接後,會顯示出路由器分派給Micro:bit的IP地址。同時Micro:bit上也會顯示圖案<BR><P>
+程式會開始執行並嘗試連接Wifi,當成功連接後,會顯示出路由器分派給Micro:bit的IP地址。<BR>同時Micro:bit上也會顯示圖案<BR><P>
 ![auto_fit](images/4_ConnectWiFi/Wifi_result2.png)<P>
 
 若你有在編程時添加好斷線的處理,你亦可以在此測試。當你連接Wifi後,嘗試把路由器關閉以切斷與Micro:bit的連線,這次將會在斷線後顯示X圖案及提示錯誤碼201,這代表「沒找到路由器」(因為我們已關上)。<BR>
