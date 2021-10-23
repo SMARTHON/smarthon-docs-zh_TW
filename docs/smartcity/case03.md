@@ -13,12 +13,10 @@
 <HR>
 
 <span id="subtitle">甚麼是智能垃圾桶?</span><P>
-垃圾桶上的 LED 燈可以告訴人們桶內的當前容量,收集工人可以輕易判斷有否需要清
-理垃圾。這樣可以減少更換垃圾袋的次數,從而減少膠袋用量。<BR><P>
+垃圾桶上的 LED 燈可以告訴人們桶內的當前容量,收集工人可以輕易判斷有否需要清理垃圾。這樣可以減少更換垃圾袋的次數,從而減少膠袋用量。<BR><P>
 
 <span id="subtitle">運作原理</span><P>
-距離傳感器可以探測桶內垃圾高度,從而轉化為當前容量。彩色 LED 燈則會隨著容量
-轉變。<BR><P>
+距離傳感器可以探測桶內垃圾高度,從而轉化為當前容量。彩色 LED 燈則會隨著容量轉變。<BR><P>
 ![pic_70](images/Case3/Concept-diagram-Case3.png)<P>
 
 ## 所用部件
@@ -45,13 +43,13 @@
 ## 線路連接
 <HR>
 
-連接距離傳感器和 IoT:bit 的 P14(trig)/P15(echo)端口<BR><P>
-連接彩色 LED 燈和 IoT:bit 的 P1 端口<BR><P>
+* 連接距離傳感器和 IoT:bit 的 P14(trig)/P15(echo)端口<BR><P>
+* 連接彩色 LED 燈和 IoT:bit 的 P1 端口<BR><P>
 ![pic](images/Case3/Case3_hardware.png)<P>
 
 *注意
 
->1. 根據顏色連接接線和端口
+>1. 根據顏色連接接線和端口<BR>
 >2. P0 內建線路予蜂鳴器。在使用 P0 端口予其他外接設備時遇上問題,建議查看位於 IoT:bit 右上的蜂鳴器開關狀態
 
 ## 編程 (MakeCode)
@@ -90,4 +88,4 @@ MakeCode: [https://makecode.microbit.org/_F2x6j9UaM6wf](https://makecode.microbi
 ## 思考
 <HR>
 
-Q1. 如何加入音效提示滿載?(例如利用蜂鳴器)<BR><P>
+Q1. 如何加入音效提示滿載?(例如利用揚聲器)<BR><P>

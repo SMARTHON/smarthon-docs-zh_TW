@@ -14,7 +14,7 @@
 <span id="subtitle">甚麼是 IFTTT?</span><BR><P>
 IFTTT 可以把用家的應用程式和設備連接並容許它們進行交流以完成特定工作。<BR><P>
 <span id="subtitle">運作原理</span><BR><P>
-運動傳感器回饋訊號至主板,若 TRUE 則主板激活蜂鳴器並自動發出電郵提示用家。
+運動傳感器回饋訊號至主板,若 TRUE 則主板激活揚聲器並自動發出電郵提示用家。
 同時 LED 屏會反映有入侵耆。<BR><P>
 ![auto_fit](images/Case7/Concept-diagram-Case7.png)<P>
 
@@ -41,8 +41,8 @@ IFTTT 可以把用家的應用程式和設備連接並容許它們進行交流�
 ## 線路連接
 <HR>
 
-連接運動傳感器和 IoT:bit 的 P1 端口<BR><P>
-檢查 IoT:bit 上的蜂鳴器開關<BR><P>
+* 連接運動傳感器和 IoT:bit 的 P1 端口<BR><P>
+* 檢查 IoT:bit 上的揚聲器開關<BR><P>
 ![auto_fit](images/Case7/Case7_hardware.png)<P>
 
 ## IoT (IFTTT)
@@ -69,7 +69,7 @@ IFTTT 可以把用家的應用程式和設備連接並容許它們進行交流�
 ![auto_fit](images/Case7/Case7_p2.png)<P>
 
 <span id="subtitle">步驟三. 讀取運動傳感器讀數</span><BR><P>
-* 在「重復無限次」裏加入”如果...那麼”,以”WiFi connected?”為前設
+* 在「重復無限次」裏加入”如果...那麼”,以`WiFi connected?`為前設
 * 在上述邏輯再加一個”如果...那麼”,以”取得運動傳感器數值接口 P1 = TRUE”為前設
 ![auto_fit](images/Case7/Case7_p3.png)<P>
  

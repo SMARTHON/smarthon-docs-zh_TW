@@ -12,8 +12,7 @@
 <HR>
 
 <span id="subtitle">甚麼是 Thingspeak?</span><BR><P>
-ThingSpeak 是一個物聯網數據分析平台,提供即時數據圖表分顯然及分析。在這個
-案例,我們僧使用該平台製作數據圖表。<BR><P>
+ThingSpeak 是一個物聯網數據分析平台,提供即時數據圖表分顯然及分析。在這個案例,我們會使用該平台製作數據圖表。<BR><P>
 
 <span id="subtitle">運作原理</span><BR><P>
 實時收集溫度,濕度和雨滴並上傳至 ThingSpeak,令分析數據更輕鬆。<BR><P>
@@ -43,13 +42,13 @@ ThingSpeak 是一個物聯網數據分析平台,提供即時數據圖表分顯�
 ## 線路連接
 <HR>
 
-連接雨滴傳感器和 IoT:bit 的 P0 端口<BR><P>
-連接溫度及濕度傳感器和 IoT:bit 的 P2 端口<BR><P>
+* 連接雨滴傳感器和 IoT:bit 的 P0 端口<BR><P>
+* 連接溫度及濕度傳感器和 IoT:bit 的 P2 端口<BR><P>
 ![auto_fit](images/Case6/Case6_hardware.png)<P>
 
 *注意
 
->1. 根據顏色連接接線和端口
+>1. 根據顏色連接接線和端口<BR>
 >2. P0 內建線路予蜂鳴器。在使用 P0 端口予其他外接設備時遇上問題,建議查看位於 IoT:bit 右上的蜂鳴器開關狀態
 
 
@@ -63,11 +62,11 @@ ThingSpeak 是一個物聯網數據分析平台,提供即時數據圖表分顯�
 ![auto_fit](images/Case6/Case6_iot1.png)<P>
   
 <span id="subtitle">步驟二</span><BR><P>
-輸入 Channel name, Field1, Field2,點擊 Save Channel<BR><P>
-* Channel name: Smart Weather Station
-* Field 1: temperature
-* Field 2: humidity
-* Freld 3: raindrop
+輸入 `Channel name`, `Field1`, `Field2`,點擊 Save Channel<BR><P>
+* `Channel name`: Smart Weather Station
+* `Field 1`: temperature
+* `Field 2`: humidity
+* `Freld 3`: raindrop
 
 
 <span id="subtitle">步驟三</span><BR><P>
@@ -79,8 +78,8 @@ ThingSpeak 是一個物聯網數據分析平台,提供即時數據圖表分顯�
 <HR>
 
 <span id="subtitle">步驟一. 啟動OLED,IoT:bit 和 WiFi</span><BR><P>
-* 啟動 OLED,IoT:bit 和 WiFI
-* 宣告新變數”raindrop",”humidity”,”temperature”並設值為0
+* 初始化OLED,IoT:bit 和 WiFI
+* 宣告新變數 `raindrop`,`humidity`,`temperature`並設值為0
 ![auto_fit](images/Case6/Case6_p1.png)<P>
 
 <span id="subtitle">步驟二.連上網絡</span><BR><P>
@@ -88,27 +87,27 @@ ThingSpeak 是一個物聯網數據分析平台,提供即時數據圖表分顯�
 ![auto_fit](images/Case6/Case6_p2.png)<P>
 
 <span id="subtitle">步驟三.讀取溫度,濕度和雨滴讀數</span><BR><P>
-* 在「重復無限次」加入”如果...那麼”,”WiFi connected?”為前設
-* 設”humidity”為”DHT11 讀取濕度接口 P2”
-* 設”temperature”為”DHT11 讀取溫度接口 P2”
-* 設”raindrop”為”取得雨水傳感器數值接口 P0”
+* 在「重復無限次」加入”如果...那麼”,`WiFi connected?`為前設
+* 設`humidity`為`DHT11 讀取濕度接口 P2`
+* 設`temperature`為`DHT11 讀取溫度接口 P2`
+* 設`raindrop`為`取得雨水傳感器數值接口 P0`
 ![auto_fit](images/Case6/Case6_p3.png)<P>
 
 <span id="subtitle">步驟四. 在 OLED 上顯示讀數</span><BR><P>
 * 加入”清除顯示”
-* 新行顯示”Temperature: temperature, Humidity: humidity, Raindrop:
-raindrop”
+* 新行顯示”Temperature: `temperature`, Humidity: `humidity`, Raindrop:
+`raindrop`”
 ![auto_fit](images/Case6/Case6_p4.png)<P>
 
 <span id="subtitle">步驟五. 上傳資料至 ThingSpeak</span><BR><P>
-* 在”如果...那麼”加入”Send ThingSPeak key...”
-* 在 Field x value 加入 temperature, humidity, raindrop
+* 在”如果...那麼”加入”Send ThingSPeak key...”及輸入API key
+* 在 Field value 分別放入 `temperature`, `humidity`, `raindrop`
 * 等待 15 秒
 ![auto_fit](images/Case6/Case6_p5.png)<P>
 
 <span id="subtitle">步驟六. 顯示上傳狀態</span><BR><P>
-* 加入”On ThingSpeak Uploaded”
-* 新行顯示”ThingSpeak: Status, Error: Error_code”
+* 加入`On ThingSpeak Uploaded`
+* 新行顯示”ThingSpeak: `Status`, Error: `Error_code`”
 ![auto_fit](images/Case6/Case6_p6.png)<P>
 
 

@@ -37,12 +37,12 @@
 ## 線路連接
 <HR>
 
-連接 LED 和 IoT:bit 的 P1 端口<BR><P>
+* 連接 LED 和 IoT:bit 的 P1 端口<BR><P>
 ![auto_fit](images/Case10/Case10_hardware.png)<P>
 
-*注意:
+*注意:*
 
->1. 根據顏色連接接線和端口
+>1. 根據顏色連接接線和端口<BR>
 >2. P0 內建線路予蜂鳴器。在使用 P0 端口予其他外接設備時遇上問題,建
 議查看位於 IoT:bit 右上的蜂鳴器開關狀態
 
@@ -62,9 +62,9 @@
 <span id="subtitle">步驟四. 控制 LED 開關</span><BR><P>
 * 加入”如果...那麼”
 * ”WAN_Command = lighton”設為第一個條件
-* 在"如果"裏加入”turn white LED to 1023 at P1”
+* 在 "如果" 裏加入`turn white LED to 1023 at P1`
 * 點擊加號,在那添加第二個條件”WAN_Command = lightoff”
-* 在第二個"如果"裏加入”turn white LED to 0 at P1
+* 在第二個 "如果" 裏加入`turn white LED to 0 at P1`
 ![auto_fit](images/Case10/Case10_p4.png)<P>
 
 
@@ -77,8 +77,8 @@ MakeCode: [https://makecode.microbit.org/_2cRf6LWq69AL](https://makecode.microbi
 ## IoT (IFTTT)
 <HR>
 
-<span id="remarks">* 詳情參考"附錄:IFTTT"<BR>
-本案例一共需要兩個專案
+<span id="remarks">* 詳情參考 "附錄:IFTTT" <BR>
+本案例一共需要兩個專案 *
 </span><BR><P>
 
 <span id="subtitle">步驟一. 在 IFTTT 開立新專案</span><BR><P>

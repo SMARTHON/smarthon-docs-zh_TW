@@ -43,13 +43,13 @@
 ## 線路連接
 <HR>
 
-連接運動傳感器和 IoT:bit 的 P0 端口<BR><P>
-連接白色 LED 燈和 IoT:bit 的 P3 端口<BR><P>
+* 連接運動傳感器和 IoT:bit 的 P0 端口<BR><P>
+* 連接白色 LED 燈和 IoT:bit 的 P3 端口<BR><P>
 <BR>![auto_fit](images/Case1/Case1_hardware.png)
 <P>
 注意:<BR>
 
->1.根據顏色連接接線和端口
+>1.根據顏色連接接線和端口<BR>
 >2.P0 內建線路予蜂鳴器。在使用 P0 端口予其他外接設備時遇上問題,建議查
 看位於 IoT:bit 右上的蜂鳴器開關狀態
 
@@ -66,7 +66,7 @@
 * 插入「如果...那麼」
 * 將”取得運動傳感器接口 P0 == TRUE”設為條件,用來進行其後的判斷
 * 加入”開啟白色 LED 至亮度 1023 接口 P3”和”等待 10 秒”至「如果」區域,這段程序將會在”取得運動傳感器接口 P0 == TRUE”為正確時運行
-* 加入”開啟白色 LED 至亮度 0 接口 P3”至「否則」區域,這段程序將會在”取得運動傳感器接口 P0 == TRUE”為錯誤時運行
+* 加入”開啟白色 LED 至亮度 0 接口 P3”至「否則」區域,<BR>這段程序將會在”取得運動傳感器接口 P0 == TRUE”為錯誤時運行
 ![pic_90](images/Case1/Case1_p2.png)<P>
 
 <span id="subtitle">完整答案<BR><P>
@@ -95,4 +95,4 @@ If we connect white LED light to P3, we need to disable micrbo:bit LED.<BR><P>
 ![auto_fit](images/Case1/Case1_think.png)<P>
 -->
 
-Q2. 你能夠在OLED顯示器上顯示運動傳感器的狀況嗎?<P>
+Q2. 你能夠在OLED顯示屏上顯示運動傳感器的狀況嗎?<P>

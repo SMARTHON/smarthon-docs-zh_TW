@@ -70,14 +70,14 @@ G (黑) | G (棕)
 
 <span id="subtitle">步驟三. 接收指令</span><BR><P>
 * 每次接收時都先清除顯示
-* 把接收到的拍令用顯示字串"Command: WAN_Command" 顯示出來
+* 把接收到的拍令用顯示字串 "Command: WAN_Command" 顯示出來
 ![pic_70](images/Case11/Case11_p3.png)<P>
 
 <span id="subtitle">步驟四. 以指令控制開關</span><BR><P>
-* 加入”如果...那麼”,以”WAN_Command = Rain”為條件
-* 在第一個"那麼"裡添加”Turn Servo to 90 degree at P1”
+* 加入 ”如果...那麼” ,以 ”WAN_Command = Rain” 為條件
+* 在第一個 "那麼" 裡添加`Turn Servo to 90 degree at P1`
 * 點擊加號,以”WAN_Command = Clear” 為第二條件
-* 在第二個"那麼"裡添加”Turn Servo to 180 degree at P1”
+* 在第二個 "那麼" 裡添加`Turn Servo to 180 degree at P1`
 ![auto_fit](images/Case11/Case11_p4.png)<P>
 
 <span id="subtitle">步驟五. 按 A 以開啟布架</span><BR><P>
@@ -113,8 +113,9 @@ MakeCode: [https://makecode.microbit.org/_6KyfVPJEd10A](https://makecode.microbi
 
 ## 結果
 <HR>
-IFTTT會依照地點的天氣發送指令。
-當 micro:bit 收到”RAIN"指疑,布架會關上。反之則開啟。<BR><P>
+IFTTT會依照地點的天氣發送指令。<BR>
+當 micro:bit 收到”RAIN"指令,布架會關上。反之則開啟。<BR><P>
+
 ![auto_fit](images/Case11/Case11_result.gif)<P>
 
 ## 思考

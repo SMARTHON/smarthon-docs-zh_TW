@@ -14,8 +14,7 @@
 <span id="subtitle">甚麼是 app inventor?</span><BR><P>
 這是一個能讓用家自行開發程式的工具。<BR><P>
 <span id="subtitle">智能門控制原理</span><BR><P>
-當 microbit 收到”opendoor”訊號,舵機會自動轉動。當收到”closedoor”,門會自動關
-閉。<BR><P>
+當 microbit 收到”opendoor”訊號,舵機會自動轉動。當收到”closedoor”,門會自動關閉。<BR><P>
 ![auto_fit](images/Case9/Concept-diagram-Case9.png)<P>
 
 ## 所用部件
@@ -63,15 +62,15 @@ G (黑)|G (棕)
 ![pic_60](images/Case9/Case9_p1.png)<P>
 
 <span id="subtitle">步驟二. 設定舵機初始位置</span><BR><P>
-* 加入”turn servo to 180 degree at P2”
+* 加入`turn servo to 180 degree at P2`
 ![pic_60](images/Case9/Case9_p2.png)<P>
 
 <span id="subtitle">步驟三. 在連接至 WiFi 後顯示剔號及ID</span><BR><P>
 ![pic_60](images/Case9/Case9_p3.png)<P>
 
 <span id="subtitle">步驟四. 接收 WAN 指令</span><BR><P>
-* 在"On WiFI connected”加入清除顯示
-* 新行顯示"字串組合"Command” WAN_Command””
+* 在`On WiFI received`加入清除顯示
+* 新行顯示` "字串組合"Command” WAN_Command” `
 ![pic_80](images/Case9/Case9_p4.png)<P>
 
 <span id="subtitle">步驟五. 以 WAN 指令開關門</span><BR><P>

@@ -13,7 +13,7 @@
 
 <span id="subtitle">甚麼是都市噪音監測?</span><P>
 都市噪音監測系統監測公路上的噪音污染,因為過大的噪音會降低周遭人們的生活水
-平。安裝一個系統可以幫助工程師收集有關數據用於城市規劃。<BR><P>
+平。<BR>安裝一個系統可以幫助工程師收集有關數據用於城市規劃。<BR><P>
 
 <span id="subtitle">運作原理</span><P>
 噪音傳感器可以偵測公路上的噪音水平,數據可以以圖表形式顯然。<BR><P>
@@ -44,8 +44,8 @@
 ## 線路連接
 <HR>
 
-連接噪音傳感器和 IoT:bit 的 P1 端口<BR><P>
-把 OLED 接到 I2C 端口<BR><P>
+* 連接噪音傳感器和 IoT:bit 的 P1 端口<BR><P>
+* 把 OLED 接到 I2C 端口<BR><P>
 ![pic](images/Case4/Case4_hardware.png)<P>
 
 ## 編程(MakeCode)
@@ -57,14 +57,14 @@
 ![auto_fit](images/Case4/Case4_p1.png)<P>
 
 <span id="subtitle">步驟二. 在 OLED 上顯示噪音數值</span><P>
-* 在「重復無限次」加入”變數 Noise 設為四捨五入取得聲音傳感感器數值接口 P1
+* 在「重復無限次」加入`將變數 Noise 設為四捨五入取得聲音傳感感器數值接口 P1`
 * 在「燈光」模塊中加入點亮長條圖顯示值為 Noise, 最大值為 100
 * 等待 0.5 毫秒
 ![auto_fit](images/Case4/Case4_p2.png)<P>
 
 <span id="subtitle">步驟三. 在 OLED 上顯示噪音數值</span><P>
 * 加入”清除顯示”
-* 加入”新行顯示字符(字申組合(“Noise: ‵Noise‵ dB”))”
+* 加入`顯示字符串(字申組合(“Noise: ‵Noise‵ dB”))`
 ![auto_fit](images/Case4/Case4_p3.png)<P>
 
 
