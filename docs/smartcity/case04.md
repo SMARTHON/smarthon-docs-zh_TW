@@ -12,11 +12,11 @@
 <HR>
 
 <span id="subtitle">甚麼是都市噪音監測?</span><P>
-都市噪音監測系統監測公路上的噪音污染,因為過大的噪音會降低周遭人們的生活水
+都市噪音監測系統監測公路上的噪音污染，因為過大的噪音會降低周遭人們的生活水
 平。<BR>安裝一個系統可以幫助工程師收集有關數據用於城市規劃。<BR><P>
 
 <span id="subtitle">運作原理</span><P>
-噪音傳感器可以偵測公路上的噪音水平,數據可以以圖表形式顯然。<BR><P>
+噪音傳感器可以偵測公路上的噪音水平，數據可以以圖表形式顯然。<BR><P>
 ![pic_70](images/Case4/Concept-diagram-Case4.png)<P>
 
 
@@ -58,7 +58,7 @@
 
 <span id="subtitle">步驟二. 在 OLED 上顯示噪音數值</span><P>
 * 在「重復無限次」加入`將變數 Noise 設為四捨五入取得聲音傳感感器數值接口 P1`
-* 在「燈光」模塊中加入點亮長條圖顯示值為 Noise, 最大值為 100
+* 在「燈光」模塊中加入點亮長條圖顯示值為 Noise， 最大值為 100
 * 等待 0.5 毫秒
 ![auto_fit](images/Case4/Case4_p2.png)<P>
 
@@ -77,7 +77,7 @@ MakeCode: [https://makecode.microbit.org/_TiW9H7CuU5M5](https://makecode.microbi
 ## 結果
 <HR>
 
-在初始化 IoT:bit 和 OLED 後,將會顯示噪音的圖表。<BR><P>
+在初始化 IoT:bit 和 OLED 後，將會顯示噪音的圖表。<BR><P>
 ![pic](images/Case4/Case4_result.gif)<P>
 ![pic](images/Case4/Case4_result2.png)<P>
 

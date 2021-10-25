@@ -6,7 +6,7 @@
 ## 目標
 <HR>
 
-製作一個會在天氣改變時自動開關的布架,避免衣物被雨水沾濕。
+製作一個會在天氣改變時自動開關的布架，避免衣物被雨水沾濕。
 
 ## 背景
 <HR>
@@ -14,7 +14,7 @@
 <span id="subtitle">為什麼我們需要自動布架?</span><BR><P>
 這樣當下雨時人們再不需要衝上天台把衣服收回。<BR><P>
 <span id="subtitle">運作原理</span><BR><P>
-Micro:bit通過IFTTT平台上的天氣預報系統,取得指令內容開關布架。<BR><P>
+Micro:bit通過IFTTT平台上的天氣預報系統，取得指令內容開關布架。<BR><P>
 ![auto_fit](images/Case11/Concept-diagram-Case11.png)<P>
 
 ## 所用部件
@@ -62,7 +62,7 @@ G (黑) | G (棕)
 ## 編程 (MakeCode)
 <HR>
 
-<span id="subtitle">步驟一. 啟動 OLED,IoT:bit 和連接 WiFi</span><BR><P>
+<span id="subtitle">步驟一. 啟動 OLED，IoT:bit 和連接 WiFi</span><BR><P>
 ![pic_60](images/Case11/Case11_p1.png)<P>
 
 <span id="subtitle">步驟二. 在連接 WiFi 後顯示剔號及ID</span><BR><P>
@@ -74,18 +74,18 @@ G (黑) | G (棕)
 ![pic_70](images/Case11/Case11_p3.png)<P>
 
 <span id="subtitle">步驟四. 以指令控制開關</span><BR><P>
-* 加入 ”如果...那麼” ,以 ”WAN_Command = Rain” 為條件
+* 加入 ”如果...那麼” ，以 ”WAN_Command = Rain” 為條件
 * 在第一個 "那麼" 裡添加`Turn Servo to 90 degree at P1`
-* 點擊加號,以”WAN_Command = Clear” 為第二條件
+* 點擊加號，以”WAN_Command = Clear” 為第二條件
 * 在第二個 "那麼" 裡添加`Turn Servo to 180 degree at P1`
 ![auto_fit](images/Case11/Case11_p4.png)<P>
 
 <span id="subtitle">步驟五. 按 A 以開啟布架</span><BR><P>
-* 當按A按鈕時,轉動舵機
+* 當按A按鈕時，轉動舵機
 ![pic_50](images/Case11/Case11_p5.png)<P>
 
 <span id="subtitle">步驟六. 按 B 以開啟布架</span><BR><P>
-* 當按B按鈕時,向另一角度轉動舵機
+* 當按B按鈕時，向另一角度轉動舵機
 ![pic_50](images/Case11/Case11_p6.png)<P>
 
 
@@ -100,13 +100,13 @@ MakeCode: [https://makecode.microbit.org/_6KyfVPJEd10A](https://makecode.microbi
 
 <span id="remarks">* 詳情參考 附錄:IFTTT</span><BR><P>
 
-<span id="subtitle">步驟一. 創建新專案(共需要兩個專案),選擇 weather underground<BR><P>
+<span id="subtitle">步驟一. 創建新專案(共需要兩個專案)，選擇 weather underground<BR><P>
 <span id="subtitle">步驟二. 選擇”Current condition changes to”<BR><P>
 <span id="subtitle">步驟三. 選擇地點和觸發條件<BR><P>
 <span id="subtitle">步驟四. 選擇 Snarthon IoT:Bit 為 Then<BR><P>
 <span id="subtitle">步驟五. 選擇指令<BR><P>
 <span id="subtitle">步驟六. 輸入 ID和指令(Rain)<BR><P>
-<span id="subtitle">步驟七. 重複以上動作,觸發條件和指令改為晴天和clear
+<span id="subtitle">步驟七. 重複以上動作，觸發條件和指令改為晴天和clear
 
 ![auto_fit](images/Case11/Case11_iot1.png)<P>
 
@@ -114,11 +114,11 @@ MakeCode: [https://makecode.microbit.org/_6KyfVPJEd10A](https://makecode.microbi
 ## 結果
 <HR>
 IFTTT會依照地點的天氣發送指令。<BR>
-當 micro:bit 收到”RAIN"指令,布架會關上。反之則開啟。<BR><P>
+當 micro:bit 收到”RAIN"指令，布架會關上。反之則開啟。<BR><P>
 
 ![auto_fit](images/Case11/Case11_result.gif)<P>
 
 ## 思考
 <HR>
 
-Q1. 除了雨天和晴天,能否根據其他天氣狀態作出反應?<BR><P>
+Q1. 除了雨天和晴天，能否根據其他天氣狀態作出反應?<BR><P>

@@ -12,9 +12,9 @@
 <HR>
 
 <span id="subtitle">甚麼是智能街燈?</span><BR><P>
-智能街燈是可以在指定時間自動開關的街燈,能夠同時兼顧節省能源及照明需求。<BR><P>
+智能街燈是可以在指定時間自動開關的街燈，能夠同時兼顧節省能源及照明需求。<BR><P>
 <span id="subtitle">運作原理</span><BR><P>
-當從 WAN 收到指令,micro:bit 會根據指令控制街燈。所以只需要在不同時間及場合發送指令即可。<BR><P>
+當從 WAN 收到指令，micro:bit 會根據指令控制街燈。所以只需要在不同時間及場合發送指令即可。<BR><P>
 ![auto_fit](images/Case10/Concept-diagram-Case10.png)<P>
 
 ## 所用部件
@@ -43,13 +43,13 @@
 *注意:*
 
 >1. 根據顏色連接接線和端口<BR>
->2. P0 內建線路予蜂鳴器。在使用 P0 端口予其他外接設備時遇上問題,建
+>2. P0 內建線路予蜂鳴器。在使用 P0 端口予其他外接設備時遇上問題，建
 議查看位於 IoT:bit 右上的蜂鳴器開關狀態
 
 ## 編程 (MakeCode)
 <HR>
 
-<span id="subtitle">步驟一. 啟動 OLED,Iot:bit 和連接至 WiFi</span><BR><P>
+<span id="subtitle">步驟一. 啟動 OLED，Iot:bit 和連接至 WiFi</span><BR><P>
 ![auto_fit](images/Case10/Case10_p1.png)<P>
 
 <span id="subtitle">步驟二 1. 在連接至 WiFi 後顯示剔號及ID</span><BR><P>
@@ -63,7 +63,7 @@
 * 加入”如果...那麼”
 * ”WAN_Command = lighton”設為第一個條件
 * 在 "如果" 裏加入`turn white LED to 1023 at P1`
-* 點擊加號,在那添加第二個條件”WAN_Command = lightoff”
+* 點擊加號，在那添加第二個條件”WAN_Command = lightoff”
 * 在第二個 "如果" 裏加入`turn white LED to 0 at P1`
 ![auto_fit](images/Case10/Case10_p4.png)<P>
 
@@ -83,22 +83,22 @@ MakeCode: [https://makecode.microbit.org/_2cRf6LWq69AL](https://makecode.microbi
 
 <span id="subtitle">步驟一. 在 IFTTT 開立新專案</span><BR><P>
 <span id="subtitle">步驟二. 選擇”Date & Time” 為 IF THIS</span><BR><P>
-<span id="subtitle">步驟三。 選擇時間間隔,時區,時間為上午6時</span><BR><P>
+<span id="subtitle">步驟三。 選擇時間間隔，時區，時間為上午6時</span><BR><P>
 <span id="subtitle">步驟四。 選擇 Smarthon IoT:bit 為 Then That</span><BR><P>
 <span id="subtitle">步驟五。 選擇指令</span><BR><P>	
 <span id="subtitle">步驟六。 輸入指令和 Device ID後儲存</span><BR><P>
-<span id="subtitle">步驟七。 重複以上動作,時間設為下午6時</span><BR><P>
+<span id="subtitle">步驟七。 重複以上動作，時間設為下午6時</span><BR><P>
 ![auto_fit](images/Case10/Case10_ifttt1.png)<P>
 
 
 ## 結果
 <HR>
 
-在IFTTT平台上會在每天早晚6時發送訊號,因此LED會在每天早晚6時開關。<BR><P>
+在IFTTT平台上會在每天早晚6時發送訊號，因此LED會在每天早晚6時開關。<BR><P>
 ![auto_fit](images/Case10/Case10_result.gif)<P>
 
 
 ## 思考
 <HR>
 
-Q1. 除了時間之外,IFTTT能否用其他條件觸發?
+Q1. 除了時間之外，IFTTT能否用其他條件觸發?

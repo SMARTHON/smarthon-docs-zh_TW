@@ -13,10 +13,10 @@
 <HR>
 
 <span id="subtitle">甚麼是智能垃圾桶?</span><P>
-垃圾桶上的 LED 燈可以告訴人們桶內的當前容量,收集工人可以輕易判斷有否需要清理垃圾。這樣可以減少更換垃圾袋的次數,從而減少膠袋用量。<BR><P>
+垃圾桶上的 LED 燈可以告訴人們桶內的當前容量，收集工人可以輕易判斷有否需要清理垃圾。這樣可以減少更換垃圾袋的次數，從而減少膠袋用量。<BR><P>
 
 <span id="subtitle">運作原理</span><P>
-距離傳感器可以探測桶內垃圾高度,從而轉化為當前容量。彩色 LED 燈則會隨著容量轉變。<BR><P>
+距離傳感器可以探測桶內垃圾高度，從而轉化為當前容量。彩色 LED 燈則會隨著容量轉變。<BR><P>
 ![pic_70](images/Case3/Concept-diagram-Case3.png)<P>
 
 ## 所用部件
@@ -50,7 +50,7 @@
 *注意
 
 >1. 根據顏色連接接線和端口<BR>
->2. P0 內建線路予蜂鳴器。在使用 P0 端口予其他外接設備時遇上問題,建議查看位於 IoT:bit 右上的蜂鳴器開關狀態
+>2. P0 內建線路予蜂鳴器。在使用 P0 端口予其他外接設備時遇上問題，建議查看位於 IoT:bit 右上的蜂鳴器開關狀態
 
 ## 編程 (MakeCode)
 <HR>
@@ -64,12 +64,12 @@
 
 <span id="subtitle">步驟二. 讀取距離讀數</span><P>
 * 在「重復無限次」加入”變數 distance 設為取得量度距離使用單位厘米 trig 接口 P14echo 接口 P15”
-* 加入”如果...那麼”,設”distance ≤ 4”為前提
+* 加入”如果...那麼”，設”distance ≤ 4”為前提
 * 加入”等待一秒鐘”
 ![pic_90](images/Case3/Case3_p2.png)<P>
 
 <span id="subtitle">步驟三. 根據回報距離顯示相應距離</span><P>
-* 如果 distance ≤ 4, strip 會顯示紅色,否則綠色
+* 如果 distance ≤ 4， strip 會顯示紅色，否則綠色
 ![pic_90](images/Case3/Case3_p3.png)<P>
 
 
@@ -82,7 +82,7 @@ MakeCode: [https://makecode.microbit.org/_F2x6j9UaM6wf](https://makecode.microbi
 ## 結果
 <HR>
 
-距離傳感器會傳回桶內垃圾與垃圾桶頂部的距離。LED 燈反映垃圾桶是否滿載。當滿載時,變為紅色,否則為綠色。<BR><P>
+距離傳感器會傳回桶內垃圾與垃圾桶頂部的距離。LED 燈反映垃圾桶是否滿載。當滿載時，變為紅色，否則為綠色。<BR><P>
 ![pic](images/Case3/Case3_result.gif)<P>
 
 ## 思考

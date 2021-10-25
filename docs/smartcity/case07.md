@@ -14,7 +14,7 @@
 <span id="subtitle">甚麼是 IFTTT?</span><BR><P>
 IFTTT 可以把用家的應用程式和設備連接並容許它們進行交流以完成特定工作。<BR><P>
 <span id="subtitle">運作原理</span><BR><P>
-運動傳感器回饋訊號至主板,若 TRUE 則主板激活揚聲器並自動發出電郵提示用家。
+運動傳感器回饋訊號至主板，若 TRUE 則主板激活揚聲器並自動發出電郵提示用家。
 同時 LED 屏會反映有入侵耆。<BR><P>
 ![auto_fit](images/Case7/Concept-diagram-Case7.png)<P>
 
@@ -51,26 +51,26 @@ IFTTT 可以把用家的應用程式和設備連接並容許它們進行交流�
 <span id="remarks">* *詳情參考* 附件..IFTTT 設定” </span><BR><P>
 
 <span id="subtitle">步驟一</span><BR><P>
-訪問 [https://ifttt.com](https://ifttt.com/) , 創建新專案 (if webhooks then Email)<BR><P>
+訪問 [https://ifttt.com](https://ifttt.com/) ，創建新專案 (if webhooks then Email)<BR><P>
 ![auto_fit](images/Case7/Case7_iot1.png)<P>
 
 
 <span id="subtitle">步驟二</span><BR><P>
-依次點擊“My services” >> “Webhooks”, select “Documentation” ,複製 Applet Key。<BR><P>
+依次點擊“My services” >> “Webhooks”，select “Documentation” ，複製 Applet Key。<BR><P>
 ![auto_fit](images/Case7/Case7_iot2.png)<P>
 
 ## 編程(MakeCode)
 <HR>
 
-<span id="subtitle">步驟一. 啟動 OLED,Iot:bit 和連接至 WiFi</span><BR><P>
+<span id="subtitle">步驟一. 啟動 OLED，Iot:bit 和連接至 WiFi</span><BR><P>
 ![auto_fit](images/Case7/Case7_p1.png)<P>
 
 <span id="subtitle">步驟二. 顯示剔號以表示連接至 WiFi</span><BR><P>
 ![auto_fit](images/Case7/Case7_p2.png)<P>
 
 <span id="subtitle">步驟三. 讀取運動傳感器讀數</span><BR><P>
-* 在「重復無限次」裏加入”如果...那麼”,以`WiFi connected?`為前設
-* 在上述邏輯再加一個”如果...那麼”,以”取得運動傳感器數值接口 P1 = TRUE”為前設
+* 在「重復無限次」裏加入”如果...那麼”，以`WiFi connected?`為前設
+* 在上述邏輯再加一個”如果...那麼”，以”取得運動傳感器數值接口 P1 = TRUE”為前設
 ![auto_fit](images/Case7/Case7_p3.png)<P>
  
 <span id="subtitle">步驟四. 當有人經過時自動發出警示</span><BR><P>
@@ -93,7 +93,7 @@ MakeCode: [https://makecode.microbit.org/_H4uU8R3716xj](https://makecode.microbi
 ## 結果
 <HR>
 
-當連上了 WiFi,如果門旁邊有可疑活動,蜂鳴器會被激活並發出電郵,同時
+當連上了 WiFi，如果門旁邊有可疑活動，蜂鳴器會被激活並發出電郵，同時
 micro:bit 上的 LED 會顯示”monster”圖示。<BR><P>
 ![auto_fit](images/Case7/Case7_result1.png)
 

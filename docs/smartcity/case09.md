@@ -14,7 +14,7 @@
 <span id="subtitle">甚麼是 app inventor?</span><BR><P>
 這是一個能讓用家自行開發程式的工具。<BR><P>
 <span id="subtitle">智能門控制原理</span><BR><P>
-當 microbit 收到”opendoor”訊號,舵機會自動轉動。當收到”closedoor”,門會自動關閉。<BR><P>
+當 microbit 收到”opendoor”訊號，舵機會自動轉動。當收到”closedoor”，門會自動關閉。<BR><P>
 ![auto_fit](images/Case9/Concept-diagram-Case9.png)<P>
 
 ## 所用部件
@@ -32,7 +32,7 @@
 把舵機組裝到 H1 卡板。<BR><P>
 ![auto_fit](images/Case9/Case9_ass2.png)<P>
 <span id="subtitle">步驟三</span><BR><P>
-把萬字夾剪到 4.2 厘米,並用於固定 L-字卡板。<BR><P>
+把萬字夾剪到 4.2 厘米，並用於固定 L-字卡板。<BR><P>
 ![auto_fit](images/Case9/Case9_ass3.png)<P>
 <span id="subtitle">步驟四</span><BR><P>
 組裝所有卡板。<BR><P>
@@ -58,7 +58,7 @@ G (黑)|G (棕)
 ## 編程 (MakeCode)
 <HR>
 
-<span id="subtitle">步驟一. 啟動 OLED,Iot:bit 和連接至 WiFi</span>
+<span id="subtitle">步驟一. 啟動 OLED，Iot:bit 和連接至 WiFi</span>
 ![pic_60](images/Case9/Case9_p1.png)<P>
 
 <span id="subtitle">步驟二. 設定舵機初始位置</span><BR><P>
@@ -74,8 +74,8 @@ G (黑)|G (棕)
 ![pic_80](images/Case9/Case9_p4.png)<P>
 
 <span id="subtitle">步驟五. 以 WAN 指令開關門</span><BR><P>
-* 如接收到”opendoor”,舵機轉向 45 度
-* 如接收到”closedoor”,舵機轉向 180 度
+* 如接收到”opendoor”，舵機轉向 45 度
+* 如接收到”closedoor”，舵機轉向 180 度
 ![pic_80](images/Case9/Case9_p5.png)<P>
 
 <span id="subtitle">完整答案<BR><P>
@@ -104,21 +104,21 @@ MakeCode: [https://makecode.microbit.org/_YhvAsP3HCgY6](https://makecode.microbi
 * The WAN control command URL is: 
 [http://control.smarthon.cc/publish?id=DeviceID&msg=ControlCommand](http://control.smarthon.cc/publish?id=DeviceID&msg=ControlCommand)
 
-* 當 button1 被點撃,以下指令會被執行
+* 當 button1 被點撃，以下指令會被執行
 ![auto_fit](images/Case9/Case9_iot2.png)<P>
-* 當 button2 被點撃,以下指令會被執行
+* 當 button2 被點撃，以下指令會被執行
 ![auto_fit](images/Case9/Case9_iot3.png)<P>
 * 下載程式至手機
 ![auto_fit](images/Case9/Case9_iot4.png)<P>
  
 ## 結果
-在框內輸入 device ID,點選”opendoor”或”clodedoor”<BR><P>
+在框內輸入 device ID，點選”opendoor”或”clodedoor”<BR><P>
 ![auto_fit](images/Case9/Case9_result1.png)<P>
 
  
 ![auto_fit](images/Case9/Case9_result3.png)<P>
 
-透過App Inventor,可以很輕易地控制門的開關<BR><P>
+透過App Inventor，可以很輕易地控制門的開關<BR><P>
 ![auto_fit](images/Case9/Case9_result4.gif)<P>
 
 

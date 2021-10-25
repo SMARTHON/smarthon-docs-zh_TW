@@ -15,13 +15,13 @@
 測速系統能根據車輛在一定時間內移動距離得出其車速。 安裝測速系統能有效減少交通意外發生。<BR><P>
 
 <span id="subtitle">運作原理</span><P>
-距離傳感器可以在兩個時間點測量車輛與其之間的距離,從而計算其速率。 <BR><P>
-每 0.5 秒,傳感器會量度車輛與其之間距離。 <BR><P>
+距離傳感器可以在兩個時間點測量車輛與其之間的距離，從而計算其速率。 <BR><P>
+每 0.5 秒，傳感器會量度車輛與其之間距離。 <BR><P>
 ![auto_fit](images/Case5/Case5_des1.png)<P>
-根據物理學,速率 = (距離一 – 距離二), 這時候可得知有三種情況。<BR>
+根據物理學，速率 = (距離一 – 距離二)， 這時候可得知有三種情況。<BR>
 * 距離一 > 距離二.. 車輛正靠近<BR>
 * 距離一 = 距離二.. 車輛已停止移動/路面沒有車輛<BR>
-* 距離一 < 距離二.. 車輛正轉向/駛離,此情況無視<BR>
+* 距離一 < 距離二.. 車輛正轉向/駛離，此情況無視<BR>
 這速率可以在 micro:bit LED 以圖表表達車速..<BR><P>
 ![auto_fit](images/Case5/Case5_des2.png)<P>
 
@@ -65,20 +65,20 @@
 
 <span id="subtitle">步驟一. 啟動 OLED 顯示屏</span><P>
 * 初始化OLED顯示屏(128闊64高)
-* 宣告新變數`distance1`,`distance2`,`speed`為0
+* 宣告新變數`distance1`，`distance2`，`speed`為0
 ![auto_fit](images/Case5/Case5_p1.png)<P>
 
 <span id="subtitle">步驟二. 宣告函式(calculate_Speed)</span><P>
 * 在進階模塊「函式」宣告新函式 `calculate_Speed`
-* 從`取得距離...`中取得數值,分別放入`distance1`和`distance2`
-* 根據速率公式,設`speed` 為”(distane1 – distance2) / 0.5”
+* 從`取得距離...`中取得數值，分別放入`distance1`和`distance2`
+* 根據速率公式，設`speed` 為”(distane1 – distance2) / 0.5”
 ![auto_fit](images/Case5/Case5_p2.png)<P>
 
 <span id="subtitle">步驟三. 計算車速</span><P>
 * 在「重復無限次」叫喚`calculate_Speed`
-* 加入”如果...那麼”,”speed ≥ 0”為前設
+* 加入”如果...那麼”，”speed ≥ 0”為前設
 * 在邏輯中加入`點亮長條圖 顯示值為 speed 最大值為 20`
-* 加入`清除顯示`,`新行顯示字符串(Distance1: distance1), (Distance2: distance2), (Speed: speed)`
+* 加入`清除顯示`，`新行顯示字符串(Distance1: distance1)，(Distance2: distance2)， (Speed: speed)`
 ![auto_fit](images/Case5/Case5_p3.png)<P>
 
 
@@ -91,7 +91,7 @@ MakeCode: [https://makecode.microbit.org/_0Y0h5MWPde4A](https://makecode.microbi
 ## 結果
 <HR>
 
-距離傳感器會持續監察車輛的距離。車速經計算後會顯示在 OLED 顯示屏,同時以圖表形式表現在 LED 上。<BR><P>
+距離傳感器會持續監察車輛的距離。車速經計算後會顯示在 OLED 顯示屏，同時以圖表形式表現在 LED 上。<BR><P>
 ![auto_fit](images/Case5/Case5_result.gif)<P>
 
 ## 思考
