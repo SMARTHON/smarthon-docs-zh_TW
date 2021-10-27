@@ -1,7 +1,7 @@
 # 章節4: 由IFTTT雲控制Micro:bit
 
 ## 簡介
-在這章節，你會學習到如何使用IFTTT控制Micro:bit。<BR>在IFTTT平台上提供了各種服務，例如天氣預測，時間，語音助理等，只要設定好平台後，都能夠用來控制Micro:bit。 <BR><P>
+在這章節，你會學習到如何使用IFTTT控制Micro:bit。<BR>在IFTTT平台上提供了各種服務，例如天氣預測、時間、語音助理等，只要設定好平台後，都能夠用來控制Micro:bit。 <BR><P>
 
 ![auto_fit](images/Ch4/Ch4_2_intro.png)<P>
 

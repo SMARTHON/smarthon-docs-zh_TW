@@ -5,7 +5,7 @@ Smarthon IoT:bit是一塊專為讓Micro:bit加入物聯網而設計的開發板�
 <P>
 這提供了13個常規GVS插座，能夠讓使用者同時連接多個不同的傳感器以接收及傳送資料。對於一些比較特別的模組，例如超聲波距離傳感器馬達以及OLED顯示屏等，都留有額外的插座供它們使用。另外，不止能夠使用一些簡單的類比或是數位控制的模組，像一些需要使用I2C，SPI等協議的模組亦能夠透過Smarton IoT:Bit供Micro:bit使用。為了方便使用第一代Micro:bit的使用者，IoT:bit也內置了揚聲器讓Micro:bit能夠發出聲音。
 <P>
-IoT:bit是供Micro:bit使用Wifi功能的強大擴展板，能夠有效幫助進行STEM項目。IoT:bit使用了最新款的ESP系列模組ESP32，其雙核心效能對比上一代的ESP8266有著明顯的提升，配合上記憶體的增加，能夠提供更加穩定的Wifi功能。<BR>IoT:bit除了支援Thingspeak及IFTTT等常用IoT平台服務，亦提供互聯網遙距控制功能，讓使用者能夠透過智能電話，Amazon 智能喇叭，或是Google 智能家居裝置操控Micro:bit。而IoT:bit亦可以與其他IoT:bit進行溝通，經由wifi接上互聯網後，就能夠長距離地與其他Micro:bit進行資料交換，不像Micro:bit原來的無線電通訊有著短距離的限制。
+IoT:bit是供Micro:bit使用Wifi功能的強大擴展板，能夠有效幫助進行STEM項目。IoT:bit使用了最新款的ESP系列模組ESP32，其雙核心效能對比上一代的ESP8266有著明顯的提升，配合上記憶體的增加，能夠提供更加穩定的Wifi功能。<BR>IoT:bit除了支援Thingspeak及IFTTT等常用IoT平台服務，亦提供互聯網遙距控制功能，讓使用者能夠透過智能電話、Amazon 智能喇叭、Google 智能家居等裝置操控Micro:bit。而IoT:bit亦可以與其他IoT:bit進行溝通，經由wifi接上互聯網後，就能夠長距離地與其他Micro:bit進行資料交換，不像Micro:bit原來的無線電通訊有著短距離的限制。
 <P>
 
 ![auto_fit](images/2_IOT/iot_image00.jpg)
@@ -256,7 +256,7 @@ IoT:bit是供Micro:bit使用Wifi功能的強大擴展板，能夠有效幫助進
 
 <H3>無線Wifi模組</H3><BR>
 ![pic](images/2_IOT/iot_image07.png)
-<P>無線模組是整塊擴展板中的核心部份。這能夠安裝不同的無線模組，例如ESP32， ESP8266，藍牙等等，讓使用者依照不同情況使用合適的模組，以配合不同的項目。
+<P>無線模組是整塊擴展板中的核心部份。這能夠安裝不同的無線模組，例如ESP32、 ESP8266、藍牙等等，讓使用者依照不同情況使用合適的模組，以配合不同的項目。
 
 <H3>ESP舵機接口</H3><BR>
 ![pic](images/2_IOT/iot_image08.png)
@@ -276,24 +276,24 @@ IoT:bit是供Micro:bit使用Wifi功能的強大擴展板，能夠有效幫助進
 
 <H3>4針接口</H3><BR>
 ![pic](images/2_IOT/iot_image12.png)
-<P>因有些模組運行時需要同時使用兩個I/O針腳，IoT:bit上保留有兩個接口供4針模組使用，例如超聲波距離傳感器及雙方向馬達等。故此，有4個I/O針腳是連接到這4針接口的，分別是P12,P13,P14,P15。
+<P>因有些模組運行時需要同時使用兩個I/O針腳，IoT:bit上保留有兩個接口供4針模組使用，例如超聲波距離傳感器及雙方向馬達等。故此，有4個I/O針腳是連接到這4針接口的，分別是P12、P13、P14、P15。
 
 <H3>鱷魚夾觸點</H3><BR>
 ![pic](images/2_IOT/iot_image12_5.png)
-<P>對於需要使用鱷魚夾進行簡單項目連接的使用者，IoT:bit提供了5個接口，分別為3V，接地，P0，P1及P2。
+<P>對於需要使用鱷魚夾進行簡單項目連接的使用者，IoT:bit提供了5個接口，分別為3V、接地、P0、P1及P2。
 <P>
 
 ## 軟件支援
 
 <H3>MakeCode編程器</H3>
 
-MakeCode編程器是由BBC Micro:bit官方所推出的多平台編程工具，能夠在多個不同平台例如網頁瀏覽器，電話，平板電腦等使用。其充滿色彩及簡單易用的積木程式設計，能夠讓熟悉Scratch等初學者更快上手，即使是從未接觸編程的初學者，亦能輕鬆地用這學習及進行編程課程。<BR>
+MakeCode編程器是由BBC Micro:bit官方所推出的多平台編程工具，能夠在多個不同平台例如網頁瀏覽器、電話、平板電腦等使用。其充滿色彩及簡單易用的積木程式設計，能夠讓熟悉Scratch等初學者更快上手，即使是從未接觸編程的初學者，亦能輕鬆地用這學習及進行編程課程。<BR>
 除了直觀的積木設計外，亦提供傳統編程所使用的文字模式，能夠使用Javascript或Typescript等程式語言。<BR>
 [MakeCode](https://makecode.microbit.org/#editor)
 ![auto_fit](images/2_IOT/iot_image13.png)
 
 <H3>Python編程器</H3><P>
-Python是其中一種最受歡迎的程式語言，無論在學習，或是商業應用，都能夠廣泛地發現它的存在。Micro:bit 提供了一個Python編程器，令使用者可以把python程式透過Micro:bit執行。只需要利用USB連接線把Micro:bit連接上電腦，就可以輕鬆把程式上傳到Micro:bit上。 <BR>
+Python是其中一種最受歡迎的程式語言，無論在學習或是商業應用，都能夠廣泛地發現它的存在。Micro:bit 提供了一個Python編程器，令使用者可以把python程式透過Micro:bit執行。只需要利用USB連接線把Micro:bit連接上電腦，就可以輕鬆把程式上傳到Micro:bit上。 <BR>
 [Python editor](https://python.microbit.org/v/2.0)
 ![auto_fit](images/2_IOT/iot_image14.png)
 

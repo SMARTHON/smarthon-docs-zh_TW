@@ -57,7 +57,7 @@ B1 卡板下。<BR><P>
 >2.P0 內建線路予蜂鳴器。在使用 P0 端口予其他外接設備時遇上問題，建議查
 看位於 IoT:bit 右上的蜂鳴器開關狀態
 
-## 編程 (MakeCode)<HR>
+## 編程 (MakeCode)
 
 <span id="subtitle">步驟一. 定義新變數和舵機起始位置</span><BR><P>
 * 定義新變數”distance”和”light2”

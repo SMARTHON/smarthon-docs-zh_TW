@@ -15,7 +15,7 @@
 ThingSpeak 是一個物聯網數據分析平台，提供即時數據圖表分顯然及分析。在這個案例，我們會使用該平台製作數據圖表。<BR><P>
 
 <span id="subtitle">運作原理</span><BR><P>
-實時收集溫度，濕度和雨滴並上傳至 ThingSpeak，令分析數據更輕鬆。<BR><P>
+實時收集溫度、濕度和雨滴並上傳至 ThingSpeak，令分析數據更輕鬆。<BR><P>
 ![auto-fit](images/Case6/Concept-diagram-Case6.png)<P>
 
 ## 所用部件
@@ -86,7 +86,7 @@ ThingSpeak 是一個物聯網數據分析平台，提供即時數據圖表分顯
 * 在連上網絡後於 OLED上顯示剔號
 ![auto_fit](images/Case6/Case6_p2.png)<P>
 
-<span id="subtitle">步驟三.讀取溫度，濕度和雨滴讀數</span><BR><P>
+<span id="subtitle">步驟三.讀取溫度、濕度和雨滴讀數</span><BR><P>
 * 在「重復無限次」加入”如果...那麼”，`WiFi connected?`為前設
 * 設`humidity`為`DHT11 讀取濕度接口 P2`
 * 設`temperature`為`DHT11 讀取溫度接口 P2`
