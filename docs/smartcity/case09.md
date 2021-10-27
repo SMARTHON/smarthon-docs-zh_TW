@@ -12,7 +12,7 @@
 <HR>
 
 <span id="subtitle">甚麼是 app inventor?</span><BR><P>
-這是一個能讓用家自行開發程式的工具。<BR><P>
+這是一個能讓用家自行開發智能電話程式的工具，Android及IOS都能夠使用。<BR><P>
 <span id="subtitle">智能門控制原理</span><BR><P>
 當 microbit 收到”opendoor”訊號，舵機會自動轉動。當收到”closedoor”，門會自動關閉。<BR><P>
 ![auto_fit](images/Case9/Concept-diagram-Case9.png)<P>

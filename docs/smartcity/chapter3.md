@@ -2,7 +2,7 @@
 
 ## 簡介
 
-App Inventor 2 是一個類似Makecode的積木型編程平台，能夠幫助初學者輕易地建立一個android APP。
+App Inventor 2 是一個類似Makecode的積木型編程平台，能夠幫助初學者輕易地建立一個在Android或是IOS使用的APP。
 裡面包含各種功能的元素，例如按鈕、拖拉條、日期選擇器、圖片、相機、傳感器、網頁瀏覽器等，只需要拖拉及簡單編程即可使用。<BR><P>
 
 ![auto_fit](images/Ch3/Ch3_des1.png)<P>
