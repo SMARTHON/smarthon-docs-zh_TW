@@ -85,9 +85,9 @@ IFTTT 可以把用家的應用程式和設備連接並容許它們進行交流�
 ![auto_fit](images/Case7/Case7_p5.png)<P>
 
 <span id="subtitle">完整答案<BR><P>
-MakeCode: [https://makecode.microbit.org/_H4uU8R3716xj](https://makecode.microbit.org/_H4uU8R3716xj)<BR><P>
+MakeCode: [https://makecode.microbit.org/_DyU6CsXYE7fx](https://makecode.microbit.org/_DyU6CsXYE7fx)<BR><P>
 你可以在以下網頁下載HEX檔案:<BR>
-<iframe src="https://makecode.microbit.org/#pub:_H4uU8R3716xj" width="100%" height="500" frameborder="0"></iframe>
+<iframe src="https://makecode.microbit.org/#pub:_DyU6CsXYE7fx" width="100%" height="500" frameborder="0"></iframe>
 
 
 ## 結果

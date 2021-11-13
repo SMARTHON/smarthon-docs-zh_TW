@@ -113,9 +113,9 @@ ThingSpeak 是一個物聯網數據分析平台，提供即時數據圖表分顯
 
 
 <span id="subtitle">完整答案<BR><P>
-MakeCode: [https://makecode.microbit.org/_TMyYxL8Re1du](https://makecode.microbit.org/_TMyYxL8Re1du)<BR><P>
+MakeCode: [https://makecode.microbit.org/_E2dUpj07a03j](https://makecode.microbit.org/_E2dUpj07a03j)<BR><P>
 你可以在以下網頁下載HEX檔案:<BR>
-<iframe src="https://makecode.microbit.org/#pub:_TMyYxL8Re1du" width="100%" height="500" frameborder="0"></iframe>
+<iframe src="https://makecode.microbit.org/#pub:_E2dUpj07a03j" width="100%" height="500" frameborder="0"></iframe>
 
 
 ## 結果

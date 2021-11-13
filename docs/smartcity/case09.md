@@ -79,9 +79,9 @@ G (黑)|G (棕)
 ![pic_80](images/Case9/Case9_p5.png)<P>
 
 <span id="subtitle">完整答案<BR><P>
-MakeCode: [https://makecode.microbit.org/_YhvAsP3HCgY6](https://makecode.microbit.org/_YhvAsP3HCgY6)<BR><P>
+MakeCode: [https://makecode.microbit.org/_LtLRgxMVHMvc](https://makecode.microbit.org/_LtLRgxMVHMvc)<BR><P>
 你可以在以下網頁下載HEX檔案:<BR>
-<iframe src="https://makecode.microbit.org/#pub:_YhvAsP3HCgY6" width="100%" height="500" frameborder="0"></iframe>
+<iframe src="https://makecode.microbit.org/#pub:_LtLRgxMVHMvc" width="100%" height="500" frameborder="0"></iframe>
 
  
 ## IoT (App Inventor)

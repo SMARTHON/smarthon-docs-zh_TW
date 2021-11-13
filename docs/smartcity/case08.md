@@ -67,17 +67,17 @@
 ![auto_fit](images/Case8/Case8a_p4.png)<P>
 
 <span id="subtitle">完整答案<BR><P>
-MakeCode: [https://makecode.microbit.org/_P5fAujhip5Lh](https://makecode.microbit.org/_P5fAujhip5Lh)<BR><P>
+MakeCode: [https://makecode.microbit.org/_DDHataUJ04HY](https://makecode.microbit.org/_DDHataUJ04HY)<BR><P>
 你可以在以下網頁下載HEX檔案<BR>
-<iframe src="https://makecode.microbit.org/#pub:_P5fAujhip5Lh" width="100%" height="500" frameborder="0"></iframe>
+<iframe src="https://makecode.microbit.org/#pub:_DDHataUJ04HY" width="100%" height="500" frameborder="0"></iframe>
 
 
 ### 結果
 <HR>
 
-光傳感器用以偵測有沒有出現塞車。當光強度正常， "nojam” 會被送出。<BR><P>
+光傳感器用以偵測有沒有出現塞車。當光強度正常， " nojam " 會被送出。<BR><P>
 ![auto_fit](images/Case8/Case8a_result1.png)<P>
-當光強度過低， ”trafficjam” 會被送出。<BR><P>
+當光強度過低， " trafficjam " 會被送出。<BR><P>
 ![auto_fit](images/Case8/Case8a_result2.png)<P>
 
 ### 思考
@@ -147,7 +147,7 @@ Q1. 我們可以用距離傳感器偵測有否塞車嗎?<BR><P>
 
 <span id="subtitle">步驟三. 接收 WiFi 訊息</span><P>
 * 在”On WiFi Receiver received”加入清除顯示
-* 新行顯示 ”字串組合”Message: `receivedmessage`”""
+* 新行顯示 ”字串組合”訊息: `receivedmessage`”""
 ![pic_70](images/Case8/Case8b_p3.png)<P>
  
 <span id="subtitle">步驟四. 宣告新函式(TurnRed)</span><P>
@@ -179,9 +179,9 @@ Q1. 我們可以用距離傳感器偵測有否塞車嗎?<BR><P>
 ![auto_fit](images/Case8/Case8b_p7.png)<P>
 
 <span id="subtitle">完整答案<BR><P>
-MakeCode: [https://makecode.microbit.org/_V5jcy5Pvm7hF](https://makecode.microbit.org/_V5jcy5Pvm7hF)<BR><P>
+MakeCode: [https://makecode.microbit.org/_K5eKdP1hMcdj](https://makecode.microbit.org/_K5eKdP1hMcdj)<BR><P>
 你可以在以下網頁下載HEX檔案:<BR>
-<iframe src="https://makecode.microbit.org/#pub:_V5jcy5Pvm7hF" width="100%" height="500" frameborder="0"></iframe>
+<iframe src="https://makecode.microbit.org/#pub:_K5eKdP1hMcdj" width="100%" height="500" frameborder="0"></iframe>
 
 
 ### 結果

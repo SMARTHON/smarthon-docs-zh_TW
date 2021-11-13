@@ -90,9 +90,9 @@ G (黑) | G (棕)
 
 
 <span id="subtitle">完整答案<BR><P>
-MakeCode: [https://makecode.microbit.org/_6KyfVPJEd10A](https://makecode.microbit.org/_6KyfVPJEd10A)<BR><P>
+MakeCode: [https://makecode.microbit.org/_h133LW5miXY9](https://makecode.microbit.org/_h133LW5miXY9)<BR><P>
 你可以在以下網頁下載HEX檔案:<BR>
-<iframe src="https://makecode.microbit.org/#pub:_6KyfVPJEd10A" width="100%" height="500" frameborder="0"></iframe>
+<iframe src="https://makecode.microbit.org/#pub:_h133LW5miXY9" width="100%" height="500" frameborder="0"></iframe>
 
 
 ## IoT (IFTTT)

@@ -46,14 +46,14 @@ B1 卡板下。<BR><P>
 ## 線路連接
 <HR>
 
-連接運動傳感器和 IoT:bit 上的 P14(trig)/P15(echo) 端口<BR><P>
-連接光傳感器和 IoT:bit 上的 P0 端口<BR><P>
-連接 180 度舵機和 IoT:bit 上的 P2 端口<BR><P>
+* 連接運動傳感器和 IoT:bit 上的 P14(trig)/P15(echo) 端口<BR><P>
+* 連接光傳感器和 IoT:bit 上的 P0 端口<BR><P>
+* 連接 180 度舵機和 IoT:bit 上的 P2 端口<BR><P>
 ![auto_fit](images/Case2/Case2_hardware.png)<P>
 
 *注意<BR>
 
->1.根據顏色連接接線和端口
+>1.根據顏色連接接線和端口<BR>
 >2.P0 內建線路予蜂鳴器。在使用 P0 端口予其他外接設備時遇上問題，建議查
 看位於 IoT:bit 右上的蜂鳴器開關狀態
 
@@ -89,9 +89,9 @@ B1 卡板下。<BR><P>
 >3.查看接線是否正確<BR>
 
 <span id="subtitle">完整答案<BR><P>
-MakeCode: [https://makecode.microbit.org/_UgRKmX2XzH2u](https://makecode.microbit.org/_UgRKmX2XzH2u)<BR><P>
+MakeCode: [https://makecode.microbit.org/_TMD3WXE2pKkA](https://makecode.microbit.org/_TMD3WXE2pKkA)<BR><P>
 你可以在以下網頁中下載HEX檔案:<BR>
-<iframe src="https://makecode.microbit.org/#pub:_UgRKmX2XzH2u" width="100%" height="500" frameborder="0"></iframe>
+<iframe src="https://makecode.microbit.org/#pub:_TMD3WXE2pKkA" width="100%" height="500" frameborder="0"></iframe>
 
 ## 結果
 <HR>

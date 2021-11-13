@@ -74,15 +74,15 @@
 
 
 <span id="subtitle">完整答案<BR><P>
-MakeCode: [https://makecode.microbit.org/_F2x6j9UaM6wf](https://makecode.microbit.org/_F2x6j9UaM6wf)<BR><P>
+MakeCode: [https://makecode.microbit.org/_Dxz8Yhge0eph](https://makecode.microbit.org/_Dxz8Yhge0eph)<BR><P>
 你可以在以下網頁下載HEX檔案:<BR>
-<iframe src="https://makecode.microbit.org/#pub:_F2x6j9UaM6wf" width="100%" height="500" frameborder="0"></iframe>
+<iframe src="https://makecode.microbit.org/#pub:_Dxz8Yhge0eph" width="100%" height="500" frameborder="0"></iframe>
 
 
 ## 結果
 <HR>
 
-距離傳感器會傳回桶內垃圾與垃圾桶頂部的距離。LED 燈反映垃圾桶是否滿載。當滿載時，變為紅色，否則為綠色。<BR><P>
+距離傳感器會傳回桶內垃圾與垃圾桶頂部的距離。<BR>LED 燈反映垃圾桶是否滿載。當滿載時，變為紅色，否則為綠色。<BR><P>
 ![pic](images/Case3/Case3_result.gif)<P>
 
 ## 思考

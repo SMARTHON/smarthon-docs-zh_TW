@@ -70,9 +70,9 @@
 ![pic_90](images/Case1/Case1_p2.png)<P>
 
 <span id="subtitle">完整答案<BR><P>
-MakeCode: [https://makecode.microbit.org/_X4xYjzHU6d91](https://makecode.microbit.org/_X4xYjzHU6d91)<BR><P>
+MakeCode: [https://makecode.microbit.org/_UM2VU1AFoiYt](https://makecode.microbit.org/_UM2VU1AFoiYt)<BR><P>
 你可以從以下網頁中下載HEX檔案<BR>
-<iframe src="https://makecode.microbit.org/#pub:_X4xYjzHU6d91" width="100%" height="500" frameborder="0"></iframe>
+<iframe src="https://makecode.microbit.org/#pub:_UM2VU1AFoiYt" width="100%" height="500" frameborder="0"></iframe>
 
 <P>
 
