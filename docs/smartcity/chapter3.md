@@ -71,6 +71,7 @@ https://control.smarthon.cc/publish?id=DeviceID&msg=ControlCommand&value=Value
 
 ![auto_fit](images/Ch3/Ch3_hardware.png)<P>
 
+* 請把揚聲器開關 "上拉" 以斷開連接
 
 <span id="subtitle">第一步驟:連接Wifi</span><BR><P>
 在使用互聯網控制功能之前，需要先確保已連接上網絡
@@ -119,9 +120,9 @@ https://control.smarthon.cc/publish?id=DeviceID&msg=ControlCommand&value=Value
 
 
 <span id="subtitle">完整答案<BR><P>
-MakeCode: [https://makecode.microbit.org/_5i7gKJ4KVK9X](https://makecode.microbit.org/_5i7gKJ4KVK9X)<BR><P>
+MakeCode: [https://makecode.microbit.org/_RjR1asA4uU93](https://makecode.microbit.org/_RjR1asA4uU93)<BR><P>
 你可以在以下網頁下載HEX檔案:<BR>
-<iframe src="https://makecode.microbit.org/#pub:_5i7gKJ4KVK9X" width="100%" height="500" frameborder="0"></iframe><P>
+<iframe src="https://makecode.microbit.org/#pub:_RjR1asA4uU93" width="100%" height="500" frameborder="0"></iframe><P>
 
 
 ## 第二部分: App Inventor 2 設定

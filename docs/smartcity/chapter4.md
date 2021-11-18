@@ -39,6 +39,8 @@
 * 連接LED到P0<BR><P>
 ![auto_fit](images/Ch4/Ch4_2_hardware.png)<P>
 
+* 請把揚聲器開關 "上拉" 以斷開連接
+
 <span id="subtitle" >第一步驟: 連接WiFi</span><BR><P>
 先初始化IoT:bit及連上Wifi<P>
 ![auto_fit](images/Ch4/Ch4_2_p1.png)<P>
@@ -85,9 +87,9 @@
 
 
 <span id="subtitle">完整答案<BR><P>
-MakeCode: [https://makecode.microbit.org/_Jdb8fA66r77Y](https://makecode.microbit.org/_Jdb8fA66r77Y)<BR><P>
+MakeCode: [https://makecode.microbit.org/_XDDc7j5ftJeh](https://makecode.microbit.org/_XDDc7j5ftJeh)<BR><P>
 你可以在以下網頁下載HEX檔案<BR>
-<iframe src="https://makecode.microbit.org/#pub:_Jdb8fA66r77Y" width="100%" height="500" frameborder="0"></iframe>
+<iframe src="https://makecode.microbit.org/#pub:_XDDc7j5ftJeh" width="100%" height="500" frameborder="0"></iframe>
 
 <P>
 

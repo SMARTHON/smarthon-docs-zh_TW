@@ -62,9 +62,9 @@ Field1: 溫度<BR>
 
 
 <span id="subtitle">完整答案<BR><P>
-MakeCode: [https://makecode.microbit.org/_PHU0oJLwHAYD](https://makecode.microbit.org/_PHU0oJLwHAYD)<BR><P>
+MakeCode: [https://makecode.microbit.org/_H7cdaqVdV2wP](https://makecode.microbit.org/_H7cdaqVdV2wP)<BR><P>
 你可以在以下網頁下載HEX檔案:<BR>
-<iframe src="https://makecode.microbit.org/#pub:_PHU0oJLwHAYD" width="100%" height="500" frameborder="0"></iframe>
+<iframe src="https://makecode.microbit.org/#pub:_H7cdaqVdV2wP" width="100%" height="500" frameborder="0"></iframe>
 
 <P>
 

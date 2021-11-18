@@ -46,9 +46,9 @@
 
 
 <span id="subtitle">完整答案<BR><P>
-MakeCode: [https://makecode.microbit.org/_KbxHgu7xfHhP](https://makecode.microbit.org/_KbxHgu7xfHhP)<BR><P>
+MakeCode: [https://makecode.microbit.org/_5kci8dEkPJLc](https://makecode.microbit.org/_5kci8dEkPJLc)<BR><P>
 你可以在以下網頁下載HEX檔案:<BR>
-<iframe src="https://makecode.microbit.org/#pub:_KbxHgu7xfHhP" width="100%" height="500" frameborder="0"></iframe>
+<iframe src="https://makecode.microbit.org/#pub:_5kci8dEkPJLc" width="100%" height="500" frameborder="0"></iframe>
 <P><P>
 
 
@@ -78,9 +78,9 @@ MakeCode: [https://makecode.microbit.org/_KbxHgu7xfHhP](https://makecode.microbi
 ![auto_fit](images/Ch5/Ch5_p5.png)<P>
 
 <span id="subtitle">完整答案<BR><P>
-MakeCode: [https://makecode.microbit.org/_ApFMuua7d072](https://makecode.microbit.org/_ApFMuua7d072)<BR><P>
+MakeCode: [https://makecode.microbit.org/_gchYsXYJ3WYY](https://makecode.microbit.org/_gchYsXYJ3WYY)<BR><P>
 你可以在以下網頁下載HEX檔案:<BR>
-<iframe src="https://makecode.microbit.org/#pub:_ApFMuua7d072" width="100%" height="500" frameborder="0"></iframe><P><P>
+<iframe src="https://makecode.microbit.org/#pub:_gchYsXYJ3WYY" width="100%" height="500" frameborder="0"></iframe><P><P>
 
 ## 發送端
 <HR>
@@ -100,9 +100,9 @@ MakeCode: [https://makecode.microbit.org/_ApFMuua7d072](https://makecode.microbi
 
 
 <span id="subtitle">完整答案<BR><P>
-MakeCode: [https://makecode.microbit.org/_AygdmqgfTCXb](https://makecode.microbit.org/_AygdmqgfTCXb)<BR><P>
+MakeCode: [https://makecode.microbit.org/_bDAaK0fThPMF](https://makecode.microbit.org/_bDAaK0fThPMF)<BR><P>
 你可以在以下網頁下載HEX檔案:<BR>
-<iframe src="https://makecode.microbit.org/#pub:_AygdmqgfTCXb" width="100%" height="500" frameborder="0"></iframe><P><P>
+<iframe src="https://makecode.microbit.org/#pub:_bDAaK0fThPMF" width="100%" height="500" frameborder="0"></iframe><P><P>
 
 <h2>附加功能:</h2>
 <HR>
@@ -121,6 +121,6 @@ MakeCode: [https://makecode.microbit.org/_AygdmqgfTCXb](https://makecode.microbi
 ![auto_fit](images/Ch5/Ch5_p8.png)<P>
 
 <span id="subtitle">完整答案<BR><P>
-MakeCode: [https://makecode.microbit.org/_2H1fHvgMv6jg](https://makecode.microbit.org/_2H1fHvgMv6jg)<BR><P>
+MakeCode: [https://makecode.microbit.org/_F1iKcpH1U8WD](https://makecode.microbit.org/_F1iKcpH1U8WD)<BR><P>
 你可以在以下網頁下載HEX檔案:<BR>
-<iframe src="https://makecode.microbit.org/#pub:_2H1fHvgMv6jg" width="100%" height="500" frameborder="0"></iframe><P>
+<iframe src="https://makecode.microbit.org/#pub:_F1iKcpH1U8WD" width="100%" height="500" frameborder="0"></iframe><P>

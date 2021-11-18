@@ -63,9 +63,9 @@ IFTTT平台提供一個整合的地方讓裝置和服務連結在一起，像Twi
 
 
 <span id="subtitle">完整答案<BR><P>
-MakeCode: [https://makecode.microbit.org/_CwbdXV0ascyx](https://makecode.microbit.org/_CwbdXV0ascyx)<BR><P>
+MakeCode: [https://makecode.microbit.org/_efCFLbLk5F03](https://makecode.microbit.org/_efCFLbLk5F03)<BR><P>
 你可以在以下網頁下載HEX檔案:<BR>
-<iframe src="https://makecode.microbit.org/#pub:_CwbdXV0ascyx" width="100%" height="500" frameborder="0"></iframe>
+<iframe src="https://makecode.microbit.org/#pub:_efCFLbLk5F03" width="100%" height="500" frameborder="0"></iframe>
 
 
 
