@@ -45,6 +45,8 @@ IFTTT 可以把用家的應用程式和設備連接並容許它們進行交流�
 * 檢查 IoT:bit 上的揚聲器開關<BR><P>
 ![auto_fit](images/Case7/Case7_hardware.png)<P>
 
+ <B><I>請把揚聲器開關 "下拉" ，用以連接揚聲器</I></B>
+
 ## IoT (IFTTT)
 <HR>
 
