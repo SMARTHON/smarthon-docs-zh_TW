@@ -37,7 +37,7 @@
 ## 線路連接
 <HR>
 
-* 連接 LED 和 IoT:bit 的 P1 端口<BR><P>
+* 連接 LED 和 IoT:bit 的 P0 端口<BR><P>
 ![auto_fit](images/Case10/Case10_hardware.png)<P>
 
 *注意:*
@@ -62,16 +62,16 @@
 <span id="subtitle">步驟四. 控制 LED 開關</span><BR><P>
 * 加入”如果...那麼”
 * ”WAN_Command = lighton”設為第一個條件
-* 在 "如果" 裏加入`turn white LED to 1023 at P1`
+* 在 "如果" 裏加入`turn white LED to 1023 at P0`
 * 點擊加號，在那添加第二個條件”WAN_Command = lightoff”
-* 在第二個 "如果" 裏加入`turn white LED to 0 at P1`
+* 在第二個 "如果" 裏加入`turn white LED to 0 at P0`
 ![auto_fit](images/Case10/Case10_p4.png)<P>
 
 
 <span id="subtitle">完整答案<BR><P>
-MakeCode: [https://makecode.microbit.org/_gH7hqDh8FH81](https://makecode.microbit.org/_gH7hqDh8FH81)<BR><P>
+MakeCode: [https://makecode.microbit.org/_Ami5MkUsEDso](https://makecode.microbit.org/_Ami5MkUsEDso)<BR><P>
 你可以在以下網頁下載HEX檔案:<BR>
-<iframe src="https://makecode.microbit.org/#pub:_gH7hqDh8FH81" width="100%" height="500" frameborder="0"></iframe>
+<iframe src="https://makecode.microbit.org/#pub:_Ami5MkUsEDso" width="100%" height="500" frameborder="0"></iframe>
 
 
 ## IoT (IFTTT)

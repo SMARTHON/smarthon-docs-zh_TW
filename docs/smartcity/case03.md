@@ -47,17 +47,13 @@
 * 連接彩色 LED 燈和 IoT:bit 的 P1 端口<BR><P>
 ![pic](images/Case3/Case3_hardware.png)<P>
 
-*注意
-
->1. 根據顏色連接接線和端口<BR>
->2. P0 內建線路予蜂鳴器。在使用 P0 端口予其他外接設備時遇上問題，建議查看位於 IoT:bit 右上的蜂鳴器開關狀態
 
 ## 編程 (MakeCode)
 <HR>
 
 <span id="subtitle">步驟一. 定義新變數和啟動彩色 LED 燈</span><P>
 * 定義新變數”distance”並設值為 0
-* 在”Neopixel”模組中加入”變數 strip 設為 NeoPixel at pin P0 with 1 leds as RGB(BGB) format”至”當啟動時”
+* 在”Neopixel”模組中加入”變數 strip 設為 NeoPixel at pin P1 with 1 leds as RGB(BGB) format”至”當啟動時”
 * 插入”strip set brightness 50”
 * 插入”等待 5 秒”
 ![auto_fit](images/Case3/Case3_p1.png)<P>

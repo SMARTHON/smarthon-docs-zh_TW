@@ -87,7 +87,7 @@ ThingSpeak 是一個物聯網數據分析平台，提供即時數據圖表分顯
 ![auto_fit](images/Case6/Case6_p2.png)<P>
 
 <span id="subtitle">步驟三.讀取溫度、濕度和雨滴讀數</span><BR><P>
-* 在「重復無限次」加入”如果...那麼”，`WiFi connected?`為前設
+* 在「重復無限次」加入”如果...那麼”，`WiFi連接狀態`為前設
 * 設`humidity`為`DHT11 讀取濕度接口 P2`
 * 設`temperature`為`DHT11 讀取溫度接口 P2`
 * 設`raindrop`為`取得雨水傳感器數值接口 P0`
@@ -100,13 +100,13 @@ ThingSpeak 是一個物聯網數據分析平台，提供即時數據圖表分顯
 ![auto_fit](images/Case6/Case6_p4.png)<P>
 
 <span id="subtitle">步驟五. 上傳資料至 ThingSpeak</span><BR><P>
-* 在”如果...那麼”加入”Send ThingSPeak key...”及輸入API key
+* 在”如果...那麼”加入”發送到ThingSpeak key...”及輸入API key
 * 在 Field value 分別放入 `temperature`， `humidity`， `raindrop`
 * 等待 15 秒
 ![auto_fit](images/Case6/Case6_p5.png)<P>
 
 <span id="subtitle">步驟六. 顯示上傳狀態</span><BR><P>
-* 加入`On ThingSpeak Uploaded`
+* 加入`當上傳到Thingspeak後`
 * 新行顯示”ThingSpeak: `Status`， Error: `Error_code`”
 ![auto_fit](images/Case6/Case6_p6.png)<P>
 
