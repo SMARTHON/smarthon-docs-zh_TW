@@ -1,4 +1,4 @@
-# How to program Smarthon Plant Kit on micro:bit
+# program Smarthon Plant Kit on micro:bit
 
 To Program Smarthon modules with micro:bit, you need to add the Smarthon Plant Kit packages to the BBC micro:bit makecode platform and initialize it first.
 

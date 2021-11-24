@@ -1,4 +1,4 @@
-Smarthon Plant Kit for micro:bit
+Smarthon 智能種植套件
 ======================================
 
 
@@ -9,12 +9,14 @@ Smarthon Plant Kit for micro:bit
     01Introduction.md
     02Plantkit.md
     05Hardware.md
-    06ReadingSensors.md
     07Program.md
-    Project1.md
-    Project2.md
-    Project3.md
-    Project4.md
-    Project5.md
-    Project6.md
-    08Appendix1.md
+    case01.md
+    case02.md
+    case03.md
+    case04.md
+    case05.md
+    case06.md
+    case07.md
+    case08.md
+    case09.md
+    case10.md
