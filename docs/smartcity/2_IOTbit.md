@@ -249,34 +249,39 @@ IoT:bit是供Micro:bit使用Wifi功能的強大擴展板，能夠有效幫助進
 ![pic](images/2_IOT/iot_image05.png)
 <P>IoT:bit能採用三種不同的供電方式。使用者可以任意選擇[USB, 鋰電池, AA電]其中一種來對IoT:bit及Micro:bit供電。
 
-<H3>OLED顯示屏</H3>
-
-![pic](images/2_IOT/iot_image06.png)
-<P>IoT:bit 擴展板已預留空間安裝SSD1306 0.96吋 OLED顯示屏。通過該位置的I2C接口，使用者能夠輕易控制並在顯示屏上輸出各種資料。
-
 <H3>無線Wifi模組</H3><BR>
-![pic](images/2_IOT/iot_image07.png)
+![pic](images/2_IOT/iot_image06.png)
 <P>無線模組是整塊擴展板中的核心部份。這能夠安裝不同的無線模組，例如ESP32、 ESP8266、藍牙等等，讓使用者依照不同情況使用合適的模組，以配合不同的項目。
+
+<H3>OLED顯示屏</H3>
+![pic](images/2_IOT/iot_image07.png)
+<P>IoT:bit 擴展板已預留空間安裝SSD1306 0.96吋 OLED顯示屏。通過該位置的I2C接口，使用者能夠輕易控制並在顯示屏上輸出各種資料。
 
 <H3>ESP舵機接口</H3><BR>
 ![pic](images/2_IOT/iot_image08.png)
 <P>當使用ESP32無線模組時，可以提供額外3個舵機控制接口。適用於180度及360度的SG90/SG90S舵機。
 
+<H3>揚聲器及開關</H3><BR>
+![pic](images/2_IOT/iot_image10.png)
+<P>IoT:bit 內建了一個被動式揚聲器，能夠讓Micro:bit透過這揚聲器發出音樂。揚聲器線路連接Micro:bit的P0引腳，為了不干預其他傳感器使用P0接口，提供了一個開關用以切換。
+
 <H3>Micro:bit GPIO接口</H3><BR>
 ![pic](images/2_IOT/iot_image09.png)
 <P>IoT:bit從Micro:bit中引出了一共13個I/O引腳，提供了良好的擴展性，讓使用者能同時使用大量的傳感器及驅動器。每一個引腳都提供了獨立GVS插座，方便進行連接。
 
-<H3>揚聲器及開關</H3><BR>
-![pic](images/2_IOT/iot_image10.png)
-<P>IoT:bit 內建了一個被動式揚聲器，能夠讓Micro:bit透過這揚聲器發出音樂。揚聲器線路連接Micro:bit的P0引腳，為了不干預其他傳感器使用P0接口，提供了一個開關用以切換。
+<H3>4針接口</H3><BR>
+![pic](images/2_IOT/iot_image12.png)
+<P>因有些模組運行時需要同時使用兩個I/O針腳，IoT:bit上保留有兩個接口供4針模組使用，例如超聲波距離傳感器及雙方向馬達等。故此，有4個I/O針腳是連接到這4針接口的，分別是P12、P13、P14、P15。
+
+<H3>I2C接口</H3><BR>
+![pic](images/2_IOT/iot_image15.png)
+<P>Micro:bit能夠支援I2C通訊協議,因此IoT:bit上提供了共3個I2C接口(其中1個用於連接OLED顯示屏),方便同時連接不同的傳感器。
+
 
 <H3>快速接口</H3><BR>
 ![pic](images/2_IOT/iot_image11.png)
 <P>部分傳感器提供GVS快速插口，能夠免除連接線直接插入IoT:bit的快速接口，除了更加方便外，亦能簡化組裝後的複雜度。
 
-<H3>4針接口</H3><BR>
-![pic](images/2_IOT/iot_image12.png)
-<P>因有些模組運行時需要同時使用兩個I/O針腳，IoT:bit上保留有兩個接口供4針模組使用，例如超聲波距離傳感器及雙方向馬達等。故此，有4個I/O針腳是連接到這4針接口的，分別是P12、P13、P14、P15。
 
 <H3>鱷魚夾觸點</H3><BR>
 ![pic](images/2_IOT/iot_image12_5.png)

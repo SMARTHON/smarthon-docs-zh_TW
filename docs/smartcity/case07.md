@@ -1,4 +1,4 @@
-# 案例 07: 智能家居防衛系統
+# 物聯網案例 07: 智能家居防衛系統
 
 程度: ![level](images/level3.png)
 ![auto_fit](images/Case7/case-07.png)<P>

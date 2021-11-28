@@ -1,4 +1,4 @@
-# 案例 06: 都市氣象站
+# 物聯網案例 06: 都市氣象站
 
 程度: ![level](images/level2.png)
 ![auto_fit](images/Case6/case-06.png)<P>

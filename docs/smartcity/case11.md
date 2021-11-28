@@ -1,4 +1,4 @@
-# 案例 11: 自動天台布架
+# 物聯網案例 11: 自動天台布架
 
 程度: ![level](images/level4.png)
 ![auto_fit](images/Case11/case-11.png)<P>
