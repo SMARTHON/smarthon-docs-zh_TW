@@ -40,10 +40,10 @@
 ![auto_fit](images/4_ConnectWiFi/Wifi_p2.png)<P>
 
 <span id="subtitle">第三步驟: 成功連接後以圖案表達</span><BR><P>
-「`當Wifi連接後`」是一個事件處理器，當你成功連接wifi後，裡面的程式就會被執行。<BR>
+「`當Wifi連接成功後`」是一個事件處理器，當你成功連接wifi後，裡面的程式就會被執行。<BR>
 當你成功連接後，會獲得兩個變數，分別為`IP地址`及`裝置ID`，利用這兩個變數可以令你輕易地透過網路上控制你的Micro:bit。<BR>
-* 拖動「`當Wifi連接後`」到平台上
-* 在「`基本`」分頁，拖動「`顯示 圖示`」到「`當Wifi連接後`」裡面
+* 拖動「`當Wifi連接成功後`」到平台上
+* 在「`基本`」分頁，拖動「`顯示 圖示`」到「`當Wifi連接成功後`」裡面
 * 把圖示切換成`剔`<BR>
 
 ![auto_fit](images/4_ConnectWiFi/Wifi_p3.png)<P>
@@ -52,21 +52,21 @@
 如果你想知道你的IP地址，你可以把這顯示在顯示屏上<BR>
 * 前往「`OLED`」分頁
 * 把「`OLED 初始化 寛128 高64`」拖動到「`當啟動時`」裡
-* 把「`顯示字符串`」拖動到「`當WiFi連接後`」裡面
-* 把「`當WiFi連接後`」裡面的變數「`IP_Address`」拖動到「`顯示字符串`」的輸入格裡
+* 把「`顯示字符串`」拖動到「`當WiFi連接成功後`」裡面
+* 把「`當WiFi連接成功後`」裡面的變數「`IP_Address`」拖動到「`顯示字符串`」的輸入格裡
 * 你亦可以透過 「`進階->文字`」分頁裡的功能控制顯示的文字格式<BR>
 
 ![auto_fit](images/4_ConnectWiFi/Wifi_p3_5.png)<P>
 
 <B><u>額外功能</u></B>:<BR>
-和「`當Wifi連接後`」接收成功連接Wifi事件一樣，當你的Wifi連線斷開時，亦會觸發另一個事件。這時候你可以用「`當Wifi斷線`」來得知情況及原因，並作出相應的處理，如顯示`X圖案`及把`錯誤碼`顯示在顯示屏上<BR>
+和「`當Wifi連接成功後`」接收成功連接Wifi事件一樣，當你的Wifi連線斷開時，亦會觸發另一個事件。這時候你可以用「`當Wifi斷線`」來得知情況及原因，並作出相應的處理，如顯示`X圖案`及把`錯誤碼`顯示在顯示屏上<BR>
 
 ![auto_fit](images/4_ConnectWiFi/Wifi_p5.png)<P>
 
 <span id="subtitle">完整程式<BR><P>
-MakeCode: [https://makecode.microbit.org/_53Yf8qcx521m](https://makecode.microbit.org/_53Yf8qcx521m)<BR><P>
+MakeCode: [https://makecode.microbit.org/_JcPFw01R0b6F](https://makecode.microbit.org/_JcPFw01R0b6F)<BR><P>
 你亦可以從以下網頁下載程式HEX檔案<BR>
-<iframe src="https://makecode.microbit.org/#pub:_53Yf8qcx521m" width="100%" height="500" frameborder="0"></iframe>
+<iframe src="https://makecode.microbit.org/#pub:_JcPFw01R0b6F" width="100%" height="500" frameborder="0"></iframe>
 
 
 ## 成果

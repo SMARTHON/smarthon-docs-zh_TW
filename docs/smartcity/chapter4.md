@@ -87,9 +87,9 @@
 
 
 <span id="subtitle">完整答案<BR><P>
-MakeCode: [https://makecode.microbit.org/_XDDc7j5ftJeh](https://makecode.microbit.org/_XDDc7j5ftJeh)<BR><P>
+MakeCode: [https://makecode.microbit.org/_U1bHoyWHD7DD](https://makecode.microbit.org/_U1bHoyWHD7DD)<BR><P>
 你可以在以下網頁下載HEX檔案<BR>
-<iframe src="https://makecode.microbit.org/#pub:_XDDc7j5ftJeh" width="100%" height="500" frameborder="0"></iframe>
+<iframe src="https://makecode.microbit.org/#pub:_U1bHoyWHD7DD" width="100%" height="500" frameborder="0"></iframe>
 
 <P>
 

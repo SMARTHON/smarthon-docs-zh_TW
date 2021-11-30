@@ -120,9 +120,9 @@ https://control.smarthon.cc/publish?id=DeviceID&msg=ControlCommand&value=Value
 
 
 <span id="subtitle">完整答案<BR><P>
-MakeCode: [https://makecode.microbit.org/_RjR1asA4uU93](https://makecode.microbit.org/_RjR1asA4uU93)<BR><P>
+MakeCode: [https://makecode.microbit.org/_JUDFLu75zDFV](https://makecode.microbit.org/_JUDFLu75zDFV)<BR><P>
 你可以在以下網頁下載HEX檔案:<BR>
-<iframe src="https://makecode.microbit.org/#pub:_RjR1asA4uU93" width="100%" height="500" frameborder="0"></iframe><P>
+<iframe src="https://makecode.microbit.org/#pub:_JUDFLu75zDFV" width="100%" height="500" frameborder="0"></iframe><P>
 
 
 ## 第二部分: App Inventor 2 設定
