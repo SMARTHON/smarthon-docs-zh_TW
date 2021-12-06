@@ -1,4 +1,4 @@
-# 物聯網案例 09: 智能屋門控制
+# 物聯網案例 09: 遙距智能門控制
 
 程度: ![level](images/level4.png)
 ![auto_fit](images/Case9/case-09.png)<P>

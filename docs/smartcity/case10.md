@@ -1,4 +1,4 @@
-# 物聯網案例 10: 智能街燈
+# 物聯網案例 10: 節能街燈
 
 程度: ![level](images/level4.png)
 ![auto_fit](images/Case10/case-10.png)<P>
@@ -11,8 +11,8 @@
 ## 背景
 <HR>
 
-<span id="subtitle">甚麼是智能街燈?</span><BR><P>
-智能街燈是可以在指定時間自動開關的街燈，能夠同時兼顧節省能源及照明需求。<BR><P>
+<span id="subtitle">甚麼是節能街燈?</span><BR><P>
+節能街燈是可以在指定時間自動開關的街燈，能夠同時兼顧節省能源及照明需求。<BR><P>
 <span id="subtitle">運作原理</span><BR><P>
 當從 WAN 收到指令，micro:bit 會根據指令控制街燈。所以只需要在不同時間及場合發送指令即可。<BR><P>
 ![auto_fit](images/Case10/Concept-diagram-Case10.png)<P>

@@ -1,4 +1,4 @@
-# 物聯網案例 11: 自動天台布架
+# 物聯網案例 11: 自動天台簷篷系統
 
 程度: ![level](images/level4.png)
 ![auto_fit](images/Case11/case-11.png)<P>
@@ -6,7 +6,7 @@
 ## 目標
 <HR>
 
-製作一個會在天氣改變時自動開關的布架，避免衣物被雨水沾濕。
+製作一個會在天氣改變時自動開關的簷篷，避免衣物被雨水沾濕。
 
 ## 背景
 <HR>
@@ -14,7 +14,7 @@
 <span id="subtitle">為什麼我們需要自動布架?</span><BR><P>
 這樣當下雨時人們再不需要衝上天台把衣服收回。<BR><P>
 <span id="subtitle">運作原理</span><BR><P>
-Micro:bit通過IFTTT平台上的天氣預報系統，取得指令內容開關布架。<BR><P>
+Micro:bit通過IFTTT平台上的天氣預報系統，取得指令內容開關簷篷。<BR><P>
 ![auto_fit](images/Case11/Concept-diagram-Case11.png)<P>
 
 ## 所用部件
@@ -80,11 +80,11 @@ G (黑) | G (棕)
 * 在第二個 "那麼" 裡添加`Turn Servo to 180 degree at P1`
 ![auto_fit](images/Case11/Case11_p4.png)<P>
 
-<span id="subtitle">步驟五. 按 A 以開啟布架</span><BR><P>
+<span id="subtitle">步驟五. 按 A 以開啟簷篷</span><BR><P>
 * 當按A按鈕時，轉動舵機
 ![pic_50](images/Case11/Case11_p5.png)<P>
 
-<span id="subtitle">步驟六. 按 B 以開啟布架</span><BR><P>
+<span id="subtitle">步驟六. 按 B 以開啟簷篷</span><BR><P>
 * 當按B按鈕時，向另一角度轉動舵機
 ![pic_50](images/Case11/Case11_p6.png)<P>
 
@@ -114,7 +114,7 @@ MakeCode: [https://makecode.microbit.org/_h133LW5miXY9](https://makecode.microbi
 ## 結果
 <HR>
 IFTTT會依照地點的天氣發送指令。<BR>
-當 micro:bit 收到”RAIN"指令，布架會關上。反之則開啟。<BR><P>
+當 micro:bit 收到”RAIN"指令，簷篷會關上。反之則開啟。<BR><P>
 
 ![auto_fit](images/Case11/Case11_result.gif)<P>
 

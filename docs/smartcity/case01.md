@@ -1,4 +1,4 @@
-# 案例 01: 自動化感應街燈
+# 案例 01: 自動遊樂場燈
 
 程度: ![level](images/level1.png)
 ![auto_fit](images/Case1/case-01_1.png)<P>
@@ -6,18 +6,18 @@
 
 ## 目標
 <HR>
-製作一個能感應附近活動的智能街燈。<P>
+製作一個能感應附近活動的智能遊樂場燈。<P>
 
 ## 背景
 <HR>
-<span id="subtitle">甚麼是智能街燈?</span><P>
+<span id="subtitle">甚麼是智能遊樂場燈?</span><P>
 
-智能街燈能夠在感應到有人活動時自動開啟，無人時自動關閉，以節省電力。<P>
+智能遊樂場燈能夠在感應到有人活動時自動開啟，無人時自動關閉，以節省電力。<P>
 
 <span id="subtitle">運作原理</span><P>
 
 以附上的運動傳感器偵察附近的活動。如果傳感器回報 TRUE，則反映有人在附近，
-街燈會自動開啟，反之亦然。<BR>
+遊樂場燈會自動開啟，反之亦然。<BR>
 
 ![pic_60](images/Case1/Concept-diagram-Case1.png)<P>
 
@@ -85,7 +85,7 @@ MakeCode: [https://makecode.microbit.org/_UM2VU1AFoiYt](https://makecode.microbi
 ## 思考
 <HR> 
 
-Q1. 除了自動化感應街燈外，還可以怎使用運動傳感器?<BR><P>
+Q1. 除了自動遊樂場燈外，還可以怎使用運動傳感器?<BR><P>
 
 <!---
 Q2. How should we reset the programming if we connect the white LED light to P3?<BR><P>
