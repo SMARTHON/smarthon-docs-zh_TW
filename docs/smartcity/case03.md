@@ -7,16 +7,16 @@
 ## 目標
 <HR>
 
-製作一個會根據內部當前容量改變 LED 燈顏色的智能垃圾桶。<BR><P>
+製作一個會根據內部當前容量改變 LED 顏色的智能垃圾桶。<BR><P>
 
 ## 背景
 <HR>
 
 <span id="subtitle">甚麼是智能垃圾桶?</span><P>
-垃圾桶上的 LED 燈可以告訴人們桶內的當前容量，收集工人可以輕易判斷有否需要清理垃圾。這樣可以減少更換垃圾袋的次數，從而減少膠袋用量。<BR><P>
+垃圾桶上的 LED 可以告訴人們桶內的當前容量，收集工人可以輕易判斷有否需要清理垃圾。這樣可以減少更換垃圾袋的次數，從而減少膠袋用量。<BR><P>
 
 <span id="subtitle">運作原理</span><P>
-距離傳感器可以探測桶內垃圾高度，從而轉化為當前容量。彩色 LED 燈則會隨著容量轉變。<BR><P>
+距離傳感器可以探測桶內垃圾高度，從而轉化為當前容量。彩色 LED 則會隨著容量轉變。<BR><P>
 ![pic_70](images/Case3/Concept-diagram-Case3.png)<P>
 
 ## 所用部件
@@ -28,10 +28,10 @@
 <HR>
 
 <span id="subtitle">步驟一</span><P>
-用 M4”10 毫米螺絲螺母把距離傳感器組裝到 C2 卡板上。<BR><P>
+用 M4\*10 毫米螺絲及螺母把超音波距離傳感器組裝到 C2 模型上。<BR><P>
 ![pic](images/Case3/Case3_ass1.png)<P>
 <span id="subtitle">步驟二</span><P>
-用 M4”10 毫米螺絲螺母把彩色 LED 燈組裝到 C1 卡板上。<BR><P>
+用 M4\*10 毫米螺絲及螺母把彩色 LED 組裝到 C1 模型上。<BR><P>
 ![pic](images/Case3/Case3_ass2.png)<P>
 <span id="subtitle">步驟三</span><P>
 組合 C1 和 C2<BR><P>
@@ -43,15 +43,15 @@
 ## 線路連接
 <HR>
 
-* 連接距離傳感器和 IoT:bit 的 P14(trig)/P15(echo)端口<BR><P>
-* 連接彩色 LED 燈和 IoT:bit 的 P1 端口<BR><P>
+* 連接超音波距離傳感器和 IoT:bit 的 P14(trig)/P15(echo)端口<BR><P>
+* 連接彩色 LED 和 IoT:bit 的 P1 端口<BR><P>
 ![pic](images/Case3/Case3_hardware.png)<P>
 
 
 ## 編程 (MakeCode)
 <HR>
 
-<span id="subtitle">步驟一. 定義新變數和啟動彩色 LED 燈</span><P>
+<span id="subtitle">步驟一. 定義新變數和啟動彩色 LED </span><P>
 * 定義新變數”distance”並設值為 0
 * 在”Neopixel”模組中加入”變數 strip 設為 NeoPixel at pin P1 with 1 leds as RGB(BGB) format”至”當啟動時”
 * 插入”strip set brightness 50”
@@ -78,7 +78,7 @@ MakeCode: [https://makecode.microbit.org/_Dxz8Yhge0eph](https://makecode.microbi
 ## 結果
 <HR>
 
-距離傳感器會傳回桶內垃圾與垃圾桶頂部的距離。<BR>LED 燈反映垃圾桶是否滿載。當滿載時，變為紅色，否則為綠色。<BR><P>
+距離傳感器會傳回桶內垃圾與垃圾桶頂部的距離。<BR>LED 反映垃圾桶是否滿載。當滿載時，變為紅色，否則為綠色。<BR><P>
 ![pic](images/Case3/Case3_result.gif)<P>
 
 ## 思考

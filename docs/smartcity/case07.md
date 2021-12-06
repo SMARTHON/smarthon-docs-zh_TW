@@ -15,7 +15,7 @@
 IFTTT 可以把用家的應用程式和設備連接並容許它們進行交流以完成特定工作。<BR><P>
 <span id="subtitle">運作原理</span><BR><P>
 運動傳感器回饋訊號至主板，若 TRUE 則主板激活揚聲器並自動發出電郵提示用家。
-同時 LED 屏會反映有入侵耆。<BR><P>
+同時 OLED 顯示屏會反映有可疑人士。<BR><P>
 ![auto_fit](images/Case7/Concept-diagram-Case7.png)<P>
 
 ## 所用部件
@@ -27,7 +27,7 @@ IFTTT 可以把用家的應用程式和設備連接並容許它們進行交流�
 <HR>
 
 <span id="subtitle">步驟一</span><BR><P>
-把運動傳感器組裝至 F1 兇板。
+用M4\*10毫米螺絲及螺母把運動傳感器組裝至 F1 模型。
 ![auto_fit](images/Case7/Case7_ass1.png)<P>
 ![auto_fit](images/Case7/Case7_ass2.png)<P>
 <span id="subtitle">步驟二</span><BR><P>
@@ -95,7 +95,7 @@ MakeCode: [https://makecode.microbit.org/_DyU6CsXYE7fx](https://makecode.microbi
 ## 結果
 <HR>
 
-當連上了 WiFi，如果門旁邊有可疑活動，蜂鳴器會被激活並發出電郵，同時
+當連上了 WiFi，如果門旁邊有可疑活動，揚聲器會被激活並發出電郵，同時
 micro:bit 上的 LED 會顯示”monster”圖示。<BR><P>
 ![auto_fit](images/Case7/Case7_result1.png)
 

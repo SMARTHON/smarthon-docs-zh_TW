@@ -6,7 +6,7 @@
 ## 目標
 <HR>
 
-製作一個能收集雨滴，溫度及濕度傳感器數據的氣象站，並自動把數據送上ThingSpeak 平台。<BR><P>
+製作一個能收集雨水，溫度及濕度傳感器數據的氣象站，並自動把數據送上ThingSpeak 平台。<BR><P>
 
 ## 背景
 <HR>
@@ -15,7 +15,7 @@
 ThingSpeak 是一個物聯網數據分析平台，提供即時數據圖表分顯然及分析。在這個案例，我們會使用該平台製作數據圖表。<BR><P>
 
 <span id="subtitle">運作原理</span><BR><P>
-實時收集溫度、濕度和雨滴並上傳至 ThingSpeak，令分析數據更輕鬆。<BR><P>
+實時收集溫度、濕度和雨水數據並上傳至 ThingSpeak，令分析數據更輕鬆。<BR><P>
 ![auto-fit](images/Case6/Concept-diagram-Case6.png)<P>
 
 ## 所用部件
@@ -27,13 +27,13 @@ ThingSpeak 是一個物聯網數據分析平台，提供即時數據圖表分顯
 <HR>
 
 <span id="subtitle"> 步驟一</span><BR><P>
-把雨滴傳感器組裝到 F2 卡板上。<BR><P>
+用M4\*10毫米螺絲及螺母把雨水傳感器組裝到 F2 模型上。<BR><P>
 ![auto_fit](images/Case6/Case6_ass1.png)<P>
 <span id="subtitle"> 步驟二</span><BR><P>
-把溫度及濕度傳感器組裝到 F2 卡板上。
+用M4\*10毫米螺絲及螺母把溫度及濕度傳感器組裝到 F2 模型上。
 ![auto_fit](images/Case6/Case6_ass2.png)<P>
 <span id="subtitle">步驟三</span><BR><P>
-組裝 F1 和 F2 卡板。
+組裝 F1 和 F2 模型。
 ![auto_fit](images/Case6/Case6_ass3.png)<P>
 <span id="subtitle">步驟四</span><BR><P>
 組裝完成!
@@ -42,14 +42,14 @@ ThingSpeak 是一個物聯網數據分析平台，提供即時數據圖表分顯
 ## 線路連接
 <HR>
 
-* 連接雨滴傳感器和 IoT:bit 的 P0 端口<BR><P>
+* 連接雨水傳感器和 IoT:bit 的 P0 端口<BR><P>
 * 連接溫度及濕度傳感器和 IoT:bit 的 P2 端口<BR><P>
 ![auto_fit](images/Case6/Case6_hardware.png)<P>
 
 *注意
 
 >1. 根據顏色連接接線和端口<BR>
->2. P0 內建線路予蜂鳴器。在使用 P0 端口予其他外接設備時遇上問題，建議查看位於 IoT:bit 右上的蜂鳴器開關狀態
+>2. P0 內建線路予揚聲器。在使用 P0 端口予其他外接設備時遇上問題，建議查看位於 IoT:bit 右上的揚聲器開關狀態
 
 
 ## IoT (ThingSpeak)
@@ -86,7 +86,7 @@ ThingSpeak 是一個物聯網數據分析平台，提供即時數據圖表分顯
 * 在連上網絡後於 OLED上顯示剔號
 ![auto_fit](images/Case6/Case6_p2.png)<P>
 
-<span id="subtitle">步驟三.讀取溫度、濕度和雨滴讀數</span><BR><P>
+<span id="subtitle">步驟三.讀取溫度、濕度和雨水讀數</span><BR><P>
 * 在「重復無限次」加入”如果...那麼”，`WiFi連接狀態`為前設
 * 設`humidity`為`DHT11 讀取濕度接口 P2`
 * 設`temperature`為`DHT11 讀取溫度接口 P2`

@@ -17,7 +17,7 @@
 <HR>
 <span id="subtitle">目標:</span> <P>
 
-將Micro:bit連接上網絡，在每天的下午6時，通過IFTTT傳送指令讓Micro:bit打開LED燈。<P>
+將Micro:bit連接上網絡，在每天的下午6時，通過IFTTT傳送指令讓Micro:bit打開LED。<P>
 
 <span id="subtitle">詳情:</span><P>
 
@@ -66,9 +66,9 @@
 
 * 在設定條件時，對接收到的訊息進行對比，是否與我們設定的指令相同
 
-* 當接收到 `light_on` 時，把LED燈打開
+* 當接收到 `light_on` 時，把LED打開
 
-* 當接收到 `light_off` 時，把LED燈關閉
+* 當接收到 `light_off` 時，把LED關閉
 
 ![auto_fit](images/Ch4/Ch4_2_p3.png)<P>
 
@@ -81,7 +81,7 @@
 
 <H3><U>進階應用:指令+數值:</U></H3>
 
-有時侯除了指令外，亦可能需要同時附加一個數值來控制，例如控制舵機轉動角度，LED燈的亮度等。<BR>
+有時侯除了指令外，亦可能需要同時附加一個數值來控制，例如控制舵機轉動角度，LED的亮度等。<BR>
 這時侯需使用另一個事件處理器 `當從互聯網接收到指令及數值` ，就能夠同時讀取指令及數值，並依此進行操作。<BR>
 ![auto_fit](images/Ch4/Ch4_2_p3_1.png)<P>
 
@@ -148,7 +148,7 @@ IFTTT使用 '如果...則執行...動作' 的方式來運行，我們可以設�
 
 * 在每天下午6時，IFTTT上的時鐘會觸發，讓IFTTT發送 `light_On` 指令到Micro:bit
 * Micro:bit 接收到指令
-* P0上的LED燈會被打開
+* P0上的LED會被打開
 ![auto_fit](images/Ch4/Ch4_2_result.png)<P>
 
 <H3><U>進階應用(帶有數值):</U></H3>
@@ -156,5 +156,5 @@ IFTTT使用 '如果...則執行...動作' 的方式來運行，我們可以設�
 若使用了帶數值的版本來傳送指令時，IFTTT上會多出一個數值輸入位置，可以讓我們輸入(例如600)
 * 每天下午6時，IFTTT上的時鐘會觸法，讓IFTTT發送 `light_On` 及數值 `600` 
 * Micro:bit接收到指令 `light_On`及數值 `600`
-* 在P0的LED燈就會被以數值600的類比數值打開，而不是最亮的1023
+* 在P0的LED就會被以數值600的類比數值打開，而不是最亮的1023
 ![auto_fit](images/Ch4/Ch4_2_result_1.png)<P>

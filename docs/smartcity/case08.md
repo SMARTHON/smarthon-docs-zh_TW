@@ -3,7 +3,7 @@
 程度: ![level](images/level5.png)
 
 <span id="remarks">* 詳情參考 附錄:點對點通訊<BR>
-* 本案例分為兩部分:發送者及接收者。要完成這案例，需要兩套組件。</span>
+* 本案例分為兩部分:發送者及接收者。要完成這案例，需要兩套組裝。</span>
 ![auto_fit](images/Case8/case-08_1.png)<P>
 
 ## 發送者
@@ -21,7 +21,7 @@
 發送者和接收者連接至同一個頻道，容許 WiFi 訊號在之間傳遞。當發送者發出”trafficjam”，接收者會因應訊號作出反應。<BR><P>
 
 <span id="subtitle">發出者運作原理</span><P>
-當光傳感器回饋過低數值，這代表有車長期停在此處，即有塞車發生。發送者傳送”trafficjam”至 microbit。反之則發送”nojam”。<BR><P>
+當光度傳感器長期回饋過低數值，這代表有車停在此處，即公路上有塞車發生。發送者傳送”trafficjam”至 microbit。反之則發送”nojam”。<BR><P>
 ![auto_fit](images/Case8/Concept-diagram-Case8_sender.png)<P>
 
 ### 所有部件
@@ -33,13 +33,13 @@
 ### 線路連接
 <HR>
 
-* 連接光傳感器和 IoT:bit 的 P0 端口。<BR><P>
+* 連接光度傳感器和 IoT:bit 的 P0 端口。<BR><P>
 ![auto_fit](images/Case8/Case8a_hardware.png)<P>
 
 *注意
 
 >1. 根據顏色連接接線和端口<BR>
->2. P0 內建線路予蜂鳴器。在使用 P0 端口予其他外接設備時遇上問題，建議查看位於 IoT:bit 右上的蜂鳴器開關狀態
+>2. P0 內建線路予揚聲器。在使用 P0 端口予其他外接設備時遇上問題，建議查看位於 IoT:bit 右上的揚聲器開關狀態
 
 
 ### 編程 (MakeCode)
@@ -75,15 +75,15 @@ MakeCode: [https://makecode.microbit.org/_DDHataUJ04HY](https://makecode.microbi
 ### 結果
 <HR>
 
-光傳感器用以偵測有沒有出現塞車。當光強度正常， " nojam " 會被送出。<BR><P>
+光度傳感器用以偵測有沒有出現塞車。當光度正常， "nojam" 會被送出。<BR><P>
 ![auto_fit](images/Case8/Case8a_result1.png)<P>
-當光強度過低， " trafficjam " 會被送出。<BR><P>
+當光度過低， "trafficjam" 會被送出。<BR><P>
 ![auto_fit](images/Case8/Case8a_result2.png)<P>
 
 ### 思考
 <HR>
 
-Q1. 我們可以用距離傳感器偵測有否塞車嗎?<BR><P>
+Q1. 我們可以用超音波距離傳感器偵測有否塞車嗎?<BR><P>
 
 
 ## 接收者
@@ -92,7 +92,7 @@ Q1. 我們可以用距離傳感器偵測有否塞車嗎?<BR><P>
 ### 目標
 <HR>
 
-製作一個能接收訊號的交通系統。<BR><P>
+製作一個能接收訊號並控制交通燈的交通系統。<BR><P>
 
 ### 背景
 <HR>
@@ -113,7 +113,7 @@ Q1. 我們可以用距離傳感器偵測有否塞車嗎?<BR><P>
 <HR>
 
 <span id="subtitle">步驟一</span><P>
-用 M4 螺絲螺母把交通燈組裝到 G1 卡板上。組裝 G1 和 G2。<BR><P>
+用 M4\*10毫米螺絲及螺母把交通燈組裝到 G1 模型上。組裝 G1 和 G2。<BR><P>
 ![auto_fit](images/Case8/Case8b_ass1.png)<P>
 
 <span id="subtitle">步驟二</span><P>
@@ -130,8 +130,8 @@ Q1. 我們可以用距離傳感器偵測有否塞車嗎?<BR><P>
 *注意:
 
 >1. 根據顏色連接接線和端口<BR>
->2. P0 內建線路予蜂鳴器。在使用 P0 端口予其他外接設備時遇上問題，建議查
-看位於 IoT:bit 右上的蜂鳴器開關狀態
+>2. P0 內建線路予揚聲器。在使用 P0 端口予其他外接設備時遇上問題，建議查
+看位於 IoT:bit 右上的揚聲器開關狀態
 
 ### 編程 (MakeCode)
 <HR>

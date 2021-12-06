@@ -11,12 +11,12 @@
 ## 背景
 <HR>
 
-<span id="subtitle">甚麼是都市噪音監測?</span><P>
-都市噪音監測系統監測公路上的噪音污染，因為過大的噪音會降低周遭人們的生活水
+<span id="subtitle">甚麼是智能都市噪音監測?</span><P>
+智能都市噪音監測系統監測公路上的噪音污染，因為過大的噪音會降低周遭人們的生活水
 平。<BR>安裝一個系統可以幫助工程師收集有關數據用於城市規劃。<BR><P>
 
 <span id="subtitle">運作原理</span><P>
-噪音傳感器可以偵測公路上的噪音水平，數據可以以圖表形式顯然。<BR><P>
+聲音傳感器可以偵測公路上的噪音水平，數據可以以圖表形式顯然。<BR><P>
 ![pic_70](images/Case4/Concept-diagram-Case4.png)<P>
 
 
@@ -29,10 +29,10 @@
 <HR>
 
 <span id="subtitle">步驟一</span><P>
-用 M2”10 毫米螺絲螺母把 OLED 組裝至 D1 卡板。<BR><P>
+用 M2\*10 毫米螺絲及螺母把 OLED顯示屏 組裝至 D1 模型。<BR><P>
 ![pic](images/Case4/Case4_ass1.png)<P>
 <span id="subtitle">步驟二</span><P>
-用 M4”10 毫米螺絲螺母把噪音乓 感器組裝至 D1 卡板。<BR><P>
+用 M4\*10 毫米螺絲及螺母把聲音傳感器組裝至 D1 模型。<BR><P>
 ![pic](images/Case4/Case4_ass2.png)<P>
 <span id="subtitle">步驟三</span><P>
 組裝 D1 和 D2。<BR><P>
@@ -44,8 +44,8 @@
 ## 線路連接
 <HR>
 
-* 連接噪音傳感器和 IoT:bit 的 P1 端口<BR><P>
-* 把 OLED 接到 I2C 端口<BR><P>
+* 連接聲音傳感器和 IoT:bit 的 P1 端口<BR><P>
+* 把 OLED顯示屏 接到 I2C 端口<BR><P>
 ![pic](images/Case4/Case4_hardware.png)<P>
 
 ## 編程(MakeCode)

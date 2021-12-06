@@ -26,16 +26,16 @@
 <HR>
 
 <span id="subtitle">步驟一</span><BR><P>
-用 M4 螺絲螺母把 L-字卡板組裝到 H1 卡板上。<BR><P>
+用 M4 螺絲及螺母把 L字-模型組裝到 H1 模型上。<BR><P>
 ![auto_fit](images/Case9/Case9_ass1.png)<P>
 <span id="subtitle">步驟二</span><BR><P>
-把舵機組裝到 H1 卡板。<BR><P>
+用M2\*7.5毫米螺絲把轉動臂固定在舵機,把 180ᵒ舵機組裝到 H1 模型。<BR><P>
 ![auto_fit](images/Case9/Case9_ass2.png)<P>
 <span id="subtitle">步驟三</span><BR><P>
-把萬字夾剪到 4.2 厘米，並用於固定 L-字卡板。<BR><P>
+把萬字夾剪成長度 4.2 厘米，並連接及扣到 L字-模型。<BR><P>
 ![auto_fit](images/Case9/Case9_ass3.png)<P>
 <span id="subtitle">步驟四</span><BR><P>
-組裝所有卡板。<BR><P>
+組裝所有模型。<BR><P>
 ![auto_fit](images/Case9/Case9_ass4.png)<P>
 <span id="subtitle">步驟五</span><BR><P>
 組裝完成!<BR><P>
@@ -45,7 +45,7 @@
 ## 線路連接
 <HR>
 
-連接舵機和 IoT:bit 的 P2 端口<BR><P>
+連接 180ᵒ舵機和 IoT:bit 的 P2 端口<BR><P>
 
 Micro:bit P2|舵機
 -:-|-:-

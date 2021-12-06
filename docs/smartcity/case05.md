@@ -11,11 +11,11 @@
 ## 背景
 <HR>
 
-<span id="subtitle">甚麼是測速器?</span><P>
-測速系統能根據車輛在一定時間內移動距離得出其車速。 安裝測速系統能有效減少交通意外發生。<BR><P>
+<span id="subtitle">甚麼是監速器?</span><P>
+監速系統能根據車輛在一定時間內移動距離得出其車速。 安裝監速系統能有效減少交通意外發生。<BR><P>
 
 <span id="subtitle">運作原理</span><P>
-距離傳感器可以在兩個時間點測量車輛與其之間的距離，從而計算其速率。 <BR><P>
+超音波距離傳感器可以在兩個時間點測量車輛與其之間的距離，從而計算其速率。 <BR><P>
 每 0.5 秒，傳感器會量度車輛與其之間距離。 <BR><P>
 ![auto_fit](images/Case5/Case5_des1.png)<P>
 根據物理學，速率 = (距離一 – 距離二)， 這時候可得知有三種情況。<BR>
@@ -35,7 +35,7 @@
 <HR>
 
 <span id="subtitle">步驟一</span><P>
-用 M2”10 毫米螺絲螺母把 OLED 組裝到 D1 卡板上。<BR><P>
+用 M2\*10 毫米螺絲及螺母把 OLED顯示屏 組裝到 D1 模型上。<BR><P>
 ![auto_fit](images/Case5/Case5_ass1.png)<P>
 <span id="subtitle">步驟二</span><P>
 組裝 D1 和 D2。<BR><P>
@@ -44,10 +44,10 @@
 底座組裝完成!
 ![pic_40](images/Case5/Case5_ass3.png)<P>
 <span id="subtitle">步驟四</span><P>
-用 M4 螺絲螺母把距離傳感器組裝到 E1 卡板。<BR><P>
+用 M4\*10 螺絲及螺母把超音波距離傳感器組裝到 E1 模型。<BR><P>
 ![auto_fit](images/Case5/Case5_ass4.png)<P>
 <span id="subtitle">步驟五</span><P>
-組裝 E1 和 E2 卡板。<BR><P>
+組裝 E1 和 E2 模型。<BR><P>
 ![auto_fit](images/Case5/Case5_ass5.png)<P>
 <span id="subtitle">步驟六</span><P>
 組裝完成。!<BR><P>
@@ -56,7 +56,7 @@
 ## 線路連接
 <HR>
 
-* 連接距離傳感器和 IoT:bit 的 P14(trig)/P15(echo)端口 <BR><P>
+* 連接超音波距離傳感器和 IoT:bit 的 P14(trig)/P15(echo)端口 <BR><P>
 * 把 OLED 連到 IoT:bit 的 I2C 端口 <BR><P>
 ![auto_fit](images/Case5/Case5_hardware.png)<P>
 
@@ -91,7 +91,7 @@ MakeCode: [https://makecode.microbit.org/_Ro5fAyhMdRvX](https://makecode.microbi
 ## 結果
 <HR>
 
-距離傳感器會持續監察車輛的距離。車速經計算後會顯示在 OLED 顯示屏，同時以圖表形式表現在 LED 上。<BR><P>
+超音波距離傳感器會持續監察車輛的距離。車速經計算後會顯示在 OLED 顯示屏，同時以圖表形式表現在 LED 上。<BR><P>
 ![auto_fit](images/Case5/Case5_result.gif)<P>
 
 ## 思考

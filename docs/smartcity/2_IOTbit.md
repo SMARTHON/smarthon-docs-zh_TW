@@ -3,7 +3,7 @@
 ## 介紹
 Smarthon IoT:bit是一塊專為讓Micro:bit加入物聯網而設計的開發板，有了Iot:bit， Micro:bit除了能夠連接不同的傳感器，亦能透過wifi連上互聯網，成為物聯網中的一員。 
 <P>
-這提供了13個常規GVS插座，能夠讓使用者同時連接多個不同的傳感器以接收及傳送資料。對於一些比較特別的模組，例如超聲波距離傳感器馬達以及OLED顯示屏等，都留有額外的插座供它們使用。另外，不止能夠使用一些簡單的類比或是數位控制的模組，像一些需要使用I2C，SPI等協議的模組亦能夠透過Smarton IoT:Bit供Micro:bit使用。為了方便使用第一代Micro:bit的使用者，IoT:bit也內置了揚聲器讓Micro:bit能夠發出聲音。
+這提供了13個常規GVS插座，能夠讓使用者同時連接多個不同的傳感器以接收及傳送資料。對於一些比較特別的模組，例如超音波距離傳感器，馬達以及OLED顯示屏等，都留有額外的插座供它們使用。另外，不止能夠使用一些簡單的類比或是數位控制的模組，像一些需要使用I2C，SPI等協議的模組亦能夠透過Smarton IoT:Bit供Micro:bit使用。為了方便使用第一代Micro:bit的使用者，IoT:bit也內置了揚聲器讓Micro:bit能夠發出聲音。
 <P>
 IoT:bit是供Micro:bit使用Wifi功能的強大擴展板，能夠有效幫助進行STEM項目。IoT:bit使用了最新款的ESP系列模組ESP32，其雙核心效能對比上一代的ESP8266有著明顯的提升，配合上記憶體的增加，能夠提供更加穩定的Wifi功能。<BR>IoT:bit除了支援Thingspeak及IFTTT等常用IoT平台服務，亦提供互聯網遙距控制功能，讓使用者能夠透過智能電話、Amazon 智能喇叭、Google 智能家居等裝置操控Micro:bit。而IoT:bit亦可以與其他IoT:bit進行溝通，經由wifi接上互聯網後，就能夠長距離地與其他Micro:bit進行資料交換，不像Micro:bit原來的無線電通訊有著短距離的限制。
 <P>
@@ -225,7 +225,7 @@ IoT:bit是供Micro:bit使用Wifi功能的強大擴展板，能夠有效幫助進
 2. USB接口
 3. 電源開關
 4. 3.7V 鋰電池接口[XH2.54] 
-5. AA電池倉(1.5V AA電池x4)接口[DC 5.5mm] 
+5. AA電池盒(1.5V AA電池x4)接口[DC 5.5mm] 
 6. 快速GVS接口
 7. 鱷魚夾觸點
 8. I2C接口
@@ -233,7 +233,7 @@ IoT:bit是供Micro:bit使用Wifi功能的強大擴展板，能夠有效幫助進
 10. ESP32舵機接口
 11. 揚聲器開關
 12. 4mm開孔位
-13. OLED顯示屏(128x62像素)
+13. OLED顯示屏(128x64像素)
 14. ESP32無線Wifi模組
 15. 揚聲器
 16. 通用GVS接口
@@ -263,7 +263,7 @@ IoT:bit是供Micro:bit使用Wifi功能的強大擴展板，能夠有效幫助進
 
 <H3>揚聲器及開關</H3><BR>
 ![pic](images/2_IOT/iot_image10.png)
-<P>IoT:bit 內建了一個被動式揚聲器，能夠讓Micro:bit透過這揚聲器發出音樂。揚聲器線路連接Micro:bit的P0引腳，為了不干預其他傳感器使用P0接口，提供了一個開關用以切換。
+<P>IoT:bit 內建了一個被動式揚聲器，能夠讓Micro:bit透過這揚聲器發出音樂。揚聲器線路連接Micro:bit的P0引腳，為了不干擾其他傳感器使用P0接口，提供了一個開關用以切換連接狀態。
 
 <H3>Micro:bit GPIO接口</H3><BR>
 ![pic](images/2_IOT/iot_image09.png)
@@ -271,7 +271,7 @@ IoT:bit是供Micro:bit使用Wifi功能的強大擴展板，能夠有效幫助進
 
 <H3>4針接口</H3><BR>
 ![pic](images/2_IOT/iot_image12.png)
-<P>因有些模組運行時需要同時使用兩個I/O針腳，IoT:bit上保留有兩個接口供4針模組使用，例如超聲波距離傳感器及雙方向馬達等。故此，有4個I/O針腳是連接到這4針接口的，分別是P12、P13、P14、P15。
+<P>因有些模組運行時需要同時使用兩個I/O針腳，IoT:bit上保留有兩個接口供4針模組使用，例如超音波距離傳感器。故此，有4個I/O針腳是連接到這4針接口的，分別是P12、P13、P14、P15。
 
 <H3>I2C接口</H3><BR>
 ![pic](images/2_IOT/iot_image15.png)

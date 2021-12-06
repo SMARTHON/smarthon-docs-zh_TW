@@ -26,7 +26,7 @@
 <HR>
 
 <span id="subtitle">步驟一</span><BR><P>
-用 M4 螺絲螺母把 LED 組裝到 I2 卡板上。組裝 I1 至 I3 卡板。<BR><P>
+用 M4 螺絲及螺母把 LED 組裝到 I2 模型上。組裝 I1 至 I3 模型。<BR><P>
 ![auto_fit](images/Case10/Case10_ass1.png)<P>
 
 <span id="subtitle">步驟二</span><BR><P>
@@ -43,8 +43,8 @@
 *注意:*
 
 >1. 根據顏色連接接線和端口<BR>
->2. P0 內建線路予蜂鳴器。在使用 P0 端口予其他外接設備時遇上問題，建
-議查看位於 IoT:bit 右上的蜂鳴器開關狀態
+>2. P0 內建線路予揚聲器。在使用 P0 端口予其他外接設備時遇上問題，建
+議查看位於 IoT:bit 右上的揚聲器開關狀態
 
 ## 編程 (MakeCode)
 <HR>

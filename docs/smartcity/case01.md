@@ -12,7 +12,7 @@
 <HR>
 <span id="subtitle">甚麼是智能街燈?</span><P>
 
-智能街燈能夠在有人活動時自動開啟，無人時自動關閉，以節省電力。<P>
+智能街燈能夠在感應到有人活動時自動開啟，無人時自動關閉，以節省電力。<P>
 
 <span id="subtitle">運作原理</span><P>
 
@@ -33,7 +33,7 @@
 <HR>
 
 <span id="subtitle">步驟一.</span><BR><P>
-把運動傳感器和白色 LED 燈用 M4”10 毫米螺絲螺母組裝到 A1 卡板上。<BR><P>
+把運動傳感器和白色LED用 M4\*10 毫米螺絲及螺母組裝到A1模型上。<BR><P>
 ![auto_fit](images/Case1/Case1_ass1.png)<P>
 <span id="subtitle">步驟二.</span><BR><P>
 組裝完成!<BR><P>
@@ -44,14 +44,14 @@
 <HR>
 
 * 連接運動傳感器和 IoT:bit 的 P0 端口<BR><P>
-* 連接白色 LED 燈和 IoT:bit 的 P3 端口<BR><P>
+* 連接白色LED和IoT:bit 的 P3 端口<BR><P>
 <BR>![auto_fit](images/Case1/Case1_hardware.png)
 <P>
 注意:<BR>
 
 >1.根據顏色連接接線和端口<BR>
->2.P0 內建線路予蜂鳴器。在使用 P0 端口予其他外接設備時遇上問題，建議查
-看位於 IoT:bit 右上的蜂鳴器開關狀態
+>2.P0 內建線路予揚聲器。在使用 P0 端口予其他外接設備時遇上問題，建議查
+看位於 IoT:bit 右上的揚聲器開關狀態
 
 ## 編程 (MakeCode)
 <HR>
@@ -61,7 +61,7 @@
 * 因為P3預設是用於控制Micro:bit的LED，所以需先關閉
 ![auto_fit](images/Case1/Case1_p1.png)<P>
 
-<span id="subtitle">步驟二. 以運動傳感器激活白色 LED 燈</span><BR><P> 
+<span id="subtitle">步驟二. 以運動傳感器激活白色LED </span><BR><P> 
 * 加入「重復無限次」至主程式
 * 插入「如果...那麼」
 * 將”取得運動傳感器接口 P0 == TRUE”設為條件，用來進行其後的判斷

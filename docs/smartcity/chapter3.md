@@ -46,7 +46,7 @@ https://control.smarthon.cc/publish?id=DeviceID&msg=ControlCommand&value=Value
 ## 場景例子
 <HR>
 <span id="subtitle">目標:</span><P>
-這例子裡將會使用App inventor 2製作一個App來控制Micro:bit開關LED燈<BR>
+這例子裡將會使用App inventor 2製作一個App來控制Micro:bit開關LED<BR>
 
 <span id="subtitle">解釋: </span><P>
 
@@ -67,7 +67,7 @@ https://control.smarthon.cc/publish?id=DeviceID&msg=ControlCommand&value=Value
 我們需要先取得Micro:bit的ID及設定好接收訊息後的行為<BR><P>
 
 <span id="subtitle">連接圖:</span><br>
-* 連接LED燈到P0<BR>
+* 連接LED到P0<BR>
 
 ![auto_fit](images/Ch3/Ch3_hardware.png)<P>
 
@@ -96,8 +96,8 @@ https://control.smarthon.cc/publish?id=DeviceID&msg=ControlCommand&value=Value
 若要提取接收到的訊息，可以使用 '當從互聯網接收到指令' 來讀取訊息。然後依照訊息來執行不同的動作。<BR>
 * 在 `當從互聯網接收到指令` 在添加 `如果` 條件式
 * 在設定條件時，對接收到的訊息進行對比，是否與我們設定的指令相同
-* 當接收到 `Pin_On` 時，把LED燈打開
-* 當接收到 `Pin_Off` 時，把LED燈關閉<BR>
+* 當接收到 `Pin_On` 時，把LED打開
+* 當接收到 `Pin_Off` 時，把LED關閉<BR>
 
 *注意，指令是需要區分大小階的
 <P>
@@ -178,14 +178,14 @@ http://control.smarthon.cc/publish?id=`0xfa240ac45917`&msg=`PinValue`&value=`600
 
 
 <U><B>簡易情況:</B></U><BR>
-當Button 1被按下時，將會發送 "Pin_on" 的指令到指定ID的Micro:bit。<BR>當Micro:bit接收到指令後，將會打開在P0的LED燈。<BR>
+當Button 1被按下時，將會發送 "Pin_on" 的指令到指定ID的Micro:bit。<BR>當Micro:bit接收到指令後，將會打開在P0的LED。<BR>
 如按下Button 2，則會發送 "Pin_Off" ，而Micro:bit則會把LED關燈
 <P>
 
 ![auto_fit](images/Ch3/Ch3_result2.png)<P>
 
 <U><B>使用數值控制:</B></U><BR>
-當使用Button 3時，Micro:bit會依照文字區塊的數值(0或600)來控制LED燈。<P>
+當使用Button 3時，Micro:bit會依照文字區塊的數值(0或600)來控制LED。<P>
 
 ![auto_fit](images/Ch3/Ch3_result3.png)<P>
 

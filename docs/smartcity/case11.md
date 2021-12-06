@@ -26,19 +26,19 @@ Micro:bit通過IFTTT平台上的天氣預報系統，取得指令內容開關布
 <HR>
 
 <span id="subtitle">步驟一</span><BR><P>
-把雨滴傳感器組裝至 H2 卡板。<BR><P>
+把雨水傳感器組裝至 H2 模型。<BR><P>
 ![auto_fit](images/Case11/Case11_ass1.png)<P>
 <span id="subtitle">步驟二</span><BR><P>
-把 H1 和 H3 卡板組裝。<BR><P>
+把 H1 和 H3 模型組裝。<BR><P>
 ![auto_fit](images/Case11/Case11_ass2.png)<P>
 <span id="subtitle">步驟三</span><BR><P>
-組裝所有卡板。<BR><P>
+組裝所有模型。<BR><P>
 ![auto_fit](images/Case11/Case11_ass3.png)<P>
 <span id="subtitle">步驟四</span><BR><P>
-用 M2 螺絲把舵機組裝到 H5 卡板。  <BR><P>
+用 M2 螺絲及螺母把舵機組裝到 H5 模型。  <BR><P>
 ![auto_fit](images/Case11/Case11_ass4.png)<P>
 <span id="subtitle">步驟五</span><BR><P>
-組裝 H4-H5 和 H6-H7<BR><P>
+組裝 H4-H5 和 H6-H7模型<BR><P>
 ![pic_60](images/Case11/Case11_ass5.png)<P>
 ![auto_fit](images/Case11/Case11_ass6.png)<P>
 <span id="subtitle">步驟六</span><BR><P>
@@ -49,7 +49,7 @@ Micro:bit通過IFTTT平台上的天氣預報系統，取得指令內容開關布
 ## 線路連接
 <HR>
 
-連接180度舵機和 IoT:bit 的 P1 端口<BR><P>
+連接180°舵機和 IoT:bit 的 P1 端口<BR><P>
 
 Micro:bit P1|舵機
 :-: | :-: 
