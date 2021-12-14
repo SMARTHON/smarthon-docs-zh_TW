@@ -71,7 +71,7 @@ https://control.smarthon.cc/publish?id=DeviceID&msg=ControlCommand&value=Value
 
 ![auto_fit](images/Ch3/Ch3_hardware.png)<P>
 
-* 請把揚聲器開關 "上拉" 以斷開連接
+* 請把蜂鳴器開關 "上拉" 以斷開連接
 
 <span id="subtitle">第一步驟:連接Wifi</span><BR><P>
 在使用互聯網控制功能之前，需要先確保已連接上網絡

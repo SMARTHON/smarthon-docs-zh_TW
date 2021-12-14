@@ -3,7 +3,7 @@
 ## 介紹
 Smarthon IoT:bit是一塊專為讓Micro:bit加入物聯網而設計的開發板，有了Iot:bit， Micro:bit除了能夠連接不同的傳感器，亦能透過wifi連上互聯網，成為物聯網中的一員。 
 <P>
-這提供了13個常規GVS插座，能夠讓使用者同時連接多個不同的傳感器以接收及傳送資料。對於一些比較特別的模組，例如超音波距離傳感器，馬達以及OLED顯示屏等，都留有額外的插座供它們使用。另外，不止能夠使用一些簡單的類比或是數位控制的模組，像一些需要使用I2C，SPI等協議的模組亦能夠透過Smarton IoT:Bit供Micro:bit使用。為了方便使用第一代Micro:bit的使用者，IoT:bit也內置了揚聲器讓Micro:bit能夠發出聲音。
+這提供了13個常規GVS插座，能夠讓使用者同時連接多個不同的傳感器以接收及傳送資料。對於一些比較特別的模組，例如超音波距離傳感器，馬達以及OLED顯示屏等，都留有額外的插座供它們使用。另外，不止能夠使用一些簡單的類比或是數位控制的模組，像一些需要使用I2C，SPI等協議的模組亦能夠透過Smarton IoT:Bit供Micro:bit使用。為了方便使用第一代Micro:bit的使用者，IoT:bit也內置了蜂鳴器讓Micro:bit能夠發出聲音。
 <P>
 IoT:bit是供Micro:bit使用Wifi功能的強大擴展板，能夠有效幫助進行STEM項目。IoT:bit使用了最新款的ESP系列模組ESP32，其雙核心效能對比上一代的ESP8266有著明顯的提升，配合上記憶體的增加，能夠提供更加穩定的Wifi功能。<BR>IoT:bit除了支援Thingspeak及IFTTT等常用IoT平台服務，亦提供互聯網遙距控制功能，讓使用者能夠透過智能電話、Amazon 智能喇叭、Google 智能家居等裝置操控Micro:bit。而IoT:bit亦可以與其他IoT:bit進行溝通，經由wifi接上互聯網後，就能夠長距離地與其他Micro:bit進行資料交換，不像Micro:bit原來的無線電通訊有著短距離的限制。
 <P>
@@ -19,7 +19,7 @@ IoT:bit是供Micro:bit使用Wifi功能的強大擴展板，能夠有效幫助進
 
 * 內置強大的IoT晶片ESP32
 * 可換的無線模組(ESP8266,ES32,BLE)
-* 內建OLED顯示屏及揚聲器
+* 內建OLED顯示屏及蜂鳴器
 * 擁有共13個支持GPIO的GVS接口，2個支持I2C協議的接口
 * 額外3個舵機接口(從ESP32模組) 
 * 多種供電方式(USB / 3.7V鋰電池 / 1.5V AA電池 x4 )
@@ -41,7 +41,7 @@ IoT:bit是供Micro:bit使用Wifi功能的強大擴展板，能夠有效幫助進
 |大小|75mm X 65mm X 20mm| 沒有包裝時|
 |電源供應| USB:5V <BR> 18650鋰電池 :3.7~4.2V <BR>AA電池*4 :6V |最大電流限制: 1A |
 |操作溫度|0 到 80℃||
-|揚聲器|被動式揚聲器(音樂)||
+|蜂鳴器|被動式蜂鳴器(音樂)||
 |無線模組|ESP8266<BR>ESP32<BR>藍芽|使用UART協議|
 |OLED顯示屏模組|128*64解析度 OLED<BR>顯示屏 SSD1306|使用I2C協議|
 |Micro:bit引腳|13 I/O 引腳<BR>(13 數位及類比輸出)<BR>(6 類比輸入)|<B>已被保留使用的引腳:</B><BR>無線模組:P8,P16<BR>4針模組引腳:P12,P13|
@@ -96,7 +96,7 @@ IoT:bit是供Micro:bit使用Wifi功能的強大擴展板，能夠有效幫助進
     <td class="tg-l89d" rowspan="6">類比</td>
     <td class="tg-l89d">P0</td>
     <td class="tg-l89d"></td>
-    <td class="tg-l89d">揚聲器</td>
+    <td class="tg-l89d">蜂鳴器</td>
     <td class="tg-l89d">快速接口</td>
   </tr>
   <tr>
@@ -231,11 +231,11 @@ IoT:bit是供Micro:bit使用Wifi功能的強大擴展板，能夠有效幫助進
 8. I2C接口
 9. 4針接口
 10. ESP32舵機接口
-11. 揚聲器開關
+11. 蜂鳴器開關
 12. 4mm開孔位
 13. OLED顯示屏(128x64像素)
 14. ESP32無線Wifi模組
-15. 揚聲器
+15. 蜂鳴器
 16. 通用GVS接口
 
 
@@ -261,9 +261,9 @@ IoT:bit是供Micro:bit使用Wifi功能的強大擴展板，能夠有效幫助進
 ![pic](images/2_IOT/iot_image08.png)
 <P>當使用ESP32無線模組時，可以提供額外3個舵機控制接口。適用於180度及360度的SG90/SG90S舵機。
 
-<H3>揚聲器及開關</H3><BR>
+<H3>蜂鳴器及開關</H3><BR>
 ![pic](images/2_IOT/iot_image10.png)
-<P>IoT:bit 內建了一個被動式揚聲器，能夠讓Micro:bit透過這揚聲器發出音樂。揚聲器線路連接Micro:bit的P0引腳，為了不干擾其他傳感器使用P0接口，提供了一個開關用以切換連接狀態。
+<P>IoT:bit 內建了一個被動式蜂鳴器，能夠讓Micro:bit透過這蜂鳴器發出音樂。蜂鳴器線路連接Micro:bit的P0引腳，為了不干擾其他傳感器使用P0接口，提供了一個開關用以切換連接狀態。
 
 <H3>Micro:bit GPIO接口</H3><BR>
 ![pic](images/2_IOT/iot_image09.png)

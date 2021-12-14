@@ -39,7 +39,7 @@
 * 連接LED到P0<BR><P>
 ![auto_fit](images/Ch4/Ch4_2_hardware.png)<P>
 
-* 請把揚聲器開關 "上拉" 以斷開連接
+* 請把蜂鳴器開關 "上拉" 以斷開連接
 
 <span id="subtitle" >第一步驟: 連接WiFi</span><BR><P>
 先初始化IoT:bit及連上Wifi<P>

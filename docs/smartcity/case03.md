@@ -84,4 +84,4 @@ MakeCode: [https://makecode.microbit.org/_Dxz8Yhge0eph](https://makecode.microbi
 ## 思考
 <HR>
 
-Q1. 如何加入音效提示滿載?(例如利用揚聲器)<BR><P>
+Q1. 如何加入音效提示滿載?(例如利用蜂鳴器)<BR><P>

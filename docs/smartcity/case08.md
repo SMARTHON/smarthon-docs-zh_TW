@@ -39,7 +39,7 @@
 *注意
 
 >1. 根據顏色連接接線和端口<BR>
->2. P0 內建線路予揚聲器。在使用 P0 端口予其他外接設備時遇上問題，建議查看位於 IoT:bit 右上的揚聲器開關狀態
+>2. P0 內建線路予蜂鳴器。在使用 P0 端口予其他外接設備時遇上問題，建議查看位於 IoT:bit 右上的蜂鳴器開關狀態
 
 
 ### 編程 (MakeCode)
@@ -130,8 +130,8 @@ Q1. 我們可以用超音波距離傳感器偵測有否塞車嗎?<BR><P>
 *注意:
 
 >1. 根據顏色連接接線和端口<BR>
->2. P0 內建線路予揚聲器。在使用 P0 端口予其他外接設備時遇上問題，建議查
-看位於 IoT:bit 右上的揚聲器開關狀態
+>2. P0 內建線路予蜂鳴器。在使用 P0 端口予其他外接設備時遇上問題，建議查
+看位於 IoT:bit 右上的蜂鳴器開關狀態
 
 ### 編程 (MakeCode)
 <HR>
@@ -142,11 +142,11 @@ Q1. 我們可以用超音波距離傳感器偵測有否塞車嗎?<BR><P>
 ![auto_fit](images/Case8/Case8b_p1.png)<P>
 
 <span id="subtitle">步驟二. 加入”tsuenwan”頻道</span><P>
-* 在`on WiFi connected`加入剔號和`WiFi Receiver join channel tsuenwan`
+* 在”當WiFi連接後”加入剔號和”加入到頻道`tsuenwan`”
 ![auto_fit](images/Case8/Case8b_p2.png)<P>
 
 <span id="subtitle">步驟三. 接收 WiFi 訊息</span><P>
-* 在”On WiFi Receiver received”加入清除顯示
+* 在”當從頻道收到訊息”加入清除顯示
 * 新行顯示 ”字串組合”訊息: `receivedmessage`”""
 ![pic_70](images/Case8/Case8b_p3.png)<P>
  

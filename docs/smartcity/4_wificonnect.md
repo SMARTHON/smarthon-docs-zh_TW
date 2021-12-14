@@ -85,5 +85,5 @@ MakeCode: [https://makecode.microbit.org/_JcPFw01R0b6F](https://makecode.microbi
 1. 距離路由器過遠
 2. 沒法找到該路由器
 3. 輸入錯誤的名稱或密碼
-
+4. 電池盒電源不足,建議替換新電池
 ![auto_fit](images/4_ConnectWiFi/Wifi_result3.png)<P>
