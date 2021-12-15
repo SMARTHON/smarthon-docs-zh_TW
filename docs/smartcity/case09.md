@@ -26,7 +26,7 @@
 <HR>
 
 <span id="subtitle">步驟一</span><BR><P>
-用 M4 螺絲及螺母把 L字-模型組裝到 H1 模型上。<BR><P>
+用 M3 螺絲及螺母把 L字-模型組裝到 H1 模型上。<BR><P>
 ![auto_fit](images/Case9/Case9_ass1.png)<P>
 <span id="subtitle">步驟二</span><BR><P>
 用M2\*7.5毫米螺絲把轉動臂固定在舵機,把 180ᵒ舵機組裝到 H1 模型。<BR><P>
