@@ -80,10 +80,13 @@ MakeCode: [https://makecode.microbit.org/_JcPFw01R0b6F](https://makecode.microbi
 程式會開始執行並嘗試連接Wi-Fi，當成功連接後，會顯示出路由器分派給Micro:bit的IP地址。<BR>同時Micro:bit上也會顯示圖案<BR><P>
 ![auto_fit](images/4_ConnectWiFi/Wifi_result2.png)<P>
 
-若你有在編程時添加好斷線的處理，你亦可以在此測試。當你連接Wifi後，嘗試把路由器關閉以切斷與Micro:bit的連線，這次將會在斷線後顯示X圖案及提示錯誤碼201，這代表「沒找到路由器」(因為我們已關上)。<BR>
-斷線的原因通常是: 
+若你有在編程時添加好斷線的處理，你亦可以在此測試。當你連接Wi-Fi後，嘗試把路由器關閉以切斷與Micro:bit的連線，這次將會在斷線後顯示X圖案及提示錯誤碼201，這代表「沒找到路由器」(因為我們已關上)。<BR>
+斷線或無法連接的原因通常是: 
 1. 距離路由器過遠
 2. 沒法找到該路由器
 3. 輸入錯誤的名稱或密碼
 4. 電池盒電源不足,建議替換新電池
+5. 沒有切換成2.4Ghz頻率的Wi-Fi
+
+詳細的錯誤碼資訊可參考[NodeMCU Documentation](https://nodemcu.readthedocs.io/en/dev-esp32/modules/wifi/)
 ![auto_fit](images/4_ConnectWiFi/Wifi_result3.png)<P>

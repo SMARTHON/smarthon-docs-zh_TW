@@ -11,7 +11,7 @@
 ## 背景
 <HR>
 
-<span id="subtitle">為什麼我們需要自動布架?</span><BR><P>
+<span id="subtitle">為什麼我們需要自動天台簷篷系統?</span><BR><P>
 這樣當下雨時人們再不需要衝上天台把衣服收回。<BR><P>
 <span id="subtitle">運作原理</span><BR><P>
 Micro:bit通過IFTTT平台上的天氣預報系統，取得指令內容開關簷篷。<BR><P>
