@@ -39,7 +39,7 @@ IFTTT平台提供一個整合的地方讓裝置和服務連結在一起，像Twi
 <HR>
 
 <span id="subtitle" >第一步驟</span><BR><P>
-在上載訊息到IFTTT之前，需要先確保已經連接上Wifi及網絡。<BR><P>
+在上載訊息到IFTTT之前，需要先確保已經連接上Wi-Fi及網絡。<BR><P>
 ![auto_fit](images/Ch2/Ch2_p3.png)<P>
 
 <span id="subtitle" >第二步驟</span><BR><P>
@@ -72,7 +72,7 @@ MakeCode: [https://makecode.microbit.org/_5VWA5wdDT3aT](https://makecode.microbi
 ## 結果
 <HR>
 
-當Micro:bit連接上Wifi後，按A按鈕會發送訊息到IFTTT。<BR><P>
+當Micro:bit連接上Wi-Fi後，按A按鈕會發送訊息到IFTTT。<BR><P>
 如果發送成功，OLED會顯示 `OK` 及錯誤碼 `0` <P>
 
 ![auto_fit](images/Ch2/Ch2_result1.png)<P>

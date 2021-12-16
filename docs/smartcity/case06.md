@@ -6,7 +6,7 @@
 ## 目標
 <HR>
 
-製作一個能收集雨水，溫度及濕度傳感器數據的天氣監測站，並自動把數據送上ThingSpeak 平台。<BR><P>
+製作一個能收集雨水，溫度及濕度傳感器數據的智慧天氣監測站，並自動把數據送上ThingSpeak 平台。<BR><P>
 
 ## 背景
 <HR>
@@ -77,8 +77,8 @@ ThingSpeak 是一個物聯網數據分析平台，提供即時數據圖表分顯
 ## 編程 (MakeCode)
 <HR>
 
-<span id="subtitle">步驟一. 啟動OLED，IoT:bit 和 WiFi</span><BR><P>
-* 初始化OLED，IoT:bit 和 WiFI
+<span id="subtitle">步驟一. 啟動OLED，IoT:bit 和 Wi-Fi</span><BR><P>
+* 初始化OLED，IoT:bit 和 Wi-Fi
 * 宣告新變數 `raindrop`，`humidity`，`temperature`並設值為0
 ![auto_fit](images/Case6/Case6_p1.png)<P>
 

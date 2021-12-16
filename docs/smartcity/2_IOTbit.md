@@ -1,11 +1,11 @@
 # IoT:bit 介紹
 
 ## 介紹
-Smarthon IoT:bit是一塊專為讓Micro:bit加入物聯網而設計的開發板，有了Iot:bit， Micro:bit除了能夠連接不同的傳感器，亦能透過wifi連上互聯網，成為物聯網中的一員。 
+Smarthon IoT:bit是一塊專為讓Micro:bit加入物聯網而設計的開發板，有了Iot:bit， Micro:bit除了能夠連接不同的傳感器，亦能透過Wi-Fi連上互聯網，成為物聯網中的一員。 
 <P>
 這提供了13個常規GVS插座，能夠讓使用者同時連接多個不同的傳感器以接收及傳送資料。對於一些比較特別的模組，例如超音波距離傳感器，馬達以及OLED顯示屏等，都留有額外的插座供它們使用。另外，不止能夠使用一些簡單的類比或是數位控制的模組，像一些需要使用I2C，SPI等協議的模組亦能夠透過Smarton IoT:Bit供Micro:bit使用。為了方便使用第一代Micro:bit的使用者，IoT:bit也內置了蜂鳴器讓Micro:bit能夠發出聲音。
 <P>
-IoT:bit是供Micro:bit使用Wifi功能的強大擴展板，能夠有效幫助進行STEM項目。IoT:bit使用了最新款的ESP系列模組ESP32，其雙核心效能對比上一代的ESP8266有著明顯的提升，配合上記憶體的增加，能夠提供更加穩定的Wifi功能。<BR>IoT:bit除了支援Thingspeak及IFTTT等常用IoT平台服務，亦提供互聯網遙距控制功能，讓使用者能夠透過智能電話、Amazon 智能喇叭、Google 智能家居等裝置操控Micro:bit。而IoT:bit亦可以與其他IoT:bit進行溝通，經由wifi接上互聯網後，就能夠長距離地與其他Micro:bit進行資料交換，不像Micro:bit原來的無線電通訊有著短距離的限制。
+IoT:bit是供Micro:bit使用Wi-Fi功能的強大擴展板，能夠有效幫助進行STEM項目。IoT:bit使用了最新款的ESP系列模組ESP32，其雙核心效能對比上一代的ESP8266有著明顯的提升，配合上記憶體的增加，能夠提供更加穩定的Wi-Fi功能。<BR>IoT:bit除了支援Thingspeak及IFTTT等常用IoT平台服務，亦提供互聯網遙距控制功能，讓使用者能夠透過智能電話、Amazon 智能喇叭、Google 智能家居等裝置操控Micro:bit。而IoT:bit亦可以與其他IoT:bit進行溝通，經由Wi-Fi接上互聯網後，就能夠長距離地與其他Micro:bit進行資料交換，不像Micro:bit原來的無線電通訊有著短距離的限制。
 <P>
 
 ![auto_fit](images/2_IOT/iot_image00.jpg)
@@ -234,7 +234,7 @@ IoT:bit是供Micro:bit使用Wifi功能的強大擴展板，能夠有效幫助進
 11. 蜂鳴器開關
 12. 4mm開孔位
 13. OLED顯示屏(128x64像素)
-14. ESP32無線Wifi模組
+14. ESP32無線Wi-Fi模組
 15. 蜂鳴器
 16. 通用GVS接口
 
@@ -249,7 +249,7 @@ IoT:bit是供Micro:bit使用Wifi功能的強大擴展板，能夠有效幫助進
 ![pic](images/2_IOT/iot_image05.png)
 <P>IoT:bit能採用三種不同的供電方式。使用者可以任意選擇[USB, 鋰電池, AA電]其中一種來對IoT:bit及Micro:bit供電。
 
-<H3>無線Wifi模組</H3><BR>
+<H3>無線Wi-Fi模組</H3><BR>
 ![pic](images/2_IOT/iot_image06.png)
 <P>無線模組是整塊擴展板中的核心部份。這能夠安裝不同的無線模組，例如ESP32、 ESP8266、藍牙等等，讓使用者依照不同情況使用合適的模組，以配合不同的項目。
 

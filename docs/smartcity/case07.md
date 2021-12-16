@@ -64,10 +64,10 @@ IFTTT 可以把用家的應用程式和設備連接並容許它們進行交流�
 ## 編程(MakeCode)
 <HR>
 
-<span id="subtitle">步驟一. 啟動 OLED，Iot:bit 和連接至 WiFi</span><BR><P>
+<span id="subtitle">步驟一. 啟動 OLED，Iot:bit 和連接至 Wi-Fi</span><BR><P>
 ![auto_fit](images/Case7/Case7_p1.png)<P>
 
-<span id="subtitle">步驟二. 顯示剔號以表示連接至 WiFi</span><BR><P>
+<span id="subtitle">步驟二. 顯示剔號以表示連接至 Wi-Fi</span><BR><P>
 ![auto_fit](images/Case7/Case7_p2.png)<P>
 
 <span id="subtitle">步驟三. 讀取運動傳感器讀數</span><BR><P>
@@ -95,7 +95,7 @@ MakeCode: [https://makecode.microbit.org/_DyU6CsXYE7fx](https://makecode.microbi
 ## 結果
 <HR>
 
-當連上了 WiFi，如果門旁邊有可疑活動，蜂鳴器會被激活並發出電郵，同時
+當連上了 Wi-Fi，如果門旁邊有可疑活動，蜂鳴器會被激活並發出電郵，同時
 micro:bit 上的 LED 會顯示”monster”圖示。<BR><P>
 ![auto_fit](images/Case7/Case7_result1.png)
 

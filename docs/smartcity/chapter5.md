@@ -1,4 +1,4 @@
-# 章節5: Micro:bit溝通網絡
+# 章節5: 物件與物件間的溝通
 
 在這章節，Micro:bit們會同時連接到同一個頻道 'chatroom'。<BR><P>
 
@@ -19,7 +19,7 @@
 
 
 
-<span id="subtitle">第一步驟:連接Wifi</span><BR><P>
+<span id="subtitle">第一步驟:連接Wi-Fi</span><BR><P>
 在使用互聯網控制功能之前，需要先確保已連接上網絡<P>
 ![auto_fit](images/Ch5/Ch5_p1.png)<P>
 
@@ -87,7 +87,7 @@ MakeCode: [https://makecode.microbit.org/_XvVUvVAiW146](https://makecode.microbi
 <span id="subtitle">目標:</span><BR><P>
  發送端能夠發送訊息到指定頻道
  
-<span id="subtitle">第一步驟:連接Wifi</span><BR><P>
+<span id="subtitle">第一步驟:連接Wi-Fi</span><BR><P>
 在使用互聯網控制功能之前，需要先確保已連接上網絡<P>
 ![auto_fit](images/Ch5/Ch5_p6.png)<P>
 

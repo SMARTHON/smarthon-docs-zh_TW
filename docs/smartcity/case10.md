@@ -49,10 +49,10 @@
 ## 編程 (MakeCode)
 <HR>
 
-<span id="subtitle">步驟一. 啟動 OLED，Iot:bit 和連接至 WiFi</span><BR><P>
+<span id="subtitle">步驟一. 啟動 OLED，Iot:bit 和連接至 Wi-Fi</span><BR><P>
 ![auto_fit](images/Case10/Case10_p1.png)<P>
 
-<span id="subtitle">步驟二 1. 在連接至 WiFi 後顯示剔號及ID</span><BR><P>
+<span id="subtitle">步驟二 1. 在連接至 Wi-Fi 後顯示剔號及ID</span><BR><P>
 ![pic_60](images/Case10/Case10_p2.png)<P>
 
 <span id="subtitle">步驟三. 接收 WAN 指令</span><BR><P>

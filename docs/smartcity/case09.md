@@ -58,14 +58,14 @@ G (黑)|G (棕)
 ## 編程 (MakeCode)
 <HR>
 
-<span id="subtitle">步驟一. 啟動 OLED，Iot:bit 和連接至 WiFi</span>
+<span id="subtitle">步驟一. 啟動 OLED，Iot:bit 和連接至 Wi-Fi</span>
 ![pic_60](images/Case9/Case9_p1.png)<P>
 
 <span id="subtitle">步驟二. 設定舵機初始位置</span><BR><P>
 * 加入`turn servo to 180 degree at P2`
 ![pic_60](images/Case9/Case9_p2.png)<P>
 
-<span id="subtitle">步驟三. 在連接至 WiFi 後顯示剔號及ID</span><BR><P>
+<span id="subtitle">步驟三. 在連接至 Wi-Fi 後顯示剔號及ID</span><BR><P>
 ![pic_60](images/Case9/Case9_p3.png)<P>
 
 <span id="subtitle">步驟四. 接收 WAN 指令</span><BR><P>

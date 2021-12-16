@@ -41,15 +41,15 @@
 
 * 請把蜂鳴器開關 "上拉" 以斷開連接
 
-<span id="subtitle" >第一步驟: 連接WiFi</span><BR><P>
-先初始化IoT:bit及連上Wifi<P>
+<span id="subtitle" >第一步驟: 連接Wi-Fi</span><BR><P>
+先初始化IoT:bit及連上Wi-Fi<P>
 ![auto_fit](images/Ch4/Ch4_2_p1.png)<P>
 
 <span id="subtitle" >第二步驟:取得ID</span><BR><P>
- `當Wifi連接後`是一個事件處理器，當連接上Wifi後就會執行裡面的內容。同時這也提供了IoT:bit ID的變數，我們可以用OLED顯示屏把ID顯示出來。 
+ `當WiFi連接後`是一個事件處理器，當連接上Wi-Fi後就會執行裡面的內容。同時這也提供了IoT:bit ID的變數，我們可以用OLED顯示屏把ID顯示出來。 
 
 * 初始化OLED顯示屏
-* 在 `當Wifi連接後` 裡添加 `顯示字符串`
+* 在 `當WiFi連接後` 裡添加 `顯示字符串`
 * 把 `Deveice_ID` 拖動到 `顯示字符串` 內
 
 ![auto_fit](images/Ch4/Ch4_2_p2.png)<P>
@@ -59,7 +59,7 @@
 
 <span id="subtitle" >第三步驟:設定接收指令後的行動</span><BR><P>
 
-當連接上Wifi後，與控制伺服器的連接將會自動建立，可以接收訊息。<BR>
+當連接上Wi-Fi後，與控制伺服器的連接將會自動建立，可以接收訊息。<BR>
 若要提取接收到的訊息，可以使用 `當從互聯網接收到指令`來讀取訊息。然後依照訊息來執行不同的動作。
 
 * 在 `當從互聯網接收到指令` 在添加 `如果` 條件式
@@ -144,7 +144,7 @@ IFTTT使用 '如果...則執行...動作' 的方式來運行，我們可以設�
 <HR>
 
 <H3><U>常規情況:</U></H3>
-當Wifi連接後，裝置的ID將會顯示出來，亦會自動連接到控制伺服器<P>
+當Wi-Fi連接後，裝置的ID將會顯示出來，亦會自動連接到控制伺服器<P>
 
 * 在每天下午6時，IFTTT上的時鐘會觸發，讓IFTTT發送 `light_On` 指令到Micro:bit
 * Micro:bit 接收到指令

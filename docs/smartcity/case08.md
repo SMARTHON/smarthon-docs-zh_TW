@@ -2,7 +2,7 @@
 
 程度: ![level](images/level5.png)
 
-<span id="remarks">* 詳情參考 附錄:點對點通訊<BR>
+<span id="remarks">* 詳情參考 附錄:物件與物件間的溝通<BR>
 * 本案例分為兩部分:發送者及接收者。要完成這案例，需要兩套組裝。</span>
 ![auto_fit](images/Case8/case-08_1.png)<P>
 
@@ -18,7 +18,7 @@
 <HR>
 
 <span id="subtitle">如何向其他 micro:bit 傳送訊號?</span><P>
-發送者和接收者連接至同一個頻道，容許 WiFi 訊號在之間傳遞。當發送者發出”trafficjam”，接收者會因應訊號作出反應。<BR><P>
+發送者和接收者連接至同一個頻道，容許 Wi-Fi 訊號在之間傳遞。當發送者發出”trafficjam”，接收者會因應訊號作出反應。<BR><P>
 
 <span id="subtitle">發出者運作原理</span><P>
 當光度傳感器長期回饋過低數值，這代表有車停在此處，即公路上有塞車發生。發送者傳送”trafficjam”至 microbit。反之則發送”nojam”。<BR><P>
@@ -45,12 +45,12 @@
 ### 編程 (MakeCode)
 <HR>
 
-<span id="subtitle">步驟一. 啟動 OLED，IoT:bit 和連接至 WiFi</span><P>
-* 啟動 OLED，IoT:bit 和連接至 WiFi
+<span id="subtitle">步驟一. 啟動 OLED，IoT:bit 和連接至 Wi-Fi</span><P>
+* 啟動 OLED，IoT:bit 和連接至 Wi-Fi
 * 宣告新變數`light2`並設值為 0 
 ![auto_fit](images/Case8/Case8a_p1.png)<P>
 
-<span id="subtitle">步驟二. 在連接至 WiFi 後顯示剔號</span><P>
+<span id="subtitle">步驟二. 在連接至 Wi-Fi 後顯示剔號</span><P>
 ![pic_60](images/Case8/Case8a_p2.png)<P>
 
 <span id="subtitle">步驟三. 檢查交通狀況</span><P>
@@ -136,8 +136,8 @@ Q1. 我們可以用超音波距離傳感器偵測有否塞車嗎?<BR><P>
 ### 編程 (MakeCode)
 <HR>
 
-<span id="subtitle">步驟一. 啟動 OLED，IoT:bit 皚連接至 WiFi</span><P>
-* 啟動 OLED，IoT:bit 和連接至 WiFi
+<span id="subtitle">步驟一. 啟動 OLED，IoT:bit 連接至 Wi-Fi</span><P>
+* 啟動 OLED，IoT:bit 和連接至 Wi-Fi
 * 宣告新變數`oldmsg`為” “。
 ![auto_fit](images/Case8/Case8b_p1.png)<P>
 
@@ -145,7 +145,7 @@ Q1. 我們可以用超音波距離傳感器偵測有否塞車嗎?<BR><P>
 * 在”當WiFi連接後”加入剔號和”加入到頻道`tsuenwan`”
 ![auto_fit](images/Case8/Case8b_p2.png)<P>
 
-<span id="subtitle">步驟三. 接收 WiFi 訊息</span><P>
+<span id="subtitle">步驟三. 接收 Wi-Fi 訊息</span><P>
 * 在”當從頻道收到訊息”加入清除顯示
 * 新行顯示 ”字串組合”訊息: `receivedmessage`”""
 ![pic_70](images/Case8/Case8b_p3.png)<P>
@@ -187,7 +187,7 @@ MakeCode: [https://makecode.microbit.org/_K5eKdP1hMcdj](https://makecode.microbi
 ### 結果
 <HR>
 
-交通燈會根據 WiFi 訊息轉變顏色。<BR>
+交通燈會根據 Wi-Fi 訊息轉變顏色。<BR>
 * 如接收到”nojam”，燈會轉綠。<BR>
 * 如接收到”trafficjam”，燈會轉紅。<BR>
 <BR><P>

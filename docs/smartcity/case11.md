@@ -62,10 +62,10 @@ G (黑) | G (棕)
 ## 編程 (MakeCode)
 <HR>
 
-<span id="subtitle">步驟一. 啟動 OLED，IoT:bit 和連接 WiFi</span><BR><P>
+<span id="subtitle">步驟一. 啟動 OLED，IoT:bit 和連接 Wi-Fi</span><BR><P>
 ![pic_60](images/Case11/Case11_p1.png)<P>
 
-<span id="subtitle">步驟二. 在連接 WiFi 後顯示剔號及ID</span><BR><P>
+<span id="subtitle">步驟二. 在連接 Wi-Fi 後顯示剔號及ID</span><BR><P>
 ![pic_50](images/Case11/Case11_p2.png)<P>
 
 <span id="subtitle">步驟三. 接收指令</span><BR><P>

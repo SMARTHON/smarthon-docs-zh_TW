@@ -37,13 +37,13 @@ Field1: 溫度<BR>
 <HR>
 
 <span id="subtitle" >第一步驟</span><P>
-在上載數據到ThingSpeak前，需要先連接上Wifi。<BR>
+在上載數據到ThingSpeak前，需要先連接上Wi-Fi。<BR>
 ![auto_fit](images/Ch1/Ch1_p2.png)<P>
 
 <span id="subtitle" >第二步驟</span><P>
 在設定ThingSpeak上載時，需要注意每次上載需間隔15秒。<BR>
 
-* 添加一個如果..否則的條件式用以檢查是否已連上Wifi
+* 添加一個如果..否則的條件式用以檢查是否已連上Wi-Fi
 * 然後在ThingSpeak上載的區塊那密鑰填入剛才記下的ThingSpeak密鑰
 * 之後選擇需要上載的數值，放進對應的域
 * 添加一個15秒的等待<P>

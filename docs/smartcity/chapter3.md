@@ -73,13 +73,13 @@ https://control.smarthon.cc/publish?id=DeviceID&msg=ControlCommand&value=Value
 
 * 請把蜂鳴器開關 "上拉" 以斷開連接
 
-<span id="subtitle">第一步驟:連接Wifi</span><BR><P>
+<span id="subtitle">第一步驟:連接Wi-Fi</span><BR><P>
 在使用互聯網控制功能之前，需要先確保已連接上網絡
 <BR><P>
 ![auto_fit](images/Ch3/Ch3_p1.png)<P>
 
 <span id="subtitle">第二步驟:取得ID</span><BR><P>
-'當Wifi連接後' 是一個事件處理器.當連接上Wifi後，這個處理器會把取得的`IP地址`及`裝置的ID`都以變量的形式提供。因此可以利用這來取得裝置的ID來進行互聯網控制。<BR>
+'當Wifi連接後' 是一個事件處理器.當連接上Wi-Fi後，這個處理器會把取得的`IP地址`及`裝置的ID`都以變量的形式提供。因此可以利用這來取得裝置的ID來進行互聯網控制。<BR>
 * 初始化OLED顯示屏
 * 在 `當Wifi連接後` 裡添加 `顯示字符串` ，並把ID放進去
 
@@ -92,7 +92,7 @@ https://control.smarthon.cc/publish?id=DeviceID&msg=ControlCommand&value=Value
 
 
 <span id="subtitle">第三步驟:按訊息執行動作</span><BR><P>
-當連接上Wifi後，與控制伺服器的連接將會自動建立，可以接收訊息。<BR>
+當連接上Wi-Fi後，與控制伺服器的連接將會自動建立，可以接收訊息。<BR>
 若要提取接收到的訊息，可以使用 '當從互聯網接收到指令' 來讀取訊息。然後依照訊息來執行不同的動作。<BR>
 * 在 `當從互聯網接收到指令` 在添加 `如果` 條件式
 * 在設定條件時，對接收到的訊息進行對比，是否與我們設定的指令相同
@@ -172,7 +172,7 @@ http://control.smarthon.cc/publish?id=`0xfa240ac45917`&msg=`PinValue`&value=`600
 ## 結果
 <HR>
 
-當Wifi連接後，裝置的ID將會顯示出來<P>
+當Wi-Fi連接後，裝置的ID將會顯示出來<P>
 
 ![auto_fit](images/Ch3/Ch3_result1.png)<P>
 

@@ -34,7 +34,7 @@
 用 M2\*10 毫米螺絲及螺母把 180° 舵機組裝到 B1 模型上。<BR><P>
 ![auto_fit](images/Case2/Case2_ass2.png)<P>
 <span id="subtitle">步驟三</span><BR><P>
-用 舵機用M2\*7.5 毫米尖頭螺絲 把 B2 模型連上舵機。 把 B3 模型放在
+用M2\*7.5 毫米尖頭螺絲 把 B2 模型安裝到舵機。 把 B3 模型放在
 B1 卡模型下。<BR><P>
 ![auto_fit](images/Case2/Case2_ass3.png)<P>
 <span id="subtitle">步驟四</span><BR><P>
