@@ -87,6 +87,7 @@ MakeCode: [https://makecode.microbit.org/_JcPFw01R0b6F](https://makecode.microbi
 3. 輸入錯誤的名稱或密碼
 4. 電池盒電源不足,建議替換新電池
 5. 沒有切換成2.4Ghz頻率的Wi-Fi
+6. 跟隨[正確操作](https://smarthon-docs-en.readthedocs.io/zh_TW/latest/smartcity/2_IOTbit.html#id10)使用IoT:bit
 
 詳細的錯誤碼資訊可參考[NodeMCU Documentation](https://nodemcu.readthedocs.io/en/dev-esp32/modules/wifi/)
 ![auto_fit](images/4_ConnectWiFi/Wifi_result3.png)<P>
