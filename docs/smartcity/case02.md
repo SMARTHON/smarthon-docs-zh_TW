@@ -16,7 +16,7 @@
 
 <span id="subtitle">運作原理</span><P>
 180° 舵機控制閘杆的開關。如果停車場內尚有空位，閘杆會在有車駛近時自動開啟。若然已無車位，即使有車到訪，閘杆也不會開啟。<BR><P>
-![pic_70](images/Case2/Concept-diagram-Case2.png)<P>
+![pic_80](images/Case2/Concept-diagram-Case2.png)<P>
 從上述示意圖可見，在「重復無限次」裡會一直檢測到訪車輛和場內空位。
 
 ## 所用部件

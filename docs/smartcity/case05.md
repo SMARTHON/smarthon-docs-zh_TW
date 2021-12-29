@@ -25,7 +25,7 @@
 這速率可以在 micro:bit LED 以圖表表達車速..<BR><P>
 ![auto_fit](images/Case5/Case5_des2.png)<P>
 
-![pic_70](images/Case5/Concept-diagram-Case5.png)<P>
+![pic_80](images/Case5/Concept-diagram-Case5.png)<P>
 ## 所用部件
 <HR>
 

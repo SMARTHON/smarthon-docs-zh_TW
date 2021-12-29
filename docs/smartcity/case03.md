@@ -17,7 +17,7 @@
 
 <span id="subtitle">運作原理</span><P>
 距離傳感器可以探測桶內垃圾高度，從而轉化為當前容量。彩色 LED 則會隨著容量轉變。<BR><P>
-![pic_70](images/Case3/Concept-diagram-Case3.png)<P>
+![pic_80](images/Case3/Concept-diagram-Case3.png)<P>
 
 ## 所用部件
 <HR>

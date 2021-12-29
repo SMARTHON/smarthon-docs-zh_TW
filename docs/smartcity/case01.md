@@ -19,7 +19,7 @@
 以附上的運動傳感器偵察附近的活動。如果傳感器回報 TRUE，則反映有人在附近，
 遊樂場燈會自動開啟，反之亦然。<BR>
 
-![pic_60](images/Case1/Concept-diagram-Case1.png)<P>
+![pic_80](images/Case1/Concept-diagram-Case1.png)<P>
 
 在以上邏輯圖可見，整個系統依賴「如果...那麼」邏輯運行。
 
