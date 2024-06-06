@@ -1,0 +1,9 @@
+Version 1.0 (2022-07-24)
+-init commit from 12:40 PM 24 Jul 2022
+
+Version 1.1 (2024-06-06)
+- Add IoT:bit (Introduction, Getstart)
+- Move connectWifi and chapter 1-5 from Smart City to IoT:bit
+- Add Smart Home IoT Kit (Introduction, Getstart, Assembly, Case 1-13)
+- Add new sensors and actuators (Button, Flame sensor, Motor, Servo)
+- Hide Smart House
