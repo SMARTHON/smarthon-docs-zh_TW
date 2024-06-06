@@ -13,7 +13,10 @@ Quick Start Guide
 .. toctree::
     :maxdepth: 1
 
+    IoTbit/index
     smartcity/index
+    smartHomeIoT/index
+    ..smartPlantIoT/index
     Sensors_and_actuators/index
-    smarthouse/index
+    ..smarthouse/index
     smartplant/index
