@@ -7,3 +7,7 @@ Version 1.1 (2024-06-06)
 - Add Smart Home IoT Kit (Introduction, Getstart, Assembly, Case 1-13)
 - Add new sensors and actuators (Button, Flame sensor, Motor, Servo)
 - Hide Smart House
+
+Version 1.2 (2024-09-01)
+-Merge ifttt_fix to master branch
+-Update smart city case 07, smart home case 11, chapter 2
