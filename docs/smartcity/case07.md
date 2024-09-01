@@ -47,19 +47,6 @@ IFTTT 可以把用家的應用程式和設備連接並容許它們進行交流�
 
  <B><I>請把蜂鳴器開關 "下拉" ，用以連接蜂鳴器</I></B>
 
-## IoT (IFTTT)
-<HR>
-
-<span id="remarks">* *詳情參考* 附件..IFTTT 設定” </span><BR><P>
-
-<span id="subtitle">步驟一</span><BR><P>
-訪問 [https://ifttt.com](https://ifttt.com/) ，創建新專案 (if webhooks then Email)<BR><P>
-![auto_fit](images/Case7/Case7_iot1.png)<P>
-
-
-<span id="subtitle">步驟二</span><BR><P>
-依次點擊“My services” >> “Webhooks”，select “Documentation” ，複製 Applet Key。<BR><P>
-![auto_fit](images/Case7/Case7_iot2.png)<P>
 
 ## 編程(MakeCode)
 <HR>
@@ -67,8 +54,12 @@ IFTTT 可以把用家的應用程式和設備連接並容許它們進行交流�
 <span id="subtitle">步驟一. 啟動 OLED，Iot:bit 和連接至 Wi-Fi</span><BR><P>
 ![auto_fit](images/Case7/Case7_p1.png)<P>
 
-<span id="subtitle">步驟二. 顯示剔號以表示連接至 Wi-Fi</span><BR><P>
-![auto_fit](images/Case7/Case7_p2.png)<P>
+<span id="subtitle">步驟二. 顯示剔號以表示連接至WiFi並顯示Device ID</span><BR><P>
+* 在放入一個「當WiFi連接成功後」
+* 在裡面加入「新行顯示字符串」，放入字串組合並展示裝置ID
+* 在裡面加入「顯示圖示勾號」，以在連線後顯示勾號
+
+![auto_fit](images/Case7-Fix/Case7-Fix_p5.png)<P>
 
 <span id="subtitle">步驟三. 讀取運動傳感器讀數</span><BR><P>
 * 在「重復無限次」裏加入”如果...那麼”，以`WiFi connected?`為前設
@@ -78,18 +69,48 @@ IFTTT 可以把用家的應用程式和設備連接並容許它們進行交流�
 <span id="subtitle">步驟四. 當有人經過時自動發出警示</span><BR><P>
 * 在”如果...那麼”加入”演奏音階中音 C 持續 1 拍
 * LED 顯示”Monster”圖示
-* 加入”Send IFTTT key... event_name...”
-![auto_fit](images/Case7/Case7_p4.png)<P>
+* 加入”發送到 IFTTT事件名稱*...”
+![auto_fit](images/Case7-Fix/Case7-Fix_p1.png)<P>
 
 <span id="subtitle">步驟五. 在無人經過時顯示”smile”圖示</span><BR><P>
 * 在”否則”加入”smile”圖示
 * 在”WiFI connected?” 內加入等待 1 秒
-![auto_fit](images/Case7/Case7_p5.png)<P>
+![auto_fit](images/Case7-Fix/Case7-Fix_p2.png)<P>
 
 <span id="subtitle">完整答案<BR><P>
-MakeCode: [https://makecode.microbit.org/_DyU6CsXYE7fx](https://makecode.microbit.org/_DyU6CsXYE7fx)<BR><P>
+MakeCode: [https://makecode.microbit.org/_3Vu4WV2Hf2wq](https://makecode.microbit.org/_3Vu4WV2Hf2wq)<BR><P>
 你可以在以下網頁下載HEX檔案:<BR>
-<iframe src="https://makecode.microbit.org/#pub:_DyU6CsXYE7fx" width="100%" height="500" frameborder="0"></iframe>
+<iframe src="https://makecode.microbit.org/_3Vu4WV2Hf2wq" width="100%" height="500" frameborder="0"></iframe>
+
+## IoT (IFTTT)
+<HR>
+
+<span id="remarks">* *詳情參考* 附件..IFTTT 設定” </span><BR><P>
+
+<span id="subtitle" >第一步驟</span><BR><P>
+前往 [http://www.ifttt.com](http://www.ifttt.com)， 註冊一個帳號以登入<BR><P>
+![auto_fit](images/Case7-Fix/Ch2_ifttt1.png)<P>
+<span id="subtitle" >第二步驟</span><BR><P>
+到右上角的菜單，點擊Create->Applet<BR><P>
+![auto_fit](images/Case7-Fix/Ch2_ifttt2.png)<P>
+<span id="subtitle" >第三步驟</span><BR><P>
+* 選擇“This”
+* 從選單中選擇“Smarthon IoT”。
+* 輸入設備ID, 例如: 0x55a842e3477a (見編程部份第一步得到Device ID)
+* 輸入事件名稱: SendEmail
+* 點擊“Create trigger”按鈕。
+ <BR><P>
+![auto_fit](images/Case7-Fix/Case7-Fix_p6.png)<P>
+<BR>
+
+<span id="subtitle" >第四步驟</span><BR><P>
+在That那裡選擇“email”<BR><P>
+![auto_fit](images/Case7-Fix/Case7-Fix_p7.png)<P>
+<BR>
+<span id="subtitle" >第五步驟</span><BR><P>
+選擇“Send me an email” ，輸人電郵想要的標題及內容，點擊Create action.<BR><P>
+![auto_fit](images/Case7-Fix/Case7-Fix_p8.png)<P>
+
 
 
 ## 結果

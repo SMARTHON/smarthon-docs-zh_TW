@@ -105,39 +105,6 @@
 
 ![pic_80](images/Case11/Case11_hardware.png)<P>
 
-## 物聯網（IFTTT）
-<HR>
-
-### 第一部分：設定 IFTTT
-1. 建立 IFTTT 帳戶並登入
-2. 創建一個新的 Applet
-3. 在 IF 中，搜尋「Webhooks」並點擊 Webhooks 應用程式<BR>
-![pic_80](images/Case11/Case11_iot1.png)<P>
-4. 選擇「Received a web request」然後輸入事件名稱「fire」<BR>
-![pic_80](images/Case11/Case11_iot2.png)<P>
-![pic_80](images/Case11/Case11_iot3.png)<P>
-5. 在 THEN 中，搜尋「Notifications」並點擊 Notifications 應用程式
-6. 選擇「Send a notification from the IFTTT App」<BR>
-![pic_80](images/Case11/Case11_iot4.png)<P>
-7. 完成 Applet 的設定後，按一下 Webhooks 圖示 --> Documentation<BR>
-![pic_80](images/Case11/Case11_iot5.png)<P><BR>
-![pic_80](images/Case11/Case11_iot6.png)<P>
-8. 複製 key<BR>
-![pic_80](images/Case11/Case11_iot7.png)<P>
-<HR>
-<H4>可選：使用電子郵件作為通知方法</H4>
-
-在 THEN 欄位中，搜尋「email」並使用它來取代上一步驟中的「Notifications」
-![pic_70](images/Case11/Case11_iot8.png)<P>
-![pic_70](images/Case11/Case11_iot9.png)<P>
-![pic_70](images/Case11/Case11_iot10.png)<P>
-
-### 第二部分：在智能電話上安裝 IFTTT 應用程式
-1. 前往 <U>Play商店</U> 或 <U>App Store</U> 搜尋並下載 IFTTT App
-![auto_fit](images/Case11/Case11_iot11.png)<P>
-2. 登入你的 IFTTT 帳戶
-![auto_fit](images/Case11/Case11_iot12.png)<P>
-
 
 ## 編程（MakeCode）
 <HR>
@@ -149,10 +116,11 @@
 * 加入`變數 strip 設為引腳 P1 初始化燈帶 1 顆LED（模式 RGB（GRB 順序））`
 ![pic_80](images/Case11/Case11_p1.png)<P>
 
-<span id="subtitle">步驟二. 檢查 Wi-Fi 連線狀態</span><P>
+<span id="subtitle">步驟二. 檢查 Wi-Fi 連線狀態和Device ID</span><P>
 * 放入一個`當WiFi連接成功後`
 * 在裡面加入`顯示圖示勾號`，以在連線後顯示勾號
-![pic_80](images/Case11/Case11_p2.png)<P>
+* 在`當Wifi連接後` 裡添加`顯示字符串`，並把ID放進去
+![pic_80](images/Case11-Fix/Case11-Fix_p1.png)<P>
 
 <span id="subtitle">步驟三. 檢查網路連線狀態</span><P>
 * 在`重複無限次`加入一個`如果`語句，條件設為`WiFi 連接狀態`以檢查連線狀態
@@ -172,9 +140,9 @@
 ![pic_80](images/Case11/Case11_p5.png)<P>
 
 <span id="subtitle">步驟六. 傳送到 IFTTT</span><P>
-* 放入一個`發送到 IFTTT key* XXX 事件名稱 XXX`將事件傳送到 IFTTT
-* 在空格填上你的 Webhooks 上的 IFTTT Key 以及 Applet 的事件名稱
-![pic_80](images/Case11/Case11_p6.png)<P>
+* 放入一個`發送到 IFTTT 事件名稱* XXX`將事件傳送到 IFTTT
+* 在空格填上你的 Applet 的事件名稱
+![pic_80](images/Case11-Fix/Case11-Fix_p2.png)<P>
 
 <span id="subtitle">步驟七. 檢查上傳情況</span><P>
 * 用`當上傳到 IFTTT 後`取得上傳結果以檢查上傳的情況
@@ -185,10 +153,51 @@
 ![pic_80](images/Case11/Case11_p7.png)<P>
 
 <span id="subtitle">完整答案<BR><P>
-MakeCode: [https://makecode.microbit.org/_2pTc5eRp6DRq](https://makecode.microbit.org/_2pTc5eRp6DRq)<BR><P>
+MakeCode: [https://makecode.microbit.org/_RziMMzU1eLiW](https://makecode.microbit.org/_RziMMzU1eLiW)<BR><P>
 你可以從以下網頁中下載HEX檔案：<BR>
-<iframe src="https://makecode.microbit.org/#pub:_2pTc5eRp6DRq" width="100%" height="500" frameborder="0"></iframe>
+<iframe src="https://makecode.microbit.org/_RziMMzU1eLiW" width="100%" height="500" frameborder="0"></iframe>
 
+## 物聯網（IFTTT）
+<HR>
+
+### 第一部分：設定 IFTTT
+
+<span id="subtitle" >第一步驟</span><BR><P>
+前往 [http://www.ifttt.com](http://www.ifttt.com)， 註冊一個帳號以登入<BR><P>
+![auto_fit](images/Case11-Fix/Case11-Fix_p6.png)<P>
+<span id="subtitle" >第二步驟</span><BR><P>
+到右上角的菜單，點擊Create->Applet<BR><P>
+![auto_fit](images/Case11-Fix/Case11-Fix_p7.png)<P>
+<span id="subtitle" >第三步驟</span><BR><P>
+* 選擇“This”
+* 從選單中選擇“Smarthon IoT”。
+* 輸入設備ID, 例如: 0x55a842e3477a (見編程部份第一步得到Device ID)
+* 輸入事件名稱: Fire
+* 點擊“Create trigger”按鈕。
+ <BR><P>
+![auto_fit](images/Case11-Fix/Case11-Fix_p3.png)<P>
+<BR>
+
+<span id="subtitle" >第四步驟</span><BR><P>
+* 在“That”部分,選擇“Notifications”。
+* 選擇“Send a notification from the IFTTT app”。
+* 在“Message"欄位中輸入“There is a fire in the house!”
+* 最後點擊“Create action”按鈕。
+![auto_fit](images/Case11-Fix/Case11-Fix_p4.png)<P>
+<BR>
+
+<HR>
+<H4>可選：使用電子郵件作為通知方法</H4>
+
+在 THEN 欄位中，搜尋「email」並使用它來取代上一步驟中的「Notifications」
+![pic_100](images/Case11-Fix/Case11-Fix_p5.png)<P>
+
+
+### 第二部分：在智能電話上安裝 IFTTT 應用程式
+1. 前往 <U>Play商店</U> 或 <U>App Store</U> 搜尋並下載 IFTTT App
+![auto_fit](images/Case11/Case11_iot11.png)<P>
+2. 登入你的 IFTTT 帳戶
+![auto_fit](images/Case11/Case11_iot12.png)<P>
 
 ## 結果
 <HR>
