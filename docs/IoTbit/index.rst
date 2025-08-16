@@ -15,3 +15,6 @@ Smarthon IoT:bit
     chapter3.md
     chapter4.md
     chapter5.md
+    chapter6.md
+    chapter7.md
+    chapter8_v2.md

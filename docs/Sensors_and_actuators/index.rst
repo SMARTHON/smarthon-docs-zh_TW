@@ -19,3 +19,11 @@ Smarthon系列傳感器及驅動器
     Button.md
     Flame_sensor.md
     Servo.md
+    waterpump.md
+    Soil_Moisture_Sensor.md
+    BH1750.md
+    Fog_Module.md
+    LCD1602.md
+    growlight.md
+    CO2.md
+    laser_dust.md

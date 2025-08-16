@@ -39,7 +39,7 @@
 * 連接傳感器到開發板(使用連接線)
 ![auto_fit](images/Noise_Sensor_5.png)<P>
 
-* 打開Makecode, 使用https://github.com/smarthon/pxt-smartcity 擴展<P>
+* 打開Makecode, 使用[https://github.com/smarthon/pxt-smartcity](https://github.com/smarthon/pxt-smartcity)擴展<P>
 ![auto_fit](images/Noise_Sensor_6.png)<P>
 
 * 初始化OLED顯示屏及把傳感器讀取的數值顯示在OLED顯示屏上<P>

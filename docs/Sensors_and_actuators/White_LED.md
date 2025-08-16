@@ -9,6 +9,7 @@
 ## 原理
 LED全稱發光二極體,通過電場發光理論,當電流通過時,電子會與元素間的電洞進行複合過程,電子流失能量時會以光的形式釋放能量。光的顏色根據二極體的不同成份而有所不同。
 <P>
+
 ![auto_fit](images/White_LED_1.png)
 
 
@@ -36,7 +37,7 @@ LED全稱發光二極體,通過電場發光理論,當電流通過時,電子會�
 * 把白色LED燈連接到開發板上(直接插入或使用連接線)
 ![auto_fit](images/White_LED_3.png)<P>
 
-* 打開Makecode, 使用https://github.com/smarthon/pxt-smartcity 擴展 <P>
+* 打開Makecode, 使用 [https://github.com/smarthon/pxt-smartcity](https://github.com/smarthon/pxt-smartcity) 擴展 <P>
 ![auto_fit](images/White_LED_4.png)<P>
 
 * 設定不同按鈕去開或關LED
